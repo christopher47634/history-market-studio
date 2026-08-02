@@ -15,6 +15,8 @@ const urls = {
   shangjun: "https://zh.wikisource.org/zh-hans/史記/卷068",
   lisao: "https://zh.wikisource.org/zh-hans/離騷",
   lanting: "https://zh.wikisource.org/zh-hans/蘭亭集序",
+  hanfeiShiguo: "https://zh.wikisource.org/zh-hans/韓非子/十過",
+  shijiGuanyan: "https://zh.wikisource.org/zh-hans/史記/卷062",
 };
 
 const eventCitations = {
@@ -25,6 +27,9 @@ const eventCitations = {
   "hanxin:背水破赵": citation("置之死地而后生，置之亡地而后存。", "《史记·淮阴侯列传》", urls.shijiHanxin),
   "hanxin:长乐宫死": citation("狡兔死，良狗烹；高鸟尽，良弓藏。", "《史记·淮阴侯列传》", urls.shijiHanxin),
   "zhugeliang:出师北伐": citation("受任于败军之际，奉命于危难之间。", "诸葛亮《前出师表》", urls.chushi, "人物文献原文"),
+  "guanzhong:老病休居": citation("管仲老，不能用事，休居于家。", "《韩非子·十过》", urls.hanfeiShiguo),
+  "guanzhong:病中论相": citation("知臣莫若君，知子莫若父。", "《韩非子·十过》", urls.hanfeiShiguo),
+  "guanzhong:葵丘会盟": citation("九合诸侯，一匡天下，管仲之谋也。", "《史记·管晏列传》", urls.shijiGuanyan),
 };
 
 const figureCitations = {
@@ -53,6 +58,7 @@ const figureCitations = {
   zhuyuanzhang: citation("驱逐胡虏，恢复中华，立纲陈纪，救济斯民。", "朱元璋《谕中原檄》", "https://zh.wikisource.org/zh-hans/諭中原檄", "人物文献原文"),
   wangyangming: citation("知是行之始，行是知之成。", "王阳明《传习录》", "https://zh.wikisource.org/zh-hans/傳習錄", "人物著述原文"),
   linzexu: citation("苟利国家生死以，岂因祸福避趋之。", "林则徐《赴戍登程口占示家人》", "https://zh.wikisource.org/zh-hans/赴戍登程口占示家人", "人物著述原文"),
+  guanzhong: citation("齐桓公以霸，九合诸侯，一匡天下，管仲之谋也。", "《史记·管晏列传》", urls.shijiGuanyan),
 };
 
 const eraCitations = {

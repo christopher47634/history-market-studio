@@ -331,7 +331,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
           <header className="zhusha-chart-head">
             <div>
               <h1>
-                0—{comparison.maxAge} 岁 · 人生影响力（0—100） <Info />
+                0—{comparison.maxAge} 岁 · 历史综合势能（0—100） <Info />
               </h1>
               <div className="zhusha-legend">
                 <span>
@@ -342,7 +342,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                   <i style={{ background: colors[1] }} />
                   {right.name} · 实线
                 </span>
-                <em>越高代表当时可调动资源越强</em>
+                <em>综合生前资源与身后制度、思想及作品延续</em>
               </div>
             </div>
             <div className="zhusha-modes">
@@ -484,7 +484,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                           </small>
                           <b>
                             {mode === "candlestick"
-                              ? active.dimension
+                              ? active.trajectory?.continuity || active.dimension
                               : active.figure.id === left.id
                                 ? right.name
                                 : left.name}

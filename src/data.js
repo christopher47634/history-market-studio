@@ -4,6 +4,10 @@ import { extendedFigures } from "./extendedCatalog.js";
 import { supplementalFigures } from "./supplementalCatalog.js";
 import { attachFigureIndex } from "./figureIndex.js";
 import { attachHistoricalCitations } from "./historicalCitations.js";
+import {
+  attachLegacyAwareTerminal,
+  interpolateTrajectoryScore,
+} from "./trajectoryModel.js";
 
 export const sources = {
   shijiGaozu: { label: "《史记·高祖本纪》", url: "https://ctext.org/shiji/gao-zu-ben-ji/zhs" },
@@ -184,8 +188,9 @@ export const figures = allFigures
     return true;
   })
   .map(attachAgeAxis)
-  .map(attachHistoricalCitations)
-  .map(attachFigureIndex);
+  .map(attachFigureIndex)
+  .map(attachLegacyAwareTerminal)
+  .map(attachHistoricalCitations);
 
 export { dynastyOrder };
 
@@ -199,17 +204,6 @@ export function getPairColors(left,right) {
 
 export const formatYear = (year) => year < 0 ? `前${Math.abs(year)}` : `${year}`;
 export const formatAge = (age) => `${Number.isInteger(age)?age:age.toFixed(1)}岁`;
-
-function interpolate(events, key, x) {
-  const sorted = [...events].sort((a,b) => a[key] - b[key]);
-  if (x <= sorted[0][key]) return sorted[0].score;
-  if (x >= sorted.at(-1)[key]) return sorted.at(-1).score;
-  const upper = sorted.findIndex((item) => item[key] >= x);
-  const left = sorted[upper - 1];
-  const right = sorted[upper];
-  const ratio = (x - left[key]) / (right[key] - left[key] || 1);
-  return +(left.score + (right.score - left.score) * ratio).toFixed(2);
-}
 
 function addMicroTexture(figure,index,value,isEvent){
   if(isEvent||value===null)return value;
@@ -228,16 +222,23 @@ export function buildComparison(left, right) {
   const seriesFor=(figure)=>{
     const events=lifeEvents(figure);
     const map=eventMap(figure);
-    const targets=rawAxis.map((age)=>age>figure.lifeSpan?null:interpolate(events,"age",age));
+    const targets=rawAxis.map((age)=>age>figure.lifeSpan?null:interpolateTrajectoryScore(events,age));
     let marketState=targets.find((value)=>value!==null)??0;
     return rawAxis.map((age,index)=>{
       const event=map.get(index)||null;
       const target=targets[index];
       if(target===null)return {value:null,age,raw:age,event:null,axisLabel:formatAge(age)};
-      const distance=target-marketState;
-      const maxMove=event?6.4:3.6;
-      const response=event?.delta&&Math.abs(event.delta)>12?.76:.56;
-      marketState+=Math.max(-maxMove,Math.min(maxMove,distance*response));
+      if (event?.trajectory?.terminal) {
+        // The terminal point is a declared historical/legacy valuation. It
+        // must land on that value exactly instead of lagging behind through
+        // the visual smoothing state.
+        marketState = target;
+      } else {
+        const distance=target-marketState;
+        const maxMove=event?6.4:3.6;
+        const response=event?.delta&&Math.abs(event.delta)>12?.76:.56;
+        marketState+=Math.max(-maxMove,Math.min(maxMove,distance*response));
+      }
       const value=addMicroTexture(figure,index,marketState,event);
       return {value,age,raw:age,event,axisLabel:formatAge(age)};
     });

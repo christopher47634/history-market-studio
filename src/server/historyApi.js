@@ -48,7 +48,9 @@ const apiMeta = () => ({
   events: totalEvents,
   generatedAt: new Date().toISOString(),
   axis: "actual-age",
-  model: "interpretive-history-index",
+  model: "legacy-aware-historical-potential-v1",
+  terminalRetentionFloor: 0.8,
+  deathResetsToZero: false,
 });
 
 function getPair(url) {

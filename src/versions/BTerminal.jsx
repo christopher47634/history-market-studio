@@ -240,9 +240,9 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
           <header>
             <div>
               <h1>
-                人生影响力对比 <Question />
+                历史综合势能对比 <Question />
               </h1>
-              <p>0—100：越高代表当时可调动的权力、军事、盟友与民心资源越强</p>
+              <p>0—100：综合生前资源、人物能力与身后制度或思想延续；死亡不作归零处理</p>
             </div>
             <div className="yuheng-chart-tools">
               <span>
@@ -364,7 +364,11 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                         </small>
                       </span>
                       <em>
-                        {mode === "candlestick" ? "微观行情" : "关键转折"}
+                        {active.trajectory
+                          ? `${active.trajectory.continuity} · ${Math.round(active.trajectory.retention * 100)}%`
+                          : mode === "candlestick"
+                            ? "微观行情"
+                            : "关键转折"}
                       </em>
                     </header>
                     <p>{active.summary}</p>
@@ -389,7 +393,9 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                       </span>
                       <span>
                         <small>影响维度</small>
-                        <b>{active.dimension}</b>
+                        <b>
+                          {active.trajectory?.continuity || active.dimension}
+                        </b>
                       </span>
                     </div>
                     <div className="yuheng-impact-grid">

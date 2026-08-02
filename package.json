@@ -8,6 +8,7 @@
     "build": "vite build && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
     "test:data": "node scripts/validate-data.mjs",
+    "test:trajectories": "node scripts/audit-terminal-trajectories.mjs",
     "test:ui": "node scripts/validate-ui-contract.mjs",
     "test:production": "node scripts/validate-production.mjs",
     "test:sites": "node --test tests/sites-worker.test.mjs"

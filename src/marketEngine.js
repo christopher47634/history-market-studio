@@ -1,14 +1,6 @@
-const hashText = (text) => [...text].reduce((sum,char)=>((sum*33)^char.charCodeAt(0))>>>0,5381);
+import { interpolateTrajectoryScore } from "./trajectoryModel.js";
 
-function interpolateScore(events, age) {
-  if (age <= events[0].age) return events[0].score;
-  if (age >= events.at(-1).age) return events.at(-1).score;
-  const rightIndex = events.findIndex((event) => event.age >= age);
-  const left = events[rightIndex-1];
-  const right = events[rightIndex];
-  const ratio = (age-left.age)/(right.age-left.age || 1);
-  return left.score+(right.score-left.score)*ratio;
-}
+const hashText = (text) => [...text].reduce((sum,char)=>((sum*33)^char.charCodeAt(0))>>>0,5381);
 
 function nearestEvent(events, age, tolerance=.15) {
   const event = events.reduce((best,item)=>Math.abs(item.age-age)<Math.abs(best.age-age)?item:best,events[0]);
@@ -19,10 +11,10 @@ export function buildMicroCandles(figure, count=Math.max(120,Math.min(400,Math.r
   const seed=hashText(figure.id);
   const events=figure.events.filter((event)=>!event.posthumous);
   const result=[];
-  let previous=Math.max(0,Math.min(100,interpolateScore(events,0)));
+  let previous=Math.max(0,Math.min(100,interpolateTrajectoryScore(events,0)));
   for(let index=0;index<count;index++){
     const age=(index/(count-1))*figure.lifeSpan;
-    const baseline=interpolateScore(events,age);
+    const baseline=interpolateTrajectoryScore(events,age);
     const wave=Math.sin((index+seed%17)*1.37)*1.5+Math.cos((index+seed%29)*.61)*.9;
     const close=Math.max(0,Math.min(100,index===count-1?baseline:baseline+wave));
     const open=index===0?Math.max(0,close-.8):previous;

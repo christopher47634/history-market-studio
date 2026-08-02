@@ -453,7 +453,7 @@ export function LifeMarketChart({
         min: 0,
         max: 100,
         interval: 25,
-        name: narrow ? "" : "人生影响力（0—100）",
+        name: narrow ? "" : "历史综合势能（0—100）",
         nameTextStyle: { color: label, fontSize: 10, padding: [0, 0, 8, 0] },
         axisLine: { show: false },
         axisTick: { show: false },
@@ -749,7 +749,7 @@ export function LifeMarketChart({
             min: 0,
             max: 100,
             interval: 25,
-            name: narrow ? "" : "人生影响力 OHLC",
+            name: narrow ? "" : "历史综合势能 OHLC",
             nameTextStyle: { color: label, fontSize: 10 },
             axisLabel: { color: label, fontSize: narrow ? 8.5 : 10 },
             axisLine: { show: false },
@@ -953,8 +953,8 @@ export function LifeMarketChart({
         }
       />
       <p id={descriptionId} className="a11y-chart-summary">
-        {mode === "line"
-          ? `${left.name}与${right.name}从零岁到${comparison.maxAge}岁的影响力走势。关键事件可从页面事件列表使用键盘逐项查看。`
+          {mode === "line"
+            ? `${left.name}与${right.name}从零岁到${comparison.maxAge}岁的历史综合势能走势。关键事件可从页面事件列表使用键盘逐项查看。`
           : `${candleFigure.name}的蜡烛图当前显示${candleView.granularity.label}，可使用复位按钮恢复完整年龄范围。`}
       </p>
       <svg className="life-pointer-tether" aria-hidden="true" focusable="false">
