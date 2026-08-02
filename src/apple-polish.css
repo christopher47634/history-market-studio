@@ -1,0 +1,1563 @@
+:root {
+  --ui-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+    "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  --history-body-font: "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC",
+    "Source Han Serif SC", serif;
+  --history-kaiti-font: "STKaiti", "KaiTi", "Kaiti SC", "FangSong", serif;
+  --history-font: var(--history-body-font);
+  --apple-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --apple-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --control-height: 44px;
+}
+
+html {
+  background: #07100e;
+}
+
+.view-transition-shell {
+  min-height: 100svh;
+}
+
+.view-loading {
+  display: grid;
+  min-height: 100svh;
+  place-content: center;
+  justify-items: center;
+  gap: 8px;
+  padding: 24px;
+  background-color: #07100e;
+  color: #d8c8ab;
+}
+
+.view-loading--c {
+  background-color: #f2ede4;
+  color: #6b5745;
+}
+
+.view-loading > span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: view-loading-spin 900ms linear infinite;
+  opacity: 0.66;
+}
+
+.view-loading b {
+  margin-top: 8px;
+  font-family: var(--history-font);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.view-loading small {
+  opacity: 0.5;
+}
+
+@keyframes view-loading-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--ui-font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100svh;
+  overscroll-behavior-y: none;
+}
+
+.a11y-chart-summary {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.app-recovery {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 24px;
+  background-color: #07100e;
+  color: #ddd1bd;
+}
+
+.app-recovery > section {
+  width: min(460px, 100%);
+  padding: 32px;
+  border: 1px solid rgba(205, 184, 145, 0.22);
+  border-radius: 26px;
+  background-color: rgba(11, 28, 26, 0.9);
+  box-shadow:
+    0 34px 100px rgba(0, 0, 0, 0.4),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(28px);
+}
+
+.app-recovery svg {
+  width: 34px;
+  height: 34px;
+  color: #d2b579;
+}
+
+.app-recovery small {
+  display: block;
+  margin-top: 18px;
+  color: rgba(221, 209, 189, 0.52);
+  letter-spacing: 0.1em;
+}
+
+.app-recovery h1 {
+  margin: 8px 0 10px;
+  font-family: var(--history-font);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.app-recovery p {
+  margin: 0;
+  color: rgba(221, 209, 189, 0.7);
+  line-height: 1.75;
+}
+
+.app-recovery button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 22px;
+  padding: 0 16px;
+  border: 1px solid rgba(108, 194, 172, 0.36);
+  border-radius: 13px;
+  background-color: rgba(57, 125, 108, 0.24);
+  color: #e2d8c6;
+}
+
+.app-recovery button svg {
+  width: 17px;
+  height: 17px;
+  color: currentColor;
+}
+
+.life-market-chart__canvas:focus-visible {
+  outline: 2px solid rgba(112, 196, 174, 0.72);
+  outline-offset: -4px;
+  border-radius: 18px;
+}
+
+.zhusha-page .life-market-chart__canvas:focus-visible {
+  outline-color: rgba(176, 70, 54, 0.58);
+}
+
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(button, a, input, select) {
+  transition:
+    transform 180ms var(--apple-ease),
+    border-color 220ms var(--apple-ease),
+    background-color 220ms var(--apple-ease),
+    box-shadow 220ms var(--apple-ease),
+    color 180ms var(--apple-ease),
+    opacity 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :where(
+      .icon-control,
+      .yuheng-generate,
+      .yuheng-save,
+      .zhusha-start,
+      .zhusha-settings,
+      .life-chart-reset,
+      .settings-panel button,
+      .person-select__trigger,
+      .swap-button
+    ):hover {
+    transform: translateY(-1px);
+  }
+}
+
+:where(
+    .icon-control,
+    .yuheng-generate,
+    .yuheng-save,
+    .zhusha-start,
+    .zhusha-settings,
+    .life-chart-reset,
+    .settings-panel button,
+    .person-select__trigger,
+    .swap-button
+  ):active {
+  transform: scale(0.975);
+  transition-duration: 90ms;
+}
+
+/* Shared floating surfaces */
+.person-select__menu--portal,
+.settings-panel,
+.event-float-card {
+  backdrop-filter: blur(30px) saturate(132%);
+  -webkit-backdrop-filter: blur(30px) saturate(132%);
+}
+
+.person-select__menu--portal {
+  border-radius: 22px !important;
+  box-shadow:
+    0 28px 72px rgba(0, 0, 0, 0.34),
+    0 2px 8px rgba(0, 0, 0, 0.18),
+    inset 0 1px rgba(255, 255, 255, 0.08) !important;
+  animation: apple-menu-in 260ms var(--apple-ease) both;
+}
+
+.person-select__menu,
+.person-select__results {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior: contain;
+}
+
+.person-select__menu::-webkit-scrollbar,
+.person-select__results::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.person-select__results > button {
+  border-radius: 14px;
+}
+
+.person-select__search {
+  min-height: 42px;
+  border-radius: 13px;
+}
+
+.person-select__trigger {
+  min-height: 50px;
+  border-radius: 15px;
+}
+
+.swap-button {
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.16),
+    inset 0 1px rgba(255, 255, 255, 0.12);
+}
+
+/* 玉衡终端：macOS information-dense workspace */
+.yuheng-page {
+  min-height: 100svh;
+  padding:
+    max(clamp(12px, 1.4vw, 22px), env(safe-area-inset-top))
+    max(clamp(12px, 1.4vw, 22px), env(safe-area-inset-right))
+    max(clamp(12px, 1.4vw, 22px), env(safe-area-inset-bottom))
+    max(clamp(12px, 1.4vw, 22px), env(safe-area-inset-left));
+  gap: 12px;
+  background-color: #07100e;
+  color: #d6ccb9;
+}
+
+.yuheng-header,
+.yuheng-compare,
+.yuheng-chart-panel,
+.yuheng-evidence {
+  border-color: rgba(201, 183, 145, 0.2) !important;
+  background-color: rgba(7, 20, 19, 0.8) !important;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.2),
+    inset 0 1px rgba(255, 255, 255, 0.045),
+    inset 0 -1px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(26px) saturate(125%);
+  -webkit-backdrop-filter: blur(26px) saturate(125%);
+}
+
+.yuheng-header {
+  min-height: 70px;
+  padding: 10px 12px 10px 16px;
+  border: 1px solid rgba(201, 183, 145, 0.18);
+  border-radius: 22px;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(360px, 1.3fr) auto 48px;
+  gap: 14px;
+  position: sticky;
+  top: 10px;
+  z-index: 90;
+}
+
+.yuheng-brand {
+  min-width: 0;
+  gap: 12px;
+}
+
+.yuheng-brand > svg {
+  width: 46px;
+  height: 46px;
+  padding: 10px;
+  border: 1px solid rgba(209, 179, 121, 0.35);
+  border-radius: 50%;
+  color: #d1b579;
+  background: rgba(209, 179, 121, 0.04);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.yuheng-brand b,
+.yuheng-chart-panel h1,
+.yuheng-evidence h2,
+.yuheng-detail-card > header b {
+  font-family: var(--history-font);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.yuheng-brand b {
+  font-size: clamp(21px, 1.75vw, 29px);
+  color: #d5b982;
+}
+
+.yuheng-brand small {
+  margin-top: 3px;
+  color: rgba(207, 196, 172, 0.56);
+  letter-spacing: 0.14em;
+}
+
+.yuheng-header > time {
+  min-width: 118px;
+  padding: 0 12px;
+  border-left: 1px solid rgba(211, 193, 158, 0.14);
+  font-variant-numeric: tabular-nums;
+}
+
+.history-sync small {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(122, 198, 177, 0.72);
+}
+
+.history-sync small svg {
+  width: 13px;
+  height: 13px;
+}
+
+.history-sync--embedded small {
+  color: rgba(214, 186, 134, 0.68);
+}
+
+.yuheng-header .icon-control,
+.yuheng-save {
+  min-height: var(--control-height);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  border-color: rgba(211, 193, 158, 0.16);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.yuheng-compare {
+  min-height: 84px;
+  padding: 12px 14px 12px 18px;
+  border-radius: 22px;
+  grid-template-columns: minmax(142px, 0.5fr) minmax(480px, 1.65fr) minmax(148px, 0.52fr) minmax(108px, 0.36fr);
+  gap: 12px;
+}
+
+.yuheng-compare > div:first-child b {
+  font-family: var(--history-font);
+  font-size: 16px;
+  letter-spacing: 0.12em;
+}
+
+.yuheng-compare > div:first-child small {
+  margin-top: 5px;
+  color: rgba(204, 195, 176, 0.5);
+}
+
+.yuheng-compare .comparison-picker {
+  gap: 10px;
+}
+
+.yuheng-compare .person-select__trigger {
+  min-height: 56px;
+  padding-inline: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  border-color: rgba(211, 193, 158, 0.15);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.yuheng-compare .person-select:first-child .person-select__trigger {
+  background-color: rgba(104, 36, 31, 0.21);
+  border-color: rgba(203, 86, 70, 0.34);
+}
+
+.yuheng-compare .person-select:last-child .person-select__trigger {
+  background-color: rgba(25, 77, 61, 0.23);
+  border-color: rgba(80, 155, 119, 0.28);
+}
+
+.yuheng-generate {
+  min-height: 56px;
+  border-radius: 16px;
+  background-color: rgba(49, 119, 105, 0.32) !important;
+  border-color: rgba(100, 202, 180, 0.46) !important;
+  color: #e0d8c8;
+  box-shadow:
+    0 12px 34px rgba(20, 104, 89, 0.18),
+    inset 0 1px rgba(255, 255, 255, 0.12),
+    inset 0 0 0 5px rgba(255, 255, 255, 0.018);
+}
+
+.yuheng-workspace {
+  grid-template-columns: minmax(0, 1fr) clamp(278px, 22vw, 336px);
+  gap: 12px;
+  min-height: 670px;
+}
+
+.yuheng-chart-panel,
+.yuheng-evidence {
+  border-radius: 24px;
+  overflow: clip;
+}
+
+.yuheng-chart-panel {
+  padding: 18px 20px 14px;
+}
+
+.yuheng-chart-panel > header {
+  padding-bottom: 10px;
+}
+
+.yuheng-chart-panel h1 {
+  font-size: clamp(17px, 1.3vw, 21px);
+  color: #d9c49c;
+}
+
+.yuheng-chart-panel header p {
+  margin-top: 6px;
+  font-family: var(--ui-font);
+  letter-spacing: 0.04em;
+  color: rgba(201, 194, 178, 0.52);
+}
+
+.yuheng-chart-tools,
+.yuheng-modebar > div:first-child,
+.yuheng-evidence > header > div {
+  padding: 4px;
+  border: 1px solid rgba(198, 184, 154, 0.14);
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 0.022);
+}
+
+.yuheng-modebar button,
+.yuheng-evidence header button,
+.yuheng-chart-tools button {
+  min-height: 34px;
+  padding-inline: 12px;
+  border-radius: 10px;
+}
+
+.yuheng-modebar button.is-active,
+.yuheng-evidence header button.is-active {
+  background-color: rgba(72, 139, 123, 0.2) !important;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.yuheng-evidence {
+  padding: 16px 14px 12px;
+}
+
+.yuheng-evidence-list > button {
+  border-radius: 14px;
+  padding: 13px 10px;
+}
+
+.yuheng-evidence-list > button span > b {
+  color: rgba(224, 207, 174, 0.86);
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+.yuheng-evidence-list > button p {
+  color: rgba(205, 199, 184, 0.68);
+  font-size: 10.5px;
+  line-height: 1.65;
+}
+
+.yuheng-evidence-list > button small,
+.yuheng-evidence-list > button > em {
+  font-size: 9.5px;
+}
+
+.yuheng-evidence-list > button.is-active,
+.yuheng-evidence-list > button:hover {
+  background-color: rgba(74, 139, 124, 0.09);
+  box-shadow: inset 3px 0 rgba(94, 181, 161, 0.56);
+}
+
+.yuheng-detail-card.event-float-card {
+  border-radius: 22px !important;
+  border-color: rgba(134, 206, 188, 0.34) !important;
+  background-color: rgba(6, 33, 30, 0.88) !important;
+  box-shadow:
+    0 34px 90px rgba(0, 0, 0, 0.46),
+    0 8px 24px rgba(0, 0, 0, 0.24),
+    inset 0 1px rgba(255, 255, 255, 0.1) !important;
+}
+
+.yuheng-detail-card.event-float-card > header b {
+  font-size: 19px;
+  letter-spacing: 0.08em;
+}
+
+.yuheng-detail-card.event-float-card > header small,
+.yuheng-detail-card.event-float-card > footer {
+  font-size: 10px;
+}
+
+.yuheng-detail-card.event-float-card > p {
+  font-size: 11.5px;
+  line-height: 1.75;
+}
+
+.yuheng-detail-card.event-float-card .yuheng-direct-impact small,
+.yuheng-detail-card.event-float-card .yuheng-impact-grid b {
+  font-size: 9.5px;
+}
+
+.yuheng-detail-card.event-float-card .yuheng-direct-impact b {
+  font-size: 17px;
+}
+
+.yuheng-status {
+  min-height: 28px;
+  padding: 0 12px;
+  border: 1px solid rgba(201, 183, 145, 0.12);
+  border-radius: 999px;
+  background-color: rgba(7, 19, 18, 0.64);
+  color: rgba(205, 194, 172, 0.58);
+  backdrop-filter: blur(16px);
+}
+
+/* 朱砂长卷：Apple editorial canvas */
+html[data-view="c"] {
+  background: #f2ede4;
+}
+
+.zhusha-page {
+  min-height: 100svh;
+  padding:
+    max(14px, env(safe-area-inset-top))
+    max(14px, env(safe-area-inset-right))
+    max(14px, env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+  gap: 10px;
+  background-color: #f2ede4;
+  color: #3b332b;
+}
+
+.zhusha-header,
+.zhusha-workbench,
+.zhusha-footer {
+  border-color: rgba(116, 85, 56, 0.16) !important;
+  background-color: rgba(250, 247, 240, 0.84) !important;
+  box-shadow:
+    0 20px 56px rgba(88, 61, 34, 0.08),
+    inset 0 1px rgba(255, 255, 255, 0.94),
+    inset 0 -1px rgba(98, 68, 38, 0.05);
+  backdrop-filter: blur(28px) saturate(115%);
+  -webkit-backdrop-filter: blur(28px) saturate(115%);
+}
+
+.zhusha-footer > span:last-of-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-variant-numeric: tabular-nums;
+}
+
+.zhusha-footer > span:last-of-type svg {
+  width: 14px;
+  height: 14px;
+  color: #a94739;
+}
+
+.zhusha-header {
+  min-height: 82px;
+  padding: 10px 12px 10px 18px;
+  border: 1px solid rgba(116, 85, 56, 0.15);
+  border-radius: 22px;
+  grid-template-columns: minmax(215px, 0.58fr) minmax(230px, 0.72fr) minmax(510px, 1.65fr) 48px;
+  gap: 14px;
+  position: sticky;
+  top: 10px;
+  z-index: 90;
+}
+
+.zhusha-brand {
+  position: relative;
+  min-width: 0;
+}
+
+.zhusha-brand b,
+.zhusha-chart-head h1,
+.zhusha-rail header b,
+.zhusha-detail-card > header span {
+  font-family: var(--history-font);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.zhusha-brand b {
+  font-size: clamp(21px, 1.72vw, 28px);
+  color: #a84638;
+}
+
+.zhusha-brand small {
+  margin-top: 5px;
+  color: rgba(71, 59, 48, 0.58);
+  letter-spacing: 0.14em;
+}
+
+.zhusha-header .catalog-search {
+  min-width: 0;
+}
+
+.zhusha-header-pair {
+  gap: 10px;
+}
+
+.zhusha-header .person-select__trigger,
+.zhusha-header .catalog-search__trigger,
+.zhusha-header .catalog-search > button,
+.zhusha-settings {
+  min-height: 50px;
+  border-radius: 15px;
+  border-color: rgba(122, 91, 60, 0.15);
+  background-color: rgba(255, 255, 255, 0.42);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.86);
+}
+
+.zhusha-start {
+  min-height: 50px;
+  padding-inline: 22px;
+  border-radius: 15px;
+  background-color: #ad4738 !important;
+  border-color: rgba(129, 46, 36, 0.42) !important;
+  color: #fffaf2 !important;
+  box-shadow:
+    0 12px 28px rgba(147, 55, 42, 0.16),
+    inset 0 1px rgba(255, 255, 255, 0.24);
+}
+
+.zhusha-workbench {
+  min-height: 720px;
+  border: 1px solid rgba(116, 85, 56, 0.15);
+  border-radius: 24px;
+  grid-template-columns: clamp(260px, 21vw, 318px) minmax(0, 1fr);
+  overflow: clip;
+}
+
+.zhusha-rail {
+  padding: 20px 12px 14px;
+  border-right-color: rgba(134, 92, 55, 0.14);
+  background-color: rgba(241, 233, 221, 0.4);
+}
+
+.zhusha-rail > header {
+  padding: 0 10px 14px;
+}
+
+.zhusha-rail > header span {
+  margin-left: auto;
+  padding: 5px 8px;
+  border: 1px solid rgba(182, 74, 58, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
+  color: #a74739;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.68);
+}
+
+.zhusha-rail-list {
+  gap: 5px;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 58px;
+  scrollbar-width: none;
+}
+
+.zhusha-rail-list::-webkit-scrollbar {
+  display: none;
+}
+
+.zhusha-rail-list > button {
+  padding: 14px 12px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+}
+
+.zhusha-rail-list > button.is-active {
+  background-color: rgba(255, 255, 255, 0.58);
+  border-color: rgba(172, 70, 55, 0.18);
+  box-shadow:
+    0 12px 28px rgba(91, 61, 34, 0.07),
+    inset 3px 0 #b64a3a,
+    inset 0 1px rgba(255, 255, 255, 0.84);
+}
+
+.zhusha-number {
+  font-variant-numeric: tabular-nums;
+}
+
+.zhusha-main {
+  padding: 18px 22px 12px;
+}
+
+.zhusha-chart-head {
+  min-height: 68px;
+  padding-bottom: 12px;
+}
+
+.zhusha-chart-head h1 {
+  font-size: clamp(17px, 1.28vw, 21px);
+}
+
+.zhusha-legend {
+  gap: 18px;
+  margin-top: 9px;
+  font-family: var(--ui-font);
+  letter-spacing: 0.035em;
+}
+
+.zhusha-modes,
+.zhusha-candle-select {
+  z-index: 30;
+  pointer-events: auto;
+  padding: 4px;
+  border-radius: 13px;
+  background-color: rgba(255, 255, 255, 0.48);
+  border: 1px solid rgba(124, 89, 57, 0.14);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.82);
+}
+
+.zhusha-modes button,
+.zhusha-candle-select button {
+  min-height: 36px;
+  padding-inline: 15px;
+  border-radius: 10px;
+}
+
+.zhusha-modes button.is-active,
+.zhusha-candle-select button.is-active {
+  background-color: rgba(176, 70, 54, 0.08) !important;
+  border-color: rgba(176, 70, 54, 0.3) !important;
+  box-shadow: 0 4px 16px rgba(147, 55, 42, 0.08);
+}
+
+.zhusha-chart-stage {
+  z-index: 0;
+  min-height: 610px;
+  border-radius: 20px;
+}
+
+.zhusha-detail-card.event-float-card {
+  border-radius: 24px !important;
+  background-color: rgba(250, 247, 239, 0.93) !important;
+  border-color: rgba(137, 96, 59, 0.2) !important;
+  box-shadow:
+    0 34px 90px rgba(86, 57, 32, 0.2),
+    0 8px 20px rgba(86, 57, 32, 0.08),
+    inset 0 1px rgba(255, 255, 255, 0.96) !important;
+}
+
+.zhusha-footer {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid rgba(116, 85, 56, 0.14);
+  border-radius: 17px;
+}
+
+/* Settings becomes a native-feeling secondary surface */
+.settings-layer {
+  background-color: rgba(4, 8, 9, 0.34);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.settings-panel {
+  width: min(920px, calc(100vw - 32px));
+  max-height: min(760px, calc(100svh - 32px));
+  border-radius: 28px !important;
+  overflow: clip;
+  box-shadow:
+    0 44px 120px rgba(0, 0, 0, 0.36),
+    0 2px 10px rgba(0, 0, 0, 0.14),
+    inset 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.settings-panel > header {
+  min-height: 62px;
+  padding-inline: 18px;
+}
+
+.settings-panel > header > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settings-panel > header > div > button:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 72px;
+  padding-inline: 11px;
+}
+
+.settings-panel > header > div > button:first-child em {
+  font-size: 11px;
+  font-style: normal;
+}
+
+.settings-panel > header > div > button.is-copied {
+  color: #72bda8;
+  border-color: rgba(95, 180, 156, 0.3);
+}
+
+.settings-panel__body > nav {
+  padding: 12px;
+}
+
+.settings-panel__body > nav button {
+  min-height: 44px;
+  border-radius: 13px;
+}
+
+.settings-detail {
+  padding: 26px 28px 30px;
+}
+
+.settings-data-sync {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid currentColor;
+  border-color: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.settings-data-sync button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+}
+
+.settings-data-sync small {
+  opacity: 0.58;
+  font-variant-numeric: tabular-nums;
+}
+
+.settings-data-sync .is-spinning {
+  animation: data-sync-spin 900ms linear infinite;
+}
+
+@keyframes data-sync-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.version-cards > button,
+.settings-note,
+.settings-facts > span,
+.settings-timeline-event {
+  border-radius: 18px !important;
+}
+
+@keyframes apple-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.985);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@media (max-width: 1180px) {
+  .yuheng-header {
+    grid-template-columns: minmax(240px, 0.72fr) minmax(300px, 1fr) 48px;
+  }
+
+  .yuheng-header > time {
+    display: none;
+  }
+
+  .yuheng-compare {
+    grid-template-columns: minmax(0, 1fr) minmax(140px, 0.32fr) minmax(108px, 0.25fr);
+  }
+
+  .yuheng-compare > div:first-child {
+    display: none;
+  }
+
+  .zhusha-header {
+    grid-template-columns: minmax(190px, 0.45fr) minmax(0, 1fr) 48px;
+  }
+
+  .zhusha-header .catalog-search {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .yuheng-page,
+  .zhusha-page {
+    padding: 10px;
+  }
+
+  .yuheng-header,
+  .zhusha-header {
+    position: relative;
+    top: 0;
+  }
+
+  .yuheng-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .yuheng-evidence {
+    min-height: 360px;
+  }
+
+  .zhusha-workbench {
+    grid-template-columns: 1fr;
+  }
+
+  .zhusha-rail {
+    border-right: 0;
+    border-bottom: 1px solid rgba(134, 92, 55, 0.14);
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --control-height: 42px;
+  }
+
+  .yuheng-page,
+  .zhusha-page {
+    padding:
+      max(8px, env(safe-area-inset-top))
+      max(8px, env(safe-area-inset-right))
+      max(8px, env(safe-area-inset-bottom))
+      max(8px, env(safe-area-inset-left));
+    gap: 8px;
+  }
+
+  .yuheng-header,
+  .zhusha-header,
+  .yuheng-compare,
+  .yuheng-chart-panel,
+  .yuheng-evidence,
+  .zhusha-workbench,
+  .zhusha-footer {
+    border-radius: 18px;
+  }
+
+  .yuheng-header {
+    grid-template-columns: 1fr 44px;
+    min-height: 64px;
+  }
+
+  .yuheng-header .catalog-search {
+    grid-column: 1 / -1;
+  }
+
+  .yuheng-compare {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .yuheng-generate,
+  .yuheng-save {
+    min-height: 48px;
+  }
+
+  .yuheng-chart-panel,
+  .yuheng-evidence,
+  .zhusha-main {
+    padding: 14px 12px 10px;
+  }
+
+  .zhusha-header {
+    grid-template-columns: 1fr 44px;
+    min-height: 66px;
+  }
+
+  .zhusha-header-pair {
+    grid-column: 1 / -1;
+  }
+
+  .zhusha-start {
+    width: 100%;
+  }
+
+  .zhusha-chart-head {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .settings-panel {
+    width: calc(100vw - 16px);
+    max-height: calc(100svh - 16px);
+    border-radius: 22px !important;
+  }
+
+  .settings-detail {
+    padding: 20px 16px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(*, *::before, *::after) {
+    scroll-behavior: auto !important;
+  }
+
+  .person-select__menu--portal {
+    animation: none;
+  }
+
+  .view-loading > span {
+    animation-duration: 1.8s;
+  }
+}
+
+/* 朱砂长卷 · 山河透景与可追随事件卷轴 */
+.zhusha-page::before {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(250, 247, 240, 0.7) 0%,
+      rgba(250, 247, 240, 0.5) 38%,
+      rgba(246, 239, 228, 0.3) 100%
+    );
+}
+
+.zhusha-workbench {
+  background-color: rgba(250, 247, 240, 0.64) !important;
+  backdrop-filter: blur(16px) saturate(108%);
+  -webkit-backdrop-filter: blur(16px) saturate(108%);
+}
+
+.zhusha-main {
+  isolation: isolate;
+  background:
+    linear-gradient(90deg, rgba(250, 247, 240, 0.28), transparent 28%),
+    linear-gradient(180deg, rgba(255, 252, 246, 0.3), transparent 34%);
+}
+
+.zhusha-main::after {
+  content: "";
+  position: absolute;
+  inset: 76px 0 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(249, 245, 237, 0.92) 0%,
+      rgba(249, 245, 237, 0.52) 22%,
+      rgba(249, 245, 237, 0.12) 62%,
+      rgba(249, 245, 237, 0.04) 100%
+    ),
+    url("/assets/qin-han-scroll.webp") center bottom / cover no-repeat;
+  opacity: 0.48;
+  mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 20%, #000 100%);
+}
+
+.zhusha-rail {
+  position: relative;
+  padding: 18px 12px 72px;
+  background:
+    linear-gradient(180deg, rgba(249, 244, 235, 0.76), rgba(235, 223, 205, 0.52));
+  transition:
+    padding 0.38s var(--apple-ease),
+    background-color 0.28s ease;
+}
+
+.zhusha-rail > header {
+  min-height: 45px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 2px 10px 13px;
+  border-bottom: 1px solid rgba(132, 91, 55, 0.1);
+}
+
+.zhusha-rail > header i {
+  width: 8px;
+  height: 8px;
+  margin-top: 7px;
+  border-width: 2px;
+}
+
+.zhusha-rail > header .zhusha-rail-heading {
+  display: grid;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #4e4034;
+}
+
+.zhusha-rail-heading b {
+  font-family: "STKaiti", "KaiTi", "FangSong", var(--history-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+}
+
+.zhusha-rail-heading small {
+  margin-top: 5px;
+  color: rgba(91, 72, 55, 0.55);
+  font-family: var(--history-font);
+  font-size: 9px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.zhusha-rail > header .zhusha-rail-count {
+  margin: 2px 0 0 auto;
+  padding: 5px 8px;
+  border: 1px solid rgba(182, 74, 58, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 252, 246, 0.56);
+  color: #a74739;
+  font-family: var(--ui-font);
+  font-size: 9px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.zhusha-rail-list {
+  padding: 8px 8px 18px 2px;
+  scroll-behavior: smooth;
+  scroll-padding-block: 54px;
+  overscroll-behavior: contain;
+}
+
+.zhusha-rail-list > button {
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 5px;
+  min-height: 112px;
+  padding: 13px 11px;
+  border-radius: 14px;
+  color: #5f5042;
+}
+
+.zhusha-rail-list > button::before {
+  left: -4px;
+  top: 25px;
+  width: 7px;
+  height: 7px;
+  background: rgba(248, 241, 230, 0.96);
+}
+
+.zhusha-rail-list > button:not(.is-active):hover {
+  background: rgba(255, 252, 247, 0.42);
+  border-color: rgba(158, 91, 59, 0.08);
+}
+
+.zhusha-rail-list > button.is-active {
+  margin: 2px 0;
+  padding: 15px 11px;
+  border-radius: 14px;
+  background:
+    linear-gradient(105deg, rgba(255, 253, 248, 0.82), rgba(249, 240, 228, 0.62));
+  box-shadow:
+    0 14px 32px rgba(87, 57, 31, 0.09),
+    inset 3px 0 #b64939,
+    inset 0 1px rgba(255, 255, 255, 0.88);
+}
+
+.zhusha-number {
+  padding-top: 1px;
+  color: #987455;
+  font-family: var(--ui-font);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.zhusha-rail-list b {
+  color: #4e4034;
+  font-family: "STKaiti", "KaiTi", "FangSong", var(--history-font);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.07em;
+}
+
+.zhusha-rail-list small {
+  margin-top: 4px;
+  color: rgba(100, 79, 61, 0.68);
+  font-family: var(--ui-font);
+  font-size: 9.5px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.025em;
+}
+
+.zhusha-rail-list p {
+  margin-top: 10px;
+  color: rgba(79, 65, 53, 0.78);
+  font-family: "Songti SC", "SimSun", "Noto Serif SC", serif;
+  font-size: 11.5px;
+  line-height: 1.72;
+  letter-spacing: 0.025em;
+}
+
+.zhusha-collapse {
+  position: absolute;
+  left: 18px;
+  bottom: 15px;
+  z-index: 8;
+  min-width: 98px;
+  min-height: 38px;
+  margin: 0;
+  padding: 8px 13px;
+  justify-content: center;
+  border-color: rgba(135, 91, 54, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 252, 246, 0.76);
+  color: #705b49;
+  font-family: var(--ui-font);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  box-shadow:
+    0 10px 28px rgba(86, 57, 32, 0.1),
+    inset 0 1px rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.zhusha-collapse svg {
+  width: 15px;
+  height: 15px;
+}
+
+.zhusha-workbench.is-rail-collapsed {
+  grid-template-columns: 72px minmax(0, 1fr);
+}
+
+.zhusha-workbench.is-rail-collapsed .zhusha-rail {
+  padding: 0;
+  background:
+    linear-gradient(180deg, rgba(248, 242, 232, 0.72), rgba(231, 217, 198, 0.54));
+}
+
+.zhusha-workbench.is-rail-collapsed .zhusha-collapse {
+  inset: 18px 11px auto;
+  width: 50px;
+  height: auto;
+  min-width: 0;
+  min-height: 126px;
+  margin: 0;
+  padding: 12px 0;
+  flex-direction: column;
+  gap: 9px;
+  border-radius: 25px;
+  font-size: 10px;
+  transform: none;
+}
+
+.zhusha-workbench.is-rail-collapsed .zhusha-collapse span {
+  display: block;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.16em;
+}
+
+.zhusha-workbench.is-rail-collapsed .zhusha-collapse:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 900px) {
+  .zhusha-main::after {
+    opacity: 0.36;
+  }
+
+  .zhusha-workbench.is-rail-collapsed {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .zhusha-workbench.is-rail-collapsed .zhusha-rail {
+    order: 2;
+    height: 62px;
+    min-height: 62px;
+    border-top: 1px solid rgba(134, 92, 55, 0.14);
+  }
+
+  .zhusha-workbench.is-rail-collapsed .zhusha-collapse {
+    inset: 10px auto auto 50%;
+    width: auto;
+    height: 42px;
+    min-width: 128px;
+    min-height: 42px;
+    padding: 0 16px;
+    flex-direction: row;
+    transform: translateX(-50%);
+  }
+
+  .zhusha-workbench.is-rail-collapsed .zhusha-collapse span {
+    writing-mode: horizontal-tb;
+    letter-spacing: 0.08em;
+  }
+
+  .zhusha-workbench.is-rail-collapsed .zhusha-collapse:active {
+    transform: translateX(-50%) scale(0.97);
+  }
+}
+
+/* Historical reading hierarchy: Songti for narrative, Kaiti only for titles and quotations. */
+.yuheng-brand b,
+.yuheng-compare > div:first-child b,
+.yuheng-chart-panel h1,
+.yuheng-evidence h2,
+.yuheng-detail-card > header b,
+.zhusha-brand b,
+.zhusha-chart-head h1,
+.zhusha-rail-heading b,
+.zhusha-rail-list b,
+.zhusha-detail-card > header span {
+  font-family: var(--history-kaiti-font);
+}
+
+.yuheng-chart-panel header p,
+.yuheng-evidence-list > button p,
+.yuheng-detail-card.event-float-card > p,
+.yuheng-market-note span,
+.zhusha-rail-heading small,
+.zhusha-rail-list p,
+.zhusha-detail-card.event-float-card > p,
+.zhusha-market-note span {
+  font-family: var(--history-body-font);
+  text-wrap: pretty;
+}
+
+.zhusha-rail-list p {
+  font-size: 12px;
+  line-height: 1.78;
+  letter-spacing: 0.018em;
+}
+
+.zhusha-rail-list > button {
+  align-content: start;
+  background: linear-gradient(100deg, rgba(255, 253, 248, 0.1), transparent 76%);
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.28s var(--apple-ease),
+    transform 0.28s var(--apple-ease);
+}
+
+.zhusha-rail-list > button:hover {
+  transform: translateX(2px);
+}
+
+.historical-citation {
+  position: relative;
+  display: grid;
+  gap: 5px;
+  margin: 11px 0 2px;
+  padding: 10px 12px 9px 15px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 13px;
+}
+
+.historical-citation::before {
+  content: "";
+  position: absolute;
+  inset: 10px auto 10px 0;
+  width: 2px;
+  border-radius: 999px;
+}
+
+.historical-citation__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--ui-font);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.historical-citation__label svg {
+  width: 12px;
+  height: 12px;
+}
+
+.historical-citation blockquote {
+  margin: 0;
+  font-family: var(--history-kaiti-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.68;
+  letter-spacing: 0.055em;
+  text-wrap: pretty;
+}
+
+.historical-citation a {
+  width: fit-content;
+  font-family: var(--history-body-font);
+  font-size: 9px;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 0.18s ease, opacity 0.18s ease;
+}
+
+.historical-citation a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.historical-citation--jade {
+  border-color: rgba(116, 187, 168, 0.16);
+  background:
+    linear-gradient(115deg, rgba(78, 151, 133, 0.11), rgba(8, 28, 26, 0.04)),
+    rgba(255, 255, 255, 0.018);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);
+}
+
+.historical-citation--jade::before {
+  background: linear-gradient(180deg, rgba(126, 207, 185, 0.25), #78c9b3, rgba(126, 207, 185, 0.22));
+  box-shadow: 0 0 14px rgba(83, 181, 154, 0.2);
+}
+
+.historical-citation--jade .historical-citation__label {
+  color: rgba(134, 202, 184, 0.68);
+}
+
+.historical-citation--jade blockquote {
+  color: rgba(232, 222, 203, 0.9);
+}
+
+.historical-citation--jade a {
+  color: rgba(188, 207, 196, 0.5);
+}
+
+.historical-citation--paper {
+  border-color: rgba(151, 99, 57, 0.13);
+  background:
+    radial-gradient(circle at 92% 14%, rgba(182, 77, 57, 0.055), transparent 30%),
+    rgba(255, 252, 246, 0.44);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.7),
+    0 8px 22px rgba(86, 57, 32, 0.035);
+}
+
+.historical-citation--paper::before {
+  background: linear-gradient(180deg, rgba(180, 71, 54, 0.18), #b44839, rgba(180, 71, 54, 0.18));
+}
+
+.historical-citation--paper .historical-citation__label {
+  color: rgba(150, 62, 49, 0.7);
+}
+
+.historical-citation--paper blockquote {
+  color: rgba(78, 61, 47, 0.9);
+}
+
+.historical-citation--paper a {
+  color: rgba(104, 77, 56, 0.56);
+}
+
+@media (max-width: 700px) {
+  .historical-citation {
+    margin-top: 9px;
+    padding: 9px 10px 8px 13px;
+  }
+
+  .historical-citation blockquote {
+    font-size: 11px;
+    line-height: 1.62;
+  }
+}
+
+/* Final terminal contrast pass: keep the cartographic field visible without
+   letting its fine linework compete with the analytical hierarchy. */
+.yuheng-chart-panel,
+.yuheng-evidence {
+  border-color: rgba(153, 198, 180, 0.27) !important;
+  background-color: rgba(6, 25, 23, 0.78) !important;
+  box-shadow:
+    0 26px 72px rgba(0, 0, 0, 0.24),
+    inset 0 1px rgba(234, 255, 248, 0.065),
+    inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+
+.yuheng-chart-panel h1,
+.yuheng-evidence h2 {
+  color: #decaa3;
+  text-shadow: 0 1px 18px rgba(210, 184, 133, 0.08);
+}
+
+.yuheng-chart-panel header p {
+  color: rgba(212, 207, 192, 0.68);
+}
+
+.yuheng-chart-tools,
+.yuheng-modebar,
+.yuheng-evidence > header {
+  color: rgba(205, 216, 207, 0.76);
+}
+
+.yuheng-evidence-list > button span > b {
+  color: rgba(230, 214, 182, 0.93);
+}
+
+.yuheng-evidence-list > button p {
+  color: rgba(207, 211, 199, 0.76);
+}
+
+.yuheng-evidence-list > button small,
+.yuheng-evidence-list > button > em {
+  color: rgba(173, 196, 185, 0.68);
+}

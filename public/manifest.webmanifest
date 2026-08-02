@@ -1,0 +1,33 @@
+{
+  "name": "历史行情局 · 玉衡终端 / 朱砂长卷",
+  "short_name": "历史行情局",
+  "description": "把中国历史人物的一生与关键事件转换成可探索、可对比的叙事行情。",
+  "lang": "zh-CN",
+  "start_url": "/#b",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07100e",
+  "theme_color": "#07100e",
+  "categories": ["education", "history", "reference"],
+  "icons": [
+    {
+      "src": "/assets/app-icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "打开玉衡终端",
+      "short_name": "玉衡终端",
+      "url": "/#b"
+    },
+    {
+      "name": "打开朱砂长卷",
+      "short_name": "朱砂长卷",
+      "url": "/#c"
+    }
+  ]
+}
