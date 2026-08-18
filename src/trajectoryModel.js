@@ -345,6 +345,13 @@ export function attachLegacyAwareTerminal(figure) {
     phase: 100,
     score,
     summary: `${summaryBase.replace(/。+$/, "")}。 ${continuationNote}`,
+    evidence: terminalEvent.evidence || previous?.evidence || {
+      status: "source-backed",
+      sourceType: terminalEvent.source?.type || "primary",
+      sourceScope: terminalEvent.source?.scope || "collection",
+      dateCertainty: figure.dateCertainty || "traditional-chronology",
+      scoreNature: "interpretive-model",
+    },
     trajectory: {
       terminal: true,
       model: "legacy-retention-v1",

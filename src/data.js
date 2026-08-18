@@ -2,7 +2,11 @@ import { additionalFigures, dynastyOrder } from "./catalog.js";
 import { expandedFigures } from "./expandedCatalog.js";
 import { extendedFigures } from "./extendedCatalog.js";
 import { supplementalFigures } from "./supplementalCatalog.js";
+import { canonicalAncientFigures } from "./catalogs/canonicalAncient.js";
+import { canonicalImperialFigures } from "./catalogs/canonicalImperial.js";
+import { canonicalLateModernFigures } from "./catalogs/canonicalLateModern.js";
 import { attachFigureIndex } from "./figureIndex.js";
+import { attachDataQuality } from "./dataQuality.js";
 import { attachHistoricalCitations } from "./historicalCitations.js";
 import {
   attachLegacyAwareTerminal,
@@ -178,6 +182,9 @@ const allFigures = [
   ...expandedFigures,
   ...extendedFigures,
   ...supplementalFigures,
+  ...canonicalAncientFigures,
+  ...canonicalImperialFigures,
+  ...canonicalLateModernFigures,
 ];
 
 const seenFigureNames = new Set();
@@ -189,6 +196,7 @@ export const figures = allFigures
   })
   .map(attachAgeAxis)
   .map(attachFigureIndex)
+  .map(attachDataQuality)
   .map(attachLegacyAwareTerminal)
   .map(attachHistoricalCitations);
 
@@ -206,14 +214,15 @@ export const formatYear = (year) => year < 0 ? `前${Math.abs(year)}` : `${year}
 export const formatAge = (age) => `${Number.isInteger(age)?age:age.toFixed(1)}岁`;
 
 function addMicroTexture(figure,index,value,isEvent){
-  if(isEvent||value===null)return value;
-  const seed=[...figure.id].reduce((sum,char)=>sum+char.charCodeAt(0),0)%29;
-  const ripple=Math.sin((index+seed)*1.37)*.52+Math.sin(index*.43+seed*.71)*.31;
-  return +Math.max(0,Math.min(100,value+ripple)).toFixed(1);
+  if(value===null)return value;
+  // The line chart is an explanatory trajectory, not a simulated ticker.
+  // Keep it optically clean and numerically faithful; market-like intraperiod
+  // texture belongs only to the explicitly labelled OHLC view.
+  return +Math.max(0,Math.min(100,value)).toFixed(1);
 }
 
 export function buildComparison(left, right) {
-  const step=.5;
+  const step=.25;
   const maxAge=Math.ceil(Math.max(left.lifeSpan,right.lifeSpan));
   const rawAxis=Array.from({length:Math.round(maxAge/step)+1},(_,index)=>+(index*step).toFixed(1));
   const axis=rawAxis.map(formatAge);
@@ -226,17 +235,17 @@ export function buildComparison(left, right) {
     let marketState=targets.find((value)=>value!==null)??0;
     return rawAxis.map((age,index)=>{
       const event=map.get(index)||null;
-      const target=targets[index];
+      const target=event ? event.score : targets[index];
       if(target===null)return {value:null,age,raw:age,event:null,axisLabel:formatAge(age)};
-      if (event?.trajectory?.terminal) {
-        // The terminal point is a declared historical/legacy valuation. It
-        // must land on that value exactly instead of lagging behind through
-        // the visual smoothing state.
+      if (event) {
+        // Every declared event must land on its historical-model valuation.
+        // Otherwise a short, high-impact event can be visually deferred and
+        // appear as a false cliff at the later death endpoint.
         marketState = target;
       } else {
         const distance=target-marketState;
-        const maxMove=event?6.4:3.6;
-        const response=event?.delta&&Math.abs(event.delta)>12?.76:.56;
+        const maxMove=3.6;
+        const response=.56;
         marketState+=Math.max(-maxMove,Math.min(maxMove,distance*response));
       }
       const value=addMicroTexture(figure,index,marketState,event);

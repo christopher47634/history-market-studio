@@ -11,7 +11,11 @@ export function HistoricalCitation({ event, tone = "ink" }) {
         <Quotes weight="duotone" />
         {citation.kind}
       </span>
-      <blockquote>“{citation.quote}”</blockquote>
+      {citation.isExcerpt !== false && citation.quote ? (
+        <blockquote>“{citation.quote}”</blockquote>
+      ) : (
+        <p className="historical-citation__note">{citation.note}</p>
+      )}
       <a href={citation.url} target="_blank" rel="noreferrer">
         出处 · {citation.source}
       </a>

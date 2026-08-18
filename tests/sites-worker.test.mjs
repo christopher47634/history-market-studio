@@ -60,7 +60,8 @@ test("serves the historical-data API before static assets", async () => {
   const healthBody = await health.json();
   assert.equal(health.status, 200);
   assert.equal(healthBody.ok, true);
-  assert.ok(healthBody.meta.people >= 150);
+  assert.equal(healthBody.meta.people, 300);
+  assert.equal(healthBody.meta.qualityGates.subjectPagesResolved, 300);
 
   const comparison = await worker.fetch(
     new Request("https://example.test/api/compare?left=liubang&right=xiangyu"),
@@ -72,6 +73,48 @@ test("serves the historical-data API before static assets", async () => {
   assert.equal(comparisonBody.pair.right.name, "项羽");
   assert.ok(comparisonBody.turningPoints.length > 0);
   assert.equal(calls, 0);
+});
+
+test("supports indexed catalog search, pagination, facets and conditional caching", async () => {
+  const env = {
+    ASSETS: { fetch: async () => new Response("missing", { status: 404 }) },
+  };
+  const search = await worker.fetch(
+    new Request(
+      "https://example.test/api/figures?q=%E8%83%A1%E6%9C%8D%E9%AA%91%E5%B0%84&compact=1&limit=5",
+    ),
+    env,
+  );
+  const searchBody = await search.json();
+  assert.equal(search.status, 200);
+  assert.equal(searchBody.page.total, 1);
+  assert.equal(searchBody.page.returned, 1);
+  assert.equal(searchBody.figures[0].name, "赵武灵王");
+
+  const invalid = await worker.fetch(
+    new Request("https://example.test/api/figures?limit=0"),
+    env,
+  );
+  assert.equal(invalid.status, 400);
+
+  const index = await worker.fetch(
+    new Request("https://example.test/api/index"),
+    env,
+  );
+  const indexBody = await index.json();
+  assert.equal(
+    indexBody.facets.domains.reduce((sum, item) => sum + item.count, 0),
+    300,
+  );
+
+  const etag = search.headers.get("etag");
+  const cached = await worker.fetch(
+    new Request("https://example.test/api/figures?compact=1", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(cached.status, 304);
 });
 
 test("does not turn missing API or write requests into the app shell", async () => {

@@ -230,6 +230,84 @@ select {
   animation: apple-menu-in 260ms var(--apple-ease) both;
 }
 
+/* Portal surfaces carry their theme explicitly because they no longer inherit
+   from the page root once mounted under document.body. */
+.person-select__menu--portal.person-select__menu--paper {
+  color: #5f4b39;
+  border-color: rgba(158, 96, 67, 0.2) !important;
+  background:
+    radial-gradient(circle at 92% 6%, rgba(180, 74, 54, 0.055), transparent 30%),
+    linear-gradient(155deg, rgba(255, 252, 245, 0.97), rgba(241, 232, 218, 0.95)) !important;
+  box-shadow:
+    0 28px 72px rgba(79, 52, 31, 0.2),
+    0 2px 8px rgba(79, 52, 31, 0.08),
+    inset 0 1px rgba(255, 255, 255, 0.86) !important;
+}
+
+.person-select__menu--paper .person-index__overview {
+  border-color: rgba(137, 84, 54, 0.11);
+  background: linear-gradient(90deg, rgba(176, 70, 52, 0.07), transparent 62%);
+}
+
+.person-select__menu--paper .person-index__overview b,
+.person-select__menu--paper .person-select__results > button b {
+  color: #583f2f;
+}
+
+.person-select__menu--paper :where(
+  .person-index__overview small,
+  .person-index__overview em,
+  .person-index__label,
+  .person-index__label small,
+  .person-select__summary,
+  .person-select__summary > b,
+  .person-index__sort,
+  .person-select__results > button small,
+  .person-select__results > button b em,
+  .person-select__meta,
+  .person-select__meta small
+) {
+  color: rgba(103, 75, 55, 0.66) !important;
+}
+
+.person-select__menu--paper .person-select__search {
+  color: #876f5b;
+  border-color: rgba(123, 83, 52, 0.12);
+  background: rgba(105, 74, 47, 0.045);
+}
+
+.person-select__menu--paper .person-select__search input {
+  color: #4e3c2f;
+}
+
+.person-select__menu--paper .person-index__group,
+.person-select__menu--paper .person-select__summary {
+  border-color: rgba(117, 78, 47, 0.09);
+}
+
+.person-select__menu--paper .person-index__chips button {
+  color: #7a6654;
+  border-color: rgba(116, 77, 46, 0.1);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.person-select__menu--paper .person-index__chips button:is(:hover, .is-active) {
+  color: #a64335;
+  border-color: rgba(174, 62, 46, 0.24);
+  background: rgba(174, 62, 46, 0.065);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.person-select__menu--paper .person-index__sort select {
+  color: #6d5948;
+  border-color: rgba(116, 77, 46, 0.12);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.person-select__menu--paper .person-select__results > button:is(:hover, [aria-selected="true"]) {
+  background: linear-gradient(90deg, rgba(171, 67, 50, 0.085), rgba(171, 67, 50, 0.015));
+}
+
 .person-select__menu,
 .person-select__results {
   scrollbar-width: none;
@@ -1441,6 +1519,25 @@ html[data-view="c"] {
   line-height: 1.68;
   letter-spacing: 0.055em;
   text-wrap: pretty;
+}
+
+.historical-citation__note {
+  margin: 0;
+  color: inherit;
+  font-family: var(--history-body-font);
+  font-size: 10.5px;
+  line-height: 1.62;
+  letter-spacing: 0.025em;
+  opacity: 0.82;
+  text-wrap: pretty;
+}
+
+.historical-citation--jade .historical-citation__note {
+  color: rgba(213, 225, 216, 0.76);
+}
+
+.historical-citation--paper .historical-citation__note {
+  color: rgba(84, 67, 53, 0.75);
 }
 
 .historical-citation a {

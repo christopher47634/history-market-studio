@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import {
   BookmarkSimple,
   ChartBar,
@@ -25,6 +25,10 @@ import { CatalogSearch } from "../components/CatalogSearch.jsx";
 import { ComparisonPicker } from "../components/ComparisonPicker.jsx";
 import { HistoricalCitation } from "../components/HistoricalCitation.jsx";
 import { LifeMarketChart } from "../components/LifeMarketChart.jsx";
+import {
+  getAbilityRows,
+  getEvidencePresentation,
+} from "../components/evidencePresentation.js";
 import { getFloatingEventCardPosition } from "../components/floatingEventCard.js";
 import {
   getPairColors,
@@ -45,6 +49,7 @@ const floatingPosition = (pointer, compact = false, measured = {}) =>
   });
 
 export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataStatus, dataMeta, lastSyncedAt }) {
+  const reducedMotion = useReducedMotion();
   const [mode, setMode] = useState("line");
   const [candleId, setCandleId] = useState(left.id);
   const [active, setActive] = useState(null);
@@ -71,12 +76,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
             axisLabel: formatAge(event.age),
           }));
   const sourceType = useCallback(
-    (event) =>
-      /史记|汉书|三国志|旧唐书|新唐书|宋史|明史|清史/.test(event.source.label)
-        ? "正史"
-        : /通鉴|左传|春秋|编年/.test(event.source.label)
-          ? "编年"
-          : "杂记",
+    (event) => getEvidencePresentation(event).sourceKind,
     [],
   );
   const filteredEvents = useMemo(
@@ -86,6 +86,13 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
         : displayEvents.filter((event) => sourceType(event) === sourceFilter),
     [displayEvents, sourceFilter, sourceType],
   );
+  const availableSourceFilters = useMemo(
+    () => ["全部", ...new Set(displayEvents.map(sourceType))],
+    [displayEvents, sourceType],
+  );
+  useEffect(() => {
+    if (!availableSourceFilters.includes(sourceFilter)) setSourceFilter("全部");
+  }, [availableSourceFilters, sourceFilter]);
   useEffect(() => {
     if (candleId !== left.id && candleId !== right.id) setCandleId(left.id);
   }, [left.id, right.id, candleId]);
@@ -107,10 +114,54 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
     const rect = detailCardRef.current.getBoundingClientRect();
     setCardPosition(
       floatingPosition(cardAnchorRef.current, mode === "line", {
-        width: rect.width,
-        height: rect.height,
+        width: Math.max(rect.width, detailCardRef.current.offsetWidth),
+        height: Math.max(rect.height, detailCardRef.current.offsetHeight),
       }),
     );
+  }, [detailOpen, active?.title, active?.figure?.id, mode]);
+  useEffect(() => {
+    if (!detailOpen || !detailCardRef.current || !cardAnchorRef.current) return;
+    let frame = 0;
+    const syncCard = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        const rect = detailCardRef.current?.getBoundingClientRect();
+        if (!rect || !cardAnchorRef.current) return;
+        const livePoint = document
+          .querySelector(".life-snap-indicator")
+          ?.getBoundingClientRect();
+        const anchor = livePoint
+          ? {
+              ...cardAnchorRef.current,
+              snapX: livePoint.left,
+              snapY: livePoint.top,
+            }
+          : cardAnchorRef.current;
+        cardAnchorRef.current = anchor;
+        const nextPosition = floatingPosition(anchor, mode === "line", {
+            width: Math.max(rect.width, detailCardRef.current.offsetWidth),
+            height: Math.max(rect.height, detailCardRef.current.offsetHeight),
+          });
+        setCardPosition((current) =>
+          Math.abs(current.x - nextPosition.x) < 0.5 &&
+          Math.abs(current.y - nextPosition.y) < 0.5 &&
+          current.side === nextPosition.side
+            ? current
+            : nextPosition,
+        );
+      });
+    };
+    const observer = new ResizeObserver(syncCard);
+    observer.observe(detailCardRef.current);
+    window.addEventListener("resize", syncCard);
+    const tracker = window.setInterval(syncCard, 120);
+    syncCard();
+    return () => {
+      window.cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.clearInterval(tracker);
+      window.removeEventListener("resize", syncCard);
+    };
   }, [detailOpen, active?.title, active?.figure?.id, mode]);
   const cancelClose = useCallback(
     () => window.clearTimeout(closeTimer.current),
@@ -245,14 +296,19 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
               <p>0—100：综合生前资源、人物能力与身后制度或思想延续；死亡不作归零处理</p>
             </div>
             <div className="yuheng-chart-tools">
-              <span>
-                <i style={{ background: pairColors[0] }} />
-                {left.name}
-              </span>
-              <span>
-                <i style={{ background: pairColors[1] }} />
-                {right.name}
-              </span>
+              {mode === "line" ? <>
+                <span>
+                  <i style={{ background: pairColors[0] }} />
+                  {left.name}
+                </span>
+                <span>
+                  <i style={{ background: pairColors[1] }} />
+                  {right.name}
+                </span>
+              </> : <span>
+                <i style={{ background: candleFigure.color }} />
+                当前 K 线 · {candleFigure.name}
+              </span>}
               <button type="button" onClick={() => openSettings("chart")}>
                 <SlidersHorizontal />
                 显示设置
@@ -326,7 +382,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                       "--anchor-x": `${cardPosition.anchorOffsetX || 42}px`,
                       "--anchor-gap": `${cardPosition.anchorGap || 14}px`,
                     }}
-                    initial={{
+                    initial={reducedMotion ? false : {
                       opacity: 0,
                       y: 7,
                       scale: 0.975,
@@ -338,13 +394,13 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                       scale: 1,
                       filter: "blur(0px)",
                     }}
-                    exit={{
+                    exit={reducedMotion ? { opacity: 0 } : {
                       opacity: 0,
                       y: 4,
                       scale: 0.982,
                       filter: "blur(2px)",
                     }}
-                    transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                    transition={reducedMotion ? { duration: 0.01 } : { duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
                     onMouseEnter={cancelClose}
                     onMouseLeave={closeSoon}
                   >
@@ -398,31 +454,19 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                         </b>
                       </span>
                     </div>
-                    <div className="yuheng-impact-grid">
-                      {["权力", "军事", "联盟", "安全", "民心"].map(
-                        (label, index) => (
-                          <span key={label}>
-                            <b>{label}</b>
-                            <em
-                              className={
-                                active.delta >= 0 ? "is-up" : "is-down"
-                              }
-                            >
-                              {active.delta >= 0 ? "+" : "-"}
-                              {(
-                                Math.abs(active.delta) === 0
-                                  ? 0
-                                  : Math.abs(active.delta) / (index + 1) +
-                                    index * 0.7
-                              ).toFixed(1)}
-                            </em>
-                          </span>
-                        ),
-                      )}
+                    <div className="yuheng-impact-grid" aria-label="人物综合能力指标">
+                      {getAbilityRows(active.figure).map((metric) => (
+                        <span key={metric.key}>
+                          <b>{metric.label}</b>
+                          <em>{Math.round(metric.value)}</em>
+                        </span>
+                      ))}
                     </div>
                     <footer>
                       <span>史料依据 · {active.source.label}</span>
-                      <b>可信度 88%</b>
+                      <b>
+                        {getEvidencePresentation(active).sourceDepth} · {getEvidencePresentation(active).chronology}
+                      </b>
                     </footer>
                   </motion.article>
                 )}
@@ -437,7 +481,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
               史料依据 <Question />
             </h2>
             <div>
-              {["全部", "正史", "编年", "杂记"].map((filter) => (
+              {availableSourceFilters.map((filter) => (
                 <button
                   type="button"
                   key={filter}
@@ -462,8 +506,9 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
             {(evidenceExpanded
               ? filteredEvents
               : filteredEvents.slice(0, 6)
-            ).map((event, index) => (
-              <button
+            ).map((event) => {
+              const evidence = getEvidencePresentation(event);
+              return <button
                 type="button"
                 key={`${event.figure.id}-${event.title}`}
                 className={
@@ -492,9 +537,9 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                     {event.axisLabel || formatAge(event.age)}
                   </small>
                 </span>
-                <em>相关度 {Math.max(60, 95 - index * 5)}%</em>
-              </button>
-            ))}
+                <em>{evidence.sourceDepth} · {evidence.chronology}</em>
+              </button>;
+            })}
           </div>
           <button
             type="button"

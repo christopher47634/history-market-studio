@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 import { createPortal } from "react-dom";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import {
   ChartBar,
   ChartLineUp,
@@ -24,6 +24,10 @@ import { CatalogSearch } from "../components/CatalogSearch.jsx";
 import { ComparisonPicker } from "../components/ComparisonPicker.jsx";
 import { HistoricalCitation } from "../components/HistoricalCitation.jsx";
 import { LifeMarketChart } from "../components/LifeMarketChart.jsx";
+import {
+  getAbilityRows,
+  getEvidencePresentation,
+} from "../components/evidencePresentation.js";
 import { getFloatingEventCardPosition } from "../components/floatingEventCard.js";
 import {
   formatAge,
@@ -46,6 +50,7 @@ const getRailEventKey = (event) =>
   event ? `${event.figure?.id || "figure"}:${event.title}` : "";
 
 export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStatus, dataMeta }) {
+  const reducedMotion = useReducedMotion();
   const [mode, setMode] = useState("line");
   const [candleId, setCandleId] = useState(left.id);
   const [active, setActive] = useState(null);
@@ -107,10 +112,54 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
     const rect = detailCardRef.current.getBoundingClientRect();
     setCardPosition(
       floatingPosition(cardAnchorRef.current, mode === "line", {
-        width: rect.width,
-        height: rect.height,
+        width: Math.max(rect.width, detailCardRef.current.offsetWidth),
+        height: Math.max(rect.height, detailCardRef.current.offsetHeight),
       }),
     );
+  }, [detailOpen, active?.title, active?.figure?.id, mode]);
+  useEffect(() => {
+    if (!detailOpen || !detailCardRef.current || !cardAnchorRef.current) return;
+    let frame = 0;
+    const syncCard = () => {
+      window.cancelAnimationFrame(frame);
+      frame = window.requestAnimationFrame(() => {
+        const rect = detailCardRef.current?.getBoundingClientRect();
+        if (!rect || !cardAnchorRef.current) return;
+        const livePoint = document
+          .querySelector(".life-snap-indicator")
+          ?.getBoundingClientRect();
+        const anchor = livePoint
+          ? {
+              ...cardAnchorRef.current,
+              snapX: livePoint.left,
+              snapY: livePoint.top,
+            }
+          : cardAnchorRef.current;
+        cardAnchorRef.current = anchor;
+        const nextPosition = floatingPosition(anchor, mode === "line", {
+            width: Math.max(rect.width, detailCardRef.current.offsetWidth),
+            height: Math.max(rect.height, detailCardRef.current.offsetHeight),
+          });
+        setCardPosition((current) =>
+          Math.abs(current.x - nextPosition.x) < 0.5 &&
+          Math.abs(current.y - nextPosition.y) < 0.5 &&
+          current.side === nextPosition.side
+            ? current
+            : nextPosition,
+        );
+      });
+    };
+    const observer = new ResizeObserver(syncCard);
+    observer.observe(detailCardRef.current);
+    window.addEventListener("resize", syncCard);
+    const tracker = window.setInterval(syncCard, 120);
+    syncCard();
+    return () => {
+      window.cancelAnimationFrame(frame);
+      observer.disconnect();
+      window.clearInterval(tracker);
+      window.removeEventListener("resize", syncCard);
+    };
   }, [detailOpen, active?.title, active?.figure?.id, mode]);
   useLayoutEffect(() => {
     if (railCollapsed || !railFollow || railFollow.figureId !== railFigure.id)
@@ -197,7 +246,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
   const startComparison = useCallback(() => {
     setDetailOpen(false);
     stageRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-    stageRef.current?.animate?.(
+    if (!reducedMotion) stageRef.current?.animate?.(
       [
         { filter: "brightness(1)" },
         { filter: "brightness(1.07)" },
@@ -205,7 +254,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
       ],
       { duration: 720, easing: "cubic-bezier(.16,1,.3,1)" },
     );
-  }, []);
+  }, [reducedMotion]);
   return (
     <main className="zhusha-page">
       <header className="zhusha-header">
@@ -226,6 +275,8 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
             onLeft={onLeft}
             onRight={onRight}
             compact
+            portalMenus
+            tone="paper"
             onPreviewLeft={() => setRailPreviewId(left.id)}
             onPreviewRight={() => setRailPreviewId(right.id)}
             onPreviewEnd={(figure) =>
@@ -272,9 +323,9 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
             className="zhusha-rail-list"
             key={railFigure.id}
             data-figure={railFigure.id}
-            initial={{ opacity: 0, x: 8, filter: "blur(3px)" }}
+            initial={reducedMotion ? false : { opacity: 0, x: 8, filter: "blur(3px)" }}
             animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-            transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
+            transition={reducedMotion ? { duration: 0.01 } : { duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
           >
               {displayEvents.map((event, index) => (
                 <button
@@ -334,14 +385,19 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                 0—{comparison.maxAge} 岁 · 历史综合势能（0—100） <Info />
               </h1>
               <div className="zhusha-legend">
-                <span>
-                  <i style={{ background: colors[0] }} />
-                  {left.name} · 实线
-                </span>
-                <span>
-                  <i style={{ background: colors[1] }} />
-                  {right.name} · 实线
-                </span>
+                {mode === "line" ? <>
+                  <span>
+                    <i style={{ background: colors[0] }} />
+                    {left.name} · 实线
+                  </span>
+                  <span>
+                    <i style={{ background: colors[1] }} />
+                    {right.name} · 实线
+                  </span>
+                </> : <span>
+                  <i style={{ background: candleFigure.color }} />
+                  当前 K 线 · {candleFigure.name}
+                </span>}
                 <em>综合生前资源与身后制度、思想及作品延续</em>
               </div>
             </div>
@@ -412,7 +468,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                       "--anchor-x": `${cardPosition.anchorOffsetX || 54}px`,
                       "--anchor-gap": `${cardPosition.anchorGap || 14}px`,
                     }}
-                      initial={{
+                      initial={reducedMotion ? false : {
                         opacity: 0,
                         y: 10,
                         scale: 0.97,
@@ -424,13 +480,13 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                         scale: 1,
                         filter: "blur(0px)",
                       }}
-                      exit={{
+                      exit={reducedMotion ? { opacity: 0 } : {
                         opacity: 0,
                         y: 5,
                         scale: 0.98,
                         filter: "blur(3px)",
                       }}
-                      transition={{ duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
+                      transition={reducedMotion ? { duration: 0.01 } : { duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
                       onMouseEnter={cancelClose}
                       onMouseLeave={closeSoon}
                     >
@@ -491,28 +547,28 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                           </b>
                         </span>
                       </div>
-                      <div className="zhusha-dimensions">
-                        {["权力", "军事", "联盟", "安全", "民心"].map(
-                          (label, index) => (
-                            <span key={label}>
-                              <b>{label}</b>
+                      <div className="zhusha-dimensions" aria-label="人物综合能力指标">
+                        {getAbilityRows(active.figure).map((metric) => (
+                            <span key={metric.key}>
+                              <b>{metric.label} · {Math.round(metric.value)}</b>
                               <i>
                                 <em
                                   style={{
-                                    width: `${Math.max(12, Math.min(96, Math.abs(active.delta) * 3 + index * 9))}%`,
+                                    width: `${Math.max(4, Math.min(100, metric.value))}%`,
                                   }}
                                 />
                               </i>
                             </span>
-                          ),
-                        )}
+                          ))}
                       </div>
                       <footer>
                         <span>
                           <SealCheck />
                           史料依据：{active.source.label}
                         </span>
-                        <b>可信度 88%</b>
+                        <b>
+                          {getEvidencePresentation(active).sourceDepth} · {getEvidencePresentation(active).chronology}
+                        </b>
                       </footer>
                     </motion.article>
                   )}

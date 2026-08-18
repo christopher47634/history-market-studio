@@ -52,15 +52,26 @@ export function LifeMarketChart({
   const anchorRef = useRef(onEventAnchor);
   const blurRef = useRef(onEventBlur);
   const granularityRef = useRef(onGranularityChange);
+  const zoomRef = useRef({ start: 0, end: 100 });
   const raf = useRef(0);
   const pointerRaf = useRef(0);
   const pointerProbeRef = useRef(null);
   const pointerTetherRef = useRef(null);
   const snapTargetsRef = useRef([]);
   const snapStateRef = useRef({ key: "", clientX: 0, clientY: 0 });
+  const keyboardIndexRef = useRef(-1);
   const [ready, setReady] = useState(false);
   const [zoom, setZoom] = useState({ start: 0, end: 100 });
   const [snapTarget, setSnapTarget] = useState(null);
+  const [compactChart, setCompactChart] = useState(false);
+  const [inputEnvironment, setInputEnvironment] = useState(() => ({
+    coarse:
+      typeof window !== "undefined" &&
+      window.matchMedia("(hover: none), (pointer: coarse)").matches,
+    reducedMotion:
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  }));
   const comparison = useMemo(() => buildComparison(left, right), [left, right]);
   const colors = useMemo(() => getPairColors(left, right), [left, right]);
   const candleView = useMemo(
@@ -121,7 +132,11 @@ export function LifeMarketChart({
                   figure: right,
                 },
               })),
-          ]
+          ].sort(
+            (a, b) =>
+              a.event.age - b.event.age ||
+              a.event.figure.name.localeCompare(b.event.figure.name, "zh-CN"),
+          )
         : candleView.candles
             .map(
               (item, index) =>
@@ -144,6 +159,23 @@ export function LifeMarketChart({
   anchorRef.current = onEventAnchor;
   blurRef.current = onEventBlur;
   granularityRef.current = onGranularityChange;
+  zoomRef.current = zoom;
+
+  useEffect(() => {
+    const coarseQuery = window.matchMedia("(hover: none), (pointer: coarse)");
+    const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const sync = () =>
+      setInputEnvironment({
+        coarse: coarseQuery.matches,
+        reducedMotion: motionQuery.matches,
+      });
+    coarseQuery.addEventListener?.("change", sync);
+    motionQuery.addEventListener?.("change", sync);
+    return () => {
+      coarseQuery.removeEventListener?.("change", sync);
+      motionQuery.removeEventListener?.("change", sync);
+    };
+  }, []);
 
   useEffect(
     () => setZoom({ start: 0, end: 100 }),
@@ -184,7 +216,12 @@ export function LifeMarketChart({
       });
       chartRef.current = chart;
       zr = chart.getZr();
-      observer = new ResizeObserver(() => chart.resize());
+      const chartNode = rootRef.current;
+      observer = new ResizeObserver((entries) => {
+        chart.resize();
+        const width = entries[0]?.contentRect.width || rootRef.current?.clientWidth;
+        if (Number.isFinite(width)) setCompactChart(width <= 560);
+      });
       observer.observe(rootRef.current);
       const pixelFor = (target) => {
         try {
@@ -375,8 +412,54 @@ export function LifeMarketChart({
           ),
         );
       });
+      const onWheelZoom = (event) => {
+        const bounds = chartNode?.getBoundingClientRect();
+        if (!bounds) return;
+        const chartX = event.clientX - bounds.left;
+        const chartY = event.clientY - bounds.top;
+        try {
+          if (!chart.containPixel({ gridIndex: 0 }, [chartX, chartY])) return;
+        } catch {
+          return;
+        }
+        event.preventDefault();
+        event.stopPropagation();
+        const current = zoomRef.current;
+        const span = current.end - current.start;
+        const intensity = Math.min(
+          0.44,
+          Math.max(0.12, (Math.abs(event.deltaY) / 1200) * 0.44),
+        );
+        const nextSpan = Math.max(
+          7,
+          Math.min(100, span * (event.deltaY < 0 ? 1 - intensity : 1 + intensity)),
+        );
+        const ratio = Math.max(0, Math.min(1, chartX / bounds.width));
+        const center = current.start + span * ratio;
+        let start = center - nextSpan * ratio;
+        let end = start + nextSpan;
+        if (start < 0) {
+          end -= start;
+          start = 0;
+        }
+        if (end > 100) {
+          start -= end - 100;
+          end = 100;
+        }
+        const next = {
+          start: +Math.max(0, start).toFixed(3),
+          end: +Math.min(100, end).toFixed(3),
+        };
+        zoomRef.current = next;
+        setZoom(next);
+        chart.dispatchAction({ type: "dataZoom", ...next });
+      };
+      chartNode.addEventListener("wheel", onWheelZoom, {
+        passive: false,
+        capture: true,
+      });
       setReady(true);
-      chart.__snapHandlers = { onMove, onClick, onOut };
+      chart.__snapHandlers = { onMove, onClick, onOut, onWheelZoom, chartNode };
     }
     mount();
     return () => {
@@ -388,6 +471,11 @@ export function LifeMarketChart({
         zr.off("mousemove", chart.__snapHandlers.onMove);
         zr.off("click", chart.__snapHandlers.onClick);
         zr.off("globalout", chart.__snapHandlers.onOut);
+        chart.__snapHandlers.chartNode?.removeEventListener(
+          "wheel",
+          chart.__snapHandlers.onWheelZoom,
+          true,
+        );
       }
       chart?.dispose();
       chartRef.current = null;
@@ -403,7 +491,7 @@ export function LifeMarketChart({
     if (!chart || !ready) return;
     const paper = variant === "paper";
     const terminal = variant === "terminal";
-    const narrow = typeof window !== "undefined" && window.innerWidth <= 560;
+    const narrow = compactChart;
       const label = paper ? "#806f5e" : "#a5bdb3",
         gridLine = paper ? "rgba(92,65,41,.12)" : "rgba(137,196,176,.16)",
         axisLine = paper ? "rgba(71,49,31,.34)" : "rgba(155,204,186,.3)";
@@ -412,7 +500,7 @@ export function LifeMarketChart({
       start: zoom.start,
       end: zoom.end,
       filterMode: "none",
-      zoomOnMouseWheel: true,
+      zoomOnMouseWheel: false,
       moveOnMouseMove: true,
       moveOnMouseWheel: false,
     };
@@ -458,7 +546,7 @@ export function LifeMarketChart({
         axisLine: { show: false },
         axisTick: { show: false },
         axisLabel: { color: label, fontSize: narrow ? 8.5 : 10 },
-        splitLine: { lineStyle: { color: gridLine, type: "dashed" } },
+        splitLine: { lineStyle: { color: gridLine, type: "solid", width: 0.6 } },
       };
       const glowSeries = [left, right].map((figure, index) => ({
         name: `${figure.name} · 光晕`,
@@ -547,7 +635,7 @@ export function LifeMarketChart({
                   width: 0.55,
                 },
                 label: {
-                  show: true,
+                  show: !narrow,
                   position: "insideEndTop",
                   color: paper ? "#765b43" : "#c2aa87",
                   fontSize: narrow ? 7.5 : 9,
@@ -635,7 +723,7 @@ export function LifeMarketChart({
               lineStyle: {
                 color: candleFigure.color,
                 width: 1.2,
-                type: "dashed",
+                type: "solid",
                 opacity: 0.85,
               },
             },
@@ -643,7 +731,7 @@ export function LifeMarketChart({
         : [];
       chart.setOption(
         {
-          animationDurationUpdate: 360,
+          animationDurationUpdate: inputEnvironment.reducedMotion ? 0 : 360,
           animationEasingUpdate: "cubicOut",
           grid: terminal ? [mainGrid, miniGrid] : [mainGrid],
           xAxis: terminal
@@ -722,7 +810,7 @@ export function LifeMarketChart({
       }));
       chart.setOption(
         {
-          animationDurationUpdate: 360,
+          animationDurationUpdate: inputEnvironment.reducedMotion ? 0 : 360,
           grid: {
             left: narrow ? 38 : 52,
             right: narrow ? 18 : 32,
@@ -754,7 +842,7 @@ export function LifeMarketChart({
             axisLabel: { color: label, fontSize: narrow ? 8.5 : 10 },
             axisLine: { show: false },
             axisTick: { show: false },
-            splitLine: { lineStyle: { color: gridLine, type: "dashed" } },
+            splitLine: { lineStyle: { color: gridLine, type: "solid", width: 0.6 } },
           },
           dataZoom: [zoomInside],
           tooltip: {
@@ -859,6 +947,8 @@ export function LifeMarketChart({
     candleView,
     markers,
     zoom,
+    compactChart,
+    inputEnvironment.reducedMotion,
   ]);
 
   useEffect(() => {
@@ -900,7 +990,6 @@ export function LifeMarketChart({
             ? "left"
             : "right",
       });
-      if (snapStateRef.current.key === target.key) return;
       snapStateRef.current = { key: target.key, clientX, clientY };
       anchorRef.current?.(target.event, {
         clientX,
@@ -936,15 +1025,87 @@ export function LifeMarketChart({
     setZoom({ start: 0, end: 100 });
     chartRef.current?.dispatchAction({ type: "dataZoom", start: 0, end: 100 });
   };
+  const focusKeyboardTarget = (target) => {
+    const chart = chartRef.current;
+    const root = rootRef.current;
+    if (!chart || !root || !target) return;
+    let pixel;
+    try {
+      pixel = chart.convertToPixel({ xAxisIndex: 0, yAxisIndex: 0 }, [
+        target.axisValue,
+        target.value,
+      ]);
+    } catch {
+      return;
+    }
+    if (!Array.isArray(pixel) || !pixel.every(Number.isFinite)) return;
+    const bounds = root.getBoundingClientRect();
+    const clientX = bounds.left + pixel[0];
+    const clientY = bounds.top + pixel[1];
+    snapStateRef.current = { key: target.key, clientX, clientY };
+    setSnapTarget({
+      key: target.key,
+      x: pixel[0],
+      y: pixel[1],
+      color: target.event.figure.color,
+      label: target.event.title,
+      align:
+        pixel[0] + (variant === "paper" ? 556 : 390) < bounds.width
+          ? "left"
+          : "right",
+    });
+    focusRef.current?.(target.event, {
+      clientX,
+      clientY,
+      chartX: pixel[0],
+      chartY: pixel[1],
+      snapX: clientX,
+      snapY: clientY,
+      chartLeft: bounds.left,
+      chartRight: bounds.right,
+      chartTop: bounds.top,
+      chartBottom: bounds.bottom,
+      source: "keyboard",
+    });
+  };
+  const handleChartKeyDown = (event) => {
+    if (!snapTargets.length) return;
+    const currentIndex = snapTargets.findIndex(
+      (item) =>
+        item.event.title === activeEvent?.title &&
+        item.event.figure?.id === activeEvent?.figure?.id,
+    );
+    if (["ArrowRight", "ArrowDown", "ArrowLeft", "ArrowUp", "Home", "End"].includes(event.key)) {
+      event.preventDefault();
+      const base = currentIndex >= 0 ? currentIndex : keyboardIndexRef.current;
+      const next =
+        event.key === "Home"
+          ? 0
+          : event.key === "End"
+            ? snapTargets.length - 1
+            : event.key === "ArrowRight" || event.key === "ArrowDown"
+              ? Math.min(snapTargets.length - 1, Math.max(-1, base) + 1)
+              : Math.max(0, (base < 0 ? snapTargets.length : base) - 1);
+      keyboardIndexRef.current = next;
+      focusKeyboardTarget(snapTargets[next]);
+    } else if (event.key === "Escape") {
+      setSnapTarget(null);
+      snapStateRef.current = { key: "", clientX: 0, clientY: 0 };
+      blurRef.current?.();
+    }
+  };
   return (
     <div
       className={`life-market-chart life-market-chart--${variant} life-market-chart--${mode}`}
+      data-zoom-start={zoom.start}
+      data-zoom-end={zoom.end}
     >
       <div
         ref={rootRef}
         className="life-market-chart__canvas"
         role="img"
         tabIndex={0}
+        onKeyDown={handleChartKeyDown}
         aria-describedby={descriptionId}
         aria-label={
           mode === "line"
@@ -957,17 +1118,21 @@ export function LifeMarketChart({
             ? `${left.name}与${right.name}从零岁到${comparison.maxAge}岁的历史综合势能走势。关键事件可从页面事件列表使用键盘逐项查看。`
           : `${candleFigure.name}的蜡烛图当前显示${candleView.granularity.label}，可使用复位按钮恢复完整年龄范围。`}
       </p>
-      <svg className="life-pointer-tether" aria-hidden="true" focusable="false">
-        <line ref={pointerTetherRef} x1="0" y1="0" x2="0" y2="0" />
-      </svg>
-      <span
-        ref={pointerProbeRef}
-        className="life-pointer-probe"
-        aria-hidden="true"
-      >
-        <i />
-        <b />
-      </span>
+      {!inputEnvironment.coarse && (
+        <>
+          <svg className="life-pointer-tether" aria-hidden="true" focusable="false">
+            <line ref={pointerTetherRef} x1="0" y1="0" x2="0" y2="0" />
+          </svg>
+          <span
+            ref={pointerProbeRef}
+            className="life-pointer-probe"
+            aria-hidden="true"
+          >
+            <i />
+            <b />
+          </span>
+        </>
+      )}
       {snapTarget && (
         <span
           className={`life-snap-indicator ${snapTarget.align === "right" ? "is-left" : ""}`}
@@ -987,7 +1152,7 @@ export function LifeMarketChart({
       )}
       <span className="life-chart-hint">
         <MouseScroll />
-        进入节点附近即可吸附 · 滚轮/双指缩放
+        进入节点附近即可吸附 · 滚轮/双指缩放 · 方向键逐项查看
       </span>
       <span className="life-chart-age">
         年龄共轴 · 0—{comparison.maxAge} 岁

@@ -79,12 +79,21 @@ const eraCitations = {
 export function getHistoricalCitation(event, figure = event?.figure) {
   const figureId = figure?.id || event?.figureId;
   const eventKey = figureId && event?.title ? `${figureId}:${event.title}` : "";
-  const selected =
-    eventCitations[eventKey] ||
-    figureCitations[figureId] ||
-    eraCitations[figure?.dynasty] ||
-    eraCitations.秦汉;
-  return { ...selected };
+  const selected = eventCitations[eventKey] || figureCitations[figureId];
+  if (selected) return { ...selected, isExcerpt: true };
+
+  if (event?.source?.url) {
+    return {
+      quote: "",
+      note: `该节点依据${event.source.label}中的人物纪传或编年材料整理；势能分值为解释性模型，不是史籍原始数值。`,
+      source: event.source.label,
+      url: event.source.url,
+      kind: event.source.scope === "biography" ? "人物纪传索引" : "时代史料索引",
+      isExcerpt: false,
+    };
+  }
+
+  return { ...(eraCitations[figure?.dynasty] || eraCitations.秦汉), isExcerpt: true };
 }
 
 export function attachHistoricalCitations(figure) {

@@ -50,13 +50,26 @@ for (const figure of figures) {
 
   const terminal = terminalEvents.at(-1);
   const comparison = buildComparison(figure, figure).left;
-  const visibleEnd = comparison.filter((point) => point.value !== null).at(-1);
+  const visiblePoints = comparison.filter((point) => point.value !== null);
+  const visibleEnd = visiblePoints.at(-1);
+  const visiblePrior = visiblePoints.at(-2);
   if (!visibleEnd || visibleEnd.value <= 0) {
     fail(`${figure.name}: 折线显示端点仍为零或缺失`);
   }
   if (Math.abs(visibleEnd.value - terminal.score) > 0.15) {
     fail(
       `${figure.name}: 折线端点 ${visibleEnd.value} 没有落在终章量化值 ${terminal.score}`,
+    );
+  }
+  if (
+    visiblePrior &&
+    visibleEnd.value < visiblePrior.value * terminalTrajectoryRules.minimumRetention - 0.05
+  ) {
+    fail(
+      `${figure.name}: 可见终点仅保留上一采样点的 ${(
+        (visibleEnd.value / visiblePrior.value) *
+        100
+      ).toFixed(1)}%`,
     );
   }
 

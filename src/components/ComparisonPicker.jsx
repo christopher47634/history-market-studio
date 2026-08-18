@@ -1,4 +1,5 @@
 import {
+  useCallback,
   useEffect,
   useId,
   useLayoutEffect,
@@ -31,6 +32,7 @@ function PersonSelect({
   onChange,
   label,
   portalMenu = false,
+  tone = "jade",
   onPreview,
   onPreviewEnd,
 }) {
@@ -44,6 +46,9 @@ function PersonSelect({
   const rootRef = useRef(null);
   const triggerRef = useRef(null);
   const menuRef = useRef(null);
+  const searchRef = useRef(null);
+  const resultRefs = useRef([]);
+  const [activeResult, setActiveResult] = useState(0);
   const [menuPosition, setMenuPosition] = useState(null);
   const stats = useMemo(() => getIndexStats(figures), [figures]);
   const availableDynasties = useMemo(
@@ -72,17 +77,18 @@ function PersonSelect({
       const below = window.innerHeight - rect.bottom - 12;
       const above = rect.top - 12;
       const openUp = below < 440 && above > below;
-      const height = Math.max(
-        360,
-        Math.min(desiredHeight, openUp ? above - 8 : below - 8),
-      );
+      const available = openUp ? above - 8 : below - 8;
+      const height = Math.max(248, Math.min(desiredHeight, available));
       const left = Math.max(
         12,
         Math.min(rect.left, window.innerWidth - width - 12),
       );
-      const top = openUp
-        ? Math.max(12, rect.top - height - 8)
-        : rect.bottom + 8;
+      const top =
+        available < 248
+          ? 12
+          : openUp
+            ? Math.max(12, rect.top - height - 8)
+            : rect.bottom + 8;
       setMenuPosition({ left, top, width, height });
     };
     placeMenu();
@@ -93,6 +99,13 @@ function PersonSelect({
       window.removeEventListener("scroll", placeMenu, true);
     };
   }, [open, portalMenu]);
+  const closeMenu = useCallback((restoreFocus = false) => {
+    setOpen(false);
+    setQuery("");
+    setActiveResult(0);
+    if (restoreFocus)
+      window.requestAnimationFrame(() => triggerRef.current?.focus());
+  }, []);
   useEffect(() => {
     if (!open) return;
     const closeOutside = (event) => {
@@ -100,10 +113,13 @@ function PersonSelect({
         !rootRef.current?.contains(event.target) &&
         !menuRef.current?.contains(event.target)
       )
-        setOpen(false);
+        closeMenu(false);
     };
     const closeEscape = (event) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeMenu(true);
+      }
     };
     document.addEventListener("pointerdown", closeOutside);
     document.addEventListener("keydown", closeEscape);
@@ -111,7 +127,43 @@ function PersonSelect({
       document.removeEventListener("pointerdown", closeOutside);
       document.removeEventListener("keydown", closeEscape);
     };
-  }, [open]);
+  }, [open, closeMenu]);
+  useEffect(() => {
+    if (!open) return;
+    setActiveResult(0);
+  }, [open, query, period, dynasty, domain, sort]);
+  useEffect(() => {
+    resultRefs.current = resultRefs.current.slice(0, results.length);
+  }, [results.length]);
+  const focusResult = useCallback(
+    (index) => {
+      if (!results.length) return;
+      const next = Math.max(0, Math.min(results.length - 1, index));
+      setActiveResult(next);
+      resultRefs.current[next]?.focus();
+      resultRefs.current[next]?.scrollIntoView({ block: "nearest" });
+    },
+    [results.length],
+  );
+  const handleResultKeys = useCallback(
+    (event, index) => {
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        focusResult(index + 1);
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        if (index === 0) searchRef.current?.focus();
+        else focusResult(index - 1);
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        focusResult(0);
+      } else if (event.key === "End") {
+        event.preventDefault();
+        focusResult(results.length - 1);
+      }
+    },
+    [focusResult, results.length],
+  );
   const resetFilters = () => {
     setPeriod("all");
     setDynasty("全部");
@@ -120,10 +172,11 @@ function PersonSelect({
   const menu = (
     <div
       ref={menuRef}
-      className={`person-select__menu ${portalMenu ? "person-select__menu--portal" : ""}`}
+      className={`person-select__menu person-select__menu--${tone} ${portalMenu ? "person-select__menu--portal" : ""}`}
       style={portalMenu && menuPosition ? menuPosition : undefined}
       role="dialog"
       aria-label={`${label}人物选择`}
+      aria-modal="false"
     >
       <header className="person-index__overview">
         <span>
@@ -137,10 +190,17 @@ function PersonSelect({
       <div className="person-select__search">
         <MagnifyingGlass size={15} />
         <input
+          ref={searchRef}
           autoFocus
           aria-label={`${label}搜索`}
           value={query}
           onChange={(event) => setQuery(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "ArrowDown") {
+              event.preventDefault();
+              focusResult(0);
+            }
+          }}
           placeholder="搜姓名、字号、事件或领域…"
         />
       </div>
@@ -228,15 +288,27 @@ function PersonSelect({
           </select>
         </label>
       </div>
-      <div className="person-select__results" aria-live="polite">
-        {results.map((person) => (
+      <div
+        className="person-select__results"
+        aria-live="polite"
+        role="listbox"
+        aria-label={`${label}搜索结果，共 ${results.length} 位`}
+      >
+        {results.map((person, index) => (
           <button
             type="button"
             key={person.id}
+            ref={(node) => {
+              resultRefs.current[index] = node;
+            }}
+            role="option"
+            aria-selected={index === activeResult}
+            tabIndex={index === activeResult ? 0 : -1}
+            onFocus={() => setActiveResult(index)}
+            onKeyDown={(event) => handleResultKeys(event, index)}
             onClick={() => {
               onChange(person);
-              setOpen(false);
-              setQuery("");
+              closeMenu(true);
             }}
           >
             <span
@@ -287,6 +359,14 @@ function PersonSelect({
         type="button"
         className="person-select__trigger"
         onClick={() => setOpen(!open)}
+        onKeyDown={(event) => {
+          if (event.key === "ArrowDown" || event.key === "Enter") {
+            if (!open) {
+              event.preventDefault();
+              setOpen(true);
+            }
+          }
+        }}
         aria-expanded={open}
         aria-haspopup="dialog"
       >
@@ -320,6 +400,7 @@ export function ComparisonPicker({
   onRight,
   compact = false,
   portalMenus = false,
+  tone = "jade",
   onPreviewLeft,
   onPreviewRight,
   onPreviewEnd,
@@ -369,6 +450,7 @@ export function ComparisonPicker({
         onChange={onLeft}
         label="人物 A"
         portalMenu={portalMenus}
+        tone={tone}
         onPreview={onPreviewLeft}
         onPreviewEnd={onPreviewEnd}
       />
@@ -404,6 +486,7 @@ export function ComparisonPicker({
         onChange={onRight}
         label="人物 B"
         portalMenu={portalMenus}
+        tone={tone}
         onPreview={onPreviewRight}
         onPreviewEnd={onPreviewEnd}
       />

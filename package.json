@@ -11,16 +11,17 @@
     "test:trajectories": "node scripts/audit-terminal-trajectories.mjs",
     "test:ui": "node scripts/validate-ui-contract.mjs",
     "test:production": "node scripts/validate-production.mjs",
-    "test:sites": "node --test tests/sites-worker.test.mjs"
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "audit:sources": "node scripts/audit-source-links.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
     "@vitejs/plugin-react": "5.0.4",
-    "echarts": "^6.0.0",
+    "echarts": "^6.1.0",
     "motion": "^12.23.24",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "vite": "6.4.2"
+    "vite": "6.4.3"
   },
   "devDependencies": {
     "esbuild": "^0.25.10"
