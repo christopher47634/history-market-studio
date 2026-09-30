@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "小商人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "徐光啟，字子先，上海人。",
+        "textSimplified": "徐光启，字子先，上海人。",
+        "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+      },
+      "verified": true
     },
     {
       "year": 1597,
@@ -50,9 +55,14 @@
       "delta": 8,
       "rationale": "入仕",
       "summary": "举人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "萬歷二十五年舉鄉試第一，又七年成進士。",
+        "textSimplified": "万历二十五年举乡试第一，又七年成进士。",
+        "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+      },
+      "verified": true
     },
     {
       "year": 1604,
@@ -68,9 +78,14 @@
       "delta": 8,
       "rationale": "入仕",
       "summary": "翰林",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "萬歷二十五年舉鄉試第一，又七年成進士。",
+        "textSimplified": "万历二十五年举乡试第一，又七年成进士。",
+        "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+      },
+      "verified": true
     },
     {
       "year": 1607,
@@ -86,9 +101,14 @@
       "delta": 12,
       "rationale": "科学",
       "summary": "与利玛窦",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "從西洋人利瑪竇學天文、歷算、火器，盡其術。",
+        "textSimplified": "从西洋人利玛窦学天文、历算、火器，尽其术。",
+        "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+      },
+      "verified": true
     },
     {
       "year": 1629,
@@ -104,9 +124,14 @@
       "delta": 14,
       "rationale": "科学",
       "summary": "崇祯历书",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "臣聞歷久必差，宜及時修正。",
+        "textSimplified": "臣闻历久必差，宜及时修正。",
+        "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+      },
+      "verified": true
     },
     {
       "year": 1632,
@@ -122,9 +147,14 @@
       "delta": 22,
       "rationale": "宰辅",
       "summary": "东阁大学士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "五年五月，以本官兼東閣大學士，入參機務，與鄭以偉並命。",
+        "textSimplified": "五年五月，以本官兼东阁大学士，入参机务，与郑以伟并命。",
+        "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -134,9 +164,14 @@
     "retention": 0.95,
     "reason": "农政全书",
     "score": 81.7,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "明年十月卒。",
+      "textSimplified": "明年十月卒。",
+      "source": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7251"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -176,8 +211,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

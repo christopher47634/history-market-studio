@@ -55,9 +55,14 @@
       "delta": 17,
       "rationale": "改投蜀汉",
       "summary": "诸葛亮北伐，姜维不见容于魏，诣亮",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "維等乃俱詣諸葛亮。",
+        "textSimplified": "维等乃俱诣诸葛亮。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
     },
     {
       "year": 234,
@@ -73,9 +78,14 @@
       "delta": 15,
       "rationale": "继承者",
       "summary": "亮卒，维还成都",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十二年，亮卒，維還成都，為右監軍、輔漢將軍，統諸軍，進封平襄侯。",
+        "textSimplified": "十二年，亮卒，维还成都，为右监军、辅汉将军，统诸军，进封平襄侯。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
     },
     {
       "year": 247,
@@ -214,8 +224,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

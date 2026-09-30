@@ -15,6 +15,34 @@
     {
       "label": "《旧五代史·卷二十七》",
       "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B727"
+    },
+    {
+      "label": "《旧五代史·卷二十八》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B728"
+    },
+    {
+      "label": "《旧五代史·卷二十九》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B729"
+    },
+    {
+      "label": "《旧五代史·卷三十》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B730"
+    },
+    {
+      "label": "《旧五代史·卷三十一》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B731"
+    },
+    {
+      "label": "《旧五代史·卷三十二》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B732"
+    },
+    {
+      "label": "《旧五代史·卷三十三》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B733"
+    },
+    {
+      "label": "《旧五代史·卷三十四》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B734"
     }
   ],
   "events": [
@@ -32,9 +60,14 @@
       "delta": 0,
       "rationale": "王子",
       "summary": "李克用长子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "母曰貞簡皇后曹氏，以唐光啟元年歲在乙巳，冬十月二十二日癸亥，生帝於晉陽宮。",
+        "textSimplified": "母曰贞简皇后曹氏，以唐光启元年岁在乙巳，冬十月二十二日癸亥，生帝于晋阳宫。",
+        "source": "《旧五代史·卷二十七》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B727"
+      },
+      "verified": true
     },
     {
       "year": 908,
@@ -50,9 +83,14 @@
       "delta": 40,
       "rationale": "继位危局",
       "summary": "克用卒，嗣位，叔父克宁谋乱",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及武皇厭代，帝乃嗣王位於晉陽，時年二十有四。",
+        "textSimplified": "及武皇厌代，帝乃嗣王位于晋阳，时年二十有四。",
+        "source": "《旧五代史·卷二十七》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B727"
+      },
+      "verified": true
     },
     {
       "year": 908,
@@ -109,9 +147,14 @@
       "delta": 4,
       "rationale": "中原之主",
       "summary": "即位于魏州，入汴梁灭梁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "夏四月己巳，帝升壇，祭告昊天上帝，遂即皇帝位，文武臣僚稱賀。",
+        "textSimplified": "夏四月己巳，帝升坛，祭告昊天上帝，遂即皇帝位，文武臣僚称贺。",
+        "source": "《旧五代史·卷二十九》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B729"
+      },
+      "verified": true
     },
     {
       "year": 925,
@@ -127,9 +170,14 @@
       "delta": -12,
       "rationale": "昏乱",
       "summary": "伶人干政，诛杀功臣郭崇韬",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "是時伶人景進用事，閹官競進，故重臣憂懼，拜章請退。",
+        "textSimplified": "是时伶人景进用事，阉官竞进，故重臣忧惧，拜章请退。",
+        "source": "《旧五代史·卷三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B731"
+      },
+      "verified": true
     },
     {
       "year": 926,
@@ -145,9 +193,14 @@
       "delta": -52,
       "rationale": "死",
       "summary": "郭从谦作乱，中流矢死",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "既而焚興教門，緣城而入，登宮牆歡噪，帝御親軍格鬥，殺亂兵數百。",
+        "textSimplified": "既而焚兴教门，缘城而入，登宫墙欢噪，帝御亲军格斗，杀乱兵数百。",
+        "source": "《旧五代史·卷三十四》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B734"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -157,9 +210,14 @@
     "retention": 0.8,
     "reason": "后唐易主",
     "score": 22.4,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "俄而帝為流矢所中，亭午，崩於絳霄殿之廡下，時年四十三。",
+      "textSimplified": "俄而帝为流矢所中，亭午，崩于绛霄殿之庑下，时年四十三。",
+      "source": "《旧五代史·卷三十四》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B734"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -201,8 +259,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

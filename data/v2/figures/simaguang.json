@@ -50,9 +50,14 @@
       "delta": 0,
       "rationale": "少年成名",
       "summary": "破瓮救儿",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "群兒戲于庭，一兒登甕，足跌沒水中，眾皆棄去，光持石擊甕破之，水迸，兒得活。",
+        "textSimplified": "群儿戏于庭，一儿登瓮，足跌没水中，众皆弃去，光持石击瓮破之，水迸，儿得活。",
+        "source": "《宋史·卷三百三十六 列传第九十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+      },
+      "verified": true
     },
     {
       "year": 1038,
@@ -68,9 +73,14 @@
       "delta": 8,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "仁宗寶元初，中進士甲科。",
+        "textSimplified": "仁宗宝元初，中进士甲科。",
+        "source": "《宋史·卷三百三十六 列传第九十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+      },
+      "verified": true
     },
     {
       "year": 1066,
@@ -86,9 +96,14 @@
       "delta": 28,
       "rationale": "修史",
       "summary": "奉诏编史",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "至是，神宗名之曰《資治通鑒》，自製《序》授之，俾日進讀。",
+        "textSimplified": "至是，神宗名之曰《资治通鉴》，自制《序》授之，俾日进读。",
+        "source": "《宋史·卷三百三十六 列传第九十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+      },
+      "verified": true
     },
     {
       "year": 1070,
@@ -104,9 +119,14 @@
       "delta": -14,
       "rationale": "退居",
       "summary": "十五年编书",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "凡居洛陽十五年，天下以爲真宰相，田夫野老皆號爲「司馬相公」，婦人孺子亦知其爲君實也。",
+        "textSimplified": "凡居洛阳十五年，天下以为真宰相，田夫野老皆号为「司马相公」，妇人孺子亦知其为君实也。",
+        "source": "《宋史·卷三百三十六 列传第九十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+      },
+      "verified": true
     },
     {
       "year": 1084,
@@ -122,9 +142,14 @@
       "delta": 16,
       "rationale": "巨著",
       "summary": "三百五十四卷",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及書成，加資政殿學士。",
+        "textSimplified": "及书成，加资政殿学士。",
+        "source": "《宋史·卷三百三十六 列传第九十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+      },
+      "verified": true
     },
     {
       "year": 1086,
@@ -140,9 +165,14 @@
       "delta": 24,
       "rationale": "执政",
       "summary": "尽废新法",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "拜尚書左僕射兼門下侍郎，免朝覲，許乘肩輿，三日一入省。",
+        "textSimplified": "拜尚书左仆射兼门下侍郎，免朝觐，许乘肩舆，三日一入省。",
+        "source": "《宋史·卷三百三十六 列传第九十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -152,9 +182,14 @@
     "retention": 0.95,
     "reason": "元祐更化",
     "score": 85.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "是年九月薨，年六十八。",
+      "textSimplified": "是年九月薨，年六十八。",
+      "source": "《宋史·卷三百三十六 列传第九十五》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7336"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -194,8 +229,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

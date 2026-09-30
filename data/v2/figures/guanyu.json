@@ -55,9 +55,14 @@
       "delta": 20,
       "rationale": "追随刘备",
       "summary": "与张飞为之御侮",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "先主於鄉里合徒眾，而羽與張飛為之禦侮。",
+        "textSimplified": "先主于乡里合徒众，而羽与张飞为之御侮。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
     },
     {
       "year": 200,
@@ -167,8 +172,8 @@
       "summary": "孙权袭江陵，羽走麦城",
       "evidence": "原文",
       "quote": {
-        "text": "}}又南郡太守麋芳在江陵，將軍士仁屯公安，素皆嫌羽輕己。",
-        "textSimplified": "}}又南郡太守麋芳在江陵，将军士仁屯公安，素皆嫌羽轻己。",
+        "text": "又南郡太守麋芳在江陵，將軍士仁屯公安，素皆嫌羽輕己。",
+        "textSimplified": "又南郡太守麋芳在江陵，将军士仁屯公安，素皆嫌羽轻己。",
         "source": "《三国志·蜀书六 关张马黄赵传》",
         "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
       },
@@ -182,9 +187,14 @@
     "retention": 0.8,
     "reason": "身死而忠义之名大盛",
     "score": 20,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "權遣將逆擊羽，斬羽及子平於臨沮。",
+      "textSimplified": "权遣将逆击羽，斩羽及子平于临沮。",
+      "source": "《三国志·蜀书六 关张马黄赵传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -238,8 +248,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 6,
-    "quotesClaimed": 6,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

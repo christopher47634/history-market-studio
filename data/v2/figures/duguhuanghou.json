@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "独孤信之女",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "文獻獨孤皇后，河南洛陽人，周大司馬、河內公信之女也。",
+        "textSimplified": "文献独孤皇后，河南洛阳人，周大司马、河内公信之女也。",
+        "source": "《隋书·列传第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B736"
+      },
+      "verified": true
     },
     {
       "year": 557,
@@ -91,9 +96,14 @@
       "delta": 0,
       "rationale": "影响储位",
       "summary": "力主废勇立广",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "由是諷上黜高熲，竟廢太子立晉王廣，皆后之謀也。",
+        "textSimplified": "由是讽上黜高颎，竟废太子立晋王广，皆后之谋也。",
+        "source": "《隋书·列传第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B736"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -145,8 +155,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

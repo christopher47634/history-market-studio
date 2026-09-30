@@ -15,6 +15,10 @@
     {
       "label": "《宋书·列传第二十七·谢灵运》",
       "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B767"
+    },
+    {
+      "label": "《宋书·列传第二十七·谢灵运》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B767"
     }
   ],
   "events": [
@@ -96,9 +100,14 @@
       "delta": 14,
       "rationale": "复用",
       "summary": "文帝征为秘书监",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太祖登祚，誅徐羨之等，徵為祕書監，再召不起，上使光祿大夫范泰與靈運書敦奬之，乃出就職。",
+        "textSimplified": "太祖登祚，诛徐羡之等，征为秘书监，再召不起，上使光禄大夫范泰与灵运书敦奖之，乃出就职。",
+        "source": "《宋书·列传第二十七·谢灵运》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B767"
+      },
+      "verified": true
     },
     {
       "year": 431,
@@ -114,9 +123,14 @@
       "delta": -45,
       "rationale": "获罪",
       "summary": "被劾谋反，流徙广州",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "義慶大怒，白太祖除為廣州所統曾城令。",
+        "textSimplified": "义庆大怒，白太祖除为广州所统曾城令。",
+        "source": "《宋书·列传第二十七·谢灵运》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B767"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -126,9 +140,14 @@
     "retention": 0.8,
     "reason": "山水诗流传",
     "score": 12,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "有司又奏依法收治，太祖詔於廣州行棄市刑。",
+      "textSimplified": "有司又奏依法收治，太祖诏于广州行弃市刑。",
+      "source": "《宋书·列传第二十七·谢灵运》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B767"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -168,8 +187,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

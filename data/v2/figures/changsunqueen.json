@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "长孙晟之女",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太宗文德順聖皇后長孫氏，長安人，隋右驍衛將軍晟之女也。",
+        "textSimplified": "太宗文德顺圣皇后长孙氏，长安人，隋右骁卫将军晟之女也。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     },
     {
       "year": 614,
@@ -50,9 +55,14 @@
       "delta": 0,
       "rationale": "秦王妃",
       "summary": "十三岁嫁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "年十三，嬪於太宗。",
+        "textSimplified": "年十三，嫔于太宗。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     },
     {
       "year": 626,
@@ -68,9 +78,14 @@
       "delta": 0,
       "rationale": "生死一搏",
       "summary": "亲慰勉将士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及難作，太宗在玄武門，方引將士入宮授甲，后親慰勉之，左右莫不感激。",
+        "textSimplified": "及难作，太宗在玄武门，方引将士入宫授甲，后亲慰勉之，左右莫不感激。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     },
     {
       "year": 626,
@@ -88,8 +103,8 @@
       "summary": "册为皇后",
       "evidence": "原文",
       "quote": {
-        "text": "【文德皇后長孫氏】",
-        "textSimplified": "【文德皇后长孙氏】",
+        "text": "太宗即位，立為皇后。",
+        "textSimplified": "太宗即位，立为皇后。",
         "source": "《旧唐书·后妃上》",
         "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
       },
@@ -109,9 +124,14 @@
       "delta": -12,
       "rationale": "贤后",
       "summary": "病笃仍谏",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十年六月己卯，崩於立政殿，時年三十六。",
+        "textSimplified": "十年六月己卯，崩于立政殿，时年三十六。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -121,9 +141,14 @@
     "retention": 0.95,
     "reason": "太宗建层观望昭陵",
     "score": 72.2,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "崩後，宮司以聞，太宗覽而增慟，以示近臣曰：「皇后此書，足可垂於後代。",
+      "textSimplified": "崩后，宫司以闻，太宗览而增恸，以示近臣曰：「皇后此书，足可垂于后代。",
+      "source": "《旧唐书·后妃上》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -152,8 +177,8 @@
   },
   "gaps": [],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

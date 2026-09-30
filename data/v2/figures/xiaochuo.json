@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "北府宰相萧思温之女",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "景宗睿智皇后蕭氏，諱綽，小字燕燕，北府宰相思温女。",
+        "textSimplified": "景宗睿智皇后萧氏，讳绰，小字燕燕，北府宰相思温女。",
+        "source": "《辽史·巻七十一 列传第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 969,
@@ -50,9 +55,14 @@
       "delta": 54,
       "rationale": "后",
       "summary": "景宗皇后",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "尋冊爲皇后，生聖宗。",
+        "textSimplified": "寻册为皇后，生圣宗。",
+        "source": "《辽史·巻七十一 列传第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 982,
@@ -68,9 +78,14 @@
       "delta": 4,
       "rationale": "执政",
       "summary": "景宗崩，摄政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "景宗崩，尊爲皇太后，攝國政。",
+        "textSimplified": "景宗崩，尊为皇太后，摄国政。",
+        "source": "《辽史·巻七十一 列传第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 986,
@@ -163,8 +178,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

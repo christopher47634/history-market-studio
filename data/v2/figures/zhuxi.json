@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "父朱松",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "父松，字喬年，中進士第。",
+        "textSimplified": "父松，字乔年，中进士第。",
+        "source": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+      },
+      "verified": true
     },
     {
       "year": 1148,
@@ -50,9 +55,14 @@
       "delta": 12,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "年十八貢於鄉，中紹興十八年進士第。",
+        "textSimplified": "年十八贡于乡，中绍兴十八年进士第。",
+        "source": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+      },
+      "verified": true
     },
     {
       "year": 1179,
@@ -91,9 +101,14 @@
       "delta": 8,
       "rationale": "近臣",
       "summary": "宁宗侍讲四十六日",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "熹行且辭，除煥章閣待制、侍講，辭，不許。",
+        "textSimplified": "熹行且辞，除焕章阁待制、侍讲，辞，不许。",
+        "source": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+      },
+      "verified": true
     },
     {
       "year": 1196,
@@ -126,9 +141,14 @@
     "retention": 0.9,
     "reason": "身后理学成为官学",
     "score": 1.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "明年卒，年七十一。",
+      "textSimplified": "明年卒，年七十一。",
+      "source": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -182,8 +202,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

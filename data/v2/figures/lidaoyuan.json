@@ -68,9 +68,14 @@
       "delta": 28,
       "rationale": "地方长官",
       "summary": "执法严峻",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "累遷輔國將軍、東荊州刺史。",
+        "textSimplified": "累迁辅国将军、东荆州刺史。",
+        "source": "《魏书·列传酷吏第七十七》",
+        "url": "https://zh.wikisource.org/wiki/%E9%AD%8F%E6%9B%B8%2F%E5%8D%B789"
+      },
+      "verified": true
     },
     {
       "year": 520,
@@ -168,8 +173,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

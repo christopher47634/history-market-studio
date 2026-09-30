@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士族",
       "summary": "弘农杨氏",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "楊素，字處道，弘農華陰人也。",
+        "textSimplified": "杨素，字处道，弘农华阴人也。",
+        "source": "《隋书·卷四十八列传第十三 杨素》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748"
+      },
+      "verified": true
     },
     {
       "year": 577,
@@ -86,9 +91,14 @@
       "delta": 8,
       "rationale": "宰相",
       "summary": "与高颎共掌朝政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "代蘇威爲尚書右僕射，與高熲專掌朝政。",
+        "textSimplified": "代苏威为尚书右仆射，与高颎专掌朝政。",
+        "source": "《隋书·卷四十八列传第十三 杨素》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748"
+      },
+      "verified": true
     },
     {
       "year": 600,
@@ -122,9 +132,14 @@
       "delta": -20,
       "rationale": "见疑",
       "summary": "炀帝外示殊礼，内情甚薄",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "素雖有建立之策及平楊諒功，然特爲帝所猜忌，外示殊禮，內情甚薄。",
+        "textSimplified": "素虽有建立之策及平杨谅功，然特为帝所猜忌，外示殊礼，内情甚薄。",
+        "source": "《隋书·卷四十八列传第十三 杨素》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B748"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -171,8 +186,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

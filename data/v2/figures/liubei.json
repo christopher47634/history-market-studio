@@ -262,9 +262,14 @@
       "delta": 0,
       "rationale": "丢失荆州",
       "summary": "孙权袭杀关羽，荆州尽失",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "俄而孫權襲殺羽，取荊州。",
+        "textSimplified": "俄而孙权袭杀羽，取荆州。",
+        "source": "《三国志·蜀书二 先主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B732"
+      },
+      "verified": true
     },
     {
       "year": 221,
@@ -320,9 +325,14 @@
     "retention": 0.9,
     "reason": "托孤诸葛亮，蜀汉延续四十年",
     "score": 49.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "諸葛亮集載先主遺詔敕後主曰：",
+      "textSimplified": "诸葛亮集载先主遗诏敕后主曰：",
+      "source": "《三国志·蜀书二 先主传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B732"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -371,8 +381,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 12,
-    "quotesClaimed": 12,
+    "quotesVerified": 14,
+    "quotesClaimed": 14,
     "author": "claude"
   }
 }

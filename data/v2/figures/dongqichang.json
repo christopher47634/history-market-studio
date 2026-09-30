@@ -50,9 +50,14 @@
       "delta": 16,
       "rationale": "入仕",
       "summary": "庶吉士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "舉萬歷十七年進士，改庶吉士。",
+        "textSimplified": "举万历十七年进士，改庶吉士。",
+        "source": "《明史·卷二百八十八列传第一百七十六 文苑四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7288"
+      },
+      "verified": true
     },
     {
       "year": 1616,
@@ -86,9 +91,14 @@
       "delta": 57,
       "rationale": "高位",
       "summary": "高官",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "五年正月拜南京禮部尚書。",
+        "textSimplified": "五年正月拜南京礼部尚书。",
+        "source": "《明史·卷二百八十八列传第一百七十六 文苑四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7288"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -140,8 +150,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

@@ -6,8 +6,11 @@ import { lifePoints, afterPoints, axisLayout, livesOverlap, valueAt, xOf, format
 
 const CERTAINTY = { 估计: "estimated", 确知: "exact" };
 
+// 客户端精简包里的引文是 { t, s }（原句、来源序号），这里还原成完整结构。
+const fullQuote = (q, f) => (!q ? null : q.t === undefined ? q : { textSimplified: q.t, source: f.sources[q.s]?.label ?? "", url: f.sources[q.s]?.url ?? "" });
+
 function legacyEvent(e, f, extra = {}) {
-  const quote = e.quote;
+  const quote = fullQuote(e.quote, f);
   return {
     year: e.year,
     age: extra.age ?? e.age,

@@ -37,12 +37,14 @@ export function buildFigure(person, draft, sources, rescore = null) {
   const checkQuote = (quote, where) => {
     // 关键词式引文：到原文里找出整句，逐字照抄。
     if (quote?.find && !quote.text) {
-      const src = sources[quote.source ?? 0];
-      const hit = findSentence(src, quote.find, cursors[quote.source ?? 0]);
+      // 一个人可能挂多卷原文（本纪分卷、合传全卷）：先搜指定卷，找不到再依次搜其余各卷。
+      const order = [quote.source ?? 0, ...sources.map((_, i) => i).filter((i) => i !== (quote.source ?? 0))];
+      let hit = null, idx = order[0];
+      for (const i of order) { hit = findSentence(sources[i], quote.find, cursors[i]); if (hit) { idx = i; break; } }
       if (!hit) { warnings.push(`${where}：原文里找不到关键词 ${quote.find.join("/")}，记为「概括」`); return { evidence: "概括", quote: null, verified: false }; }
       if (hit.fromStart) warnings.push(`${where}：关键词在前文命中，可能对应的不是这件事——「${hit.text.slice(0, 20)}」`);
-      cursors[quote.source ?? 0] = hit.pos;
-      quote = { ...quote, text: hit.text };
+      cursors[idx] = hit.pos;
+      quote = { ...quote, source: idx, text: hit.text };
     }
     if (!quote?.text) return { evidence: "概括", quote: null, verified: false };
     if (!person.ws[quote.source]) { errors.push(`${where}：引文来源编号 ${quote.source} 不存在`); return { evidence: "概括", quote: null, verified: false }; }
@@ -158,6 +160,8 @@ if (isMain) await main();
 async function main() {
 const wanted = process.argv.slice(2);
 await mkdir(new URL("figures/", DATA), { recursive: true });
+const picksFile = new URL("quote-picks.json", DATA);
+const quotePicks = existsSync(picksFile) ? JSON.parse(await readFile(picksFile, "utf8")) : {};
 const adjFile = new URL("adjudications.json", DATA);
 const adjudications = existsSync(adjFile) ? JSON.parse(await readFile(adjFile, "utf8")) : {};
 const drafts = (await readdir(new URL("drafts/", DATA))).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
@@ -172,6 +176,12 @@ for (const id of drafts.filter((d) => !wanted.length || wanted.includes(d))) {
     const event = draft.events[+index];
     if (!event) { console.log(`   ⚠ ${id} 裁定的第 ${index} 个事件不存在`); continue; }
     Object.assign(event, { tier, tierScore, crisis, crisisPenalty, adjudication: reason });
+  }
+  // 人工审定的原文关键词（quote-picks.json）：覆盖对应事件的引文查找。
+  for (const [title, phrase] of Object.entries(quotePicks[id] ?? {})) {
+    const target = title === "终章" ? draft.finale : draft.events.find((e) => e.title === title);
+    if (!target) { console.log(`   ⚠ ${id} 审定关键词的事件「${title}」不存在`); continue; }
+    target.quote = { find: [phrase], source: 0 };
   }
   const rescoreFile = new URL(`rescore/${id}.json`, DATA);
   const rescore = existsSync(rescoreFile) ? JSON.parse(await readFile(rescoreFile, "utf8")) : null;

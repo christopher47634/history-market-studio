@@ -55,9 +55,14 @@
       "delta": -5,
       "rationale": "择主",
       "summary": "北见袁绍，谓其不足成大事",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "初，北見袁紹，謂紹謀臣辛評、郭圖曰：「夫智者審於量主，故百舉百全而功名可立也。",
+        "textSimplified": "初，北见袁绍，谓绍谋臣辛评、郭图曰：「夫智者审于量主，故百举百全而功名可立也。",
+        "source": "《三国志·魏书·程郭董刘蒋刘传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B714"
+      },
+      "verified": true
     },
     {
       "year": 196,
@@ -154,9 +159,14 @@
     "retention": 0.9,
     "reason": "曹操痛哭「哀哉奉孝」",
     "score": 66.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "《傅子》曰：太祖又云：「哀哉奉孝！",
+      "textSimplified": "《傅子》曰：太祖又云：「哀哉奉孝！",
+      "source": "《三国志·魏书·程郭董刘蒋刘传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B714"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -198,8 +208,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

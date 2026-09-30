@@ -68,9 +68,14 @@
       "delta": 20,
       "rationale": "地方官",
       "summary": "知府",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "贄為姚安知府，一旦自去其發，冠服坐堂皇，上官勒令解任。",
+        "textSimplified": "贽为姚安知府，一旦自去其发，冠服坐堂皇，上官勒令解任。",
+        "source": "《明史·卷二百二十一列传第一百〇九 袁洪愈 王廷瞻 郭应聘 耿定向 王樵 魏时亮 郝杰 赵参鲁 张孟男 李祯 丁宾》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7221"
+      },
+      "verified": true
     },
     {
       "year": 1580,
@@ -122,9 +127,14 @@
       "delta": -48,
       "rationale": "死局",
       "summary": "惑世诬民",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "後北遊通州，為給事中張問達所劾，逮死獄中。",
+        "textSimplified": "后北游通州，为给事中张问达所劾，逮死狱中。",
+        "source": "《明史·卷二百二十一列传第一百〇九 袁洪愈 王廷瞻 郭应聘 耿定向 王樵 魏时亮 郝杰 赵参鲁 张孟男 李祯 丁宾》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7221"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -183,8 +193,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

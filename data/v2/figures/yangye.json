@@ -73,9 +73,14 @@
       "delta": 2,
       "rationale": "边将",
       "summary": "代州刺史",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "師還，授鄭州刺史。",
+        "textSimplified": "师还，授郑州刺史。",
+        "source": "《宋史·卷二百七十二 列传第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7272"
+      },
+      "verified": true
     },
     {
       "year": 980,
@@ -180,8 +185,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

@@ -27,10 +27,11 @@ async function writeClientDetails() {
   const dst = new URL("../data/v2/client/", import.meta.url);
   await rm(dst, { recursive: true, force: true });
   await mkdir(dst, { recursive: true });
-  const slimQuote = (q) => (q ? { textSimplified: q.textSimplified, source: q.source, url: q.url } : null);
-  const slimEvent = ({ rejectedQuote, draftRationale, verified, adjudicated, ...e }) => ({ ...e, quote: slimQuote(e.quote) });
   for (const file of (await readdir(src)).filter((f) => f.endsWith(".json"))) {
     const f = JSON.parse(await readFile(new URL(file, src), "utf8"));
+    // 引文只存简体原句和来源序号（出处名、链接在人物的 sources 里只存一份）。
+    const slimQuote = (q) => (q ? { t: q.textSimplified, s: Math.max(0, f.sources.findIndex((x) => x.label === q.source)) } : null);
+    const slimEvent = ({ rejectedQuote, draftRationale, verified, adjudicated, ...e }) => ({ ...e, quote: slimQuote(e.quote) });
     const { quality, ...rest } = f;
     const slim = { ...rest, events: f.events.map(slimEvent), finale: { ...f.finale, quote: slimQuote(f.finale.quote) } };
     await writeFile(new URL(file, dst), JSON.stringify(slim));

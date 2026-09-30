@@ -13,8 +13,8 @@
   "thesis": "修撰《汉书》二十余年，开创纪传体断代史，因窦宪案死于狱中。",
   "sources": [
     {
-      "label": "《后汉书·班彪列传 第三十下》",
-      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8B"
+      "label": "《后汉书·班彪列传 第三十上》",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
     }
   ],
   "events": [
@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "史学世家",
       "summary": "班彪长子，九岁能属文",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "年九歲，能屬文誦詩賦，及長，遂博貫載籍，九流百家之言，無不窮究。",
+        "textSimplified": "年九岁，能属文诵诗赋，及长，遂博贯载籍，九流百家之言，无不穷究。",
+        "source": "《后汉书·班彪列传 第三十上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": 54,
@@ -50,9 +55,14 @@
       "delta": 1,
       "rationale": "私撰国史",
       "summary": "父卒，归乡里，欲就其业",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "固以彪所續前史未詳，乃潛精研思，欲就其業。",
+        "textSimplified": "固以彪所续前史未详，乃潜精研思，欲就其业。",
+        "source": "《后汉书·班彪列传 第三十上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": 62,
@@ -68,9 +78,14 @@
       "delta": -23,
       "rationale": "私修国史大罪",
       "summary": "有人上书告其私改作国史，下京兆狱",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "既而有人上書顯宗，告固私改作國史者，有詔下郡，收固系京兆獄，盡取其家書。",
+        "textSimplified": "既而有人上书显宗，告固私改作国史者，有诏下郡，收固系京兆狱，尽取其家书。",
+        "source": "《后汉书·班彪列传 第三十上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": 62,
@@ -86,9 +101,14 @@
       "delta": 42,
       "rationale": "官修国史",
       "summary": "其弟班超上书为之辩，明帝奇之，除兰台令史",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "[一]除蘭台令史，[二]與前睢陽令陳宗﹑長陵令尹敏﹑司隸從事孟異共成世祖本紀。",
+        "textSimplified": "[一]除兰台令史，[二]与前睢阳令陈宗﹑长陵令尹敏﹑司隶从事孟异共成世祖本纪。",
+        "source": "《后汉书·班彪列传 第三十上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": 64,
@@ -104,9 +124,14 @@
       "delta": 4,
       "rationale": "修撰巨著",
       "summary": "复使终成前所著书，潜精积思二十余年",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "[四]固自永平中始受詔，潛精積思二十餘年，至建初中乃成。",
+        "textSimplified": "[四]固自永平中始受诏，潜精积思二十余年，至建初中乃成。",
+        "source": "《后汉书·班彪列传 第三十上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": 79,
@@ -122,14 +147,9 @@
       "delta": 0,
       "rationale": "经学权威",
       "summary": "撰集《白虎通德论》",
-      "evidence": "原文",
-      "quote": {
-        "text": "[三]天子會諸儒講論五經，作白虎通德論，令固撰集其事。",
-        "textSimplified": "[三]天子会诸儒讲论五经，作白虎通德论，令固撰集其事。",
-        "source": "《后汉书·班彪列传 第三十下》",
-        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8B"
-      },
-      "verified": true
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     },
     {
       "year": 82,
@@ -145,9 +165,14 @@
       "delta": 10,
       "rationale": "著作传世",
       "summary": "自永平中受诏，至建初中乃成，当世甚重其书",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "[四]固自永平中始受詔，潛精積思二十餘年，至建初中乃成。",
+        "textSimplified": "[四]固自永平中始受诏，潜精积思二十余年，至建初中乃成。",
+        "source": "《后汉书·班彪列传 第三十上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B740%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": 89,
@@ -242,8 +267,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

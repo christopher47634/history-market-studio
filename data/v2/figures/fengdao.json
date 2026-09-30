@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "耕读之家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "馮道字可道，瀛州景城人也。",
+        "textSimplified": "冯道字可道，瀛州景城人也。",
+        "source": "《新五代史·杂传第四十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B754"
+      },
+      "verified": true
     },
     {
       "year": 907,
@@ -50,9 +55,14 @@
       "delta": 15,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "事劉守光為參軍，守光敗，去事宦者張承業。",
+        "textSimplified": "事刘守光为参军，守光败，去事宦者张承业。",
+        "source": "《新五代史·杂传第四十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B754"
+      },
+      "verified": true
     },
     {
       "year": 927,
@@ -68,9 +78,14 @@
       "delta": 56,
       "rationale": "宰相",
       "summary": "同中书门下平章事",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "歲餘，拜中書侍郎、同中書門下平章事。",
+        "textSimplified": "岁余，拜中书侍郎、同中书门下平章事。",
+        "source": "《新五代史·杂传第四十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B754"
+      },
+      "verified": true
     },
     {
       "year": 932,
@@ -104,9 +119,14 @@
       "delta": -51,
       "rationale": "屈节",
       "summary": "契丹入汴，冯道朝见",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "契丹滅晉，道又事契丹，朝耶律德光於京師。",
+        "textSimplified": "契丹灭晋，道又事契丹，朝耶律德光于京师。",
+        "source": "《新五代史·杂传第四十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B754"
+      },
+      "verified": true
     },
     {
       "year": 951,
@@ -190,8 +210,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

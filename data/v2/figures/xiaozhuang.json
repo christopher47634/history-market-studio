@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "贝勒之女",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "孝莊文皇后，博爾濟吉特氏，科爾沁貝勒寨桑女，孝端皇后侄也。",
+        "textSimplified": "孝庄文皇后，博尔济吉特氏，科尔沁贝勒寨桑女，孝端皇后侄也。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1625,
@@ -68,9 +73,14 @@
       "delta": 58,
       "rationale": "太后",
       "summary": "圣母皇太后",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世祖即位，尊為皇太后。",
+        "textSimplified": "世祖即位，尊为皇太后。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1661,
@@ -86,9 +96,14 @@
       "delta": 2,
       "rationale": "辅政",
       "summary": "太皇太后",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "聖祖即位，尊為太皇太后。",
+        "textSimplified": "圣祖即位，尊为太皇太后。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1669,
@@ -163,8 +178,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

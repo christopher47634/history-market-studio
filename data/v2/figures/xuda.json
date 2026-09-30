@@ -13,8 +13,8 @@
   "thesis": "明朝开国第一功臣，北伐攻克大都。",
   "sources": [
     {
-      "label": "《明史·本纪第二 太祖二》",
-      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B72"
+      "label": "《明史·卷一百二十五 列传第十三》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
     }
   ],
   "events": [
@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "农民",
       "summary": "农家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "徐達，字天德，濠人，世業農。",
+        "textSimplified": "徐达，字天德，濠人，世业农。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1353,
@@ -50,9 +55,14 @@
       "delta": 25,
       "rationale": "追随",
       "summary": "同乡",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太祖之為郭子興部帥也，達時年二十二，往從之，一見語合。",
+        "textSimplified": "太祖之为郭子兴部帅也，达时年二十二，往从之，一见语合。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1363,
@@ -68,9 +78,14 @@
       "delta": 43,
       "rationale": "大功",
       "summary": "大将",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "會漢人寇南昌，太祖召達自廬州來會師，遇於鄱陽湖。",
+        "textSimplified": "会汉人寇南昌，太祖召达自庐州来会师，遇于鄱阳湖。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1367,
@@ -86,9 +101,14 @@
       "delta": 6,
       "rationale": "北伐",
       "summary": "统帅",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "尋拜征虜大將軍，以遇春為副，帥步騎二十五萬人，北取中原，太祖親祃于龍江。",
+        "textSimplified": "寻拜征虏大将军，以遇春为副，帅步骑二十五万人，北取中原，太祖亲祃于龙江。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1368,
@@ -106,10 +126,10 @@
       "summary": "元顺帝北逃",
       "evidence": "原文",
       "quote": {
-        "text": "改大都路曰北平府。",
-        "textSimplified": "改大都路曰北平府。",
-        "source": "《明史·本纪第二 太祖二》",
-        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B72"
+        "text": "尤嚴戢部伍，所平大都二，省會三，郡邑百數，閭井宴然，民不苦兵。",
+        "textSimplified": "尤严戢部伍，所平大都二，省会三，郡邑百数，闾井宴然，民不苦兵。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
       },
       "verified": true
     },
@@ -176,8 +196,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

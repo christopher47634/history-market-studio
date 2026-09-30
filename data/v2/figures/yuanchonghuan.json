@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "平民",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "袁崇煥，字元素，東莞人。",
+        "textSimplified": "袁崇焕，字元素，东莞人。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
     },
     {
       "year": 1619,
@@ -50,9 +55,14 @@
       "delta": 12,
       "rationale": "入仕",
       "summary": "知县",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "萬曆四十七年進士。",
+        "textSimplified": "万历四十七年进士。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
     },
     {
       "year": 1622,
@@ -68,9 +78,14 @@
       "delta": 14,
       "rationale": "守辽",
       "summary": "兵部职方主事",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "無何，廣甯師潰，廷議扼山海關，崇煥即單騎出閱關內外。",
+        "textSimplified": "无何，广甯师溃，廷议扼山海关，崇焕即单骑出阅关内外。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
     },
     {
       "year": 1626,
@@ -109,9 +124,14 @@
       "delta": -45,
       "rationale": "去职",
       "summary": "魏忠贤排挤",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "七月，遂允其歸，而以王之臣代為督師兼遼東巡撫，駐甯遠。",
+        "textSimplified": "七月，遂允其归，而以王之臣代为督师兼辽东巡抚，驻甯远。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
     },
     {
       "year": 1628,
@@ -127,9 +147,14 @@
       "delta": 51,
       "rationale": "重用",
       "summary": "五年复辽",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "崇禎元年四月，命以兵部尚書兼右副都御史，督師薊遼、兼督登萊、天津軍務，所司敦促上道。",
+        "textSimplified": "崇祯元年四月，命以兵部尚书兼右副都御史，督师蓟辽、兼督登莱、天津军务，所司敦促上道。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
     },
     {
       "year": 1629,
@@ -147,8 +172,8 @@
       "summary": "擅杀",
       "evidence": "原文",
       "quote": {
-        "text": "會朝鮮及毛文龍同告急，朝命崇煥發兵援，崇煥以水師援文龍，又遣左輔、趙率教、硃梅等九將將精卒九千先後逼三岔河",
-        "textSimplified": "会朝鲜及毛文龙同告急，朝命崇焕发兵援，崇焕以水师援文龙，又遣左辅、赵率教、朱梅等九将将精卒九千先后逼三岔河",
+        "text": "崇煥始受事，即欲誅毛文龍。",
+        "textSimplified": "崇焕始受事，即欲诛毛文龙。",
         "source": "《明史·卷二百五十九 列传第一百四十七》",
         "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
       },
@@ -180,9 +205,14 @@
     "retention": 0.8,
     "reason": "十五年后明亡",
     "score": 1.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "三年八月，遂磔崇煥于市，兄弟妻子流三千里，籍其家。",
+      "textSimplified": "三年八月，遂磔崇焕于市，兄弟妻子流三千里，籍其家。",
+      "source": "《明史·卷二百五十九 列传第一百四十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -224,8 +254,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

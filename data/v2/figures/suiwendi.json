@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "杨忠之子，关陇贵族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "皇妣呂氏，以大統七年六月癸丑夜，生高祖於馮翊般若寺，紫氣充庭。",
+        "textSimplified": "皇妣吕氏，以大统七年六月癸丑夜，生高祖于冯翊般若寺，紫气充庭。",
+        "source": "《隋书·帝纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B701"
+      },
+      "verified": true
     },
     {
       "year": 568,
@@ -50,9 +55,14 @@
       "delta": 18,
       "rationale": "国公",
       "summary": "父卒袭爵",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "其後襲爵隋國公。",
+        "textSimplified": "其后袭爵隋国公。",
+        "source": "《隋书·帝纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B701"
+      },
+      "verified": true
     },
     {
       "year": 578,
@@ -231,8 +241,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

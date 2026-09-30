@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族后裔",
       "summary": "辽东丹王八世孙",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "耶律楚材字晉卿，遼東丹王突欲八世孫。",
+        "textSimplified": "耶律楚材字晋卿，辽东丹王突欲八世孙。",
+        "source": "《元史·列传第三十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7146"
+      },
+      "verified": true
     },
     {
       "year": 1215,
@@ -127,9 +132,14 @@
       "delta": -58,
       "rationale": "失势",
       "summary": "失势",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "皇后乃馬真氏稱制，崇信姦回，庶政多紊。",
+        "textSimplified": "皇后乃马真氏称制，崇信奸回，庶政多紊。",
+        "source": "《元史·列传第三十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7146"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -176,8 +186,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "寒门",
       "summary": "寒士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "左宗棠，字季高，湖南湘陰人。",
+        "textSimplified": "左宗棠，字季高，湖南湘阴人。",
+        "source": "《清史稿·卷四百十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+      },
+      "verified": true
     },
     {
       "year": 1832,
@@ -50,9 +55,14 @@
       "delta": -1,
       "rationale": "布衣",
       "summary": "会试不第",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "宗棠，道光十二年舉人，三試禮部不第，遂絕意仕進，究心輿地、兵法。",
+        "textSimplified": "宗棠，道光十二年举人，三试礼部不第，遂绝意仕进，究心舆地、兵法。",
+        "source": "《清史稿·卷四百十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+      },
+      "verified": true
     },
     {
       "year": 1852,
@@ -68,9 +78,14 @@
       "delta": 33,
       "rationale": "幕僚",
       "summary": "师爷",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "駱秉章至湖南，復以計劫之出佐軍幕，倚之如左右手。",
+        "textSimplified": "骆秉章至湖南，复以计劫之出佐军幕，倚之如左右手。",
+        "source": "《清史稿·卷四百十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+      },
+      "verified": true
     },
     {
       "year": 1859,
@@ -86,9 +101,14 @@
       "delta": -48,
       "rationale": "险境",
       "summary": "险被杀",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "會秉章劾罷總兵樊燮，燮構於總督官文，為蜚語上聞，召宗棠對簿武昌，秉章疏爭之不得。",
+        "textSimplified": "会秉章劾罢总兵樊燮，燮构于总督官文，为蜚语上闻，召宗棠对簿武昌，秉章疏争之不得。",
+        "source": "《清史稿·卷四百十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+      },
+      "verified": true
     },
     {
       "year": 1863,
@@ -152,9 +172,14 @@
     "retention": 0.95,
     "reason": "新疆建省",
     "score": 83.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "四年正月，條上新疆建行省事宜，並請與俄議還伊犁、交叛人二事。",
+      "textSimplified": "四年正月，条上新疆建行省事宜，并请与俄议还伊犁、交叛人二事。",
+      "source": "《清史稿·卷四百十二》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -194,8 +219,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

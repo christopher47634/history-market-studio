@@ -119,9 +119,14 @@
       "delta": 12,
       "rationale": "大功",
       "summary": "遣钟会邓艾伐蜀，后主投降",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "於是徵四方之兵十八萬，使鄧艾自狄道攻姜維於沓中，雍州刺史諸葛緒自祁山軍于武街",
+        "textSimplified": "于是征四方之兵十八万，使邓艾自狄道攻姜维于沓中，雍州刺史诸葛绪自祁山军于武街",
+        "source": "《晋书·卷二 帝纪第二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7002"
+      },
+      "verified": true
     },
     {
       "year": 264,
@@ -137,9 +142,14 @@
       "delta": 1,
       "rationale": "篡魏在即",
       "summary": "进爵为王",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "三月己卯，進帝爵為王，增封并前二十郡。",
+        "textSimplified": "三月己卯，进帝爵为王，增封并前二十郡。",
+        "source": "《晋书·卷二 帝纪第二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7002"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -198,8 +208,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

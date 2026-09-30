@@ -68,9 +68,14 @@
       "delta": -36,
       "rationale": "断送仕途",
       "summary": "下诏狱，罢为吏",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "事露，言者劾敏政，語連寅，下詔獄，謫為吏。",
+        "textSimplified": "事露，言者劾敏政，语连寅，下诏狱，谪为吏。",
+        "source": "《明史·卷二百八十六 列传第一百七十四 文苑二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7286"
+      },
+      "verified": true
     },
     {
       "year": 1514,
@@ -86,9 +91,14 @@
       "delta": 28,
       "rationale": "避祸",
       "summary": "佯狂",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "寧王宸濠厚幣聘之，寅察其有異志，佯狂使酒，露其醜穢。",
+        "textSimplified": "宁王宸濠厚币聘之，寅察其有异志，佯狂使酒，露其丑秽。",
+        "source": "《明史·卷二百八十六 列传第一百七十四 文苑二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7286"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -135,8 +145,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

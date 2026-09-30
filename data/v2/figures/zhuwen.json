@@ -15,6 +15,30 @@
     {
       "label": "《旧五代史·本纪第一 梁太祖纪》",
       "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B71"
+    },
+    {
+      "label": "《旧五代史·卷二 梁书二 太祖本纪二》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B72"
+    },
+    {
+      "label": "《旧五代史·卷三 梁书三 太祖本纪三》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B73"
+    },
+    {
+      "label": "《旧五代史·卷四 梁书四 太祖本纪四》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B74"
+    },
+    {
+      "label": "《旧五代史·卷五 梁书五 太祖本纪五》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B75"
+    },
+    {
+      "label": "《旧五代史·卷六 梁书六 太祖本纪六》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B76"
+    },
+    {
+      "label": "《旧五代史·卷七 梁书七 太祖本纪七》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B77"
     }
   ],
   "events": [
@@ -32,9 +56,14 @@
       "delta": 0,
       "rationale": "贫寒",
       "summary": "父为塾师，早卒，佣于刘崇家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "以唐大中六年嵗在壬申，十月二十一日夜，生于碭山縣午溝里。",
+        "textSimplified": "以唐大中六年岁在壬申，十月二十一日夜，生于砀山县午沟里。",
+        "source": "《旧五代史·本纪第一 梁太祖纪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 877,
@@ -50,9 +79,14 @@
       "delta": 20,
       "rationale": "起义军",
       "summary": "从黄巢",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "考新唐書：九月丙戌，黃巢將朱溫以同州降。",
+        "textSimplified": "考新唐书：九月丙戌，黄巢将朱温以同州降。",
+        "source": "《旧五代史·本纪第一 梁太祖纪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 882,
@@ -91,9 +125,14 @@
       "delta": 10,
       "rationale": "控制朝廷",
       "summary": "劫昭宗",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝乃率諸道丁匠財力，同構洛陽宮，不數月而成。",
+        "textSimplified": "帝乃率诸道丁匠财力，同构洛阳宫，不数月而成。",
+        "source": "《旧五代史·卷二 梁书二 太祖本纪二》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B72"
+      },
+      "verified": true
     },
     {
       "year": 907,
@@ -109,9 +148,14 @@
       "delta": 2,
       "rationale": "称帝",
       "summary": "受禅，国号梁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "王被袞冕，即皇帝位。",
+        "textSimplified": "王被衮冕，即皇帝位。",
+        "source": "《旧五代史·卷三 梁书三 太祖本纪三》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B73"
+      },
+      "verified": true
     },
     {
       "year": 911,
@@ -127,9 +171,14 @@
       "delta": -27,
       "rationale": "败",
       "summary": "为李存勖所败",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "《通鑒》：帝以夾寨、柏鄉屢失利，故力疾北巡，思一雪其恥，意鬱鬱，多躁忿",
+        "textSimplified": "《通鉴》：帝以夹寨、柏乡屡失利，故力疾北巡，思一雪其耻，意郁郁，多躁忿",
+        "source": "《旧五代史·卷六 梁书六 太祖本纪六》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B76"
+      },
+      "verified": true
     },
     {
       "year": 912,
@@ -145,9 +194,14 @@
       "delta": -37,
       "rationale": "死",
       "summary": "朱友珪弑之",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "時左遷者多追賜死，友珪益恐。",
+        "textSimplified": "时左迁者多追赐死，友珪益恐。",
+        "source": "《旧五代史·卷七 梁书七 太祖本纪七》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B77"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -199,8 +253,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

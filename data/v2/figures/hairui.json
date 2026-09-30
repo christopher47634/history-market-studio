@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "孤贫",
       "summary": "四岁丧父",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "海瑞，字汝賢，瓊山人。",
+        "textSimplified": "海瑞，字汝贤，琼山人。",
+        "source": "《明史·卷二百二十六 列传第一百十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226"
+      },
+      "verified": true
     },
     {
       "year": 1549,
@@ -52,7 +57,8 @@
       "summary": "举人",
       "evidence": "概括",
       "quote": null,
-      "verified": false
+      "verified": false,
+      "rejectedQuote": "舉鄉試。"
     },
     {
       "year": 1558,
@@ -109,9 +115,14 @@
       "delta": 50,
       "rationale": "复用",
       "summary": "隆庆即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "既釋，復故官。",
+        "textSimplified": "既释，复故官。",
+        "source": "《明史·卷二百二十六 列传第一百十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226"
+      },
+      "verified": true
     },
     {
       "year": 1569,
@@ -127,9 +138,14 @@
       "delta": 14,
       "rationale": "方面",
       "summary": "抑徐阶",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "三年夏，以右僉都御史巡撫應天十府。",
+        "textSimplified": "三年夏，以右佥都御史巡抚应天十府。",
+        "source": "《明史·卷二百二十六 列传第一百十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226"
+      },
+      "verified": true
     },
     {
       "year": 1570,
@@ -163,9 +179,14 @@
       "delta": 49,
       "rationale": "复用",
       "summary": "复起",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝屢欲召用瑞，執政陰沮之，乃以為南京右都御史。",
+        "textSimplified": "帝屡欲召用瑞，执政阴沮之，乃以为南京右都御史。",
+        "source": "《明史·卷二百二十六 列传第一百十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -175,9 +196,14 @@
     "retention": 0.95,
     "reason": "海青天",
     "score": 60.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "十五年，卒官。",
+      "textSimplified": "十五年，卒官。",
+      "source": "《明史·卷二百二十六 列传第一百十四》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7226"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -212,8 +238,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 6,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

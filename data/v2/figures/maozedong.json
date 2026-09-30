@@ -303,10 +303,14 @@
       "delta": 0,
       "rationale": "决策出兵朝鲜，新生政权与最强国家在境外交战。",
       "summary": "十月决定组建中国人民志愿军入朝作战，与朝鲜人民军并肩抗击美军。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false,
-      "rejectedQuote": "进行了伟大的抗美援朝、保家卫国战争"
+      "evidence": "原文",
+      "quote": {
+        "text": "在胜利完成繁重的社会改革任务和进行伟大的抗美援朝、保家卫国战争的同时，我们迅速恢复了在旧中国遭到严重破坏的国民经济",
+        "textSimplified": "在胜利完成繁重的社会改革任务和进行伟大的抗美援朝、保家卫国战争的同时，我们迅速恢复了在旧中国遭到严重破坏的国民经济",
+        "source": "《关于建国以来党的若干历史问题的决议》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
+      },
+      "verified": true
     },
     {
       "year": 1956,
@@ -503,7 +507,7 @@
     }
   ],
   "quality": {
-    "quotesVerified": 14,
+    "quotesVerified": 15,
     "quotesClaimed": 15,
     "author": "deepseek-flash"
   }

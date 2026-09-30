@@ -68,9 +68,14 @@
       "delta": 6,
       "rationale": "巅峰",
       "summary": "灭阿拔斯王朝",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "促令發窖藏，黃金珠玉充牣其中，阿拔斯五百餘年之蓄積悉爲旭烈兀所有蔫。",
+        "textSimplified": "促令发窖藏，黄金珠玉充牣其中，阿拔斯五百余年之蓄积悉为旭烈兀所有蔫。",
+        "source": "《新元史·卷一百八 列传第五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7108"
+      },
+      "verified": true
     },
     {
       "year": 1260,
@@ -153,8 +158,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
     "author": "claude"
   }
 }

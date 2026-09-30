@@ -114,9 +114,14 @@
       "delta": 8,
       "rationale": "天子",
       "summary": "文帝崩于仁寿宫，即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "四年七月，高祖崩，上即皇帝位於仁壽宮。",
+        "textSimplified": "四年七月，高祖崩，上即皇帝位于仁寿宫。",
+        "source": "《隋书·卷三帝纪第三 炀帝上》",
+        "url": "https://zh.wikisource.org/wiki/%E9%9A%8B%E6%9B%B8%2F%E5%8D%B703"
+      },
+      "verified": true
     },
     {
       "year": 605,
@@ -258,8 +263,8 @@
   },
   "gaps": [],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "宗室",
       "summary": "太祖八世孙",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "大石字重德，太祖八代孫也。",
+        "textSimplified": "大石字重德，太祖八代孙也。",
+        "source": "《辽史·本纪第三十》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B730"
+      },
+      "verified": true
     },
     {
       "year": 1115,
@@ -50,9 +55,14 @@
       "delta": 3,
       "rationale": "文武全才",
       "summary": "契丹唯一的进士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "通遼、漢字，善騎射，登天慶五年進士第，擢翰林應奉，尋陞承旨。",
+        "textSimplified": "通辽、汉字，善骑射，登天庆五年进士第，擢翰林应奉，寻升承旨。",
+        "source": "《辽史·本纪第三十》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B730"
+      },
+      "verified": true
     },
     {
       "year": 1122,
@@ -68,9 +78,14 @@
       "delta": 34,
       "rationale": "将领",
       "summary": "辅北辽",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "保大二年，金兵日逼，天祚播越，與諸大臣立秦晉王淳為帝。",
+        "textSimplified": "保大二年，金兵日逼，天祚播越，与诸大臣立秦晋王淳为帝。",
+        "source": "《辽史·本纪第三十》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B730"
+      },
+      "verified": true
     },
     {
       "year": 1124,
@@ -86,9 +101,14 @@
       "delta": -27,
       "rationale": "流亡",
       "summary": "辽亡在即，率二百骑西走",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "西至可敦城，駐北庭都護府，會威武、崇德、會蕃、新、大林、紫河、駝等七州及大黃室韋、敵剌、王紀剌、茶赤剌、也喜、鼻古德、尼剌、達剌乖、達密里、密兒紀、合主、烏古里、阻卜、普速完、唐古、忽母思、奚的、糺而畢十八部王眾",
+        "textSimplified": "西至可敦城，驻北庭都护府，会威武、崇德、会蕃、新、大林、紫河、驼等七州及大黄室韦、敌剌、王纪剌、茶赤剌、也喜、鼻古德、尼剌、达剌乖、达密里、密儿纪、合主、乌古里、阻卜、普速完、唐古、忽母思、奚的、糺而毕十八部王众",
+        "source": "《辽史·本纪第三十》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B730"
+      },
+      "verified": true
     },
     {
       "year": 1132,
@@ -104,9 +124,14 @@
       "delta": 43,
       "rationale": "建国",
       "summary": "称菊儿汗",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "又西至起兒漫，文武百官冊立大石為帝，以甲辰歲二月五日即位，年三十八，號葛兒罕。",
+        "textSimplified": "又西至起儿漫，文武百官册立大石为帝，以甲辰岁二月五日即位，年三十八，号葛儿罕。",
+        "source": "《辽史·本纪第三十》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B730"
+      },
+      "verified": true
     },
     {
       "year": 1141,
@@ -171,8 +196,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

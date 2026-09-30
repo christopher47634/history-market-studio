@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "医户",
       "summary": "世医之家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "李時珍，字東璧，蘄州人。",
+        "textSimplified": "李时珍，字东璧，蕲州人。",
+        "source": "《明史·卷二百九十九 列传第一百八十七 方伎》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7299"
+      },
+      "verified": true
     },
     {
       "year": 1531,
@@ -139,9 +144,14 @@
     "retention": 0.95,
     "reason": "身后刊行",
     "score": 57,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "書成，將上之朝，時珍遽卒。",
+      "textSimplified": "书成，将上之朝，时珍遽卒。",
+      "source": "《明史·卷二百九十九 列传第一百八十七 方伎》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7299"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -183,8 +193,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

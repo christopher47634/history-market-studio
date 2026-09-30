@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "北州旧族",
       "summary": "世吏二千石",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世吏二千石，爲北州舊姓。",
+        "textSimplified": "世吏二千石，为北州旧姓。",
+        "source": "《晋书·卷六十二 列传第三十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7062"
+      },
+      "verified": true
     },
     {
       "year": 291,
@@ -50,9 +55,14 @@
       "delta": 0,
       "rationale": "立志",
       "summary": "与刘琨同寝，中夜闻荒鸡鸣，蹴琨觉起舞",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "中夜聞荒雞鳴，蹴琨覺曰：「此非惡聲也。",
+        "textSimplified": "中夜闻荒鸡鸣，蹴琨觉曰：「此非恶声也。",
+        "source": "《晋书·卷六十二 列传第三十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7062"
+      },
+      "verified": true
     },
     {
       "year": 311,
@@ -114,9 +124,14 @@
       "delta": 16,
       "rationale": "北伐巅峰",
       "summary": "石勒不敢窥兵河南，黄河以南尽为晋土",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "逖愛人下士，雖疏交賤隸，皆恩禮遇之，由是黃河以南盡爲晉土。",
+        "textSimplified": "逖爱人下士，虽疏交贱隶，皆恩礼遇之，由是黄河以南尽为晋土。",
+        "source": "《晋书·卷六十二 列传第三十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7062"
+      },
+      "verified": true
     },
     {
       "year": 321,
@@ -191,8 +206,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

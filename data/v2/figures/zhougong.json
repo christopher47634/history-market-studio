@@ -50,9 +50,14 @@
       "delta": 47,
       "rationale": "开国功臣",
       "summary": "牧野之战，佐武王灭商",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十一年，伐紂，至牧野，周公佐武王，作牧誓。",
+        "textSimplified": "十一年，伐纣，至牧野，周公佐武王，作牧誓。",
+        "source": "《史记·鲁周公世家 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E9%AD%AF%E5%91%A8%E5%85%AC%E4%B8%96%E5%AE%B6"
+      },
+      "verified": true
     },
     {
       "year": -1043,
@@ -221,8 +226,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

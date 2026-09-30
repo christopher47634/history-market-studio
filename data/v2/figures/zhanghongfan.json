@@ -50,9 +50,14 @@
       "delta": 42,
       "rationale": "战功",
       "summary": "襄樊之战",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "八年，築一字城逼襄陽，破樊城外郭。",
+        "textSimplified": "八年，筑一字城逼襄阳，破樊城外郭。",
+        "source": "《元史·列传第四十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7156"
+      },
+      "verified": true
     },
     {
       "year": 1278,
@@ -68,9 +73,14 @@
       "delta": 6,
       "rationale": "战功",
       "summary": "五坡岭",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "獲宋丞相文天祥于五坡嶺，使之拜，不屈，弘範義之，待以賓禮，送至京師。",
+        "textSimplified": "获宋丞相文天祥于五坡岭，使之拜，不屈，弘范义之，待以宾礼，送至京师。",
+        "source": "《元史·列传第四十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7156"
+      },
+      "verified": true
     },
     {
       "year": 1279,
@@ -135,8 +145,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

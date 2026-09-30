@@ -13,8 +13,8 @@
   "thesis": "金兀术，搜山检海追宋高宗，黄天荡被困，郾城败于岳飞。",
   "sources": [
     {
-      "label": "《宋史·卷三百九十九 列传第一百五十八》",
-      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7399"
+      "label": "《金史·卷七十七 列传第十五》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
     }
   ],
   "events": [
@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "王子",
       "summary": "太祖第四子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "宗弼，本名斡啜，又作兀朮，亦作斡出，或作晃斡出，太祖第四子也。",
+        "textSimplified": "宗弼，本名斡啜，又作兀术，亦作斡出，或作晃斡出，太祖第四子也。",
+        "source": "《金史·卷七十七 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
+      },
+      "verified": true
     },
     {
       "year": 1125,
@@ -50,9 +55,14 @@
       "delta": 41,
       "rationale": "将领",
       "summary": "随军南下",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及宗望伐宋，宗弼從軍。",
+        "textSimplified": "及宗望伐宋，宗弼从军。",
+        "source": "《金史·卷七十七 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
+      },
+      "verified": true
     },
     {
       "year": 1129,
@@ -68,9 +78,14 @@
       "delta": 6,
       "rationale": "威震",
       "summary": "追高宗入海",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "遂行海追三百餘裏，不及，阿裏、蒲盧渾乃還。",
+        "textSimplified": "遂行海追三百余里，不及，阿里、蒲卢浑乃还。",
+        "source": "《金史·卷七十七 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
+      },
+      "verified": true
     },
     {
       "year": 1130,
@@ -86,9 +101,14 @@
       "delta": -33,
       "rationale": "险败",
       "summary": "韩世忠困之四十八日",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "將至黃天蕩，宗弼乃因老鸛河故道開三十裏通秦淮，一日一夜而成，宗弼乃得至江寧。",
+        "textSimplified": "将至黄天荡，宗弼乃因老鹳河故道开三十里通秦淮，一日一夜而成，宗弼乃得至江宁。",
+        "source": "《金史·卷七十七 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
+      },
+      "verified": true
     },
     {
       "year": 1140,
@@ -122,9 +142,14 @@
       "delta": 32,
       "rationale": "掌控金政",
       "summary": "迫宋称臣",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "宗弼令宋主遣信臣來稟議，宋主乞「先斂兵，許弊邑拜表闕下」，宗弼以便宜約以畫淮水為界。",
+        "textSimplified": "宗弼令宋主遣信臣来禀议，宋主乞「先敛兵，许弊邑拜表阙下」，宗弼以便宜约以画淮水为界。",
+        "source": "《金史·卷七十七 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -134,9 +159,14 @@
     "retention": 0.95,
     "reason": "宋金对峙",
     "score": 85.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "皇統八年，薨。",
+      "textSimplified": "皇统八年，薨。",
+      "source": "《金史·卷七十七 列传第十五》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B777"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -171,8 +201,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

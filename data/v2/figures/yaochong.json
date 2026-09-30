@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "官宦",
       "summary": "官宦之家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "姚崇，本名元崇，陜州硤石人也。",
+        "textSimplified": "姚崇，本名元崇，陜州硖石人也。",
+        "source": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B796"
+      },
+      "verified": true
     },
     {
       "year": 673,
@@ -50,9 +55,14 @@
       "delta": 4,
       "rationale": "入仕",
       "summary": "以挽郎入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "元崇爲孝敬挽郎，應下筆成章舉，授濮州司倉，五遷夏官郎中。",
+        "textSimplified": "元崇为孝敬挽郎，应下笔成章举，授濮州司仓，五迁夏官郎中。",
+        "source": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B796"
+      },
+      "verified": true
     },
     {
       "year": 698,
@@ -68,9 +78,14 @@
       "delta": 54,
       "rationale": "宰相",
       "summary": "同凤阁鸾台平章事",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "則天甚奇之，超遷夏官侍郎，又尋同鳳閣鸞臺平章事。",
+        "textSimplified": "则天甚奇之，超迁夏官侍郎，又寻同凤阁鸾台平章事。",
+        "source": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B796"
+      },
+      "verified": true
     },
     {
       "year": 705,
@@ -86,9 +101,14 @@
       "delta": -58,
       "rationale": "被贬",
       "summary": "因哭武后被贬",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "無幾，出爲亳州刺史，轉常州刺史。",
+        "textSimplified": "无几，出为亳州刺史，转常州刺史。",
+        "source": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B796"
+      },
+      "verified": true
     },
     {
       "year": 713,
@@ -122,9 +142,14 @@
       "delta": -43,
       "rationale": "罢相",
       "summary": "因子受贿罢",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "俄授開府儀同三司，罷知政事。",
+        "textSimplified": "俄授开府仪同三司，罢知政事。",
+        "source": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B796"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -134,9 +159,14 @@
     "retention": 0.95,
     "reason": "开元盛世",
     "score": 44.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "九年薨，年七十二，贈揚州大都督，謚曰文獻。",
+      "textSimplified": "九年薨，年七十二，赠扬州大都督，谥曰文献。",
+      "source": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B796"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -176,8 +206,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

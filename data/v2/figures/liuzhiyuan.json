@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "寒门",
       "summary": "沙陀人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "後以唐乾寧二年，歲在乙卯，二月四日生帝於太原。",
+        "textSimplified": "后以唐干宁二年，岁在乙卯，二月四日生帝于太原。",
+        "source": "《旧五代史·卷九十九》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B799"
+      },
+      "verified": true
     },
     {
       "year": 936,
@@ -68,9 +73,14 @@
       "delta": 8,
       "rationale": "方镇",
       "summary": "镇太原",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "六年七月，授北京留守、河東節度使。",
+        "textSimplified": "六年七月，授北京留守、河东节度使。",
+        "source": "《旧五代史·卷九十九》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B799"
+      },
+      "verified": true
     },
     {
       "year": 947,
@@ -135,8 +145,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

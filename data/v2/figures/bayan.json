@@ -13,8 +13,8 @@
   "thesis": "统帅元军灭南宋，下临安不杀。",
   "sources": [
     {
-      "label": "《元史·表第五下》",
-      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7111"
+      "label": "《元史·列传第十四》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7127"
     }
   ],
   "events": [
@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "蒙古贵族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "伯顏長於西域。",
+        "textSimplified": "伯颜长于西域。",
+        "source": "《元史·列传第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7127"
+      },
+      "verified": true
     },
     {
       "year": 1265,
@@ -50,9 +55,14 @@
       "delta": 20,
       "rationale": "入仕",
       "summary": "奉使来朝",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "至元初，旭烈兀遣入奏事，世祖見其貌偉，聽其言厲，曰：「非諸侯王臣也，其留事朕。",
+        "textSimplified": "至元初，旭烈兀遣入奏事，世祖见其貌伟，听其言厉，曰：「非诸侯王臣也，其留事朕。",
+        "source": "《元史·列传第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7127"
+      },
+      "verified": true
     },
     {
       "year": 1274,
@@ -68,9 +78,14 @@
       "delta": 34,
       "rationale": "统帅",
       "summary": "二十万",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十一年，大舉伐宋，與史天澤並拜中書左丞相，行省荊湖。",
+        "textSimplified": "十一年，大举伐宋，与史天泽并拜中书左丞相，行省荆湖。",
+        "source": "《元史·列传第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7127"
+      },
+      "verified": true
     },
     {
       "year": 1276,
@@ -86,9 +101,14 @@
       "delta": 4,
       "rationale": "灭宋",
       "summary": "宋太后降",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十一月乙亥，伯顏分軍為三道，期會于臨安。",
+        "textSimplified": "十一月乙亥，伯颜分军为三道，期会于临安。",
+        "source": "《元史·列传第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7127"
+      },
+      "verified": true
     },
     {
       "year": 1294,
@@ -104,9 +124,14 @@
       "delta": 0,
       "rationale": "重臣",
       "summary": "辅政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "成宗即位于上都之大安閣，親王有違言，伯顏握劍立殿陛，陳祖宗寶訓，宣揚顧命",
+        "textSimplified": "成宗即位于上都之大安阁，亲王有违言，伯颜握剑立殿陛，陈祖宗宝训，宣扬顾命",
+        "source": "《元史·列传第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7127"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -158,8 +183,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

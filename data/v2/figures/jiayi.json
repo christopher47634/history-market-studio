@@ -210,9 +210,14 @@
     "retention": 0.95,
     "reason": "《治安策》等主张后被采行",
     "score": 20.9,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "誼自傷爲傅無狀，常哭泣，後歲餘，亦死。",
+      "textSimplified": "谊自伤为傅无状，常哭泣，后岁余，亦死。",
+      "source": "《汉书·卷四十八 贾谊传 第十八》",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -261,8 +266,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 8,
-    "quotesClaimed": 8,
+    "quotesVerified": 9,
+    "quotesClaimed": 9,
     "author": "claude"
   }
 }

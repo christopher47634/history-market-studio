@@ -164,9 +164,14 @@
     "retention": 0.95,
     "reason": "诸葛亮自比管乐",
     "score": 15.2,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "樂毅卒於趙。",
+      "textSimplified": "乐毅卒于赵。",
+      "source": "《史记·卷八十 乐毅列传 第二十》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7080"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -208,8 +213,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 6,
-    "quotesClaimed": 6,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

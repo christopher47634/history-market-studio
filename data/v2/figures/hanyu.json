@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "孤贫",
       "summary": "三岁而孤，随兄嫂生活",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "愈生三歲而孤，養於從父兄。",
+        "textSimplified": "愈生三岁而孤，养于从父兄。",
+        "source": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7160"
+      },
+      "verified": true
     },
     {
       "year": 792,
@@ -68,9 +73,14 @@
       "delta": -14,
       "rationale": "被贬",
       "summary": "任监察御史，论宫市贬阳山令",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "調授四門博士，轉監察御史。",
+        "textSimplified": "调授四门博士，转监察御史。",
+        "source": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7160"
+      },
+      "verified": true
     },
     {
       "year": 817,
@@ -209,8 +219,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

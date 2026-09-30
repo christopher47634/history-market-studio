@@ -50,9 +50,14 @@
       "delta": 20,
       "rationale": "文才受宠",
       "summary": "援笔立成，太祖甚异之",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "植援筆立成，可觀，太祖甚異之。",
+        "textSimplified": "植援笔立成，可观，太祖甚异之。",
+        "source": "《三国志·魏书·任城陈萧王传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B719"
+      },
+      "verified": true
     },
     {
       "year": 214,
@@ -234,8 +239,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "平民",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "晏殊，字同叔，撫州臨川人。",
+        "textSimplified": "晏殊，字同叔，抚州临川人。",
+        "source": "《宋史·卷三百十一 列传第七十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7311"
+      },
+      "verified": true
     },
     {
       "year": 1005,
@@ -50,9 +55,14 @@
       "delta": 22,
       "rationale": "神童",
       "summary": "十四岁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝嘉賞，賜同進士出身。",
+        "textSimplified": "帝嘉赏，赐同进士出身。",
+        "source": "《宋史·卷三百十一 列传第七十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7311"
+      },
+      "verified": true
     },
     {
       "year": 1030,
@@ -86,9 +96,14 @@
       "delta": 26,
       "rationale": "宰相",
       "summary": "同平章事兼枢密使",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "慶歷中，拜集賢殿學士、同平章事，兼樞密使。",
+        "textSimplified": "庆历中，拜集贤殿学士、同平章事，兼枢密使。",
+        "source": "《宋史·卷三百十一 列传第七十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7311"
+      },
+      "verified": true
     },
     {
       "year": 1044,
@@ -153,8 +168,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

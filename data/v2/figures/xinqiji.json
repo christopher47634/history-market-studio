@@ -91,9 +91,14 @@
       "delta": 14,
       "rationale": "地方官",
       "summary": "江西提点刑狱",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "召見，遷倉部郎官、提點江西刑獄。",
+        "textSimplified": "召见，迁仓部郎官、提点江西刑狱。",
+        "source": "《宋史·卷四百一 列传第一百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7401"
+      },
+      "verified": true
     },
     {
       "year": 1180,
@@ -150,9 +155,14 @@
       "delta": 45,
       "rationale": "复起",
       "summary": "作《永遇乐》",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "尋差知鎮江府，賜金帶。",
+        "textSimplified": "寻差知镇江府，赐金带。",
+        "source": "《宋史·卷四百一 列传第一百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7401"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -204,8 +214,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

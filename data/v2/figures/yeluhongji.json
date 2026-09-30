@@ -15,6 +15,26 @@
     {
       "label": "《辽史·卷二十一 本纪第二十一》",
       "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B721"
+    },
+    {
+      "label": "《辽史·卷二十二 本纪第二十二》",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B722"
+    },
+    {
+      "label": "《辽史·卷二十三 本纪第二十三》",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B723"
+    },
+    {
+      "label": "《辽史·卷二十四 本纪第二十四》",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B724"
+    },
+    {
+      "label": "《辽史·卷二十五 本纪第二十五》",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B725"
+    },
+    {
+      "label": "《辽史·卷二十六 本纪第二十六》",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B726"
     }
   ],
   "events": [
@@ -32,9 +52,14 @@
       "delta": 0,
       "rationale": "太子",
       "summary": "兴宗长子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "興宗皇帝長子，母曰仁懿皇后蕭氏。",
+        "textSimplified": "兴宗皇帝长子，母曰仁懿皇后萧氏。",
+        "source": "《辽史·卷二十一 本纪第二十一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B721"
+      },
+      "verified": true
     },
     {
       "year": 1055,
@@ -50,9 +75,14 @@
       "delta": 53,
       "rationale": "辽帝",
       "summary": "即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "二十四年秋八月己，興宗崩，即皇帝位於柩前，哀慟不聽政。",
+        "textSimplified": "二十四年秋八月己，兴宗崩，即皇帝位于柩前，哀恸不听政。",
+        "source": "《辽史·卷二十一 本纪第二十一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B721"
+      },
+      "verified": true
     },
     {
       "year": 1063,
@@ -158,8 +188,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

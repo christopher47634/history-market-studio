@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "士人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "王夫之，字而農，衡陽人。",
+        "textSimplified": "王夫之，字而农，衡阳人。",
+        "source": "《清史稿·列传二百六十七 儒林一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+      },
+      "verified": true
     },
     {
       "year": 1642,
@@ -50,9 +55,14 @@
       "delta": 7,
       "rationale": "入仕",
       "summary": "举人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "與兄介之同舉明崇禎壬午鄉試。",
+        "textSimplified": "与兄介之同举明崇祯壬午乡试。",
+        "source": "《清史稿·列传二百六十七 儒林一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+      },
+      "verified": true
     },
     {
       "year": 1648,
@@ -86,9 +96,14 @@
       "delta": 29,
       "rationale": "隐",
       "summary": "著述",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "歸衡陽之石船山，築土室曰觀生居，晨夕杜門，學者稱船山先生。",
+        "textSimplified": "归衡阳之石船山，筑土室曰观生居，晨夕杜门，学者称船山先生。",
+        "source": "《清史稿·列传二百六十七 儒林一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -98,9 +113,14 @@
     "retention": 0.95,
     "reason": "著作晚清刊行",
     "score": 41.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "未幾，卒，葬大樂山之高節裡，自題墓碣曰「明遺臣王某之墓」。",
+      "textSimplified": "未几，卒，葬大乐山之高节里，自题墓碣曰「明遗臣王某之墓」。",
+      "source": "《清史稿·列传二百六十七 儒林一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -147,8 +167,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

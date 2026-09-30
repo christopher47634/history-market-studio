@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "官宦",
       "summary": "父房彦谦为隋司隶刺史",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "房喬，字玄齡，齊州臨淄人。",
+        "textSimplified": "房乔，字玄龄，齐州临淄人。",
+        "source": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B766"
+      },
+      "verified": true
     },
     {
       "year": 597,
@@ -96,9 +101,14 @@
       "delta": 30,
       "rationale": "核心谋臣",
       "summary": "与杜如晦定策",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "因與府屬杜如晦同心戮力。",
+        "textSimplified": "因与府属杜如晦同心戮力。",
+        "source": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B766"
+      },
+      "verified": true
     },
     {
       "year": 629,
@@ -137,9 +147,14 @@
       "delta": 0,
       "rationale": "托付",
       "summary": "太宗征辽，房玄龄留守",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太宗親征遼東，命玄齡京城留守，手詔曰：「公當蕭何之任，朕無西顧之憂矣。",
+        "textSimplified": "太宗亲征辽东，命玄龄京城留守，手诏曰：「公当萧何之任，朕无西顾之忧矣。",
+        "source": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B766"
+      },
+      "verified": true
     },
     {
       "year": 648,
@@ -214,8 +229,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

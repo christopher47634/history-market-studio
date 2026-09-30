@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士族",
       "summary": "京兆杜氏",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "杜如晦，字克明，京兆杜陵人也。",
+        "textSimplified": "杜如晦，字克明，京兆杜陵人也。",
+        "source": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B766"
+      },
+      "verified": true
     },
     {
       "year": 617,
@@ -50,9 +55,14 @@
       "delta": 18,
       "rationale": "谋臣",
       "summary": "房玄龄荐之",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太宗平京城，引爲秦王府兵曹參軍，俄遷陝州總管府長史。",
+        "textSimplified": "太宗平京城，引为秦王府兵曹参军，俄迁陕州总管府长史。",
+        "source": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B766"
+      },
+      "verified": true
     },
     {
       "year": 626,
@@ -86,9 +96,14 @@
       "delta": 8,
       "rationale": "宰相",
       "summary": "与房玄龄共掌朝政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "三年，代長孫無忌爲尚書右僕射，仍知選事，與房玄齡共掌朝政。",
+        "textSimplified": "三年，代长孙无忌为尚书右仆射，仍知选事，与房玄龄共掌朝政。",
+        "source": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B766"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -135,8 +150,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

@@ -68,9 +68,14 @@
       "delta": 33,
       "rationale": "成名",
       "summary": "戴铜面具冲锋",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "臨敵被發、帶銅面具，出入賊中，皆披靡莫敢當。",
+        "textSimplified": "临敌被发、带铜面具，出入贼中，皆披靡莫敢当。",
+        "source": "《宋史·卷二百九十 列传第四十八》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7290"
+      },
+      "verified": true
     },
     {
       "year": 1052,
@@ -186,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

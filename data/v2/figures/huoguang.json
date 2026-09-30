@@ -182,9 +182,14 @@
     "retention": 0.95,
     "reason": "身死三年霍氏以谋反族灭",
     "score": 88.3,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "及光身死而宗族竟誅，故俗傳之曰：「威震主者不畜，霍氏之禍萌於驂乘。",
+      "textSimplified": "及光身死而宗族竟诛，故俗传之曰：「威震主者不畜，霍氏之祸萌于骖乘。",
+      "source": "《汉书·卷六十八 霍光金日䃅传 第三十八》",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7068"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -233,8 +238,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 6,
-    "quotesClaimed": 6,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "鲜卑部落首领之后",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "獨孤信，雲中人也，本名如願。",
+        "textSimplified": "独孤信，云中人也，本名如愿。",
+        "source": "《周书·巻十六 列传第八》",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%9B%B8%2F%E5%8D%B716"
+      },
+      "verified": true
     },
     {
       "year": 534,
@@ -109,9 +114,14 @@
       "delta": -66,
       "rationale": "死",
       "summary": "宇文护逼令自尽",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "居無幾，晉公護又欲殺之，以其名望素重，不欲顯其罪，逼令自盡於家。",
+        "textSimplified": "居无几，晋公护又欲杀之，以其名望素重，不欲显其罪，逼令自尽于家。",
+        "source": "《周书·巻十六 列传第八》",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%9B%B8%2F%E5%8D%B716"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -121,9 +131,14 @@
     "retention": 0.8,
     "reason": "女儿为三朝皇后",
     "score": 12.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "時年五十五。",
+      "textSimplified": "时年五十五。",
+      "source": "《周书·巻十六 列传第八》",
+      "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%9B%B8%2F%E5%8D%B716"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -158,8 +173,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

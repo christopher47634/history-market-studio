@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "宗王",
       "summary": "拖雷第四子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世祖聖德神功文武皇帝，諱忽必烈，睿宗皇帝第四子。",
+        "textSimplified": "世祖圣德神功文武皇帝，讳忽必烈，睿宗皇帝第四子。",
+        "source": "《元史·本纪第四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7004"
+      },
+      "verified": true
     },
     {
       "year": 1251,
@@ -245,8 +250,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

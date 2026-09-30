@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "外戚之后而家道中落",
       "summary": "窦融曾孙，父窦勋被诛",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "父勛被誅，憲少孤。",
+        "textSimplified": "父勋被诛，宪少孤。",
+        "source": "《后汉书·窦融列传 第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B723"
+      },
+      "verified": true
     },
     {
       "year": 77,
@@ -242,8 +247,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 7,
-    "quotesClaimed": 7,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

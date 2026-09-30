@@ -68,9 +68,14 @@
       "delta": 50,
       "rationale": "部落首领",
       "summary": "统一女真",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "是月，康宗即世，太祖襲位爲都勃極烈。",
+        "textSimplified": "是月，康宗即世，太祖袭位为都勃极烈。",
+        "source": "《金史·卷二 本纪第二 太祖》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B72"
+      },
+      "verified": true
     },
     {
       "year": 1114,
@@ -86,9 +91,14 @@
       "delta": 9,
       "rationale": "起兵",
       "summary": "二千五百人破辽",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "諸路兵皆會于來流水，得二千五百人。",
+        "textSimplified": "诸路兵皆会于来流水，得二千五百人。",
+        "source": "《金史·卷二 本纪第二 太祖》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B72"
+      },
+      "verified": true
     },
     {
       "year": 1115,
@@ -104,9 +114,14 @@
       "delta": 3,
       "rationale": "建国",
       "summary": "国号大金",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "于是國號大金，改元收國。",
+        "textSimplified": "于是国号大金，改元收国。",
+        "source": "《金史·卷二 本纪第二 太祖》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B72"
+      },
+      "verified": true
     },
     {
       "year": 1115,
@@ -122,9 +137,14 @@
       "delta": 0,
       "rationale": "以少胜多",
       "summary": "两万破辽七十万",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "衆皆奮躍，追及遼主于護步答岡。",
+        "textSimplified": "众皆奋跃，追及辽主于护步答冈。",
+        "source": "《金史·卷二 本纪第二 太祖》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B72"
+      },
+      "verified": true
     },
     {
       "year": 1122,
@@ -189,8 +209,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

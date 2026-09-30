@@ -68,9 +68,14 @@
       "delta": 46,
       "rationale": "方面",
       "summary": "督抚",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "上嘉羹堯治事明敏，巡撫無督兵責，特授四川總督，兼管巡撫事。",
+        "textSimplified": "上嘉羹尧治事明敏，巡抚无督兵责，特授四川总督，兼管巡抚事。",
+        "source": "《清史稿·卷二百九十五 列传八十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7295"
+      },
+      "verified": true
     },
     {
       "year": 1724,
@@ -86,9 +91,14 @@
       "delta": 4,
       "rationale": "巅峰",
       "summary": "大将军",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世宗即位，召撫遠大將軍允禵還京師，命羹堯管理大將軍印務。",
+        "textSimplified": "世宗即位，召抚远大将军允禵还京师，命羹尧管理大将军印务。",
+        "source": "《清史稿·卷二百九十五 列传八十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7295"
+      },
+      "verified": true
     },
     {
       "year": 1725,
@@ -104,9 +114,14 @@
       "delta": -68,
       "rationale": "贬",
       "summary": "失宠",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "怠玩昏憒，不可復任總督，改授杭州將軍。",
+        "textSimplified": "怠玩昏愦，不可复任总督，改授杭州将军。",
+        "source": "《清史稿·卷二百九十五 列传八十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7295"
+      },
+      "verified": true
     },
     {
       "year": 1726,
@@ -122,9 +137,14 @@
       "delta": -18,
       "rationale": "死局",
       "summary": "赐死",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "是月甲戌，具獄辭：羹堯大逆之罪五，欺罔之罪九，僭越之罪十六，狂悖之罪十三",
+        "textSimplified": "是月甲戌，具狱辞：羹尧大逆之罪五，欺罔之罪九，僭越之罪十六，狂悖之罪十三",
+        "source": "《清史稿·卷二百九十五 列传八十二》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7295"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -176,8 +196,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

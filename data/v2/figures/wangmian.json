@@ -68,9 +68,14 @@
       "delta": 0,
       "rationale": "不第",
       "summary": "放弃科举",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "一试不第，即焚所为文。",
+        "textSimplified": "一试不第，即焚所为文。",
+        "source": "《新元史·卷二百三十八 列传第一百三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7238"
+      },
+      "verified": true
     },
     {
       "year": 1350,
@@ -86,9 +91,14 @@
       "delta": 34,
       "rationale": "画家",
       "summary": "隐居九里山",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "即遁归隐九里山，结茅三间，自题为梅花屋言。",
+        "textSimplified": "即遁归隐九里山，结茅三间，自题为梅花屋言。",
+        "source": "《新元史·卷二百三十八 列传第一百三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7238"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -140,8 +150,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

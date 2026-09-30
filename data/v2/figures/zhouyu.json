@@ -187,9 +187,14 @@
     "retention": 0.9,
     "reason": "东吴失柱石",
     "score": 63,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "瑜還江陵為行裝，而道於巴丘病卒，臣松之案，瑜欲取蜀，還江陵治嚴，所卒之處",
+      "textSimplified": "瑜还江陵为行装，而道于巴丘病卒，臣松之案，瑜欲取蜀，还江陵治严，所卒之处",
+      "source": "《三国志·吴书·周瑜、鲁肃、吕蒙传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B754"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -225,8 +230,8 @@
   },
   "gaps": [],
   "quality": {
-    "quotesVerified": 7,
-    "quotesClaimed": 7,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

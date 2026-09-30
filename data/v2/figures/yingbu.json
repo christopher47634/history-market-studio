@@ -55,9 +55,14 @@
       "delta": -8,
       "rationale": "刑徒",
       "summary": "坐法黥，论输骊山",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及壯，坐法黥。",
+        "textSimplified": "及壮，坐法黥。",
+        "source": "《史记·卷九十一 黥布列传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7091"
+      },
+      "verified": true
     },
     {
       "year": -209,
@@ -165,9 +170,14 @@
       "delta": -56,
       "rationale": "败亡",
       "summary": "韩信、彭越死，惧而反，被刘邦亲征击败",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "令尹曰：「往年殺彭越，前年殺韓信，此三人者，同功一體之人也。",
+        "textSimplified": "令尹曰：「往年杀彭越，前年杀韩信，此三人者，同功一体之人也。",
+        "source": "《史记·卷九十一 黥布列传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7091"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -214,8 +224,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

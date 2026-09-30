@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "名门",
       "summary": "谢奕之女",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "王凝之妻謝氏，字道韞，安西將軍奕之女也。",
+        "textSimplified": "王凝之妻谢氏，字道韫，安西将军奕之女也。",
+        "source": "《晋书·卷九十六 列传第六十六 列女传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7096"
+      },
+      "verified": true
     },
     {
       "year": 360,
@@ -113,9 +118,14 @@
     "retention": 0.9,
     "reason": "才名流传",
     "score": 1.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "自爾嫠居會稽，家中莫不嚴肅。",
+      "textSimplified": "自尔嫠居会稽，家中莫不严肃。",
+      "source": "《晋书·卷九十六 列传第六十六 列女传》",
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7096"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -150,8 +160,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

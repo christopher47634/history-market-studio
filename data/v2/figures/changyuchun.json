@@ -13,8 +13,8 @@
   "thesis": "常十万，冲锋陷阵，北伐途中暴卒。",
   "sources": [
     {
-      "label": "《明史·本纪第一 太祖一》",
-      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B71"
+      "label": "《明史·卷一百二十五 列传第十三》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
     }
   ],
   "events": [
@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "农民",
       "summary": "农家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "常遇春，字伯仁，懷遠人。",
+        "textSimplified": "常遇春，字伯仁，怀远人。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1355,
@@ -50,9 +55,14 @@
       "delta": 25,
       "rationale": "先锋",
       "summary": "先锋",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "無何，自請為前鋒。",
+        "textSimplified": "无何，自请为前锋。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1363,
@@ -68,9 +78,14 @@
       "delta": 43,
       "rationale": "救驾",
       "summary": "射张定边",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "友諒驍將張定邊直犯太祖舟，舟膠於淺，幾殆。",
+        "textSimplified": "友谅骁将张定边直犯太祖舟，舟胶于浅，几殆。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     },
     {
       "year": 1367,
@@ -86,9 +101,14 @@
       "delta": 6,
       "rationale": "名将",
       "summary": "常十万",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "復拜副將軍，與大將軍達帥兵北征。",
+        "textSimplified": "复拜副将军，与大将军达帅兵北征。",
+        "source": "《明史·卷一百二十五 列传第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -98,9 +118,14 @@
     "retention": 0.95,
     "reason": "开平王",
     "score": 79.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "師還，次柳河川，暴疾卒，年僅四十。",
+      "textSimplified": "师还，次柳河川，暴疾卒，年仅四十。",
+      "source": "《明史·卷一百二十五 列传第十三》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7125"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -135,8 +160,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

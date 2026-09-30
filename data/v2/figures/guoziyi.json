@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "官宦",
       "summary": "父郭敬之历任刺史",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "父敬之，歷綏、渭、桂、壽、泗五州刺史，以子儀貴，贈太保，追封祁國公。",
+        "textSimplified": "父敬之，历绥、渭、桂、寿、泗五州刺史，以子仪贵，赠太保，追封祁国公。",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
     },
     {
       "year": 720,
@@ -224,8 +229,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 6,
-    "quotesClaimed": 6,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

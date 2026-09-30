@@ -73,3 +73,11 @@ douxian 後漢書/卷23 憲字伯度
 dumu 新唐書/卷166 牧字牧之
 liugongquan 舊唐書/卷165 公權字誠懸
 shenkuo 宋史/卷331 括字存中
+bangu 後漢書/卷40上 固字孟堅
+hanshizhong 宋史/卷364 韓世忠
+wanyanzongbi 金史/卷77 宗弼
+bayan 元史/卷127 伯顏
+wusangui 清史稿/卷474 吳三桂
+yuanhaowen 金史/卷126 好問字裕之
+xuda 明史/卷125 徐達
+changyuchun 明史/卷125 常遇春

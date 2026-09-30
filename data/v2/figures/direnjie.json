@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "官宦",
       "summary": "祖父狄孝绪为尚书左丞",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "祖孝緒，貞觀中尚書左丞。",
+        "textSimplified": "祖孝绪，贞观中尚书左丞。",
+        "source": "《旧唐书·卷八十九列传第三十九 狄仁杰族曾孙:兼谟 王方庆 姚璹弟:珽》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B789"
+      },
+      "verified": true
     },
     {
       "year": 656,
@@ -98,8 +103,8 @@
       "summary": "同凤阁鸾台平章事",
       "evidence": "原文",
       "quote": {
-        "text": "天授二年九月丁酉，轉地官侍郎、判尚書、同鳳閣鸞-{臺}-平章事。",
-        "textSimplified": "天授二年九月丁酉，转地官侍郎、判尚书、同凤阁鸾-{台}-平章事。",
+        "text": "天授二年九月丁酉，轉地官侍郎、判尚書、同鳳閣鸞臺平章事。",
+        "textSimplified": "天授二年九月丁酉，转地官侍郎、判尚书、同凤阁鸾台平章事。",
         "source": "《旧唐书·卷八十九列传第三十九 狄仁杰族曾孙:兼谟 王方庆 姚璹弟:珽》",
         "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B789"
       },
@@ -142,9 +147,14 @@
       "delta": 86,
       "rationale": "重相",
       "summary": "复为宰相，荐张柬之等",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "仁傑曰：「荊州長史張柬之，其人雖老，真宰相才也。",
+        "textSimplified": "仁杰曰：「荆州长史张柬之，其人虽老，真宰相才也。",
+        "source": "《旧唐书·卷八十九列传第三十九 狄仁杰族曾孙:兼谟 王方庆 姚璹弟:珽》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B789"
+      },
+      "verified": true
     },
     {
       "year": 698,
@@ -219,8 +229,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

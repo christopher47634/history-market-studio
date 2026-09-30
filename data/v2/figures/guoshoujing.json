@@ -50,9 +50,14 @@
       "delta": 22,
       "rationale": "入仕",
       "summary": "忽必烈召见",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世祖召見，面陳水利六事：其一，中都舊漕河，東至通州，引玉泉水以通舟，歲可省雇車錢六萬緡。",
+        "textSimplified": "世祖召见，面陈水利六事：其一，中都旧漕河，东至通州，引玉泉水以通舟，岁可省雇车钱六万缗。",
+        "source": "《元史·列传第五十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7164"
+      },
+      "verified": true
     },
     {
       "year": 1276,
@@ -68,9 +73,14 @@
       "delta": 8,
       "rationale": "天文",
       "summary": "编历",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "遂設監候官一十四員，分道而出，東至高麗，西極滇池，南踰朱崖，北盡鐵勒，四海測驗，凡二十七所。",
+        "textSimplified": "遂设监候官一十四员，分道而出，东至高丽，西极滇池，南逾朱崖，北尽铁勒，四海测验，凡二十七所。",
+        "source": "《元史·列传第五十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7164"
+      },
+      "verified": true
     },
     {
       "year": 1280,
@@ -163,8 +173,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

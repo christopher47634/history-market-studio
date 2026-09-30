@@ -15,6 +15,10 @@
     {
       "label": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》",
       "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7130"
+    },
+    {
+      "label": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7130"
     }
   ],
   "events": [
@@ -109,9 +113,14 @@
       "delta": 69,
       "rationale": "宰相",
       "summary": "德宗时拜相",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "尋拜中書侍郎、平章事、集賢崇文館學士、修國史。",
+        "textSimplified": "寻拜中书侍郎、平章事、集贤崇文馆学士、修国史。",
+        "source": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7130"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -121,9 +130,14 @@
     "retention": 0.95,
     "reason": "屡安社稷",
     "score": 83.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "年六十八薨，贈太子太傅，賻禮有加。",
+      "textSimplified": "年六十八薨，赠太子太傅，赙礼有加。",
+      "source": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7130"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -163,8 +177,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "部落",
       "summary": "沙陀人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝即孝元之第二子也，以唐景福元年二月二十八日生於太原汾陽裏，時有白氣充庭，人甚異焉。",
+        "textSimplified": "帝即孝元之第二子也，以唐景福元年二月二十八日生于太原汾阳里，时有白气充庭，人甚异焉。",
+        "source": "《旧五代史·卷七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B775"
+      },
+      "verified": true
     },
     {
       "year": 925,
@@ -68,9 +73,14 @@
       "delta": 10,
       "rationale": "方镇",
       "summary": "镇太原",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "加兼侍中、太原尹、北京留守、河東節度使，兼大同、振武、彰國、威塞等軍蕃漢馬步軍總管",
+        "textSimplified": "加兼侍中、太原尹、北京留守、河东节度使，兼大同、振武、彰国、威塞等军蕃汉马步军总管",
+        "source": "《旧五代史·卷七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B775"
+      },
+      "verified": true
     },
     {
       "year": 936,
@@ -158,8 +168,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

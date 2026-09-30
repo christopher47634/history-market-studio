@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "商人",
       "summary": "茶商",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "鄧世昌，字正卿，廣東番禺人。",
+        "textSimplified": "邓世昌，字正卿，广东番禺人。",
+        "source": "《清史稿·卷四百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+      },
+      "verified": true
     },
     {
       "year": 1867,
@@ -86,9 +91,14 @@
       "delta": 12,
       "rationale": "舰长",
       "summary": "管带",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "尋充經遠、致遠、靖遠、濟遠四船營務處，兼致遠管帶。",
+        "textSimplified": "寻充经远、致远、靖远、济远四船营务处，兼致远管带。",
+        "source": "《清史稿·卷四百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+      },
+      "verified": true
     },
     {
       "year": 1894,
@@ -104,9 +114,14 @@
       "delta": -48,
       "rationale": "殉国",
       "summary": "撞吉野殉国",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世昌乘致遠，最猛鷙，與日艦吉野浪速相當，吉野，日艦之中堅也。",
+        "textSimplified": "世昌乘致远，最猛鸷，与日舰吉野浪速相当，吉野，日舰之中坚也。",
+        "source": "《清史稿·卷四百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -116,9 +131,14 @@
     "retention": 0.9,
     "reason": "民族英雄",
     "score": 1.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "世昌遂鼓輪怒駛，欲猛觸吉野與同盡，中其魚雷，鍋船裂沉。",
+      "textSimplified": "世昌遂鼓轮怒驶，欲猛触吉野与同尽，中其鱼雷，锅船裂沉。",
+      "source": "《清史稿·卷四百六十》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -153,8 +173,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

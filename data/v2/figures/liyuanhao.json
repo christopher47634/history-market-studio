@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "李德明之子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "元昊五月五日生，國人以其日相慶賀，又以四孟朔為節。",
+        "textSimplified": "元昊五月五日生，国人以其日相庆贺，又以四孟朔为节。",
+        "source": "《宋史·列传卷第二百四十四 外国一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7485"
+      },
+      "verified": true
     },
     {
       "year": 1032,
@@ -176,8 +181,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

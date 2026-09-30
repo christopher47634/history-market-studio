@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "长孙晟之子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "長孫無忌，字輔機，河南洛陽人。",
+        "textSimplified": "长孙无忌，字辅机，河南洛阳人。",
+        "source": "《旧唐书·卷六十五列传第十五 高士廉 长孙无忌》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B765"
+      },
+      "verified": true
     },
     {
       "year": 626,
@@ -50,9 +55,14 @@
       "delta": 48,
       "rationale": "首功",
       "summary": "首谋",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "無忌與尉遲敬德、侯君集、張公謹、劉師立、公孫武達、獨孤彥雲、杜君綽、鄭仁泰、李孟嘗等九人，入玄武門討建成、元吉，平之。",
+        "textSimplified": "无忌与尉迟敬德、侯君集、张公谨、刘师立、公孙武达、独孤彦云、杜君绰、郑仁泰、李孟尝等九人，入玄武门讨建成、元吉，平之。",
+        "source": "《旧唐书·卷六十五列传第十五 高士廉 长孙无忌》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B765"
+      },
+      "verified": true
     },
     {
       "year": 627,
@@ -68,9 +78,14 @@
       "delta": 8,
       "rationale": "宰相",
       "summary": "位居宰相",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "其年，拜尚書右僕射。",
+        "textSimplified": "其年，拜尚书右仆射。",
+        "source": "《旧唐书·卷六十五列传第十五 高士廉 长孙无忌》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B765"
+      },
+      "verified": true
     },
     {
       "year": 643,
@@ -109,9 +124,14 @@
       "delta": 2,
       "rationale": "首辅",
       "summary": "辅高宗",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "二十三年，太宗疾篤，引無忌及中書令褚遂良二人受遺令輔政。",
+        "textSimplified": "二十三年，太宗疾笃，引无忌及中书令褚遂良二人受遗令辅政。",
+        "source": "《旧唐书·卷六十五列传第十五 高士廉 长孙无忌》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B765"
+      },
+      "verified": true
     },
     {
       "year": 655,
@@ -204,8 +224,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

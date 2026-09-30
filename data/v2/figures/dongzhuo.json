@@ -78,9 +78,14 @@
       "delta": -14,
       "rationale": "受挫",
       "summary": "代卢植讨张角，无功抵罪",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "中平元年，拜東中郎將，持節，代盧植擊張角於下曲陽，軍敗抵罪。",
+        "textSimplified": "中平元年，拜东中郎将，持节，代卢植击张角于下曲阳，军败抵罪。",
+        "source": "《后汉书·董卓列传 第六十二》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B772"
+      },
+      "verified": true
     },
     {
       "year": 189,
@@ -208,8 +213,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

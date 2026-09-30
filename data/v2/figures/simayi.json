@@ -55,9 +55,14 @@
       "delta": 1,
       "rationale": "被迫出仕",
       "summary": "魏武辟之，惧而就职",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝懼而就職。",
+        "textSimplified": "帝惧而就职。",
+        "source": "《晋书·卷一帝纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7001"
+      },
+      "verified": true
     },
     {
       "year": 220,
@@ -96,9 +101,14 @@
       "delta": 6,
       "rationale": "辅政大臣",
       "summary": "与曹真、陈群受遗诏辅政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及天子疾篤，帝與曹真、陳羣等見於崇華殿之南堂，並受顧命輔政。",
+        "textSimplified": "及天子疾笃，帝与曹真、陈群等见于崇华殿之南堂，并受顾命辅政。",
+        "source": "《晋书·卷一帝纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7001"
+      },
+      "verified": true
     },
     {
       "year": 231,
@@ -267,8 +277,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 7,
-    "quotesClaimed": 7,
+    "quotesVerified": 9,
+    "quotesClaimed": 9,
     "author": "claude"
   }
 }

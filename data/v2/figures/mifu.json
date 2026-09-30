@@ -68,9 +68,14 @@
       "delta": 20,
       "rationale": "宫廷",
       "summary": "徽宗召为书画学博士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太常博士，知無為軍，召為書畫學博士，賜對便殿，上其子友仁所作《楚山清曉圖》",
+        "textSimplified": "太常博士，知无为军，召为书画学博士，赐对便殿，上其子友仁所作《楚山清晓图》",
+        "source": "《宋史·卷四百四十四 列传第二百三 文苑六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7444"
+      },
+      "verified": true
     },
     {
       "year": 1105,
@@ -86,9 +91,14 @@
       "delta": 2,
       "rationale": "官",
       "summary": "米南宫",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "召為書畫學博士，賜對便殿，上其子友仁所作《楚山清曉圖》，擢禮部員外郎，出知淮陽軍。",
+        "textSimplified": "召为书画学博士，赐对便殿，上其子友仁所作《楚山清晓图》，擢礼部员外郎，出知淮阳军。",
+        "source": "《宋史·卷四百四十四 列传第二百三 文苑六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7444"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -140,8 +150,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

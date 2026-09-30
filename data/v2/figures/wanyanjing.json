@@ -15,6 +15,18 @@
     {
       "label": "《金史·卷九 本纪第九 章宗一》",
       "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B79"
+    },
+    {
+      "label": "《金史·卷一十 本纪第十 章宗二》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B710"
+    },
+    {
+      "label": "《金史·卷一十一 本纪第十一 章宗三》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B711"
+    },
+    {
+      "label": "《金史·卷一十二 本纪第十二 章宗四》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B712"
     }
   ],
   "events": [
@@ -50,9 +62,14 @@
       "delta": 53,
       "rationale": "金帝",
       "summary": "即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "二十九年春正月癸巳，世宗崩，即皇帝位於柩前。",
+        "textSimplified": "二十九年春正月癸巳，世宗崩，即皇帝位于柩前。",
+        "source": "《金史·卷九 本纪第九 章宗一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B79"
+      },
+      "verified": true
     },
     {
       "year": 1195,
@@ -68,9 +85,14 @@
       "delta": 2,
       "rationale": "盛世",
       "summary": "文治鼎盛",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "明昌元年春正月丙辰朔，改元。",
+        "textSimplified": "明昌元年春正月丙辰朔，改元。",
+        "source": "《金史·卷九 本纪第九 章宗一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B79"
+      },
+      "verified": true
     },
     {
       "year": 1206,
@@ -98,9 +120,14 @@
     "retention": 0.9,
     "reason": "金朝由盛转衰",
     "score": 81,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "丙辰，崩于福安殿，年四十一。",
+      "textSimplified": "丙辰，崩于福安殿，年四十一。",
+      "source": "《金史·卷一十二 本纪第十二 章宗四》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B712"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -135,8 +162,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

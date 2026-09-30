@@ -50,9 +50,14 @@
       "delta": 14,
       "rationale": "入仕",
       "summary": "十九岁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "年十九，舉進士。",
+        "textSimplified": "年十九，举进士。",
+        "source": "《宋史·卷二百八十一 列传第四十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7281"
+      },
+      "verified": true
     },
     {
       "year": 994,
@@ -68,9 +73,14 @@
       "delta": 49,
       "rationale": "宰执",
       "summary": "执政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "明年，召拜參知政事。",
+        "textSimplified": "明年，召拜参知政事。",
+        "source": "《宋史·卷二百八十一 列传第四十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7281"
+      },
+      "verified": true
     },
     {
       "year": 1004,
@@ -109,9 +119,14 @@
       "delta": -55,
       "rationale": "罢相",
       "summary": "罢",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "王欽若深嫉之。",
+        "textSimplified": "王钦若深嫉之。",
+        "source": "《宋史·卷二百八十一 列传第四十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7281"
+      },
+      "verified": true
     },
     {
       "year": 1019,
@@ -199,8 +214,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

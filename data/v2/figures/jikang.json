@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士族",
       "summary": "早孤",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "嵇康，字叔夜，譙國銍人也。",
+        "textSimplified": "嵇康，字叔夜，谯国铚人也。",
+        "source": "《晋书·巻四十九 列传第十九》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7049"
+      },
+      "verified": true
     },
     {
       "year": 245,
@@ -75,8 +80,8 @@
       "summary": "与阮籍山涛等为竹林之游",
       "evidence": "原文",
       "quote": {
-        "text": "豫其流者河内向秀、沛國劉伶、籍兄子-{咸}-、琅邪王戎，遂爲竹林之-{遊}-，世所謂「竹林七賢」也。",
-        "textSimplified": "豫其流者河内向秀、沛国刘伶、籍兄子-{咸}-、琅邪王戎，遂为竹林之-{游}-，世所谓「竹林七贤」也。",
+        "text": "豫其流者河内向秀、沛國劉伶、籍兄子咸、琅邪王戎，遂爲竹林之遊，世所謂「竹林七賢」也。",
+        "textSimplified": "豫其流者河内向秀、沛国刘伶、籍兄子咸、琅邪王戎，遂为竹林之游，世所谓「竹林七贤」也。",
         "source": "《晋书·巻四十九 列传第十九》",
         "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7049"
       },
@@ -116,8 +121,8 @@
       "summary": "钟会谗之，与吕安同下狱",
       "evidence": "原文",
       "quote": {
-        "text": "東平呂安服康髙致，毎一相思，輙千-{里}-命駕，康友而善之。",
-        "textSimplified": "东平吕安服康髙致，毎一相思，輙千-{里}-命驾，康友而善之。",
+        "text": "潁川鍾會，貴公子也，精練有才辯，故往造焉。",
+        "textSimplified": "颍川钟会，贵公子也，精练有才辩，故往造焉。",
         "source": "《晋书·巻四十九 列传第十九》",
         "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7049"
       },
@@ -133,8 +138,8 @@
     "score": 1.7,
     "evidence": "原文",
     "quote": {
-      "text": "康顧視日影，索琴彈之，曰：「昔袁孝尼嘗從吾學《廣陵散》，吾毎靳固之，《廣陵散》-{於}-今絶矣！",
-      "textSimplified": "康顾视日影，索琴弹之，曰：「昔袁孝尼尝从吾学《广陵散》，吾毎靳固之，《广陵散》-{于}-今绝矣！",
+      "text": "康顧視日影，索琴彈之，曰：「昔袁孝尼嘗從吾學《廣陵散》，吾毎靳固之，《廣陵散》於今絶矣！",
+      "textSimplified": "康顾视日影，索琴弹之，曰：「昔袁孝尼尝从吾学《广陵散》，吾毎靳固之，《广陵散》于今绝矣！",
       "source": "《晋书·巻四十九 列传第十九》",
       "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7049"
     },
@@ -173,8 +178,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

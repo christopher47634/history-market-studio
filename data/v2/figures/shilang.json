@@ -68,9 +68,14 @@
       "delta": -34,
       "rationale": "家破",
       "summary": "投清",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "瑯以計得脫，父大宣、弟顯及子侄皆為成功所殺。",
+        "textSimplified": "瑯以计得脱，父大宣、弟显及子侄皆为成功所杀。",
+        "source": "《清史稿·卷二百六十 列传四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7260"
+      },
+      "verified": true
     },
     {
       "year": 1663,
@@ -86,9 +91,14 @@
       "delta": 74,
       "rationale": "方面",
       "summary": "提督",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "康熙元年，遷水師提督。",
+        "textSimplified": "康熙元年，迁水师提督。",
+        "source": "《清史稿·卷二百六十 列传四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7260"
+      },
+      "verified": true
     },
     {
       "year": 1668,
@@ -139,9 +149,14 @@
     "retention": 0.95,
     "reason": "台湾入版图",
     "score": 79.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "台灣原屬化外，土番雜處，未入版圖。",
+      "textSimplified": "台湾原属化外，土番杂处，未入版图。",
+      "source": "《清史稿·卷二百六十 列传四十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7260"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -176,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

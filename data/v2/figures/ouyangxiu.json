@@ -55,9 +55,14 @@
       "delta": 24,
       "rationale": "入仕",
       "summary": "甲科",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "舉進士，試南宮第一，擢甲科，調西京推官。",
+        "textSimplified": "举进士，试南宫第一，擢甲科，调西京推官。",
+        "source": "《宋史·卷三百十九 列传第七十八》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7319"
+      },
+      "verified": true
     },
     {
       "year": 1036,
@@ -96,9 +101,14 @@
       "delta": 34,
       "rationale": "改革派",
       "summary": "知谏院",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "慶曆三年，知諫院。",
+        "textSimplified": "庆历三年，知谏院。",
+        "source": "《宋史·卷三百十九 列传第七十八》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7319"
+      },
+      "verified": true
     },
     {
       "year": 1045,
@@ -232,8 +242,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "宗室",
       "summary": "宋太祖十一世孙",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "宋太祖裔孫秀王子稱五世孫也。",
+        "textSimplified": "宋太祖裔孙秀王子称五世孙也。",
+        "source": "《新元史·卷一百九十 列传第八十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7190"
+      },
+      "verified": true
     },
     {
       "year": 1276,
@@ -86,9 +91,14 @@
       "delta": 18,
       "rationale": "高位",
       "summary": "荣际五朝",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "延祐元年，遷集賢學士、資德大夫，進拜翰林學士承旨、榮祿大夫。",
+        "textSimplified": "延祐元年，迁集贤学士、资德大夫，进拜翰林学士承旨、荣禄大夫。",
+        "source": "《新元史·卷一百九十 列传第八十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7190"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -140,8 +150,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "claude"
   }
 }

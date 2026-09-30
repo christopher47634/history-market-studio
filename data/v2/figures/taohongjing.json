@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士族",
       "summary": "士族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "陶弘景字通明，丹陽秣陵人也。",
+        "textSimplified": "陶弘景字通明，丹阳秣陵人也。",
+        "source": "《南史·卷七十六 列传第六十六 隐逸下》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B776"
+      },
+      "verified": true
     },
     {
       "year": 475,
@@ -50,9 +55,14 @@
       "delta": 11,
       "rationale": "侍读",
       "summary": "齐高帝时为诸王侍读",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "未弱冠，齊高帝作相，引為諸王侍讀，除奉朝請。",
+        "textSimplified": "未弱冠，齐高帝作相，引为诸王侍读，除奉朝请。",
+        "source": "《南史·卷七十六 列传第六十六 隐逸下》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B776"
+      },
+      "verified": true
     },
     {
       "year": 492,
@@ -68,9 +78,14 @@
       "delta": 12,
       "rationale": "隐居",
       "summary": "脱朝服挂神武门，隐茅山",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "永明十年，脫朝服掛神武門，上表辭祿。",
+        "textSimplified": "永明十年，脱朝服挂神武门，上表辞禄。",
+        "source": "《南史·卷七十六 列传第六十六 隐逸下》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B776"
+      },
+      "verified": true
     },
     {
       "year": 502,
@@ -103,9 +118,14 @@
     "retention": 0.95,
     "reason": "《本草经集注》传世",
     "score": 58.9,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "孝經、論語集注、帝代年曆、本草集注、效驗方、肘後百一方、古今州郡記、圖像集要及玉匱記、七曜新舊術疏、占候、合丹法式",
+      "textSimplified": "孝经、论语集注、帝代年历、本草集注、效验方、肘后百一方、古今州郡记、图像集要及玉匮记、七曜新旧术疏、占候、合丹法式",
+      "source": "《南史·卷七十六 列传第六十六 隐逸下》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E5%8F%B2%2F%E5%8D%B776"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -150,8 +170,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

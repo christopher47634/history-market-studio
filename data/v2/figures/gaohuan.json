@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "寒门",
       "summary": "累世北边，习鲜卑俗",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "神武旣累世北邊，故習其俗，遂同鮮卑。",
+        "textSimplified": "神武既累世北边，故习其俗，遂同鲜卑。",
+        "source": "《北齐书·第一卷 补帝纪第一 神武帝 高欢上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 528,
@@ -50,9 +55,14 @@
       "delta": 36,
       "rationale": "将领",
       "summary": "为亲信都督",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "旣而榮以神武為親信都督。",
+        "textSimplified": "既而荣以神武为亲信都督。",
+        "source": "《北齐书·第一卷 补帝纪第一 神武帝 高欢上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 531,
@@ -68,9 +78,14 @@
       "delta": 38,
       "rationale": "自立",
       "summary": "信都起兵",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "六月庚子，建義於信都，尚未顯背尒朱氏。",
+        "textSimplified": "六月庚子，建义于信都，尚未显背尒朱氏。",
+        "source": "《北齐书·第一卷 补帝纪第一 神武帝 高欢上》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 534,
@@ -153,8 +168,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

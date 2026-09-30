@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "皇子",
       "summary": "皇四子胤禛",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "世宗敬天昌運建中表正文武英明寬仁信毅睿聖大孝至誠憲皇帝諱胤禛，聖祖第四子也。",
+        "textSimplified": "世宗敬天昌运建中表正文武英明宽仁信毅睿圣大孝至诚宪皇帝讳胤禛，圣祖第四子也。",
+        "source": "《清史稿·本纪九 世宗本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B79"
+      },
+      "verified": true
     },
     {
       "year": 1709,
@@ -50,9 +55,14 @@
       "delta": 31,
       "rationale": "亲王",
       "summary": "亲王",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "四十八年封雍親王。",
+        "textSimplified": "四十八年封雍亲王。",
+        "source": "《清史稿·本纪九 世宗本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B79"
+      },
+      "verified": true
     },
     {
       "year": 1712,
@@ -86,9 +96,14 @@
       "delta": 41,
       "rationale": "即位",
       "summary": "康熙崩于畅春园",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "六十一年十一月，聖祖在暢春園不豫，命代祀圜丘。",
+        "textSimplified": "六十一年十一月，圣祖在畅春园不豫，命代祀圜丘。",
+        "source": "《清史稿·本纪九 世宗本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B79"
+      },
+      "verified": true
     },
     {
       "year": 1723,
@@ -122,9 +137,14 @@
       "delta": 1,
       "rationale": "集权",
       "summary": "整肃",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "六月癸酉，詔年羹堯之子年富、年興，隆科多之子玉柱俱褫職。",
+        "textSimplified": "六月癸酉，诏年羹尧之子年富、年兴，隆科多之子玉柱俱褫职。",
+        "source": "《清史稿·本纪九 世宗本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B79"
+      },
+      "verified": true
     },
     {
       "year": 1729,
@@ -140,9 +160,14 @@
       "delta": 1,
       "rationale": "集权",
       "summary": "军机房",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "命編修張若靄，庶吉士鄂容安、鄂倫俱在辦理軍機處行走。",
+        "textSimplified": "命编修张若霭，庶吉士鄂容安、鄂伦俱在办理军机处行走。",
+        "source": "《清史稿·本纪九 世宗本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B79"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -189,8 +214,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

@@ -50,9 +50,14 @@
       "delta": -5,
       "rationale": "不第",
       "summary": "不附权贵",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "張居正欲其子及第，羅海內名士以張之。",
+        "textSimplified": "张居正欲其子及第，罗海内名士以张之。",
+        "source": "《明史·卷二百三十列传第一百十八 蔡时鼎 万国钦 饶伸 汤显祖 逯中立 杨恂 姜士昌 马孟祯 汪若霖》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7230"
+      },
+      "verified": true
     },
     {
       "year": 1583,
@@ -68,9 +73,14 @@
       "delta": 14,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "顯祖至萬歷十一年始成進士。",
+        "textSimplified": "显祖至万历十一年始成进士。",
+        "source": "《明史·卷二百三十列传第一百十八 蔡时鼎 万国钦 饶伸 汤显祖 逯中立 杨恂 姜士昌 马孟祯 汪若霖》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7230"
+      },
+      "verified": true
     },
     {
       "year": 1591,
@@ -86,9 +96,14 @@
       "delta": -16,
       "rationale": "贬",
       "summary": "论时政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝怒，謫徐聞典史。",
+        "textSimplified": "帝怒，谪徐闻典史。",
+        "source": "《明史·卷二百三十列传第一百十八 蔡时鼎 万国钦 饶伸 汤显祖 逯中立 杨恂 姜士昌 马孟祯 汪若霖》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7230"
+      },
+      "verified": true
     },
     {
       "year": 1598,
@@ -104,9 +119,14 @@
       "delta": 32,
       "rationale": "名作",
       "summary": "临川四梦",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "二十六年，上計京師，投劾歸。",
+        "textSimplified": "二十六年，上计京师，投劾归。",
+        "source": "《明史·卷二百三十列传第一百十八 蔡时鼎 万国钦 饶伸 汤显祖 逯中立 杨恂 姜士昌 马孟祯 汪若霖》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7230"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -116,9 +136,14 @@
     "retention": 0.95,
     "reason": "牡丹亭",
     "score": 47.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "家居二十年卒。",
+      "textSimplified": "家居二十年卒。",
+      "source": "《明史·卷二百三十列传第一百十八 蔡时鼎 万国钦 饶伸 汤显祖 逯中立 杨恂 姜士昌 马孟祯 汪若霖》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7230"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -158,8 +183,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

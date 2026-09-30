@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "孤",
       "summary": "父早卒",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "周敦頤，字茂叔，道州營道人。",
+        "textSimplified": "周敦颐，字茂叔，道州营道人。",
+        "source": "《宋史·卷四百二十七 列传第一百八十六 道学一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7427"
+      },
+      "verified": true
     },
     {
       "year": 1036,
@@ -50,9 +55,14 @@
       "delta": 10,
       "rationale": "小官",
       "summary": "分宁主簿",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "以舅龍圖閣學士鄭向任，為分寧主簿。",
+        "textSimplified": "以舅龙图阁学士郑向任，为分宁主簿。",
+        "source": "《宋史·卷四百二十七 列传第一百八十六 道学一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7427"
+      },
+      "verified": true
     },
     {
       "year": 1046,
@@ -104,9 +114,14 @@
       "delta": 4,
       "rationale": "隐",
       "summary": "隐居庐山",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "以疾求知南康軍，因家廬山蓮花峰下。",
+        "textSimplified": "以疾求知南康军，因家庐山莲花峰下。",
+        "source": "《宋史·卷四百二十七 列传第一百八十六 道学一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7427"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -165,8 +180,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

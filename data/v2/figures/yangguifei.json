@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "小官之女",
       "summary": "父为蜀州司户",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "父玄琰，蜀州司戶。",
+        "textSimplified": "父玄琰，蜀州司户。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     },
     {
       "year": 735,
@@ -175,8 +180,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

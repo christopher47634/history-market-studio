@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "王子",
       "summary": "努尔哈赤十四子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "睿忠親王多爾袞，太祖第十四子。",
+        "textSimplified": "睿忠亲王多尔衮，太祖第十四子。",
+        "source": "《清史稿·列传五 诸王四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7218"
+      },
+      "verified": true
     },
     {
       "year": 1626,
@@ -68,9 +73,14 @@
       "delta": 74,
       "rationale": "亲王",
       "summary": "亲王",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "崇德元年，進封睿親王。",
+        "textSimplified": "崇德元年，进封睿亲王。",
+        "source": "《清史稿·列传五 诸王四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7218"
+      },
+      "verified": true
     },
     {
       "year": 1643,
@@ -86,9 +96,14 @@
       "delta": 6,
       "rationale": "摄政",
       "summary": "摄政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "上至京師，封為叔父攝政王，賜貂蟒朝衣。",
+        "textSimplified": "上至京师，封为叔父摄政王，赐貂蟒朝衣。",
+        "source": "《清史稿·列传五 诸王四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7218"
+      },
+      "verified": true
     },
     {
       "year": 1644,
@@ -106,8 +121,8 @@
       "summary": "山海关",
       "evidence": "原文",
       "quote": {
-        "text": "與貝勒莽古爾泰等攻下漢兒莊，趨通州，薄明都，敗袁崇煥、祖大壽援兵於廣渠門外，又殲山海關援兵於薊州。",
-        "textSimplified": "与贝勒莽古尔泰等攻下汉儿庄，趋通州，薄明都，败袁崇焕、祖大寿援兵于广渠门外，又歼山海关援兵于蓟州。",
+        "text": "五月，率諸王貝勒獵於山海關，朝鮮送女至，王迎於連山，成婚。",
+        "textSimplified": "五月，率诸王贝勒猎于山海关，朝鲜送女至，王迎于连山，成婚。",
         "source": "《清史稿·列传五 诸王四》",
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7218"
       },
@@ -121,9 +136,14 @@
     "retention": 0.95,
     "reason": "身后被削爵",
     "score": 90.3,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "十二月，薨於喀喇城，年三十九。",
+      "textSimplified": "十二月，薨于喀喇城，年三十九。",
+      "source": "《清史稿·列传五 诸王四》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7218"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -166,8 +186,8 @@
   },
   "gaps": [],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

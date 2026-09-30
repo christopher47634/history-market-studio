@@ -68,9 +68,14 @@
       "delta": 33,
       "rationale": "起义",
       "summary": "投高迎祥",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "有安塞馬賊高迎祥者，自成舅也，與饑民王大樑聚眾應之。",
+        "textSimplified": "有安塞马贼高迎祥者，自成舅也，与饥民王大梁聚众应之。",
+        "source": "《明史·卷三百九 列传第一百九十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309"
+      },
+      "verified": true
     },
     {
       "year": 1638,
@@ -86,9 +91,14 @@
       "delta": -34,
       "rationale": "绝境",
       "summary": "仅十八骑",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "自成盡亡其卒，獨與劉宗敏、田見秀等十八騎潰圍，竄伏商、洛山中。",
+        "textSimplified": "自成尽亡其卒，独与刘宗敏、田见秀等十八骑溃围，窜伏商、洛山中。",
+        "source": "《明史·卷三百九 列传第一百九十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309"
+      },
+      "verified": true
     },
     {
       "year": 1641,
@@ -122,9 +132,14 @@
       "delta": 12,
       "rationale": "推翻明朝",
       "summary": "崇祯自缢",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "改西安曰長安，稱西京。",
+        "textSimplified": "改西安曰长安，称西京。",
+        "source": "《明史·卷三百九 列传第一百九十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309"
+      },
+      "verified": true
     },
     {
       "year": 1644,
@@ -140,9 +155,14 @@
       "delta": -39,
       "rationale": "败退",
       "summary": "清军入关",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "自成怒，親部賊十餘萬，執吳襄於軍，東攻山海關，以別將從一片石越關外。",
+        "textSimplified": "自成怒，亲部贼十余万，执吴襄于军，东攻山海关，以别将从一片石越关外。",
+        "source": "《明史·卷三百九 列传第一百九十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -152,9 +172,14 @@
     "retention": 0.8,
     "reason": "大顺覆灭",
     "score": 42.4,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "自成走咸甯、蒲圻，至通城，竄於九宮山。",
+      "textSimplified": "自成走咸甯、蒲圻，至通城，窜于九宫山。",
+      "source": "《明史·卷三百九 列传第一百九十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -189,8 +214,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

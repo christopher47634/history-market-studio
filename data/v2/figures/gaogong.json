@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "官宦",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "高拱，字肅卿，新鄭人。",
+        "textSimplified": "高拱，字肃卿，新郑人。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1541,
@@ -50,9 +55,14 @@
       "delta": 8,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "嘉靖二十年進士。",
+        "textSimplified": "嘉靖二十年进士。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1566,
@@ -68,9 +78,14 @@
       "delta": 50,
       "rationale": "阁臣",
       "summary": "裕王旧臣",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "四十五年，拜文淵閣大學士，與郭樸同入閣。",
+        "textSimplified": "四十五年，拜文渊阁大学士，与郭朴同入阁。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1570,
@@ -86,9 +101,14 @@
       "delta": 6,
       "rationale": "首辅",
       "summary": "改革",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "三年冬，帝召拱以大學士兼掌吏部事。",
+        "textSimplified": "三年冬，帝召拱以大学士兼掌吏部事。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1572,
@@ -104,9 +124,14 @@
       "delta": -87,
       "rationale": "罢",
       "summary": "即日驱逐",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "初，帝意專屬閣臣，而中官矯遺詔命與馮保共事。",
+        "textSimplified": "初，帝意专属阁臣，而中官矫遗诏命与冯保共事。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -116,9 +141,14 @@
     "retention": 0.9,
     "reason": "张居正独相",
     "score": 4.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "居家數年，卒。",
+      "textSimplified": "居家数年，卒。",
+      "source": "《明史·卷二百十三 列传第一百一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -158,8 +188,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

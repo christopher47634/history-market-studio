@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "皇子",
       "summary": "朱元璋第四子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "成祖啟天弘道高明肇運聖武神功純仁至孝文皇帝諱棣，太祖第四子也。",
+        "textSimplified": "成祖启天弘道高明肇运圣武神功纯仁至孝文皇帝讳棣，太祖第四子也。",
+        "source": "《明史·本纪第五 成祖一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B75"
+      },
+      "verified": true
     },
     {
       "year": 1380,
@@ -50,9 +55,14 @@
       "delta": 31,
       "rationale": "藩王",
       "summary": "燕王",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十三年，之藩北平。",
+        "textSimplified": "十三年，之藩北平。",
+        "source": "《明史·本纪第五 成祖一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B75"
+      },
+      "verified": true
     },
     {
       "year": 1399,
@@ -91,9 +101,14 @@
       "delta": 50,
       "rationale": "即位",
       "summary": "建文帝下落不明",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "王升輦，詣奉天殿即皇帝位。",
+        "textSimplified": "王升辇，诣奉天殿即皇帝位。",
+        "source": "《明史·本纪第五 成祖一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B75"
+      },
+      "verified": true
     },
     {
       "year": 1405,
@@ -204,8 +219,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

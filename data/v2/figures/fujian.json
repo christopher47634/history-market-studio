@@ -50,9 +50,14 @@
       "delta": 51,
       "rationale": "称王",
       "summary": "杀苻生自立",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "以升平元年僭稱大秦天王，誅生幸臣董龍、趙韶等二十餘人，赦其境內，改元曰永興。",
+        "textSimplified": "以升平元年僭称大秦天王，诛生幸臣董龙、赵韶等二十余人，赦其境内，改元曰永兴。",
+        "source": "《晋书·卷一百十三 载记第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7113"
+      },
+      "verified": true
     },
     {
       "year": 376,
@@ -68,9 +73,14 @@
       "delta": 6,
       "rationale": "巅峰",
       "summary": "灭前凉、代国，北方统一",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "天錫懼而遣使謝罪稱籓，堅大悅，即署天錫為使持節、散騎常侍、都督河右諸軍事、驃騎大將軍、開府儀同三司、涼州刺史、西域都護、西平公。",
+        "textSimplified": "天锡惧而遣使谢罪称籓，坚大悦，即署天锡为使持节、散骑常侍、都督河右诸军事、骠骑大将军、开府仪同三司、凉州刺史、西域都护、西平公。",
+        "source": "《晋书·卷一百十三 载记第十三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7113"
+      },
+      "verified": true
     },
     {
       "year": 383,
@@ -163,8 +173,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

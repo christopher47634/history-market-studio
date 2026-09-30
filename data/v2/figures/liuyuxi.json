@@ -68,9 +68,14 @@
       "delta": 18,
       "rationale": "革新派",
       "summary": "屯田员外郎",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "轉屯田員外郎、判度支鹽鐵案，兼崇陵使判官。",
+        "textSimplified": "转屯田员外郎、判度支盐铁案，兼崇陵使判官。",
+        "source": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7160"
+      },
+      "verified": true
     },
     {
       "year": 805,
@@ -132,9 +137,14 @@
       "delta": 30,
       "rationale": "复用",
       "summary": "二十三年弃置身",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太和二年，自和州刺史徵還，拜主客郎中。",
+        "textSimplified": "太和二年，自和州刺史征还，拜主客郎中。",
+        "source": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7160"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -181,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "寒门",
       "summary": "少孤贫，出家为道士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "徵少孤貧，落拓有大志，不事生業，出家爲道士。",
+        "textSimplified": "征少孤贫，落拓有大志，不事生业，出家为道士。",
+        "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 617,
@@ -50,9 +55,14 @@
       "delta": 20,
       "rationale": "入仕",
       "summary": "为元宝藏书记",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "大業末，武陽郡丞元寶藏舉兵以應李密，召徵使典書記。",
+        "textSimplified": "大业末，武阳郡丞元宝藏举兵以应李密，召征使典书记。",
+        "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 619,
@@ -109,9 +119,14 @@
       "delta": 0,
       "rationale": "化险为夷",
       "summary": "太宗器之",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太宗素器之，引爲詹事主簿。",
+        "textSimplified": "太宗素器之，引为詹事主簿。",
+        "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 629,
@@ -127,9 +142,14 @@
       "delta": 76,
       "rationale": "直谏",
       "summary": "前后谏二百余事",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "貞觀三年，遷秘書監，參預朝政。",
+        "textSimplified": "贞观三年，迁秘书监，参预朝政。",
+        "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+      },
+      "verified": true
     },
     {
       "year": 636,
@@ -162,9 +182,14 @@
     "retention": 0.95,
     "reason": "太宗「以人为镜」",
     "score": 81.7,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "嘗臨朝謂侍臣曰：「夫以銅爲鏡，可以正衣冠；以古爲鏡，可以知興替；以人爲鏡，可以明得失。",
+      "textSimplified": "尝临朝谓侍臣曰：「夫以铜为镜，可以正衣冠；以古为镜，可以知兴替；以人为镜，可以明得失。",
+      "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -213,8 +238,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

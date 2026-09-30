@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "士人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "劉基，字伯溫，青田人。",
+        "textSimplified": "刘基，字伯温，青田人。",
+        "source": "《明史·卷一百二十八 列传第十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 1333,
@@ -50,9 +55,14 @@
       "delta": 9,
       "rationale": "入仕",
       "summary": "元进士",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "元至順間，舉進士，除高安丞，有廉直聲。",
+        "textSimplified": "元至顺间，举进士，除高安丞，有廉直声。",
+        "source": "《明史·卷一百二十八 列传第十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 1348,
@@ -68,9 +78,14 @@
       "delta": -6,
       "rationale": "隐",
       "summary": "不满元政",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "基遂棄官還青田，著《郁離子》以見志。",
+        "textSimplified": "基遂弃官还青田，着《郁离子》以见志。",
+        "source": "《明史·卷一百二十八 列传第十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 1360,
@@ -86,9 +101,14 @@
       "delta": 24,
       "rationale": "谋臣",
       "summary": "陈时务十八策",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "既至，陳時務十八策。",
+        "textSimplified": "既至，陈时务十八策。",
+        "source": "《明史·卷一百二十八 列传第十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 1363,
@@ -104,9 +124,14 @@
       "delta": 24,
       "rationale": "大功",
       "summary": "谋主",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "遂自將救洪都，與友諒大戰鄱陽蝴，一日數十接。",
+        "textSimplified": "遂自将救洪都，与友谅大战鄱阳蝴，一日数十接。",
+        "source": "《明史·卷一百二十八 列传第十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 1370,
@@ -145,9 +170,14 @@
       "delta": -32,
       "rationale": "避祸",
       "summary": "被胡惟庸所忌",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "明年賜歸老於鄉。",
+        "textSimplified": "明年赐归老于乡。",
+        "source": "《明史·卷一百二十八 列传第十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -157,9 +187,14 @@
     "retention": 0.85,
     "reason": "神化形象流传",
     "score": 39.1,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "其韜跡如此，然究為惟庸所中。",
+      "textSimplified": "其韬迹如此，然究为惟庸所中。",
+      "source": "《明史·卷一百二十八 列传第十六》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7128"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -194,8 +229,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

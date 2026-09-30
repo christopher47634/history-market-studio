@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "士人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "趙普，字則平，幽州薊人。",
+        "textSimplified": "赵普，字则平，幽州蓟人。",
+        "source": "《宋史·卷二百五十六 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+      },
+      "verified": true
     },
     {
       "year": 954,
@@ -50,9 +55,14 @@
       "delta": 14,
       "rationale": "幕僚",
       "summary": "掌书记",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太祖領同州節度，辟為推官；移鎮宋州，表為掌書記。",
+        "textSimplified": "太祖领同州节度，辟为推官；移镇宋州，表为掌书记。",
+        "source": "《宋史·卷二百五十六 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+      },
+      "verified": true
     },
     {
       "year": 960,
@@ -68,9 +78,14 @@
       "delta": 40,
       "rationale": "定策",
       "summary": "谋主",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太祖北征至陳橋，被酒臥帳中，眾軍推戴，普與太宗排闥入告。",
+        "textSimplified": "太祖北征至陈桥，被酒卧帐中，众军推戴，普与太宗排闼入告。",
+        "source": "《宋史·卷二百五十六 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+      },
+      "verified": true
     },
     {
       "year": 964,
@@ -86,9 +101,14 @@
       "delta": 12,
       "rationale": "宰相",
       "summary": "独相十年",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "乾德二年，范質等三相同日罷，以普為門下侍郎、平章事、集賢殿大學士。",
+        "textSimplified": "干德二年，范质等三相同日罢，以普为门下侍郎、平章事、集贤殿大学士。",
+        "source": "《宋史·卷二百五十六 列传第十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+      },
+      "verified": true
     },
     {
       "year": 973,
@@ -171,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

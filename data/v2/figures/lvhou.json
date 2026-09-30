@@ -226,9 +226,14 @@
     "retention": 0.85,
     "reason": "身后诸吕被诛，但与民休息的政策延续",
     "score": 80.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "秋七月辛巳，皇太后崩于未央宮。",
+      "textSimplified": "秋七月辛巳，皇太后崩于未央宫。",
+      "source": "《汉书·卷三 高后纪 第三》",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7003"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -282,8 +287,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

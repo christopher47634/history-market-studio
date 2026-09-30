@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "将门",
       "summary": "世袭登州卫指挥佥事",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "戚繼光，字元敬，世登州衛指揮僉事。",
+        "textSimplified": "戚继光，字元敬，世登州卫指挥佥事。",
+        "source": "《明史·卷二百十二 列传第一百》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+      },
+      "verified": true
     },
     {
       "year": 1544,
@@ -109,9 +114,14 @@
       "delta": 4,
       "rationale": "大功",
       "summary": "兴化",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "初，興化告急，時帝已命俞大猷為福建總兵官，繼光副之。",
+        "textSimplified": "初，兴化告急，时帝已命俞大猷为福建总兵官，继光副之。",
+        "source": "《明史·卷二百十二 列传第一百》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+      },
+      "verified": true
     },
     {
       "year": 1568,
@@ -127,9 +137,14 @@
       "delta": 2,
       "rationale": "北疆",
       "summary": "修长城",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "乃命繼光為總兵官，鎮守薊州、永平、山海諸處，而浙兵止弗調。",
+        "textSimplified": "乃命继光为总兵官，镇守蓟州、永平、山海诸处，而浙兵止弗调。",
+        "source": "《明史·卷二百十二 列传第一百》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+      },
+      "verified": true
     },
     {
       "year": 1583,
@@ -145,9 +160,14 @@
       "delta": -53,
       "rationale": "失势",
       "summary": "被弹劾",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "居正歿半歲，給事中張鼎思言繼光不宜於北，當國者遽改之廣東。",
+        "textSimplified": "居正殁半岁，给事中张鼎思言继光不宜于北，当国者遽改之广东。",
+        "source": "《明史·卷二百十二 列传第一百》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -194,8 +214,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

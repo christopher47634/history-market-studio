@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "沙陀人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "以唐咸通丁亥歲九月九日，懿皇后生帝於應州之金城縣。",
+        "textSimplified": "以唐咸通丁亥岁九月九日，懿皇后生帝于应州之金城县。",
+        "source": "《旧五代史·卷三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B735"
+      },
+      "verified": true
     },
     {
       "year": 890,
@@ -68,9 +73,14 @@
       "delta": 48,
       "rationale": "名将",
       "summary": "首功",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "十月己卯，遲明，帝先至汴州，攻封丘門，汴將王瓚開門迎降。",
+        "textSimplified": "十月己卯，迟明，帝先至汴州，攻封丘门，汴将王瓒开门迎降。",
+        "source": "《旧五代史·卷三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B735"
+      },
+      "verified": true
     },
     {
       "year": 926,
@@ -86,9 +96,14 @@
       "delta": 6,
       "rationale": "称帝",
       "summary": "兴教门之变后即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "三月六日，帝至鄴都，趙在禮等登城謝罪，出牲餼以勞師，帝亦慰納之，營於鄴城之西南，下令以九日攻城。",
+        "textSimplified": "三月六日，帝至邺都，赵在礼等登城谢罪，出牲饩以劳师，帝亦慰纳之，营于邺城之西南，下令以九日攻城。",
+        "source": "《旧五代史·卷三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B735"
+      },
+      "verified": true
     },
     {
       "year": 930,
@@ -176,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

@@ -73,9 +73,14 @@
       "delta": 21,
       "rationale": "入仕",
       "summary": "孝宗即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "遂賜進士出身。",
+        "textSimplified": "遂赐进士出身。",
+        "source": "《宋史·卷三百九十五 列传第一百五十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7395"
+      },
+      "verified": true
     },
     {
       "year": 1172,
@@ -127,9 +132,14 @@
       "delta": 20,
       "rationale": "修史",
       "summary": "孝宗、光宗实录",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "嘉泰二年，以孝宗、光宗兩朝實錄及三朝史未就，詔游權同修國史、實錄院同修撰，免奉朝請，尋兼秘書監。",
+        "textSimplified": "嘉泰二年，以孝宗、光宗两朝实录及三朝史未就，诏游权同修国史、实录院同修撰，免奉朝请，寻兼秘书监。",
+        "source": "《宋史·卷三百九十五 列传第一百五十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7395"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -181,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

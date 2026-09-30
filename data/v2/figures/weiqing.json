@@ -78,9 +78,14 @@
       "delta": 50,
       "rationale": "首破匈奴",
       "summary": "为车骑将军出上谷，至龙城斩首数百，封关内侯",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "青至籠城，斬首虜數百。",
+        "textSimplified": "青至笼城，斩首虏数百。",
+        "source": "《汉书·卷五十五 衞青霍去病传 第二十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7055"
+      },
+      "verified": true
     },
     {
       "year": -127,
@@ -221,8 +226,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

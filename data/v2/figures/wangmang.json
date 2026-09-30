@@ -55,9 +55,14 @@
       "delta": 2,
       "rationale": "以孝谨得名",
       "summary": "伯父大将军王凤病，莽侍疾，蓬首垢面",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "陽朔中，世父大將軍鳳病，莽侍疾，親嘗藥，亂首垢面，不解衣帶連月。",
+        "textSimplified": "阳朔中，世父大将军凤病，莽侍疾，亲尝药，乱首垢面，不解衣带连月。",
+        "source": "《汉书·卷九十九上 王莽传第六十九上》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7099%E4%B8%8A"
+      },
+      "verified": true
     },
     {
       "year": -16,
@@ -292,8 +297,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 7,
-    "quotesClaimed": 7,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

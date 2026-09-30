@@ -68,9 +68,14 @@
       "delta": 25,
       "rationale": "地方",
       "summary": "出为平原太守",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "楊國忠怒其不附己，出為平原太守。",
+        "textSimplified": "杨国忠怒其不附己，出为平原太守。",
+        "source": "《旧唐书·卷一百二十八列传第七十八 段秀实 颜真卿》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 755,
@@ -86,9 +91,14 @@
       "delta": 12,
       "rationale": "忠义",
       "summary": "河北诸郡响应",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "饒陽、河間、景城、東安相次陷沒，獨平原、博平、清河三郡城守，然人心危盪",
+        "textSimplified": "饶阳、河间、景城、东安相次陷没，独平原、博平、清河三郡城守，然人心危荡",
+        "source": "《旧唐书·卷一百二十八列传第七十八 段秀实 颜真卿》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 758,
@@ -122,9 +132,14 @@
       "delta": 4,
       "rationale": "重臣",
       "summary": "入朝",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "旋拜升州刺史、浙江西道節度使，征為刑部尚書。",
+        "textSimplified": "旋拜升州刺史、浙江西道节度使，征为刑部尚书。",
+        "source": "《旧唐书·卷一百二十八列传第七十八 段秀实 颜真卿》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7128"
+      },
+      "verified": true
     },
     {
       "year": 784,
@@ -204,8 +219,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

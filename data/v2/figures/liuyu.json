@@ -50,9 +50,14 @@
       "delta": 22,
       "rationale": "从军",
       "summary": "为孙无终司马",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "初為冠軍孫無終司馬。",
+        "textSimplified": "初为冠军孙无终司马。",
+        "source": "《宋书·本纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 404,
@@ -211,8 +216,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

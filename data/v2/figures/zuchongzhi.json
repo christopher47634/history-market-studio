@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "官宦世家",
       "summary": "世掌历法",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "祖沖之字文遠，范陽薊人也。",
+        "textSimplified": "祖冲之字文远，范阳蓟人也。",
+        "source": "《南齐书·卷五十二 列传第三十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B752"
+      },
+      "verified": true
     },
     {
       "year": 461,
@@ -50,9 +55,14 @@
       "delta": 7,
       "rationale": "小吏",
       "summary": "小官",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "解褐徐州迎從事，公府參軍。",
+        "textSimplified": "解褐徐州迎从事，公府参军。",
+        "source": "《南齐书·卷五十二 列传第三十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B752"
+      },
+      "verified": true
     },
     {
       "year": 462,
@@ -121,9 +131,14 @@
     "retention": 0.95,
     "reason": "《大明历》510年施行",
     "score": 47.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "永元二年，沖之卒。",
+      "textSimplified": "永元二年，冲之卒。",
+      "source": "《南齐书·卷五十二 列传第三十三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8D%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B752"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -182,8 +197,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

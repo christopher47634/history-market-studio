@@ -34,9 +34,14 @@
       "delta": 0,
       "rationale": "士大夫家庭出身，本人为女性，无官位名分。",
       "summary": "生于齐州章丘明水镇，父李格非为进士、礼部员外郎，母王氏亦善文。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "妻王氏，拱辰孫女，亦善文。",
+        "textSimplified": "妻王氏，拱辰孙女，亦善文。",
+        "source": "《宋史·文苑传·李格非（附李清照）》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7444"
+      },
+      "verified": true
     },
     {
       "year": 1101,
@@ -284,8 +289,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
     "author": "deepseek-flash"
   }
 }

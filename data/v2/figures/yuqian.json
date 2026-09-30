@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "官宦",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "于謙，字廷益，錢塘人。",
+        "textSimplified": "于谦，字廷益，钱塘人。",
+        "source": "《明史·卷一百七十 列传第五十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+      },
+      "verified": true
     },
     {
       "year": 1421,
@@ -50,9 +55,14 @@
       "delta": 10,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "舉永樂十九年進士。",
+        "textSimplified": "举永乐十九年进士。",
+        "source": "《明史·卷一百七十 列传第五十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+      },
+      "verified": true
     },
     {
       "year": 1430,
@@ -68,9 +78,14 @@
       "delta": 31,
       "rationale": "方面",
       "summary": "十九年",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "帝知謙可大任，會增設各部右侍郎為直省巡撫，乃手書謙名授吏部，超遷兵部右侍郎，巡撫河南、山西。",
+        "textSimplified": "帝知谦可大任，会增设各部右侍郎为直省巡抚，乃手书谦名授吏部，超迁兵部右侍郎，巡抚河南、山西。",
+        "source": "《明史·卷一百七十 列传第五十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+      },
+      "verified": true
     },
     {
       "year": 1449,
@@ -86,9 +101,14 @@
       "delta": 20,
       "rationale": "临危受命",
       "summary": "反对南迁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "即遷本部尚書。",
+        "textSimplified": "即迁本部尚书。",
+        "source": "《明史·卷一百七十 列传第五十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+      },
+      "verified": true
     },
     {
       "year": 1449,
@@ -104,9 +124,14 @@
       "delta": 4,
       "rationale": "救国",
       "summary": "击退瓦剌",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "庚申，寇窺德勝門。",
+        "textSimplified": "庚申，寇窥德胜门。",
+        "source": "《明史·卷一百七十 列传第五十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+      },
+      "verified": true
     },
     {
       "year": 1457,
@@ -122,9 +147,14 @@
       "delta": -88,
       "rationale": "死局",
       "summary": "英宗复辟",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "景泰八年正月壬午，亨與吉祥、有貞等既迎上皇復位，宣諭朝臣畢，即執謙與大學士王文下獄。",
+        "textSimplified": "景泰八年正月壬午，亨与吉祥、有贞等既迎上皇复位，宣谕朝臣毕，即执谦与大学士王文下狱。",
+        "source": "《明史·卷一百七十 列传第五十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7170"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -183,8 +213,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

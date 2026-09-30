@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "士人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "陸秀夫，字君實，楚州鹽城人。",
+        "textSimplified": "陆秀夫，字君实，楚州盐城人。",
+        "source": "《宋史·卷四百五十一 列传第二百一十 忠义六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7451"
+      },
+      "verified": true
     },
     {
       "year": 1260,
@@ -50,9 +55,14 @@
       "delta": 14,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "景定元年，登進士第。",
+        "textSimplified": "景定元年，登进士第。",
+        "source": "《宋史·卷四百五十一 列传第二百一十 忠义六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7451"
+      },
+      "verified": true
     },
     {
       "year": 1276,
@@ -68,9 +78,14 @@
       "delta": -4,
       "rationale": "流亡",
       "summary": "临安陷落",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "二王走溫州，秀夫與蘇劉義追從之，使人召陳宜中、張世傑等皆至，遂相與立益王於福州。",
+        "textSimplified": "二王走温州，秀夫与苏刘义追从之，使人召陈宜中、张世杰等皆至，遂相与立益王于福州。",
+        "source": "《宋史·卷四百五十一 列传第二百一十 忠义六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7451"
+      },
+      "verified": true
     },
     {
       "year": 1278,
@@ -86,9 +101,14 @@
       "delta": 15,
       "rationale": "流亡朝廷",
       "summary": "拥立赵昺",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "乃以秀夫為左丞相，與世傑共秉政。",
+        "textSimplified": "乃以秀夫为左丞相，与世杰共秉政。",
+        "source": "《宋史·卷四百五十一 列传第二百一十 忠义六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7451"
+      },
+      "verified": true
     },
     {
       "year": 1279,
@@ -121,9 +141,14 @@
     "retention": 0.9,
     "reason": "南宋亡",
     "score": 22.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "至元十六年二月，厓山破，秀夫走衛王舟，而世傑、劉義各斷維去，秀夫度不可脫",
+      "textSimplified": "至元十六年二月，厓山破，秀夫走卫王舟，而世杰、刘义各断维去，秀夫度不可脱",
+      "source": "《宋史·卷四百五十一 列传第二百一十 忠义六》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7451"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -163,8 +188,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

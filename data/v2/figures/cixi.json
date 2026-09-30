@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "满洲旗人",
       "summary": "叶赫那拉氏",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "孝欽顯皇后，葉赫那拉氏，安徽徽寧池廣太道惠徵女。",
+        "textSimplified": "孝钦显皇后，叶赫那拉氏，安徽徽宁池广太道惠征女。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1852,
@@ -50,9 +55,14 @@
       "delta": 2,
       "rationale": "宫嫔",
       "summary": "兰贵人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "咸豐元年，后被選入宮，號懿貴人。",
+        "textSimplified": "咸丰元年，后被选入宫，号懿贵人。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1856,
@@ -68,9 +78,14 @@
       "delta": 22,
       "rationale": "妃",
       "summary": "皇子生母",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "六年三月庚辰，穆宗生，進懿妃。",
+        "textSimplified": "六年三月庚辰，穆宗生，进懿妃。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1861,
@@ -86,9 +101,14 @@
       "delta": 43,
       "rationale": "掌权",
       "summary": "诛肃顺",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "御史董元醇請兩太后權理朝政，兩太后召載垣等入議，載垣等以本朝未有皇太后垂簾，難之。",
+        "textSimplified": "御史董元醇请两太后权理朝政，两太后召载垣等入议，载垣等以本朝未有皇太后垂帘，难之。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1898,
@@ -104,9 +124,14 @@
       "delta": 1,
       "rationale": "独断",
       "summary": "囚光绪",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "八月丁亥，太后遽自頤和園還宮，復訓政。",
+        "textSimplified": "八月丁亥，太后遽自颐和园还宫，复训政。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     },
     {
       "year": 1900,
@@ -122,9 +147,14 @@
       "delta": -41,
       "rationale": "绝境",
       "summary": "西狩",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "九月，至西安。",
+        "textSimplified": "九月，至西安。",
+        "source": "《清史稿·卷二百一十四 列传一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -176,8 +206,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
     "author": "claude"
   }
 }

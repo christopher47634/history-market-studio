@@ -50,9 +50,14 @@
       "delta": 18,
       "rationale": "战略",
       "summary": "为安东司马，劝睿过江",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "會帝出鎮下邳，請導爲安東司馬，軍謀密策，知無不爲。",
+        "textSimplified": "会帝出镇下邳，请导为安东司马，军谋密策，知无不为。",
+        "source": "《晋书·卷六十五 列传第三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7065"
+      },
+      "verified": true
     },
     {
       "year": 317,
@@ -163,8 +168,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

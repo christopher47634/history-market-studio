@@ -73,9 +73,14 @@
       "delta": 50,
       "rationale": "掌诏命",
       "summary": "百司表奏，多令参决",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "自聖歷已後，百司表奏，多令參決。",
+        "textSimplified": "自圣历已后，百司表奏，多令参决。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     },
     {
       "year": 698,
@@ -91,9 +96,14 @@
       "delta": 0,
       "rationale": "险死",
       "summary": "忤旨当死，黥其面",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "則天時，婉兒忤旨當誅，則天惜其才不殺，但黥其面而已。",
+        "textSimplified": "则天时，婉儿忤旨当诛，则天惜其才不杀，但黥其面而已。",
+        "source": "《旧唐书·后妃上》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B751"
+      },
+      "verified": true
     },
     {
       "year": 705,
@@ -181,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

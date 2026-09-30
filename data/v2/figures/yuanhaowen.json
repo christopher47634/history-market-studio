@@ -68,9 +68,14 @@
       "delta": 8,
       "rationale": "入仕",
       "summary": "入仕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "中興定五年第，曆內鄉令。",
+        "textSimplified": "中兴定五年第，历内乡令。",
+        "source": "《金史·卷一百二十六 列传第六十四 文艺下》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B7126"
+      },
+      "verified": true
     },
     {
       "year": 1233,
@@ -86,9 +91,14 @@
       "delta": -34,
       "rationale": "亡国",
       "summary": "汴京陷落被羁押",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "金亡，不仕。",
+        "textSimplified": "金亡，不仕。",
+        "source": "《金史·卷一百二十六 列传第六十四 文艺下》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B7126"
+      },
+      "verified": true
     },
     {
       "year": 1240,
@@ -104,9 +114,14 @@
       "delta": 48,
       "rationale": "存史",
       "summary": "建野史亭",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "乃構亭於家，著述其上，因名曰「野史」。",
+        "textSimplified": "乃构亭于家，著述其上，因名曰「野史」。",
+        "source": "《金史·卷一百二十六 列传第六十四 文艺下》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B7126"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -116,9 +131,14 @@
     "retention": 0.95,
     "reason": "金代文学集大成",
     "score": 47.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "年六十八卒。",
+      "textSimplified": "年六十八卒。",
+      "source": "《金史·卷一百二十六 列传第六十四 文艺下》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B7126"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -158,8 +178,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

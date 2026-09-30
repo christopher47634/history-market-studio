@@ -68,9 +68,14 @@
       "delta": 28,
       "rationale": "抗金",
       "summary": "募义兵",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "議者謂澤剛方不屈，恐害和議，上不遣，命知磁州。",
+        "textSimplified": "议者谓泽刚方不屈，恐害和议，上不遣，命知磁州。",
+        "source": "《宋史·卷三百六十 列传第一百十九》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7360"
+      },
+      "verified": true
     },
     {
       "year": 1127,
@@ -109,9 +114,14 @@
       "delta": -17,
       "rationale": "不被采纳",
       "summary": "二十余疏",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "澤前後請上還京二十餘奏，每為潛善等所抑，憂憤成疾，疽發於背。",
+        "textSimplified": "泽前后请上还京二十余奏，每为潜善等所抑，忧愤成疾，疽发于背。",
+        "source": "《宋史·卷三百六十 列传第一百十九》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7360"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -168,8 +178,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

@@ -50,9 +50,14 @@
       "delta": 2,
       "rationale": "才名",
       "summary": "胡瑗奇之",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "游太學，見胡瑗問諸生以顏子所好何學，頤因答曰：",
+        "textSimplified": "游太学，见胡瑗问诸生以颜子所好何学，颐因答曰：",
+        "source": "《宋史·卷四百二十七 列传第一百八十六 道学一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7427"
+      },
+      "verified": true
     },
     {
       "year": 1086,
@@ -68,9 +73,14 @@
       "delta": 22,
       "rationale": "帝师",
       "summary": "哲宗侍讲",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "尋召為秘書省校書郎，既入見，擢崇政殿說書。",
+        "textSimplified": "寻召为秘书省校书郎，既入见，擢崇政殿说书。",
+        "source": "《宋史·卷四百二十七 列传第一百八十六 道学一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7427"
+      },
+      "verified": true
     },
     {
       "year": 1087,
@@ -181,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

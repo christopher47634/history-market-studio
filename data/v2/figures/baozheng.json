@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "官宦",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "包拯，字希仁，廬州合肥人也。",
+        "textSimplified": "包拯，字希仁，庐州合肥人也。",
+        "source": "《宋史·卷三百十六 列传第七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7316"
+      },
+      "verified": true
     },
     {
       "year": 1027,
@@ -91,9 +96,14 @@
       "delta": 4,
       "rationale": "外交",
       "summary": "出使契丹",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "去使契丹，契丹令典客謂拯曰：「雄州新開便門，乃欲誘我叛人，以刺疆事耶？",
+        "textSimplified": "去使契丹，契丹令典客谓拯曰：「雄州新开便门，乃欲诱我叛人，以刺疆事耶？",
+        "source": "《宋史·卷三百十六 列传第七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7316"
+      },
+      "verified": true
     },
     {
       "year": 1056,
@@ -193,8 +203,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

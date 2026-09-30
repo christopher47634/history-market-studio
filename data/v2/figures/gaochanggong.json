@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "宗室",
       "summary": "高澄第四子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "蘭陵武王長恭，一名孝瓘，文襄第四子也。",
+        "textSimplified": "兰陵武王长恭，一名孝瓘，文襄第四子也。",
+        "source": "《北齐书·卷十一补列传第三 文襄六王》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8C%97%E9%BD%8A%E6%9B%B8%2F%E5%8D%B711"
+      },
+      "verified": true
     },
     {
       "year": 564,
@@ -145,8 +150,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 2,
-    "quotesClaimed": 2,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

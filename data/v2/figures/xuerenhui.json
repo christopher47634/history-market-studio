@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贫寒",
       "summary": "少贫贱，以田为业",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "薛仁貴，絳州龍門人。",
+        "textSimplified": "薛仁贵，绛州龙门人。",
+        "source": "《旧唐书·卷八十三列传第三十三 郭孝恪 张俭 苏定方 薛仁贵 程务挺 张士贵 赵道兴》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+      },
+      "verified": true
     },
     {
       "year": 645,
@@ -119,9 +124,14 @@
       "delta": 67,
       "rationale": "复起",
       "summary": "突厥闻薛将军，下马列拜",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "檢校代州都督，又率兵擊突厥元珍等於雲州，斬首萬餘級，獲生口二萬餘人、駝馬牛羊三萬餘頭。",
+        "textSimplified": "检校代州都督，又率兵击突厥元珍等于云州，斩首万余级，获生口二万余人、驼马牛羊三万余头。",
+        "source": "《旧唐书·卷八十三列传第三十三 郭孝恪 张俭 苏定方 薛仁贵 程务挺 张士贵 赵道兴》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B783"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -168,8 +178,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

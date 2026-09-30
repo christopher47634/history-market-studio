@@ -68,9 +68,14 @@
       "delta": 23,
       "rationale": "复仇",
       "summary": "袖锥",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "會廷鞫許顯純、崔應元，宗羲對簿，出所袖錐錐顯純，流血被體；又毆應元，拔其鬚歸祭尊素神主前",
+        "textSimplified": "会廷鞫许显纯、崔应元，宗羲对簿，出所袖锥锥显纯，流血被体；又殴应元，拔其须归祭尊素神主前",
+        "source": "《清史稿·列传二百六十七 儒林一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+      },
+      "verified": true
     },
     {
       "year": 1645,
@@ -86,9 +91,14 @@
       "delta": -6,
       "rationale": "败",
       "summary": "世忠营",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "宗羲糾里中子弟數百人從之，號世忠營。",
+        "textSimplified": "宗羲纠里中子弟数百人从之，号世忠营。",
+        "source": "《清史稿·列传二百六十七 儒林一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+      },
+      "verified": true
     },
     {
       "year": 1663,
@@ -104,9 +114,14 @@
       "delta": 41,
       "rationale": "名著",
       "summary": "天下为主君为客",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "歷代甲子考一卷，二程學案二卷，輯明史案二百四十四卷，又明夷待訪錄一卷，皆經世大政。",
+        "textSimplified": "历代甲子考一卷，二程学案二卷，辑明史案二百四十四卷，又明夷待访录一卷，皆经世大政。",
+        "source": "《清史稿·列传二百六十七 儒林一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -168,8 +183,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

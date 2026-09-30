@@ -137,9 +137,14 @@
       "delta": 32,
       "rationale": "权倾朝野",
       "summary": "废海西公，立简文帝",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "既逢覆敗，名實頓減，於是參軍郗超進廢立之計，溫乃廢帝而立簡文帝。",
+        "textSimplified": "既逢覆败，名实顿减，于是参军郗超进废立之计，温乃废帝而立简文帝。",
+        "source": "《晋书·卷九十八 列传第六十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7098"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -186,8 +191,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

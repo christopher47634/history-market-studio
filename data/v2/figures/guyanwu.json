@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士族",
       "summary": "江南望族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "顧炎武，字寧人，原名絳，崑山人。",
+        "textSimplified": "顾炎武，字宁人，原名绛，昆山人。",
+        "source": "《清史稿·卷四百八十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7481"
+      },
+      "verified": true
     },
     {
       "year": 1645,
@@ -50,9 +55,14 @@
       "delta": -26,
       "rationale": "家国破",
       "summary": "嗣母绝食殉国",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "魯王授為兵部司務，事不克，幸而得脫，母遂不食卒，誡炎武弗事二姓。",
+        "textSimplified": "鲁王授为兵部司务，事不克，幸而得脱，母遂不食卒，诫炎武弗事二姓。",
+        "source": "《清史稿·卷四百八十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7481"
+      },
+      "verified": true
     },
     {
       "year": 1657,
@@ -68,9 +78,14 @@
       "delta": 42,
       "rationale": "游学",
       "summary": "考察",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "墾田於長白山下，畜牧於雁門之北、五台之東，累致千金。",
+        "textSimplified": "垦田于长白山下，畜牧于雁门之北、五台之东，累致千金。",
+        "source": "《清史稿·卷四百八十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7481"
+      },
+      "verified": true
     },
     {
       "year": 1670,
@@ -86,9 +101,14 @@
       "delta": 16,
       "rationale": "巨著",
       "summary": "经世",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "而日知錄三十卷，尤為精詣之書，蓋積三十餘年而後成。",
+        "textSimplified": "而日知录三十卷，尤为精诣之书，盖积三十余年而后成。",
+        "source": "《清史稿·卷四百八十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7481"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -98,9 +118,14 @@
     "retention": 0.95,
     "reason": "清学开山",
     "score": 57,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "二十一年，卒，年七十。",
+      "textSimplified": "二十一年，卒，年七十。",
+      "source": "《清史稿·卷四百八十一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7481"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -135,8 +160,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

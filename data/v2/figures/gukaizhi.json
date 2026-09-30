@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士族",
       "summary": "士族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "顧愷之，字長康，晉陵無錫人也。",
+        "textSimplified": "顾恺之，字长康，晋陵无锡人也。",
+        "source": "《晋书·卷九十二 列传第六十二 文苑传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7092"
+      },
+      "verified": true
     },
     {
       "year": 366,
@@ -50,9 +55,14 @@
       "delta": 7,
       "rationale": "入幕",
       "summary": "大司马桓温引为参军",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "桓溫引為大司馬參軍，甚見親昵。",
+        "textSimplified": "桓温引为大司马参军，甚见亲昵。",
+        "source": "《晋书·卷九十二 列传第六十二 文苑传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7092"
+      },
+      "verified": true
     },
     {
       "year": 380,
@@ -86,9 +96,14 @@
       "delta": 2,
       "rationale": "官职",
       "summary": "义熙中为散骑常侍",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "義熙初，為散騎常侍，與謝瞻連省，夜於月下長詠，瞻每遙贊之，愷之彌自力忘倦。",
+        "textSimplified": "义熙初，为散骑常侍，与谢瞻连省，夜于月下长咏，瞻每遥赞之，恺之弥自力忘倦。",
+        "source": "《晋书·卷九十二 列传第六十二 文苑传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7092"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -140,8 +155,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

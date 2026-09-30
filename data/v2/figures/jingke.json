@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "游侠",
       "summary": "卫人，好读书击剑",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "荊卿好讀書撃劍，以術説衞元君，衞元君不用。",
+        "textSimplified": "荆卿好读书撃剑，以术说衞元君，衞元君不用。",
+        "source": "《史记·巻八十六 刺客列传 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7086"
+      },
+      "verified": true
     },
     {
       "year": -240,
@@ -50,9 +55,14 @@
       "delta": 3,
       "rationale": "落魄游侠",
       "summary": "与狗屠及高渐离饮于燕市",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "荊軻嗜酒，日與狗屠及髙漸離飲於燕市，酒酣以往，髙漸離撃筑，荊軻和而歌於市中",
+        "textSimplified": "荆轲嗜酒，日与狗屠及髙渐离饮于燕市，酒酣以往，髙渐离撃筑，荆轲和而歌于市中",
+        "source": "《史记·巻八十六 刺客列传 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7086"
+      },
+      "verified": true
     },
     {
       "year": -228,
@@ -70,8 +80,8 @@
       "summary": "太子丹尊荆卿为上卿",
       "evidence": "原文",
       "quote": {
-        "text": "-{於}-是尊荊卿爲上卿，-{舍}-上-{舍}-。",
-        "textSimplified": "-{于}-是尊荆卿为上卿，-{舍}-上-{舍}-。",
+        "text": "於是尊荊卿爲上卿，舍上舍。",
+        "textSimplified": "于是尊荆卿为上卿，舍上舍。",
         "source": "《史记·巻八十六 刺客列传 第二十六》",
         "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7086"
       },
@@ -116,8 +126,8 @@
       "summary": "图穷匕见，不中，被杀",
       "evidence": "原文",
       "quote": {
-        "text": "軻既取圖奏之，秦王-{發}-圖，圖窮而匕首見。",
-        "textSimplified": "轲既取图奏之，秦王-{发}-图，图穷而匕首见。",
+        "text": "軻既取圖奏之，秦王發圖，圖窮而匕首見。",
+        "textSimplified": "轲既取图奏之，秦王发图，图穷而匕首见。",
         "source": "《史记·巻八十六 刺客列传 第二十六》",
         "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7086"
       },
@@ -175,8 +185,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

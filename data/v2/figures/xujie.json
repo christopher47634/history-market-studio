@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "官宦",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "徐階，字子升，松江華亭人。",
+        "textSimplified": "徐阶，字子升，松江华亭人。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1523,
@@ -50,9 +55,14 @@
       "delta": 13,
       "rationale": "入仕",
       "summary": "探花",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "嘉靖二年進士第三人。",
+        "textSimplified": "嘉靖二年进士第三人。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1530,
@@ -68,9 +78,14 @@
       "delta": -20,
       "rationale": "贬",
       "summary": "忤张璁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "斥為延平府推官。",
+        "textSimplified": "斥为延平府推官。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1552,
@@ -104,9 +119,14 @@
       "delta": 6,
       "rationale": "首辅",
       "summary": "严嵩罢",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "階遂代嵩為首輔。",
+        "textSimplified": "阶遂代嵩为首辅。",
+        "source": "《明史·卷二百十三 列传第一百一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7213"
+      },
+      "verified": true
     },
     {
       "year": 1568,
@@ -176,8 +196,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

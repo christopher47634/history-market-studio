@@ -50,9 +50,14 @@
       "delta": 55,
       "rationale": "篡位",
       "summary": "即位",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "是夜，興國取符鑰啟門納海陵、秉德、辯、烏帶、徒單貞、李老僧等人至寢殿，遂弑熙宗。",
+        "textSimplified": "是夜，兴国取符钥启门纳海陵、秉德、辩、乌带、徒单贞、李老僧等人至寝殿，遂弑熙宗。",
+        "source": "《金史·卷五 本纪第五 海陵》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B75"
+      },
+      "verified": true
     },
     {
       "year": 1153,
@@ -68,9 +73,14 @@
       "delta": 2,
       "rationale": "改革",
       "summary": "建中都",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "四月丙午，詔遷都燕京。",
+        "textSimplified": "四月丙午，诏迁都燕京。",
+        "source": "《金史·卷五 本纪第五 海陵》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B75"
+      },
+      "verified": true
     },
     {
       "year": 1161,
@@ -104,9 +114,14 @@
       "delta": -33,
       "rationale": "死",
       "summary": "完颜元宜杀之",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "乙未，浙西兵馬都統制完顏元宜等軍反，帝遇弑，崩，年四十。",
+        "textSimplified": "乙未，浙西兵马都统制完颜元宜等军反，帝遇弑，崩，年四十。",
+        "source": "《金史·卷五 本纪第五 海陵》",
+        "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B75"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -153,8 +168,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

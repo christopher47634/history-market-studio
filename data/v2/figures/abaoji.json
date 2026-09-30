@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "贵族",
       "summary": "部落贵族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "太祖大聖大明神烈天皇帝，姓耶律氏，諱億，字阿保機，小字啜里只，契丹迭剌部霞瀨益石烈鄉耶律彌里人。",
+        "textSimplified": "太祖大圣大明神烈天皇帝，姓耶律氏，讳亿，字阿保机，小字啜里只，契丹迭剌部霞濑益石烈乡耶律弥里人。",
+        "source": "《辽史·卷一 本纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 901,
@@ -50,9 +55,14 @@
       "delta": 44,
       "rationale": "部落军帅",
       "summary": "统兵",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "唐天復元年，歲辛酉，痕德堇可汗立，以太祖為本部夷離堇，專征討，連破室韋、于厥及奚帥轄剌哥，俘獲甚眾。",
+        "textSimplified": "唐天复元年，岁辛酉，痕德堇可汗立，以太祖为本部夷离堇，专征讨，连破室韦、于厥及奚帅辖剌哥，俘获甚众。",
+        "source": "《辽史·卷一 本纪第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B71"
+      },
+      "verified": true
     },
     {
       "year": 907,
@@ -158,8 +168,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 1,
-    "quotesClaimed": 1,
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
     "author": "claude"
   }
 }

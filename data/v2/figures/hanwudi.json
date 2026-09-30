@@ -33,9 +33,14 @@
       "delta": 0,
       "rationale": "景帝中子，生于皇室，非嫡长，地位高但无实际权位。",
       "summary": "生于长安，母王美人，为景帝中子。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "孝武皇帝，景帝中子也，母曰王美人。",
+        "textSimplified": "孝武皇帝，景帝中子也，母曰王美人。",
+        "source": "《汉书·武帝纪》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7006"
+      },
+      "verified": true
     },
     {
       "year": -153,
@@ -488,8 +493,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 17,
-    "quotesClaimed": 17,
+    "quotesVerified": 18,
+    "quotesClaimed": 18,
     "author": "deepseek-flash"
   }
 }

@@ -78,9 +78,14 @@
       "delta": 32,
       "rationale": "得遇明主",
       "summary": "苻坚以为中书侍郎",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "及堅僭位，以猛為中書侍郎。",
+        "textSimplified": "及坚僭位，以猛为中书侍郎。",
+        "source": "《晋书·卷一百十四 载记第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7114"
+      },
+      "verified": true
     },
     {
       "year": 370,
@@ -168,8 +173,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
     "author": "claude"
   }
 }

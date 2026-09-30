@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "士人",
       "summary": "士人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "魏源，字默深，邵陽人。",
+        "textSimplified": "魏源，字默深，邵阳人。",
+        "source": "《清史稿·卷四百八十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+      },
+      "verified": true
     },
     {
       "year": 1822,
@@ -50,9 +55,14 @@
       "delta": 12,
       "rationale": "入仕",
       "summary": "举人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "道光二年，舉順天鄉試。",
+        "textSimplified": "道光二年，举顺天乡试。",
+        "source": "《清史稿·卷四百八十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+      },
+      "verified": true
     },
     {
       "year": 1825,
@@ -86,9 +96,14 @@
       "delta": 6,
       "rationale": "名著",
       "summary": "师夷长技",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "晚遭夷變，謂籌夷事必知夷情，復據史志及林則徐所譯西夷四州志等，成海國圖志一百卷。",
+        "textSimplified": "晚遭夷变，谓筹夷事必知夷情，复据史志及林则徐所译西夷四州志等，成海国图志一百卷。",
+        "source": "《清史稿·卷四百八十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+      },
+      "verified": true
     },
     {
       "year": 1845,
@@ -104,9 +119,14 @@
       "delta": -4,
       "rationale": "地方",
       "summary": "高邮知州",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "以知州發江蘇，權興化。",
+        "textSimplified": "以知州发江苏，权兴化。",
+        "source": "《清史稿·卷四百八十六》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -116,9 +136,14 @@
     "retention": 0.95,
     "reason": "影响日本明治维新",
     "score": 45.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "咸豐六年，卒。",
+      "textSimplified": "咸丰六年，卒。",
+      "source": "《清史稿·卷四百八十六》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -158,8 +183,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

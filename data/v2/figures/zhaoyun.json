@@ -32,9 +32,14 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "常山真定人",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "趙雲字子龍，常山真定人也。",
+        "textSimplified": "赵云字子龙，常山真定人也。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
     },
     {
       "year": 191,
@@ -73,9 +78,14 @@
       "delta": 7,
       "rationale": "追随明主",
       "summary": "先主就袁绍，云见于邺",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "先主就袁紹，雲見於鄴。",
+        "textSimplified": "先主就袁绍，云见于邺。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
     },
     {
       "year": 208,
@@ -114,9 +124,14 @@
       "delta": 44,
       "rationale": "宿卫",
       "summary": "先主入蜀，云留营司马",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "先主入益州，雲領留營司馬。",
+        "textSimplified": "先主入益州，云领留营司马。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
     },
     {
       "year": 221,
@@ -167,9 +182,14 @@
     "retention": 0.95,
     "reason": "后追谥顺平侯",
     "score": 54.1,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "原文",
+    "quote": {
+      "text": "七年卒，追諡順平侯。",
+      "textSimplified": "七年卒，追谥顺平侯。",
+      "source": "《三国志·蜀书六 关张马黄赵传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -218,8 +238,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }
