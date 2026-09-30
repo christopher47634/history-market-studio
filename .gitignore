@@ -6,3 +6,5 @@ work/
 *.log
 .DS_Store
 Thumbs.db
+
+data/v2/sources/

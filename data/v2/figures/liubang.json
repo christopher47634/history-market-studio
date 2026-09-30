@@ -1,0 +1,405 @@
+{
+  "id": "liubang",
+  "name": "刘邦",
+  "born": {
+    "year": -256,
+    "certainty": "估计",
+    "note": "一说前 247 年，取《史记集解》皇甫谧说"
+  },
+  "died": {
+    "year": -195,
+    "certainty": "确知"
+  },
+  "lifeSpan": 61,
+  "thesis": "从沛县亭长到汉朝开国皇帝，一生两次跌入绝境（鸿门、荥阳），靠用人和坚持在楚汉相争后程完成反超。",
+  "sources": [
+    {
+      "label": "《史记·高祖本纪》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+    }
+  ],
+  "events": [
+    {
+      "year": -256,
+      "age": 0,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于丰邑",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "平民之家，无任何名分。",
+      "summary": "生于沛县丰邑中阳里，父称太公，母称刘媪。",
+      "evidence": "原文",
+      "quote": {
+        "text": "高祖，沛豐邑中陽里人，姓劉氏，字季。",
+        "textSimplified": "高祖，沛丰邑中阳里人，姓刘氏，字季。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -225,
+      "age": 31,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任泗水亭长",
+      "tier": "初起",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 13,
+      "rationale": "最基层小吏，进入秦朝体制但地位很低。",
+      "summary": "壮年试为吏，任泗水亭长，好酒及色，与县中吏员往来。",
+      "evidence": "原文",
+      "quote": {
+        "text": "及壯，試為吏，為泗水亭長",
+        "textSimplified": "及壮，试为吏，为泗水亭长",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -209,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "沛县起兵",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 13,
+      "rationale": "被推为沛公，拥有一县之兵，成为反秦诸路之一。",
+      "summary": "陈胜起事后，沛县父老杀县令迎刘邦，立为沛公。",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃立季為沛公",
+        "textSimplified": "乃立季为沛公",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "先入咸阳",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 42,
+      "rationale": "率军先于诸侯入关，秦王子婴出降，但兵力远不及项羽。",
+      "summary": "西进入关，子婴降于轵道旁，与关中父老约法三章。",
+      "evidence": "原文",
+      "quote": {
+        "text": "秦王子嬰素車白馬，系頸以組，封皇帝璽符節，降軹道旁。",
+        "textSimplified": "秦王子婴素车白马，系颈以组，封皇帝玺符节，降轵道旁。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿门谢罪",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "score": 35,
+      "delta": -45,
+      "rationale": "项羽四十万大军压境，只带百余骑赴宴谢罪，生死系于一线。",
+      "summary": "项羽欲击沛公，刘邦亲赴鸿门谢罪，席间脱身。",
+      "evidence": "原文",
+      "quote": {
+        "text": "沛公從百餘騎，驅之鴻門，見謝項羽。",
+        "textSimplified": "沛公从百余骑，驱之鸿门，见谢项羽。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受封汉王",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 74,
+      "delta": 39,
+      "rationale": "封王有了一方之主的名分，但被安置到偏远的巴蜀汉中，实为贬抑。",
+      "summary": "项羽负约，改立沛公为汉王，王巴、蜀、汉中，都南郑。",
+      "evidence": "原文",
+      "quote": {
+        "text": "更立沛公為漢王，王巴、蜀、漢中，都南鄭。",
+        "textSimplified": "更立沛公为汉王，王巴、蜀、汉中，都南郑。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "还定三秦",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 14,
+      "rationale": "用韩信之计出汉中，据有关中，成为能与项羽抗衡的一方。",
+      "summary": "八月出陈仓，击降章邯等三秦王，关中归汉。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -205,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "彭城大败",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 55,
+      "delta": -33,
+      "rationale": "率五诸侯兵攻入彭城，旋被项羽三万精兵击溃，诸侯多叛。",
+      "summary": "项羽回师，大破汉军于睢水，汉卒死者使睢水为之不流。",
+      "evidence": "原文",
+      "quote": {
+        "text": "大破漢軍，多殺士卒，睢水為之不流。",
+        "textSimplified": "大破汉军，多杀士卒，睢水为之不流。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -204,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "荥阳被围",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 48,
+      "delta": -7,
+      "rationale": "甬道被夺、军中乏食，被困荥阳，靠纪信诈降才脱身。",
+      "summary": "项羽数侵夺甬道，汉军乏食，遂围汉王于荥阳。",
+      "evidence": "原文",
+      "quote": {
+        "text": "項羽數侵奪漢甬道，漢軍乏食，遂圍漢王。",
+        "textSimplified": "项羽数侵夺汉甬道，汉军乏食，遂围汉王。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -203,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿沟议和",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 42,
+      "rationale": "韩信定齐、彭越扰楚后路，项羽被迫中分天下，攻守之势已转。",
+      "summary": "与项羽约定中分天下，鸿沟以西为汉，以东为楚。",
+      "evidence": "原文",
+      "quote": {
+        "text": "割鴻溝而西者為漢，鴻溝而東者為楚。",
+        "textSimplified": "割鸿沟而西者为汉，鸿沟而东者为楚。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -202,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "垓下决胜",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 94,
+      "delta": 4,
+      "rationale": "合诸侯兵围项羽于垓下，楚军覆灭，天下归属已定。",
+      "summary": "会诸侯兵共击楚军，四面楚歌，项羽败走乌江。",
+      "evidence": "原文",
+      "quote": {
+        "text": "與項羽決勝垓下",
+        "textSimplified": "与项羽决胜垓下",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -202,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝定汉",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 97,
+      "delta": 3,
+      "rationale": "统一天下后即皇帝位，但仍存异姓诸侯王，未到秦始皇式的完全统一。",
+      "summary": "诸侯上尊号，即皇帝位于汜水之阳，建立汉朝。",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃即皇帝位汜水之陽",
+        "textSimplified": "乃即皇帝位汜水之阳",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -200,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "白登被围",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 57,
+      "delta": 0,
+      "rationale": "亲征匈奴被围平城白登七日，皇帝本人身陷险境。",
+      "summary": "天寒士卒堕指，至平城被匈奴冒顿围困七日，用陈平计得脱。",
+      "evidence": "原文",
+      "quote": {
+        "text": "會天寒，士卒墮指者什二三，遂至平城。",
+        "textSimplified": "会天寒，士卒堕指者什二三，遂至平城。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    },
+    {
+      "year": -196,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "击英布中箭",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 87,
+      "delta": 0,
+      "rationale": "平定最后一个强大的异姓王，但本人中流矢，伤病由此加重。",
+      "summary": "亲征淮南王英布，为流矢所中，回途病重。",
+      "evidence": "原文",
+      "quote": {
+        "text": "高祖擊布時，為流矢所中，行道病。",
+        "textSimplified": "高祖击布时，为流矢所中，行道病。",
+        "source": "《史记·高祖本纪》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -195,
+    "age": 61,
+    "title": "崩于长乐宫",
+    "retention": 0.96,
+    "reason": "汉朝制度与郡国并行格局延续四百年，个人退场不影响政权。",
+    "score": 93.1,
+    "evidence": "原文",
+    "quote": {
+      "text": "四月甲辰，高祖崩長樂宮。",
+      "textSimplified": "四月甲辰，高祖崩长乐宫。",
+      "source": "《史记·高祖本纪》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7008"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立高祖本纪",
+      "score": 92,
+      "rationale": "司马迁以本纪记其一生，开国之君的历史地位确立。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "布衣开国第一人，汉朝奠定此后两千年中国的疆域与国家形态。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "布衣开国第一人，汉朝奠定此后两千年中国的疆域与国家形态。"
+  },
+  "peak": {
+    "title": "称帝定汉",
+    "age": 54,
+    "score": 97
+  },
+  "trough": {
+    "title": "任泗水亭长",
+    "age": 31,
+    "score": 25
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 31,
+      "years": 31
+    },
+    {
+      "fromAge": 31,
+      "toAge": 47,
+      "years": 16
+    }
+  ],
+  "quality": {
+    "quotesVerified": 14,
+    "quotesClaimed": 14,
+    "author": "claude-gold"
+  }
+}
