@@ -14,16 +14,12 @@ if (manifest.display !== "standalone" || !manifest.icons?.length) {
   fail("Web App Manifest 缺少独立显示模式或应用图标");
 }
 
-const app = await readFile(path.join(root, "src", "App.jsx"), "utf8");
-const settings = await readFile(
-  path.join(root, "src", "components", "SettingsPanel.jsx"),
-  "utf8",
-);
+const app = await readFile(path.join(root, "src", "v3", "App.jsx"), "utf8");
 if (!app.includes("history-market-current-pair") || !app.includes("history.replaceState")) {
   fail("人物组合没有写入可分享链接与本地恢复状态");
 }
-if (!settings.includes("navigator.share") || !settings.includes("navigator.clipboard")) {
-  fail("设置中心缺少原生分享与复制链接回退");
+if (!app.includes("navigator.share") || !app.includes("navigator.clipboard")) {
+  fail("缺少原生分享与复制链接回退");
 }
 
 const publicAssets = path.join(root, "public", "assets");

@@ -1,18 +1,13 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "./App.jsx";
+import { App } from "./v3/App.jsx";
 import { AppErrorBoundary } from "./components/AppErrorBoundary.jsx";
-import { HistoryDataProvider } from "./historyDataContext.jsx";
-import "./styles.css";
-import "./apple-polish.css";
-import "./v2/ui.css";
+import "./v3/app.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AppErrorBoundary>
-      <HistoryDataProvider>
-        <App />
-      </HistoryDataProvider>
+      <App />
     </AppErrorBoundary>
   </React.StrictMode>,
 );

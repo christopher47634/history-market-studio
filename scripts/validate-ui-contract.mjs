@@ -1,60 +1,54 @@
-import { readFileSync, readdirSync } from "node:fs";
+// v3 界面契约：静态检查关键约定 + 用真实数据跑一遍缩放分层的纯函数。
+import { readFileSync } from "node:fs";
+import { figureV2ById } from "../src/v2/all.js";
+import { buildScene, LEVELS, levelOf, visibleNodes, labelBudget, candles, readingOrder } from "../src/v3/scene.js";
 
-const root=new URL("..",import.meta.url);
-const read=(path)=>readFileSync(new URL(path,root),"utf8");
-const fail=(message)=>{throw new Error(message)};
+const root = new URL("..", import.meta.url);
+const read = (path) => readFileSync(new URL(path, root), "utf8");
+const fail = (message) => { throw new Error(message); };
 
-const app=read("src/App.jsx");
-const chart=read("src/components/LifeMarketChart.jsx");
-const picker=read("src/components/ComparisonPicker.jsx");
-const catalogSearch=read("src/components/CatalogSearch.jsx");
-const floatingCard=read("src/components/floatingEventCard.js");
-const historicalCitation=read("src/components/HistoricalCitation.jsx");
-const settings=read("src/components/SettingsPanel.jsx");
-const terminal=read("src/versions/BTerminal.jsx");
-const scroll=read("src/versions/CScroll.jsx");
-const styles=read("src/styles.css");
-const polish=read("src/apple-polish.css");
-const trajectoryModel=read("src/trajectoryModel.js");
-const jsxFiles=[...readdirSync(new URL("src/components",root)),...readdirSync(new URL("src/versions",root))]
-  .filter((name)=>name.endsWith(".jsx"));
+const app = read("src/v3/App.jsx");
+const chart = read("src/v3/LifeChart.jsx");
+const reader = read("src/v3/Reader.jsx");
+const bits = read("src/v3/bits.jsx");
+const css = read("src/v3/app.css");
 
-if(!app.includes('useState(viewFromHash)')||!app.includes('"hashchange"'))fail("版本路由没有与浏览器历史同步");
-if(!terminal.includes('useState("line")')||!scroll.includes('useState("line")'))fail("B/C 没有默认使用双线主视图");
-if(!terminal.includes("LifeMarketChart")||!scroll.includes("LifeMarketChart"))fail("B/C 没有共享年龄行情图引擎");
-if((chart.match(/type:\s*"candlestick"/g)||[]).length!==2)fail("主 K 线与同步 K 线必须各自保持一组单人物序列");
-if(!chart.includes('getCandleView(candleFigure'))fail("K 线没有绑定单人物细粒度行情");
-if(!/type:\s*"solid"/.test(chart)||/type:\s*index\s*\?\s*"dashed"/.test(chart)||!/endLabel:\s*\{\s*show:\s*true/.test(chart)||!chart.includes("comparison.maxAge"))fail("双线没有保持高级实线、线尾姓名或年龄轴辨识");
-if(!/useCoarsePointer:\s*true/.test(chart)||!/zr\.on\("mousemove",\s*onMove\)/.test(chart)||!/zr\.on\("click",\s*onClick\)/.test(chart)||!/const radius\s*=\s*forced\s*\?\s*76/.test(chart)||!/symbolSize:[\s\S]{0,80}params\.data\.event\s*\?\s*4\.5\s*:\s*0/.test(chart))fail("精细节点缺少范围吸附、移动端点击或小尺寸视觉规则");
-if(!/symbolSize:[\s\S]{0,80}params\.data\.event\s*\?\s*26\s*:\s*0/.test(chart)||!/itemStyle:\s*\{\s*opacity:\s*0\s*\}/.test(chart))fail("小节点缺少独立的透明点击热区");
-if(!picker.includes('aria-haspopup="dialog"')||!picker.includes('aria-label={`${label}搜索`}'))fail("人物搜索缺少可访问标签");
-if(!picker.includes("historyPeriods")||!picker.includes("figureDomains")||!picker.includes("indexSorts")||!picker.includes('aria-label="人物排序方式"'))fail("对比人物下拉缺少分期、朝代、领域或排序索引");
-if(!catalogSearch.includes("filterFigures")||!catalogSearch.includes("historyPeriods")||!catalogSearch.includes("figureDomains")||!catalogSearch.includes("catalog-index__results"))fail("全局人物搜索没有接入科学分类索引");
-if(!/createPortal\(menu,\s*document\.body\)/.test(picker)||!styles.includes('.person-select__menu--portal')||!/z-index:\s*10000\s*!important/.test(styles))fail("玉衡人物下拉菜单没有进入页面顶层");
-if(!chart.includes("onEventAnchor")||!terminal.includes("onEventAnchor={anchorDetail}")||!scroll.includes("onEventAnchor={anchorDetail}"))fail("外部事件入口没有统一回写走势点锚点");
-if(!chart.includes("life-pointer-probe")||!chart.includes("life-pointer-tether")||!styles.includes("snap-lock-in"))fail("图表缺少接近、吸附与锁定三阶段指向反馈");
-if(!terminal.includes("createPortal(")||!scroll.includes("createPortal(")||!styles.includes("event-float-card--anchor"))fail("事件卡片没有进入顶层或缺少节点连接方向");
-if(!chart.includes("const clientX = bounds.left + match.x")||!chart.includes("const clientY = bounds.top + match.y")||!floatingCard.includes("pointer?.snapX")||!floatingCard.includes('"below"')||!floatingCard.includes('"above"')||!styles.includes("--anchor-gap"))fail("事件卡片没有严格跟踪吸附点或缺少视口避让");
-if(!picker.includes("document.startViewTransition")||!picker.includes('aria-live="polite"')||!picker.includes('role="tooltip"')||!picker.includes('event.key !== "Escape"'))fail("交换控件缺少原子动效、状态播报或键盘提示逻辑");
-if(!/aria-pressed=\{mode\s*===\s*"line"\}/.test(terminal)||!/aria-pressed=\{mode\s*===\s*"line"\}/.test(scroll))fail("图表模式缺少可访问选中状态");
-if(!settings.includes('onView("b")')||!settings.includes('onView("c")')||terminal.includes("onView(")||scroll.includes("onView("))fail("B/C 版本切换没有收进设置二级界面");
-if(!/@media\s*\(max-width:\s*560px\)/.test(styles)||!/:where\(\s*button,\s*a,\s*input\s*\):focus-visible/.test(styles))fail("移动端或键盘焦点样式缺失");
-if(!styles.includes("dark-history-map.webp")||!styles.includes("qin-han-scroll.webp"))fail("两版参考图背景资产没有接入优化后的 WebP");
-if(!/scrollbar-width:\s*none/.test(styles)||!/backdrop-filter:\s*blur\(24px\)/.test(styles))fail("页面滚动条或玻璃拟态弹框规则缺失");
-if(jsxFiles.some((name)=>name==="CursorAura.jsx"))fail("中央光标波纹组件仍然存在");
+// 缩放分层：三层，阈值由大到小，跨度越小细节越多。
+if (LEVELS.map((l) => l.label).join() !== "全景,章节,细读") fail("缩放层级必须是 全景 / 章节 / 细读");
+if (levelOf(80).key !== "overview" || levelOf(20).key !== "chapter" || levelOf(6).key !== "detail") fail("缩放层级阈值不对");
+const scene = buildScene([figureV2ById.zhouenlai]);
+const p = scene.people[0];
+const whole = [scene.lifeStart, scene.endX];
+const counts = LEVELS.map((l) => visibleNodes(p, l, whole, labelBudget(l, 1000, 1)));
+if (counts[0].dots.some((n) => n.kind === "sub")) fail("全景不应画细节小事");
+if (!(counts[0].labels.length <= 6)) fail("全景标签不应超过 6 个");
+if (!(counts[2].dots.length > counts[0].dots.length)) fail("细读应比全景显示更多节点");
+if (candles(p, LEVELS[0]).length >= candles(p, LEVELS[1]).length) fail("K 线在放大后应从阶段级变为事件级");
+const narrow = [1935, 1943];
+if (visibleNodes(p, LEVELS[2], narrow, 20).labels.some((n) => n.x < narrow[0] || n.x > narrow[1])) fail("视窗外的节点不应挂标签");
+if (readingOrder(scene).some((n, i, a) => i && n.x < a[i - 1].x)) fail("阅读顺序没有按时间排");
+if (figureV2ById.zhouenlai.events.length + 1 < 16) fail("近现代人物节点应充足（周恩来至少 16 个）");
 
-if(/displayEvents\.slice\(0,\s*7\)/.test(scroll)||!scroll.includes("displayEvents.map"))fail("C scroll rail must render the full event list");
-if(!scroll.includes("onPreviewLeft")||!scroll.includes("onPreviewRight")||!scroll.includes("railPreviewId"))fail("C scroll rail must preview the hovered A/B figure");
-if(!chart.includes('? snapTarget.label')||!chart.includes(': `已吸附 · ${snapTarget.label}`'))fail("Candlestick snap label must omit the line-mode prefix");
-if(!picker.includes("onMouseMove={() => onPreview?.(value)}")||!picker.includes("onPreviewEnd?.(value)"))fail("A/B rail preview must resist selector boundary races");
-if(!scroll.includes("railFollow")||!scroll.includes('behavior: "smooth"')||!scroll.includes("railEventRefs"))fail("Chart events must center their matching history-rail entry");
-if(!scroll.includes("toggleRail")||!scroll.includes("railHoverGuardRef")||!scroll.includes('aria-expanded={!railCollapsed}'))fail("History rail collapse and reopen controls must remain stable");
-if(!polish.includes('url("/assets/qin-han-scroll.webp")')||!polish.includes(".zhusha-workbench.is-rail-collapsed .zhusha-collapse span"))fail("The scroll view must retain its mountain layer and discoverable reopen handle");
-if(!terminal.includes('<HistoricalCitation event={active} tone="jade" />')||!scroll.includes('<HistoricalCitation event={active} tone="paper" />'))fail("B/C 悬浮卡片没有共享史书原文组件");
-if(!historicalCitation.includes("citation.kind")||!historicalCitation.includes("citation.quote")||!historicalCitation.includes("出处 ·"))fail("史书引文组件缺少原文类型、正文或出处链接");
-if(!polish.includes("--history-body-font")||!polish.includes("--history-kaiti-font")||!polish.includes(".historical-citation blockquote"))fail("两套主题没有建立宋体正文与小号楷体引文层级");
-if(!terminal.includes("当时的势")||!scroll.includes("当时的势")||!terminal.includes("<ScoreBreakdown event={active} tone=\"jade\" />")||!scroll.includes("<ScoreBreakdown event={active} tone=\"paper\" />"))fail("两套主题没有使用 v2 口径（当时的势、打分拆解）");
-if(!terminal.includes("<AxisToggle")||!scroll.includes("<AxisToggle")||!terminal.includes("<Readout")||!scroll.includes("<Readout"))fail("两套主题缺少纪年/年龄切换或当时/后世读数");
-if(!chart.includes("当时的势（0—100）")||!chart.includes("tailSeries")||!chart.includes("comparison.focus"))fail("图表没有接入 v2 口径、身后声望线或默认视窗");
+// 图表：标签避让、各层标签内容不同、滚轮缩放、吸附与双击细读。
+if (!/labelLayout:\s*\{\s*hideOverlap:\s*true/.test(chart)) fail("节点标签缺少避让");
+if (!chart.includes('level.key === "overview"') || !chart.includes("{q|「")) fail("各层标签内容没有区分（细读层应带原文）");
+if (!/zoomOnMouseWheel:\s*true/.test(chart) || !chart.includes('filterMode: "none"')) fail("缺少滚轮缩放或会截断线条");
+if (!chart.includes('zr.on("mousemove"') || !chart.includes('zr.on("dblclick"') || !chart.includes("nearest(")) fail("缺少节点吸附、点击固定或双击细读");
+if (!chart.includes("红涨绿跌")) fail("K 线配色约定缺少说明");
 
-console.log("ui contract validation passed: point-anchored cards, scientific figure index, line-first and accessibility rules verified");
+// 阅读：依据分三类，百科不冒充原文；键盘逐个翻看。
+if (!bits.includes("百科") || !bits.includes("史书原文") || !bits.includes("概括")) fail("依据徽标没有区分原文 / 百科 / 概括");
+if (!reader.includes("不冒充原文")) fail("概括类节点缺少说明");
+if (!app.includes('"ArrowLeft"') || !app.includes('"ArrowRight"') || !app.includes('"Escape"')) fail("缺少键盘翻看或回全景");
+if (!app.includes("当时的势") || !app.includes("后世评价")) fail("读数没有区分当时的势与后世评价");
+
+// 主题与可用性：两套主题都定义全部色值；不用纯黑纯白；有移动端、减少动态效果、键盘焦点。
+for (const theme of ["jade", "cinnabar"]) {
+  const block = css.slice(css.indexOf(`[data-theme="${theme}"]`));
+  for (const token of ["--bg", "--surface", "--ink", "--ink-2", "--ink-3", "--accent", "--p0", "--p1", "--up", "--down"]) if (!block.includes(`${token}:`)) fail(`${theme} 主题缺少 ${token}`);
+}
+if (/#fff\b|#ffffff|#000\b|#000000/i.test(css)) fail("不使用纯白或纯黑");
+if (!css.includes("@media (max-width: 720px)") || !css.includes("prefers-reduced-motion") || !css.includes(":focus-visible")) fail("缺少移动端、减少动态效果或键盘焦点样式");
+if (!bits.includes('role="radiogroup"') || !bits.includes("aria-checked")) fail("分段选择器缺少无障碍语义");
+
+console.log("ui contract validation passed: three zoom levels, label avoidance, evidence badges, two themes, keyboard and mobile rules verified");
