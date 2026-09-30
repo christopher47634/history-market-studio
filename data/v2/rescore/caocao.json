@@ -1,0 +1,130 @@
+{
+  "scores": [
+    {
+      "index": 0,
+      "tier": "初起",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 1,
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 2,
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 3,
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 4,
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 5,
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "大败",
+      "crisisPenalty": 30
+    },
+    {
+      "index": 6,
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 7,
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 35
+    },
+    {
+      "index": 8,
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 9,
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "大败",
+      "crisisPenalty": 35
+    },
+    {
+      "index": 10,
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 11,
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 12,
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 13,
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "大败",
+      "crisisPenalty": 35
+    },
+    {
+      "index": 14,
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 15,
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 16,
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "大败",
+      "crisisPenalty": 30
+    },
+    {
+      "index": 17,
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "大败",
+      "crisisPenalty": 35
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "id": "xuanzang",
+  "name": "玄奘",
+  "born": {
+    "year": 602,
+    "certainty": "估计",
+    "note": "生年有596–602诸说，取通行602年"
+  },
+  "died": {
+    "year": 664,
+    "certainty": "确知"
+  },
+  "lifeSpan": 62,
+  "thesis": "从蜀地受戒的游方僧到天竺辩经胜者，玄奘以私出边关的西行、那烂陀研习和长安译场，把佛教义理与印度史地知识带回中土。",
+  "sources": [
+    {
+      "label": "《旧唐书·方伎传·玄奘》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+    }
+  ],
+  "events": [
+    {
+      "year": 602,
+      "age": 0,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于洛州缑氏",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "家世仕宦但本人无官无位，按布衣落档。",
+      "summary": "生于洛州偃师，俗姓陈，名祎，后随兄出家。",
+      "evidence": "原文",
+      "quote": {
+        "text": "僧玄奘，姓陳氏，洛州偃師人。",
+        "textSimplified": "僧玄奘，姓陈氏，洛州偃师人。",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true
+    },
+    {
+      "year": 618,
+      "age": 16,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "大业末出家",
+      "tier": "初起",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 20,
+      "delta": 5,
+      "rationale": "少年出家，乱世入蜀",
+      "summary": "隋末出家，博涉经论，因乱与兄入蜀参学。",
+      "evidence": "原文",
+      "quote": {
+        "text": "大業末出家，博涉經論。",
+        "textSimplified": "大业末出家，博涉经论。",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "出家为僧，进入佛教体制，但尚无声名地位。"
+    },
+    {
+      "year": 622,
+      "age": 20,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "成都受具足戒",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 42,
+      "delta": 22,
+      "rationale": "受具足戒成正式僧侣，蜀地声誉渐起，落成名档。",
+      "summary": "在成都受具足戒，究通诸部，声誉大著。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 627,
+      "age": 25,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "誉满两京",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 10,
+      "rationale": "誉满两京的青年高僧",
+      "summary": "沿江东下参学，重游长安，穷尽各家学说，誉满两京。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false,
+      "adjudicated": true,
+      "draftRationale": "游学荆州、长安，讲席日盛，然无官位，仍属成名。"
+    },
+    {
+      "year": 629,
+      "age": 27,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "私出关西行求法",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 10,
+      "delta": -42,
+      "rationale": "未获过所私出边关，亡命西域，风险极高。",
+      "summary": "因佛理分歧，决意西行求《瑜伽师地论》，未得唐廷过所即出长安。",
+      "evidence": "原文",
+      "quote": {
+        "text": "貞觀初，隨商人往游西域。",
+        "textSimplified": "贞观初，随商人往游西域。",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true
+    },
+    {
+      "year": 630,
+      "age": 28,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "高昌强留与结盟",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 12,
+      "delta": 2,
+      "rationale": "被高昌王强留，绝食三日几死，得脱。",
+      "summary": "高昌王麹文泰强留为国师，玄奘绝食三日，王愧惧谢罪，结为兄弟助行。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 631,
+      "age": 29,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "入那烂陀寺",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 55,
+      "delta": 43,
+      "rationale": "进入印度最高佛学中心，虽为学生，已列方面名家下档。",
+      "summary": "至摩揭陀那烂陀寺，师从戒贤，听《瑜伽师地论》等，系统研习。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 643,
+      "age": 41,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "曲女城辩经",
+      "tier": "方面名家",
+      "tierScore": 69,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 69,
+      "delta": 14,
+      "rationale": "无遮大会十八日无人能难，名震五天，方面名家顶格。",
+      "summary": "立真唯识量，十八日无人辩难，被尊为大乘天、解脱天。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 645,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "携经归长安",
+      "tier": "方面名家",
+      "tierScore": 69,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 69,
+      "delta": 0,
+      "rationale": "携经归国受太宗礼遇，主持译场，位居当世佛门领袖。",
+      "summary": "携梵本六百五十七部归长安，太宗大悦，诏于弘福寺翻译。",
+      "evidence": "原文",
+      "quote": {
+        "text": "貞觀十九年，歸至京師。太宗見之，大悅，與之談論。",
+        "textSimplified": "贞观十九年，归至京师。太宗见之，大悦，与之谈论。",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true
+    },
+    {
+      "year": 648,
+      "age": 46,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "住持慈恩寺译场",
+      "tier": "方面名家",
+      "tierScore": 69,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 69,
+      "delta": 0,
+      "rationale": "入住慈恩寺翻经院，领导官方译场，地位稳固。",
+      "summary": "高宗造慈恩寺及翻经院，送玄奘与所翻经像入住，译经规模扩大。",
+      "evidence": "原文",
+      "quote": {
+        "text": "造慈恩寺及翻經院",
+        "textSimplified": "造慈恩寺及翻经院",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true
+    },
+    {
+      "year": 652,
+      "age": 50,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "建大雁塔贮藏经像",
+      "tier": "方面名家",
+      "tierScore": 69,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 69,
+      "delta": 0,
+      "rationale": "建塔贮经像，译经事业制度化，非人生转折。",
+      "summary": "于慈恩寺西院建五层塔，贮藏天竺携来经像，即大雁塔前身。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 657,
+      "age": 55,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "请入少林寺未允",
+      "tier": "方面名家",
+      "tierScore": 69,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 59,
+      "delta": 0,
+      "rationale": "因应接权贵疲惫，奏请入少林静修未获准，受挫。",
+      "summary": "借陪驾洛阳奏请入少林寺译经，高宗未允，仍留长安。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 659,
+      "age": 57,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "移居玉华宫译经",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": -1,
+      "rationale": "获准离京逐静翻译，虽离权力中心，译事未断。",
+      "summary": "因京城礼谒众多，奏请逐静翻译，敕移宜君山故玉华宫。",
+      "evidence": "原文",
+      "quote": {
+        "text": "敕乃移於宜君山故玉華宮。",
+        "textSimplified": "敕乃移于宜君山故玉华宫。",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true
+    },
+    {
+      "year": 663,
+      "age": 61,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "译毕大般若经",
+      "tier": "方面名家",
+      "tierScore": 69,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 69,
+      "delta": 1,
+      "rationale": "完成最大部译经，一生译业达巅峰，位列方面名家顶格。",
+      "summary": "在玉华宫译毕《大般若经》，一生译经七十五部，自感生涯将尽。",
+      "evidence": "原文",
+      "quote": {
+        "text": "凡成七十五部。奏上之。",
+        "textSimplified": "凡成七十五部。奏上之。",
+        "source": "《旧唐书·方伎传·玄奘》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 664,
+    "age": 62,
+    "title": "圆寂玉华宫",
+    "retention": 0.98,
+    "reason": "译经七十五部、法相唯识宗与《大唐西域记》长期流传，身后影响不绝。",
+    "score": 67.6,
+    "evidence": "原文",
+    "quote": {
+      "text": "歸葬于白鹿原，士女送葬者數萬人。",
+      "textSimplified": "归葬于白鹿原，士女送葬者数万人。",
+      "source": "《旧唐书·方伎传·玄奘》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7191"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 669,
+      "title": "迁葬少陵原建兴教寺",
+      "score": 88,
+      "rationale": "高宗敕迁葬建塔寺，官方纪念延续，地位稳固。",
+      "inferred": false,
+      "jumpReason": "高宗称「朕失国宝」，迁葬建寺，身后即极受尊崇"
+    },
+    {
+      "year": 1944,
+      "title": "顶骨舍利发现与分供",
+      "score": 90,
+      "rationale": "舍利在南京发现后分供中日等地，圣化与文化交流延续。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 95,
+      "rationale": "汉传佛教译经与法相宗奠基者，《大唐西域记》保存印度史地，文明交流影响深远。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "汉传佛教译经与法相宗奠基者，《大唐西域记》保存印度史地，文明交流影响深远。"
+  },
+  "peak": {
+    "title": "曲女城辩经",
+    "age": 41,
+    "score": 69
+  },
+  "trough": {
+    "title": "私出关西行求法",
+    "age": 27,
+    "score": 10
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 16,
+      "years": 16
+    }
+  ],
+  "quality": {
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
+    "author": "deepseek-flash"
+  }
+}

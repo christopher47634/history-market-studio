@@ -1,5 +1,107 @@
 [
   {
+    "id": "caocao",
+    "name": "曹操",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–19 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "confucius",
+    "name": "孔子",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–33 岁（33 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "dufu",
+    "name": "杜甫",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–23 岁（23 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "fanzhongyan",
+    "name": "范仲淹",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–22 岁（22 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "guanzhong",
+    "name": "管仲",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–25 岁（25 年）没有阶段事件",
+      "史料空白：46–74 岁（28 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "hanwudi",
+    "name": "汉武帝",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：46–65 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "hanxin",
+    "name": "韩信",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–21 岁（21 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "kangxi",
+    "name": "康熙",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：42–58 岁（16 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "libai",
+    "name": "李白",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–23 岁（23 年）没有阶段事件",
+      "史料空白：23–41 岁（18 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "linzexu",
+    "name": "林则徐",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–19 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "liqzhao",
+    "name": "李清照",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–17 岁（17 年）没有阶段事件",
+      "史料空白：23–43 岁（20 年）没有阶段事件"
+    ]
+  },
+  {
     "id": "liubang",
     "name": "刘邦",
     "ok": true,
@@ -7,6 +109,170 @@
     "warnings": [
       "史料空白：0–31 岁（31 年）没有阶段事件",
       "史料空白：31–47 岁（16 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "lshimin",
+    "name": "李世民",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–17 岁（17 年）没有阶段事件",
+      "史料空白：32–48 岁（16 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "maozedong",
+    "name": "毛泽东",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "第 13 个事件「决策抗美援朝」：引文在原文里找不到，已降为「概括」——「进行了伟大的抗美援朝、保家卫国战争」",
+      "史料空白：0–25 岁（25 年）没有阶段事件",
+      "史料空白：63–83 岁（20 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "qinst",
+    "name": "秦始皇",
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "id": "shangyang",
+    "name": "商鞅",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–29 岁（29 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "simqian",
+    "name": "司马迁",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–19 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "sushi",
+    "name": "苏轼",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–20 岁（20 年）没有阶段事件",
+      "史料空白：20–42 岁（22 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "temujin",
+    "name": "成吉思汗",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：9–25 岁（16 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "wanganshi",
+    "name": "王安石",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–21 岁（21 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "wangyangming",
+    "name": "王阳明",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–27 岁（27 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "wentianxiang",
+    "name": "文天祥",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–20 岁（20 年）没有阶段事件",
+      "史料空白：20–39 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "wuzetian",
+    "name": "武则天",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：31–50 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "xiangyu",
+    "name": "项羽",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–23 岁（23 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "xuanzang",
+    "name": "玄奘",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–16 岁（16 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "yuefei",
+    "name": "岳飞",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–19 岁（19 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "zhangheng",
+    "name": "张衡",
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "id": "zhangjuzheng",
+    "name": "张居正",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–22 岁（22 年）没有阶段事件",
+      "史料空白：22–42 岁（20 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "zhugeliang",
+    "name": "诸葛亮",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–16 岁（16 年）没有阶段事件"
+    ]
+  },
+  {
+    "id": "zhuyuanzhang",
+    "name": "朱元璋",
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "史料空白：0–16 岁（16 年）没有阶段事件"
     ]
   }
 ]

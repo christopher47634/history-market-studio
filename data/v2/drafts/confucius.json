@@ -1,0 +1,266 @@
+{
+  "id": "confucius",
+  "author": "deepseek-flash",
+  "born": {
+    "year": -551,
+    "certainty": "确知",
+    "note": "《史记》系于鲁襄公二十二年，即前551年"
+  },
+  "died": {
+    "year": -479,
+    "certainty": "确知"
+  },
+  "thesis": "从陬邑没落贵族到鲁国大司寇，政治理想屡遭挫折，周游列国十四年后归鲁修述，生前权位有限，身后成为中华文明核心象征。",
+  "events": [
+    {
+      "year": -551,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于陬邑",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "没落贵族，三岁丧父，家境贫贱，无任何政治名分。",
+      "summary": "生于鲁国昌平乡陬邑，父叔梁纥为陬邑大夫，母颜氏，三岁丧父。",
+      "quote": {
+        "text": "孔子生魯昌平鄉陬邑。",
+        "source": 0
+      }
+    },
+    {
+      "year": -518,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "适周问礼",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以礼学闻名，得贵族资助问礼，仍无官职，属成名未达。",
+      "summary": "与南宫敬叔适周问礼，见老子，返鲁后弟子稍进。",
+      "quote": {
+        "text": "適周問禮，蓋見老子云。",
+        "source": 0
+      }
+    },
+    {
+      "year": -517,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "适齐受挫",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "rationale": "齐景公敬而不用，政治尝试受挫，仍以礼学闻名。",
+      "summary": "鲁乱，孔子适齐为高昭子家臣，景公欲用而晏婴阻，终不用。",
+      "quote": {
+        "text": "孔子適齊，為高昭子家臣",
+        "source": 0
+      }
+    },
+    {
+      "year": -502,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "退修诗书",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "不仕而讲学，弟子网络扩大，但政治权位仍低。",
+      "summary": "阳虎擅权，孔子不仕，退而修诗书礼乐，弟子弥众。",
+      "quote": {
+        "text": "故孔子不仕，退而脩詩書禮樂，弟子彌衆",
+        "source": 0
+      }
+    },
+    {
+      "year": -501,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出仕鲁国",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "进入鲁国中枢，摄相事，当世名望与官位达一生峰值。",
+      "summary": "定公任为中都宰，一年四方则之，累迁司空、大司寇。",
+      "quote": {
+        "text": "由中都宰為司空，由司空為大司寇。",
+        "source": 0
+      }
+    },
+    {
+      "year": -500,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "夹谷之会",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "外交场合以礼折齐，显示政治才干，但非独立权位。",
+      "summary": "以相礼陪定公与齐侯会夹谷，斥退莱人，齐归侵鲁三田。",
+      "quote": {
+        "text": "孔子攝相事",
+        "source": 0
+      }
+    },
+    {
+      "year": -498,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "堕三都",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "试图削弱三桓，遭抵制未成，政治发展受挫。",
+      "summary": "为强公室弱私家，谋堕三都，费成未全克，三桓猜忌。",
+      "quote": {
+        "text": "將墮三都",
+        "source": 0
+      }
+    },
+    {
+      "year": -497,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "去鲁周游",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "理想受阻，失去司寇之位，周游列国十四年。",
+      "summary": "齐赠女乐，季桓子受之，郊祭不致膰，孔子离鲁周游。",
+      "quote": {
+        "text": "孔子遂行，宿乎屯。",
+        "source": 0
+      }
+    },
+    {
+      "year": -496,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "匡被围",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "rationale": "周游中遭误围，弟子恐惧，本人镇定但处境危险。",
+      "summary": "过匡，匡人误以为阳虎，围困五日，弟子惧，孔子弦歌不衰。",
+      "quote": {
+        "text": "匡人於是遂止孔子",
+        "source": 0
+      }
+    },
+    {
+      "year": -489,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陈蔡绝粮",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "被困荒野，绝粮七日，一生最险之绝境。",
+      "summary": "陈蔡大夫发徒役围孔子于野，绝粮，从者病，孔子讲诵弦歌不衰。",
+      "quote": {
+        "text": "圍孔子於野。不得行，絕糧。",
+        "source": 0
+      }
+    },
+    {
+      "year": -484,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归鲁修述",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "返鲁被尊国老，政治抱负终结，转向文献整理与教育。",
+      "summary": "去鲁十四年而返，鲁终不能用，乃修诗书礼乐，作春秋，教授弟子。",
+      "quote": {
+        "text": "孔子之去魯凡十四歲而反乎魯。",
+        "source": 0
+      }
+    },
+    {
+      "year": -481,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "西狩获麟",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "rationale": "获麟被视为道穷之兆，遂作春秋寄寓政治理想。",
+      "summary": "西狩获麟，孔子视之曰麟也，叹吾道穷矣，因作春秋。",
+      "quote": {
+        "text": "仲尼視之，曰：「麟也。」",
+        "source": 0
+      }
+    },
+    {
+      "year": -480,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "子路之死",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "得意弟子惨死，孔子悲痛病重，死亡临近。",
+      "summary": "子路死于卫国内乱，被剁成肉酱，孔子病重，子贡来见。",
+      "quote": {
+        "text": "子路死於衞。孔子病",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": -479,
+    "title": "卒于鲁国",
+    "retention": 0.95,
+    "reason": "孔子学说与教育由弟子传播，儒学后成国家正统，死后影响远超生前。",
+    "quote": {
+      "text": "孔子年七十三，以魯哀公十六年四月己丑卒。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": -195,
+      "title": "汉高祖以太牢祠孔子",
+      "score": 90,
+      "rationale": "开国皇帝亲祭布衣孔子，官方尊崇由此开始。"
+    },
+    {
+      "year": -134,
+      "title": "汉武帝独尊儒术",
+      "score": 95,
+      "rationale": "儒学成为国家正统，孔子地位从学派领袖升为至圣。"
+    },
+    {
+      "year": 630,
+      "title": "唐太宗追尊孔子为先圣",
+      "score": 96,
+      "rationale": "唐代确立祭孔礼制，孔子成万世师表。"
+    },
+    {
+      "year": 1974,
+      "title": "批林批孔运动",
+      "score": 70,
+      "rationale": "近代遭激烈批判，但未动摇其文化根基。"
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 98,
+    "label": "正面",
+    "rationale": "儒家思想塑造东亚文明两千余年，孔子为中华文化核心象征。"
+  }
+}

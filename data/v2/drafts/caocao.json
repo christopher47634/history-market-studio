@@ -1,0 +1,340 @@
+{
+  "id": "caocao",
+  "author": "deepseek-flash",
+  "born": {
+    "year": 155,
+    "certainty": "估计",
+    "note": "《三國志》不載生年，據卒年「年六十六」逆推"
+  },
+  "died": {
+    "year": 220,
+    "certainty": "确知"
+  },
+  "thesis": "从宦官养孙到魏王，靠屯田养兵、唯才是举与挟天子之名分剪灭群雄，官渡一战定北方，赤壁一败定三分，终生未称帝而基业已成。",
+  "events": [
+    {
+      "year": 155,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于谯县",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "宦官养孙之家，父嵩位至太尉，富而不贵，门第常受讥议。",
+      "summary": "生於沛國譙縣，祖父曹騰為中常侍大長秋，父曹嵩官至太尉。",
+      "quote": {
+        "text": "太祖武皇帝，沛國譙人也，姓曹，諱操，字孟德",
+        "source": 0
+      }
+    },
+    {
+      "year": 174,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "举孝廉，除洛阳北部尉",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "二十岁入仕，任京师北郊小官，依法棒杀权贵，锋芒初露。",
+      "summary": "舉孝廉為郎，除洛陽北部尉，造五色棒，杖殺蹇碩叔父，京師斂迹。",
+      "quote": {
+        "text": "年二十，舉孝廉爲郎，除洛陽北部尉，遷頓丘令",
+        "source": 0
+      }
+    },
+    {
+      "year": 184,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "讨黄巾，迁济南相",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以军功迁二千石国相，在地方整肃贪腐禁绝淫祀，声名渐起。",
+      "summary": "拜騎都尉討潁川黃巾，遷濟南相，奏免八縣長吏，毀淫祀六百餘所。",
+      "quote": {
+        "text": "光和末，黃巾起。拜騎都尉，討潁川賊。遷爲濟南相",
+        "source": 0
+      }
+    },
+    {
+      "year": 189,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "变名东归，中牟被执",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "拒董卓所授骁骑校尉，易姓名亡命，途中被亭长拘送县廷。",
+      "summary": "董卓亂京，曹操易姓名東歸，過中牟為亭長所疑被執，賴功曹識之得釋。",
+      "quote": {
+        "text": "太祖乃變易姓名，間行東歸。",
+        "source": 0
+      }
+    },
+    {
+      "year": 190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陈留起兵，会盟讨董",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "散家财募兵五千，行奋武将军，为关东诸军之一。",
+      "summary": "於己吾起兵，與袁紹等同時舉義，推紹為盟主，曹操行奮武將軍。",
+      "quote": {
+        "text": "太祖至陳留，散家財，合義兵，將以誅卓。",
+        "source": 0
+      }
+    },
+    {
+      "year": 190,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "荥阳汴水之败",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "rationale": "独自西进遇徐荣，兵少大败，身中流矢，赖曹洪让马夜遁。",
+      "summary": "引兵西向成皋，至滎陽汴水與徐榮戰，士卒死傷甚多，乘夜遁去。",
+      "quote": {
+        "text": "到熒陽汴水，遇卓將徐榮，與戰不利，士卒死傷甚多。",
+        "source": 0
+      }
+    },
+    {
+      "year": 192,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "领兖州牧，收青州兵",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "得州牧之位与三十万降卒，始有争天下之基，仍非一方之主。",
+      "summary": "兗州無主，陳宮、鮑信等迎曹操領州牧，受降黃巾，選精銳為青州兵。",
+      "quote": {
+        "text": "受降卒三十餘萬，男女百餘萬口，收其精銳者，號爲青州兵。",
+        "source": 0
+      }
+    },
+    {
+      "year": 194,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "濮阳之败",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "rationale": "张邈陈宫叛迎吕布，一州仅存三县，本人坠马烧掌，几为所擒。",
+      "summary": "呂布襲兗州，郡縣皆應；濮陽之戰曹軍陣亂，曹操突火而出，墜馬燒傷左手。",
+      "quote": {
+        "text": "青州兵奔，太祖陣亂，馳突火出，墜馬，燒左手掌。",
+        "source": 0
+      }
+    },
+    {
+      "year": 196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迎献帝都许，录尚书事",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "奉天子之名而握实权，官拜司空行车骑将军，名分与权柄兼得。",
+      "summary": "迎獻帝於洛陽，遷都許縣，為大將軍、司空，錄尚書事，始興屯田。",
+      "quote": {
+        "text": "洛陽殘破，董昭等勸太祖都許。",
+        "source": 0
+      }
+    },
+    {
+      "year": 197,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "宛城之败",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "rationale": "张绣降而复叛夜袭，长子曹昂、典韦死，曹操中流矢几不得免。",
+      "summary": "張繡降而復反，戰於宛，曹操軍敗，長子昂、弟子安民遇害。",
+      "quote": {
+        "text": "公與戰，軍敗，爲流矢所中，長子昂、弟子安民遇害。",
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "官渡破袁绍",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以弱胜强尽收河北精锐，北方再无可敌者，然仍为汉臣。",
+      "summary": "焚烏巢積穀、降張郃，袁紹大潰渡河，曹操盡收其輜重圖書珍寶。",
+      "quote": {
+        "text": "紹衆大潰，紹及譚棄軍走，渡河。",
+        "source": 0
+      }
+    },
+    {
+      "year": 204,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拔邺城，领冀州牧",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "据冀州为根本，自领州牧，政令军令皆从邺出，俨然一方。",
+      "summary": "決漳水灌鄴，審配被擒斬，鄴城平定，曹操自領冀州牧，徙居鄴。",
+      "quote": {
+        "text": "配逆戰，敗，生禽配，斬之，鄴定。",
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进位丞相，南征荆州",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "罢三公而自为丞相，荆州望风而降，权位兵力皆至极盛。",
+      "summary": "漢罷三公，以曹操為丞相；南征荊州，劉琮出降，劉備走夏口。",
+      "quote": {
+        "text": "九月，公到新野，琮遂降，備走夏口。",
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赤壁败退",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "rationale": "船舰被烧疫病大作，南下统一之势顿挫，天下三分由此而定。",
+      "summary": "與孫劉聯軍戰於赤壁，不利，軍中大疫，吏士多死者，遂引軍北還。",
+      "quote": {
+        "text": "公至赤壁，與備戰，不利。於是大疫，吏士多死者，乃引軍還。",
+        "source": 0
+      }
+    },
+    {
+      "year": 211,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "渭南破关中联军",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "北渡时马超追射矢下如雨，几不得渡，终以离间之计破之。",
+      "summary": "西征馬超、韓遂，潼關對峙後潛渡蒲阪，縱虎騎夾擊，關中遂平。",
+      "quote": {
+        "text": "乃縱虎騎夾擊，大破之，斬成宜、李堪等。遂、超等走涼州",
+        "source": 0
+      }
+    },
+    {
+      "year": 216,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进爵魏王",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "封国十郡加九锡，位在诸侯王上，人臣之权已无可复加。",
+      "summary": "天子進曹操爵為魏王，設天子旌旗，出入稱警蹕，以曹丕為魏太子。",
+      "quote": {
+        "text": "夏五月，天子進公爵爲魏王。",
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "汉中之退",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "rationale": "夏侯渊战死，汉中得而复失，刘备据险，曹军无功而还。",
+      "summary": "夏侯淵為劉備所殺，曹操自長安出斜谷臨漢中，備因險拒守，五月引軍還。",
+      "quote": {
+        "text": "夏侯淵與劉備戰於陽平，爲備所殺。",
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "关羽围樊城",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "大败",
+      "crisisPenalty": 28,
+      "rationale": "于禁七军没于汉水，关羽威震华夏，曹操至议迁都以避其锋。",
+      "summary": "漢水暴溢，于禁軍沒而降，龐德被斬，關羽圍曹仁於樊城。",
+      "quote": {
+        "text": "八月，漢水溢，灌禁軍，軍沒，羽獲禁，遂圍仁。",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": 220,
+    "title": "崩于洛阳",
+    "retention": 0.96,
+    "reason": "魏国官署、屯田与青州兵皆已成制，同年曹丕代汉，政权不因一人之死而断。",
+    "quote": {
+      "text": "庚子，王崩于洛陽，年六十六。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": 220,
+      "title": "曹丕代汉建魏，追尊太祖武皇帝",
+      "score": 90,
+      "rationale": "子承父业完成代汉，曹操由汉臣变为魏室始祖。"
+    },
+    {
+      "year": 1522,
+      "title": "《三国志通俗演义》刊行，奸雄形象定型",
+      "score": 74,
+      "rationale": "小说流行使民间长期以「奸绝」视之，功业被道德评断遮蔽。"
+    },
+    {
+      "year": 1959,
+      "title": "郭沫若《替曹操翻案》",
+      "score": 80,
+      "rationale": "现代史学重估其统一北方、屯田与建安文学之功。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "结束汉末北方乱局，屯田、唯才是举与建安文学皆成一代之标志，惟篡汉之名终古难消。"
+  }
+}

@@ -78,7 +78,7 @@ async function draftPrompt(person) {
     "1. events 按年份升序。kind=stage 是人生阶段节点（6–12 个，决定主曲线）；kind=sub 是阶段内的小起伏（0–6 个，只影响 K 线影线）。出生必须是第一个 stage。",
     "2. tierScore 是档内分，必须落在该档区间里；crisisPenalty 必须落在该危局区间里。分数由程序计算，你不要自己输出 score。",
     "3. quote.text 必须从【原文】里逐字复制，保持原文繁体，不超过 40 字；source 填原文编号。找不到贴切的原文就填 null，绝不编造，绝不引用维基。",
-    "4. 年份用公元纪年，公元前为负数。年份不确定的 yearCertainty 填「估计」。",
+    "4. 年份用公元纪年：只有公元前才写负数，公元后一律正数（如 1206、624）。年份不确定的 yearCertainty 填「估计」。",
     "5. finale 只给保留率和理由，不给分数。posthumous 写 0–4 个身后关键事件（平反、追封、被尊崇、被清算），分数不超过 98。",
     "6. rationale 不超过 40 字，说清为什么落这一档；summary 不超过 60 字，写发生了什么。",
     anchor ? `7. 此人是锚点：生前最高的 stage 分数必须约为 ${anchor.peak}，终章约为 ${anchor.finale}（= 最后一个 stage 分数 × 保留率），后世评价为 ${anchor.legacy}。` : "",

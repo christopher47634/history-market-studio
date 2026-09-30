@@ -1,0 +1,109 @@
+{
+  "scores": [
+    {
+      "index": 0,
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 1,
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 2,
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 3,
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 4,
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 5,
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 6,
+      "tier": "一方之主",
+      "tierScore": 87,
+      "crisis": "大败",
+      "crisisPenalty": 30
+    },
+    {
+      "index": 7,
+      "tier": "一方之主",
+      "tierScore": 87,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 8,
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 9,
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 10,
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 11,
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "受挫",
+      "crisisPenalty": 12
+    },
+    {
+      "index": 12,
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 13,
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 14,
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    }
+  ]
+}

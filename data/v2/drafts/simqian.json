@@ -1,0 +1,215 @@
+{
+  "id": "simqian",
+  "author": "deepseek-flash",
+  "born": {
+    "year": -145,
+    "certainty": "估计",
+    "note": "生年有前145、前135两说，此处取前145"
+  },
+  "died": {
+    "year": -86,
+    "certainty": "估计",
+    "note": "卒年无确载，一说与武帝相终始，或至昭帝时"
+  },
+  "thesis": "从龙门史官之子到太史令，因李陵之祸受宫刑，忍辱完成《史记》，以一家之言定义中国史学传统。",
+  "events": [
+    {
+      "year": -145,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于龙门",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "史官世家，但本人初生无爵位，按布衣落档。",
+      "summary": "迁生龙门，耕牧河山之阳，年十岁则诵古文。",
+      "quote": {
+        "text": "遷生龍門，耕牧河山之陽。",
+        "source": 0
+      }
+    },
+    {
+      "year": -126,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "壮游天下",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "年二十出游考察，未入仕，按初起落档。",
+      "summary": "南游江淮，上会稽探禹穴，北涉汶泗，讲业齐鲁，观夫子遗风。",
+      "quote": {
+        "text": "二十而南遊江、淮，上會稽，探禹穴，窺九疑，浮沅、湘。",
+        "source": 0
+      }
+    },
+    {
+      "year": -112,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "仕为郎中，奉使西南",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "入仕为郎中，出使西南，仍属初起。",
+      "summary": "仕为郎中，奉使西征巴蜀以南，略邛、莋、昆明，还报命。",
+      "quote": {
+        "text": "於是遷仕為郎中，奉使西征巴、蜀以南，略邛、莋、昆明，還報命。",
+        "source": 0
+      }
+    },
+    {
+      "year": -110,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "父谈卒，受遗命",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "父死受遗命，责任加重，尚未任太史令。",
+      "summary": "司马谈留滞周南，发愤且卒，执迁手嘱其续作史书。",
+      "quote": {
+        "text": "汝復為太史，則續吾祖矣。",
+        "source": 0
+      }
+    },
+    {
+      "year": -108,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任太史令",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "任太史令，掌天官图籍，为中央史官，方面名家。",
+      "summary": "父卒三岁，迁为太史令，紬史记石室金匮之书。",
+      "quote": {
+        "text": "卒三歲，而遷為太史令，紬史記石室金鐀之書。",
+        "source": 0
+      }
+    },
+    {
+      "year": -104,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参与太初改历",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "参与太初改历，学术地位上升，仍方面名家。",
+      "summary": "太初元年改历，以正月为岁首，奠定后世历法基础。",
+      "quote": {
+        "text": "天歷始改，建於明堂，諸神受記。",
+        "source": 0
+      }
+    },
+    {
+      "year": -99,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "李陵之祸",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "rationale": "因李陵事下狱，以诬罔当死，受宫刑，绝境。",
+      "summary": "李陵兵败降匈奴，司马迁辩护触怒武帝，下狱受腐刑。",
+      "quote": {
+        "text": "十年而遭李陵之禍，幽於累紲。",
+        "source": 0
+      }
+    },
+    {
+      "year": -98,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "受刑后为中书令",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "rationale": "受刑后为中书令，尊宠任职，但身心已亏。",
+      "summary": "被刑之后为中书令，尊宠任职，隐忍苟活以完成史书。",
+      "quote": {
+        "text": "遷既被刑之後，為中書令，尊寵任職。",
+        "source": 0
+      }
+    },
+    {
+      "year": -93,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "报任安书，发愤著史",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以著述对抗耻辱，发愤完成一家之言。",
+      "summary": "在报任安书中言究天人之际，通古今之变，成一家之言。",
+      "quote": {
+        "text": "亦欲以究天人之際，通古今之變，成一家之言。",
+        "source": 0
+      }
+    },
+    {
+      "year": -91,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "《史记》成书",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "完成百三十篇通史，生前未广传，成就一家之言。",
+      "summary": "凡百三十篇，五十二万六千五百字，为《太史公书》，藏之名山。",
+      "quote": {
+        "text": "凡百三十篇，五十二萬六千五百字，為《太史公書》。",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": -86,
+    "title": "卒年无确载",
+    "retention": 0.95,
+    "reason": "《史记》死后由外孙杨恽宣布，史学传统由此确立，作品延续不灭。",
+    "quote": {
+      "text": "遷既死後，其書稍出。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": -60,
+      "title": "杨恽宣布《史记》",
+      "score": 95,
+      "rationale": "外孙杨恽祖述其书，遂宣布焉，天下人得读。",
+      "quote": {
+        "text": "宣帝時，遷外孫平通侯楊惲祖述其書，遂宣佈焉。",
+        "source": 0
+      }
+    },
+    {
+      "year": 9,
+      "title": "王莽封迁后为史通子",
+      "score": 80,
+      "rationale": "王莽求封司马迁后人，承认其史家地位。",
+      "quote": {
+        "text": "王莽時，求封遷後，為史通子。",
+        "source": 0
+      }
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 97,
+    "label": "正面",
+    "rationale": "《史记》首创纪传体通史，奠定中国正史传统，影响两千年史学与文学。"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "zhangjuzheng",
+  "author": "deepseek-flash",
+  "born": {
+    "year": 1525,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1582,
+    "certainty": "确知"
+  },
+  "thesis": "从荆州军户子弟到万历初年的实际执政者，以考成法与一条鞭法重整吏治财政，柄国十年，身后即遭清算。",
+  "events": [
+    {
+      "year": 1525,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于江陵",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "军户子弟，父为秀才，本人无官无名分。",
+      "summary": "生于荆州府江陵县军户之家，少颖敏绝伦，十五为诸生。",
+      "quote": {
+        "text": "張居正，字叔大，江陵人。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1547,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士入仕",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "新科进士入翰林，有文名而未居要位。",
+      "summary": "嘉靖二十六年成进士，改庶吉士，入翰林院，日讨求国家典故。",
+      "quote": {
+        "text": "嘉靖二十六年，居正成進士，改庶吉士。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1567,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入阁参政",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以裕邸旧讲官入阁，进入执政层。",
+      "summary": "与陈以勤同入阁，任吏部左侍郎兼东阁大学士，参预隆庆中枢。",
+      "quote": {
+        "text": "而居正為吏部左侍郎兼東閣大學士",
+        "source": 0
+      }
+    },
+    {
+      "year": 1571,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赞俺答封贡",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "促成互市安定北边，权位再进，未至独任。",
+      "summary": "与高拱共赞俺答封贡，和市成，北边久不为害。",
+      "quote": {
+        "text": "拱主封俺答，居正亦贊之",
+        "source": 0
+      }
+    },
+    {
+      "year": 1572,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出任首辅",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "借太后与司礼监之助代高拱，主持国政。",
+      "summary": "神宗即位，冯保以两宫诏旨逐高拱，张居正代为内阁首辅。",
+      "quote": {
+        "text": "居正遂代拱為首輔。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1573,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "推行考成法",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以内阁督责部院抚按，权柄大张。",
+      "summary": "立限考成，误者抵罪，部院不敢稽迟，政体为肃，万里外朝下夕行。",
+      "quote": {
+        "text": "又為考成法以責吏治。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1576,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "刘台弹劾之狱",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "被言官劾以专恣，反手压制，权威略损。",
+      "summary": "御史刘台抗章论其专恣不法，居正怒，帝下台诏狱，杖百远戍。",
+      "quote": {
+        "text": "台抗章論居正專恣不法，居正怒甚。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1577,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夺情留任",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "以夺情抗满朝舆论，留任而谤满天下。",
+      "summary": "父死倡夺情，翰林台谏交章反对，皆坐廷杖谪斥，谤书悬于通衢。",
+      "quote": {
+        "text": "人情洶洶，指目居正，至懸謗書通衢。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1578,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归葬江陵",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "人离朝而政由己出，主政之权仅次君主。",
+      "summary": "归葬父丧，沿途守臣长跪迎送，帝令次辅大事毋得专决，驰驿听其处分。",
+      "quote": {
+        "text": "有大事毋得專決，馳驛之江陵，聽張先生處分。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1580,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "澄汰冗官",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "持法严厉，核驿递省冗官，怨者日众。",
+      "summary": "核驿递、省冗官、清庠序，裁两京冗职，公卿群吏不得乘传。",
+      "quote": {
+        "text": "核驛遞，省冗官，清庠序，多所澄汰。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1581,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "一条鞭法与权势顶峰",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "赋役与考成并行，言出法随，权位至此为极。",
+      "summary": "清丈田亩，推行一条鞭法，国藏充盈；太仓粟可支十年，朝廷号令万里夕行。",
+      "quote": {
+        "text": "雖萬里外，朝下而夕奉行。",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": 1582,
+    "title": "病逝于京师",
+    "retention": 0.97,
+    "reason": "考成、一条鞭诸法行之有年，赋役与财政框架在其身后仍被沿用，个人虽遭清算而制度成果不废。",
+    "quote": {
+      "text": "及卒，帝為輟朝，諭祭九壇，視國公兼師傅者。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": 1583,
+      "title": "夺谥籍家",
+      "score": 28,
+      "rationale": "身后遭清算，谥夺家破，长子自缢，个人名誉扫地。"
+    },
+    {
+      "year": 1622,
+      "title": "天启复官予祭葬",
+      "score": 80,
+      "rationale": "廷臣追述其功，诏复故官，予葬祭，名誉渐复。"
+    },
+    {
+      "year": 1640,
+      "title": "崇祯复荫与讼冤",
+      "score": 84,
+      "rationale": "李日宣言其肩劳任怨、功在社稷，帝复其荫官，冤始大白。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "柄国十年，考成与一条鞭定明代后期制度格局，功在社稷，过在身家。"
+  }
+}

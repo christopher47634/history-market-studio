@@ -1,0 +1,130 @@
+{
+  "scores": [
+    {
+      "index": 0,
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 1,
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 2,
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 3,
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫：攻长沙失利，转兵井冈山",
+      "crisisPenalty": 15
+    },
+    {
+      "index": 4,
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 5,
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 6,
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败：宁都会议被解除军职、遭排挤",
+      "crisisPenalty": 25
+    },
+    {
+      "index": 7,
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境：第五次反围剿失败，被迫长征",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 8,
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫：长征途中仍处险境，但开始重掌军权",
+      "crisisPenalty": 15
+    },
+    {
+      "index": 9,
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 10,
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 11,
+      "tier": "天下共主",
+      "tierScore": 100,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 12,
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 13,
+      "tier": "天下共主",
+      "tierScore": 100,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 14,
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫：大跃进与公社化造成严重经济困难",
+      "crisisPenalty": 15
+    },
+    {
+      "index": 15,
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 16,
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "大败：林彪事件造成政治危机",
+      "crisisPenalty": 25
+    },
+    {
+      "index": 17,
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    }
+  ]
+}

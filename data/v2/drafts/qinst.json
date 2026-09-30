@@ -1,0 +1,273 @@
+{
+  "id": "qinst",
+  "author": "deepseek-flash",
+  "born": {
+    "year": -259,
+    "certainty": "确知",
+    "note": "《史记》系于秦昭王四十八年正月"
+  },
+  "died": {
+    "year": -210,
+    "certainty": "确知"
+  },
+  "thesis": "从邯郸质子之子到秦王，扫灭六国创皇帝号；统一后以郡县、法度、文字塑造帝国，也因急政、焚书、坑儒留下争议。",
+  "events": [
+    {
+      "year": -259,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邯郸",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "秦国王孙却生于赵为质，名分虽贵而处境危险。",
+      "summary": "秦庄襄王为质于赵，娶赵姬，生政于邯郸，时秦昭王四十八年正月。",
+      "quote": {
+        "text": "以秦昭王四十八年正月生於邯鄲。",
+        "source": 0
+      }
+    },
+    {
+      "year": -246,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即秦王位",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "十三岁继位，国政委于吕不韦等大臣，王权受限。",
+      "summary": "庄襄王死，政代立为秦王，年少初即位，委国事大臣。",
+      "quote": {
+        "text": "年十三歲，莊襄王死，政代立為秦王。",
+        "source": 0
+      }
+    },
+    {
+      "year": -238,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "亲政平嫪毐",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "冠礼亲政，嫪毐矫玺作乱，虽平叛而宫廷震荡。",
+      "summary": "王冠带剑，令昌平君等攻嫪毐，车裂之，实权归王。",
+      "quote": {
+        "text": "己酉，王冠，帶劍。",
+        "source": 0
+      }
+    },
+    {
+      "year": -235,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "吕不韦免相",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "罢相国吕不韦，清除最后权臣，秦王政大权独揽。",
+      "summary": "吕不韦坐嫪毐免相，后饮鸩死，宾客门客受到处分。",
+      "quote": {
+        "text": "相國呂不韋坐嫪毐免。",
+        "source": 0
+      }
+    },
+    {
+      "year": -230,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭韩置郡",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "灭韩置颍川郡，统一战争正式展开。",
+      "summary": "内史腾攻韩，虏韩王安，尽纳其地，置颍川郡。",
+      "quote": {
+        "text": "內史騰攻韓，得韓王安，盡納其地",
+        "source": 0
+      }
+    },
+    {
+      "year": -228,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破赵虏王",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "王翦破邯郸虏赵王迁，赵地大体归秦。",
+      "summary": "秦军破赵，杀赵葱，虏赵王迁，秦王亲至邯郸。",
+      "quote": {
+        "text": "王翦、羌瘣盡定取趙地東陽，得趙王。",
+        "source": 0
+      }
+    },
+    {
+      "year": -227,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "荆轲刺秦",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "燕使荆轲献图行刺，秦王政几死于殿上。",
+      "summary": "荆轲刺秦王，秦王觉之，体解轲以徇，益发兵攻燕。",
+      "quote": {
+        "text": "使荊軻刺秦王。秦王覺之，體解軻以徇",
+        "source": 0
+      }
+    },
+    {
+      "year": -221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统一称皇帝",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "六王毕，四海一，创皇帝号，郡县天下。",
+      "summary": "王贲虏齐王建，秦并天下，秦王政号始皇帝。",
+      "quote": {
+        "text": "六王咸伏其辜，天下大定。",
+        "source": 0
+      }
+    },
+    {
+      "year": -218,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "博浪沙遇刺",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "东巡途中为盗所惊，令天下大索十日。",
+      "summary": "始皇东游至阳武博狼沙中，为盗所惊，求弗得。",
+      "quote": {
+        "text": "至陽武博狼沙中，為盜所驚。",
+        "source": 0
+      }
+    },
+    {
+      "year": -215,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "蒙恬北击匈奴",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "遣蒙恬率三十万众北逐匈奴，取河南地。",
+      "summary": "使蒙恬发兵三十万北击胡，略取河南地，筑亭障。",
+      "quote": {
+        "text": "始皇乃使將軍蒙恬發兵三十萬人北擊胡，略取河南地。",
+        "source": 0
+      }
+    },
+    {
+      "year": -213,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "焚书令",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "用李斯议禁私学，焚《诗》《书》，思想控制强化。",
+      "summary": "咸阳宫议封建，李斯请焚非秦记诗书百家语，制曰可。",
+      "quote": {
+        "text": "臣請史官非秦記皆燒之。",
+        "source": 0
+      }
+    },
+    {
+      "year": -212,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "坑儒咸阳",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "方士亡去，始皇怒，案问诸生，坑四百六十余人。",
+      "summary": "侯生卢生亡去，始皇大怒，坑儒咸阳，扶苏谏被遣。",
+      "quote": {
+        "text": "犯禁者四百六十餘人，皆阬之咸陽",
+        "source": 0
+      }
+    },
+    {
+      "year": -210,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "病重沙丘",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "rationale": "东巡至平原津病重，恶言死，群臣莫敢言死事。",
+      "summary": "至平原津而病，病益甚，赐扶苏玺书未授使者。",
+      "quote": {
+        "text": "至平原津而病。始皇惡言死，群臣莫敢言死事。",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": -210,
+    "title": "崩于沙丘平台",
+    "retention": 0.97,
+    "reason": "皇帝制度、郡县制与书同文等遗产被汉朝继承，秦祚虽短，帝制格局延续两千年。",
+    "quote": {
+      "text": "七月丙寅，始皇崩於沙丘平臺。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": -209,
+      "title": "陈胜起义，秦政崩解",
+      "score": 70,
+      "rationale": "身死未久天下反秦，暴政形象开始形成。"
+    },
+    {
+      "year": -206,
+      "title": "秦亡",
+      "score": 55,
+      "rationale": "二世而亡，成为亡国之鉴。"
+    },
+    {
+      "year": -170,
+      "title": "贾谊《过秦论》",
+      "score": 45,
+      "rationale": "「仁义不施」成为汉以后的主流评价。"
+    },
+    {
+      "year": 1600,
+      "title": "李贽称「千古一帝」",
+      "score": 80,
+      "rationale": "明末开始有人从统一功业角度重新评价。"
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 98,
+    "label": "争议",
+    "rationale": "首建大一统中央集权帝制，塑造两千年政治形态；急政与焚书坑儒亦成争议焦点。"
+  },
+  "reviewNotes": [
+    {
+      "by": "claude",
+      "at": "2026-09-30",
+      "note": "原稿 -202「汉承秦制」给 98，把制度延续当成了声望，改为按过秦论到千古一帝的评价变化。"
+    }
+  ]
+}

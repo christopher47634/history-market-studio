@@ -1,0 +1,74 @@
+{
+  "scores": [
+    {
+      "index": 0,
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 1,
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 2,
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 3,
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 4,
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 5,
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 6,
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 55
+    },
+    {
+      "index": 7,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 8,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 9,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 40
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "scores": [
+    {
+      "index": 0,
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 1,
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 2,
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 3,
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 10
+    },
+    {
+      "index": 4,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 55
+    },
+    {
+      "index": 5,
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "大败",
+      "crisisPenalty": 25
+    },
+    {
+      "index": 6,
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 7,
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "受挫",
+      "crisisPenalty": 10
+    },
+    {
+      "index": 8,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 9,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 50
+    },
+    {
+      "index": 10,
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": "liqzhao",
+  "author": "deepseek-flash",
+  "born": {
+    "year": 1084,
+    "certainty": "确知",
+    "note": "宋元丰七年；旧说生于齐州章丘"
+  },
+  "died": {
+    "year": 1155,
+    "certainty": "估计",
+    "note": "卒年有1151、1155、1156等说"
+  },
+  "thesis": "从士大夫闺秀到南渡流亡，李清照以词名与金石学养穿越国破家亡，身后成为千古第一才女。",
+  "events": [
+    {
+      "year": 1084,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐州章丘",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "士大夫家庭出身，本人为女性，无官位名分。",
+      "summary": "生于齐州章丘明水镇，父李格非为进士、礼部员外郎，母王氏亦善文。",
+      "quote": null
+    },
+    {
+      "year": 1101,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与赵明诚成婚",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "嫁金石学家赵明诚，诗词文名渐起，但无官位大权。",
+      "summary": "十八岁嫁太学生赵明诚，夫妇同好金石书画，唱和收藏。",
+      "quote": {
+        "text": "女清照，詩文尤有稱于時，嫁趙挺之之子明誠，自號「易安居士」。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1107,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "移居青州",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "屏居青州十余年，金石收藏与词名渐盛，仍属文名无大位。",
+      "summary": "随夫移居青州，屏居乡里，继续搜集校勘金石书画。",
+      "quote": null
+    },
+    {
+      "year": 1127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "靖康南渡",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "金兵南下，青州陷落，夫妇携金石流亡江南，资产断裂。",
+      "summary": "靖康之变后，李清照与赵明诚南渡江宁，文物途中散失。",
+      "quote": null
+    },
+    {
+      "year": 1129,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "丈夫病逝",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "rationale": "国破之后又丧夫，孤身流徙，个人支撑系统坍塌。",
+      "summary": "赵明诚卒于建康，李清照为文祭之，携残存文物继续漂泊。",
+      "quote": null
+    },
+    {
+      "year": 1131,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "书画被盗",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "赴越寄居，所携书画一夕被盗，金石收藏几近全失。",
+      "summary": "绍兴元年在越州钟氏家，书画被盗，多年收藏散佚。",
+      "quote": null
+    },
+    {
+      "year": 1132,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "再嫁、离异与讼事",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "rationale": "孤寡再嫁张汝舟，不合讼离，因告发入狱，旋即获释。",
+      "summary": "约绍兴二年再嫁张汝舟，不久离异，讼事牵连入狱后得释。",
+      "quote": null
+    },
+    {
+      "year": 1134,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "流落金华登八咏楼",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "rationale": "避乱金华，登楼赋诗，虽漂泊仍维持文名。",
+      "summary": "绍兴四年流落金华，登八咏楼，作《题八咏楼》诗。",
+      "quote": null
+    },
+    {
+      "year": 1135,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "整理金石著述",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以《金石录后序》记录收藏与丧乱，文名与学术并传。",
+      "summary": "整理赵明诚《金石录》，作后序追忆夫妇金石之乐与散佚之痛。",
+      "quote": null
+    },
+    {
+      "year": 1140,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "晚年词艺大成",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "流寓临安，词风凄怆沉郁，《声声慢》等成后期代表。",
+      "summary": "晚年孤居江南，作《声声慢》等词，写国破家亡与漂泊之悲。",
+      "quote": null
+    }
+  ],
+  "finale": {
+    "year": 1155,
+    "title": "卒于江南",
+    "retention": 0.93,
+    "reason": "作品经辑本流传，词论与易安体持续影响后世，个人逝去不带走文名。",
+    "quote": null
+  },
+  "posthumous": [
+    {
+      "year": 1345,
+      "title": "《宋史》附见李格非传",
+      "score": 70,
+      "rationale": "正史以附传形式载其诗文与婚姻，才女进入官方叙述。"
+    },
+    {
+      "year": 1630,
+      "title": "汲古阁刊《漱玉词》",
+      "score": 78,
+      "rationale": "明清刻本汇辑其词，作品由散佚走向经典化。"
+    },
+    {
+      "year": 1959,
+      "title": "济南李清照纪念堂建成",
+      "score": 88,
+      "rationale": "现代公共纪念确立其国民文化偶像地位。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 93,
+    "label": "正面",
+    "rationale": "婉约词宗，中国文学史上最伟大的女词人，易安体与词论影响深远。"
+  }
+}

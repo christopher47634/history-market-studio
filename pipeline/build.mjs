@@ -61,7 +61,8 @@ export function buildFigure(person, draft, sources, rescore = null) {
       year: event.year, age: ageAt(born, event.year), yearCertainty: event.yearCertainty ?? "确知", kind: event.kind,
       title: event.title, tier: event.tier, tierScore: event.tierScore, crisis: event.crisis, crisisPenalty: event.crisisPenalty ?? 0,
       score, delta: event.kind === "stage" && lastStage ? +(score - lastStage.score).toFixed(1) : 0,
-      rationale: event.rationale, summary: event.summary, evidence, quote, verified, ...(rejectedQuote ? { rejectedQuote } : {}),
+      rationale: event.adjudication ?? event.rationale, summary: event.summary, evidence, quote, verified, ...(rejectedQuote ? { rejectedQuote } : {}),
+      ...(event.adjudication ? { adjudicated: true, draftRationale: event.rationale } : {}),
     };
     if (event.kind === "stage") lastStage = built;
     return built;
@@ -90,7 +91,8 @@ export function buildFigure(person, draft, sources, rescore = null) {
     if (p.year < postYear) errors.push(`身后事件「${p.title}」年份倒序`);
     if (p.score > cap) errors.push(`身后事件「${p.title}」分数 ${p.score} 超过封顶 ${cap}`);
     postYear = p.year;
-    return { year: p.year, title: p.title, score: p.score, rationale: p.rationale, inferred: false };
+    if (!p.jumpReason && p.year - died <= 10 && Math.abs(p.score - (stages.at(-1)?.score ?? 0) * f.retention) > 15) warnings.push(`身后跳变：「${p.title}」去世 ${p.year - died} 年内就到 ${p.score}，需确认当时确有此评价`);
+    return { year: p.year, title: p.title, score: p.score, rationale: p.rationale, inferred: false, ...(p.jumpReason ? { jumpReason: p.jumpReason } : {}) };
   });
   posthumous.push({ year: TODAY, title: "今日评价", score: legacy.score, rationale: legacy.rationale, inferred: posthumous.length === 0 });
 
@@ -145,14 +147,30 @@ if (isMain) await main();
 async function main() {
 const wanted = process.argv.slice(2);
 await mkdir(new URL("figures/", DATA), { recursive: true });
+const adjFile = new URL("adjudications.json", DATA);
+const adjudications = existsSync(adjFile) ? JSON.parse(await readFile(adjFile, "utf8")) : {};
 const drafts = (await readdir(new URL("drafts/", DATA))).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
 const built = [];
 for (const id of drafts.filter((d) => !wanted.length || wanted.includes(d))) {
   const person = SAMPLE.find((p) => p.id === id);
   if (!person) { console.log(`✗ ${id}：不在样板登记表里`); continue; }
   const draft = JSON.parse(await readFile(new URL(`drafts/${id}.json`, DATA), "utf8"));
+  // 裁定：起草与复核分歧的事件，按 adjudications.json 覆盖档位和危局，并从复核比对里剔除。
+  const ruling = adjudications[id] ?? {};
+  for (const [index, [tier, tierScore, crisis, crisisPenalty, reason]] of Object.entries(ruling)) {
+    const event = draft.events[+index];
+    if (!event) { console.log(`   ⚠ ${id} 裁定的第 ${index} 个事件不存在`); continue; }
+    Object.assign(event, { tier, tierScore, crisis, crisisPenalty, adjudication: reason });
+  }
   const rescoreFile = new URL(`rescore/${id}.json`, DATA);
   const rescore = existsSync(rescoreFile) ? JSON.parse(await readFile(rescoreFile, "utf8")) : null;
+  if (rescore) rescore.scores = rescore.scores.filter((r) => !(String(r.index) in ruling));
+  for (const [index, [score, reason]] of Object.entries(adjudications._身后?.[id] ?? {})) {
+    const p = draft.posthumous?.[+index];
+    if (!p) { console.log(`   ⚠ ${id} 身后裁定的第 ${index} 条不存在`); continue; }
+    if (score != null) p.score = score;
+    p.jumpReason = reason;
+  }
   const { figure, errors, warnings } = buildFigure(person, draft, await loadSources(person), rescore);
   built.push({ figure, errors, warnings });
   if (!errors.length) await writeFile(new URL(`figures/${id}.json`, DATA), JSON.stringify(figure, null, 2));
@@ -166,11 +184,15 @@ for (const id of drafts.filter((d) => !wanted.length || wanted.includes(d))) {
 const byTitle = new Map();
 for (const { figure } of built) for (const e of figure.events) {
   const key = e.title.replace(/[之的]/g, "");
-  (byTitle.get(key) ?? byTitle.set(key, []).get(key)).push({ name: figure.name, year: e.year });
+  (byTitle.get(key) ?? byTitle.set(key, []).get(key)).push({ name: figure.name, year: e.year, born: figure.born.year, died: figure.died.year });
 }
 for (const [title, list] of byTitle) {
-  const years = new Set(list.map((x) => x.year));
-  if (list.length > 1 && years.size > 1) console.log(`跨人物提示：「${title}」年份不一致 ${list.map((x) => `${x.name} ${x.year}`).join("，")}`);
+  // 只比生命有重叠的人，「进士及第」这类通用标题跨时代不算同一事件。
+  const overlapping = list.filter((x) => list.some((y) => y !== x && x.born <= y.died && y.born <= x.died));
+  const years = new Set(overlapping.map((x) => x.year));
+  const spread = years.size ? Math.max(...years) - Math.min(...years) : 0;
+  // 相差 5 年以内才像同一事件被记错了年份；差得更多只是同名的不同事件。
+  if (overlapping.length > 1 && years.size > 1 && spread <= 5) console.log(`跨人物提示：「${title}」年份不一致 ${overlapping.map((x) => `${x.name} ${x.year}`).join("，")}`);
 }
 
 const report = built.map(({ figure, errors, warnings }) => ({ id: figure.id, name: figure.name, ok: !errors.length, errors, warnings }));

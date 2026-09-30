@@ -1,0 +1,322 @@
+{
+  "id": "hanwudi",
+  "author": "deepseek-flash",
+  "born": {
+    "year": -156,
+    "certainty": "估计",
+    "note": "《汉书》未系生年，传统作前156年"
+  },
+  "died": {
+    "year": -87,
+    "certainty": "确知"
+  },
+  "thesis": "从十六岁即位到五十四年统治，汉武帝以推恩、察举、盐铁、北伐匈奴塑造大一统帝国，晚年巫蛊之祸与轮台诏留下高成本遗产。",
+  "events": [
+    {
+      "year": -156,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "景帝中子，生于皇室，非嫡长，地位高但无实际权位。",
+      "summary": "生于长安，母王美人，为景帝中子。",
+      "quote": null
+    },
+    {
+      "year": -153,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封胶东王",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "受封诸侯王，有封国名分，但年幼未治。",
+      "summary": "年四岁受封胶东王，进入诸侯王序列。",
+      "quote": {
+        "text": "年四歲立為膠東王。",
+        "source": 0
+      }
+    },
+    {
+      "year": -150,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立为皇太子",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "储君之位，仅次于皇帝，但尚非君主。",
+      "summary": "母王皇后立，刘彻被立为皇太子。",
+      "quote": {
+        "text": "七歲為皇太子，母為皇后。",
+        "source": 0
+      }
+    },
+    {
+      "year": -141,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即皇帝位",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "即位为天子，但窦太后干政，初期受制。",
+      "summary": "景帝崩，十六岁即皇帝位，尊窦氏太皇太后。",
+      "quote": {
+        "text": "太子即皇帝位，尊皇太后竇氏曰太皇太后",
+        "source": 0
+      }
+    },
+    {
+      "year": -139,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赵绾王臧下狱",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "亲政尝试被窦太后打压，大臣下狱死。",
+      "summary": "赵绾、王臧请毋奏事太皇太后，下狱自杀，窦婴田蚡免。",
+      "quote": {
+        "text": "御史大夫趙綰坐請毋奏事太皇太后，及郎中令王臧皆下獄，自殺。",
+        "source": 0
+      }
+    },
+    {
+      "year": -135,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "太皇太后崩",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "窦太后崩，武帝摆脱外戚制约，开始真正掌权。",
+      "summary": "太皇太后窦氏崩，武帝得以推行内外政策。",
+      "quote": {
+        "text": "五月丁亥，太皇太后崩。",
+        "source": 0
+      }
+    },
+    {
+      "year": -133,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "马邑之谋",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "对匈由和亲转向进攻，但马邑无功，王恢死。",
+      "summary": "三十万汉军伏马邑诱单于，单于察觉而走，军罢。",
+      "quote": {
+        "text": "將三十萬眾屯馬邑谷中，誘致單于，欲襲擊之。",
+        "source": 0
+      }
+    },
+    {
+      "year": -130,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "废陈皇后",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "皇后失势被废，宫廷清洗巫蛊，非根本危机。",
+      "summary": "陈皇后废，捕巫蛊者枭首，卫氏渐起。",
+      "quote": {
+        "text": "乙巳，皇后陳氏廢。捕為巫蠱者，皆梟首。",
+        "source": 0
+      }
+    },
+    {
+      "year": -127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "取河南地置朔方",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "卫青收复河套，置朔方、五原，开疆有成。",
+      "summary": "卫青出云中至高阙，取河南地，汉置朔方、五原郡。",
+      "quote": {
+        "text": "數河南地，置朔方、五原郡。",
+        "source": 0
+      }
+    },
+    {
+      "year": -122,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "淮南衡山谋反诛",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "诸侯王谋反被诛，中央集权加强。",
+      "summary": "淮南王安、衡山王赐谋反诛，党与死者数万。",
+      "quote": {
+        "text": "十一月，淮南王安、衡山王賜謀反，誅。黨與死者數萬人。",
+        "source": 0
+      }
+    },
+    {
+      "year": -121,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "河西受降置郡",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "匈奴浑邪王降，置五属国与武威、酒泉，控河西。",
+      "summary": "浑邪王杀休屠王率众降汉，汉置武威、酒泉郡。",
+      "quote": {
+        "text": "置五屬國以處之。以其地為武威、酒泉郡。",
+        "source": 0
+      }
+    },
+    {
+      "year": -119,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "漠北大捷",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "卫青、霍去病深入漠北，封狼居胥，武功达峰。",
+      "summary": "卫青围单于，霍去病封狼居胥，匈奴远遁。",
+      "quote": {
+        "text": "青至幕北圍單于，斬首萬九千級",
+        "source": 0
+      }
+    },
+    {
+      "year": -110,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封禅泰山巡边",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "巡边十八万骑威震匈奴，封禅泰山，制度威望极盛。",
+      "summary": "武帝北巡勒兵十八万，威震匈奴，登封泰山。",
+      "quote": {
+        "text": "勒兵十八萬騎，旌旗徑千餘里，威震匈奴。",
+        "source": 0
+      }
+    },
+    {
+      "year": -99,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "李陵降匈奴",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "李陵兵败降匈奴，对匈战事受挫，未撼国本。",
+      "summary": "李陵五千步兵出居延，兵败降匈奴。",
+      "quote": {
+        "text": "陵兵敗，降匈奴。",
+        "source": 0
+      }
+    },
+    {
+      "year": -91,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "巫蛊之祸",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "rationale": "巫蛊之祸致太子、皇后死，长安激战，继承危机。",
+      "summary": "江充掘蛊太子宫，太子发兵斩充，兵败逃亡自杀，皇后自杀。",
+      "quote": {
+        "text": "庚寅，太子亡，皇后自殺。",
+        "source": 0
+      }
+    },
+    {
+      "year": -90,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "李广利降匈奴",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "rationale": "七万大军败降匈奴，晚年军事重大挫折。",
+      "summary": "李广利出五原，兵败降匈奴，丞相刘屈氂下狱要斩。",
+      "quote": {
+        "text": "廣利敗，降匈奴。",
+        "source": 0
+      }
+    },
+    {
+      "year": -89,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "轮台罪己",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "下轮台诏罪己，止兵重农，政策转向修复。",
+      "summary": "武帝悔征伐，封丞相为富民侯，禁苛暴、止擅赋、力本农。",
+      "quote": null
+    },
+    {
+      "year": -87,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "立太子托孤",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "立幼子弗陵为太子，遗命霍光等辅政。",
+      "summary": "武帝病重，立弗陵为皇太子，托孤霍光、金日磾等。",
+      "quote": {
+        "text": "乙丑，立皇子弗陵為皇太子。",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": -87,
+    "title": "崩于五柞宫",
+    "retention": 0.95,
+    "reason": "汉朝延续，郡县、儒学、年号、察举等制度被昭宣承袭，殖民与开边遗产深远。",
+    "quote": {
+      "text": "丁卯，帝崩于五柞宮，入殯于未央宮前殿。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": -72,
+      "title": "汉宣帝上庙号世宗",
+      "score": 95,
+      "rationale": "本始二年定庙号世宗，武帝开拓与制度被官方承认为汉家盛世。"
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 96,
+    "label": "争议",
+    "rationale": "奠定郡县大一统、儒学国家与丝路疆域，但代价惨重，功过皆极。"
+  }
+}

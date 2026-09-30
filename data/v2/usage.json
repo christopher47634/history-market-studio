@@ -1,0 +1,592 @@
+[
+  {
+    "at": "2026-09-30T09:15:01.675Z",
+    "id": "qinst",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 27306,
+    "out": 14127,
+    "cost": 0.1144,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:16:15.931Z",
+    "id": "xiangyu",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 23651,
+    "out": 17351,
+    "cost": 0.1801,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:16:23.799Z",
+    "id": "caocao",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 40971,
+    "out": 17307,
+    "cost": 0.2144,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:16:27.441Z",
+    "id": "hanxin",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 20151,
+    "out": 18314,
+    "cost": 0.1808,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:16:43.531Z",
+    "id": "maozedong",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 29341,
+    "out": 23155,
+    "cost": 0.2379,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:16:56.822Z",
+    "id": "lshimin",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 29916,
+    "out": 9304,
+    "cost": 0.1282,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:17:12.119Z",
+    "id": "yuefei",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 23643,
+    "out": 11724,
+    "cost": 0.1351,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:17:40.364Z",
+    "id": "zhangjuzheng",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 13275,
+    "out": 9649,
+    "cost": 0.0977,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:17:42.159Z",
+    "id": "wanganshi",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 16567,
+    "out": 18113,
+    "cost": 0.172,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:17:45.621Z",
+    "id": "libai",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 13436,
+    "out": 7574,
+    "cost": 0.0814,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:17:58.037Z",
+    "id": "zhugeliang",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 28245,
+    "out": 17679,
+    "cost": 0.1919,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:18:32.078Z",
+    "id": "sushi",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 21303,
+    "out": 12982,
+    "cost": 0.1404,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:18:34.448Z",
+    "id": "confucius",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 20697,
+    "out": 12043,
+    "cost": 0.1317,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:18:44.943Z",
+    "id": "shangyang",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 14638,
+    "out": 13386,
+    "cost": 0.1303,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:19:06.480Z",
+    "id": "zhuyuanzhang",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 36058,
+    "out": 16171,
+    "cost": 0.1955,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:19:23.766Z",
+    "id": "simqian",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 12389,
+    "out": 11724,
+    "cost": 0.1125,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:19:23.851Z",
+    "id": "guanzhong",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 6311,
+    "out": 10579,
+    "cost": 0.0912,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:19:48.879Z",
+    "id": "dufu",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 13586,
+    "out": 10669,
+    "cost": 0.1065,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:19:55.322Z",
+    "id": "wuzetian",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 19063,
+    "out": 15562,
+    "cost": 0.1566,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:19:56.620Z",
+    "id": "zhangheng",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 20511,
+    "out": 7412,
+    "cost": 0.0943,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:20:17.076Z",
+    "id": "fanzhongyan",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 12649,
+    "out": 12629,
+    "cost": 0.1203,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:20:43.723Z",
+    "id": "liqzhao",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 7260,
+    "out": 10391,
+    "cost": 0.0916,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:20:49.159Z",
+    "id": "hanwudi",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 21293,
+    "out": 14144,
+    "cost": 0.1497,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:20:50.187Z",
+    "id": "wentianxiang",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 11016,
+    "out": 11789,
+    "cost": 0.1103,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:21:27.723Z",
+    "id": "wangyangming",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 16406,
+    "out": 16626,
+    "cost": 0.1598,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:21:30.935Z",
+    "id": "linzexu",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 14920,
+    "out": 10389,
+    "cost": 0.1069,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:21:32.733Z",
+    "id": "kangxi",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 68332,
+    "out": 11612,
+    "cost": 0.2235,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:21:48.955Z",
+    "id": "xuanzang",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 7213,
+    "out": 13549,
+    "cost": 0.1168,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:22:48.312Z",
+    "id": "temujin",
+    "mode": "draft",
+    "model": "deepseek-flash",
+    "in": 22595,
+    "out": 13761,
+    "cost": 0.1493,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:24:18.923Z",
+    "id": "maozedong",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1259,
+    "out": 9816,
+    "cost": 0.081,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:24:53.278Z",
+    "id": "qinst",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1116,
+    "out": 7288,
+    "cost": 0.0595,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:25:19.192Z",
+    "id": "liubang",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1133,
+    "out": 5120,
+    "cost": 0.0422,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:25:47.751Z",
+    "id": "xiangyu",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1409,
+    "out": 6246,
+    "cost": 0.0518,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:25:58.917Z",
+    "id": "hanxin",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1272,
+    "out": 2622,
+    "cost": 0.0225,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:26:46.846Z",
+    "id": "caocao",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1441,
+    "out": 10289,
+    "cost": 0.0842,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:27:32.593Z",
+    "id": "zhugeliang",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1290,
+    "out": 9649,
+    "cost": 0.0788,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:28:13.315Z",
+    "id": "lshimin",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1275,
+    "out": 8549,
+    "cost": 0.0699,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:29:15.322Z",
+    "id": "wanganshi",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1337,
+    "out": 13455,
+    "cost": 0.1093,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:29:37.476Z",
+    "id": "yuefei",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1084,
+    "out": 4324,
+    "cost": 0.0358,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:30:02.469Z",
+    "id": "zhuyuanzhang",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1307,
+    "out": 5604,
+    "cost": 0.0464,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:30:31.821Z",
+    "id": "zhangjuzheng",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1109,
+    "out": 6218,
+    "cost": 0.051,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:31:07.233Z",
+    "id": "confucius",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1139,
+    "out": 8027,
+    "cost": 0.0655,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:32:03.616Z",
+    "id": "libai",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1119,
+    "out": 12346,
+    "cost": 0.1,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:32:41.012Z",
+    "id": "dufu",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1132,
+    "out": 7615,
+    "cost": 0.0622,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:33:19.235Z",
+    "id": "sushi",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1055,
+    "out": 8266,
+    "cost": 0.0672,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:33:44.033Z",
+    "id": "guanzhong",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1166,
+    "out": 5094,
+    "cost": 0.0421,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:34:19.910Z",
+    "id": "shangyang",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1133,
+    "out": 7296,
+    "cost": 0.0596,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:35:02.640Z",
+    "id": "hanwudi",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1215,
+    "out": 8947,
+    "cost": 0.073,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:36:01.406Z",
+    "id": "simqian",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1029,
+    "out": 11951,
+    "cost": 0.0967,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:36:33.009Z",
+    "id": "zhangheng",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1216,
+    "out": 6272,
+    "cost": 0.0516,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:37:21.620Z",
+    "id": "wuzetian",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1130,
+    "out": 10318,
+    "cost": 0.0838,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:37:50.908Z",
+    "id": "xuanzang",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1190,
+    "out": 6499,
+    "cost": 0.0534,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:38:41.859Z",
+    "id": "fanzhongyan",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1198,
+    "out": 10883,
+    "cost": 0.0885,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:39:11.181Z",
+    "id": "liqzhao",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1040,
+    "out": 6341,
+    "cost": 0.0518,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:40:00.333Z",
+    "id": "wentianxiang",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1063,
+    "out": 10541,
+    "cost": 0.0855,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:40:33.332Z",
+    "id": "temujin",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1258,
+    "out": 6990,
+    "cost": 0.0574,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:41:05.540Z",
+    "id": "wangyangming",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1295,
+    "out": 6763,
+    "cost": 0.0557,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:41:39.989Z",
+    "id": "kangxi",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1180,
+    "out": 7480,
+    "cost": 0.0612,
+    "peak": true
+  },
+  {
+    "at": "2026-09-30T09:42:20.059Z",
+    "id": "linzexu",
+    "mode": "rescore",
+    "model": "deepseek-flash",
+    "in": 1323,
+    "out": 8444,
+    "cost": 0.0692,
+    "peak": true
+  }
+]

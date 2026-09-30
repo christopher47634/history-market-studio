@@ -12,7 +12,12 @@
     "test:ui": "node scripts/validate-ui-contract.mjs",
     "test:production": "node scripts/validate-production.mjs",
     "test:sites": "node --test tests/sites-worker.test.mjs",
-    "audit:sources": "node scripts/audit-source-links.mjs"
+    "audit:sources": "node scripts/audit-source-links.mjs",
+    "v2:fetch": "node pipeline/fetch-sources.mjs",
+    "v2:build": "node pipeline/build.mjs",
+    "v2:review": "node pipeline/review.mjs",
+    "test:v2": "node --test tests/pipeline.test.mjs",
+    "test:lab": "node tests/e2e-lab.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

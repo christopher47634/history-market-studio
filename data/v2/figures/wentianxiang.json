@@ -1,0 +1,327 @@
+{
+  "id": "wentianxiang",
+  "name": "文天祥",
+  "born": {
+    "year": 1236,
+    "certainty": "估计",
+    "note": "《宋史》未载生年，据卒时年四十七推定"
+  },
+  "died": {
+    "year": 1283,
+    "certainty": "确知"
+  },
+  "lifeSpan": 47,
+  "thesis": "从状元宰相到亡国孤臣，一生两次兵败、一次被俘、三年囚禁，最终以从容就义把个人的失败转化成后世忠义气节的最高范式。",
+  "sources": [
+    {
+      "label": "《宋史·文天祥传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+    }
+  ],
+  "events": [
+    {
+      "year": 1236,
+      "age": 0,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于吉州吉水",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "读书人家子弟，尚无任何名分。",
+      "summary": "生于吉州吉水，少时见学宫所祠乡贤皆谥忠，欣然慕之。",
+      "evidence": "原文",
+      "quote": {
+        "text": "文天祥，字宋瑞，又字履善，吉之吉水人也。",
+        "textSimplified": "文天祥，字宋瑞，又字履善，吉之吉水人也。",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1256,
+      "age": 20,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士第一",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 45,
+      "delta": 33,
+      "rationale": "理宗亲拔第一，文名满天下，然未授显职。",
+      "summary": "宝祐四年对策集英殿，一挥万言，帝亲拔为第一。",
+      "evidence": "原文",
+      "quote": {
+        "text": "帝親拔為第一。",
+        "textSimplified": "帝亲拔为第一。",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1259,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "上疏乞斩董宋臣",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 43,
+      "delta": 0,
+      "rationale": "状元出身，上书不报",
+      "summary": "蒙古兵南下，董宋臣劝帝迁都，天祥上书乞斩之，不见报。",
+      "evidence": "原文",
+      "quote": {
+        "text": "上書乞斬宋臣，以一人心，不報",
+        "textSimplified": "上书乞斩宋臣，以一人心，不报",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "上疏请斩宦官董宋臣，不报，遂自免归。"
+    },
+    {
+      "year": 1272,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "被劾罢归",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 43,
+      "delta": 0,
+      "rationale": "讥刺贾似道，被台臣劾罢，援例致仕。",
+      "summary": "草制语讽贾似道，又不呈稿，贾不悦，使台臣劾罢之。",
+      "evidence": "原文",
+      "quote": {
+        "text": "似道不樂，使臺臣張志立劾罷之。",
+        "textSimplified": "似道不乐，使台臣张志立劾罢之。",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1275,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵勤王",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 15,
+      "rationale": "授江西提刑安抚使，聚兵万人入卫，一方之帅。",
+      "summary": "捧诏涕泣，发郡中豪杰，结溪峒蛮，得众万人赴临安。",
+      "evidence": "原文",
+      "quote": {
+        "text": "天祥捧詔涕泣，使陳繼周發郡中豪傑",
+        "textSimplified": "天祥捧诏涕泣，使陈继周发郡中豪杰",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1276,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相使元营被拘",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "score": 28,
+      "delta": -32,
+      "rationale": "除右丞相兼枢密使，赴元营抗论被拘北行。",
+      "summary": "使如元军请和，与伯颜抗论皋亭山，被拘，押解至镇江。",
+      "evidence": "原文",
+      "quote": {
+        "text": "尋除右丞相兼樞密使，使如軍中請和",
+        "textSimplified": "寻除右丞相兼枢密使，使如军中请和",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1276,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "夜亡真州",
+      "tier": "重臣主帅",
+      "tierScore": 75,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "score": 30,
+      "delta": 0,
+      "rationale": "十二人夜亡，途中被疑为说降，几遭杀害。",
+      "summary": "夜亡入真州，遭制置司疑忌，东入海道，历险至温州。",
+      "evidence": "原文",
+      "quote": {
+        "text": "天祥與其客杜滸十二人，夜亡入真州。",
+        "textSimplified": "天祥与其客杜浒十二人，夜亡入真州。",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1277,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "空坑兵败",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 44,
+      "delta": 16,
+      "rationale": "同都督出江西，复州县甚众，然兴国大营被袭溃散。",
+      "summary": "元兵猝至兴国，天祥败走，方石岭、空坑相继溃，妻妾子女被执。",
+      "evidence": "原文",
+      "quote": {
+        "text": "至空坑，軍士皆潰，天祥妻妾子女皆見執。",
+        "textSimplified": "至空坑，军士皆溃，天祥妻妾子女皆见执。",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1278,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五坡岭被执",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "绝境",
+      "crisisPenalty": 52,
+      "score": 24,
+      "delta": -20,
+      "rationale": "全军覆没，本人被执，抗元军事力量至此终结。",
+      "summary": "方饭五坡岭，张弘范兵突至，众不及战，天祥吞脑子不死，被执。",
+      "evidence": "原文",
+      "quote": {
+        "text": "天祥方飯五坡嶺，張弘範兵突至，眾不及戰",
+        "textSimplified": "天祥方饭五坡岭，张弘范兵突至，众不及战",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    },
+    {
+      "year": 1279,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "囚于大都",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "score": 22,
+      "delta": -2,
+      "rationale": "国亡身囚，元廷百计劝降，始终不屈。",
+      "summary": "厓山破后押至大都，囚禁三年，作《正气歌》，拒忽必烈之召。",
+      "evidence": "原文",
+      "quote": {
+        "text": "天祥在燕凡三年，上知天祥終不屈也",
+        "textSimplified": "天祥在燕凡三年，上知天祥终不屈也",
+        "source": "《宋史·文天祥传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1283,
+    "age": 47,
+    "title": "就义柴市",
+    "retention": 0.9,
+    "reason": "宋室与制度已亡，其忠义思想、诗文名句与祠祀历代相承，身后声名反盛于生前。",
+    "score": 19.8,
+    "evidence": "原文",
+    "quote": {
+      "text": "南鄉拜而死。",
+      "textSimplified": "南乡拜而死。",
+      "source": "《宋史·文天祥传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7418"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 1376,
+      "title": "就义处立文丞相祠",
+      "score": 86,
+      "rationale": "明初于北京府学胡同建祠，士人岁时致祭，忠节之地成纪念中心。",
+      "inferred": false
+    },
+    {
+      "year": 1456,
+      "title": "明廷追谥忠烈",
+      "score": 90,
+      "rationale": "景泰七年赐谥忠烈，官方确认其忠义典范地位，祠祀随之制度化。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 89,
+      "rationale": "宋末殉国者众，唯其以人格与诗篇传世，「留取丹心照汗青」成为士人气节的最高符号。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 89,
+    "label": "正面",
+    "rationale": "宋末殉国者众，唯其以人格与诗篇传世，「留取丹心照汗青」成为士人气节的最高符号。"
+  },
+  "peak": {
+    "title": "起兵勤王",
+    "age": 39,
+    "score": 60
+  },
+  "trough": {
+    "title": "囚于大都",
+    "age": 43,
+    "score": 22
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 20,
+      "years": 20
+    },
+    {
+      "fromAge": 20,
+      "toAge": 39,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 11,
+    "quotesClaimed": 11,
+    "author": "deepseek-flash"
+  }
+}

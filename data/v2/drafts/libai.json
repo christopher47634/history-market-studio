@@ -1,0 +1,230 @@
+{
+  "id": "libai",
+  "author": "deepseek-flash",
+  "born": {
+    "year": 701,
+    "certainty": "估计",
+    "note": "生年由卒年「六十餘」逆推；出生地有蜀中绵州与西域碎叶两说"
+  },
+  "died": {
+    "year": 762,
+    "certainty": "确知",
+    "note": "卒于当涂，旧唐书谓醉死宣城，取新唐书当涂之说"
+  },
+  "thesis": "从流寓之子到供奉翰林，以诗名动天下却始终被政治拒之门外；永王案的绝境与长流夜郎，反把诗人推向身后不朽。",
+  "events": [
+    {
+      "year": 701,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于蜀中（一说碎叶）",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "平民之家，父客居其地，无任何名分与官位。",
+      "summary": "生于蜀地绵州，一说西域碎叶，少有逸才，十岁通诗书。",
+      "quote": {
+        "text": "李白字太白，山東人。",
+        "source": 0
+      }
+    },
+    {
+      "year": 724,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "仗剑出蜀漫游",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "无官无位，以布衣漫游干谒，求人荐拔。",
+      "summary": "离蜀东游，历江陵、金陵、扬州，广交名士，声名渐起。",
+      "quote": null
+    },
+    {
+      "year": 727,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "赘婚安州许氏",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "入赘前宰相许家，靠妻族资助等待出头之机。",
+      "summary": "与许圉师孙女成婚，定居安州，多次干谒州郡官员未果。",
+      "quote": null
+    },
+    {
+      "year": 735,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "干谒韩朝宗不遇",
+      "tier": "初起",
+      "tierScore": 33,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "rationale": "上书襄阳刺史自荐，未获荐拔，失意而返。",
+      "summary": "游襄阳干谒襄州刺史韩朝宗，求荐无果，传闻以醉酒失态。",
+      "quote": null
+    },
+    {
+      "year": 742,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "供奉翰林",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "玄宗征召待诏翰林，名动京师，为天下文坛所宗。",
+      "summary": "由吴筠等荐，入长安供奉翰林，贺知章称其为谪仙人。",
+      "quote": {
+        "text": "筠薦之於朝，遣使召之，與筠俱待詔翰林。",
+        "source": 0
+      }
+    },
+    {
+      "year": 744,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赐金放还",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "遭谗被疏，自请还山，失去近臣之位。",
+      "summary": "为高力士、杨贵妃所排，恳求还山，玄宗赐金放还。",
+      "quote": {
+        "text": "懇求還山，帝賜金放還。",
+        "source": 1
+      }
+    },
+    {
+      "year": 752,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "北游幽州谋军职",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "欲以军功进身，边地无人看重其术，失望而归。",
+      "summary": "远游幽州，有意于军中谋职，骑射之术不被看重，冬南归。",
+      "quote": null
+    },
+    {
+      "year": 755,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "安史乱起，避乱南奔",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "rationale": "天下大乱，诗名仍在而无权位，避乱流离。",
+      "summary": "安禄山反，与妻宗氏南下宣城，冬入庐山屏风叠隐居。",
+      "quote": {
+        "text": "轉側宿松、匡廬間",
+        "source": 1
+      }
+    },
+    {
+      "year": 757,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "永王事败，下狱长流",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "从永王获罪当诛，赖郭子仪营救，长流夜郎。",
+      "summary": "入永王李璘幕，璘败，逃还彭泽自首，系寻阳狱，判流夜郎。",
+      "quote": {
+        "text": "永王謀亂，兵敗，白坐長流夜郎。",
+        "source": 0
+      }
+    },
+    {
+      "year": 759,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "途中遇赦东归",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "遇赦得还，然无官无位，只能依附亲友。",
+      "summary": "行至白帝遇赦，顺江东下，游江夏、岳州、零陵一带。",
+      "quote": {
+        "text": "後遇赦得還",
+        "source": 0
+      }
+    },
+    {
+      "year": 761,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "欲投李光弼军中",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "暮年请缨从军，半道病还，转依当涂县令。",
+      "summary": "闻李光弼驻泗州，欲往投效，中途病返，至当涂依李阳冰。",
+      "quote": null
+    },
+    {
+      "year": 762,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "病逝当涂",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "晚境依人，诗名满天下而终身无官位。",
+      "summary": "病死于当涂，年六十余，葬龙山东麓，有文集二十卷行于世。",
+      "quote": {
+        "text": "代宗立，以左拾遺召，而白已卒，年六十餘。",
+        "source": 1
+      }
+    }
+  ],
+  "finale": {
+    "year": 762,
+    "title": "卒于当涂，葬青山",
+    "retention": 0.9,
+    "reason": "诗文千首早已流传天下，其人虽逝而诗名与浪漫诗风在此后千年持续放大。",
+    "quote": {
+      "text": "及卒，葬東麓。",
+      "source": 1
+    }
+  },
+  "posthumous": [
+    {
+      "year": 763,
+      "title": "代宗以左拾遗召，诏至已卒",
+      "score": 60,
+      "rationale": "朝廷欲用其人而不得，身后名位开始上升。"
+    },
+    {
+      "year": 817,
+      "title": "范传正祭冢、改葬青山立碑",
+      "score": 78,
+      "rationale": "官方祭冢禁樵采，访其后裔，诗名已成地方尊崇对象。"
+    },
+    {
+      "year": 830,
+      "title": "文宗诏列李白歌诗为「三绝」",
+      "score": 90,
+      "rationale": "朝廷以其歌诗为国朝代表，文学地位获官方确认。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 93,
+    "label": "正面",
+    "rationale": "盛唐诗歌的化身，千余首诗塑造汉语抒情传统，影响历代及域外。"
+  }
+}

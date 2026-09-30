@@ -1,0 +1,449 @@
+{
+  "id": "wangyangming",
+  "name": "王阳明",
+  "born": {
+    "year": 1472,
+    "certainty": "确知",
+    "note": "《明史》未载月日，通行作成化八年九月三十日"
+  },
+  "died": {
+    "year": 1529,
+    "certainty": "确知"
+  },
+  "lifeSpan": 57,
+  "thesis": "从贬谪驿丞到心学宗师与平叛功臣，龙场悟道完成思想转向，平宁王封新建伯，晚年遭忌而学说愈盛。",
+  "sources": [
+    {
+      "label": "《明史·王守仁传》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+    }
+  ],
+  "events": [
+    {
+      "year": 1472,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于余姚",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "维持起草：父未显达时出生，官宦之家偏低",
+      "summary": "王守仁生于浙江余姚，父王华后为成化十七年状元。",
+      "evidence": "原文",
+      "quote": {
+        "text": "守仁娠十四月而生。",
+        "textSimplified": "守仁娠十四月而生。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "生于官宦之家但本人尚无任何功名。"
+    },
+    {
+      "year": 1492,
+      "age": 20,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "举乡试",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "中浙江乡试举人，才学渐显，然尚未入仕。",
+      "summary": "弱冠举乡试，学大进，益好言兵且善射。",
+      "evidence": "原文",
+      "quote": {
+        "text": "弱冠舉鄉試，學大進。",
+        "textSimplified": "弱冠举乡试，学大进。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1499,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士入仕",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 17,
+      "rationale": "中进士授刑部主事，进入官僚体系但官位尚低。",
+      "summary": "登弘治十二年进士，观政工部，后授刑部主事，决囚江北，起补兵部主事。",
+      "evidence": "原文",
+      "quote": {
+        "text": "登弘治十二年進士。",
+        "textSimplified": "登弘治十二年进士。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1506,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "廷杖谪龙场",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "score": 2,
+      "delta": -33,
+      "rationale": "兵部主事抗章，触怒刘瑾，廷杖四十并谪龙场驿丞。",
+      "summary": "刘瑾逮戴铣等，守仁抗章救之，被廷杖四十，谪贵州龙场驿丞。",
+      "evidence": "原文",
+      "quote": {
+        "text": "廷杖四十，謫貴州龍場驛丞。",
+        "textSimplified": "廷杖四十，谪贵州龙场驿丞。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1508,
+      "age": 36,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "龙场悟道",
+      "tier": "初起",
+      "tierScore": 26,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 11,
+      "delta": 9,
+      "rationale": "廷杖下狱后贬龙场驿丞，荒僻困顿",
+      "summary": "在龙场穷荒无书，日绎旧闻，忽悟格物致知当自求诸心，遂笃信不疑。",
+      "evidence": "原文",
+      "quote": {
+        "text": "忽悟格物致知，當自求諸心，不當求諸事物",
+        "textSimplified": "忽悟格物致知，当自求诸心，不当求诸事物",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "身居驿丞之微，仍处瘴疠流放之地，然悟格物致知当求诸心。"
+    },
+    {
+      "year": 1516,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "巡抚南赣",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 65,
+      "delta": 54,
+      "rationale": "擢右佥都御史巡抚南赣，成为一方军政大员，但未至重臣。",
+      "summary": "兵部尚书王琼荐其才，擢右佥都御史，巡抚南、赣，镇压南中盗贼。",
+      "evidence": "原文",
+      "quote": {
+        "text": "擢右僉都御史，巡撫南、贛。",
+        "textSimplified": "擢右佥都御史，巡抚南、赣。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1518,
+      "age": 46,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "平南赣盗",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 13,
+      "rationale": "提督军务得便宜行事，平数十年巨寇，威名大振。",
+      "summary": "破横水、左溪、桶冈、浰头，擒谢志山、池仲容等，设崇义、和平县。",
+      "evidence": "原文",
+      "quote": {
+        "text": "凡破巢八十有四，俘斬六千有奇。",
+        "textSimplified": "凡破巢八十有四，俘斩六千有奇。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1519,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平定宁王",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 6,
+      "rationale": "以文臣仓促集兵，三十五日平宁王，功封新建伯，为事功顶点。",
+      "summary": "丰城闻变，趋吉安传檄勤王，直捣南昌，黄家渡、樵舍火攻，擒宸濠。",
+      "evidence": "原文",
+      "quote": {
+        "text": "凡三十五日而賊平。",
+        "textSimplified": "凡三十五日而贼平。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1520,
+      "age": 48,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "遭谗构陷",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 69,
+      "delta": 0,
+      "rationale": "平宁王后诸嬖幸媢功，诬其先通谋，京军纵犯。",
+      "summary": "张忠、许泰等诬守仁先与宸濠通谋，又纵京军犯之，守仁厚抚京军，终得班师。",
+      "evidence": "原文",
+      "quote": {
+        "text": "謂守仁先與通謀，慮事不成，乃起兵。",
+        "textSimplified": "谓守仁先与通谋，虑事不成，乃起兵。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1521,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封新建伯讲学",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 69,
+      "delta": -15,
+      "rationale": "封新建伯、南京兵部尚书，本近重臣之极，但铁券岁禄不给、功赏被阴废。",
+      "summary": "世宗即位召封新建伯，拜南京兵部尚书；然不予铁券岁禄，又遭大臣忌功。",
+      "evidence": "原文",
+      "quote": {
+        "text": "然不予鐵券，歲祿亦不給。",
+        "textSimplified": "然不予铁券，岁禄亦不给。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1522,
+      "age": 50,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "屡疏辞爵",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 74,
+      "delta": 0,
+      "rationale": "丁父忧后屡疏辞爵并乞录诸臣功，皆报寝，免丧亦不召。",
+      "summary": "守仁愤功赏不公，屡疏辞爵，乞录同事功，朝廷皆不报；免丧后久不召。",
+      "evidence": "原文",
+      "quote": {
+        "text": "屢疏辭爵，乞錄諸臣功，咸報寢。",
+        "textSimplified": "屡疏辞爵，乞录诸臣功，咸报寝。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1527,
+      "age": 55,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "总督两广",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 13,
+      "rationale": "以原官兼左都御史总督两广兼巡抚，再次总揽一方军政。",
+      "summary": "思恩、田州土酋卢苏、王受反，诏守仁总督两广兼巡抚，赴南宁。",
+      "evidence": "原文",
+      "quote": {
+        "text": "詔守仁以原官兼左都御史，總督兩廣兼巡撫。",
+        "textSimplified": "诏守仁以原官兼左都御史，总督两广兼巡抚。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1528,
+      "age": 56,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "平思田八寨",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 79,
+      "delta": -3,
+      "rationale": "平定两广，但病重且遭桂萼嫉恨",
+      "summary": "招抚思田，杖释卢苏王受，抚其众七万；又破断藤峡、八寨，两江平定。",
+      "evidence": "原文",
+      "quote": {
+        "text": "盡平八寨。",
+        "textSimplified": "尽平八寨。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "招抚卢苏、王受，又平断藤峡八寨，然被桂萼诋征抚交失，赏格不行。"
+    },
+    {
+      "year": 1528,
+      "age": 56,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "桂萼诋毁",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 72,
+      "delta": 0,
+      "rationale": "桂萼显诋其征抚交失，赏格不行，功高而见抑。",
+      "summary": "桂萼长吏部，显诋守仁征抚交失，赏格不行；霍韬等上疏争之，帝报闻而已。",
+      "evidence": "原文",
+      "quote": {
+        "text": "萼遂顯詆守仁征撫交失，賞格不行。",
+        "textSimplified": "萼遂显诋守仁征抚交失，赏格不行。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    },
+    {
+      "year": 1528,
+      "age": 56,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "乞骸骨擅归",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 67,
+      "delta": 0,
+      "rationale": "病甚上疏乞骸骨，不俟命竟归，为身后被劾留下口实。",
+      "summary": "守仁病甚，疏乞骸骨，举林富自代，不等朝命即归。",
+      "evidence": "原文",
+      "quote": {
+        "text": "守仁已病甚，疏乞骸骨，舉鄖陽巡撫林富自代，不俟命竟歸。",
+        "textSimplified": "守仁已病甚，疏乞骸骨，举郧阳巡抚林富自代，不俟命竟归。",
+        "source": "《明史·王守仁传》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1529,
+    "age": 57,
+    "title": "卒于南安舟中",
+    "retention": 0.97,
+    "reason": "心学与门人传习延续，隆庆追赠、万历从祀，影响及东亚，个人退场不中断。",
+    "score": 76.6,
+    "evidence": "原文",
+    "quote": {
+      "text": "行至南安卒，年五十七。",
+      "textSimplified": "行至南安卒，年五十七。",
+      "source": "《明史·王守仁传》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7195"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 1529,
+      "title": "停世袭恤典",
+      "score": 35,
+      "rationale": "卒后被劾擅离职守，诏停世袭，恤典不行，阳明学一度被目为邪说。",
+      "inferred": false,
+      "jumpReason": "卒后桂萼等攻讦，停世袭恤典，评价下跌"
+    },
+    {
+      "year": 1567,
+      "title": "追赠新建侯谥文成",
+      "score": 88,
+      "rationale": "隆庆初廷臣颂功，诏赠侯，谥文成，予世袭伯爵，官方评价翻转。",
+      "inferred": false
+    },
+    {
+      "year": 1584,
+      "title": "从祀孔庙",
+      "score": 94,
+      "rationale": "万历十二年获准从祀文庙，心学宗师地位在儒学正统内确立。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 95,
+      "rationale": "心学集大成，知行合一、致良知影响中国及东亚，事功与思想并传。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "心学集大成，知行合一、致良知影响中国及东亚，事功与思想并传。"
+  },
+  "peak": {
+    "title": "平定宁王",
+    "age": 47,
+    "score": 84
+  },
+  "trough": {
+    "title": "廷杖谪龙场",
+    "age": 34,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 27,
+      "years": 27
+    }
+  ],
+  "quality": {
+    "quotesVerified": 16,
+    "quotesClaimed": 16,
+    "author": "deepseek-flash"
+  }
+}

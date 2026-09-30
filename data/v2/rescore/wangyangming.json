@@ -1,0 +1,109 @@
+{
+  "scores": [
+    {
+      "index": 0,
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 1,
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 2,
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 3,
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 55
+    },
+    {
+      "index": 4,
+      "tier": "初起",
+      "tierScore": 25,
+      "crisis": "绝境",
+      "crisisPenalty": 45
+    },
+    {
+      "index": 5,
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 6,
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 7,
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 8,
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 12
+    },
+    {
+      "index": 9,
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 8
+    },
+    {
+      "index": 10,
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 12
+    },
+    {
+      "index": 11,
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 12,
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 13,
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 12
+    },
+    {
+      "index": 14,
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 15
+    }
+  ]
+}
