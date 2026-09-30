@@ -1,3 +1,5 @@
+import { ScoreBreakdown, AxisToggle, Readout } from "../v2/ui.jsx";
+import { livesOverlap } from "../v2/model.js";
 import {
   useCallback,
   useEffect,
@@ -26,7 +28,6 @@ import { ComparisonPicker } from "../components/ComparisonPicker.jsx";
 import { HistoricalCitation } from "../components/HistoricalCitation.jsx";
 import { LifeMarketChart } from "../components/LifeMarketChart.jsx";
 import {
-  getAbilityRows,
   getEvidencePresentation,
 } from "../components/evidencePresentation.js";
 import { getFloatingEventCardPosition } from "../components/floatingEventCard.js";
@@ -34,6 +35,7 @@ import {
   getPairColors,
   figures,
   formatAge,
+  formatYear,
 } from "../data.js";
 import { useHistoryComparison } from "../historyDataContext.jsx";
 
@@ -59,10 +61,13 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
   const [sourceFilter, setSourceFilter] = useState("全部");
   const [evidenceExpanded, setEvidenceExpanded] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [axisChoice, setAxisChoice] = useState(null);
+  const canYear = Boolean(left.v2 && right.v2 && livesOverlap(left.v2, right.v2));
+  const axis = canYear ? axisChoice ?? "year" : "age";
   const closeTimer = useRef(0);
   const detailCardRef = useRef(null);
   const cardAnchorRef = useRef(null);
-  const { comparison, events, status: comparisonStatus } = useHistoryComparison(left, right);
+  const { comparison, events, status: comparisonStatus } = useHistoryComparison(left, right, axis);
   const pairColors = useMemo(() => getPairColors(left, right), [left, right]);
   const candleFigure = candleId === right.id ? right : left;
   const displayEvents =
@@ -99,7 +104,8 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
   useEffect(() => {
     setActive(null);
     setDetailOpen(false);
-  }, [left.id, right.id, mode, candleId]);
+  }, [left.id, right.id, mode, candleId, axis]);
+  useEffect(() => setAxisChoice(null), [left.id, right.id]);
   useEffect(() => () => window.clearTimeout(closeTimer.current), []);
   useEffect(() => {
     if (!detailOpen) return;
@@ -259,7 +265,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
       <section className="yuheng-compare">
         <div>
           <b>对比组合</b>
-          <small>可对比任意两位中国历史人物 · 按实际年龄共轴</small>
+          <small>任意两位历史人物 · 同一把尺子 · 同时代按纪年对齐</small>
         </div>
         <ComparisonPicker
           left={left}
@@ -291,20 +297,14 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
           <header>
             <div>
               <h1>
-                历史综合势能对比 <Question />
+                当时的势 · 人生走势对比 <Question />
               </h1>
-              <p>0—100：综合生前资源、人物能力与身后制度或思想延续；死亡不作归零处理</p>
+              <p>实线为当时的势（权位档 − 危局折损，跨人物同一把尺子）；去世后的细线为身后地位，终点即后世评价</p>
             </div>
             <div className="yuheng-chart-tools">
               {mode === "line" ? <>
-                <span>
-                  <i style={{ background: pairColors[0] }} />
-                  {left.name}
-                </span>
-                <span>
-                  <i style={{ background: pairColors[1] }} />
-                  {right.name}
-                </span>
+                <Readout figure={left} color={pairColors[0]} active={detailOpen ? active : null} />
+                <Readout figure={right} color={pairColors[1]} active={detailOpen ? active : null} />
               </> : <span>
                 <i style={{ background: candleFigure.color }} />
                 当前 K 线 · {candleFigure.name}
@@ -335,6 +335,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                 <ChartBar />K 线
               </button>
             </div>
+            {mode === "line" && <AxisToggle axis={axis} canYear={canYear} onChange={setAxisChoice} />}
             {mode === "candlestick" && (
               <div className="yuheng-candle-person">
                 <button
@@ -366,6 +367,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
             onEventAnchor={anchorDetail}
             onEventBlur={closeSoon}
             onGranularityChange={setGranularity}
+            axis={axis}
           />
           {typeof document !== "undefined" &&
             createPortal(
@@ -416,7 +418,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                       <span>
                         <b>{active.title}</b>
                         <small>
-                          {formatAge(active.age)} · {active.figure.name}
+                          {active.posthumous ? `身后 · ${formatYear(active.year)}` : `${formatAge(active.age)} · ${formatYear(active.year)}`} · {active.figure.name}
                         </small>
                       </span>
                       <em>
@@ -429,39 +431,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
                     </header>
                     <p>{active.summary}</p>
                     <HistoricalCitation event={active} tone="jade" />
-                    {mode === "candlestick" && (
-                      <div className="yuheng-market-note">
-                        <b>{active.delta >= 0 ? "上行催化" : "下行冲击"}</b>
-                        <span>
-                          该节点首先改变{active.dimension}
-                          维度，随后通过组织、联盟与安全预期传导，使这一年龄区间的开盘—收盘结构出现
-                          {active.delta >= 0 ? "抬升" : "回撤"}。
-                        </span>
-                      </div>
-                    )}
-                    <div className="yuheng-direct-impact">
-                      <span>
-                        <small>{active.figure.name} 势能</small>
-                        <b className={active.delta >= 0 ? "is-up" : "is-down"}>
-                          {active.delta >= 0 ? "+" : ""}
-                          {active.delta.toFixed(1)}
-                        </b>
-                      </span>
-                      <span>
-                        <small>影响维度</small>
-                        <b>
-                          {active.trajectory?.continuity || active.dimension}
-                        </b>
-                      </span>
-                    </div>
-                    <div className="yuheng-impact-grid" aria-label="人物综合能力指标">
-                      {getAbilityRows(active.figure).map((metric) => (
-                        <span key={metric.key}>
-                          <b>{metric.label}</b>
-                          <em>{Math.round(metric.value)}</em>
-                        </span>
-                      ))}
-                    </div>
+                    <ScoreBreakdown event={active} tone="jade" />
                     <footer>
                       <span>史料依据 · {active.source.label}</span>
                       <b>
@@ -560,7 +530,7 @@ export function BTerminal({ left, right, onLeft, onRight, onOpenSettings, dataSt
       </div>
       <span className="yuheng-status">
         {comparisonStatus === "live" ? <CloudCheck /> : <Sparkle />}
-        人物库 {dataMeta?.people || figures.length} 位 · 年龄轴 0—{comparison.maxAge} 岁 ·
+        人物库 {dataMeta?.people || figures.length} 位 · {comparison.key === "year" ? "纪年轴" : "年龄轴"} {comparison.range} ·
         {comparisonStatus === "live" ? "实时接口已贯通" : "本地模型安全回退"}
       </span>
     </main>

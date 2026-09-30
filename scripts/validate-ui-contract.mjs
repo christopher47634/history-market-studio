@@ -53,7 +53,8 @@ if(!polish.includes('url("/assets/qin-han-scroll.webp")')||!polish.includes(".zh
 if(!terminal.includes('<HistoricalCitation event={active} tone="jade" />')||!scroll.includes('<HistoricalCitation event={active} tone="paper" />'))fail("B/C 悬浮卡片没有共享史书原文组件");
 if(!historicalCitation.includes("citation.kind")||!historicalCitation.includes("citation.quote")||!historicalCitation.includes("出处 ·"))fail("史书引文组件缺少原文类型、正文或出处链接");
 if(!polish.includes("--history-body-font")||!polish.includes("--history-kaiti-font")||!polish.includes(".historical-citation blockquote"))fail("两套主题没有建立宋体正文与小号楷体引文层级");
-if(!terminal.includes("历史综合势能对比")||!scroll.includes("历史综合势能（0—100）")||!terminal.includes("active.trajectory.continuity"))fail("两套主题没有说明死亡不归零的历史综合势能口径");
-if(!trajectoryModel.includes("legacy-retention-v1")||!trajectoryModel.includes("minimumRetention: 0.8")||!chart.includes("历史综合势能"))fail("尾端保留模型或图表口径没有统一接入");
+if(!terminal.includes("当时的势")||!scroll.includes("当时的势")||!terminal.includes("<ScoreBreakdown event={active} tone=\"jade\" />")||!scroll.includes("<ScoreBreakdown event={active} tone=\"paper\" />"))fail("两套主题没有使用 v2 口径（当时的势、打分拆解）");
+if(!terminal.includes("<AxisToggle")||!scroll.includes("<AxisToggle")||!terminal.includes("<Readout")||!scroll.includes("<Readout"))fail("两套主题缺少纪年/年龄切换或当时/后世读数");
+if(!chart.includes("当时的势（0—100）")||!chart.includes("tailSeries")||!chart.includes("comparison.focus"))fail("图表没有接入 v2 口径、身后声望线或默认视窗");
 
 console.log("ui contract validation passed: point-anchored cards, scientific figure index, line-first and accessibility rules verified");

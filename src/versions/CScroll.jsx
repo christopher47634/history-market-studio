@@ -1,3 +1,5 @@
+import { ScoreBreakdown, AxisToggle, Readout } from "../v2/ui.jsx";
+import { livesOverlap } from "../v2/model.js";
 import {
   useCallback,
   useEffect,
@@ -25,7 +27,6 @@ import { ComparisonPicker } from "../components/ComparisonPicker.jsx";
 import { HistoricalCitation } from "../components/HistoricalCitation.jsx";
 import { LifeMarketChart } from "../components/LifeMarketChart.jsx";
 import {
-  getAbilityRows,
   getEvidencePresentation,
 } from "../components/evidencePresentation.js";
 import { getFloatingEventCardPosition } from "../components/floatingEventCard.js";
@@ -52,6 +53,10 @@ const getRailEventKey = (event) =>
 export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStatus, dataMeta }) {
   const reducedMotion = useReducedMotion();
   const [mode, setMode] = useState("line");
+  const [axisChoice, setAxisChoice] = useState(null);
+  const canYear = Boolean(left.v2 && right.v2 && livesOverlap(left.v2, right.v2));
+  const axis = canYear ? axisChoice ?? "year" : "age";
+  useEffect(() => setAxisChoice(null), [left.id, right.id]);
   const [candleId, setCandleId] = useState(left.id);
   const [active, setActive] = useState(null);
   const [detailOpen, setDetailOpen] = useState(false);
@@ -67,7 +72,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
   const railListRef = useRef(null);
   const railEventRefs = useRef(new Map());
   const railHoverGuardRef = useRef(0);
-  const { comparison, status: comparisonStatus } = useHistoryComparison(left, right);
+  const { comparison, status: comparisonStatus } = useHistoryComparison(left, right, axis);
   const colors = useMemo(() => getPairColors(left, right), [left, right]);
   const candleFigure = candleId === right.id ? right : left;
   const railFigure =
@@ -382,26 +387,21 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
           <header className="zhusha-chart-head">
             <div>
               <h1>
-                0—{comparison.maxAge} 岁 · 历史综合势能（0—100） <Info />
+                {axis === "year" ? "同时代 · 按公元纪年" : "跨时代 · 按年龄对齐"} · 当时的势（0—100） <Info />
               </h1>
               <div className="zhusha-legend">
                 {mode === "line" ? <>
-                  <span>
-                    <i style={{ background: colors[0] }} />
-                    {left.name} · 实线
-                  </span>
-                  <span>
-                    <i style={{ background: colors[1] }} />
-                    {right.name} · 实线
-                  </span>
+                  <Readout figure={left} color={colors[0]} active={detailOpen ? active : null} tone="paper" />
+                  <Readout figure={right} color={colors[1]} active={detailOpen ? active : null} tone="paper" />
                 </> : <span>
                   <i style={{ background: candleFigure.color }} />
                   当前 K 线 · {candleFigure.name}
                 </span>}
-                <em>综合生前资源与身后制度、思想及作品延续</em>
+                <em>实线为当时的势，去世后的细线为身后地位，终点即后世评价</em>
               </div>
             </div>
             <div className="zhusha-modes">
+              {mode === "line" && <AxisToggle axis={axis} canYear={canYear} onChange={setAxisChoice} tone="paper" />}
               <button
                 type="button"
                 aria-pressed={mode === "line"}
@@ -453,6 +453,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
               onEventAnchor={anchorDetail}
               onEventBlur={closeSoon}
               onGranularityChange={setGranularity}
+              axis={axis}
             />
             {typeof document !== "undefined" &&
               createPortal(
@@ -502,7 +503,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                         <i>史</i>
                       </header>
                       <small>
-                        年龄：{formatAge(active.age)} · 史年{" "}
+                        {active.posthumous ? "身后" : `年龄：${formatAge(active.age)}`} · 史年{" "}
                         {active.year < 0
                           ? `公元前${Math.abs(active.year)}`
                           : `公元${active.year}`}{" "}
@@ -510,57 +511,7 @@ export function CScroll({ left, right, onLeft, onRight, onOpenSettings, dataStat
                       </small>
                       <p>{active.summary}</p>
                       <HistoricalCitation event={active} tone="paper" />
-                      {mode === "candlestick" && (
-                        <div className="zhusha-market-note">
-                          <b>{active.delta >= 0 ? "上行催化" : "下行冲击"}</b>
-                          <span>
-                            事件先作用于{active.dimension}
-                            ，再传导至组织与安全预期；因此本年龄区间的蜡烛实体表现为
-                            {active.delta >= 0
-                              ? "收盘抬高、趋势增强"
-                              : "收盘回撤、波动放大"}
-                            ，后续惯性取决于相邻事件能否形成连续确认。
-                          </span>
-                        </div>
-                      )}
-                      <div className="zhusha-impact">
-                        <span>
-                          <small>{active.figure.name} 影响</small>
-                          <b
-                            className={active.delta >= 0 ? "is-up" : "is-down"}
-                          >
-                            {active.delta >= 0 ? "+" : ""}
-                            {active.delta.toFixed(1)}{" "}
-                            {active.delta >= 0 ? "↑" : "↓"}
-                          </b>
-                        </span>
-                        <span>
-                          <small>
-                            {mode === "candlestick" ? "行情属性" : "另一方同期"}
-                          </small>
-                          <b>
-                            {mode === "candlestick"
-                              ? active.trajectory?.continuity || active.dimension
-                              : active.figure.id === left.id
-                                ? right.name
-                                : left.name}
-                          </b>
-                        </span>
-                      </div>
-                      <div className="zhusha-dimensions" aria-label="人物综合能力指标">
-                        {getAbilityRows(active.figure).map((metric) => (
-                            <span key={metric.key}>
-                              <b>{metric.label} · {Math.round(metric.value)}</b>
-                              <i>
-                                <em
-                                  style={{
-                                    width: `${Math.max(4, Math.min(100, metric.value))}%`,
-                                  }}
-                                />
-                              </i>
-                            </span>
-                          ))}
-                      </div>
+                      <ScoreBreakdown event={active} tone="paper" />
                       <footer>
                         <span>
                           <SealCheck />

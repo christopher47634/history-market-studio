@@ -207,7 +207,11 @@ for (const [title, list] of byTitle) {
 }
 
 const report = built.map(({ figure, errors, warnings }) => ({ id: figure.id, name: figure.name, ok: !errors.length, errors, warnings }));
-if (!wanted.length) await writeBundle();
+if (!wanted.length) {
+  await writeBundle();
+  const { writeClientIndex } = await import("./client-index.mjs");
+  await writeClientIndex();
+}
 await writeFile(new URL("report.json", DATA), JSON.stringify(report, null, 2));
 const failed = report.filter((r) => !r.ok).length;
 console.log(`\n共 ${report.length} 人，通过 ${report.length - failed}，未通过 ${failed}`);

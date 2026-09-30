@@ -1,6 +1,6 @@
-// 从 data/v2/figures 和 report.json 生成人工抽查用的审核表 docs/v2/sample-review.md。
+// 从 data/v2/figures 和 report.json 生成人工抽查用的审核表 docs/v2/review.md。
 import { readdir, readFile, writeFile } from "node:fs/promises";
-import { SAMPLE } from "./registry.mjs";
+import { ALL } from "./registry.mjs";
 import { ANCHORS } from "./rubric.mjs";
 
 const DATA = new URL("../data/v2/", import.meta.url);
@@ -9,13 +9,13 @@ const files = new Set(await readdir(new URL("figures/", DATA)));
 const fmtYear = (y) => (y < 0 ? `前${-y}` : `${y}`);
 const cell = (s) => String(s ?? "").replace(/\|/g, "｜").replace(/\n/g, " ");
 
-const lines = ["# 30 人样板审核表", "", "由 `node pipeline/review.mjs` 生成。每行一个事件：分数由程序按「档位 − 危局」算出；「原文」表示引句已在正史里逐字核验，「概括」表示没有可核验的原文。", ""];
+const lines = ["# 300 人审核表", "", "由 `node pipeline/review.mjs` 生成。每行一个事件：分数由程序按「档位 − 危局」算出；「原文」表示引句已在正史里逐字核验，「概括」表示没有可核验的原文。", ""];
 const ok = report.filter((r) => r.ok);
 lines.push(`通过校验 ${ok.length}/${report.length} 人。`, "");
 lines.push("## 总览", "", "| 人物 | 生前峰值 | 谷值 | 终章 | 后世 | 引文核验 | 空白段 | 提示 |", "|---|---|---|---|---|---|---|---|");
 
 const figures = [];
-for (const person of SAMPLE) {
+for (const person of ALL) {
   const r = report.find((x) => x.id === person.id);
   if (!files.has(`${person.id}.json`)) { if (r) lines.push(`| ${person.name} | ✗ 未通过：${cell(r.errors.join("；"))} |||||||`); continue; }
   const f = JSON.parse(await readFile(new URL(`figures/${person.id}.json`, DATA), "utf8"));
@@ -24,6 +24,23 @@ for (const person of SAMPLE) {
   lines.push(`| ${a}${f.name} | ${f.peak.score} ${f.peak.title} | ${f.trough?.score ?? ""} ${f.trough?.title ?? ""} | ${f.finale.score} | ${f.legacy.score} ${f.legacy.label} | ${f.quality.quotesVerified}/${f.quality.quotesClaimed} | ${f.gaps.length} | ${r?.warnings.length ?? 0} |`);
 }
 lines.push("", "⚓ = 锚点人物。", "");
+
+// 需要人工关注：有正史来源却几乎没核验到原文、关键词没找到、史料空白较长。
+const attention = [];
+for (const f of figures) {
+  const r = report.find((x) => x.id === f.id);
+  const hasSource = f.sources.length > 0;
+  const quoted = f.events.filter((e) => e.quote).length;
+  const misses = r?.warnings.filter((w) => w.includes("找不到关键词")).length ?? 0;
+  const longGaps = f.gaps.filter((g) => g.years >= 25).length;
+  if ((hasSource && quoted <= 1) || misses >= 3 || longGaps >= 2)
+    attention.push(`| ${f.name} | ${hasSource ? f.sources.map((x) => x.label).join("、") : "无正史来源"} | ${quoted}/${f.events.length} | ${misses} | ${longGaps} |`);
+}
+const totalEvents = figures.reduce((n, f) => n + f.events.length, 0);
+const totalQuoted = figures.reduce((n, f) => n + f.events.filter((e) => e.quote).length, 0);
+const withSource = figures.filter((f) => f.sources.length).length;
+lines.splice(4, 0, `事件 ${totalEvents} 个，其中 ${totalQuoted} 个带逐字核验的原文引句（${Math.round((totalQuoted / totalEvents) * 100)}%）；${withSource} 人有正史原文来源，${figures.length - withSource} 人（多为近现代）只有概括。`, "");
+lines.push("## 需要人工关注", "", "有正史来源但核验到的引句 ≤1 条、关键词缺失 ≥3 条、或有 2 段以上 25 年史料空白的人物。", "", "| 人物 | 来源 | 引句/事件 | 关键词缺失 | 长空白段 |", "|---|---|---|---|---|", ...attention, "");
 
 for (const f of figures) {
   const r = report.find((x) => x.id === f.id);
@@ -38,5 +55,5 @@ for (const f of figures) {
   lines.push(`后世评价：**${f.legacy.score}**（${f.legacy.tier}，${f.legacy.label}）${f.legacy.rationale}`, "");
   if (r?.warnings.length) lines.push("提示：", ...r.warnings.map((w) => `- ${w}`), "");
 }
-await writeFile(new URL("../docs/v2/sample-review.md", import.meta.url), lines.join("\n"));
+await writeFile(new URL("../docs/v2/review.md", import.meta.url), lines.join("\n"));
 console.log(`审核表已生成：${figures.length} 人`);

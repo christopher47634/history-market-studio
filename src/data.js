@@ -1,4 +1,4 @@
-import { figureV2ById } from "./v2/model.js";
+import { figureV2ById } from "./v2/all.js";
 import { toLegacyFigure, buildComparisonV2 } from "./v2/engine.js";
 import { additionalFigures, dynastyOrder } from "./catalog.js";
 import { expandedFigures } from "./expandedCatalog.js";

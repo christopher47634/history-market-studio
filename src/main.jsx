@@ -5,6 +5,7 @@ import { AppErrorBoundary } from "./components/AppErrorBoundary.jsx";
 import { HistoryDataProvider } from "./historyDataContext.jsx";
 import "./styles.css";
 import "./apple-polish.css";
+import "./v2/ui.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>

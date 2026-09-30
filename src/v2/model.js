@@ -1,8 +1,5 @@
 // v2 图表模型：只用 data/v2/figures 里经过校验的数据，不生成任何假波动。
-import generated from "./figures.generated.js";
-
-export const figuresV2 = [...generated].sort((a, b) => a.born.year - b.born.year);
-export const figureV2ById = Object.fromEntries(figuresV2.map((f) => [f.id, f]));
+// 纯函数模型：不直接引用数据包（全量数据见 all.js，浏览器端按人懒加载）。
 
 export const TODAY = 2026;
 export const formatYear = (y) => (y < 0 ? `前${-y}` : `${y}`);

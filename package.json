@@ -17,7 +17,8 @@
     "v2:build": "node pipeline/build.mjs",
     "v2:review": "node pipeline/review.mjs",
     "test:v2": "node --test tests/pipeline.test.mjs",
-    "test:lab": "node tests/e2e-lab.mjs"
+    "test:lab": "node tests/e2e-lab.mjs",
+    "test:app": "node tests/e2e-app.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

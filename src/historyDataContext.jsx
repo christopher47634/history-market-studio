@@ -24,6 +24,12 @@ export function HistoryDataProvider({ children }) {
   const [lastSyncedAt, setLastSyncedAt] = useState(null);
 
   const refresh = useCallback(async (signal) => {
+    // 浏览器端用内置轻量索引，完整数据按人懒加载；不再整包拉取远程人物库。
+    if (embeddedFigures[0]?.light) {
+      setFigures(embeddedFigures);
+      setStatus("embedded");
+      return;
+    }
     setStatus((current) => (current === "live" ? "refreshing" : "connecting"));
     try {
       const response = await fetch("/api/figures", {
@@ -68,11 +74,13 @@ export function useHistoryData() {
   return useContext(HistoryDataContext);
 }
 
-export function useHistoryComparison(left, right) {
+export function useHistoryComparison(left, right, axis) {
   const fallbackComparison = useMemo(
-    () => buildComparison(left, right),
-    [left, right],
+    () => buildComparison(left, right, axis),
+    [left, right, axis],
   );
+  // v2 人物在本地计算（含纪年 / 年龄轴），不走远程对比接口。
+  const localOnly = Boolean(left.v2 && right.v2);
   const fallbackEvents = useMemo(
     () => getTurningPoints(fallbackComparison, left, right),
     [fallbackComparison, left, right],
@@ -81,6 +89,7 @@ export function useHistoryComparison(left, right) {
   const [status, setStatus] = useState("connecting");
 
   useEffect(() => {
+    if (localOnly) { setRemote(null); setStatus("live"); return undefined; }
     const controller = new AbortController();
     setRemote(null);
     setStatus("connecting");
@@ -105,7 +114,7 @@ export function useHistoryComparison(left, right) {
         setStatus("embedded");
       });
     return () => controller.abort();
-  }, [left.id, right.id]);
+  }, [left.id, right.id, localOnly]);
 
   return {
     comparison: remote?.comparison || fallbackComparison,

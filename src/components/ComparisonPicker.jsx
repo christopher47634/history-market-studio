@@ -326,7 +326,7 @@ function PersonSelect({
             </span>
             <strong className="person-select__meta">
               {person.lifeSpan} 岁
-              <small>{person.events.length} 节点</small>
+              <small>{person.eventCount ?? person.events.length} 节点</small>
             </strong>
           </button>
         ))}

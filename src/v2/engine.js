@@ -10,7 +10,7 @@ function legacyEvent(e, f, extra = {}) {
   const quote = e.quote;
   return {
     year: e.year,
-    age: extra.age ?? e.ageT ?? e.age,
+    age: extra.age ?? e.age,
     title: e.title,
     score: e.score,
     delta: e.delta ?? 0,
@@ -24,7 +24,7 @@ function legacyEvent(e, f, extra = {}) {
     evidence: { sourceType: "primary", sourceScope: "biography", dateCertainty: CERTAINTY[e.yearCertainty] ?? "exact", scoreNature: "interpretive-model", basis: quote ? "原文" : "概括" },
     citation: quote
       ? { kind: "史书原文", quote: quote.textSimplified ?? quote.text, isExcerpt: true, url: quote.url, source: quote.source }
-      : { kind: "事件概括", quote: "", isExcerpt: false, note: e.rationale ?? e.reason ?? "此事件没有可逐字核验的原文，内容为概括。", url: f.sources[0]?.url ?? "", source: f.sources[0]?.label ?? "维基百科等资料概括" },
+      : { kind: "事件概括", quote: "", isExcerpt: false, note: e.rationale || e.reason || "此事件没有可逐字核验的原文，内容为概括。", url: f.sources[0]?.url ?? "", source: f.sources[0]?.label ?? "维基百科等资料概括" },
   };
 }
 
@@ -32,7 +32,7 @@ export function toLegacyFigure(v2, old = {}) {
   const life = lifePoints(v2);
   const events = life.map((p, i) => {
     const e = p.kind === "finale" ? { ...v2.finale, kind: "finale", summary: v2.finale.reason, rationale: `保留生前 ${Math.round(v2.finale.retention * 100)}%：${v2.finale.reason}` } : p.event;
-    return legacyEvent({ ...e, delta: i ? +(p.score - life[i - 1].score).toFixed(1) : 0 }, v2, { age: p.ageT, kind: p.kind });
+    return legacyEvent({ ...e, delta: i ? +(p.score - life[i - 1].score).toFixed(1) : 0 }, v2, { age: p.age, kind: p.kind });
   });
   const posthumous = v2.posthumous.map((p) => legacyEvent({ ...p, summary: p.rationale }, v2, { posthumous: true, kind: "posthumous", age: v2.lifeSpan, dimension: "身后" }));
   return {
@@ -79,14 +79,23 @@ export function buildComparisonV2(left, right, axisChoice) {
       const value = inLife ?? inTail;
       return { value: value == null ? null : +value.toFixed(1), raw: x, age: axis === "age" ? x : x - f.born.year, axisLabel: axisLabels[i], event: null, posthumous: inLife == null && inTail != null };
     });
-    const place = (x, event, score) => {
-      let idx = rawAxis.reduce((best, r, i) => (Math.abs(r - x) < Math.abs(rawAxis[best] - x) ? i : best), 0);
-      for (let d = 0; d < 6 && points[idx]?.event; d++) idx = Math.min(rawAxis.length - 1, idx + 1);
-      if (!points[idx] || points[idx].event) return;
-      points[idx] = { ...points[idx], event, value: score };
+    // 把事件放到离它最近的空格子上：左右交替找，生前事件不得越过去世那一格，身后事件不得落进生前区。
+    const place = (x, event, score, posthumous) => {
+      const lo = posthumous ? lifeXs.length : 0;
+      const hi = posthumous ? rawAxis.length - 1 : lifeXs.length - 1;
+      let near = rawAxis.reduce((best, r, i) => (Math.abs(r - x) < Math.abs(rawAxis[best] - x) ? i : best), 0);
+      near = Math.min(hi, Math.max(lo, near));
+      for (let d = 0; d <= 8; d++) {
+        for (const idx of d ? [near + d, near - d] : [near]) {
+          if (idx < lo || idx > hi || points[idx].event) continue;
+          points[idx] = { ...points[idx], event, value: score, posthumous };
+          return;
+        }
+      }
     };
-    life.forEach((p, i) => place(xOf(p, axis), lifeEvents[i], p.score));
-    tail.slice(1).forEach((p, i) => place(p.year, postEvents[i], p.score));
+    life.forEach((p, i) => place(xOf(p, axis), lifeEvents[i], p.score, false));
+    // 身后事件从最近的往回放，保证「今日评价」一定落在最后一格。
+    tail.slice(1).map((p, i) => [p, postEvents[i]]).reverse().forEach(([p, e]) => place(p.year, e, p.score, true));
     return points;
   };
   // 生前和身后拆成两条：身后段画得更淡。
@@ -95,8 +104,17 @@ export function buildComparisonV2(left, right, axisChoice) {
     tail: points.map((p, i) => (p.posthumous || points[i + 1]?.posthumous ? p : { ...p, value: null, event: null })),
   });
   const ls = split(series(a, left)), rs = split(series(b, right));
+  // 默认视窗：从两人中较早的第一个成年阶段事件前 3 年开始，童年与史料空白先收在视窗外，缩小即可看到。
+  const firstAdult = Math.min(...[a, b].map((f) => {
+    const p = lifePoints(f).find((q, i) => i > 0 && q.age >= 15) ?? lifePoints(f)[0];
+    return xOf(p, axis);
+  }));
+  const startIdx = Math.max(0, rawAxis.findIndex((x) => x >= firstAdult - 3));
+  const focus = { start: +((startIdx / (rawAxis.length - 1)) * 100).toFixed(2), end: 100 };
   return {
-    sameEra: axis === "year", key: axis, step, rawAxis, axis: axisLabels,
+    sameEra: axis === "year", key: axis, step, rawAxis, axis: axisLabels, focus,
+    maxAge: Math.ceil(Math.max(a.lifeSpan, b.lifeSpan)),
+    range: axis === "year" ? `${formatYear(Math.min(a.born.year, b.born.year))}—${formatYear(Math.max(a.died.year, b.died.year))}` : `0—${Math.ceil(Math.max(a.lifeSpan, b.lifeSpan))} 岁`,
     left: ls.life, right: rs.life, leftTail: ls.tail, rightTail: rs.tail,
     lifeEndIndex: lifeXs.length - 1,
   };

@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
-import { figuresV2, figureV2ById, livesOverlap, defaultAxis, formatYear } from "./model.js";
+import { livesOverlap, defaultAxis, formatYear } from "./model.js";
+import { figuresV2, figureV2ById } from "./all.js";
 import { ChartV2, valueForReadout } from "./ChartV2.jsx";
 
 const COLORS = ["#e0654f", "#4fb3c9"];

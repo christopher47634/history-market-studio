@@ -153,7 +153,7 @@ export function CatalogSearch({
                 </span>
                 <strong>
                   {figure.lifeSpan} 岁
-                  <small>{figure.events.length} 节点</small>
+                  <small>{figure.eventCount ?? figure.events.length} 节点</small>
                 </strong>
               </button>
             ))}

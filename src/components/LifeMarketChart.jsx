@@ -186,8 +186,8 @@ export function LifeMarketChart({
   }, []);
 
   useEffect(
-    () => setZoom({ start: 0, end: 100 }),
-    [left.id, right.id, candleFigure.id, mode],
+    () => setZoom(mode === "line" && comparison.focus ? comparison.focus : { start: 0, end: 100 }),
+    [left.id, right.id, candleFigure.id, mode, axis],
   );
   useEffect(() => {
     setSnapTarget(null);
@@ -515,13 +515,13 @@ export function LifeMarketChart({
     if (mode === "line") {
       const mainGrid = {
         left: narrow ? 38 : terminal ? 54 : 50,
-        right: narrow ? 18 : terminal ? 34 : 30,
+        right: (narrow ? 18 : terminal ? 34 : 30) + (comparison.leftTail ? 40 : 0),
         top: terminal ? 64 : 66,
         bottom: terminal ? (narrow ? 146 : 174) : 52,
       };
       const miniGrid = {
         left: narrow ? 38 : 54,
-        right: narrow ? 18 : 34,
+        right: (narrow ? 18 : 34) + (comparison.leftTail ? 40 : 0),
         height: narrow ? 66 : 88,
         bottom: narrow ? 32 : 38,
       };
@@ -1150,7 +1150,7 @@ export function LifeMarketChart({
       />
       <p id={descriptionId} className="a11y-chart-summary">
           {mode === "line"
-            ? `${left.name}与${right.name}从零岁到${comparison.maxAge}岁的历史综合势能走势。关键事件可从页面事件列表使用键盘逐项查看。`
+            ? `${left.name}与${right.name}${comparison.key === "year" ? "按公元纪年" : "按年龄"}（${comparison.range ?? ""}）的当时的势走势，去世后接身后地位线。关键事件可从页面事件列表使用键盘逐项查看。`
           : `${candleFigure.name}的蜡烛图当前显示${candleView.granularity.label}，可使用复位按钮恢复完整年龄范围。`}
       </p>
       {!inputEnvironment.coarse && (
@@ -1190,7 +1190,7 @@ export function LifeMarketChart({
         进入节点附近即可吸附 · 滚轮/双指缩放 · 方向键逐项查看
       </span>
       <span className="life-chart-age">
-        年龄共轴 · 0—{comparison.maxAge} 岁
+        {comparison.key === "year" ? "公元纪年对齐" : "年龄对齐"} · {comparison.range ?? `0—${comparison.maxAge} 岁`}
       </span>
       <button
         type="button"

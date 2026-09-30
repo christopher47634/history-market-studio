@@ -25,6 +25,10 @@ const historyApiPlugin = () => ({
 });
 
 export default defineConfig({
+  // 浏览器端用轻量索引 + 按人懒加载的 data.client.js；Node 端脚本和 API 服务仍直接用全量 data.js。
+  resolve: {
+    alias: [{ find: /^(\.{1,2}\/)data\.js$/, replacement: "$1data.client.js" }],
+  },
   build: {
     outDir: "dist/client",
     chunkSizeWarningLimit: 500,
@@ -32,7 +36,7 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           const normalized = id.replaceAll("\\", "/");
-          if (/\/src\/(data|catalog|expandedCatalog|extendedCatalog|figureIndex|marketEngine)\.js$/.test(normalized)) return "history-data";
+          if (/\/src\/(data\.client|figureIndex|marketEngine)\.js$/.test(normalized) || normalized.endsWith("/src/v2/index.generated.js")) return "history-data";
           if (!normalized.includes("/node_modules/")) return undefined;
           if (normalized.includes("/echarts/") || normalized.includes("/zrender/")) return "echarts";
           if (normalized.includes("/@phosphor-icons/")) return "icons";
