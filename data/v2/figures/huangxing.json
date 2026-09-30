@@ -11,7 +11,13 @@
   },
   "lifeSpan": 42,
   "thesis": "辛亥革命元勋，黄花岗起义总指挥，与孙中山并称孙黄。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「黄兴」",
+      "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1874,
@@ -25,15 +31,61 @@
       "crisisPenalty": 0,
       "score": 22,
       "delta": 0,
-      "rationale": "士人",
-      "summary": "士绅",
+      "rationale": "士绅",
+      "summary": "善化县地主家庭",
+      "evidence": "百科",
+      "quote": {
+        "text": "清同治十三年（1874年）9月16日，黄兴在长沙市郊善化县的一个地主家庭诞生。",
+        "textSimplified": "清同治十三年（1874年）9月16日，黄兴在长沙市郊善化县的一个地主家庭诞生。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
+    },
+    {
+      "year": 1898,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入两湖书院",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "张之洞推荐，开始同情维新",
+      "evidence": "百科",
+      "quote": {
+        "text": "1898年，黄兴受时任湖广总督张之洞推荐，入武昌两湖书院读书，开始同情维新运动、认同变法主张。",
+        "textSimplified": "1898年，黄兴受时任湖广总督张之洞推荐，入武昌两湖书院读书，开始同情维新运动、认同变法主张。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
+    },
+    {
+      "year": 1902,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "官费留日",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "留学",
+      "summary": "东京弘文学院，组织湖南编译社",
       "evidence": "概括",
       "quote": null,
       "verified": false
     },
     {
-      "year": 1903,
-      "age": 29,
+      "year": 1904,
+      "age": 30,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "创华兴会",
@@ -44,10 +96,61 @@
       "score": 36,
       "delta": 14,
       "rationale": "革命",
-      "summary": "长沙",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "长沙成立，谋划长沙起义事泄出走",
+      "evidence": "百科",
+      "quote": {
+        "text": "1904年2月15日，华兴会在长沙龙璋的西园寓所正式成立。",
+        "textSimplified": "1904年2月15日，华兴会在长沙龙璋的西园寓所正式成立。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
+    },
+    {
+      "year": 1905,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "同盟会执行部庶务",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 14,
+      "rationale": "二号人物",
+      "summary": "结识孙中山，合组同盟会，居第二把交椅",
+      "evidence": "百科",
+      "quote": {
+        "text": "1905年7月，他结识孙中山，在日本拥护孙中山组成中国同盟会。",
+        "textSimplified": "1905年7月，他结识孙中山，在日本拥护孙中山组成中国同盟会。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
+    },
+    {
+      "year": 1908,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "钦廉上思起义",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 38,
+      "delta": 0,
+      "rationale": "屡败",
+      "summary": "率二百余人转战，弹尽而退",
+      "evidence": "百科",
+      "quote": {
+        "text": "黄兴等人由安南再次进入广西，率领200余人在钦廉上思起义，与2万清军周旋月余",
+        "textSimplified": "黄兴等人由安南再次进入广西，率领200余人在钦廉上思起义，与2万清军周旋月余",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
     },
     {
       "year": 1911,
@@ -60,12 +163,17 @@
       "crisis": "绝境",
       "crisisPenalty": 40,
       "score": 10,
-      "delta": -26,
+      "delta": -40,
       "rationale": "惨败",
-      "summary": "断二指",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "广州起义惨败，断二指脱险",
+      "evidence": "百科",
+      "quote": {
+        "text": "副总指挥黄兴与总指挥赵声领导第三次广州起义（黄花岗之役），黄兴率领敢死队进攻督署。",
+        "textSimplified": "副总指挥黄兴与总指挥赵声领导第三次广州起义（黄花岗之役），黄兴率领敢死队进攻督署。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
     },
     {
       "year": 1911,
@@ -80,17 +188,22 @@
       "score": 76,
       "delta": 66,
       "rationale": "统帅",
-      "summary": "战时总司令",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "任战时总司令，指挥阳夏之战",
+      "evidence": "百科",
+      "quote": {
+        "text": "10月28日，黄兴由上海到达汉口，被推为中华民国军政府战时总司令，指挥民军和清军的战斗。",
+        "textSimplified": "10月28日，黄兴由上海到达汉口，被推为中华民国军政府战时总司令，指挥民军和清军的战斗。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
     },
     {
       "year": 1912,
       "age": 38,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "南京留守",
+      "title": "陆军总长兼参谋总长",
       "tier": "重臣主帅",
       "tierScore": 82,
       "crisis": "平稳",
@@ -98,10 +211,15 @@
       "score": 82,
       "delta": 6,
       "rationale": "高位",
-      "summary": "陆军总长",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "南京临时政府成立，后任南京留守",
+      "evidence": "百科",
+      "quote": {
+        "text": "1912年1月1日，中华民国南京临时政府成立，黄兴任陆军总长兼任参谋总长，授大元帅军衔。",
+        "textSimplified": "1912年1月1日，中华民国南京临时政府成立，黄兴任陆军总长兼任参谋总长，授大元帅军衔。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
     },
     {
       "year": 1913,
@@ -116,10 +234,61 @@
       "score": 18,
       "delta": -64,
       "rationale": "流亡",
-      "summary": "流亡",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "南京讨袁，旋失败，流亡日本",
+      "evidence": "百科",
+      "quote": {
+        "text": "孙中山发动二次革命时，黄兴响应起义，不久失败。",
+        "textSimplified": "孙中山发动二次革命时，黄兴响应起义，不久失败。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
+    },
+    {
+      "year": 1914,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "不入中华革命党赴美",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 39,
+      "delta": 0,
+      "rationale": "分道",
+      "summary": "与孙中山分歧，远走美国",
+      "evidence": "百科",
+      "quote": {
+        "text": "孙中山在日本组织中华革命党，黄兴没有参加，他已于6月30日乘船赴美国（15日到达）",
+        "textSimplified": "孙中山在日本组织中华革命党，黄兴没有参加，他已于6月30日乘船赴美国（15日到达）",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
+    },
+    {
+      "year": 1916,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "返日策应护国",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 32,
+      "rationale": "复出",
+      "summary": "袁世凯死后回国",
+      "evidence": "百科",
+      "quote": {
+        "text": "因孙中山、蔡锷多次电催，1916年5月9日，他由美国赶抵日本，为国内反袁斗争筹款购买军火。",
+        "textSimplified": "因孙中山、蔡锷多次电催，1916年5月9日，他由美国赶抵日本，为国内反袁斗争筹款购买军火。",
+        "source": "维基百科「黄兴」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -127,19 +296,31 @@
     "age": 42,
     "title": "病逝上海",
     "retention": 0.95,
-    "reason": "孙黄",
-    "score": 17.1,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "reason": "孙黄并称，四十二岁早逝",
+    "score": 47.5,
+    "evidence": "百科",
+    "quote": {
+      "text": "1916年10月31日，黄兴于上海去世。",
+      "textSimplified": "1916年10月31日，黄兴于上海去世。",
+      "source": "维基百科「黄兴」",
+      "url": "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%85%B4"
+    },
+    "verified": true
   },
   "posthumous": [
+    {
+      "year": 1917,
+      "title": "国葬岳麓山",
+      "score": 82,
+      "rationale": "民国首位国葬，与蔡锷同葬岳麓",
+      "inferred": false
+    },
     {
       "year": 2026,
       "title": "今日评价",
       "score": 84,
       "rationale": "辛亥革命元勋",
-      "inferred": true
+      "inferred": false
     }
   ],
   "legacy": {
@@ -149,7 +330,7 @@
     "rationale": "辛亥革命元勋"
   },
   "peak": {
-    "title": "南京留守",
+    "title": "陆军总长兼参谋总长",
     "age": 38,
     "score": 82
   },
@@ -161,13 +342,13 @@
   "gaps": [
     {
       "fromAge": 0,
-      "toAge": 29,
-      "years": 29
+      "toAge": 30,
+      "years": 30
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 12,
+    "quotesClaimed": 12,
     "author": "claude"
   }
 }

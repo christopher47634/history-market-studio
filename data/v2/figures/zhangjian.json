@@ -11,7 +11,13 @@
   },
   "lifeSpan": 73,
   "thesis": "状元实业家，大生纱厂，南通模式。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「张謇」",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1853,
@@ -27,13 +33,64 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "农家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "清朝咸丰三年五月廿五日（1853年7月1日），张謇生于江苏海门常乐镇。",
+        "textSimplified": "清朝咸丰三年五月廿五日（1853年7月1日），张謇生于江苏海门常乐镇。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
     },
     {
-      "year": 1874,
-      "age": 21,
+      "year": 1868,
+      "age": 15,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "冒籍应试",
+      "tier": "布衣",
+      "tierScore": 16,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 11,
+      "delta": 0,
+      "rationale": "讼累",
+      "summary": "被讹诈几至破家",
+      "evidence": "百科",
+      "quote": {
+        "text": "同治七年（1868年）16岁时，为了走上科举正道，经宋琛安排，身为冷籍子弟的吴长泰（张謇）冒用如皋县人张铨儿子张育才的名义报名注籍",
+        "textSimplified": "同治七年（1868年）16岁时，为了走上科举正道，经宋琛安排，身为冷籍子弟的吴长泰（张謇）冒用如皋县人张铨儿子张育才的名义报名注籍",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1869,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考中秀才",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "功名",
+      "summary": "冒籍如皋",
+      "evidence": "百科",
+      "quote": {
+        "text": "同治八年（1869年），张謇考中秀才。",
+        "textSimplified": "同治八年（1869年），张謇考中秀才。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1876,
+      "age": 23,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "入吴长庆幕",
@@ -44,7 +101,53 @@
       "score": 30,
       "delta": 12,
       "rationale": "幕僚",
-      "summary": "幕僚",
+      "summary": "幕僚，随军赴朝鲜",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪二年（1876年）夏，应淮军“庆字营”统领吴长庆邀请，前往浦口入其庆军幕任文书",
+        "textSimplified": "光绪二年（1876年）夏，应淮军“庆字营”统领吴长庆邀请，前往浦口入其庆军幕任文书",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1882,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "壬午兵变随军赴朝",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 0,
+      "rationale": "参谋",
+      "summary": "草拟善后六策",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪八年（1882年），朝鲜发生“壬午兵变”，日本乘机派遣军舰进抵仁川",
+        "textSimplified": "光绪八年（1882年），朝鲜发生“壬午兵变”，日本乘机派遣军舰进抵仁川",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1885,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "顺天乡试南元",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 0,
+      "rationale": "功名",
+      "summary": "翁同龢提携",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -62,14 +165,42 @@
       "score": 52,
       "delta": 22,
       "rationale": "状元",
-      "summary": "四十一岁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "四十一岁，父丧丁忧",
+      "evidence": "百科",
+      "quote": {
+        "text": "1894年，张謇因父命难违，第五次进京应试，终于中了一等第十一名，翁同龢将他改为第十名。",
+        "textSimplified": "1894年，张謇因父命难违，第五次进京应试，终于中了一等第十一名，翁同龢将他改为第十名。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
     },
     {
-      "year": 1899,
-      "age": 46,
+      "year": 1896,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "奉命办纱厂",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 45,
+      "delta": 0,
+      "rationale": "创业",
+      "summary": "集股艰难",
+      "evidence": "百科",
+      "quote": {
+        "text": "张之洞奏派张謇、陆润庠、丁立瀛分别在通州、苏州、镇江设立商务局，张謇与陆润庠分别在南通和苏州创办了大生纱厂与苏纶纱厂。",
+        "textSimplified": "张之洞奏派张謇、陆润庠、丁立瀛分别在通州、苏州、镇江设立商务局，张謇与陆润庠分别在南通和苏州创办了大生纱厂与苏纶纱厂。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1898,
+      "age": 45,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "大生纱厂投产",
@@ -81,9 +212,101 @@
       "delta": 8,
       "rationale": "实业",
       "summary": "实业",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪二十四年（1898年），大生纱厂正式在通州城西的唐家闸陶朱坝动土兴建，次年大生纱厂建成投产。",
+        "textSimplified": "光绪二十四年（1898年），大生纱厂正式在通州城西的唐家闸陶朱坝动土兴建，次年大生纱厂建成投产。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1902,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创通州师范学校",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 2,
+      "rationale": "教育",
+      "summary": "中国第一所民办师范",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1905,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创南通博物苑、复旦公学",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 0,
+      "rationale": "教育",
+      "summary": "第一座公共博物馆",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪三十一年（1905年），张謇在通州建立了国内第一所博物馆——南通博物苑。",
+        "textSimplified": "光绪三十一年（1905年），张謇在通州建立了国内第一所博物馆——南通博物苑。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1910,
+      "age": 57,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国会请愿",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 0,
+      "rationale": "立宪",
+      "summary": "立宪派领袖",
+      "evidence": "百科",
+      "quote": {
+        "text": "1910年发起国会请愿活动。",
+        "textSimplified": "1910年发起国会请愿活动。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1912,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "代拟清帝退位诏书",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 4,
+      "rationale": "推手",
+      "summary": "实业总长，拟退位诏",
+      "evidence": "百科",
+      "quote": {
+        "text": "为民军方面代拟清帝退位诏书，是为1912年2月12日颁布的清帝退位诏书的最初蓝本。",
+        "textSimplified": "为民军方面代拟清帝退位诏书，是为1912年2月12日颁布的清帝退位诏书的最初蓝本。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
     },
     {
       "year": 1913,
@@ -96,9 +319,50 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 78,
-      "delta": 18,
+      "delta": 12,
       "rationale": "高位",
       "summary": "入阁",
+      "evidence": "百科",
+      "quote": {
+        "text": "1913年至1914年任北洋政府工商总长兼农林总长、农商总长，1914年兼任全国水利局总裁。",
+        "textSimplified": "1913年至1914年任北洋政府工商总长兼农林总长、农商总长，1914年兼任全国水利局总裁。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
+    },
+    {
+      "year": 1915,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "反对帝制辞职",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 0,
+      "rationale": "退隐",
+      "summary": "回南通",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1920,
+      "age": 67,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "南通模式",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": 0,
+      "rationale": "巅峰",
+      "summary": "模范县",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -116,22 +380,32 @@
       "score": 36,
       "delta": -42,
       "rationale": "困境",
-      "summary": "棉价下跌",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "棉价下跌，破产",
+      "evidence": "百科",
+      "quote": {
+        "text": "1922年，张謇破产。",
+        "textSimplified": "1922年，张謇破产。",
+        "source": "维基百科「张謇」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+      },
+      "verified": true
     }
   ],
   "finale": {
     "year": 1926,
     "age": 73,
-    "title": "病逝",
+    "title": "病逝南通",
     "retention": 0.95,
     "reason": "实业救国",
     "score": 34.2,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "1926年8月24日，张謇病逝，享年73岁。",
+      "textSimplified": "1926年8月24日，张謇病逝，享年73岁。",
+      "source": "维基百科「张謇」",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BC%A0%E8%AC%87"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -155,24 +429,24 @@
   },
   "trough": {
     "title": "入吴长庆幕",
-    "age": 21,
+    "age": 23,
     "score": 30
   },
   "gaps": [
     {
       "fromAge": 0,
-      "toAge": 21,
-      "years": 21
+      "toAge": 23,
+      "years": 23
     },
     {
-      "fromAge": 21,
+      "fromAge": 23,
       "toAge": 41,
-      "years": 20
+      "years": 18
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 14,
+    "quotesClaimed": 14,
     "author": "claude"
   }
 }

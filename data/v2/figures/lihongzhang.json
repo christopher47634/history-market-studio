@@ -15,6 +15,11 @@
     {
       "label": "《清史稿·卷四百十一》",
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7411"
+    },
+    {
+      "label": "维基百科「李鸿章」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0",
+      "site": "wp"
     }
   ],
   "events": [
@@ -37,6 +42,29 @@
       "verified": false
     },
     {
+      "year": 1844,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中举",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "功名",
+      "summary": "顺天乡试",
+      "evidence": "百科",
+      "quote": {
+        "text": "道光二十四年（1844年）甲辰恩科顺天乡试取中举人，但次年会试落第，在曾国藩府中补习受教",
+        "textSimplified": "道光二十四年（1844年）甲辰恩科顺天乡试取中举人，但次年会试落第，在曾国藩府中补习受教",
+        "source": "维基百科「李鸿章」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0"
+      },
+      "verified": true
+    },
+    {
       "year": 1847,
       "age": 24,
       "yearCertainty": "确知",
@@ -50,9 +78,55 @@
       "delta": 11,
       "rationale": "入仕",
       "summary": "入仕",
+      "evidence": "百科",
+      "quote": {
+        "text": "李鸿章于道光二十七年（1847年），中第二甲第三十六名，在同年考取的还有",
+        "textSimplified": "李鸿章于道光二十七年（1847年），中第二甲第三十六名，在同年考取的还有",
+        "source": "维基百科「李鸿章」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0"
+      },
+      "verified": true
+    },
+    {
+      "year": 1853,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回籍办团练",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 29,
+      "delta": 0,
+      "rationale": "团练",
+      "summary": "屡战屡败",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1858,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入曾国藩幕",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 2,
+      "rationale": "幕僚",
+      "summary": "襄办营务",
+      "evidence": "百科",
+      "quote": {
+        "text": "咸丰八年（1858年）冬，李鸿章入曾国藩幕府襄办营务，负责起草文书。",
+        "textSimplified": "咸丰八年（1858年）冬，李鸿章入曾国藩幕府襄办营务，负责起草文书。",
+        "source": "维基百科「李鸿章」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0"
+      },
+      "verified": true
     },
     {
       "year": 1862,
@@ -65,7 +139,7 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 78,
-      "delta": 42,
+      "delta": 40,
       "rationale": "方面",
       "summary": "江苏巡抚",
       "evidence": "原文",
@@ -76,6 +150,65 @@
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7411"
       },
       "verified": true
+    },
+    {
+      "year": 1864,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "克复苏常",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 0,
+      "rationale": "战功",
+      "summary": "与常胜军",
+      "evidence": "百科",
+      "quote": {
+        "text": "1864年5月，淮军在常州与陈坤书率领的太平军激战，11日攻克常州。",
+        "textSimplified": "1864年5月，淮军在常州与陈坤书率领的太平军激战，11日攻克常州。",
+        "source": "维基百科「李鸿章」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0"
+      },
+      "verified": true
+    },
+    {
+      "year": 1865,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创江南制造总局",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 0,
+      "rationale": "洋务",
+      "summary": "洋务",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1868,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "平定捻军",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 0,
+      "rationale": "战功",
+      "summary": "协办大学士",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     },
     {
       "year": 1870,
@@ -101,6 +234,47 @@
       "verified": true
     },
     {
+      "year": 1873,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "轮船招商局",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "洋务",
+      "summary": "洋务企业",
+      "evidence": "百科",
+      "quote": {
+        "text": "同治十二年（1873年），轮船招商局正式成立。",
+        "textSimplified": "同治十二年（1873年），轮船招商局正式成立。",
+        "source": "维基百科「李鸿章」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0"
+      },
+      "verified": true
+    },
+    {
+      "year": 1888,
+      "age": 65,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北洋海军成军",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "鼎盛",
+      "summary": "远东第一舰队",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
       "year": 1895,
       "age": 72,
       "yearCertainty": "确知",
@@ -124,6 +298,52 @@
       "verified": true
     },
     {
+      "year": 1896,
+      "age": 73,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出使俄欧美",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 60,
+      "delta": 10,
+      "rationale": "外交",
+      "summary": "投闲，中俄密约",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪二十二年（1896年），慈禧任命李鸿章为钦差头等出使大臣，环游诸国",
+        "textSimplified": "光绪二十二年（1896年），慈禧任命李鸿章为钦差头等出使大臣，环游诸国",
+        "source": "维基百科「李鸿章」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E9%B8%BF%E7%AB%A0"
+      },
+      "verified": true
+    },
+    {
+      "year": 1899,
+      "age": 76,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "两广总督",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 0,
+      "rationale": "复起",
+      "summary": "东南互保",
+      "evidence": "原文",
+      "quote": {
+        "text": "十月，出督兩廣。",
+        "textSimplified": "十月，出督两广。",
+        "source": "《清史稿·卷四百十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7411"
+      },
+      "verified": true
+    },
+    {
       "year": 1900,
       "age": 77,
       "yearCertainty": "确知",
@@ -134,7 +354,7 @@
       "crisis": "受挫",
       "crisisPenalty": 15,
       "score": 71,
-      "delta": 21,
+      "delta": 11,
       "rationale": "病重",
       "summary": "签约后吐血",
       "evidence": "概括",
@@ -186,13 +406,13 @@
     },
     {
       "fromAge": 47,
-      "toAge": 72,
-      "years": 25
+      "toAge": 65,
+      "years": 18
     }
   ],
   "quality": {
-    "quotesVerified": 3,
-    "quotesClaimed": 3,
+    "quotesVerified": 10,
+    "quotesClaimed": 10,
     "author": "claude"
   }
 }

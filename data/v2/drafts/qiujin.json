@@ -20,57 +20,156 @@
       "tierScore": 25,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "官宦",
+      "summary": "官宦之家，随祖父宦游闽台",
       "rationale": "士人",
+      "quote": {
+        "find": [
+          "初名闺瑾"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "嫁湘潭王家",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "嫁王廷钧，居湘潭、株洲",
+      "rationale": "婚姻",
       "quote": null
+    },
+    {
+      "year": 1903,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "男装看戏",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "随夫入京，与吴芝瑛结拜，思想转向",
+      "rationale": "觉醒",
+      "quote": {
+        "find": [
+          "秋瑾与吴芝瑛结拜"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1904,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "东渡日本",
+      "title": "变卖首饰东渡日本",
       "tier": "布衣",
       "tierScore": 28,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "留学",
+      "summary": "入东京实践女校，组共爱会",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "秋瑾变卖首饰筹集资金"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "加入光复会、同盟会",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "徐锡麟介绍入光复会，后入同盟会",
+      "rationale": "革命",
+      "quote": {
+        "find": [
+          "由徐锡麟介绍加入光复会"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1906,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "创《中国女报》",
+      "title": "抗议取缔规则归国",
       "tier": "成名",
       "tierScore": 44,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "女权",
-      "rationale": "报人",
-      "quote": null
+      "summary": "归国主持大通学堂，联络会党",
+      "rationale": "主事",
+      "quote": {
+        "find": [
+          "因抗议日本文部省"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1907,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "大通学堂起义",
+      "title": "创《中国女报》",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "倡女权、女学",
+      "rationale": "报人",
+      "quote": {
+        "find": [
+          "在上海创办《中国女报》"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起义事泄被捕",
       "tier": "成名",
       "tierScore": 46,
       "crisis": "绝境",
       "crisisPenalty": 55,
-      "summary": "被捕",
+      "summary": "徐锡麟安庆起义失败，大通学堂被围",
       "rationale": "死局",
-      "quote": null
+      "quote": {
+        "find": [
+          "在她自己工作地点大通学堂被捕"
+        ],
+        "source": 0
+      }
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1912,
+      "title": "迁葬西湖西泠桥",
+      "score": 80,
+      "rationale": "民国追念，孙中山题「巾帼英雄」"
+    }
+  ],
   "finale": {
     "year": 1907,
     "title": "绍兴轩亭口就义",
     "retention": 0.9,
-    "reason": "秋风秋雨愁煞人",
-    "quote": null
+    "reason": "秋风秋雨愁煞人，年三十一",
+    "quote": {
+      "find": [
+        "于浙江省绍兴古轩亭口被五花大绑着处斩"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

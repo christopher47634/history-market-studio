@@ -177,6 +177,32 @@
       }
     },
     {
+      "year": 1945,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "重庆谈判",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "应蒋介石邀请赴重庆谈判，签订双十协定",
+      "rationale": "中共最高领导人身份与国民政府谈判",
+      "quote": null
+    },
+    {
+      "year": 1947,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "转战陕北",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "胡宗南进攻延安，中共中央撤出，辗转陕北",
+      "rationale": "主动放弃延安，处境受挫但指挥全局",
+      "quote": null
+    },
+    {
       "year": 1949,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -239,6 +265,32 @@
         "text": "轻率地发动了“大跃进”运动和农村人民公社化运动",
         "source": 0
       }
+    },
+    {
+      "year": 1959,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "庐山会议",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "原拟纠正大跃进错误，后期转为批判彭德怀",
+      "rationale": "经济困难持续，个人地位仍居顶点",
+      "quote": null
+    },
+    {
+      "year": 1962,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "七千人大会",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "作自我批评，此后退居二线",
+      "rationale": "大跃进后果显现，权威受损",
+      "quote": null
     },
     {
       "year": 1966,

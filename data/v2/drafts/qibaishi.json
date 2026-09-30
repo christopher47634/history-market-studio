@@ -22,7 +22,12 @@
       "crisisPenalty": 0,
       "summary": "贫农",
       "rationale": "贫寒",
-      "quote": null
+      "quote": {
+        "find": [
+          "齐白石于1864年元旦出生于湖南省长沙府湘潭县"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1878,
@@ -46,12 +51,43 @@
       "tierScore": 18,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "胡沁园",
+      "summary": "胡沁园、陈少蕃",
       "rationale": "学画",
       "quote": null
     },
     {
-      "year": 1919,
+      "year": 1899,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "拜王闿运为师",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "诗文",
+      "rationale": "拜师",
+      "quote": null
+    },
+    {
+      "year": 1903,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "五出五归",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "远游西安、北京、桂林",
+      "rationale": "游历",
+      "quote": {
+        "find": [
+          "1903年39岁时第一次到北京"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "定居北京卖画",
@@ -59,9 +95,14 @@
       "tierScore": 40,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "北漂",
+      "summary": "北漂，结识陈师曾",
       "rationale": "卖画",
-      "quote": null
+      "quote": {
+        "find": [
+          "决定于北京发展，以卖画刻印为生"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1920,
@@ -77,6 +118,73 @@
       "quote": null
     },
     {
+      "year": 1922,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东京画展成名",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陈师曾携画赴日，作品售罄",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "陈师曾携齐白石的画作前往日本"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1929,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "京华美专教授",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北平艺专",
+      "rationale": "教授",
+      "quote": {
+        "find": [
+          "在京华美专任教授"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北平沦陷闭门",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "拒绝日伪，「停止见客」",
+      "rationale": "困守",
+      "quote": {
+        "find": [
+          "日本入侵中国"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "新中国礼遇",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "毛泽东宴请",
+      "rationale": "礼遇",
+      "quote": null
+    },
+    {
       "year": 1953,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -87,7 +195,48 @@
       "crisisPenalty": 0,
       "summary": "人民艺术家",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "他被选为中国美术家协会主席"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国际和平奖",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世界和平理事会",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "世界和平理事会授予他1955年度国际和平奖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1957,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北京中国画院名誉院长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "九十三岁",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "齐白石出任中国画院名誉院长"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -96,7 +245,12 @@
     "title": "逝世",
     "retention": 0.95,
     "reason": "齐白石",
-    "quote": null
+    "quote": {
+      "find": [
+        "齐白石在北京市北京医院逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

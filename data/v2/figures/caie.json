@@ -11,7 +11,13 @@
   },
   "lifeSpan": 34,
   "thesis": "护国战争讨袁。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「蔡锷」",
+      "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1882,
@@ -27,9 +33,78 @@
       "delta": 0,
       "rationale": "贫寒",
       "summary": "贫寒",
+      "evidence": "百科",
+      "quote": {
+        "text": "清朝光绪八年十一月初九（1882年12月18日），蔡艮寅出生于原湖南省宝庆府武冈州山门大坝上（今属邵阳市洞口县水东镇）。",
+        "textSimplified": "清朝光绪八年十一月初九（1882年12月18日），蔡艮寅出生于原湖南省宝庆府武冈州山门大坝上（今属邵阳市洞口县水东镇）。",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1895,
+      "age": 13,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考中秀才",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "神童",
+      "summary": "十三岁",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪二十一年四月（1895年），湖南学政江标赴邵阳举行院试，未满14岁的蔡艮寅的文章获得江标赏识",
+        "textSimplified": "光绪二十一年四月（1895年），湖南学政江标赴邵阳举行院试，未满14岁的蔡艮寅的文章获得江标赏识",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1898,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入时务学堂",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "师从梁启超",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1900,
+      "age": 18,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "自立军失败",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 10,
+      "delta": 0,
+      "rationale": "改名",
+      "summary": "唐才常殉难，易名蔡锷",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪二十六年（1900年），随唐才常归国，参加自立军起义。",
+        "textSimplified": "光绪二十六年（1900年），随唐才常归国，参加自立军起义。",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
     },
     {
       "year": 1904,
@@ -44,10 +119,61 @@
       "score": 36,
       "delta": 24,
       "rationale": "军校",
-      "summary": "留学",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "与蒋方震、张孝准称士官三杰",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪三十年（1904年），蔡锷毕业归国。",
+        "textSimplified": "光绪三十年（1904年），蔡锷毕业归国。",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1908,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "广西新军标统",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 0,
+      "rationale": "练兵",
+      "summary": "练兵",
+      "evidence": "百科",
+      "quote": {
+        "text": "1908年（光绪34年）4月，任广西新练常备军第1标标统。",
+        "textSimplified": "1908年（光绪34年）4月，任广西新练常备军第1标标统。",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1910,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "被驱出广西",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 29,
+      "delta": 0,
+      "rationale": "挫折",
+      "summary": "革命派驱蔡",
+      "evidence": "百科",
+      "quote": {
+        "text": "1910年10月，革命派主导的驱逐蔡锷运动开始，蔡锷转赴云南省任职，但广西是辛亥革命后少数由原清廷官僚主政的省份",
+        "textSimplified": "1910年10月，革命派主导的驱逐蔡锷运动开始，蔡锷转赴云南省任职，但广西是辛亥革命后少数由原清廷官僚主政的省份",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
     },
     {
       "year": 1911,
@@ -98,7 +224,53 @@
       "score": 82,
       "delta": 41,
       "rationale": "首义",
-      "summary": "护国军",
+      "summary": "护国军第一军总司令",
+      "evidence": "百科",
+      "quote": {
+        "text": "1915年（民国4年）11月，蔡锷在梁启超的帮助下逃往天津，绕道日本、越南回云南。",
+        "textSimplified": "1915年（民国4年）11月，蔡锷在梁启超的帮助下逃往天津，绕道日本、越南回云南。",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1916,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "泸州纳溪血战",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 77,
+      "delta": -5,
+      "rationale": "再造共和",
+      "summary": "喉疾加重，袁世凯取消帝制",
+      "evidence": "百科",
+      "quote": {
+        "text": "蔡锷率2万人的护国军第1军在四川省的泸州、纳溪（今泸州市纳溪区）一带击败了8万人的北京政府军。",
+        "textSimplified": "蔡锷率2万人的护国军第1军在四川省的泸州、纳溪（今泸州市纳溪区）一带击败了8万人的北京政府军。",
+        "source": "维基百科「蔡锷」",
+        "url": "https://zh.wikipedia.org/wiki/%E8%94%A1%E9%94%B7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1916,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "四川督军兼省长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 70,
+      "delta": 0,
+      "rationale": "病",
+      "summary": "病重东渡就医",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -110,18 +282,25 @@
     "title": "病逝日本",
     "retention": 0.95,
     "reason": "再造共和",
-    "score": 77.9,
+    "score": 73.1,
     "evidence": "概括",
     "quote": null,
     "verified": false
   },
   "posthumous": [
     {
+      "year": 1917,
+      "title": "国葬岳麓山",
+      "score": 82,
+      "rationale": "",
+      "inferred": false
+    },
+    {
       "year": 2026,
       "title": "今日评价",
       "score": 82,
       "rationale": "护国元勋",
-      "inferred": true
+      "inferred": false
     }
   ],
   "legacy": {
@@ -148,8 +327,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

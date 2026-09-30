@@ -20,7 +20,7 @@
       "tierScore": 18,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "梨园世家",
+      "summary": "梨园世家，幼年父母双亡",
       "rationale": "伶人",
       "quote": null
     },
@@ -33,9 +33,45 @@
       "tierScore": 22,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "十岁",
+      "summary": "十岁广和楼首演",
+      "rationale": "学艺",
+      "quote": {
+        "find": [
+          "十岁的梅兰芳在北京前门广和楼首度登台"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "搭喜连成班",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "叶春善收为学生",
       "rationale": "学艺",
       "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上海成名",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《穆柯寨》轰动上海",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "赴上海演出《穆柯寨》"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1915,
@@ -46,8 +82,39 @@
       "tierScore": 60,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "四大名旦",
+      "summary": "古装新戏，四大名旦",
       "rationale": "成名",
+      "quote": null
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "首访日本",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "轰动东瀛",
+      "rationale": "国际",
+      "quote": {
+        "find": [
+          "梅兰芳在1919年首度访问日本演出引起轰动"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "四大名旦之首",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《顺天时报》评选",
+      "rationale": "巅峰",
       "quote": null
     },
     {
@@ -61,6 +128,24 @@
       "crisisPenalty": 0,
       "summary": "世界",
       "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "他在1930年前往美国"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "访问苏联",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与斯坦尼斯拉夫斯基交流",
+      "rationale": "国际",
       "quote": null
     },
     {
@@ -72,9 +157,27 @@
       "tierScore": 56,
       "crisis": "受挫",
       "crisisPenalty": 15,
-      "summary": "拒为日伪演出",
+      "summary": "拒为日伪演出，卖画度日",
       "rationale": "困顿",
       "quote": null
+    },
+    {
+      "year": 1945,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抗战胜利重登舞台",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "复出",
+      "rationale": "复出",
+      "quote": {
+        "find": [
+          "梅兰芳重出舞台"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1949,
@@ -88,6 +191,42 @@
       "summary": "院长",
       "rationale": "地位",
       "quote": null
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "三访日本",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "再次轰动",
+      "rationale": "国际",
+      "quote": {
+        "find": [
+          "第三次访问日本再次引发轰动"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1959,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入党，排《穆桂英挂帅》",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "最后一部新戏",
+      "rationale": "晚年",
+      "quote": {
+        "find": [
+          "1959年加入中国共产党"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -96,7 +235,12 @@
     "title": "病逝",
     "retention": 0.95,
     "reason": "梅派",
-    "quote": null
+    "quote": {
+      "find": [
+        "病逝于北京阜外医院"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

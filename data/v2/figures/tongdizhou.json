@@ -11,7 +11,13 @@
   },
   "lifeSpan": 77,
   "thesis": "克隆先驱，实验胚胎学家。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「童第周」",
+      "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1902,
@@ -26,10 +32,51 @@
       "score": 12,
       "delta": 0,
       "rationale": "贫寒",
-      "summary": "农家",
+      "summary": "农家，幼年丧父",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1924,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复旦大学毕业",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "哲学系心理学",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1927,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中央大学助教",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "入门",
+      "summary": "蔡堡推荐",
+      "evidence": "百科",
+      "quote": {
+        "text": "1927年由中央大学生物系主任蔡堡推荐，入国立中央大学生物系担任蔡翘教授的助教。",
+        "textSimplified": "1927年由中央大学生物系主任蔡堡推荐，入国立中央大学生物系担任蔡翘教授的助教。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
     },
     {
       "year": 1930,
@@ -62,7 +109,140 @@
       "score": 48,
       "delta": 18,
       "rationale": "学术",
-      "summary": "山东大学",
+      "summary": "获博士，山东大学",
+      "evidence": "百科",
+      "quote": {
+        "text": "1934年获博士学位。",
+        "textSimplified": "1934年获博士学位。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
+    },
+    {
+      "year": 1938,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "抗战流亡",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 32,
+      "delta": 0,
+      "rationale": "困顿",
+      "summary": "在宜宾李庄租屋，用显微镜坚持研究",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1946,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "山东大学复校",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 0,
+      "rationale": "学术",
+      "summary": "青岛",
+      "evidence": "百科",
+      "quote": {
+        "text": "1946年山东大学在青岛复校，童第周回青岛参加复校工作，并任生物系教授、系主任。",
+        "textSimplified": "1946年山东大学在青岛复校，童第周回青岛参加复校工作，并任生物系教授、系主任。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
+    },
+    {
+      "year": 1948,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "当选中研院院士",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 0,
+      "rationale": "荣誉",
+      "summary": "第一届院士",
+      "evidence": "百科",
+      "quote": {
+        "text": "1948年，童第周当选为中央研究院第一届院士。",
+        "textSimplified": "1948年，童第周当选为中央研究院第一届院士。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
+    },
+    {
+      "year": 1949,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "山东大学动物系主任",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 12,
+      "rationale": "归国",
+      "summary": "放弃美国条件回国",
+      "evidence": "百科",
+      "quote": {
+        "text": "1949年6月他放弃在美国研究和生活条件，回到山东大学。",
+        "textSimplified": "1949年6月他放弃在美国研究和生活条件，回到山东大学。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
+    },
+    {
+      "year": 1951,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "山东大学副校长",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 0,
+      "rationale": "领导",
+      "summary": "海洋所",
+      "evidence": "百科",
+      "quote": {
+        "text": "1951年任山东大学副校长。",
+        "textSimplified": "1951年任山东大学副校长。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
+    },
+    {
+      "year": 1955,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中科院学部委员",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 6,
+      "rationale": "学术领袖",
+      "summary": "生物学地学部副主任",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -74,16 +254,44 @@
       "kind": "stage",
       "title": "鱼类细胞核移植",
       "tier": "方面名家",
-      "tierScore": 64,
+      "tierScore": 68,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "score": 64,
-      "delta": 16,
+      "score": 68,
+      "delta": 2,
       "rationale": "巅峰",
       "summary": "克隆鱼",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1963年，他将雄性鲤鱼的DNA放入雌性鲤鱼的卵子内，成为首位成功将鲤鱼克隆的科学家。",
+        "textSimplified": "1963年，他将雄性鲤鱼的DNA放入雌性鲤鱼的卵子内，成为首位成功将鲤鱼克隆的科学家。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
+    },
+    {
+      "year": 1966,
+      "age": 64,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "文革受批判",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 50,
+      "delta": 0,
+      "rationale": "受冲击",
+      "summary": "四清、文革",
+      "evidence": "百科",
+      "quote": {
+        "text": "1964年至1966年，四清运动和文化大革命期间，受到批判。",
+        "textSimplified": "1964年至1966年，四清运动和文化大革命期间，受到批判。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
     },
     {
       "year": 1978,
@@ -96,12 +304,17 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 78,
-      "delta": 14,
+      "delta": 10,
       "rationale": "领导",
       "summary": "副院长",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1978年任中国科学院副院长，同年三月当选全国政协副主席。",
+        "textSimplified": "1978年任中国科学院副院长，同年三月当选全国政协副主席。",
+        "source": "维基百科「童第周」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -111,9 +324,14 @@
     "retention": 0.95,
     "reason": "克隆先驱",
     "score": 74.1,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "1979年3月30日在北京市北京医院逝世。",
+      "textSimplified": "1979年3月30日在北京市北京医院逝世。",
+      "source": "维基百科「童第周」",
+      "url": "https://zh.wikipedia.org/wiki/%E7%AB%A5%E7%AC%AC%E5%91%A8"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -145,16 +363,11 @@
       "fromAge": 0,
       "toAge": 28,
       "years": 28
-    },
-    {
-      "fromAge": 32,
-      "toAge": 61,
-      "years": 29
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 10,
+    "quotesClaimed": 10,
     "author": "claude"
   }
 }

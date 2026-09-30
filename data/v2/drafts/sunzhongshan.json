@@ -9,7 +9,7 @@
     "year": 1925,
     "certainty": "确知"
   },
-  "thesis": "革命先行者，创兴中会、同盟会，推翻帝制，任临时大总统。",
+  "thesis": "革命先行者，创兴中会、同盟会，推翻帝制，任临时大总统；屡起屡仆，晚年改组国民党。",
   "events": [
     {
       "year": 1866,
@@ -20,9 +20,32 @@
       "tierScore": 12,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "农家",
+      "summary": "农家子，幼年务农打柴",
       "rationale": "农民",
-      "quote": null
+      "quote": {
+        "find": [
+          "孙中山诞生于广东省广州府香山县"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1879,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随母赴檀香山",
+      "tier": "布衣",
+      "tierScore": 16,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入伊奥拉尼书院，读华盛顿、林肯传记",
+      "rationale": "见识西学",
+      "quote": {
+        "find": [
+          "孙中山随母坐驳艇到澳门"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1892,
@@ -33,22 +56,32 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "行医澳门广州",
+      "summary": "在澳门、广州行医，施医赠药",
       "rationale": "医生",
-      "quote": null
+      "quote": {
+        "find": [
+          "孙中山毕业于香港西医书院"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1894,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "创兴中会",
+      "title": "上书李鸿章被拒，创兴中会",
       "tier": "初起",
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "檀香山",
-      "rationale": "革命",
-      "quote": null
+      "summary": "赴檀香山组织兴中会，提出驱除鞑虏",
+      "rationale": "革命起点",
+      "quote": {
+        "find": [
+          "上书李鸿章"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1895,
@@ -59,9 +92,14 @@
       "tierScore": 28,
       "crisis": "绝境",
       "crisisPenalty": 40,
-      "summary": "被清廷通缉",
+      "summary": "乙未广州起义事泄，陆皓东殉难，被清廷通缉",
       "rationale": "流亡",
-      "quote": null
+      "quote": {
+        "find": [
+          "兴中会发动乙未广州起义"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1896,
@@ -72,9 +110,32 @@
       "tierScore": 30,
       "crisis": "绝境",
       "crisisPenalty": 45,
-      "summary": "被清使馆诱禁",
+      "summary": "被诱禁于清使馆，险被解送回国，经康德黎营救获释",
       "rationale": "险死",
-      "quote": null
+      "quote": {
+        "find": [
+          "孙中山为揭露绑架事件真相"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1900,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "惠州起义失败",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "郑士良在惠州起事，因接济断绝而散",
+      "rationale": "屡败",
+      "quote": {
+        "find": [
+          "惠州起义"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1905,
@@ -85,8 +146,26 @@
       "tierScore": 54,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "东京成立",
+      "summary": "在东京联合华兴会等组成同盟会，被推为总理",
       "rationale": "革命领袖",
+      "quote": {
+        "find": [
+          "在日本东京组成中国同盟会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "同盟会内讧",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "章太炎、陶成章以潮州起义失败为由要求罢免他",
+      "rationale": "内部倒孙",
       "quote": null
     },
     {
@@ -98,9 +177,14 @@
       "tierScore": 88,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "中华民国成立",
+      "summary": "南京临时政府成立，中华民国建元",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "由上海抵达南京"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1912,
@@ -111,7 +195,7 @@
       "tierScore": 64,
       "crisis": "受挫",
       "crisisPenalty": 10,
-      "summary": "辞职",
+      "summary": "为促成清帝退位与南北统一，辞职让位",
       "rationale": "让权",
       "quote": null
     },
@@ -124,38 +208,185 @@
       "tierScore": 48,
       "crisis": "大败",
       "crisisPenalty": 30,
-      "summary": "讨袁失败",
+      "summary": "宋教仁遇刺后起兵讨袁，旋即失败，再亡日本",
       "rationale": "流亡",
-      "quote": null
+      "quote": {
+        "find": [
+          "孙中山即起兵讨袁"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1914,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "组中华革命党",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "要求党员按指模宣誓效忠，黄兴等不入",
+      "rationale": "孤立",
+      "quote": {
+        "find": [
+          "中华革命党于1913年底开始筹建"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "护法军政府大元帅",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "段祺瑞解散国会，南下广州召开非常国会",
+      "rationale": "再起",
+      "quote": {
+        "find": [
+          "国会非常会议选举孙中山为中华民国军政府海陆军大元帅"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1918,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "军政府改组被架空",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "改为七总裁制，实权落入桂系军阀",
+      "rationale": "被架空",
+      "quote": {
+        "find": [
+          "实权掌握在军阀手中"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "就任非常大总统",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国会非常会议推举，在广州就职",
+      "rationale": "一方之主",
+      "quote": {
+        "find": [
+          "次年就任非常大总统"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1922,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陈炯明兵变",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "粤军炮轰总统府，登永丰舰避难后退居上海",
+      "rationale": "失地",
+      "quote": {
+        "find": [
+          "因陈炯明事变退居上海"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1923,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "广州大元帅府",
+      "title": "重建大元帅府",
       "tier": "一方之主",
       "tierScore": 85,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "联俄联共扶助农工",
-      "rationale": "再起",
-      "quote": null
+      "summary": "滇桂军驱逐陈炯明，重回广州",
+      "rationale": "复起",
+      "quote": {
+        "find": [
+          "重建大元帅府"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国民党一大",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "改组国民党，联俄、联共、扶助农工，创黄埔军校",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "中国国民党第一次全国代表大会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北上共商国是",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "应冯玉祥等电邀北上，途中肝病加重",
+      "rationale": "抱病",
+      "quote": {
+        "find": [
+          "请他北上共商国是"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [
     {
+      "year": 1929,
+      "title": "安葬中山陵",
+      "score": 90,
+      "rationale": "奉安大典，灵柩葬于南京紫金山"
+    },
+    {
       "year": 1940,
       "title": "尊为国父",
       "score": 92,
-      "rationale": ""
+      "rationale": "国民政府通令尊称国父"
     }
   ],
   "finale": {
     "year": 1925,
     "title": "北京病逝",
     "retention": 0.95,
-    "reason": "革命尚未成功",
-    "quote": null
+    "reason": "革命尚未成功，同志仍须努力",
+    "quote": {
+      "find": [
+        "1925年3月12日，孙中山逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "文明塑造者",

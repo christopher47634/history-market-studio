@@ -11,7 +11,13 @@
   },
   "lifeSpan": 32,
   "thesis": "鉴湖女侠，光复会，绍兴就义。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「秋瑾」",
+      "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1875,
@@ -26,17 +32,63 @@
       "score": 25,
       "delta": 0,
       "rationale": "士人",
-      "summary": "官宦",
+      "summary": "官宦之家，随祖父宦游闽台",
+      "evidence": "百科",
+      "quote": {
+        "text": "秋瑾（1875年11月8日—1907年7月15日），初名闺瑾，乳名玉姑",
+        "textSimplified": "秋瑾（1875年11月8日—1907年7月15日），初名闺瑾，乳名玉姑",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
+    },
+    {
+      "year": 1896,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "嫁湘潭王家",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 24,
+      "delta": 0,
+      "rationale": "婚姻",
+      "summary": "嫁王廷钧，居湘潭、株洲",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1903,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "男装看戏",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "觉醒",
+      "summary": "随夫入京，与吴芝瑛结拜，思想转向",
+      "evidence": "百科",
+      "quote": {
+        "text": "1903年，秋瑾与吴芝瑛结拜，中秋，秋瑾身着男装到戏院看戏，轰动一时。",
+        "textSimplified": "1903年，秋瑾与吴芝瑛结拜，中秋，秋瑾身着男装到戏院看戏，轰动一时。",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
     },
     {
       "year": 1904,
       "age": 29,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "东渡日本",
+      "title": "变卖首饰东渡日本",
       "tier": "布衣",
       "tierScore": 28,
       "crisis": "平稳",
@@ -44,46 +96,107 @@
       "score": 28,
       "delta": 3,
       "rationale": "留学",
-      "summary": "留学",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "入东京实践女校，组共爱会",
+      "evidence": "百科",
+      "quote": {
+        "text": "1904年秋瑾变卖首饰筹集资金于5月东渡至日本，先后入国语讲习所（日语讲习所）、实践女学校。",
+        "textSimplified": "1904年秋瑾变卖首饰筹集资金于5月东渡至日本，先后入国语讲习所（日语讲习所）、实践女学校。",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
+    },
+    {
+      "year": 1905,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "加入光复会、同盟会",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 10,
+      "rationale": "革命",
+      "summary": "徐锡麟介绍入光复会，后入同盟会",
+      "evidence": "百科",
+      "quote": {
+        "text": "1905年，秋瑾回国省亲，5、6月间由徐锡麟介绍加入光复会。",
+        "textSimplified": "1905年，秋瑾回国省亲，5、6月间由徐锡麟介绍加入光复会。",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
     },
     {
       "year": 1906,
       "age": 31,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "创《中国女报》",
+      "title": "抗议取缔规则归国",
       "tier": "成名",
       "tierScore": 44,
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 44,
-      "delta": 16,
-      "rationale": "报人",
-      "summary": "女权",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "delta": 6,
+      "rationale": "主事",
+      "summary": "归国主持大通学堂，联络会党",
+      "evidence": "百科",
+      "quote": {
+        "text": "1906年2月，因抗议日本文部省于去年11月2日颁发的《清国留日学生取缔规则》而回国。",
+        "textSimplified": "1906年2月，因抗议日本文部省于去年11月2日颁发的《清国留日学生取缔规则》而回国。",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
     },
     {
       "year": 1907,
       "age": 32,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "大通学堂起义",
+      "title": "创《中国女报》",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 46,
+      "delta": 2,
+      "rationale": "报人",
+      "summary": "倡女权、女学",
+      "evidence": "百科",
+      "quote": {
+        "text": "1907年1月在上海创办《中国女报》（只出版两期，创刊号发刊于1906年农历十二月初一日",
+        "textSimplified": "1907年1月在上海创办《中国女报》（只出版两期，创刊号发刊于1906年农历十二月初一日",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
+    },
+    {
+      "year": 1907,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起义事泄被捕",
       "tier": "成名",
       "tierScore": 46,
       "crisis": "绝境",
       "crisisPenalty": 55,
       "score": 2,
-      "delta": -42,
+      "delta": -44,
       "rationale": "死局",
-      "summary": "被捕",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "徐锡麟安庆起义失败，大通学堂被围",
+      "evidence": "百科",
+      "quote": {
+        "text": "秋瑾下午四时在她自己工作地点大通学堂被捕，被关押在卧龙山（即府山）监狱（今卧龙山建有风雨亭）。",
+        "textSimplified": "秋瑾下午四时在她自己工作地点大通学堂被捕，被关押在卧龙山（即府山）监狱（今卧龙山建有风雨亭）。",
+        "source": "维基百科「秋瑾」",
+        "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -91,19 +204,31 @@
     "age": 32,
     "title": "绍兴轩亭口就义",
     "retention": 0.9,
-    "reason": "秋风秋雨愁煞人",
+    "reason": "秋风秋雨愁煞人，年三十一",
     "score": 1.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "7月15日凌晨三、四时，于浙江省绍兴古轩亭口被五花大绑着处斩，时年31岁。",
+      "textSimplified": "7月15日凌晨三、四时，于浙江省绍兴古轩亭口被五花大绑着处斩，时年31岁。",
+      "source": "维基百科「秋瑾」",
+      "url": "https://zh.wikipedia.org/wiki/%E7%A7%8B%E7%91%BE"
+    },
+    "verified": true
   },
   "posthumous": [
+    {
+      "year": 1912,
+      "title": "迁葬西湖西泠桥",
+      "score": 80,
+      "rationale": "民国追念，孙中山题「巾帼英雄」",
+      "inferred": false
+    },
     {
       "year": 2026,
       "title": "今日评价",
       "score": 84,
       "rationale": "女革命家",
-      "inferred": true
+      "inferred": false
     }
   ],
   "legacy": {
@@ -114,11 +239,11 @@
   },
   "peak": {
     "title": "创《中国女报》",
-    "age": 31,
-    "score": 44
+    "age": 32,
+    "score": 46
   },
   "trough": {
-    "title": "大通学堂起义",
+    "title": "起义事泄被捕",
     "age": 32,
     "score": 2
   },
@@ -130,8 +255,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

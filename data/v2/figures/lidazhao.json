@@ -11,7 +11,13 @@
   },
   "lifeSpan": 38,
   "thesis": "中国最早的马克思主义传播者，中共创始人之一，就义于绞刑架。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「李大钊」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1889,
@@ -26,10 +32,61 @@
       "score": 15,
       "delta": 0,
       "rationale": "孤贫",
-      "summary": "农家，早孤",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "农家，自幼父母双亡",
+      "evidence": "百科",
+      "quote": {
+        "text": "1889年10月29日（清光绪十五年十月初六日），李大钊生于今河北省乐亭县大黑坨村。",
+        "textSimplified": "1889年10月29日（清光绪十五年十月初六日），李大钊生于今河北省乐亭县大黑坨村。",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1905,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "通过童试",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "永平府中学",
+      "evidence": "百科",
+      "quote": {
+        "text": "1905年，李第二次参加童试，在乐亭县和永平府卢龙通过县试、府试；秋，李考入永平府中学。",
+        "textSimplified": "1905年，李第二次参加童试，在乐亭县和永平府卢龙通过县试、府试；秋，李考入永平府中学。",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1907,
+      "age": 18,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入北洋法政学堂",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "天津六年",
+      "evidence": "百科",
+      "quote": {
+        "text": "1907年夏，李到天津投考新式学堂，被长芦银行实习所录取，最终选定北洋法政专门学堂。",
+        "textSimplified": "1907年夏，李到天津投考新式学堂，被长芦银行实习所录取，最终选定北洋法政专门学堂。",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
     },
     {
       "year": 1913,
@@ -44,7 +101,30 @@
       "score": 30,
       "delta": 15,
       "rationale": "留学",
-      "summary": "留学",
+      "summary": "反袁文章",
+      "evidence": "百科",
+      "quote": {
+        "text": "1913年天津法政专门学校毕业后，去日本早稻田大学读书。",
+        "textSimplified": "1913年天津法政专门学校毕业后，去日本早稻田大学读书。",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1916,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回国办报",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 0,
+      "rationale": "报人",
+      "summary": "《晨钟报》总编辑",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -62,7 +142,53 @@
       "score": 56,
       "delta": 26,
       "rationale": "传播者",
-      "summary": "庶民的胜利",
+      "summary": "《庶民的胜利》",
+      "evidence": "百科",
+      "quote": {
+        "text": "1918年1月李担任北京大学图书馆主任，由章士钊向北京大学校长蔡元培推荐。",
+        "textSimplified": "1918年1月李担任北京大学图书馆主任，由章士钊向北京大学校长蔡元培推荐。",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1919,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《我的马克思主义观》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 4,
+      "rationale": "先驱",
+      "summary": "五四，最早系统介绍马克思主义",
+      "evidence": "百科",
+      "quote": {
+        "text": "李在《每周评论》第三号上发表社论《新纪元》；1月15日参加筹备学生游艺大会",
+        "textSimplified": "李在《每周评论》第三号上发表社论《新纪元》；1月15日参加筹备学生游艺大会",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1920,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北京共产党小组",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 0,
+      "rationale": "创党",
+      "summary": "南陈北李",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -78,9 +204,55 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 66,
-      "delta": 10,
+      "delta": 6,
       "rationale": "领袖",
-      "summary": "北方区",
+      "summary": "北方区负责人",
+      "evidence": "百科",
+      "quote": {
+        "text": "北京大学马克思学说研究会在《北京大学日刊》刊登《发起马克思学说研究会启事》",
+        "textSimplified": "北京大学马克思学说研究会在《北京大学日刊》刊登《发起马克思学说研究会启事》",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1924,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国民党一大中央执委",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 70,
+      "delta": 4,
+      "rationale": "要人",
+      "summary": "国共合作北方领导人",
+      "evidence": "百科",
+      "quote": {
+        "text": "李主持在北京中国国民党全体党员大会会议在北京大学召开，选举李、谭熙鸿、许宝驹等6人为出席中国国民党第一次代表大会代表",
+        "textSimplified": "李主持在北京中国国民党全体党员大会会议在北京大学召开，选举李、谭熙鸿、许宝驹等6人为出席中国国民党第一次代表大会代表",
+        "source": "维基百科「李大钊」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 1926,
+      "age": 37,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "三一八后避入苏联使馆",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 56,
+      "delta": 0,
+      "rationale": "通缉",
+      "summary": "被段祺瑞政府通缉",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -96,9 +268,9 @@
       "crisis": "绝境",
       "crisisPenalty": 60,
       "score": 2,
-      "delta": -64,
+      "delta": -68,
       "rationale": "殉难",
-      "summary": "绞刑",
+      "summary": "苏联使馆被搜查，绞刑",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -111,17 +283,29 @@
     "retention": 0.9,
     "reason": "革命先驱",
     "score": 1.8,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "因被北洋政府指控其裹通苏联颠覆中华民国北洋政府被捕，后被北洋政府督军统帅兼代理总统职权的张作霖判处绞刑。",
+      "textSimplified": "因被北洋政府指控其裹通苏联颠覆中华民国北洋政府被捕，后被北洋政府督军统帅兼代理总统职权的张作霖判处绞刑。",
+      "source": "维基百科「李大钊」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%A4%A7%E9%92%8A"
+    },
+    "verified": true
   },
   "posthumous": [
+    {
+      "year": 1933,
+      "title": "公葬万安公墓",
+      "score": 80,
+      "rationale": "北平各界送葬",
+      "inferred": false
+    },
     {
       "year": 2026,
       "title": "今日评价",
       "score": 88,
       "rationale": "革命先驱",
-      "inferred": true
+      "inferred": false
     }
   ],
   "legacy": {
@@ -131,9 +315,9 @@
     "rationale": "革命先驱"
   },
   "peak": {
-    "title": "中共创始人之一",
-    "age": 32,
-    "score": 66
+    "title": "国民党一大中央执委",
+    "age": 35,
+    "score": 70
   },
   "trough": {
     "title": "被张作霖逮捕",
@@ -148,8 +332,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 9,
+    "quotesClaimed": 9,
     "author": "claude"
   }
 }

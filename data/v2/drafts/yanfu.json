@@ -22,7 +22,48 @@
       "crisisPenalty": 0,
       "summary": "医家",
       "rationale": "平民",
-      "quote": null
+      "quote": {
+        "find": [
+          "严复出生于福建"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1866,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "父病逝家道中落",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "学馆中辍",
+      "rationale": "家贫",
+      "quote": {
+        "find": [
+          "严复父亲病逝"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1867,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入福州船政学堂",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "考第一名",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "入左宗棠设立的福州船政学堂"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1877,
@@ -33,22 +74,86 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "海军",
+      "summary": "格林威治皇家海军学院",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴英国学习海军"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1880,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "北洋水师学堂",
+      "title": "北洋水师学堂总教习",
       "tier": "成名",
       "tierScore": 44,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "总办",
+      "summary": "李鸿章调任",
       "rationale": "教育",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴天津的北洋水师学堂"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1890,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "升总办",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北洋水师学堂总办，四次乡试不第",
+      "rationale": "总办",
+      "quote": {
+        "find": [
+          "升为北洋水师学堂总办"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《论世变之亟》",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "甲午战败后在《直报》连发政论",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "中日甲午战争后在天津"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1897,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创《国闻报》",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "天津，与《时务报》南北呼应",
+      "rationale": "报人",
+      "quote": {
+        "find": [
+          "夏曾佑等在天津创"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1898,
@@ -59,9 +164,68 @@
       "tierScore": 62,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "物竞天择",
+      "summary": "物竞天择，适者生存；光绪召见",
       "rationale": "名著",
-      "quote": null
+      "quote": {
+        "find": [
+          "光绪帝命严复来京觐见"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "京师大学堂译书局总办",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "译《原富》《群己权界论》",
+      "rationale": "翻译",
+      "quote": {
+        "find": [
+          "赴北京任京师大学堂附设译书"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1906,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复旦公学校长",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第二任校长",
+      "rationale": "教育",
+      "quote": {
+        "find": [
+          "任复旦公学校长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "钦赐文科进士",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "资政院议员",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "清廷赐予文科进"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1912,
@@ -72,9 +236,14 @@
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "校长",
-      "rationale": "学术",
-      "quote": null
+      "summary": "京师大学堂改名",
+      "rationale": "校长",
+      "quote": {
+        "find": [
+          "任首任校长"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1915,
@@ -85,18 +254,64 @@
       "tierScore": 40,
       "crisis": "大败",
       "crisisPenalty": 25,
-      "summary": "列名",
+      "summary": "列名六君子，为袁世凯称帝造势",
       "rationale": "名誉受损",
-      "quote": null
+      "quote": {
+        "find": [
+          "与杨度、梁启超等10人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "袁死后险被惩办",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "黎元洪下令惩办帝制祸首",
+      "rationale": "困顿",
+      "quote": {
+        "find": [
+          "大总统黎元洪命令惩办祸首"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回福州养病",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "哮喘、鸦片瘾",
+      "rationale": "病",
+      "quote": {
+        "find": [
+          "因哮喘病久治无效"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1921,
-    "title": "病逝",
+    "title": "病逝福州",
     "retention": 0.9,
     "reason": "翻译影响一代人",
-    "quote": null
+    "quote": {
+      "find": [
+        "在福州郎官巷住宅与世长辞"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

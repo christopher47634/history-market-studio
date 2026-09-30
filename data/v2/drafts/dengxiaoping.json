@@ -22,7 +22,12 @@
       "crisisPenalty": 0,
       "summary": "地主",
       "rationale": "乡绅",
-      "quote": null
+      "quote": {
+        "find": [
+          "原名先圣"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1920,
@@ -33,9 +38,45 @@
       "tierScore": 28,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "勤工俭学",
+      "summary": "在工厂做工，加入旅欧少共",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "留法勤工俭学预备学校在重庆总商会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1926,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赴苏联学习",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "莫斯科中山大学",
       "rationale": "留学",
       "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回国任中央秘书长",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "八七会议",
+      "rationale": "中枢",
+      "quote": {
+        "find": [
+          "邓小平由苏联途经蒙古回到中国"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1929,
@@ -46,9 +87,27 @@
       "tierScore": 70,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "红七军",
+      "summary": "红七军政委",
       "rationale": "领导",
       "quote": null
+    },
+    {
+      "year": 1931,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "瑞金县委书记",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "红七军失利后到中央苏区",
+      "rationale": "地方",
+      "quote": {
+        "find": [
+          "邓小平担任中共江西瑞金县委书记"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1933,
@@ -59,8 +118,65 @@
       "tierScore": 44,
       "crisis": "大败",
       "crisisPenalty": 30,
-      "summary": "邓毛谢古",
+      "summary": "邓毛谢古，撤职",
       "rationale": "一落",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "遵义会议中央秘书长",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "参加遵义会议",
+      "rationale": "复起",
+      "quote": null
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "一二九师政委",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "刘邓搭档",
+      "rationale": "统帅",
+      "quote": {
+        "find": [
+          "中共中央军委正式任命邓为第129师政训"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1945,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中央委员",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "七大",
+      "rationale": "高层",
+      "quote": null
+    },
+    {
+      "year": 1947,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "千里跃进大别山",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "中原局书记，损失重大",
+      "rationale": "大功",
       "quote": null
     },
     {
@@ -77,6 +193,37 @@
       "quote": null
     },
     {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "西南局第一书记",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "主政西南",
+      "rationale": "方面大员",
+      "quote": null
+    },
+    {
+      "year": 1952,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "政务院副总理",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "调入中央",
+      "rationale": "中枢",
+      "quote": {
+        "find": [
+          "出任中央人民政府政务院"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1956,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -90,6 +237,24 @@
       "quote": null
     },
     {
+      "year": 1962,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "七千人大会",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "调整国民经济",
+      "rationale": "调整",
+      "quote": {
+        "find": [
+          "七千人大会正式开始"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1966,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -98,20 +263,69 @@
       "tierScore": 40,
       "crisis": "绝境",
       "crisisPenalty": 45,
-      "summary": "下放江西",
+      "summary": "与刘少奇同遭批判",
       "rationale": "二落",
       "quote": null
+    },
+    {
+      "year": 1969,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下放江西",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "新建县拖拉机修配厂劳动",
+      "rationale": "下放",
+      "quote": null
+    },
+    {
+      "year": 1973,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "复出",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "回到北京，任副总理",
+      "rationale": "复起",
+      "quote": {
+        "find": [
+          "邓离开江西，回到北京中南海旧居"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1974,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "联合国大会",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "阐述三个世界理论",
+      "rationale": "外交",
+      "quote": {
+        "find": [
+          "邓作为中国代表团团长出席联合国大会第六"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1975,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "复出主持工作",
+      "title": "主持整顿",
       "tier": "一方之主",
       "tierScore": 88,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "整顿",
+      "summary": "第一副总理，全面整顿",
       "rationale": "复起",
       "quote": null
     },
@@ -124,8 +338,21 @@
       "tierScore": 44,
       "crisis": "绝境",
       "crisisPenalty": 40,
-      "summary": "三落",
+      "summary": "天安门事件后撤职",
       "rationale": "三落",
+      "quote": null
+    },
+    {
+      "year": 1977,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第三次复出",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "恢复高考，真理标准讨论",
+      "rationale": "复起",
       "quote": null
     },
     {
@@ -139,6 +366,86 @@
       "crisisPenalty": 0,
       "summary": "改革开放",
       "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "在1978年召开的中共十一届三中全会上确立领导地位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1979,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "访美，对越作战",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中美建交",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1984,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "一国两制",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中英联合声明",
+      "rationale": "统一",
+      "quote": null
+    },
+    {
+      "year": 1985,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "百万大裁军",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "精简军队",
+      "rationale": "军改",
+      "quote": {
+        "find": [
+          "主导中国人民解放军的百万大裁军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1987,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "退出中央委员会",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十三大",
+      "rationale": "退让",
+      "quote": {
+        "find": [
+          "邓辞去所"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1989,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辞去军委主席",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "政治风波后完全退休",
+      "rationale": "退休",
       "quote": null
     },
     {
@@ -152,7 +459,12 @@
       "crisisPenalty": 0,
       "summary": "南巡",
       "rationale": "定调",
-      "quote": null
+      "quote": {
+        "find": [
+          "邓小平南巡"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -161,7 +473,12 @@
     "title": "逝世",
     "retention": 0.97,
     "reason": "改革开放",
-    "quote": null
+    "quote": {
+      "find": [
+        "邓小平逝世，享年93岁"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "文明塑造者",

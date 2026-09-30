@@ -22,7 +22,48 @@
       "crisisPenalty": 0,
       "summary": "耕读之家",
       "rationale": "平民",
-      "quote": null
+      "quote": {
+        "find": [
+          "原名子城"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1833,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考取秀才",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第七次应考",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "应湘乡县试，考取秀才"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1835,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "会试落第",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "寓居京师读书",
+      "rationale": "落第",
+      "quote": {
+        "find": [
+          "曾国藩会试未中"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1838,
@@ -35,20 +76,66 @@
       "crisisPenalty": 0,
       "summary": "翰林",
       "rationale": "入仕",
-      "quote": null
+      "quote": {
+        "find": [
+          "曾国藩再次参加会试"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1843,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "升侍讲",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翰林院",
+      "rationale": "京官",
+      "quote": {
+        "find": [
+          "升侍讲"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1847,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "内阁学士兼礼部侍郎",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十年七迁",
+      "rationale": "京官",
+      "quote": {
+        "find": [
+          "升任内阁学士加礼部侍郎"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1849,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "礼部侍郎",
+      "title": "礼部右侍郎",
       "tier": "方面名家",
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "十年七迁",
+      "summary": "遍兼五部侍郎",
       "rationale": "京官",
-      "quote": null
+      "quote": {
+        "find": [
+          "授礼部右侍郎"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1853,
@@ -61,7 +148,12 @@
       "crisisPenalty": 0,
       "summary": "湘军",
       "rationale": "起步",
-      "quote": null
+      "quote": {
+        "find": [
+          "曾国藩接到帮办湖南团练"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1854,
@@ -82,6 +174,73 @@
       }
     },
     {
+      "year": 1854,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "湘潭大捷、克武昌",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "湘军首胜",
+      "rationale": "转机",
+      "quote": null
+    },
+    {
+      "year": 1855,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "湖口水师败绩",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "座船被夺，再欲自尽",
+      "rationale": "困顿",
+      "quote": {
+        "find": [
+          "曾攻江西九江、湖口"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1857,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "丁忧回籍",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "兵权被夺，反省",
+      "rationale": "低谷",
+      "quote": {
+        "find": [
+          "父亲曾麟书去世"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1858,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复出攻克九江",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "夺回九江",
+      "rationale": "复起",
+      "quote": {
+        "find": [
+          "曾国藩占领九江"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1860,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -94,7 +253,25 @@
       "rationale": "方面",
       "quote": {
         "find": [
-          "兩江總督"
+          "授曾两江总督"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1861,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "攻陷安庆",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "曾国荃部",
+      "rationale": "转折",
+      "quote": {
+        "find": [
+          "曾国藩督其弟曾国荃部攻陷安庆"
         ],
         "source": 0
       }
@@ -108,9 +285,58 @@
       "tierScore": 88,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "太平天国灭亡",
+      "summary": "太平天国灭亡，封一等毅勇侯",
       "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "曾国藩和曾国荃率湘军攻破"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1865,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创江南制造局",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "洋务",
+      "rationale": "洋务",
       "quote": null
+    },
+    {
+      "year": 1865,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北上剿捻失利",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "被李鸿章接替",
+      "rationale": "失利",
+      "quote": null
+    },
+    {
+      "year": 1868,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "直隶总督",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "武英殿大学士",
+      "rationale": "督抚",
+      "quote": {
+        "find": [
+          "曾改任直隶总督"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1870,
@@ -129,6 +355,19 @@
         ],
         "source": 0
       }
+    },
+    {
+      "year": 1870,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回任两江",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "派遣幼童留美",
+      "rationale": "洋务",
+      "quote": null
     }
   ],
   "posthumous": [],
@@ -137,7 +376,12 @@
     "title": "卒",
     "retention": 0.95,
     "reason": "湘军、淮军",
-    "quote": null
+    "quote": {
+      "find": [
+        "脚部抽筋并且有失语"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

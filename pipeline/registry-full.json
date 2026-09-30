@@ -257,7 +257,13 @@
   "id": "zengguofan",
   "name": "曾国藩",
   "dynasty": "清",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "曾国藩",
+    "label": "维基百科「曾国藩」"
+   }
+  ],
   "wiki": "曾国藩",
   "note": "清史稿本传未能定位，暂无正史原文"
  },
@@ -1036,6 +1042,11 @@
    {
     "title": "清史稿/卷412",
     "label": "《清史稿·卷四百十二》"
+   },
+   {
+    "site": "wp",
+    "title": "左宗棠",
+    "label": "维基百科「左宗棠」"
    }
   ],
   "wiki": "左宗棠",
@@ -1049,6 +1060,11 @@
    {
     "title": "清史稿/卷411",
     "label": "《清史稿·卷四百十一》"
+   },
+   {
+    "site": "wp",
+    "title": "李鸿章",
+    "label": "维基百科「李鸿章」"
    }
   ],
   "wiki": "李鸿章",
@@ -1062,6 +1078,11 @@
    {
     "title": "清史稿/卷214",
     "label": "《清史稿·卷二百一十四 列传一》"
+   },
+   {
+    "site": "wp",
+    "title": "慈禧",
+    "label": "维基百科「慈禧」"
    }
   ],
   "wiki": "慈禧",
@@ -1323,7 +1344,13 @@
   "id": "sunzhongshan",
   "name": "孙中山",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "孙中山",
+    "label": "维基百科「孙中山」"
+   }
+  ],
   "wiki": "孙中山",
   "note": ""
  },
@@ -1331,7 +1358,13 @@
   "id": "huangxing",
   "name": "黄兴",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "黄兴",
+    "label": "维基百科「黄兴」"
+   }
+  ],
   "wiki": "黄兴",
   "note": ""
  },
@@ -1339,7 +1372,13 @@
   "id": "qiujin",
   "name": "秋瑾",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "秋瑾",
+    "label": "维基百科「秋瑾」"
+   }
+  ],
   "wiki": "秋瑾",
   "note": ""
  },
@@ -1347,7 +1386,13 @@
   "id": "liangqichao",
   "name": "梁启超",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "梁启超",
+    "label": "维基百科「梁启超」"
+   }
+  ],
   "wiki": "梁启超",
   "note": ""
  },
@@ -1355,7 +1400,13 @@
   "id": "kangyouwei",
   "name": "康有为",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "康有为",
+    "label": "维基百科「康有为」"
+   }
+  ],
   "wiki": "康有为",
   "note": ""
  },
@@ -1363,7 +1414,13 @@
   "id": "yanfu",
   "name": "严复",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "严复",
+    "label": "维基百科「严复」"
+   }
+  ],
   "wiki": "严复",
   "note": ""
  },
@@ -1371,7 +1428,13 @@
   "id": "caiyuanpei",
   "name": "蔡元培",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "蔡元培",
+    "label": "维基百科「蔡元培」"
+   }
+  ],
   "wiki": "蔡元培",
   "note": ""
  },
@@ -1379,7 +1442,13 @@
   "id": "luxunwriter",
   "name": "鲁迅",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "鲁迅",
+    "label": "维基百科「鲁迅」"
+   }
+  ],
   "wiki": "鲁迅",
   "note": ""
  },
@@ -1387,7 +1456,13 @@
   "id": "hushi",
   "name": "胡适",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "胡适",
+    "label": "维基百科「胡适」"
+   }
+  ],
   "wiki": "胡适",
   "note": ""
  },
@@ -1395,7 +1470,13 @@
   "id": "chenduxiu",
   "name": "陈独秀",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "陈独秀",
+    "label": "维基百科「陈独秀」"
+   }
+  ],
   "wiki": "陈独秀",
   "note": ""
  },
@@ -1403,7 +1484,13 @@
   "id": "lidazhao",
   "name": "李大钊",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "李大钊",
+    "label": "维基百科「李大钊」"
+   }
+  ],
   "wiki": "李大钊",
   "note": ""
  },
@@ -1411,7 +1498,13 @@
   "id": "songqingling",
   "name": "宋庆龄",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "宋庆龄",
+    "label": "维基百科「宋庆龄」"
+   }
+  ],
   "wiki": "宋庆龄",
   "note": ""
  },
@@ -1419,7 +1512,13 @@
   "id": "linhuiyin",
   "name": "林徽因",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "林徽因",
+    "label": "维基百科「林徽因」"
+   }
+  ],
   "wiki": "林徽因",
   "note": ""
  },
@@ -1427,7 +1526,13 @@
   "id": "meilanfang",
   "name": "梅兰芳",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "梅兰芳",
+    "label": "维基百科「梅兰芳」"
+   }
+  ],
   "wiki": "梅兰芳",
   "note": ""
  },
@@ -1435,7 +1540,13 @@
   "id": "zhouenlai",
   "name": "周恩来",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "周恩来",
+    "label": "维基百科「周恩来」"
+   }
+  ],
   "wiki": "周恩来",
   "note": ""
  },
@@ -1443,7 +1554,13 @@
   "id": "dengxiaoping",
   "name": "邓小平",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "邓小平",
+    "label": "维基百科「邓小平」"
+   }
+  ],
   "wiki": "邓小平",
   "note": ""
  },
@@ -1451,7 +1568,13 @@
   "id": "zhude",
   "name": "朱德",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "朱德",
+    "label": "维基百科「朱德」"
+   }
+  ],
   "wiki": "朱德",
   "note": ""
  },
@@ -1459,7 +1582,13 @@
   "id": "qianxuesen",
   "name": "钱学森",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "钱学森",
+    "label": "维基百科「钱学森」"
+   }
+  ],
   "wiki": "钱学森",
   "note": ""
  },
@@ -1467,7 +1596,13 @@
   "id": "dengjiaxian",
   "name": "邓稼先",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "邓稼先",
+    "label": "维基百科「邓稼先」"
+   }
+  ],
   "wiki": "邓稼先",
   "note": ""
  },
@@ -1475,7 +1610,13 @@
   "id": "yuanlongping",
   "name": "袁隆平",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "袁隆平",
+    "label": "维基百科「袁隆平」"
+   }
+  ],
   "wiki": "袁隆平",
   "note": ""
  },
@@ -1483,7 +1624,13 @@
   "id": "hualuogeng",
   "name": "华罗庚",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "华罗庚",
+    "label": "维基百科「华罗庚」"
+   }
+  ],
   "wiki": "华罗庚",
   "note": ""
  },
@@ -1491,7 +1638,13 @@
   "id": "qiansanqiang",
   "name": "钱三强",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "钱三强",
+    "label": "维基百科「钱三强」"
+   }
+  ],
   "wiki": "钱三强",
   "note": ""
  },
@@ -1499,7 +1652,13 @@
   "id": "zhukezhen",
   "name": "竺可桢",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "竺可桢",
+    "label": "维基百科「竺可桢」"
+   }
+  ],
   "wiki": "竺可桢",
   "note": ""
  },
@@ -1507,7 +1666,13 @@
   "id": "lisiguang",
   "name": "李四光",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "李四光",
+    "label": "维基百科「李四光」"
+   }
+  ],
   "wiki": "李四光",
   "note": ""
  },
@@ -1816,6 +1981,11 @@
    {
     "title": "清史稿/卷486",
     "label": "《清史稿·卷四百八十六》"
+   },
+   {
+    "site": "wp",
+    "title": "魏源",
+    "label": "维基百科「魏源」"
    }
   ],
   "wiki": "魏源",
@@ -1825,7 +1995,13 @@
   "id": "zhantianyou",
   "name": "詹天佑",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "詹天佑",
+    "label": "维基百科「詹天佑」"
+   }
+  ],
   "wiki": "詹天佑",
   "note": ""
  },
@@ -1833,7 +2009,13 @@
   "id": "zhangjian",
   "name": "张謇",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "张謇",
+    "label": "维基百科「张謇」"
+   }
+  ],
   "wiki": "张謇",
   "note": ""
  },
@@ -1841,7 +2023,13 @@
   "id": "qibaishi",
   "name": "齐白石",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "齐白石",
+    "label": "维基百科「齐白石」"
+   }
+  ],
   "wiki": "齐白石",
   "note": ""
  },
@@ -1849,7 +2037,13 @@
   "id": "caie",
   "name": "蔡锷",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "蔡锷",
+    "label": "维基百科「蔡锷」"
+   }
+  ],
   "wiki": "蔡锷",
   "note": ""
  },
@@ -1857,7 +2051,13 @@
   "id": "xubeihong",
   "name": "徐悲鸿",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "徐悲鸿",
+    "label": "维基百科「徐悲鸿」"
+   }
+  ],
   "wiki": "徐悲鸿",
   "note": ""
  },
@@ -1865,7 +2065,13 @@
   "id": "maoyisheng",
   "name": "茅以升",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "茅以升",
+    "label": "维基百科「茅以升」"
+   }
+  ],
   "wiki": "茅以升",
   "note": ""
  },
@@ -3323,6 +3529,11 @@
    {
     "title": "清史稿/卷460",
     "label": "《清史稿·卷四百六十》"
+   },
+   {
+    "site": "wp",
+    "title": "邓世昌",
+    "label": "维基百科「邓世昌」"
    }
   ],
   "wiki": "邓世昌",
@@ -3332,7 +3543,13 @@
   "id": "chenjiageng",
   "name": "陈嘉庚",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "陈嘉庚",
+    "label": "维基百科「陈嘉庚」"
+   }
+  ],
   "wiki": "陈嘉庚",
   "note": ""
  },
@@ -3340,7 +3557,13 @@
   "id": "nieer",
   "name": "聂耳",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "聂耳",
+    "label": "维基百科「聂耳」"
+   }
+  ],
   "wiki": "聂耳",
   "note": ""
  },
@@ -3348,7 +3571,13 @@
   "id": "xianxinghai",
   "name": "冼星海",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "冼星海",
+    "label": "维基百科「冼星海」"
+   }
+  ],
   "wiki": "冼星海",
   "note": ""
  },
@@ -3356,7 +3585,13 @@
   "id": "qianweichang",
   "name": "钱伟长",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "钱伟长",
+    "label": "维基百科「钱伟长」"
+   }
+  ],
   "wiki": "钱伟长",
   "note": ""
  },
@@ -3364,7 +3599,13 @@
   "id": "tongdizhou",
   "name": "童第周",
   "dynasty": "近现代",
-  "ws": [],
+  "ws": [
+   {
+    "site": "wp",
+    "title": "童第周",
+    "label": "维基百科「童第周」"
+   }
+  ],
   "wiki": "童第周",
   "note": ""
  }

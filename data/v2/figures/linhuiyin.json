@@ -11,7 +11,13 @@
   },
   "lifeSpan": 51,
   "thesis": "建筑学家，参与设计国徽与人民英雄纪念碑。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「林徽因」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%BD%E5%9B%A0",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1904,
@@ -32,6 +38,29 @@
       "verified": false
     },
     {
+      "year": 1920,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随父游欧",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "游学",
+      "summary": "伦敦，萌生建筑志向",
+      "evidence": "百科",
+      "quote": {
+        "text": "1920年和父亲林长民一起赴伦敦生活，开始对建筑感兴趣。",
+        "textSimplified": "1920年和父亲林长民一起赴伦敦生活，开始对建筑感兴趣。",
+        "source": "维基百科「林徽因」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%BD%E5%9B%A0"
+      },
+      "verified": true
+    },
+    {
       "year": 1924,
       "age": 20,
       "yearCertainty": "确知",
@@ -44,10 +73,38 @@
       "score": 36,
       "delta": 6,
       "rationale": "留学",
-      "summary": "建筑",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "建筑系不收女生，改读美术选修建筑",
+      "evidence": "百科",
+      "quote": {
+        "text": "1924年和梁思成一起赴美国宾夕法尼亚大学学习建筑，由于宾大建筑系在1934年之前是不招收女生",
+        "textSimplified": "1924年和梁思成一起赴美国宾夕法尼亚大学学习建筑，由于宾大建筑系在1934年之前是不招收女生",
+        "source": "维基百科「林徽因」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%BD%E5%9B%A0"
+      },
+      "verified": true
+    },
+    {
+      "year": 1928,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与梁思成结婚回国",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 40,
+      "delta": 4,
+      "rationale": "教学",
+      "summary": "东北大学建筑系",
+      "evidence": "百科",
+      "quote": {
+        "text": "1928年在加拿大与梁思成结婚。",
+        "textSimplified": "1928年在加拿大与梁思成结婚。",
+        "source": "维基百科「林徽因」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%BD%E5%9B%A0"
+      },
+      "verified": true
     },
     {
       "year": 1930,
@@ -60,9 +117,27 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 50,
-      "delta": 14,
+      "delta": 10,
       "rationale": "学术",
-      "summary": "佛光寺",
+      "summary": "走遍十五省",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1937,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "发现佛光寺",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 0,
+      "rationale": "发现",
+      "summary": "确认唐代木构",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -86,8 +161,31 @@
       "verified": false
     },
     {
-      "year": 1949,
-      "age": 45,
+      "year": 1946,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "清华建筑系",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 56,
+      "delta": 41,
+      "rationale": "学术",
+      "summary": "与梁思成创系",
+      "evidence": "百科",
+      "quote": {
+        "text": "1946年，依梁思成建议，成立清华大学建筑系。",
+        "textSimplified": "1946年，依梁思成建议，成立清华大学建筑系。",
+        "source": "维基百科「林徽因」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%BD%E5%9B%A0"
+      },
+      "verified": true
+    },
+    {
+      "year": 1950,
+      "age": 46,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "设计国徽",
@@ -96,9 +194,27 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 62,
-      "delta": 47,
+      "delta": 6,
       "rationale": "国家工程",
       "summary": "国徽",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1952,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "人民英雄纪念碑",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 57,
+      "delta": 0,
+      "rationale": "国家工程",
+      "summary": "病中设计须弥座纹饰",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -111,9 +227,14 @@
     "retention": 0.95,
     "reason": "建筑学",
     "score": 58.9,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "1955年4月1日因肺结核久治不愈，林徽因病逝于同仁医院，4月3日，林徽因追悼会在北京市金鱼胡同贤良寺举行",
+      "textSimplified": "1955年4月1日因肺结核久治不愈，林徽因病逝于同仁医院，4月3日，林徽因追悼会在北京市金鱼胡同贤良寺举行",
+      "source": "维基百科「林徽因」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%BE%BD%E5%9B%A0"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -132,7 +253,7 @@
   },
   "peak": {
     "title": "设计国徽",
-    "age": 45,
+    "age": 46,
     "score": 62
   },
   "trough": {
@@ -148,8 +269,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
     "author": "claude"
   }
 }

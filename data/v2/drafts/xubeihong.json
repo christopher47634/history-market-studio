@@ -22,6 +22,24 @@
       "crisisPenalty": 0,
       "summary": "画师之子",
       "rationale": "贫寒",
+      "quote": {
+        "find": [
+          "自幼随父徐达章习诗文书画"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "乡间教画",
+      "tier": "布衣",
+      "tierScore": 14,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父病，养家",
+      "rationale": "养家",
       "quote": null
     },
     {
@@ -38,6 +56,50 @@
       "quote": null
     },
     {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复旦半工半读",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "结识康有为",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "入复旦大学法文系半工半读"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "留学日本",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "学美术",
+      "rationale": "游学",
+      "quote": null
+    },
+    {
+      "year": 1918,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北大画法研究会导师",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "蔡元培聘",
+      "rationale": "导师",
+      "quote": null
+    },
+    {
       "year": 1919,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -48,10 +110,33 @@
       "crisisPenalty": 0,
       "summary": "巴黎美院",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴法国留学"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国执教",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南国艺术学院、北平艺术学院",
+      "rationale": "领军",
+      "quote": {
+        "find": [
+          "1927年回国"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1929,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "中央大学艺术系主任",
@@ -61,7 +146,74 @@
       "crisisPenalty": 0,
       "summary": "教授",
       "rationale": "领军",
+      "quote": {
+        "find": [
+          "于国立中央大学任教"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1933,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "欧洲巡展中国画",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中国近代绘画展",
+      "rationale": "国际",
+      "quote": {
+        "find": [
+          "在世界各地举办中国美术展览和个人画展"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1939,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "南洋义卖",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "筹赈抗战",
+      "rationale": "抗战",
       "quote": null
+    },
+    {
+      "year": 1942,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国美术学院筹备",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "病中",
+      "rationale": "病",
+      "quote": null
+    },
+    {
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北平艺专校长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "校长",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "任国立北平艺术专科学校校长"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1949,
@@ -83,7 +235,12 @@
     "title": "病逝",
     "retention": 0.95,
     "reason": "奔马",
-    "quote": null
+    "quote": {
+      "find": [
+        "徐悲鸿因再次脑中风于北京"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

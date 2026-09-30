@@ -22,7 +22,48 @@
       "crisisPenalty": 0,
       "summary": "宋氏家族",
       "rationale": "名门",
-      "quote": null
+      "quote": {
+        "find": [
+          "宋庆龄出生于1893年1月27日"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "卫斯理安女子学院毕业",
+      "tier": "布衣",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "赴日本",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "1913年6月毕业"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1914,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "任孙中山英文秘书",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "接替宋霭龄",
+      "rationale": "秘书",
+      "quote": {
+        "find": [
+          "接替大姐宋霭龄担任孙中山英文秘书"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1915,
@@ -33,8 +74,21 @@
       "tierScore": 48,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "东京",
+      "summary": "东京，冲破家庭反对",
       "rationale": "革命伴侣",
+      "quote": null
+    },
+    {
+      "year": 1922,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "永丰舰之难",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "陈炯明兵变中流产",
+      "rationale": "遇险",
       "quote": null
     },
     {
@@ -51,6 +105,24 @@
       "quote": null
     },
     {
+      "year": 1926,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国民党中执委",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国民党二大当选",
+      "rationale": "左派领袖",
+      "quote": {
+        "find": [
+          "宋庆龄于1926年1月当选为中国国民党"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1927,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -59,8 +131,39 @@
       "tierScore": 56,
       "crisis": "受挫",
       "crisisPenalty": 10,
-      "summary": "发表声明",
+      "summary": "发表声明，与蒋介石决裂",
       "rationale": "异见",
+      "quote": null
+    },
+    {
+      "year": 1932,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国民权保障同盟",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "营救政治犯",
+      "rationale": "民权",
+      "quote": {
+        "find": [
+          "她联络中外进步人士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "保卫中国同盟",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "香港，募集抗战物资",
+      "rationale": "抗战",
       "quote": null
     },
     {
@@ -72,8 +175,52 @@
       "tierScore": 86,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "副主席",
+      "summary": "留在大陆，参加开国大典",
       "rationale": "国家领导",
+      "quote": null
+    },
+    {
+      "year": 1951,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "保卫儿童委员会主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "斯大林和平奖",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "被选为中国人民保卫儿童全国委员会主席"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1959,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国家副主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第二届全国人大",
+      "rationale": "国家领导",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "文革中受冲击",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "父母墓被砸，受周恩来保护",
+      "rationale": "受冲击",
       "quote": null
     },
     {
@@ -85,9 +232,14 @@
       "tierScore": 86,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "病中",
+      "summary": "病中入党",
       "rationale": "荣誉",
-      "quote": null
+      "quote": {
+        "find": [
+          "她获全国人大常委会授予"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],

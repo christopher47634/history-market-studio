@@ -78,20 +78,6 @@
       "crisisPenalty": 0
     },
     {
-      "index": 11,
-      "tier": "天下共主",
-      "tierScore": 100,
-      "crisis": "平稳",
-      "crisisPenalty": 0
-    },
-    {
-      "index": 12,
-      "tier": "天下共主",
-      "tierScore": 98,
-      "crisis": "平稳",
-      "crisisPenalty": 0
-    },
-    {
       "index": 13,
       "tier": "天下共主",
       "tierScore": 100,
@@ -102,25 +88,39 @@
       "index": 14,
       "tier": "天下共主",
       "tierScore": 98,
-      "crisis": "受挫：大跃进与公社化造成严重经济困难",
-      "crisisPenalty": 15
+      "crisis": "平稳",
+      "crisisPenalty": 0
     },
     {
       "index": 15,
       "tier": "天下共主",
-      "tierScore": 98,
+      "tierScore": 100,
       "crisis": "平稳",
       "crisisPenalty": 0
     },
     {
       "index": 16,
       "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫：大跃进与公社化造成严重经济困难",
+      "crisisPenalty": 15
+    },
+    {
+      "index": 19,
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0
+    },
+    {
+      "index": 20,
+      "tier": "天下共主",
       "tierScore": 95,
       "crisis": "大败：林彪事件造成政治危机",
       "crisisPenalty": 25
     },
     {
-      "index": 17,
+      "index": 21,
       "tier": "天下共主",
       "tierScore": 95,
       "crisis": "平稳",

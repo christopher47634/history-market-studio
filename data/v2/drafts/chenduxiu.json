@@ -20,9 +20,122 @@
       "tierScore": 25,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "官宦",
+      "summary": "书香门第，幼年丧父",
       "rationale": "士人",
-      "quote": null
+      "quote": {
+        "find": [
+          "陈独秀出生于"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考中秀才",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "院试第一",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "17岁的陈独秀通过院试成为"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1901,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "自费留日",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东京高等师范学校，参加励志会",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "陈独秀自费留学日本"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1903,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "安庆藏书楼演说",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "组织拒俄运动，遭通缉再赴日本",
+      "rationale": "通缉",
+      "quote": {
+        "find": [
+          "在藏书楼组织抗议"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创《安徽俗话报》",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "白话报，岳王会",
+      "rationale": "报人",
+      "quote": {
+        "find": [
+          "陈独秀和房秩五、吴守一创办白话文"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "安徽都督府秘书长",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "辛亥革命后参与安徽新政",
+      "rationale": "入仕",
+      "quote": {
+        "find": [
+          "陈独秀应安徽军政府都督孙毓"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "二次革命失败被捕",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "追随柏文蔚反袁，险被枪决",
+      "rationale": "失败",
+      "quote": {
+        "find": [
+          "陈独秀追随柏文蔚参加反对袁世凯"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1915,
@@ -33,9 +146,14 @@
       "tierScore": 62,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "新文化",
+      "summary": "新文化运动精神领袖",
       "rationale": "舆论",
-      "quote": null
+      "quote": {
+        "find": [
+          "创办《新青年》杂志"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1917,
@@ -46,9 +164,45 @@
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "蔡元培聘",
+      "summary": "蔡元培聘任",
       "rationale": "学术",
+      "quote": {
+        "find": [
+          "蔡元培就任北京大学校长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "散发传单被捕",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "五四运动中被捕三个月，被迫离开北大",
+      "rationale": "入狱",
       "quote": null
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "筹建共产党",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "上海共产党早期组织",
+      "rationale": "创党",
+      "quote": {
+        "find": [
+          "成为中国共产党主要创始人及早期主要领导"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1921,
@@ -59,9 +213,32 @@
       "tierScore": 80,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "中共一大",
+      "summary": "中共一大缺席当选",
       "rationale": "领袖",
-      "quote": null
+      "quote": {
+        "find": [
+          "中共一大在上海召开"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1923,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中共三大",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "主持广州三大，决定国共合作",
+      "rationale": "主持",
+      "quote": {
+        "find": [
+          "陈独秀在那里主持召开中共三大"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1927,
@@ -72,9 +249,14 @@
       "tierScore": 44,
       "crisis": "大败",
       "crisisPenalty": 35,
-      "summary": "右倾",
+      "summary": "右倾机会主义，辞总书记职",
       "rationale": "失势",
-      "quote": null
+      "quote": {
+        "find": [
+          "陈独秀辞职以后"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1929,
@@ -85,9 +267,14 @@
       "tierScore": 36,
       "crisis": "大败",
       "crisisPenalty": 20,
-      "summary": "开除",
+      "summary": "转向托派",
       "rationale": "失势",
-      "quote": null
+      "quote": {
+        "find": [
+          "与彭述之、尹宽等人一起创建托派组织"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1932,
@@ -98,9 +285,32 @@
       "tierScore": 30,
       "crisis": "绝境",
       "crisisPenalty": 40,
-      "summary": "国民党判刑",
+      "summary": "国民党判刑十三年",
       "rationale": "入狱",
-      "quote": null
+      "quote": {
+        "find": [
+          "国民政府判处他犯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "提前出狱",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "抗战爆发获释，脱离托派",
+      "rationale": "出狱",
+      "quote": {
+        "find": [
+          "陈独秀提前获释"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],

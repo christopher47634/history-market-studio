@@ -22,20 +22,66 @@
       "crisisPenalty": 0,
       "summary": "佃农",
       "rationale": "贫寒",
-      "quote": null
+      "quote": {
+        "find": [
+          "原名朱代珍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考中秀才",
+      "tier": "布衣",
+      "tierScore": 16,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "用朱建德之名应考",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "用“朱建德”的名字考中"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1909,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "考入云南讲武堂",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "徒步三月到昆明，加入同盟会",
+      "rationale": "从军",
+      "quote": {
+        "find": [
+          "考入云南讲武堂"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1911,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "云南讲武堂参加辛亥",
+      "title": "昆明重九起义",
       "tier": "初起",
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "滇军",
+      "summary": "讲武堂毕业，参加辛亥起义",
       "rationale": "军人",
-      "quote": null
+      "quote": {
+        "find": [
+          "朱德从讲武堂毕业"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1916,
@@ -46,22 +92,104 @@
       "tierScore": 52,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "旅长",
+      "summary": "蔡锷部支队长，泸州纳溪血战",
       "rationale": "名将",
-      "quote": null
+      "quote": {
+        "find": [
+          "在蔡锷滇军中参加护国战争"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "滇军旅长",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "靖国军第十二旅少将旅长",
+      "rationale": "名将",
+      "quote": {
+        "find": [
+          "升至滇军靖国军12旅旅长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "云南省警察厅长",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "顾品珍提拔",
+      "rationale": "高官",
+      "quote": {
+        "find": [
+          "任云南省警察厅长"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1922,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "赴德留学",
+      "title": "弃官赴德留学",
       "tier": "成名",
       "tierScore": 44,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "放弃高官",
+      "summary": "在柏林由周恩来介绍入党",
       "rationale": "转变",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴德国留学期间加入中国共产党"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1925,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "在德两次被捕",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "被驱逐出境，转赴莫斯科",
+      "rationale": "被逐",
+      "quote": {
+        "find": [
+          "朱德在德国期间因参加工人运动两次被捕"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南昌起义",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "起义失败，率余部转战粤湘",
+      "rationale": "残部",
+      "quote": {
+        "find": [
+          "他参加南昌起义"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1928,
@@ -72,9 +200,50 @@
       "tierScore": 76,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "朱毛",
+      "summary": "湘南起义后与毛泽东会师，朱毛红军",
       "rationale": "统帅",
-      "quote": null
+      "quote": {
+        "find": [
+          "朱德与陈毅在湘粤赣边境发动“湘南起义”"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1931,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中革军委主席",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "红一方面军总司令",
+      "rationale": "统帅",
+      "quote": {
+        "find": [
+          "中央革命军事委员"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1933,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "第四次反围剿",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与周恩来指挥",
+      "rationale": "胜仗",
+      "quote": {
+        "find": [
+          "指挥红一方面军取得第四次反"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1935,
@@ -85,7 +254,7 @@
       "tierScore": 72,
       "crisis": "大败",
       "crisisPenalty": 20,
-      "summary": "被挟",
+      "summary": "随红四方面军南下，被挟持",
       "rationale": "困境",
       "quote": null
     },
@@ -100,7 +269,66 @@
       "crisisPenalty": 0,
       "summary": "总司令",
       "rationale": "统帅",
-      "quote": null
+      "quote": {
+        "find": [
+          "朱德与周恩来、叶剑英出席蒋介石主持"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1940,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "百团大战",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与彭德怀指挥",
+      "rationale": "抗战",
+      "quote": {
+        "find": [
+          "与彭德怀指挥八路军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1945,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "七大军事报告",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《论解放区战场》，五大书记",
+      "rationale": "核心",
+      "quote": {
+        "find": [
+          "出席中共七大"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "人民解放军总司令",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中央人民政府副主席",
+      "rationale": "国家领导",
+      "quote": {
+        "find": [
+          "以中央军委副主席、人民解"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1955,
@@ -126,7 +354,56 @@
       "crisisPenalty": 0,
       "summary": "委员长",
       "rationale": "国家领导",
+      "quote": {
+        "find": [
+          "当选全国人大常委会委员长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1959,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "庐山会议",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "因批评彭德怀不力被指右倾",
+      "rationale": "挨批",
       "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "文革受冲击",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "被称「黑司令」",
+      "rationale": "受冲击",
+      "quote": null
+    },
+    {
+      "year": 1975,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主持四届人大",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "继续当选委员长",
+      "rationale": "国家领导",
+      "quote": {
+        "find": [
+          "主持第四届全国人大第一次会议"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -135,7 +412,12 @@
     "title": "逝世",
     "retention": 0.97,
     "reason": "红军之父",
-    "quote": null
+    "quote": {
+      "find": [
+        "朱德在北京逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

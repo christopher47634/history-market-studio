@@ -22,6 +22,42 @@
       "crisisPenalty": 0,
       "summary": "钱氏望族",
       "rationale": "名门",
+      "quote": {
+        "find": [
+          "浙江仁和"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1929,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入交通大学",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "机械工程系",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "入国立交通大学机械工程系铁路门"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考取庚款留美",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "清华留美公费生",
+      "rationale": "留学",
       "quote": null
     },
     {
@@ -33,8 +69,44 @@
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "MIT、加州理工",
+      "summary": "MIT硕士，转加州理工师从冯·卡门",
       "rationale": "留学",
+      "quote": {
+        "find": [
+          "以美国退还的庚子赔款公费赴美进修"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1939,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "获博士学位",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "卡门—钱近似",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "获得加州理工学院航空学和数学哲学博士学位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1943,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "火箭研究",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "喷气推进实验室创始人之一",
+      "rationale": "研究",
       "quote": null
     },
     {
@@ -46,9 +118,50 @@
       "tierScore": 52,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "考察德国",
+      "summary": "考察德国，上校军衔",
       "rationale": "专家",
-      "quote": null
+      "quote": {
+        "find": [
+          "美国战争部派遣以冯·卡门为首"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1947,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "麻省理工正教授",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三十六岁",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "晋升为麻省理工学院正教授"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "加州理工讲座教授",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "古根海姆喷气推进中心主任",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "回到加州理工学院任名誉讲座正教授"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1950,
@@ -59,8 +172,21 @@
       "tierScore": 40,
       "crisis": "绝境",
       "crisisPenalty": 40,
-      "summary": "麦卡锡主义",
+      "summary": "麦卡锡主义，吊销安全许可",
       "rationale": "被扣",
+      "quote": null
+    },
+    {
+      "year": 1954,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "《工程控制论》",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "软禁中出版",
+      "rationale": "著述",
       "quote": null
     },
     {
@@ -72,9 +198,14 @@
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "归国",
+      "summary": "日内瓦谈判换回",
       "rationale": "归国",
-      "quote": null
+      "quote": {
+        "find": [
+          "美国国务卿杜勒斯与艾森豪威尔"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1956,
@@ -85,8 +216,39 @@
       "tierScore": 82,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "导弹",
+      "summary": "导弹研究院",
       "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1960,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "东风一号",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "仿制导弹发射成功",
+      "rationale": "导弹",
+      "quote": {
+        "find": [
+          "东风-1短程弹道导弹"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "两弹结合试验",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "导弹核武器",
+      "rationale": "巅峰",
       "quote": null
     },
     {
@@ -100,7 +262,69 @@
       "crisisPenalty": 0,
       "summary": "卫星",
       "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "中国第一颗人造卫星“东方红一号”发射成"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1980,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国科协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "转向系统科学",
+      "rationale": "学术领袖",
       "quote": null
+    },
+    {
+      "year": 1986,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "全国政协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中国科协主席",
+      "rationale": "荣誉",
+      "quote": null
+    },
+    {
+      "year": 1991,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国家杰出贡献科学家",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "荣誉称号",
+      "rationale": "荣誉",
+      "quote": null
+    },
+    {
+      "year": 1999,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "两弹一星功勋奖章",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二十三位功臣之一",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "与钱三强、邓稼先等共23人荣获两弹一星功"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -109,7 +333,12 @@
     "title": "逝世",
     "retention": 0.97,
     "reason": "航天",
-    "quote": null
+    "quote": {
+      "find": [
+        "在北京中国人民解放军总医院"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

@@ -25,6 +25,24 @@
       "quote": null
     },
     {
+      "year": 1830,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "受贺长龄赏识",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "借书苦读",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "时任江苏布政使的贺长龄"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1832,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -35,6 +53,42 @@
       "crisisPenalty": 5,
       "summary": "会试不第",
       "rationale": "布衣",
+      "quote": {
+        "find": [
+          "20岁的左宗棠参加乡试"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1837,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "主讲醴陵渌江书院",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "结识陶澍，结为亲家",
+      "rationale": "讲学",
+      "quote": {
+        "find": [
+          "左宗棠应巡抚吴荣光的邀请"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1849,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "湘江夜话林则徐",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "林则徐托以新疆之事",
+      "rationale": "知遇",
       "quote": null
     },
     {
@@ -64,6 +118,32 @@
       "quote": null
     },
     {
+      "year": 1860,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "募楚军",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以四品京堂襄办曾国藩军务",
+      "rationale": "领兵",
+      "quote": null
+    },
+    {
+      "year": 1862,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "浙江巡抚",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "转战浙江",
+      "rationale": "督抚",
+      "quote": null
+    },
+    {
       "year": 1863,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -90,6 +170,55 @@
       "quote": null
     },
     {
+      "year": 1867,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陕甘总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "西征平定陕甘回乱",
+      "rationale": "督抚",
+      "quote": null
+    },
+    {
+      "year": 1873,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "平定陕甘",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "肃州克复",
+      "rationale": "战功",
+      "quote": {
+        "find": [
+          "肃州回军首领马文禄在坚守"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1875,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督办新疆军务",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "海防塞防之争胜出",
+      "rationale": "钦差",
+      "quote": {
+        "find": [
+          "朝廷上争议出兵收复新疆"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1878,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -101,12 +230,56 @@
       "summary": "抬棺",
       "rationale": "巅峰",
       "quote": null
+    },
+    {
+      "year": 1881,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入值军机处",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "与同僚不合，外放两江",
+      "rationale": "京官",
+      "quote": null
+    },
+    {
+      "year": 1882,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "奏请新疆建省",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "两江总督",
+      "rationale": "经营",
+      "quote": {
+        "find": [
+          "左宗棠再次向清朝政府奏请新疆建省"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1884,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督办福建军务",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "中法战争",
+      "rationale": "老病出征",
+      "quote": null
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1885,
-    "title": "卒",
+    "title": "卒于福州",
     "retention": 0.95,
     "reason": "新疆建省",
     "quote": null

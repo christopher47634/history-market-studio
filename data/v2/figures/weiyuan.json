@@ -15,6 +15,11 @@
     {
       "label": "《清史稿·卷四百八十六》",
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+    },
+    {
+      "label": "维基百科「魏源」",
+      "url": "https://zh.wikipedia.org/wiki/%E9%AD%8F%E6%BA%90",
+      "site": "wp"
     }
   ],
   "events": [
@@ -54,7 +59,7 @@
       "score": 32,
       "delta": 12,
       "rationale": "入仕",
-      "summary": "举人",
+      "summary": "顺天乡试",
       "evidence": "原文",
       "quote": {
         "text": "道光二年，舉順天鄉試。",
@@ -81,6 +86,52 @@
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1840,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入裕谦幕",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 46,
+      "delta": 0,
+      "rationale": "参谋",
+      "summary": "审问英俘，著《英吉利小记》",
+      "evidence": "百科",
+      "quote": {
+        "text": "1840年至1841年，曾参与裕谦戎幕，依照英国战俘的口供编成《英吉利小志》。",
+        "textSimplified": "1840年至1841年，曾参与裕谦戎幕，依照英国战俘的口供编成《英吉利小志》。",
+        "source": "维基百科「魏源」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AD%8F%E6%BA%90"
+      },
+      "verified": true
+    },
+    {
+      "year": 1841,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "镇江晤林则徐",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 46,
+      "delta": 0,
+      "rationale": "受托",
+      "summary": "受托编书",
+      "evidence": "百科",
+      "quote": {
+        "text": "1841年7月，在镇江与林则徐相遇，纵谈时事和今后对策。",
+        "textSimplified": "1841年7月，在镇江与林则徐相遇，纵谈时事和今后对策。",
+        "source": "维基百科「魏源」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%AD%8F%E6%BA%90"
+      },
+      "verified": true
     },
     {
       "year": 1842,
@@ -127,6 +178,24 @@
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
       },
       "verified": true
+    },
+    {
+      "year": 1853,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "革职",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 30,
+      "delta": 0,
+      "rationale": "去职",
+      "summary": "太平军逼近，被劾迟误驿报",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     }
   ],
   "finale": {
@@ -183,8 +252,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 5,
-    "quotesClaimed": 5,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

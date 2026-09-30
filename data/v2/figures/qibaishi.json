@@ -11,7 +11,13 @@
   },
   "lifeSpan": 93,
   "thesis": "木匠出身，衰年变法，大器晚成。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「齐白石」",
+      "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1864,
@@ -27,9 +33,14 @@
       "delta": 0,
       "rationale": "贫寒",
       "summary": "贫农",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "齐白石于1864年元旦出生于湖南省长沙府湘潭县（今湖南省湘潭县）白石铺杏子坞农民家庭，原名齐纯芝。",
+        "textSimplified": "齐白石于1864年元旦出生于湖南省长沙府湘潭县（今湖南省湘潭县）白石铺杏子坞农民家庭，原名齐纯芝。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
     },
     {
       "year": 1878,
@@ -62,14 +73,55 @@
       "score": 18,
       "delta": 8,
       "rationale": "学画",
-      "summary": "胡沁园",
+      "summary": "胡沁园、陈少蕃",
       "evidence": "概括",
       "quote": null,
       "verified": false
     },
     {
-      "year": 1919,
-      "age": 55,
+      "year": 1899,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "拜王闿运为师",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "拜师",
+      "summary": "诗文",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1903,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "五出五归",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 26,
+      "delta": 0,
+      "rationale": "游历",
+      "summary": "远游西安、北京、桂林",
+      "evidence": "百科",
+      "quote": {
+        "text": "1903年39岁时第一次到北京。",
+        "textSimplified": "1903年39岁时第一次到北京。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
+    },
+    {
+      "year": 1917,
+      "age": 53,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "定居北京卖画",
@@ -80,10 +132,15 @@
       "score": 40,
       "delta": 22,
       "rationale": "卖画",
-      "summary": "北漂",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "北漂，结识陈师曾",
+      "evidence": "百科",
+      "quote": {
+        "text": "1917年起决定于北京发展，以卖画刻印为生，并结识了陈师曾（陈寅恪之兄）",
+        "textSimplified": "1917年起决定于北京发展，以卖画刻印为生，并结识了陈师曾（陈寅恪之兄）",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
     },
     {
       "year": 1920,
@@ -104,6 +161,93 @@
       "verified": false
     },
     {
+      "year": 1922,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东京画展成名",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 10,
+      "rationale": "成名",
+      "summary": "陈师曾携画赴日，作品售罄",
+      "evidence": "百科",
+      "quote": {
+        "text": "1922年，陈师曾携齐白石的画作前往日本，在东京的中日联合绘画展览会上展出",
+        "textSimplified": "1922年，陈师曾携齐白石的画作前往日本，在东京的中日联合绘画展览会上展出",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
+    },
+    {
+      "year": 1929,
+      "age": 65,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "京华美专教授",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 0,
+      "rationale": "教授",
+      "summary": "北平艺专",
+      "evidence": "百科",
+      "quote": {
+        "text": "1929年，在京华美专任教授，1931年后也曾在张恨水的北平私立北华美术专科学校教授国画。",
+        "textSimplified": "1929年，在京华美专任教授，1931年后也曾在张恨水的北平私立北华美术专科学校教授国画。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
+    },
+    {
+      "year": 1937,
+      "age": 73,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北平沦陷闭门",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 46,
+      "delta": -12,
+      "rationale": "困守",
+      "summary": "拒绝日伪，「停止见客」",
+      "evidence": "百科",
+      "quote": {
+        "text": "1937年，日本入侵中国，齐白石因在外国享誉，受日本人拉拢，坚拒屈服，更遭扣押。",
+        "textSimplified": "1937年，日本入侵中国，齐白石因在外国享誉，受日本人拉拢，坚拒屈服，更遭扣押。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
+    },
+    {
+      "year": 1949,
+      "age": 85,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "新中国礼遇",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 0,
+      "rationale": "礼遇",
+      "summary": "毛泽东宴请",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
       "year": 1953,
       "age": 89,
       "yearCertainty": "确知",
@@ -114,12 +258,63 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 66,
-      "delta": 18,
+      "delta": 20,
       "rationale": "巅峰",
       "summary": "人民艺术家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1953年他被选为中国美术家协会主席。",
+        "textSimplified": "1953年他被选为中国美术家协会主席。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
+    },
+    {
+      "year": 1956,
+      "age": 92,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国际和平奖",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": 0,
+      "rationale": "荣誉",
+      "summary": "世界和平理事会",
+      "evidence": "百科",
+      "quote": {
+        "text": "1956年，世界和平理事会授予他1955年度国际和平奖。",
+        "textSimplified": "1956年，世界和平理事会授予他1955年度国际和平奖。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
+    },
+    {
+      "year": 1957,
+      "age": 93,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北京中国画院名誉院长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": 0,
+      "rationale": "荣誉",
+      "summary": "九十三岁",
+      "evidence": "百科",
+      "quote": {
+        "text": "1957年，齐白石出任中国画院名誉院长。",
+        "textSimplified": "1957年，齐白石出任中国画院名誉院长。",
+        "source": "维基百科「齐白石」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -129,9 +324,14 @@
     "retention": 0.95,
     "reason": "齐白石",
     "score": 62.7,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "1957年9月16日，齐白石在北京市北京医院逝世。",
+      "textSimplified": "1957年9月16日，齐白石在北京市北京医院逝世。",
+      "source": "维基百科「齐白石」",
+      "url": "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%99%BD%E7%9F%B3"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -161,18 +361,18 @@
   "gaps": [
     {
       "fromAge": 25,
-      "toAge": 55,
-      "years": 30
+      "toAge": 53,
+      "years": 28
     },
     {
-      "fromAge": 56,
+      "fromAge": 73,
       "toAge": 89,
-      "years": 33
+      "years": 16
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 10,
+    "quotesClaimed": 10,
     "author": "claude"
   }
 }

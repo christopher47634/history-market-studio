@@ -11,6 +11,8 @@ const fullQuote = (q, f) => (!q ? null : q.t === undefined ? q : { textSimplifie
 
 function legacyEvent(e, f, extra = {}) {
   const quote = fullQuote(e.quote, f);
+  // 「百科」= 近现代人物的维基百科引句：同样逐字核验，但不是史书原文。
+  const basis = quote ? (e.evidence === "百科" ? "百科" : "原文") : "概括";
   return {
     year: e.year,
     age: extra.age ?? e.age,
@@ -24,9 +26,9 @@ function legacyEvent(e, f, extra = {}) {
     kind: extra.kind ?? e.kind,
     posthumous: Boolean(extra.posthumous),
     source: { label: quote?.source ?? f.sources[0]?.label ?? "史料概括", url: quote?.url ?? f.sources[0]?.url ?? "", type: "primary", scope: "biography" },
-    evidence: { sourceType: "primary", sourceScope: "biography", dateCertainty: CERTAINTY[e.yearCertainty] ?? "exact", scoreNature: "interpretive-model", basis: quote ? "原文" : "概括" },
+    evidence: { sourceType: "primary", sourceScope: "biography", dateCertainty: CERTAINTY[e.yearCertainty] ?? "exact", scoreNature: "interpretive-model", basis },
     citation: quote
-      ? { kind: "史书原文", quote: quote.textSimplified ?? quote.text, isExcerpt: true, url: quote.url, source: quote.source }
+      ? { kind: basis === "百科" ? "百科记述" : "史书原文", quote: quote.textSimplified ?? quote.text, isExcerpt: true, url: quote.url, source: quote.source }
       : { kind: "事件概括", quote: "", isExcerpt: false, note: e.rationale || e.reason || "此事件没有可逐字核验的原文，内容为概括。", url: f.sources[0]?.url ?? "", source: f.sources[0]?.label ?? "维基百科等资料概括" },
   };
 }

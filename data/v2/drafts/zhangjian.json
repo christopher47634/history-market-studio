@@ -22,10 +22,51 @@
       "crisisPenalty": 0,
       "summary": "农家",
       "rationale": "平民",
-      "quote": null
+      "quote": {
+        "find": [
+          "张謇生于江"
+        ],
+        "source": 0
+      }
     },
     {
-      "year": 1874,
+      "year": 1868,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "冒籍应试",
+      "tier": "布衣",
+      "tierScore": 16,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "被讹诈几至破家",
+      "rationale": "讼累",
+      "quote": {
+        "find": [
+          "为了走上科举正道"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1869,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考中秀才",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "冒籍如皋",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "张謇考中秀才"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1876,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "入吴长庆幕",
@@ -33,8 +74,44 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "幕僚",
+      "summary": "幕僚，随军赴朝鲜",
       "rationale": "幕僚",
+      "quote": {
+        "find": [
+          "应淮军“庆字营”统领吴长庆"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1882,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "壬午兵变随军赴朝",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "草拟善后六策",
+      "rationale": "参谋",
+      "quote": {
+        "find": [
+          "朝鲜发生“壬午兵变”"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1885,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "顺天乡试南元",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翁同龢提携",
+      "rationale": "功名",
       "quote": null
     },
     {
@@ -46,12 +123,35 @@
       "tierScore": 52,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "四十一岁",
+      "summary": "四十一岁，父丧丁忧",
       "rationale": "状元",
-      "quote": null
+      "quote": {
+        "find": [
+          "第五次进京应试，终于中了"
+        ],
+        "source": 0
+      }
     },
     {
-      "year": 1899,
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "奉命办纱厂",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "集股艰难",
+      "rationale": "创业",
+      "quote": {
+        "find": [
+          "张之洞奏派张謇、陆润庠"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1898,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "大生纱厂投产",
@@ -61,7 +161,79 @@
       "crisisPenalty": 0,
       "summary": "实业",
       "rationale": "实业",
+      "quote": {
+        "find": [
+          "大生纱厂正式在通州城西"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创通州师范学校",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中国第一所民办师范",
+      "rationale": "教育",
       "quote": null
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创南通博物苑、复旦公学",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第一座公共博物馆",
+      "rationale": "教育",
+      "quote": {
+        "find": [
+          "张謇在通州建立了国内第一"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国会请愿",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "立宪派领袖",
+      "rationale": "立宪",
+      "quote": {
+        "find": [
+          "1910年发起国会请愿活动"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "代拟清帝退位诏书",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "实业总长，拟退位诏",
+      "rationale": "推手",
+      "quote": {
+        "find": [
+          "为民军方面代拟清帝"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1913,
@@ -74,6 +246,37 @@
       "crisisPenalty": 0,
       "summary": "入阁",
       "rationale": "高位",
+      "quote": {
+        "find": [
+          "任北洋政府工商总长兼农林总长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "反对帝制辞职",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "回南通",
+      "rationale": "退隐",
+      "quote": null
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "南通模式",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "模范县",
+      "rationale": "巅峰",
       "quote": null
     },
     {
@@ -85,18 +288,28 @@
       "tierScore": 56,
       "crisis": "大败",
       "crisisPenalty": 20,
-      "summary": "棉价下跌",
+      "summary": "棉价下跌，破产",
       "rationale": "困境",
-      "quote": null
+      "quote": {
+        "find": [
+          "张謇破产"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1926,
-    "title": "病逝",
+    "title": "病逝南通",
     "retention": 0.95,
     "reason": "实业救国",
-    "quote": null
+    "quote": {
+      "find": [
+        "张謇病逝，享年73岁"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

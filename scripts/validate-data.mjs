@@ -31,7 +31,7 @@ for (const figure of figures) {
     if (!event.posthumous && (event.age < 0 || event.age > figure.lifeSpan)) fail(`${figure.name}/${event.title}: 年龄轴越界`);
     if (index && !event.posthumous && event.year < figure.events[index-1].year) fail(`${figure.name}: 史年未排序`);
     if (!event.citation) fail(`${figure.name}/${event.title}: 缺少引文或概括说明`);
-    if (event.evidence?.basis === "原文") {
+    if (["原文", "百科"].includes(event.evidence?.basis)) {
       if (!event.citation.quote || !event.citation.url?.startsWith("https://")) fail(`${figure.name}/${event.title}: 标为原文却没有引句或出处`);
     } else if (event.citation.isExcerpt !== false || !event.citation.note) fail(`${figure.name}/${event.title}: 概括类节点必须写明说明、不得冒充原文`);
     if (!event.posthumous && event.kind !== "finale" && (!event.tier || !event.rationale)) fail(`${figure.name}/${event.title}: 缺少档位或打分理由`);
@@ -83,8 +83,10 @@ const colorMate=figures.find((figure)=>figure.id!==sameColorPair.id&&figure.colo
 const pairColors=getPairColors(sameColorPair,colorMate);
 if(pairColors[0]===pairColors[1])fail("同色人物对比没有生成可辨识的配色");
 
-const withPrimary=figures.filter((figure)=>figure.v2.sources.length>0).length;
+const withPrimary=figures.filter((figure)=>figure.v2.sources.some((source)=>source.site!=="wp")).length;
+const encyclopedic=figures.reduce((sum,figure)=>sum+[...figure.events,...(figure.subEvents??[])].filter((event)=>event.evidence?.basis==="百科").length,0);
+if(figures.filter((figure)=>figure.born>=1780).some((figure)=>figure.events.filter((event)=>!event.posthumous).length+(figure.subEvents?.length??0)<9))fail("近现代人物的生前节点少于 9 个");
 if(withPrimary<230)fail(`有正史原文来源的人物少于 230 位，当前 ${withPrimary}`);
 const sourceUrls=new Set(figures.flatMap((figure)=>figure.v2.sources.map((source)=>source.url)));
 
-console.log(`data validation passed: ${figures.length} figures, ${totalEvents} events, ${sourceUrls.size} source URLs, six-domain index and ${verified} verified quotes, ${withPrimary} figures with official-history sources, stage/event OHLC verified`);
+console.log(`data validation passed: ${figures.length} figures, ${totalEvents} events, ${sourceUrls.size} source URLs, six-domain index and ${verified} verified primary quotes + ${encyclopedic} encyclopedia quotes, ${withPrimary} figures with official-history sources, stage/event OHLC verified`);

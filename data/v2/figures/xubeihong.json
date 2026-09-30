@@ -11,7 +11,13 @@
   },
   "lifeSpan": 58,
   "thesis": "中西融合，奔马，美术教育家。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「徐悲鸿」",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1895,
@@ -27,6 +33,29 @@
       "delta": 0,
       "rationale": "贫寒",
       "summary": "画师之子",
+      "evidence": "百科",
+      "quote": {
+        "text": "自幼随父徐达章习诗文书画，1912年在宜兴师绘画。",
+        "textSimplified": "自幼随父徐达章习诗文书画，1912年在宜兴师绘画。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
+    },
+    {
+      "year": 1912,
+      "age": 17,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "乡间教画",
+      "tier": "布衣",
+      "tierScore": 14,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 14,
+      "delta": 0,
+      "rationale": "养家",
+      "summary": "父病，养家",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -50,6 +79,65 @@
       "verified": false
     },
     {
+      "year": 1916,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复旦半工半读",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "结识康有为",
+      "evidence": "百科",
+      "quote": {
+        "text": "1916年入复旦大学法文系半工半读，1917年留学日本学习美术。",
+        "textSimplified": "1916年入复旦大学法文系半工半读，1917年留学日本学习美术。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
+    },
+    {
+      "year": 1917,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "留学日本",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "游学",
+      "summary": "学美术",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1918,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北大画法研究会导师",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "导师",
+      "summary": "蔡元培聘",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
       "year": 1919,
       "age": 24,
       "yearCertainty": "确知",
@@ -63,13 +151,41 @@
       "delta": 21,
       "rationale": "留学",
       "summary": "巴黎美院",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1919年赴法国留学，1923年入巴黎国立美术学校，学习油画、素描，并游历西欧诸国观摹研究西方美术。",
+        "textSimplified": "1919年赴法国留学，1923年入巴黎国立美术学校，学习油画、素描，并游历西欧诸国观摹研究西方美术。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
     },
     {
       "year": 1927,
       "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国执教",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 56,
+      "delta": 22,
+      "rationale": "领军",
+      "summary": "南国艺术学院、北平艺术学院",
+      "evidence": "百科",
+      "quote": {
+        "text": "1927年回国，先后任上海南国艺术学院美术系主任、北京大学艺术学院院长。",
+        "textSimplified": "1927年回国，先后任上海南国艺术学院美术系主任、北京大学艺术学院院长。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
+    },
+    {
+      "year": 1929,
+      "age": 34,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "中央大学艺术系主任",
@@ -78,12 +194,99 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 58,
-      "delta": 24,
+      "delta": 2,
       "rationale": "领军",
       "summary": "教授",
+      "evidence": "百科",
+      "quote": {
+        "text": "1929年移居南京，于国立中央大学任教。",
+        "textSimplified": "1929年移居南京，于国立中央大学任教。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
+    },
+    {
+      "year": 1933,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "欧洲巡展中国画",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 4,
+      "rationale": "国际",
+      "summary": "中国近代绘画展",
+      "evidence": "百科",
+      "quote": {
+        "text": "1933年起在世界各地举办中国美术展览和个人画展。",
+        "textSimplified": "1933年起在世界各地举办中国美术展览和个人画展。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
+    },
+    {
+      "year": 1939,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "南洋义卖",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 0,
+      "rationale": "抗战",
+      "summary": "筹赈抗战",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1942,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国美术学院筹备",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 57,
+      "delta": 0,
+      "rationale": "病",
+      "summary": "病中",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1946,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北平艺专校长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 4,
+      "rationale": "巅峰",
+      "summary": "校长",
+      "evidence": "百科",
+      "quote": {
+        "text": "1946年任国立北平艺术专科学校校长，1950年任中央美术学院院长。",
+        "textSimplified": "1946年任国立北平艺术专科学校校长，1950年任中央美术学院院长。",
+        "source": "维基百科「徐悲鸿」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+      },
+      "verified": true
     },
     {
       "year": 1949,
@@ -96,7 +299,7 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 68,
-      "delta": 10,
+      "delta": 2,
       "rationale": "巅峰",
       "summary": "院长",
       "evidence": "概括",
@@ -111,9 +314,14 @@
     "retention": 0.95,
     "reason": "奔马",
     "score": 64.6,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "evidence": "百科",
+    "quote": {
+      "text": "1953年9月26日凌晨2时52分，徐悲鸿因再次脑中风于北京医院病逝，终年58岁。",
+      "textSimplified": "1953年9月26日凌晨2时52分，徐悲鸿因再次脑中风于北京医院病逝，终年58岁。",
+      "source": "维基百科「徐悲鸿」",
+      "url": "https://zh.wikipedia.org/wiki/%E5%BE%90%E6%82%B2%E9%B8%BF"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -145,16 +353,11 @@
       "fromAge": 0,
       "toAge": 20,
       "years": 20
-    },
-    {
-      "fromAge": 32,
-      "toAge": 54,
-      "years": 22
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
     "author": "claude"
   }
 }

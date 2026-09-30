@@ -20,9 +20,27 @@
       "tierScore": 18,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "商人",
+      "summary": "米商之家",
       "rationale": "平民",
       "quote": null
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入复旦公学",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中学部",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "1905年进入复旦公学中学部学习"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1910,
@@ -33,12 +51,66 @@
       "tierScore": 34,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "哈佛",
+      "summary": "伊利诺伊农学院、哈佛",
       "rationale": "留学",
+      "quote": {
+        "find": [
+          "凭庚子赔款奖学金赴美留学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1918,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "获哈佛博士",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《远东台风的新分类》",
+      "rationale": "学成",
+      "quote": {
+        "find": [
+          "论文课题为《远东台风的新分类》"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东南大学地学系主任",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "创立中国第一个地学系",
+      "rationale": "学术",
       "quote": null
     },
     {
-      "year": 1928,
+      "year": 1925,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "派系斗争离校",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "转任商务印书馆编辑",
+      "rationale": "去职",
+      "quote": {
+        "find": [
+          "因东南大学派系斗争"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1929,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "中研院气象所所长",
@@ -46,9 +118,14 @@
       "tierScore": 54,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "气象",
+      "summary": "建全国气象台网",
       "rationale": "领军",
-      "quote": null
+      "quote": {
+        "find": [
+          "任中央研究院气象研究所所长"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1936,
@@ -59,9 +136,14 @@
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "求是",
+      "summary": "求是校训",
       "rationale": "校长",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴杭州就任国立浙江大学校长时"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1938,
@@ -72,9 +154,40 @@
       "tierScore": 60,
       "crisis": "受挫",
       "crisisPenalty": 10,
-      "summary": "流亡办学",
+      "summary": "流亡办学，妻儿病故",
       "rationale": "困顿",
       "quote": null
+    },
+    {
+      "year": 1940,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "遵义湄潭办学",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东方剑桥",
+      "rationale": "办学",
+      "quote": null
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "当选中研院院士",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第一届院士",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "当选为中央研究院第一届院士"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1949,
@@ -85,18 +198,59 @@
       "tierScore": 80,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "副院长",
+      "summary": "拒去台湾，留在大陆",
       "rationale": "领导",
+      "quote": {
+        "find": [
+          "中国科学院成立后，任副院长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1962,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入党",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "七十二岁",
+      "rationale": "入党",
+      "quote": {
+        "find": [
+          "竺可桢向中共递交入党申请书"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1972,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "《中国近五千年来气候变迁的初步研究》",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "晚年名篇",
+      "rationale": "学术",
       "quote": null
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1974,
-    "title": "逝世",
+    "title": "北京逝世",
     "retention": 0.95,
     "reason": "气象",
-    "quote": null
+    "quote": {
+      "find": [
+        "因肺病在北京逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

@@ -20,9 +20,50 @@
       "tierScore": 15,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "农家，早孤",
+      "summary": "农家，自幼父母双亡",
       "rationale": "孤贫",
-      "quote": null
+      "quote": {
+        "find": [
+          "李大钊生"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "通过童试",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "永平府中学",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "李第二次参加童试"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入北洋法政学堂",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "天津六年",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "李到天津投考新式学堂"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1913,
@@ -33,8 +74,26 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "留学",
+      "summary": "反袁文章",
       "rationale": "留学",
+      "quote": {
+        "find": [
+          "去日本早稻田大学读"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回国办报",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《晨钟报》总编辑",
+      "rationale": "报人",
       "quote": null
     },
     {
@@ -46,8 +105,44 @@
       "tierScore": 56,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "庶民的胜利",
+      "summary": "《庶民的胜利》",
       "rationale": "传播者",
+      "quote": {
+        "find": [
+          "李担任北京大学图书馆主任"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《我的马克思主义观》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "五四，最早系统介绍马克思主义",
+      "rationale": "先驱",
+      "quote": {
+        "find": [
+          "李在《每周评论》第三号上发表社论"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北京共产党小组",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南陈北李",
+      "rationale": "创党",
       "quote": null
     },
     {
@@ -59,8 +154,44 @@
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "北方区",
+      "summary": "北方区负责人",
       "rationale": "领袖",
+      "quote": {
+        "find": [
+          "北京大学马克思学说研究会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国民党一大中央执委",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国共合作北方领导人",
+      "rationale": "要人",
+      "quote": {
+        "find": [
+          "李主持在北京中国国民党全体党员大会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1926,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "三一八后避入苏联使馆",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "被段祺瑞政府通缉",
+      "rationale": "通缉",
       "quote": null
     },
     {
@@ -72,18 +203,30 @@
       "tierScore": 55,
       "crisis": "绝境",
       "crisisPenalty": 60,
-      "summary": "绞刑",
+      "summary": "苏联使馆被搜查，绞刑",
       "rationale": "殉难",
       "quote": null
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1933,
+      "title": "公葬万安公墓",
+      "score": 80,
+      "rationale": "北平各界送葬"
+    }
+  ],
   "finale": {
     "year": 1927,
     "title": "就义",
     "retention": 0.9,
     "reason": "革命先驱",
-    "quote": null
+    "quote": {
+      "find": [
+        "因被北洋政府指控其裹通苏联"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

@@ -5,7 +5,7 @@ import { normalizeForMatch } from "./text.mjs";
 
 const [id, ...keys] = process.argv.slice(2);
 const dir = new URL(`../data/v2/sources/${id}/`, import.meta.url);
-const src = readdirSync(dir).filter((f) => f.startsWith("primary-")).sort().map((f) => readFileSync(new URL(f, dir), "utf8")).join("\n");
+const src = readdirSync(dir).filter((f) => f.startsWith("primary-") || f === "wiki.txt").sort().map((f) => readFileSync(new URL(f, dir), "utf8")).join("\n");
 const sentences = [...src.matchAll(/[^。！？\n]+[。！？]?/g)].map((m) => m[0].trim());
 for (const key of keys) {
   const k = normalizeForMatch(key);

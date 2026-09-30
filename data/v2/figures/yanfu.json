@@ -11,7 +11,13 @@
   },
   "lifeSpan": 67,
   "thesis": "翻译《天演论》，信达雅。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「严复」",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1854,
@@ -27,9 +33,60 @@
       "delta": 0,
       "rationale": "平民",
       "summary": "医家",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1854年1月8日（咸丰三年十二月初十日）严复出生于福建侯官（今福建省福州市仓山区盖山镇阳岐村）一中医世家。",
+        "textSimplified": "1854年1月8日（咸丰三年十二月初十日）严复出生于福建侯官（今福建省福州市仓山区盖山镇阳岐村）一中医世家。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1866,
+      "age": 12,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "父病逝家道中落",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 7,
+      "delta": 0,
+      "rationale": "家贫",
+      "summary": "学馆中辍",
+      "evidence": "百科",
+      "quote": {
+        "text": "1866年（同治五年），严复父亲病逝，学馆中辍，严复放弃走科举“正途”。",
+        "textSimplified": "1866年（同治五年），严复父亲病逝，学馆中辍，严复放弃走科举“正途”。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1867,
+      "age": 13,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入福州船政学堂",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 4,
+      "rationale": "求学",
+      "summary": "考第一名",
+      "evidence": "百科",
+      "quote": {
+        "text": "1867年（同治六年），入左宗棠设立的福州船政学堂学习驾驶，改名宗光，字又陵。",
+        "textSimplified": "1867年（同治六年），入左宗棠设立的福州船政学堂学习驾驶，改名宗光，字又陵。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
     },
     {
       "year": 1877,
@@ -42,19 +99,24 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 30,
-      "delta": 12,
+      "delta": 8,
       "rationale": "留学",
-      "summary": "海军",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "格林威治皇家海军学院",
+      "evidence": "百科",
+      "quote": {
+        "text": "1877年3月（光绪三年二月）赴英国学习海军，与出使英国大臣郭嵩焘结为忘年交。",
+        "textSimplified": "1877年3月（光绪三年二月）赴英国学习海军，与出使英国大臣郭嵩焘结为忘年交。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
     },
     {
       "year": 1880,
       "age": 26,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "北洋水师学堂",
+      "title": "北洋水师学堂总教习",
       "tier": "成名",
       "tierScore": 44,
       "crisis": "平稳",
@@ -62,10 +124,84 @@
       "score": 44,
       "delta": 14,
       "rationale": "教育",
-      "summary": "总办",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "李鸿章调任",
+      "evidence": "百科",
+      "quote": {
+        "text": "1880年（光绪六年）赴天津的北洋水师学堂，任驾驶学堂“洋文正教习”，有学生黎元洪。",
+        "textSimplified": "1880年（光绪六年）赴天津的北洋水师学堂，任驾驶学堂“洋文正教习”，有学生黎元洪。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1890,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "升总办",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 0,
+      "rationale": "总办",
+      "summary": "北洋水师学堂总办，四次乡试不第",
+      "evidence": "百科",
+      "quote": {
+        "text": "1890年（光绪十六年）升为北洋水师学堂总办。",
+        "textSimplified": "1890年（光绪十六年）升为北洋水师学堂总办。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1895,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《论世变之亟》",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 56,
+      "delta": 12,
+      "rationale": "成名",
+      "summary": "甲午战败后在《直报》连发政论",
+      "evidence": "百科",
+      "quote": {
+        "text": "1895年（光绪二十一年）中日甲午战争后在天津《直报》发表《论世变之亟》、《原强》、《辟韩》、《救亡决论》等文",
+        "textSimplified": "1895年（光绪二十一年）中日甲午战争后在天津《直报》发表《论世变之亟》、《原强》、《辟韩》、《救亡决论》等文",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1897,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创《国闻报》",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 0,
+      "rationale": "报人",
+      "summary": "天津，与《时务报》南北呼应",
+      "evidence": "百科",
+      "quote": {
+        "text": "1897年（光绪二十三年）和王修植、夏曾佑等在天津创办《国闻报》和《国闻汇编》",
+        "textSimplified": "1897年（光绪二十三年）和王修植、夏曾佑等在天津创办《国闻报》和《国闻汇编》",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
     },
     {
       "year": 1898,
@@ -78,12 +214,86 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 62,
-      "delta": 18,
+      "delta": 6,
       "rationale": "名著",
-      "summary": "物竞天择",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "物竞天择，适者生存；光绪召见",
+      "evidence": "百科",
+      "quote": {
+        "text": "1898年（光绪二十四年）光绪帝命严复来京觐见，阐述变法主张；改捐同知；撰《上光绪皇帝万言书》。",
+        "textSimplified": "1898年（光绪二十四年）光绪帝命严复来京觐见，阐述变法主张；改捐同知；撰《上光绪皇帝万言书》。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1902,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "京师大学堂译书局总办",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 0,
+      "rationale": "翻译",
+      "summary": "译《原富》《群己权界论》",
+      "evidence": "百科",
+      "quote": {
+        "text": "1902年（光绪二十八年）赴北京任京师大学堂附设译书局总办。",
+        "textSimplified": "1902年（光绪二十八年）赴北京任京师大学堂附设译书局总办。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1906,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复旦公学校长",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 0,
+      "rationale": "教育",
+      "summary": "第二任校长",
+      "evidence": "百科",
+      "quote": {
+        "text": "1906年（光绪三十二年），任复旦公学校长，为该校第二任校长。",
+        "textSimplified": "1906年（光绪三十二年），任复旦公学校长，为该校第二任校长。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1910,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "钦赐文科进士",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 0,
+      "rationale": "功名",
+      "summary": "资政院议员",
+      "evidence": "百科",
+      "quote": {
+        "text": "1910年1月17日（宣统元年十二月七日）清廷赐予文科进士出身。",
+        "textSimplified": "1910年1月17日（宣统元年十二月七日）清廷赐予文科进士出身。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
     },
     {
       "year": 1912,
@@ -97,11 +307,16 @@
       "crisisPenalty": 0,
       "score": 66,
       "delta": 4,
-      "rationale": "学术",
-      "summary": "校长",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "rationale": "校长",
+      "summary": "京师大学堂改名",
+      "evidence": "百科",
+      "quote": {
+        "text": "1912年京师大学堂更名为北京大学校，任首任校长；11月辞去校长职务。",
+        "textSimplified": "1912年京师大学堂更名为北京大学校，任首任校长；11月辞去校长职务。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
     },
     {
       "year": 1915,
@@ -116,22 +331,78 @@
       "score": 15,
       "delta": -51,
       "rationale": "名誉受损",
-      "summary": "列名",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "列名六君子，为袁世凯称帝造势",
+      "evidence": "百科",
+      "quote": {
+        "text": "1915年7月6日，严复与杨度、梁启超等10人同被委任为宪法起草委员。",
+        "textSimplified": "1915年7月6日，严复与杨度、梁启超等10人同被委任为宪法起草委员。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1916,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "袁死后险被惩办",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 26,
+      "delta": 0,
+      "rationale": "困顿",
+      "summary": "黎元洪下令惩办帝制祸首",
+      "evidence": "百科",
+      "quote": {
+        "text": "1916年，袁世凯死后，7月，大总统黎元洪命令惩办祸首，虽然严复不被通缉，但是他也往天津避祸。",
+        "textSimplified": "1916年，袁世凯死后，7月，大总统黎元洪命令惩办祸首，虽然严复不被通缉，但是他也往天津避祸。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
+    },
+    {
+      "year": 1920,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回福州养病",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 29,
+      "delta": 14,
+      "rationale": "病",
+      "summary": "哮喘、鸦片瘾",
+      "evidence": "百科",
+      "quote": {
+        "text": "1920年因哮喘病久治无效，回到福州养病。",
+        "textSimplified": "1920年因哮喘病久治无效，回到福州养病。",
+        "source": "维基百科「严复」",
+        "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+      },
+      "verified": true
     }
   ],
   "finale": {
     "year": 1921,
     "age": 67,
-    "title": "病逝",
+    "title": "病逝福州",
     "retention": 0.9,
     "reason": "翻译影响一代人",
-    "score": 13.5,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "score": 26.1,
+    "evidence": "百科",
+    "quote": {
+      "text": "1921年10月27日在福州郎官巷住宅与世长辞。",
+      "textSimplified": "1921年10月27日在福州郎官巷住宅与世长辞。",
+      "source": "维基百科「严复」",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%A5%E5%A4%8D"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -158,21 +429,10 @@
     "age": 61,
     "score": 15
   },
-  "gaps": [
-    {
-      "fromAge": 0,
-      "toAge": 23,
-      "years": 23
-    },
-    {
-      "fromAge": 26,
-      "toAge": 44,
-      "years": 18
-    }
-  ],
+  "gaps": [],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 17,
+    "quotesClaimed": 17,
     "author": "claude"
   }
 }

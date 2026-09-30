@@ -20,9 +20,86 @@
       "tierScore": 25,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "官宦没落",
+      "summary": "官宦没落，幼年过继叔父",
       "rationale": "士人",
-      "quote": null
+      "quote": {
+        "find": [
+          "周恩来出生于江苏淮安城内驸马巷"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随伯父赴东北求学",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "银冈书院、奉天第六两等小学堂",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "周到奉天省银州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入南开学校",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "敬业乐群会，演话剧",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "周贻赓到天津任长芦盐运司榷运科员"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "东渡日本",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南开毕业赴日求学",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "周恩来毕业于南开学校"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "天津学生运动",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "觉悟社，领导请愿被捕半年",
+      "rationale": "学运",
+      "quote": {
+        "find": [
+          "周等4人领导天津各校学生数千人"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1920,
@@ -30,12 +107,17 @@
       "kind": "stage",
       "title": "赴法勤工俭学",
       "tier": "初起",
-      "tierScore": 30,
+      "tierScore": 32,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "旅欧支部",
+      "summary": "旅欧少共，入党",
       "rationale": "革命",
-      "quote": null
+      "quote": {
+        "find": [
+          "周在上海乘船赴法国勤工俭学"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1924,
@@ -46,9 +128,32 @@
       "tierScore": 54,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "黄埔",
+      "summary": "回国主持政治工作，参与东征",
       "rationale": "要职",
-      "quote": null
+      "quote": {
+        "find": [
+          "担任黄埔军校政治部主任"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上海工人武装起义",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第三次起义成功，四一二事变脱险",
+      "rationale": "领导起义",
+      "quote": {
+        "find": [
+          "领导第三次上海工人武装起义"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1927,
@@ -59,9 +164,40 @@
       "tierScore": 74,
       "crisis": "大败",
       "crisisPenalty": 20,
-      "summary": "起义后南下失败",
+      "summary": "起义后南下失败，病中转移香港",
       "rationale": "失利",
       "quote": null
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "主持中央军事工作",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中央组织局主任，特科",
+      "rationale": "中枢",
+      "quote": null
+    },
+    {
+      "year": 1931,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进入中央苏区",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "苏区中央局书记，红军总政委",
+      "rationale": "领导",
+      "quote": {
+        "find": [
+          "同年底进入苏区"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1935,
@@ -72,9 +208,112 @@
       "tierScore": 82,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "最高军事指挥",
+      "summary": "支持毛泽东，仍为最高军事指挥者之一",
       "rationale": "核心",
       "quote": null
+    },
+    {
+      "year": 1936,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "西安事变谈判",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "促成第二次国共合作",
+      "rationale": "斡旋",
+      "quote": {
+        "find": [
+          "周在延安一座教堂与张学良会谈"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "军委会政治部副部长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "在武汉、重庆主持统战",
+      "rationale": "统战",
+      "quote": {
+        "find": [
+          "蒋介石要周就任军事委员会政治部副部长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1941,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "皖南事变题词",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "「千古奇冤」",
+      "rationale": "抗争",
+      "quote": null
+    },
+    {
+      "year": 1943,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "延安整风受批评",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "检讨经验主义",
+      "rationale": "检讨",
+      "quote": {
+        "find": [
+          "中共中央于所在地延安进行整风运动"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国共谈判",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南京梅园，军调部",
+      "rationale": "谈判",
+      "quote": {
+        "find": [
+          "周作为共产党代表同国民党代表张群"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "代总参谋长",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "指挥三大战役",
+      "rationale": "军务",
+      "quote": {
+        "find": [
+          "周兼任中央军委代"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1949,
@@ -98,8 +337,78 @@
       "tierScore": 90,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "外交",
+      "summary": "外交舞台",
       "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1955,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "万隆会议",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "求同存异",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "知识分子问题报告",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "向科学进军",
+      "rationale": "经济",
+      "quote": {
+        "find": [
+          "周恩来在中共中央关于知识分子的会议上"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1958,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反冒进受批判",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "南宁会议被点名，一度提出辞职",
+      "rationale": "检讨",
+      "quote": null
+    },
+    {
+      "year": 1964,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "四个现代化",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三届人大提出",
+      "rationale": "经济",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "文革中维持局面",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "保护干部，苦撑国务院",
+      "rationale": "苦撑",
       "quote": null
     },
     {
@@ -111,9 +420,27 @@
       "tierScore": 90,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "基辛格",
+      "summary": "基辛格密访，尼克松访华",
       "rationale": "外交",
       "quote": null
+    },
+    {
+      "year": 1972,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "查出癌症",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "仍坚持工作",
+      "rationale": "病",
+      "quote": {
+        "find": [
+          "尼克松应邀到中国访问"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1974,
@@ -124,9 +451,14 @@
       "tierScore": 86,
       "crisis": "受挫",
       "crisisPenalty": 15,
-      "summary": "受冲击",
+      "summary": "受冲击，住院",
       "rationale": "病",
-      "quote": null
+      "quote": {
+        "find": [
+          "癌细胞扩散"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [
@@ -142,7 +474,12 @@
     "title": "逝世",
     "retention": 0.97,
     "reason": "人民的总理",
-    "quote": null
+    "quote": {
+      "find": [
+        "病逝，引发天安门广场四五运动"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

@@ -20,9 +20,50 @@
       "tierScore": 28,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "官宦",
+      "summary": "官宦之家",
       "rationale": "士人",
-      "quote": null
+      "quote": {
+        "find": [
+          "原名祖诒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1879,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "游香港接触西学",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "见西人治术",
+      "rationale": "开眼",
+      "quote": {
+        "find": [
+          "初次游"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1882,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "顺天乡试落第",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "多次科场失意",
+      "rationale": "落第",
+      "quote": {
+        "find": [
+          "到北京参加顺天乡试"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1888,
@@ -33,9 +74,45 @@
       "tierScore": 28,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "不达",
+      "summary": "《上清帝第一书》不达",
       "rationale": "布衣上书",
       "quote": null
+    },
+    {
+      "year": 1891,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创万木草堂",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "著《新学伪经考》，收梁启超等弟子",
+      "rationale": "讲学",
+      "quote": {
+        "find": [
+          "在广州设立万木草堂"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1893,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中举",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "广东乡试举人",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "康有为终于考中广东乡试举人"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1895,
@@ -46,9 +123,14 @@
       "tierScore": 52,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "进士",
+      "summary": "会试进士，联名上书，组强学会",
       "rationale": "维新领袖",
-      "quote": null
+      "quote": {
+        "find": [
+          "到北京参加乙未科会"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1898,
@@ -59,7 +141,7 @@
       "tierScore": 68,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "光绪召见",
+      "summary": "光绪召见，总理衙门章京上行走",
       "rationale": "巅峰",
       "quote": null
     },
@@ -72,9 +154,76 @@
       "tierScore": 44,
       "crisis": "绝境",
       "crisisPenalty": 45,
-      "summary": "六君子被杀",
+      "summary": "六君子被杀，被悬赏通缉",
       "rationale": "流亡",
       "quote": null
+    },
+    {
+      "year": 1899,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "组保皇会",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "海外华侨中声势浩大",
+      "rationale": "保皇领袖",
+      "quote": null
+    },
+    {
+      "year": 1900,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "自立军起义失败",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "唐才常汉口事败被杀",
+      "rationale": "失败",
+      "quote": {
+        "find": [
+          "康有为曾参与自立军起义"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1906,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "改保皇会为宪政会",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "清廷宣布预备立宪",
+      "rationale": "立宪",
+      "quote": {
+        "find": [
+          "保皇会改组为帝国宪政会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国定居上海",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "反对共和，主办《不忍》杂志",
+      "rationale": "落伍",
+      "quote": {
+        "find": [
+          "康有为于1913年回国"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1917,
@@ -85,9 +234,27 @@
       "tierScore": 40,
       "crisis": "大败",
       "crisisPenalty": 25,
-      "summary": "复辟失败",
+      "summary": "复辟十二日失败，被通缉",
       "rationale": "声誉受损",
       "quote": null
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "溥仪出宫后奔走",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "仍称忠于清室",
+      "rationale": "遗老",
+      "quote": {
+        "find": [
+          "康有为晚年始终宣称忠于清朝皇帝"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -96,7 +263,12 @@
     "title": "卒于青岛",
     "retention": 0.9,
     "reason": "维新先驱，晚年保皇",
-    "quote": null
+    "quote": {
+      "find": [
+        "康在青岛逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

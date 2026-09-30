@@ -22,7 +22,61 @@
       "crisisPenalty": 0,
       "summary": "贫寒",
       "rationale": "贫寒",
+      "quote": {
+        "find": [
+          "蔡艮寅出"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考中秀才",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十三岁",
+      "rationale": "神童",
+      "quote": {
+        "find": [
+          "湖南学政江标赴邵阳举行"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入时务学堂",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "师从梁启超",
+      "rationale": "求学",
       "quote": null
+    },
+    {
+      "year": 1900,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "自立军失败",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "唐才常殉难，易名蔡锷",
+      "rationale": "改名",
+      "quote": {
+        "find": [
+          "随唐才常归国，参加自立军"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1904,
@@ -33,9 +87,50 @@
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "留学",
+      "summary": "与蒋方震、张孝准称士官三杰",
       "rationale": "军校",
-      "quote": null
+      "quote": {
+        "find": [
+          "蔡锷毕业归国"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1908,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "广西新军标统",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "练兵",
+      "rationale": "练兵",
+      "quote": {
+        "find": [
+          "任广西新练常备军第1标标统"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "被驱出广西",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "革命派驱蔡",
+      "rationale": "挫折",
+      "quote": {
+        "find": [
+          "革命派主导的驱逐蔡锷运动开始"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1911,
@@ -72,12 +167,55 @@
       "tierScore": 82,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "护国军",
+      "summary": "护国军第一军总司令",
       "rationale": "首义",
+      "quote": {
+        "find": [
+          "蔡锷在梁启超的帮助下逃往天"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "泸州纳溪血战",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "喉疾加重，袁世凯取消帝制",
+      "rationale": "再造共和",
+      "quote": {
+        "find": [
+          "蔡锷率2万人的护国军第1军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "四川督军兼省长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "病重东渡就医",
+      "rationale": "病",
       "quote": null
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1917,
+      "title": "国葬岳麓山",
+      "score": 82,
+      "rationale": ""
+    }
+  ],
   "finale": {
     "year": 1916,
     "title": "病逝日本",

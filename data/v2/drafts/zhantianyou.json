@@ -22,7 +22,12 @@
       "crisisPenalty": 0,
       "summary": "茶商",
       "rationale": "平民",
-      "quote": null
+      "quote": {
+        "find": [
+          "詹天佑出生于西关十二甫"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1872,
@@ -33,9 +38,32 @@
       "tierScore": 25,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "十二岁",
+      "summary": "十二岁，首批三十名",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "包括詹天佑在内的首批清代官派美留学幼童"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1878,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考入耶鲁",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "土木工程",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "詹天佑以优异成绩进入耶鲁大学"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1881,
@@ -46,8 +74,26 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "海军",
+      "summary": "派去福州学海军驾驶，学非所用",
       "rationale": "冷遇",
+      "quote": {
+        "find": [
+          "以“码头起重机研究”为论文毕业"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1884,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "马江海战",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "福建水师覆没",
+      "rationale": "战败",
       "quote": null
     },
     {
@@ -61,6 +107,42 @@
       "crisisPenalty": 0,
       "summary": "津唐铁路",
       "rationale": "工程师",
+      "quote": {
+        "find": [
+          "经邝孙谋推荐"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1894,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "建滦河大桥",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "解决外国工程师没办成的桥基",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "他分析各种打桩方法"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "新易铁路",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四个月建成",
+      "rationale": "实绩",
       "quote": null
     },
     {
@@ -74,7 +156,12 @@
       "crisisPenalty": 0,
       "summary": "人字形",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "袁世凯决定不用外国资金"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1909,
@@ -87,16 +174,87 @@
       "crisisPenalty": 0,
       "summary": "提前完工",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "京张铁路在四年后的1909年8月11日建成"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "粤汉铁路总理",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "商办粤汉铁路",
+      "rationale": "领军",
+      "quote": {
+        "find": [
+          "任广东商办粤汉铁路总公司总理兼工程师"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "交通部技监",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中华工程师学会会长",
+      "rationale": "领袖",
+      "quote": {
+        "find": [
+          "詹天佑获政府委任为交通部技监"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "远东铁路监督",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "抱病往海参崴、哈尔滨",
+      "rationale": "病",
+      "quote": {
+        "find": [
+          "受命往海参崴和哈尔滨"
+        ],
+        "source": 0
+      }
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1922,
+      "title": "青龙桥竖立铜像",
+      "score": 84,
+      "rationale": ""
+    }
+  ],
   "finale": {
     "year": 1919,
-    "title": "病逝",
+    "title": "病逝汉口",
     "retention": 0.95,
     "reason": "中国铁路之父",
-    "quote": null
+    "quote": {
+      "find": [
+        "詹天佑因病回汉口"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

@@ -15,6 +15,11 @@
     {
       "label": "《清史稿·卷四百六十》",
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+    },
+    {
+      "label": "维基百科「邓世昌」",
+      "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E4%B8%96%E6%98%8C",
+      "site": "wp"
     }
   ],
   "events": [
@@ -55,9 +60,55 @@
       "delta": 3,
       "rationale": "学生",
       "summary": "学堂",
+      "evidence": "百科",
+      "quote": {
+        "text": "1867年考入马尾船政学堂驾驶班第一期学习，1871年被派至“建威”舰练习航海",
+        "textSimplified": "1867年考入马尾船政学堂驾驶班第一期学习，1871年被派至“建威”舰练习航海",
+        "source": "维基百科「邓世昌」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E4%B8%96%E6%98%8C"
+      },
+      "verified": true
+    },
+    {
+      "year": 1871,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "上建威舰实习",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "见习",
+      "summary": "随舰巡历南洋",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1874,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "扼守澎湖",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "军官",
+      "summary": "牡丹社事件",
+      "evidence": "百科",
+      "quote": {
+        "text": "1874年5月牡丹社事件日军侵台，邓世昌奉命扼守澎湖，基隆等要塞，得补千总。",
+        "textSimplified": "1874年5月牡丹社事件日军侵台，邓世昌奉命扼守澎湖，基隆等要塞，得补千总。",
+        "source": "维基百科「邓世昌」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E4%B8%96%E6%98%8C"
+      },
+      "verified": true
     },
     {
       "year": 1880,
@@ -97,6 +148,29 @@
         "textSimplified": "寻充经远、致远、靖远、济远四船营务处，兼致远管带。",
         "source": "《清史稿·卷四百六十》",
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+      },
+      "verified": true
+    },
+    {
+      "year": 1891,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "检阅获嘉奖",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 0,
+      "rationale": "嘉奖",
+      "summary": "加提督衔",
+      "evidence": "百科",
+      "quote": {
+        "text": "1891年李鸿章检阅北洋海军，邓世昌因训练有功，获“葛尔萨巴图鲁”勇名。",
+        "textSimplified": "1891年李鸿章检阅北洋海军，邓世昌因训练有功，获“葛尔萨巴图鲁”勇名。",
+        "source": "维基百科「邓世昌」",
+        "url": "https://zh.wikipedia.org/wiki/%E9%82%93%E4%B8%96%E6%98%8C"
       },
       "verified": true
     },
@@ -173,8 +247,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 4,
-    "quotesClaimed": 4,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

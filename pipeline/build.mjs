@@ -12,15 +12,20 @@ import { ALL } from "./registry.mjs";
 const DATA = new URL("../data/v2/", import.meta.url);
 const TODAY = 2026;
 const wsUrl = (title) => `https://zh.wikisource.org/wiki/${encodeURIComponent(title)}`;
+// 近现代人物没有正史，另挂中文维基条目：引句同样逐字核验，但依据标为「百科」，不冒充原文。
+const srcUrl = (w) => (w.site === "wp" ? `https://zh.wikipedia.org/wiki/${encodeURIComponent(w.title)}` : wsUrl(w.title));
 // 公元前没有 0 年：前 1 年的下一年是 1 年。
 const ageAt = (born, year) => year - born - (born < 0 && year > 0 ? 1 : 0);
 const inBand = ([lo, hi], value) => Number.isFinite(value) && value >= lo && value <= hi;
 
 async function loadSources(person) {
   const texts = [];
-  for (const index of person.ws.keys()) {
-    const file = new URL(`sources/${person.id}/primary-${index}.txt`, DATA);
-    texts.push(existsSync(file) ? await readFile(file, "utf8") : "");
+  for (const [index, w] of person.ws.entries()) {
+    const file = new URL(`sources/${person.id}/${w.site === "wp" ? "wiki" : `primary-${index}`}.txt`, DATA);
+    let text = existsSync(file) ? await readFile(file, "utf8") : "";
+    // 维基条目只取正文：参考文献、外部链接里的书名和日期不能拿来当引句。
+    if (w.site === "wp") text = text.slice(0, text.search(/\n==+\s*(参考|參考|注释|註釋|脚注|外部链接|外部連結|延伸阅读|参见|參見|相关条目)/) >>> 0);
+    texts.push(text);
   }
   return texts;
 }
@@ -40,7 +45,8 @@ export function buildFigure(person, draft, sources, rescore = null) {
       // 一个人可能挂多卷原文（本纪分卷、合传全卷）：先搜指定卷，找不到再依次搜其余各卷。
       const order = [quote.source ?? 0, ...sources.map((_, i) => i).filter((i) => i !== (quote.source ?? 0))];
       let hit = null, idx = order[0];
-      for (const i of order) { hit = findSentence(sources[i], quote.find, cursors[i]); if (hit) { idx = i; break; } }
+      // 维基条目开头有全篇提要，事件不按时间顺序出现，不用顺序游标。
+      for (const i of order) { hit = findSentence(sources[i], quote.find, person.ws[i]?.site === "wp" ? 0 : cursors[i]); if (hit) { idx = i; break; } }
       if (!hit) { warnings.push(`${where}：原文里找不到关键词 ${quote.find.join("/")}，记为「概括」`); return { evidence: "概括", quote: null, verified: false }; }
       if (hit.fromStart) warnings.push(`${where}：关键词在前文命中，可能对应的不是这件事——「${hit.text.slice(0, 20)}」`);
       cursors[idx] = hit.pos;
@@ -49,7 +55,8 @@ export function buildFigure(person, draft, sources, rescore = null) {
     if (!quote?.text) return { evidence: "概括", quote: null, verified: false };
     if (!person.ws[quote.source]) { errors.push(`${where}：引文来源编号 ${quote.source} 不存在`); return { evidence: "概括", quote: null, verified: false }; }
     if (quoteFound(quote.text, [sources[quote.source]])) {
-      return { evidence: "原文", verified: true, quote: { text: quote.text, textSimplified: toSimplified(quote.text), source: srcLabel(quote.source), url: wsUrl(person.ws[quote.source].title) } };
+      const w = person.ws[quote.source];
+      return { evidence: w.site === "wp" ? "百科" : "原文", verified: true, quote: { text: quote.text, textSimplified: toSimplified(quote.text), source: srcLabel(quote.source), url: srcUrl(w) } };
     }
     warnings.push(`${where}：引文在原文里找不到，已降为「概括」——「${quote.text.slice(0, 24)}」`);
     return { evidence: "概括", quote: null, verified: false, rejectedQuote: quote.text };
@@ -143,7 +150,7 @@ export function buildFigure(person, draft, sources, rescore = null) {
   return {
     figure: {
       id: person.id, name: person.name, born: draft.born, died: draft.died, lifeSpan: ageAt(born, died), thesis: draft.thesis,
-      sources: person.ws.map((w) => ({ label: w.label, url: wsUrl(w.title) })),
+      sources: person.ws.map((w) => ({ label: w.label, url: srcUrl(w), ...(w.site === "wp" ? { site: "wp" } : {}) })),
       events, finale, posthumous, legacy,
       peak: { title: peak.title, age: peak.age, score: peak.score },
       trough: trough ? { title: trough.title, age: trough.age, score: trough.score } : null,

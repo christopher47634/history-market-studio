@@ -22,7 +22,12 @@
       "crisisPenalty": 0,
       "summary": "华侨",
       "rationale": "平民",
-      "quote": null
+      "quote": {
+        "find": [
+          "原名甲庚"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1890,
@@ -33,22 +38,76 @@
       "tierScore": 18,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "米店",
+      "summary": "父亲米店学徒",
       "rationale": "学徒",
       "quote": null
     },
     {
       "year": 1904,
       "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "父业倒闭，代父还债",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "重信守诺",
+      "rationale": "守信",
+      "quote": null
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
       "kind": "stage",
-      "title": "创办菠萝罐头与橡胶",
+      "title": "自立门户创业",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "菠萝罐头",
+      "rationale": "商人",
+      "quote": {
+        "find": [
+          "由于米店歇业，陈嘉庚自立门户创业"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "橡胶大王",
       "tier": "成名",
       "tierScore": 50,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "实业",
-      "rationale": "商人",
-      "quote": null
+      "summary": "与余东旋发展橡胶业",
+      "rationale": "实业",
+      "quote": {
+        "find": [
+          "陈嘉庚与余东旋大力发展橡胶事业"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "家乡办学",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "集美小学起步，后成集美学村",
+      "rationale": "兴学",
+      "quote": {
+        "find": [
+          "他就在家乡创办小学"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1921,
@@ -61,20 +120,66 @@
       "crisisPenalty": 0,
       "summary": "倾资",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "陈嘉庚捐资办学的高峰是在1921年"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1925,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "企业鼎盛",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "橡胶园一万五千英亩",
+      "rationale": "鼎盛",
+      "quote": {
+        "find": [
+          "陈嘉庚已拥有1万5千英亩"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1929,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "大萧条冲击",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "胶价暴跌",
+      "rationale": "危机",
+      "quote": {
+        "find": [
+          "世界各地陆续爆发农产品价格下跌"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1934,
       "yearCertainty": "确知",
-      "kind": "sub",
-      "title": "企业破产",
+      "kind": "stage",
+      "title": "企业收盘",
       "tier": "方面名家",
       "tierScore": 58,
       "crisis": "大败",
       "crisisPenalty": 20,
       "summary": "大萧条",
       "rationale": "企业倒闭",
-      "quote": null
+      "quote": {
+        "find": [
+          "陈嘉庚的商业王国可谓全面收盘"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1938,
@@ -90,6 +195,19 @@
       "quote": null
     },
     {
+      "year": 1940,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "访延安",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "「中国的希望在延安」",
+      "rationale": "转向",
+      "quote": null
+    },
+    {
       "year": 1949,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -100,16 +218,44 @@
       "crisisPenalty": 0,
       "summary": "归国",
       "rationale": "国家领导",
-      "quote": null
+      "quote": {
+        "find": [
+          "陈嘉庚应毛泽东的邀请参加中国人民政治"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1950,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "定居集美",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "修复厦大、集美",
+      "rationale": "建设",
+      "quote": {
+        "find": [
+          "陈嘉庚定居中华人民共和国"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1961,
-    "title": "逝世",
+    "title": "北京病逝",
     "retention": 0.95,
     "reason": "华侨旗帜",
-    "quote": null
+    "quote": {
+      "find": [
+        "陈嘉庚病逝于北京"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

@@ -1,8 +1,8 @@
 import { readFileSync, existsSync } from "node:fs";
 // v2 样板 30 人的原文来源登记。
-// ws = 维基文库页面标题；section = 多人合传时截取传主一段：start 为开头原文，end 可选；wiki = 中文维基条目，只作年表参考，不作引文来源。
+// ws = 维基文库页面标题（site:"wp" 的是中文维基条目，只给近现代人物当「百科」级引文来源）；section = 多人合传时截取传主一段：start 为开头原文，end 可选；wiki = 中文维基条目，只作年表参考，不作引文来源。
 export const SAMPLE = [
-  { id:"maozedong", name:"毛泽东", wiki:"毛泽东", ws:[{ title:"关于建国以来党的若干历史问题的决议", label:"《关于建国以来党的若干历史问题的决议》" }] },
+  { id:"maozedong", name:"毛泽东", wiki:"毛泽东", ws:[{ title:"关于建国以来党的若干历史问题的决议", label:"《关于建国以来党的若干历史问题的决议》" }, { site:"wp", title:"毛泽东", label:"维基百科「毛泽东」" }] },
   { id:"qinst", name:"秦始皇", wiki:"秦始皇", ws:[{ title:"史記/卷006", label:"《史记·秦始皇本纪》" }] },
   { id:"liubang", name:"刘邦", wiki:"刘邦", ws:[{ title:"史記/卷008", label:"《史记·高祖本纪》" }] },
   { id:"xiangyu", name:"项羽", wiki:"项羽", ws:[{ title:"史記/卷007", label:"《史记·项羽本纪》" }] },
@@ -31,7 +31,7 @@ export const SAMPLE = [
   { id:"temujin", name:"成吉思汗", wiki:"成吉思汗", ws:[{ title:"元史/卷001", label:"《元史·太祖本纪》" }] },
   { id:"wangyangming", name:"王阳明", wiki:"王守仁", ws:[{ title:"明史/卷195", label:"《明史·王守仁传》", section:{ start:"王守仁，字伯安" } }] },
   { id:"kangxi", name:"康熙", wiki:"康熙帝", ws:[{ title:"清史稿/卷6", label:"《清史稿·圣祖本纪一》" }, { title:"清史稿/卷7", label:"《清史稿·圣祖本纪二》" }, { title:"清史稿/卷8", label:"《清史稿·圣祖本纪三》" }] },
-  { id:"linzexu", name:"林则徐", wiki:"林则徐", ws:[{ title:"清史稿/卷369", label:"《清史稿·林则徐传》", section:{ start:"林則徐，字少穆" } }] },
+  { id:"linzexu", name:"林则徐", wiki:"林则徐", ws:[{ title:"清史稿/卷369", label:"《清史稿·林则徐传》", section:{ start:"林則徐，字少穆" } }, { site:"wp", title:"林则徐", label:"维基百科「林则徐」" }] },
 ];
 
 // 样板之外的人物：由 resolve-sources.mjs 自动定位的正史来源。

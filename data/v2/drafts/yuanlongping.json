@@ -20,9 +20,32 @@
       "tierScore": 25,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "书香",
+      "summary": "书香，随家辗转战乱",
       "rationale": "士人",
-      "quote": null
+      "quote": {
+        "find": [
+          "江西德安"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入相辉学院农学系",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "遗传育种",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "考入了重庆相辉学院农学系"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1953,
@@ -35,7 +58,48 @@
       "crisisPenalty": 0,
       "summary": "教师",
       "rationale": "教师",
-      "quote": null
+      "quote": {
+        "find": [
+          "分发到湖南安江农业学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1960,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大饥荒中立志育种",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "发现一株天然杂交稻",
+      "rationale": "起念",
+      "quote": {
+        "find": [
+          "他在农校试验田中意外发现一株特殊性状"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1964,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "找到雄性不育株",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "逐穗检查十四万穗",
+      "rationale": "突破口",
+      "quote": {
+        "find": [
+          "他在试验稻田中找到一株“天然雄性不育"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1966,
@@ -46,8 +110,34 @@
       "tierScore": 44,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "起步",
+      "summary": "《科学通报》，受国家科委重视",
       "rationale": "研究",
+      "quote": null
+    },
+    {
+      "year": 1968,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "试验田被毁",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "秧苗被人拔除",
+      "rationale": "挫折",
+      "quote": null
+    },
+    {
+      "year": 1970,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "海南发现野败",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "助手李必湖找到野生不育株",
+      "rationale": "关键",
       "quote": null
     },
     {
@@ -59,9 +149,50 @@
       "tierScore": 66,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "突破",
+      "summary": "三系配套",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "在“不育系”、“保持系”的基础上"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1976,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "全国推广",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "定点示范二百万亩",
+      "rationale": "推广",
+      "quote": {
+        "find": [
+          "定点示范208万亩"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1981,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国家发明特等奖",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第一个特等发明奖",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "获得中华人民共和"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1995,
@@ -72,9 +203,50 @@
       "tierScore": 76,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "院士",
+      "summary": "两系法成功",
       "rationale": "荣誉",
-      "quote": null
+      "quote": {
+        "find": [
+          "他获评为中国工程院院士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 2000,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "超级稻第一期目标",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "亩产七百公斤",
+      "rationale": "突破",
+      "quote": {
+        "find": [
+          "超级杂交稻实现百亩示范片亩产700公斤"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 2006,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "美国科学院外籍院士",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国际声誉",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "当选美国科学院外籍院士"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 2014,
@@ -88,6 +260,24 @@
       "summary": "超级稻",
       "rationale": "巅峰",
       "quote": null
+    },
+    {
+      "year": 2017,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "亩产1149公斤",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "再创纪录",
+      "rationale": "纪录",
+      "quote": {
+        "find": [
+          "超级杂交稻亩产1149.02公斤"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -96,7 +286,12 @@
     "title": "逝世",
     "retention": 0.97,
     "reason": "杂交水稻",
-    "quote": null
+    "quote": {
+      "find": [
+        "袁隆平因多器官衰竭离世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

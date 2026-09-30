@@ -25,6 +25,42 @@
       "quote": null
     },
     {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "岭南大学附中",
+      "tier": "布衣",
+      "tierScore": 14,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "半工半读",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "就读于岭南大学附属中学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "上海国立音专",
+      "tier": "布衣",
+      "tierScore": 16,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小提琴、钢琴",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "冼星海随之赴国立音乐院"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1929,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -38,6 +74,24 @@
       "quote": null
     },
     {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考入巴黎音乐学院",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "作曲班",
+      "rationale": "学成",
+      "quote": {
+        "find": [
+          "考入巴黎音乐学院"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1935,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -48,6 +102,24 @@
       "crisisPenalty": 0,
       "summary": "救亡歌曲",
       "rationale": "作曲",
+      "quote": {
+        "find": [
+          "在上海加入“歌"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴延安鲁艺",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "音乐系主任",
+      "rationale": "延安",
       "quote": null
     },
     {
@@ -74,6 +146,24 @@
       "crisisPenalty": 25,
       "summary": "滞留困顿",
       "rationale": "困顿",
+      "quote": {
+        "find": [
+          "冼星海赴苏联"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1941,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "困居阿拉木图",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "苏德战争，贫病交加",
+      "rationale": "困顿",
       "quote": null
     }
   ],
@@ -83,7 +173,12 @@
     "title": "病逝莫斯科",
     "retention": 0.9,
     "reason": "黄河大合唱",
-    "quote": null
+    "quote": {
+      "find": [
+        "冼星海因肺结核病逝莫斯科"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

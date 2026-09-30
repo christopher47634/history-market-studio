@@ -16,6 +16,11 @@
     {
       "label": "《关于建国以来党的若干历史问题的决议》",
       "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
+    },
+    {
+      "label": "维基百科「毛泽东」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C",
+      "site": "wp"
     }
   ],
   "events": [
@@ -33,9 +38,14 @@
       "delta": 0,
       "rationale": "农家子弟，无任何名分与权位可言。",
       "summary": "生于湖南省湘潭县韶山冲南岸上屋场，父毛贻昌，母文素勤。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1893年12月26日，毛泽东出生于湖南省湘潭县韶山冲南岸上屋场，他是毛贻昌和文素勤的第三个孩子。",
+        "textSimplified": "1893年12月26日，毛泽东出生于湖南省湘潭县韶山冲南岸上屋场，他是毛贻昌和文素勤的第三个孩子。",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true
     },
     {
       "year": 1918,
@@ -51,9 +61,14 @@
       "delta": 22,
       "rationale": "师范毕业，主持新民学会，在湖南青年中初具声望。",
       "summary": "四月新民学会成立于蔡和森家，毛泽东任干事；八月赴北京筹办留法勤工俭学。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "1918年4月14日，新民学会在蔡和森家中成立，萧子升为总干事，毛泽东为干事。",
+        "textSimplified": "1918年4月14日，新民学会在蔡和森家中成立，萧子升为总干事，毛泽东为干事。",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true
     },
     {
       "year": 1921,
@@ -142,9 +157,14 @@
       "delta": 4,
       "rationale": "中华苏维埃临时中央政府主席，但此前已失去苏区中央局领导职务",
       "summary": "十一月中华苏维埃共和国临时中央政府在瑞金成立，毛泽东任中央执行委员会主席。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false,
+      "evidence": "百科",
+      "quote": {
+        "text": "11月27日，他兼任中华苏维埃中央执行委员会主席与人民委员会主席，成为国家一把手。",
+        "textSimplified": "11月27日，他兼任中华苏维埃中央执行委员会主席与人民委员会主席，成为国家一把手。",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true,
       "adjudicated": true,
       "draftRationale": "当选苏维埃共和国主席，是红色政权名义上的元首。"
     },
@@ -162,9 +182,14 @@
       "delta": 0,
       "rationale": "与苏维埃主席同档计算：被解除军职、遭排挤",
       "summary": "十月苏区中央局宁都会议批评其军事方针，被解除红一方面军总政委职务。",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false,
+      "evidence": "百科",
+      "quote": {
+        "text": "10月初，宁都会议召开，中共苏区中央局在江西宁都开会体会议，会议根据临时中央之决议和指示",
+        "textSimplified": "10月初，宁都会议召开，中共苏区中央局在江西宁都开会体会议，会议根据临时中央之决议和指示",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true,
       "adjudicated": true,
       "draftRationale": "宁都会议撤销其总政委职务，被排挤出军事领导。"
     },
@@ -267,6 +292,52 @@
       "draftRationale": "毛泽东思想写入党章，成为全党全军公认的领袖。"
     },
     {
+      "year": 1945,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "重庆谈判",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 93,
+      "delta": 0,
+      "rationale": "中共最高领导人身份与国民政府谈判",
+      "summary": "应蒋介石邀请赴重庆谈判，签订双十协定",
+      "evidence": "百科",
+      "quote": {
+        "text": "8月28日，应蒋介石邀请，毛泽东等人抵达重庆，参与重庆谈判，同蒋介石展开十余次商谈。",
+        "textSimplified": "8月28日，应蒋介石邀请，毛泽东等人抵达重庆，参与重庆谈判，同蒋介石展开十余次商谈。",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true
+    },
+    {
+      "year": 1947,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "转战陕北",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 82,
+      "delta": 0,
+      "rationale": "主动放弃延安，处境受挫但指挥全局",
+      "summary": "胡宗南进攻延安，中共中央撤出，辗转陕北",
+      "evidence": "百科",
+      "quote": {
+        "text": "1947年3月19日后，毛泽东等中共领导人放弃延安，撤至清涧县，开始转战陕北。",
+        "textSimplified": "1947年3月19日后，毛泽东等中共领导人放弃延安，撤至清涧县，开始转战陕北。",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true
+    },
+    {
       "year": 1949,
       "age": 56,
       "yearCertainty": "确知",
@@ -359,6 +430,52 @@
       "verified": true,
       "adjudicated": true,
       "draftRationale": "轻率发动大跃进和公社化，高指标浮夸风泛滥。"
+    },
+    {
+      "year": 1959,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "庐山会议",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 88,
+      "delta": 0,
+      "rationale": "经济困难持续，个人地位仍居顶点",
+      "summary": "原拟纠正大跃进错误，后期转为批判彭德怀",
+      "evidence": "百科",
+      "quote": {
+        "text": "7月2日至8月16日，毛泽东主持庐山会议，仍打算纠正大跃进时期的“左倾错误”。",
+        "textSimplified": "7月2日至8月16日，毛泽东主持庐山会议，仍打算纠正大跃进时期的“左倾错误”。",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true
+    },
+    {
+      "year": 1962,
+      "age": 69,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "七千人大会",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 83,
+      "delta": 0,
+      "rationale": "大跃进后果显现，权威受损",
+      "summary": "作自我批评，此后退居二线",
+      "evidence": "百科",
+      "quote": {
+        "text": "毛泽东主持中共历史上规模最大的重要会议——七千人大会，以总结大跃进的教训",
+        "textSimplified": "毛泽东主持中共历史上规模最大的重要会议——七千人大会，以总结大跃进的教训",
+        "source": "维基百科「毛泽东」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%AF%9B%E6%B3%BD%E4%B8%9C"
+      },
+      "verified": true
     },
     {
       "year": 1966,
@@ -507,8 +624,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 15,
-    "quotesClaimed": 15,
+    "quotesVerified": 23,
+    "quotesClaimed": 23,
     "author": "deepseek-flash"
   }
 }

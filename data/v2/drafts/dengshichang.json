@@ -22,7 +22,12 @@
       "crisisPenalty": 0,
       "summary": "茶商",
       "rationale": "商人",
-      "quote": null
+      "quote": {
+        "find": [
+          "原名永昌"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1867,
@@ -35,7 +40,43 @@
       "crisisPenalty": 0,
       "summary": "学堂",
       "rationale": "学生",
+      "quote": {
+        "find": [
+          "考入马尾船政学堂驾驶班第一期"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1871,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "上建威舰实习",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "随舰巡历南洋",
+      "rationale": "见习",
       "quote": null
+    },
+    {
+      "year": 1874,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "扼守澎湖",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "牡丹社事件",
+      "rationale": "军官",
+      "quote": {
+        "find": [
+          "邓世昌奉命扼守澎湖"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1880,
@@ -61,7 +102,30 @@
       "crisisPenalty": 0,
       "summary": "管带",
       "rationale": "舰长",
-      "quote": null
+      "quote": {
+        "find": [
+          "任“致远”管带"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1891,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "检阅获嘉奖",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "加提督衔",
+      "rationale": "嘉奖",
+      "quote": {
+        "find": [
+          "邓世昌因训练有功"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1894,

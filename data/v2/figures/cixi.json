@@ -15,6 +15,11 @@
     {
       "label": "《清史稿·卷二百一十四 列传一》",
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+    },
+    {
+      "label": "维基百科「慈禧」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%85%88%E7%A6%A7",
+      "site": "wp"
     }
   ],
   "events": [
@@ -65,6 +70,29 @@
       "verified": true
     },
     {
+      "year": 1854,
+      "age": 19,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "晋懿嫔",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "晋位",
+      "summary": "宫嫔",
+      "evidence": "百科",
+      "quote": {
+        "text": "咸丰四年二月二十六日（1854年），时年十九岁的兰贵人（《清实录》记为“懿贵人”）诏封“懿嫔”。",
+        "textSimplified": "咸丰四年二月二十六日（1854年），时年十九岁的兰贵人（《清实录》记为“懿贵人”）诏封“懿嫔”。",
+        "source": "维基百科「慈禧」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%88%E7%A6%A7"
+      },
+      "verified": true
+    },
+    {
       "year": 1856,
       "age": 21,
       "yearCertainty": "确知",
@@ -84,6 +112,29 @@
         "textSimplified": "六年三月庚辰，穆宗生，进懿妃。",
         "source": "《清史稿·卷二百一十四 列传一》",
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
+      },
+      "verified": true
+    },
+    {
+      "year": 1860,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随驾逃往热河",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 45,
+      "delta": 0,
+      "rationale": "避难",
+      "summary": "英法联军入京",
+      "evidence": "百科",
+      "quote": {
+        "text": "咸丰十年八月（1860年），英法联军在第二次鸦片战争中攻破大沽口，占领天津。",
+        "textSimplified": "咸丰十年八月（1860年），英法联军在第二次鸦片战争中攻破大沽口，占领天津。",
+        "source": "维基百科「慈禧」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%88%E7%A6%A7"
       },
       "verified": true
     },
@@ -109,6 +160,124 @@
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
       },
       "verified": true
+    },
+    {
+      "year": 1873,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "同治亲政，暂撤帘",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": 0,
+      "rationale": "撤帘",
+      "summary": "退居幕后",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1875,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立光绪再垂帘",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 96,
+      "delta": 1,
+      "rationale": "独揽",
+      "summary": "同治崩",
+      "evidence": "百科",
+      "quote": {
+        "text": "同治十三年（1875年），同治帝病逝，得年19岁。",
+        "textSimplified": "同治十三年（1875年），同治帝病逝，得年19岁。",
+        "source": "维基百科「慈禧」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%88%E7%A6%A7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1881,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "慈安暴崩",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 96,
+      "delta": 0,
+      "rationale": "独断",
+      "summary": "独掌大权",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1884,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "甲申易枢",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 96,
+      "delta": 0,
+      "rationale": "独断",
+      "summary": "罢恭亲王全班军机",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪十年（1884年），清军在北圻作战不利，慈禧太后遂罢免恭亲王奕䜣为首的全班军机大臣。",
+        "textSimplified": "光绪十年（1884年），清军在北圻作战不利，慈禧太后遂罢免恭亲王奕䜣为首的全班军机大臣。",
+        "source": "维基百科「慈禧」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%88%E7%A6%A7"
+      },
+      "verified": true
+    },
+    {
+      "year": 1889,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归政光绪",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": -1,
+      "rationale": "训政",
+      "summary": "颐和园",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1894,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "甲午战败",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 85,
+      "delta": 0,
+      "rationale": "战败",
+      "summary": "六十大寿",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     },
     {
       "year": 1898,
@@ -155,6 +324,47 @@
         "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7214"
       },
       "verified": true
+    },
+    {
+      "year": 1901,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回銮推行新政",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 90,
+      "delta": 35,
+      "rationale": "新政",
+      "summary": "辛丑条约后变法",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1905,
+      "age": 70,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "派五大臣出洋",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": 0,
+      "rationale": "立宪",
+      "summary": "预备立宪",
+      "evidence": "百科",
+      "quote": {
+        "text": "1905年（光绪三十一年）派五大臣出洋考察，载泽等回京后提出立宪之三大利",
+        "textSimplified": "1905年（光绪三十一年）派五大臣出洋考察，载泽等回京后提出立宪之三大利",
+        "source": "维基百科「慈禧」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%85%88%E7%A6%A7"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -163,7 +373,7 @@
     "title": "崩",
     "retention": 0.9,
     "reason": "三年后清亡",
-    "score": 49.5,
+    "score": 81,
     "evidence": "概括",
     "quote": null,
     "verified": false
@@ -184,8 +394,8 @@
     "rationale": "晚清实际统治者"
   },
   "peak": {
-    "title": "戊戌政变",
-    "age": 63,
+    "title": "立光绪再垂帘",
+    "age": 40,
     "score": 96
   },
   "trough": {
@@ -198,16 +408,11 @@
       "fromAge": 0,
       "toAge": 17,
       "years": 17
-    },
-    {
-      "fromAge": 26,
-      "toAge": 63,
-      "years": 37
     }
   ],
   "quality": {
-    "quotesVerified": 6,
-    "quotesClaimed": 6,
+    "quotesVerified": 11,
+    "quotesClaimed": 11,
     "author": "claude"
   }
 }

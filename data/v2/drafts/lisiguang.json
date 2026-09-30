@@ -20,9 +20,27 @@
       "tierScore": 15,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "塾师",
+      "summary": "塾师之子",
       "rationale": "平民",
       "quote": null
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考入武昌高等小学",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "报名误写名为李四光",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "李四光原名李仲揆"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1904,
@@ -33,9 +51,50 @@
       "tierScore": 28,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "同盟会",
+      "summary": "大阪高等工业学校，加入同盟会",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴日本留学，同年参加同盟会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "湖北军政府实业部长",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "同盟会最年轻成员",
+      "rationale": "入仕",
+      "quote": {
+        "find": [
+          "作为中国同盟会年龄最小的第一批成员"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学英国",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "伯明翰大学采矿转地质",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "李四光留学英国"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1920,
@@ -46,12 +105,17 @@
       "tierScore": 52,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "教授",
+      "summary": "丁文江邀请",
       "rationale": "学术",
-      "quote": null
+      "quote": {
+        "find": [
+          "李四光受丁文江号召回国"
+        ],
+        "source": 0
+      }
     },
     {
-      "year": 1928,
+      "year": 1927,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "中研院地质所所长",
@@ -59,22 +123,99 @@
       "tierScore": 60,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "领军",
+      "summary": "筹建地质研究所",
       "rationale": "领军",
+      "quote": {
+        "find": [
+          "李四光主持筹建中央研究院地质研究所"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "武汉大学建筑筹备委员长",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "珞珈山校园",
+      "rationale": "建设",
+      "quote": {
+        "find": [
+          "国立武汉大学建筑筹备委员长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赴英讲学",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出版《中国地质学》",
+      "rationale": "国际",
+      "quote": {
+        "find": [
+          "李四光赴英讲授“中国地质学”"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "抗战流亡桂林",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "地质所迁桂林",
+      "rationale": "流离",
       "quote": null
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赴英参加地质大会",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "滞留英国",
+      "rationale": "海外",
+      "quote": {
+        "find": [
+          "在1948年前往英国参与"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1950,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "回国",
+      "title": "秘密回国",
       "tier": "方面名家",
       "tierScore": 62,
       "crisis": "平稳",
       "crisisPenalty": 0,
       "summary": "突破封锁",
       "rationale": "归国",
-      "quote": null
+      "quote": {
+        "find": [
+          "李四光秘密回国"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1952,
@@ -88,15 +229,64 @@
       "summary": "部长",
       "rationale": "领导",
       "quote": null
+    },
+    {
+      "year": 1958,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国科协首任主席",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "首任",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "当选为中国科学技术协会首任主席"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1959,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大庆油田发现",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陆相生油，功成找油",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "周恩来保护",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "文革中受冲击较轻",
+      "rationale": "受冲击",
+      "quote": null
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1971,
-    "title": "逝世",
+    "title": "北京逝世",
     "retention": 0.95,
     "reason": "地质",
-    "quote": null
+    "quote": {
+      "find": [
+        "在北京逝世，享年82岁"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

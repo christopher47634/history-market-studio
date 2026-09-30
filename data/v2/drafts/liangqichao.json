@@ -20,9 +20,32 @@
       "tierScore": 20,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "农家",
+      "summary": "农家，祖父秀才",
       "rationale": "平民",
-      "quote": null
+      "quote": {
+        "find": [
+          "梁启超出生于广东省新会县"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1884,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "院试第一中秀才",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十二岁补博士弟子员",
+      "rationale": "神童",
+      "quote": {
+        "find": [
+          "又中第一名"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1889,
@@ -33,8 +56,26 @@
       "tierScore": 35,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "十六岁",
+      "summary": "十六岁中广东乡试举人",
       "rationale": "才子",
+      "quote": {
+        "find": [
+          "16岁的梁启超与姑表兄"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1890,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "拜康有为为师",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入万木草堂，弃旧学从新学",
+      "rationale": "转向",
       "quote": null
     },
     {
@@ -46,9 +87,50 @@
       "tierScore": 48,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "随康有为",
+      "summary": "随康有为联名上书，名动京师",
       "rationale": "维新",
-      "quote": null
+      "quote": {
+        "find": [
+          "梁启超与康有"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主笔《时务报》",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《变法通议》风行海内",
+      "rationale": "舆论新星",
+      "quote": {
+        "find": [
+          "报纸创刊，梁启"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "百日维新",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "光绪召见，赏六品衔办译书局",
+      "rationale": "参与变法",
+      "quote": {
+        "find": [
+          "在翁同龢等人推荐下"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1898,
@@ -59,7 +141,7 @@
       "tierScore": 40,
       "crisis": "绝境",
       "crisisPenalty": 40,
-      "summary": "东渡日本",
+      "summary": "六君子被杀，东渡日本",
       "rationale": "流亡",
       "quote": null
     },
@@ -67,13 +149,49 @@
       "year": 1902,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "《新民丛报》",
+      "title": "创《新民丛报》",
       "tier": "方面名家",
       "tierScore": 64,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "舆论领袖",
+      "summary": "新民说、新史学，舆论领袖",
       "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "梁启超创办"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "东京组政闻社",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "推动君主立宪",
+      "rationale": "立宪派领袖",
+      "quote": {
+        "find": [
+          "梁在东京建"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归国组党",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "结束十四年流亡，组进步党",
+      "rationale": "归国",
       "quote": null
     },
     {
@@ -85,9 +203,40 @@
       "tierScore": 78,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "进步党",
+      "summary": "熊希龄「名流内阁」",
       "rationale": "入阁",
       "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《异哉所谓国体问题者》",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "撰文反对袁世凯称帝",
+      "rationale": "反袁",
+      "quote": null
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "策动护国战争",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与蔡锷共谋讨袁，再造共和",
+      "rationale": "再造共和",
+      "quote": {
+        "find": [
+          "梁启超去信广西都督陆荣廷"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1917,
@@ -98,9 +247,63 @@
       "tierScore": 78,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "讨袁后",
+      "summary": "段祺瑞内阁",
       "rationale": "入阁",
+      "quote": {
+        "find": [
+          "梁启超任财政总长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "辞职退出政坛",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "内阁倒台，从此不再从政",
+      "rationale": "退隐",
       "quote": null
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "巴黎和会游欧",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以私人身份赴欧，电告国内拒签",
+      "rationale": "外交舆论",
+      "quote": {
+        "find": [
+          "梁无一刻安眠"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "组织共学社著述讲学",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《清代学术概论》《中国历史研究法》",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "梁在北京组织共学社"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1925,
@@ -111,18 +314,41 @@
       "tierScore": 68,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "四大导师",
+      "summary": "四大导师之首",
       "rationale": "学术",
       "quote": null
+    },
+    {
+      "year": 1926,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "协和误割肾",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "手术误割健肾，仍撰文为西医辩护",
+      "rationale": "病",
+      "quote": {
+        "find": [
+          "梁启超忽患便血"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1929,
-    "title": "病逝",
+    "title": "北平病逝",
     "retention": 0.95,
     "reason": "学术思想影响深远",
-    "quote": null
+    "quote": {
+      "find": [
+        "梁启超于北平协和医院去世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

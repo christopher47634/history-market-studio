@@ -11,7 +11,13 @@
   },
   "lifeSpan": 82,
   "thesis": "地质学家，第四纪冰川，找油。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「李四光」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1889,
@@ -26,10 +32,33 @@
       "score": 15,
       "delta": 0,
       "rationale": "平民",
-      "summary": "塾师",
+      "summary": "塾师之子",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1902,
+      "age": 13,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考入武昌高等小学",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "求学",
+      "summary": "报名误写名为李四光",
+      "evidence": "百科",
+      "quote": {
+        "text": "李四光原名李仲揆，十三周岁（1902年冬，虚岁十四岁）赴武昌求学小学报名时误将年龄“十四”填入姓名一栏",
+        "textSimplified": "李四光原名李仲揆，十三周岁（1902年冬，虚岁十四岁）赴武昌求学小学报名时误将年龄“十四”填入姓名一栏",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
     },
     {
       "year": 1904,
@@ -44,10 +73,61 @@
       "score": 28,
       "delta": 13,
       "rationale": "留学",
-      "summary": "同盟会",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "大阪高等工业学校，加入同盟会",
+      "evidence": "百科",
+      "quote": {
+        "text": "光绪三十年五月1904年赴日本留学，同年参加同盟会，先后在东京弘文学院、大阪高等工业学校学习",
+        "textSimplified": "光绪三十年五月1904年赴日本留学，同年参加同盟会，先后在东京弘文学院、大阪高等工业学校学习",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
+    },
+    {
+      "year": 1911,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "湖北军政府实业部长",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 0,
+      "rationale": "入仕",
+      "summary": "同盟会最年轻成员",
+      "evidence": "百科",
+      "quote": {
+        "text": "1911年，作为中国同盟会年龄最小的第一批成员，李四光参与革命，并出任湖北同盟会支部书记与湖北军政府实业部部长。",
+        "textSimplified": "1911年，作为中国同盟会年龄最小的第一批成员，李四光参与革命，并出任湖北同盟会支部书记与湖北军政府实业部部长。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
+    },
+    {
+      "year": 1913,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学英国",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 4,
+      "rationale": "留学",
+      "summary": "伯明翰大学采矿转地质",
+      "evidence": "百科",
+      "quote": {
+        "text": "1913年后，李四光留学英国，在伯明翰大学学习地质学，并在1918年获得硕士学位。",
+        "textSimplified": "1913年后，李四光留学英国，在伯明翰大学学习地质学，并在1918年获得硕士学位。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
     },
     {
       "year": 1920,
@@ -60,16 +140,21 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 52,
-      "delta": 24,
+      "delta": 20,
       "rationale": "学术",
-      "summary": "教授",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "丁文江邀请",
+      "evidence": "百科",
+      "quote": {
+        "text": "1920年，李四光受丁文江号召回国，并于次年担任北京大学地质系主任。",
+        "textSimplified": "1920年，李四光受丁文江号召回国，并于次年担任北京大学地质系主任。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
     },
     {
-      "year": 1928,
-      "age": 39,
+      "year": 1927,
+      "age": 38,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "中研院地质所所长",
@@ -80,17 +165,109 @@
       "score": 60,
       "delta": 8,
       "rationale": "领军",
-      "summary": "领军",
+      "summary": "筹建地质研究所",
+      "evidence": "百科",
+      "quote": {
+        "text": "1927年，李四光主持筹建中央研究院地质研究所，并于次年担任所长。",
+        "textSimplified": "1927年，李四光主持筹建中央研究院地质研究所，并于次年担任所长。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
+    },
+    {
+      "year": 1928,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "武汉大学建筑筹备委员长",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 0,
+      "rationale": "建设",
+      "summary": "珞珈山校园",
+      "evidence": "百科",
+      "quote": {
+        "text": "1928年7月至1938年4月任国立武汉大学建筑筹备委员长，后在南京参与创建中央研究院",
+        "textSimplified": "1928年7月至1938年4月任国立武汉大学建筑筹备委员长，后在南京参与创建中央研究院",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
+    },
+    {
+      "year": 1934,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赴英讲学",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 0,
+      "rationale": "国际",
+      "summary": "出版《中国地质学》",
+      "evidence": "百科",
+      "quote": {
+        "text": "1934年，李四光赴英讲授“中国地质学”，并出版同名著作。",
+        "textSimplified": "1934年，李四光赴英讲授“中国地质学”，并出版同名著作。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
+    },
+    {
+      "year": 1937,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "抗战流亡桂林",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 51,
+      "delta": 0,
+      "rationale": "流离",
+      "summary": "地质所迁桂林",
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1948,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "赴英参加地质大会",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 0,
+      "rationale": "海外",
+      "summary": "滞留英国",
+      "evidence": "百科",
+      "quote": {
+        "text": "抗战期间，他在重庆大学任教，并在1948年前往英国参与国际地质学会会议。",
+        "textSimplified": "抗战期间，他在重庆大学任教，并在1948年前往英国参与国际地质学会会议。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
     },
     {
       "year": 1950,
       "age": 61,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "回国",
+      "title": "秘密回国",
       "tier": "方面名家",
       "tierScore": 62,
       "crisis": "平稳",
@@ -99,9 +276,14 @@
       "delta": 2,
       "rationale": "归国",
       "summary": "突破封锁",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "李四光秘密回国，随后出任地质部部长、中国科学院副院长、中国科学院学部委员、中国地质学会理事长、中国科协主席、世界科学工作者协会副主席、全国政协副主席、苏联科学院外籍院士、中共中央委员、国务院科教组组长等要职",
+        "textSimplified": "李四光秘密回国，随后出任地质部部长、中国科学院副院长、中国科学院学部委员、中国地质学会理事长、中国科协主席、世界科学工作者协会副主席、全国政协副主席、苏联科学院外籍院士、中共中央委员、国务院科教组组长等要职",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
     },
     {
       "year": 1952,
@@ -120,18 +302,82 @@
       "evidence": "概括",
       "quote": null,
       "verified": false
+    },
+    {
+      "year": 1958,
+      "age": 69,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国科协首任主席",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 0,
+      "rationale": "荣誉",
+      "summary": "首任",
+      "evidence": "百科",
+      "quote": {
+        "text": "1958年当选为中国科学技术协会首任主席。",
+        "textSimplified": "1958年当选为中国科学技术协会首任主席。",
+        "source": "维基百科「李四光」",
+        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      },
+      "verified": true
+    },
+    {
+      "year": 1959,
+      "age": 70,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大庆油田发现",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 2,
+      "rationale": "巅峰",
+      "summary": "陆相生油，功成找油",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1966,
+      "age": 77,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "周恩来保护",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 75,
+      "delta": 0,
+      "rationale": "受冲击",
+      "summary": "文革中受冲击较轻",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     }
   ],
   "finale": {
     "year": 1971,
     "age": 82,
-    "title": "逝世",
+    "title": "北京逝世",
     "retention": 0.95,
     "reason": "地质",
-    "score": 77.9,
-    "evidence": "概括",
-    "quote": null,
-    "verified": false
+    "score": 79.8,
+    "evidence": "百科",
+    "quote": {
+      "text": "1971年4月29日在北京逝世，享年82岁。",
+      "textSimplified": "1971年4月29日在北京逝世，享年82岁。",
+      "source": "维基百科「李四光」",
+      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+    },
+    "verified": true
   },
   "posthumous": [
     {
@@ -149,9 +395,9 @@
     "rationale": "地质学家"
   },
   "peak": {
-    "title": "地质部部长",
-    "age": 63,
-    "score": 82
+    "title": "大庆油田发现",
+    "age": 70,
+    "score": 84
   },
   "trough": {
     "title": "留学日本",
@@ -160,24 +406,14 @@
   },
   "gaps": [
     {
-      "fromAge": 15,
-      "toAge": 31,
-      "years": 16
-    },
-    {
-      "fromAge": 39,
+      "fromAge": 38,
       "toAge": 61,
-      "years": 22
-    },
-    {
-      "fromAge": 63,
-      "toAge": 82,
-      "years": 19
+      "years": 23
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 12,
+    "quotesClaimed": 12,
     "author": "claude"
   }
 }

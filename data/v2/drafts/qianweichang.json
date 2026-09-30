@@ -2,7 +2,7 @@
   "id": "qianweichang",
   "author": "claude",
   "born": {
-    "year": 1912,
+    "year": 1913,
     "certainty": "确知"
   },
   "died": {
@@ -12,7 +12,7 @@
   "thesis": "弃文从理的力学家，上海大学校长。",
   "events": [
     {
-      "year": 1912,
+      "year": 1913,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "生于无锡",
@@ -20,9 +20,27 @@
       "tierScore": 25,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "书香",
+      "summary": "书香，叔父钱穆",
       "rationale": "士人",
       "quote": null
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "苏州中学",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "钱穆嘱咐应考",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "苏州中学开考招生"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1931,
@@ -33,9 +51,32 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "九一八",
+      "summary": "九一八后弃文从理",
       "rationale": "转系",
-      "quote": null
+      "quote": {
+        "find": [
+          "钱伟长来到北京"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1939,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "庚款留学",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第七届中英庚款",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "钱伟长参加了第七届中英庚款会公费留学"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1940,
@@ -46,8 +87,21 @@
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "留学",
+      "summary": "弹性板壳内禀理论",
       "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1942,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "加州理工师从冯·卡门",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "喷气推进研究所",
+      "rationale": "研究",
       "quote": null
     },
     {
@@ -64,6 +118,32 @@
       "quote": null
     },
     {
+      "year": 1952,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "清华副教务长",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "院系调整",
+      "rationale": "学术行政",
+      "quote": null
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "清华副校长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中科院学部委员，参与十二年科学规划",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
       "year": 1957,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -77,6 +157,60 @@
       "quote": null
     },
     {
+      "year": 1968,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "下放炼钢车间",
+      "tier": "初起",
+      "tierScore": 26,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "北京特种钢厂",
+      "rationale": "劳动",
+      "quote": {
+        "find": [
+          "被下放到北京特种钢厂炼钢车间劳动"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1972,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随团访问英美",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "周恩来点名",
+      "rationale": "复出",
+      "quote": {
+        "find": [
+          "由周恩来亲自点名"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1979,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "右派改正",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "撤销右派决定",
+      "rationale": "平反",
+      "quote": {
+        "find": [
+          "中央撤销把钱伟长划为右派分子的决定"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1983,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -87,6 +221,42 @@
       "crisisPenalty": 0,
       "summary": "校长",
       "rationale": "复起",
+      "quote": {
+        "find": [
+          "钱伟长被邓小平亲自下调令"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1987,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "全国政协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "民盟中央副主席",
+      "rationale": "国家领导",
+      "quote": {
+        "find": [
+          "任全国政协副主席"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1994,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "上海大学校长",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四校合并",
+      "rationale": "办学",
       "quote": null
     }
   ],
@@ -96,7 +266,12 @@
     "title": "逝世",
     "retention": 0.97,
     "reason": "力学",
-    "quote": null
+    "quote": {
+      "find": [
+        "钱伟长在上海逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

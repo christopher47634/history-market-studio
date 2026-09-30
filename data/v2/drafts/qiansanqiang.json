@@ -20,9 +20,32 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "钱玄同之子",
+      "summary": "钱玄同之子，吴越钱氏",
       "rationale": "书香",
-      "quote": null
+      "quote": {
+        "find": [
+          "钱三强1913年10月16日出生于浙江绍兴"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1936,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "清华物理系毕业",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "严济慈助理",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "1936年毕业于国立清华大学物理系"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1937,
@@ -33,9 +56,14 @@
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "约里奥-居里",
+      "summary": "师从约里奥-居里夫妇",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "1937年留学法国"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1946,
@@ -46,9 +74,14 @@
       "tierScore": 58,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "原子核",
+      "summary": "获法国科学院物理学奖",
       "rationale": "成名",
-      "quote": null
+      "quote": {
+        "find": [
+          "1946年获法国科学院"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1948,
@@ -59,31 +92,118 @@
       "tierScore": 60,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "归国",
+      "summary": "北平研究院原子学研究所所长",
       "rationale": "归国",
+      "quote": {
+        "find": [
+          "1948年回国后"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1950,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "近代物理所所长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "原子能研究所",
+      "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1955,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "原子能事业筹划",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "向中央讲解原子能，参与决策核计划",
+      "rationale": "决策",
       "quote": null
     },
     {
       "year": 1958,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "原子能研究所所长",
+      "title": "原子能研究所所长、二机部副部长",
       "tier": "重臣主帅",
       "tierScore": 80,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "领军",
+      "summary": "组建核科学队伍，点将邓稼先等",
       "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "文革下放",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "下放陕西合阳干校",
+      "rationale": "困顿",
+      "quote": null
+    },
+    {
+      "year": 1978,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中科院副院长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兼浙江大学校长",
+      "rationale": "复起",
+      "quote": {
+        "find": [
+          "钱三强被任命为中国科学院党"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1986,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国科协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "全国政协副主席",
+      "rationale": "荣誉",
       "quote": null
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1999,
+      "title": "追授两弹一星功勋奖章",
+      "score": 86,
+      "rationale": ""
+    }
+  ],
   "finale": {
     "year": 1992,
-    "title": "逝世",
+    "title": "北京病逝",
     "retention": 0.95,
     "reason": "原子能",
-    "quote": null
+    "quote": {
+      "find": [
+        "在北京病逝，终年79岁"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "时代定义者",

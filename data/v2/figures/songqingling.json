@@ -11,7 +11,13 @@
   },
   "lifeSpan": 88,
   "thesis": "孙中山夫人，国家名誉主席。",
-  "sources": [],
+  "sources": [
+    {
+      "label": "维基百科「宋庆龄」",
+      "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84",
+      "site": "wp"
+    }
+  ],
   "events": [
     {
       "year": 1893,
@@ -27,9 +33,60 @@
       "delta": 0,
       "rationale": "名门",
       "summary": "宋氏家族",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "百科",
+      "quote": {
+        "text": "宋庆龄出生于1893年1月27日。",
+        "textSimplified": "宋庆龄出生于1893年1月27日。",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
+    },
+    {
+      "year": 1913,
+      "age": 20,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "卫斯理安女子学院毕业",
+      "tier": "布衣",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 0,
+      "rationale": "留学",
+      "summary": "赴日本",
+      "evidence": "百科",
+      "quote": {
+        "text": "1913年6月毕业，8月29日到达日本横滨。",
+        "textSimplified": "1913年6月毕业，8月29日到达日本横滨。",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
+    },
+    {
+      "year": 1914,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "任孙中山英文秘书",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 0,
+      "rationale": "秘书",
+      "summary": "接替宋霭龄",
+      "evidence": "百科",
+      "quote": {
+        "text": "1914年，在日本接替大姐宋霭龄担任孙中山英文秘书，与孙相恋。",
+        "textSimplified": "1914年，在日本接替大姐宋霭龄担任孙中山英文秘书，与孙相恋。",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
     },
     {
       "year": 1915,
@@ -44,7 +101,25 @@
       "score": 48,
       "delta": 16,
       "rationale": "革命伴侣",
-      "summary": "东京",
+      "summary": "东京，冲破家庭反对",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1922,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "永丰舰之难",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 36,
+      "delta": 0,
+      "rationale": "遇险",
+      "summary": "陈炯明兵变中流产",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -68,6 +143,29 @@
       "verified": false
     },
     {
+      "year": 1926,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国民党中执委",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 16,
+      "rationale": "左派领袖",
+      "summary": "国民党二大当选",
+      "evidence": "百科",
+      "quote": {
+        "text": "孙中山病故后，宋庆龄于1926年1月当选为中国国民党中央执行委员会委员。",
+        "textSimplified": "孙中山病故后，宋庆龄于1926年1月当选为中国国民党中央执行委员会委员。",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
+    },
+    {
       "year": 1927,
       "age": 34,
       "yearCertainty": "确知",
@@ -78,9 +176,50 @@
       "crisis": "受挫",
       "crisisPenalty": 10,
       "score": 46,
-      "delta": -4,
+      "delta": -20,
       "rationale": "异见",
-      "summary": "发表声明",
+      "summary": "发表声明，与蒋介石决裂",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1932,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国民权保障同盟",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 16,
+      "rationale": "民权",
+      "summary": "营救政治犯",
+      "evidence": "百科",
+      "quote": {
+        "text": "1932年12月，她联络中外进步人士与知识界、文化界代表，在上海成立中国民权保障同盟",
+        "textSimplified": "1932年12月，她联络中外进步人士与知识界、文化界代表，在上海成立中国民权保障同盟",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
+    },
+    {
+      "year": 1938,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "保卫中国同盟",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 0,
+      "rationale": "抗战",
+      "summary": "香港，募集抗战物资",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -96,9 +235,68 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 86,
-      "delta": 40,
+      "delta": 24,
       "rationale": "国家领导",
-      "summary": "副主席",
+      "summary": "留在大陆，参加开国大典",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1951,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "保卫儿童委员会主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 0,
+      "rationale": "荣誉",
+      "summary": "斯大林和平奖",
+      "evidence": "百科",
+      "quote": {
+        "text": "1951年她被选为中国人民保卫儿童全国委员会主席，她创办的《儿童时代》杂志是中华人民共和国最早的儿童读物之一。",
+        "textSimplified": "1951年她被选为中国人民保卫儿童全国委员会主席，她创办的《儿童时代》杂志是中华人民共和国最早的儿童读物之一。",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
+    },
+    {
+      "year": 1959,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国家副主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 0,
+      "rationale": "国家领导",
+      "summary": "第二届全国人大",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1966,
+      "age": 73,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "文革中受冲击",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 75,
+      "delta": 0,
+      "rationale": "受冲击",
+      "summary": "父母墓被砸，受周恩来保护",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -116,10 +314,15 @@
       "score": 86,
       "delta": 0,
       "rationale": "荣誉",
-      "summary": "病中",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "病中入党",
+      "evidence": "百科",
+      "quote": {
+        "text": "她获全国人大常委会授予“中华人民共和国名誉主席”称号，是迄今为止唯一一位获得这一荣誉称号的人士。",
+        "textSimplified": "她获全国人大常委会授予“中华人民共和国名誉主席”称号，是迄今为止唯一一位获得这一荣誉称号的人士。",
+        "source": "维基百科「宋庆龄」",
+        "url": "https://zh.wikipedia.org/wiki/%E5%AE%8B%E5%BA%86%E9%BE%84"
+      },
+      "verified": true
     }
   ],
   "finale": {
@@ -165,19 +368,19 @@
       "years": 22
     },
     {
-      "fromAge": 34,
+      "fromAge": 39,
       "toAge": 56,
-      "years": 22
+      "years": 17
     },
     {
-      "fromAge": 56,
+      "fromAge": 66,
       "toAge": 88,
-      "years": 32
+      "years": 22
     }
   ],
   "quality": {
-    "quotesVerified": 0,
-    "quotesClaimed": 0,
+    "quotesVerified": 7,
+    "quotesClaimed": 7,
     "author": "claude"
   }
 }

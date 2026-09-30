@@ -25,6 +25,24 @@
       "quote": null
     },
     {
+      "year": 1844,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中举",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "顺天乡试",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "顺天乡试取中举人"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1847,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -35,7 +53,43 @@
       "crisisPenalty": 0,
       "summary": "入仕",
       "rationale": "入仕",
+      "quote": {
+        "find": [
+          "中第二甲第三十"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1853,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回籍办团练",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "屡战屡败",
+      "rationale": "团练",
       "quote": null
+    },
+    {
+      "year": 1858,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入曾国藩幕",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "襄办营务",
+      "rationale": "幕僚",
+      "quote": {
+        "find": [
+          "李鸿章入曾国藩幕府襄办营"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1862,
@@ -48,6 +102,55 @@
       "crisisPenalty": 0,
       "summary": "江苏巡抚",
       "rationale": "方面",
+      "quote": {
+        "find": [
+          "编成淮勇五营"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1864,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "克复苏常",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与常胜军",
+      "rationale": "战功",
+      "quote": {
+        "find": [
+          "淮军在常州与陈坤书率领的太平军激战"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1865,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "创江南制造总局",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "洋务",
+      "rationale": "洋务",
+      "quote": null
+    },
+    {
+      "year": 1868,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "平定捻军",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "协办大学士",
+      "rationale": "战功",
       "quote": null
     },
     {
@@ -64,6 +167,37 @@
       "quote": null
     },
     {
+      "year": 1873,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "轮船招商局",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "洋务企业",
+      "rationale": "洋务",
+      "quote": {
+        "find": [
+          "轮船招商局正式成立"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1888,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北洋海军成军",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "远东第一舰队",
+      "rationale": "鼎盛",
+      "quote": null
+    },
+    {
       "year": 1895,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -77,6 +211,42 @@
       "quote": {
         "find": [
           "馬關"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出使俄欧美",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "投闲，中俄密约",
+      "rationale": "外交",
+      "quote": {
+        "find": [
+          "慈禧任命李鸿章为"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1899,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "两广总督",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东南互保",
+      "rationale": "复起",
+      "quote": {
+        "find": [
+          "出督两广"
         ],
         "source": 0
       }

@@ -25,28 +25,113 @@
       "quote": null
     },
     {
-      "year": 1917,
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入江南商业学堂",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南京",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "就学于南京江南商业学堂"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考入唐山路矿学堂",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "土木",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "考入唐山工业专门学校"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1916,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "留学康奈尔",
+      "title": "清华留美考试第一",
       "tier": "初起",
       "tierScore": 34,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "桥梁",
+      "summary": "赴康奈尔",
       "rationale": "留学",
+      "quote": {
+        "find": [
+          "以第一名录取"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "卡内基理工首位博士",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "桥梁框架次应力",
+      "rationale": "学成",
+      "quote": {
+        "find": [
+          "是该校的第一位博士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1922,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东南大学教授",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "工科主任",
+      "rationale": "教授",
       "quote": null
     },
     {
-      "year": 1935,
+      "year": 1924,
       "yearCertainty": "确知",
-      "kind": "stage",
-      "title": "钱塘江大桥开工",
-      "tier": "方面名家",
-      "tierScore": 62,
+      "kind": "sub",
+      "title": "河海工科大学校长",
+      "tier": "成名",
+      "tierScore": 50,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "自主设计",
+      "summary": "校长",
+      "rationale": "教育",
+      "quote": null
+    },
+    {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "钱塘江大桥处长",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "主持设计",
       "rationale": "巅峰",
       "quote": null
     },
@@ -54,17 +139,71 @@
       "year": 1937,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "亲手炸桥",
+      "title": "大桥通车后亲手炸桥",
       "tier": "方面名家",
       "tierScore": 56,
       "crisis": "大败",
       "crisisPenalty": 20,
-      "summary": "抗战炸桥",
+      "summary": "阻止日军",
       "rationale": "悲壮",
+      "quote": {
+        "find": [
+          "茅以昇亲自参与了炸桥"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1943,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国桥梁公司总经理",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抗战",
+      "rationale": "经营",
       "quote": null
     },
     {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "修复大桥、当选院士",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中研院第一届院士",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "当选为中央研究院第一届院士"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北方交大校长",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "校长",
+      "rationale": "领导",
+      "quote": {
+        "find": [
+          "任中国交通大学、北方交通大学校长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1951,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "铁道科学研究院院长",
@@ -75,15 +214,77 @@
       "summary": "院长",
       "rationale": "领导",
       "quote": null
+    },
+    {
+      "year": 1955,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "武汉长江大桥技术顾问",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "主持设计",
+      "rationale": "大桥",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "文革受批斗",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "反动学术权威",
+      "rationale": "受冲击",
+      "quote": null
+    },
+    {
+      "year": 1980,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国科协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "科普",
+      "rationale": "荣誉",
+      "quote": null
+    },
+    {
+      "year": 1982,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "美国工程院外籍院士",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国际荣誉",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "当选美国国家工程院外籍院士"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
   "finale": {
     "year": 1989,
-    "title": "逝世",
+    "title": "北京逝世",
     "retention": 0.95,
     "reason": "桥梁",
-    "quote": null
+    "quote": {
+      "find": [
+        "在北京逝世，享年93岁"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

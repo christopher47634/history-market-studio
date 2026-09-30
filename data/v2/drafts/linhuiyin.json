@@ -25,6 +25,24 @@
       "quote": null
     },
     {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随父游欧",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "伦敦，萌生建筑志向",
+      "rationale": "游学",
+      "quote": {
+        "find": [
+          "和父亲林长民一起赴伦敦生活"
+        ],
+        "source": 0
+      }
+    },
+    {
       "year": 1924,
       "yearCertainty": "确知",
       "kind": "stage",
@@ -33,9 +51,32 @@
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "建筑",
+      "summary": "建筑系不收女生，改读美术选修建筑",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "和梁思成一起赴美国宾夕法尼亚大学学习建筑"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与梁思成结婚回国",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东北大学建筑系",
+      "rationale": "教学",
+      "quote": {
+        "find": [
+          "在加拿大与梁思成结婚"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1930,
@@ -46,8 +87,21 @@
       "tierScore": 50,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "佛光寺",
+      "summary": "走遍十五省",
       "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "发现佛光寺",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "确认唐代木构",
+      "rationale": "发现",
       "quote": null
     },
     {
@@ -64,7 +118,25 @@
       "quote": null
     },
     {
-      "year": 1949,
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "清华建筑系",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与梁思成创系",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "依梁思成建议，成立清华大学建筑系"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1950,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "设计国徽",
@@ -75,6 +147,19 @@
       "summary": "国徽",
       "rationale": "国家工程",
       "quote": null
+    },
+    {
+      "year": 1952,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "人民英雄纪念碑",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "病中设计须弥座纹饰",
+      "rationale": "国家工程",
+      "quote": null
     }
   ],
   "posthumous": [],
@@ -83,7 +168,12 @@
     "title": "病逝",
     "retention": 0.95,
     "reason": "建筑学",
-    "quote": null
+    "quote": {
+      "find": [
+        "林徽因病逝于同仁"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

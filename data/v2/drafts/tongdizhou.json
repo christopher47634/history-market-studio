@@ -20,9 +20,40 @@
       "tierScore": 12,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "农家",
+      "summary": "农家，幼年丧父",
       "rationale": "贫寒",
       "quote": null
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复旦大学毕业",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "哲学系心理学",
+      "rationale": "求学",
+      "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中央大学助教",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "蔡堡推荐",
+      "rationale": "入门",
+      "quote": {
+        "find": [
+          "入国立中央"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1930,
@@ -46,8 +77,111 @@
       "tierScore": 48,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "山东大学",
+      "summary": "获博士，山东大学",
       "rationale": "学术",
+      "quote": {
+        "find": [
+          "1934年获博士学位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "抗战流亡",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "在宜宾李庄租屋，用显微镜坚持研究",
+      "rationale": "困顿",
+      "quote": null
+    },
+    {
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "山东大学复校",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "青岛",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "童第周回青岛参加复校"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "当选中研院院士",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第一届院士",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "当选为中央研究院第一届院士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "山东大学动物系主任",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "放弃美国条件回国",
+      "rationale": "归国",
+      "quote": {
+        "find": [
+          "他放弃在美国研究和生活条件"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1951,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "山东大学副校长",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "海洋所",
+      "rationale": "领导",
+      "quote": {
+        "find": [
+          "任山东大学副校长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1955,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中科院学部委员",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "生物学地学部副主任",
+      "rationale": "学术领袖",
       "quote": null
     },
     {
@@ -56,12 +190,35 @@
       "kind": "stage",
       "title": "鱼类细胞核移植",
       "tier": "方面名家",
-      "tierScore": 64,
+      "tierScore": 68,
       "crisis": "平稳",
       "crisisPenalty": 0,
       "summary": "克隆鱼",
       "rationale": "巅峰",
-      "quote": null
+      "quote": {
+        "find": [
+          "他将雄性鲤鱼的DNA放入雌性鲤鱼的卵子内"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "文革受批判",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "四清、文革",
+      "rationale": "受冲击",
+      "quote": {
+        "find": [
+          "受到批"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1978,
@@ -74,7 +231,12 @@
       "crisisPenalty": 0,
       "summary": "副院长",
       "rationale": "领导",
-      "quote": null
+      "quote": {
+        "find": [
+          "任中国科学院副院长"
+        ],
+        "source": 0
+      }
     }
   ],
   "posthumous": [],
@@ -83,7 +245,12 @@
     "title": "逝世",
     "retention": 0.95,
     "reason": "克隆先驱",
-    "quote": null
+    "quote": {
+      "find": [
+        "在北京市北京医院逝世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",

@@ -20,9 +20,32 @@
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "邓以蛰之子",
+      "summary": "邓以蛰之子，邓石如六世孙",
       "rationale": "书香",
-      "quote": null
+      "quote": {
+        "find": [
+          "六世祖邓石如是清代有名的书法家"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1945,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "西南联大毕业",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北大任教",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "邓稼先1945年毕业于国立西南联合大学物理系"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1948,
@@ -35,19 +58,42 @@
       "crisisPenalty": 0,
       "summary": "物理学",
       "rationale": "留学",
-      "quote": null
+      "quote": {
+        "find": [
+          "赴美国普渡大学物理系留学"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1950,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "获博士后归国",
+      "title": "获博士学位后九天归国",
       "tier": "成名",
       "tierScore": 50,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "九天",
+      "summary": "二十六岁，人称娃娃博士",
       "rationale": "归国",
+      "quote": {
+        "find": [
+          "在获得博士学位后数天就搭乘威尔逊总统号客轮"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "近代物理所副研究员",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入党",
+      "rationale": "研究",
       "quote": null
     },
     {
@@ -59,9 +105,14 @@
       "tierScore": 72,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "九所",
+      "summary": "二机部九所理论部主任",
       "rationale": "领军",
-      "quote": null
+      "quote": {
+        "find": [
+          "1958年秋任二机部第九研究所理论部主任"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1964,
@@ -72,9 +123,53 @@
       "tierScore": 80,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "理论设计",
+      "summary": "理论方案负责人",
       "rationale": "巅峰",
       "quote": null
+    },
+    {
+      "year": 1967,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "氢弹爆炸",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "从原子弹到氢弹两年八个月",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1969,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "文革中受冲击",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "九院武斗，仍坚守基地",
+      "rationale": "困顿",
+      "quote": null
+    },
+    {
+      "year": 1972,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "九院副院长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "核工业部第九研究院",
+      "rationale": "领导",
+      "quote": {
+        "find": [
+          "1972年任核工业部第九研究院副院长"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1979,
@@ -85,12 +180,78 @@
       "tierScore": 78,
       "crisis": "大败",
       "crisisPenalty": 20,
-      "summary": "亲手捡碎片",
+      "summary": "空投试验失败，亲手捡碎片",
       "rationale": "健康受损",
-      "quote": null
+      "quote": {
+        "find": [
+          "一次空投氢弹核试验失败后"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1979,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "九院院长",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "带病工作",
+      "rationale": "领导",
+      "quote": {
+        "find": [
+          "1979年任第九研究院院长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1985,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "确诊直肠癌",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "病中写建议书",
+      "rationale": "病",
+      "quote": {
+        "find": [
+          "几乎所有的尿检化验指标都不正常"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1986,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "国家科技进步特等奖",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "病中获奖，身份公开",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "1986年获国家科技进步奖特等奖"
+        ],
+        "source": 0
+      }
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1999,
+      "title": "追授两弹一星功勋奖章",
+      "score": 90,
+      "rationale": ""
+    }
+  ],
   "finale": {
     "year": 1986,
     "title": "病逝",

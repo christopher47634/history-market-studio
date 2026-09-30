@@ -20,12 +20,48 @@
       "tierScore": 22,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "士绅",
-      "rationale": "士人",
+      "summary": "善化县地主家庭",
+      "rationale": "士绅",
+      "quote": {
+        "find": [
+          "黄兴在长沙市郊善化县"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入两湖书院",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "张之洞推荐，开始同情维新",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "入武昌两湖书院读书"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "官费留日",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东京弘文学院，组织湖南编译社",
+      "rationale": "留学",
       "quote": null
     },
     {
-      "year": 1903,
+      "year": 1904,
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "创华兴会",
@@ -33,9 +69,50 @@
       "tierScore": 36,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "长沙",
+      "summary": "长沙成立，谋划长沙起义事泄出走",
       "rationale": "革命",
-      "quote": null
+      "quote": {
+        "find": [
+          "华兴会在长沙龙璋的西园寓所正式成立"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "同盟会执行部庶务",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "结识孙中山，合组同盟会，居第二把交椅",
+      "rationale": "二号人物",
+      "quote": {
+        "find": [
+          "在日本拥护孙中山组成中国同盟会"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1908,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "钦廉上思起义",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "率二百余人转战，弹尽而退",
+      "rationale": "屡败",
+      "quote": {
+        "find": [
+          "在钦廉上思起义"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1911,
@@ -46,9 +123,14 @@
       "tierScore": 50,
       "crisis": "绝境",
       "crisisPenalty": 40,
-      "summary": "断二指",
+      "summary": "广州起义惨败，断二指脱险",
       "rationale": "惨败",
-      "quote": null
+      "quote": {
+        "find": [
+          "领导第三次广州"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1911,
@@ -59,22 +141,32 @@
       "tierScore": 76,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "战时总司令",
+      "summary": "任战时总司令，指挥阳夏之战",
       "rationale": "统帅",
-      "quote": null
+      "quote": {
+        "find": [
+          "被推为中华民国军政府战时总司令"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1912,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "南京留守",
+      "title": "陆军总长兼参谋总长",
       "tier": "重臣主帅",
       "tierScore": 82,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "陆军总长",
+      "summary": "南京临时政府成立，后任南京留守",
       "rationale": "高位",
-      "quote": null
+      "quote": {
+        "find": [
+          "黄兴任陆军总长兼任参谋总长"
+        ],
+        "source": 0
+      }
     },
     {
       "year": 1913,
@@ -85,18 +177,71 @@
       "tierScore": 48,
       "crisis": "大败",
       "crisisPenalty": 30,
-      "summary": "流亡",
+      "summary": "南京讨袁，旋失败，流亡日本",
       "rationale": "流亡",
-      "quote": null
+      "quote": {
+        "find": [
+          "黄兴响应起义，不久失败"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1914,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "不入中华革命党赴美",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "与孙中山分歧，远走美国",
+      "rationale": "分道",
+      "quote": {
+        "find": [
+          "黄兴没有参加"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "返日策应护国",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "袁世凯死后回国",
+      "rationale": "复出",
+      "quote": {
+        "find": [
+          "他由美国赶抵日本"
+        ],
+        "source": 0
+      }
     }
   ],
-  "posthumous": [],
+  "posthumous": [
+    {
+      "year": 1917,
+      "title": "国葬岳麓山",
+      "score": 82,
+      "rationale": "民国首位国葬，与蔡锷同葬岳麓"
+    }
+  ],
   "finale": {
     "year": 1916,
     "title": "病逝上海",
     "retention": 0.95,
-    "reason": "孙黄",
-    "quote": null
+    "reason": "孙黄并称，四十二岁早逝",
+    "quote": {
+      "find": [
+        "黄兴于上海去世"
+      ],
+      "source": 0
+    }
   },
   "legacy": {
     "tier": "一代名家",
