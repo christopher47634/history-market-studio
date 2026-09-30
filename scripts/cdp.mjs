@@ -50,7 +50,8 @@ export async function launch({ width = 1440, height = 900, mobile = false, scale
     async goto(url, settle = 1200) {
       const loaded = new Promise((r) => listeners.push((m) => m.method === "Page.loadEventFired" && r()));
       await send("Page.navigate", { url });
-      await loaded;
+      // 有的页面资源一直挂着不触发 load，最多等 20 秒就继续。
+      await Promise.race([loaded, sleep(20000)]);
       await sleep(settle);
     },
     async eval(expr) {

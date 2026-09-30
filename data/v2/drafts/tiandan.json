@@ -1,0 +1,140 @@
+{
+  "id": "tiandan",
+  "author": "claude",
+  "born": {
+    "year": -320,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -260,
+    "certainty": "估计"
+  },
+  "thesis": "临淄市掾，以火牛阵复齐七十余城。",
+  "events": [
+    {
+      "year": -320,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐宗室疏属",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐诸田疏属",
+      "rationale": "宗室远支",
+      "quote": {
+        "find": [
+          "疏屬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -290,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任临淄市掾",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为临淄市掾",
+      "rationale": "小吏",
+      "quote": {
+        "find": [
+          "市掾"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -284,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "燕破齐奔即墨",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "燕破齐，田单走安平，以铁笼得免",
+      "rationale": "国破逃难",
+      "quote": {
+        "find": [
+          "鐵籠",
+          "安平"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -284,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被推为即墨将",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "即墨人共立田单为将军，孤城坚守",
+      "rationale": "孤城绝境",
+      "quote": {
+        "find": [
+          "即墨",
+          "將軍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "火牛阵复齐",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "千余牛角缚兵刃尾烧苇，大破燕军，复七十余城",
+      "rationale": "复国",
+      "quote": {
+        "find": [
+          "火牛",
+          "七十餘城"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迎襄王任相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "迎襄王于莒，封安平君",
+      "rationale": "复国元勋",
+      "quote": {
+        "find": [
+          "安平君"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -260,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "齐国得以延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "以一城复一国的传奇"
+  }
+}

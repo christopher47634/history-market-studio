@@ -1,0 +1,94 @@
+{
+  "id": "dengshichang",
+  "author": "claude",
+  "born": {
+    "year": 1849,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1894,
+    "certainty": "确知"
+  },
+  "thesis": "致远舰管带，黄海海战撞向吉野殉国。",
+  "events": [
+    {
+      "year": 1849,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于广州",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "茶商",
+      "rationale": "商人",
+      "quote": null
+    },
+    {
+      "year": 1867,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "福州船政学堂",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "学堂",
+      "rationale": "学生",
+      "quote": null
+    },
+    {
+      "year": 1880,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴英接舰",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "军官",
+      "rationale": "军官",
+      "quote": null
+    },
+    {
+      "year": 1887,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "致远舰管带",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "管带",
+      "rationale": "舰长",
+      "quote": null
+    },
+    {
+      "year": 1894,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄海海战",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "撞吉野殉国",
+      "rationale": "殉国",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1894,
+    "title": "殉国",
+    "retention": 0.9,
+    "reason": "民族英雄",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "甲午英烈"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "xiean",
+  "author": "claude",
+  "born": {
+    "year": 320,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 385,
+    "certainty": "确知"
+  },
+  "thesis": "东山再起，淝水之战以八万破前秦百万，保全东晋。",
+  "events": [
+    {
+      "year": 320,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于陈郡阳夏",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "谢氏高门",
+      "rationale": "名门",
+      "quote": null
+    },
+    {
+      "year": 340,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "隐居东山",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "屡辞征召，高卧东山",
+      "rationale": "名士",
+      "quote": {
+        "find": [
+          "東山"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 360,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东山再起",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年四十余始出仕，为桓温司马",
+      "rationale": "出仕",
+      "quote": {
+        "find": [
+          "桓溫",
+          "司馬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 373,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与王坦之抗桓温",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "桓温死，谢安为尚书仆射",
+      "rationale": "中枢",
+      "quote": {
+        "find": [
+          "僕射"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 383,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "淝水之战",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "侄谢玄大破苻坚于淝水，安围棋自若",
+      "rationale": "救国",
+      "quote": {
+        "find": [
+          "苻堅",
+          "圍棋"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 384,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "遭猜忌出镇广陵",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "孝武帝与司马道子忌之，出镇广陵",
+      "rationale": "功高见疑",
+      "quote": {
+        "find": [
+          "廣陵"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 385,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "东晋延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "东晋名相，风流宰相"
+  }
+}

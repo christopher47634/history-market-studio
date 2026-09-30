@@ -1,0 +1,165 @@
+{
+  "id": "lianpo",
+  "author": "claude",
+  "born": {
+    "year": -327,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -243,
+    "certainty": "估计"
+  },
+  "thesis": "赵国名将，负荆请罪，长平前坚守，晚年奔魏终老于楚。",
+  "events": [
+    {
+      "year": -327,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于赵",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "赵之良将",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": -283,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "伐齐拜上卿",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "伐齐大破之，取阳晋，拜为上卿",
+      "rationale": "赵国名将",
+      "quote": {
+        "find": [
+          "上卿",
+          "陽晉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "负荆请罪",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与蔺相如将相和",
+      "rationale": "将相和",
+      "quote": {
+        "find": [
+          "負荊"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长平坚壁",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "秦攻长平，廉颇坚壁不战，赵王中反间以赵括代之",
+      "rationale": "被撤换",
+      "quote": {
+        "find": [
+          "趙括",
+          "長平"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -251,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破燕封信平君",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破燕军，围燕都，拜相国，封信平君",
+      "rationale": "复起巅峰",
+      "quote": {
+        "find": [
+          "信平君"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -245,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被夺兵权奔魏",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "赵悼襄王以乐乘代之，廉颇怒攻乐乘，出奔魏",
+      "rationale": "被迫出奔",
+      "quote": {
+        "find": [
+          "奔魏",
+          "樂乘"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -243,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "一饭斗米",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "赵王使使视之，廉颇一饭斗米肉十斤，被谮三遗矢",
+      "rationale": "不得召回",
+      "quote": {
+        "find": [
+          "遺矢"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1204,
+      "title": "辛弃疾「廉颇老矣」",
+      "score": 82,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -243,
+    "title": "卒于楚寿春",
+    "retention": 0.9,
+    "reason": "「廉颇老矣尚能饭否」流传",
+    "quote": {
+      "find": [
+        "壽春"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "战国四大名将之一"
+  }
+}

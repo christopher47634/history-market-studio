@@ -1,0 +1,130 @@
+{
+  "id": "huatuo",
+  "author": "claude",
+  "born": {
+    "year": 145,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 208,
+    "certainty": "确知"
+  },
+  "thesis": "东汉神医，精于外科，创麻沸散和五禽戏，被曹操所杀。",
+  "events": [
+    {
+      "year": 145,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于沛国谯",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "游学徐土，兼通数经",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "谯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 170,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "游学行医",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沛相举孝廉，太尉黄琬辟，皆不就",
+      "rationale": "不仕行医",
+      "quote": {
+        "find": [
+          "孝廉",
+          "黄琬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "神医之名传天下",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以麻沸散行剖腹，创五禽之戏",
+      "rationale": "医名大著",
+      "quote": {
+        "find": [
+          "麻沸散",
+          "五禽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为曹操侍医",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "曹操苦头风，召佗常在左右",
+      "rationale": "侍奉权臣",
+      "quote": {
+        "find": [
+          "头风",
+          "左右"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 207,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "托辞归家",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "思归，以妻疾为辞不返，曹操收付狱",
+      "rationale": "被捕下狱",
+      "quote": {
+        "find": [
+          "妻疾",
+          "收付狱"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 430,
+      "title": "《后汉书》立方术传",
+      "score": 72,
+      "rationale": "神医形象确立"
+    }
+  ],
+  "finale": {
+    "year": 208,
+    "title": "被曹操所杀",
+    "retention": 0.8,
+    "reason": "医书焚毁，医术失传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "中医外科鼻祖，「华佗再世」成为赞誉良医的成语"
+  }
+}

@@ -1,3 +1,4 @@
+import { readFileSync, existsSync } from "node:fs";
 // v2 样板 30 人的原文来源登记。
 // ws = 维基文库页面标题；section = 多人合传时截取传主一段：start 为开头原文，end 可选；wiki = 中文维基条目，只作年表参考，不作引文来源。
 export const SAMPLE = [
@@ -32,3 +33,8 @@ export const SAMPLE = [
   { id:"kangxi", name:"康熙", wiki:"康熙帝", ws:[{ title:"清史稿/卷6", label:"《清史稿·圣祖本纪一》" }, { title:"清史稿/卷7", label:"《清史稿·圣祖本纪二》" }, { title:"清史稿/卷8", label:"《清史稿·圣祖本纪三》" }] },
   { id:"linzexu", name:"林则徐", wiki:"林则徐", ws:[{ title:"清史稿/卷369", label:"《清史稿·林则徐传》", section:{ start:"林則徐，字少穆" } }] },
 ];
+
+// 样板之外的人物：由 resolve-sources.mjs 自动定位的正史来源。
+const fullFile = new URL("./registry-full.json", import.meta.url);
+const full = existsSync(fullFile) ? JSON.parse(readFileSync(fullFile, "utf8")) : {};
+export const ALL = [...SAMPLE, ...Object.values(full).filter((p) => !SAMPLE.some((s) => s.id === p.id))];

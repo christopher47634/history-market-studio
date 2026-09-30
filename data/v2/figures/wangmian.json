@@ -1,0 +1,147 @@
+{
+  "id": "wangmian",
+  "name": "王冕",
+  "born": {
+    "year": 1287,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1359,
+    "certainty": "确知"
+  },
+  "lifeSpan": 72,
+  "thesis": "牧童出身，墨梅画家，隐居不仕。",
+  "sources": [
+    {
+      "label": "《新元史·卷二百三十八 列传第一百三十五》",
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7238"
+    }
+  ],
+  "events": [
+    {
+      "year": 1287,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于诸暨",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 8,
+      "delta": 0,
+      "rationale": "贫寒",
+      "summary": "农家，放牛",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1300,
+      "age": 13,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "寺中夜读",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 10,
+      "delta": 2,
+      "rationale": "苦学",
+      "summary": "佛寺长明灯下读书",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1330,
+      "age": 43,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "屡试不第",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 10,
+      "delta": 0,
+      "rationale": "不第",
+      "summary": "放弃科举",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1350,
+      "age": 63,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "画梅名世",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 34,
+      "rationale": "画家",
+      "summary": "隐居九里山",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1359,
+    "age": 72,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "墨梅流传",
+    "score": 41.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 76,
+      "rationale": "墨梅画家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "墨梅画家"
+  },
+  "peak": {
+    "title": "画梅名世",
+    "age": 63,
+    "score": 44
+  },
+  "trough": {
+    "title": "寺中夜读",
+    "age": 13,
+    "score": 10
+  },
+  "gaps": [
+    {
+      "fromAge": 13,
+      "toAge": 43,
+      "years": 30
+    },
+    {
+      "fromAge": 43,
+      "toAge": 63,
+      "years": 20
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

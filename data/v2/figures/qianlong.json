@@ -1,0 +1,206 @@
+{
+  "id": "qianlong",
+  "name": "乾隆",
+  "born": {
+    "year": 1711,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1799,
+    "certainty": "确知"
+  },
+  "lifeSpan": 88,
+  "thesis": "十全老人，在位六十年，盛世与闭关并存。",
+  "sources": [
+    {
+      "label": "《清史稿·本纪十 高宗本纪一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B710"
+    }
+  ],
+  "events": [
+    {
+      "year": 1711,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为雍正第四子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "皇子",
+      "summary": "皇四子弘历",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1733,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封宝亲王",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 31,
+      "rationale": "亲王",
+      "summary": "亲王",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1735,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": 29,
+      "rationale": "即位",
+      "summary": "即位",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1759,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平定准噶尔回部",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 97,
+      "delta": 2,
+      "rationale": "拓疆",
+      "summary": "新疆入版图",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1773,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "修《四库全书》",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 97,
+      "delta": 0,
+      "rationale": "文化",
+      "summary": "文字狱并行",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1793,
+      "age": 82,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拒马戛尔尼",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 91,
+      "delta": -6,
+      "rationale": "闭关",
+      "summary": "天朝上国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1796,
+      "age": 85,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "禅位太上皇",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": 4,
+      "rationale": "训政",
+      "summary": "仍训政",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1799,
+    "age": 88,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "盛世转衰",
+    "score": 90.3,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 88,
+      "rationale": "十全老人",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "争议",
+    "rationale": "十全老人"
+  },
+  "peak": {
+    "title": "平定准噶尔回部",
+    "age": 48,
+    "score": 97
+  },
+  "trough": {
+    "title": "封宝亲王",
+    "age": 22,
+    "score": 66
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    },
+    {
+      "fromAge": 24,
+      "toAge": 48,
+      "years": 24
+    },
+    {
+      "fromAge": 62,
+      "toAge": 82,
+      "years": 20
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

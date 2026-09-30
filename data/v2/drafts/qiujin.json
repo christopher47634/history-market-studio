@@ -1,0 +1,81 @@
+{
+  "id": "qiujin",
+  "author": "claude",
+  "born": {
+    "year": 1875,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1907,
+    "certainty": "确知"
+  },
+  "thesis": "鉴湖女侠，光复会，绍兴就义。",
+  "events": [
+    {
+      "year": 1875,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于厦门",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东渡日本",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "留学",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1906,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创《中国女报》",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "女权",
+      "rationale": "报人",
+      "quote": null
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大通学堂起义",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "被捕",
+      "rationale": "死局",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1907,
+    "title": "绍兴轩亭口就义",
+    "retention": 0.9,
+    "reason": "秋风秋雨愁煞人",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "女革命家"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "chenghao",
+  "author": "claude",
+  "born": {
+    "year": 1032,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1085,
+    "certainty": "确知"
+  },
+  "thesis": "程颢，理学奠基，反对新法。",
+  "events": [
+    {
+      "year": 1032,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洛阳",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1057,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1069,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "监察御史里行",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "神宗召对",
+      "rationale": "近臣",
+      "quote": null
+    },
+    {
+      "year": 1070,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反对新法外放",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "外放",
+      "rationale": "外放",
+      "quote": null
+    },
+    {
+      "year": 1080,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "洛阳讲学",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与弟程颐讲学",
+      "rationale": "讲学",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1085,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "二程之学",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "理学奠基人"
+  }
+}

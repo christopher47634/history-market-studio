@@ -1,0 +1,183 @@
+{
+  "id": "likeiyong",
+  "name": "李克用",
+  "born": {
+    "year": 856,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 908,
+    "certainty": "确知"
+  },
+  "lifeSpan": 52,
+  "thesis": "沙陀独眼龙，镇压黄巢，与朱温争霸，临终赐三矢。",
+  "sources": [
+    {
+      "label": "《旧五代史·卷二十五》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B725"
+    }
+  ],
+  "events": [
+    {
+      "year": 856,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于神武川",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "部落贵族",
+      "summary": "沙陀首领李国昌之子",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 878,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵被击败逃鞑靼",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 10,
+      "delta": -22,
+      "rationale": "流亡",
+      "summary": "败走",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 883,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破黄巢收复长安",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 72,
+      "rationale": "名将",
+      "summary": "功第一",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 884,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上源驿之变",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 38,
+      "delta": -44,
+      "rationale": "险死",
+      "summary": "朱温夜袭，缒城得脱",
+      "evidence": "原文",
+      "quote": {
+        "text": "是月，班師過汴，汴帥迎勞於封禪寺，請武皇休於府第，乃以從官三百人及監軍使陳景思館於上源驛。",
+        "textSimplified": "是月，班师过汴，汴帅迎劳于封禅寺，请武皇休于府第，乃以从官三百人及监军使陈景思馆于上源驿。",
+        "source": "《旧五代史·卷二十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B725"
+      },
+      "verified": true
+    },
+    {
+      "year": 895,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封晋王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 50,
+      "rationale": "一方之主",
+      "summary": "据河东",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 902,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "朱温围太原",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 55,
+      "delta": -33,
+      "rationale": "危局",
+      "summary": "几陷",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 908,
+    "age": 52,
+    "title": "卒，赐三矢",
+    "retention": 0.9,
+    "reason": "其子灭梁",
+    "score": 49.5,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 66,
+      "rationale": "沙陀独眼龙",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 66,
+    "label": "正面",
+    "rationale": "沙陀独眼龙"
+  },
+  "peak": {
+    "title": "封晋王",
+    "age": 39,
+    "score": 88
+  },
+  "trough": {
+    "title": "起兵被击败逃鞑靼",
+    "age": 22,
+    "score": 10
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

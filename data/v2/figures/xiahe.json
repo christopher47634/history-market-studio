@@ -1,0 +1,279 @@
+{
+  "id": "xiahe",
+  "name": "萧何",
+  "born": {
+    "year": -257,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -193,
+    "certainty": "确知"
+  },
+  "lifeSpan": 64,
+  "thesis": "沛县小吏出身，收秦律令图书、镇守关中，汉朝第一任相国。",
+  "sources": [
+    {
+      "label": "《史记·卷五十三 萧相国世家第二十三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+    }
+  ],
+  "events": [
+    {
+      "year": -257,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于沛县",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "沛县丰邑人，出身寒微",
+      "evidence": "原文",
+      "quote": {
+        "text": "蕭相國何者，沛豐人也。",
+        "textSimplified": "萧相国何者，沛丰人也。",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -215,
+      "age": 42,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任沛县主吏掾",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 18,
+      "rationale": "县中要吏",
+      "summary": "以文无害为沛主吏掾，屡护刘邦",
+      "evidence": "原文",
+      "quote": {
+        "text": "以文無害為沛主吏掾。",
+        "textSimplified": "以文无害为沛主吏掾。",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -209,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迎立沛公",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 6,
+      "rationale": "反秦集团骨干",
+      "summary": "与曹参等迎刘邦为沛公，为丞督事",
+      "evidence": "原文",
+      "quote": {
+        "text": "及高祖起為沛公，何常為丞督事。",
+        "textSimplified": "及高祖起为沛公，何常为丞督事。",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收秦律令图书",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 36,
+      "rationale": "掌握天下户口形势",
+      "summary": "入咸阳独先收秦丞相御史律令图书",
+      "evidence": "原文",
+      "quote": {
+        "text": "沛公至咸陽，諸將皆爭走金帛財物之府分之，何獨先入收秦丞相御史律令圖書藏之。",
+        "textSimplified": "沛公至咸阳，诸将皆争走金帛财物之府分之，何独先入收秦丞相御史律令图书藏之。",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "月下追韩信",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 74,
+      "delta": 0,
+      "rationale": "知人之功",
+      "summary": "追回亡去的韩信，力荐为大将",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -205,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "镇守关中",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 10,
+      "rationale": "汉军后方总管",
+      "summary": "留守关中，给军粮兵员，侍太子治栎阳",
+      "evidence": "原文",
+      "quote": {
+        "text": "漢二年，漢王與諸侯擊楚，何守關中，侍太子，治櫟陽。",
+        "textSimplified": "汉二年，汉王与诸侯击楚，何守关中，侍太子，治栎阳。",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -201,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "功居第一封酂侯",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 4,
+      "rationale": "百官之首",
+      "summary": "论功行封，萧何第一，封酂侯，食邑最多",
+      "evidence": "原文",
+      "quote": {
+        "text": "夫君位為相國，功第一，可複加哉？",
+        "textSimplified": "夫君位为相国，功第一，可复加哉？",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -196,
+      "age": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "诛韩信",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 2,
+      "rationale": "权位顶点",
+      "summary": "与吕后定计诱杀韩信，拜相国，益封五千户",
+      "evidence": "原文",
+      "quote": {
+        "text": "夫君位為相國，功第一，可複加哉？",
+        "textSimplified": "夫君位为相国，功第一，可复加哉？",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    },
+    {
+      "year": -195,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "贱买民田自污",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 76,
+      "delta": 0,
+      "rationale": "功高见疑",
+      "summary": "恐高帝疑忌，强买民田自污，一度下廷尉械系",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃下相國廷尉，械繫之。",
+        "textSimplified": "乃下相国廷尉，械系之。",
+        "source": "《史记·卷五十三 萧相国世家第二十三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7053"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -193,
+    "age": 64,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "萧规曹随，制度延续",
+    "score": 83.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立萧相国世家",
+      "score": 86,
+      "rationale": "开国第一功臣的定位确立",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "汉初三杰之一，开国宰相的典范",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "汉初三杰之一，开国宰相的典范"
+  },
+  "peak": {
+    "title": "诛韩信",
+    "age": 61,
+    "score": 88
+  },
+  "trough": {
+    "title": "任沛县主吏掾",
+    "age": 42,
+    "score": 30
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 42,
+      "years": 42
+    }
+  ],
+  "quality": {
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": "caiyuanpei",
+  "author": "claude",
+  "born": {
+    "year": 1868,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1940,
+    "certainty": "确知"
+  },
+  "thesis": "北大校长，思想自由兼容并包。",
+  "events": [
+    {
+      "year": 1868,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绍兴",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "商人",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1892,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士翰林",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翰林院编修",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "光复会",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "会长",
+      "rationale": "革命",
+      "quote": null
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "教育总长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "首任",
+      "rationale": "入阁",
+      "quote": null
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京大学校长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兼容并包",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中央研究院院长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "院长",
+      "rationale": "学术首领",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1940,
+    "title": "病逝香港",
+    "retention": 0.95,
+    "reason": "学界泰斗",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "学界泰斗"
+  }
+}

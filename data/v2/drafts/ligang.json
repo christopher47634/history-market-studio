@@ -1,0 +1,94 @@
+{
+  "id": "ligang",
+  "author": "claude",
+  "born": {
+    "year": 1083,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1140,
+    "certainty": "确知"
+  },
+  "thesis": "东京保卫战主帅，力主抗战，七十日罢相。",
+  "events": [
+    {
+      "year": 1083,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邵武",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1112,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1126,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东京保卫战",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "击退金兵",
+      "rationale": "救国",
+      "quote": null
+    },
+    {
+      "year": 1127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "高宗即位",
+      "rationale": "宰相",
+      "quote": null
+    },
+    {
+      "year": 1127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "七十日罢相",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "主和派排挤",
+      "rationale": "罢",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1140,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "抗战派领袖",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "抗金名臣"
+  }
+}

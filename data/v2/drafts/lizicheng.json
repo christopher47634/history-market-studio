@@ -1,0 +1,120 @@
+{
+  "id": "lizicheng",
+  "author": "claude",
+  "born": {
+    "year": 1606,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1645,
+    "certainty": "确知"
+  },
+  "thesis": "驿卒起义，攻入北京推翻明朝，一片石兵败身死。",
+  "events": [
+    {
+      "year": 1606,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于米脂",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "贫苦",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1628,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "驿站裁撤失业",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "被裁",
+      "rationale": "失业",
+      "quote": null
+    },
+    {
+      "year": 1630,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起义",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "投高迎祥",
+      "rationale": "起义",
+      "quote": null
+    },
+    {
+      "year": 1638,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "潼关南原大败",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "summary": "仅十八骑",
+      "rationale": "绝境",
+      "quote": null
+    },
+    {
+      "year": 1641,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻洛阳杀福王",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "均田免粮",
+      "rationale": "崛起",
+      "quote": null
+    },
+    {
+      "year": 1644,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "西安称帝攻入北京",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "崇祯自缢",
+      "rationale": "推翻明朝",
+      "quote": null
+    },
+    {
+      "year": 1644,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "一片石之败",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "清军入关",
+      "rationale": "败退",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1645,
+    "title": "九宫山遇害",
+    "retention": 0.8,
+    "reason": "大顺覆灭",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "争议",
+    "rationale": "推翻明朝的农民起义领袖"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "zuti",
+  "author": "claude",
+  "born": {
+    "year": 266,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 321,
+    "certainty": "确知"
+  },
+  "thesis": "闻鸡起舞，中流击楫北伐，收复黄河以南，忧愤而卒。",
+  "events": [
+    {
+      "year": 266,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于范阳遒县",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世吏二千石",
+      "rationale": "北州旧族",
+      "quote": null
+    },
+    {
+      "year": 291,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "闻鸡起舞",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与刘琨同寝，中夜闻荒鸡鸣，蹴琨觉起舞",
+      "rationale": "立志",
+      "quote": {
+        "find": [
+          "聞雞"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 311,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "率亲族南迁",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "京师大乱，率亲党数百家避地淮泗",
+      "rationale": "流亡",
+      "quote": {
+        "find": [
+          "淮泗"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 313,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中流击楫北伐",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以豫州刺史率部曲北伐，中流击楫而誓",
+      "rationale": "北伐",
+      "quote": {
+        "find": [
+          "中流擊楫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 319,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复河南",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "石勒不敢窥兵河南，黄河以南尽为晋土",
+      "rationale": "北伐巅峰",
+      "quote": null
+    },
+    {
+      "year": 321,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "朝廷遣戴渊掣肘",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "朝廷遣戴若思都督，逖意甚怏怏",
+      "rationale": "被掣肘",
+      "quote": {
+        "find": [
+          "戴若思"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 321,
+    "title": "忧愤病卒",
+    "retention": 0.85,
+    "reason": "北伐成果旋即丧失",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "北伐英雄，「闻鸡起舞」「中流击楫」"
+  }
+}

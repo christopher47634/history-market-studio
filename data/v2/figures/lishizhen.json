@@ -1,0 +1,190 @@
+{
+  "id": "lishizhen",
+  "name": "李时珍",
+  "born": {
+    "year": 1518,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1593,
+    "certainty": "确知"
+  },
+  "lifeSpan": 75,
+  "thesis": "三试不第转而学医，二十七年著《本草纲目》。",
+  "sources": [
+    {
+      "label": "《明史·卷二百九十九 列传第一百八十七 方伎》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7299"
+    }
+  ],
+  "events": [
+    {
+      "year": 1518,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于蕲州",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "医户",
+      "summary": "世医之家",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1531,
+      "age": 13,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中秀才",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 24,
+      "delta": 6,
+      "rationale": "少年",
+      "summary": "十四岁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1537,
+      "age": 19,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "三次乡试不第",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 15,
+      "delta": -9,
+      "rationale": "转向",
+      "summary": "弃儒学医",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1551,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "楚王府奉祠正",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 29,
+      "rationale": "医名",
+      "summary": "治愈世子",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1556,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "太医院判",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 6,
+      "rationale": "太医",
+      "summary": "一年辞归",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1578,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《本草纲目》成书",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 10,
+      "rationale": "巨著",
+      "summary": "五十二卷",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃窮搜博采，芟煩補闕，曆三十年，閱書八百餘家，稿三易而成書，曰《本草綱目》。",
+        "textSimplified": "乃穷搜博采，芟烦补阙，历三十年，阅书八百余家，稿三易而成书，曰《本草纲目》。",
+        "source": "《明史·卷二百九十九 列传第一百八十七 方伎》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7299"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1593,
+    "age": 75,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "身后刊行",
+    "score": 57,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1596,
+      "title": "《本草纲目》金陵刊行",
+      "score": 82,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "药圣",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "药圣"
+  },
+  "peak": {
+    "title": "《本草纲目》成书",
+    "age": 60,
+    "score": 60
+  },
+  "trough": {
+    "title": "三次乡试不第",
+    "age": 19,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 38,
+      "toAge": 60,
+      "years": 22
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "lusu",
+  "author": "claude",
+  "born": {
+    "year": 172,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 217,
+    "certainty": "确知"
+  },
+  "thesis": "江东谋士，最早提出鼎足江东之策，力主孙刘联盟。",
+  "events": [
+    {
+      "year": 172,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于临淮东城",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "家富于财",
+      "rationale": "地方豪族",
+      "quote": {
+        "find": [
+          "東城"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "指囷赠粮周瑜",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "指囷相赠，周瑜结交",
+      "rationale": "结识周瑜",
+      "quote": {
+        "find": [
+          "囷"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "榻上策",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劝孙权鼎足江东，以观天下之衅",
+      "rationale": "战略奠基",
+      "quote": {
+        "find": [
+          "鼎足"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "力主抗曹联刘",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "独劝孙权迎刘备共拒曹操",
+      "rationale": "赤壁决策",
+      "quote": null
+    },
+    {
+      "year": 210,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "代周瑜领兵",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "周瑜卒，代领其兵",
+      "rationale": "东吴统帅",
+      "quote": {
+        "find": [
+          "代瑜"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 215,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "单刀会",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与关羽相见，各驻兵马百步上",
+      "rationale": "维护联盟",
+      "quote": {
+        "find": [
+          "單刀"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 217,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "孙刘联盟裂痕加深",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "战略家"
+  }
+}

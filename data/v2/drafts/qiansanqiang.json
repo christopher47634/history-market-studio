@@ -1,0 +1,94 @@
+{
+  "id": "qiansanqiang",
+  "author": "claude",
+  "born": {
+    "year": 1913,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1992,
+    "certainty": "确知"
+  },
+  "thesis": "中国原子能事业开拓者。",
+  "events": [
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绍兴",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "钱玄同之子",
+      "rationale": "书香",
+      "quote": null
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学法国居里实验室",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "约里奥-居里",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "发现三分裂四分裂",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "原子核",
+      "rationale": "成名",
+      "quote": null
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "归国",
+      "rationale": "归国",
+      "quote": null
+    },
+    {
+      "year": 1958,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "原子能研究所所长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "领军",
+      "rationale": "领军",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1992,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "原子能",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "两弹一星元勋"
+  }
+}

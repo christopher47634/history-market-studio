@@ -1,0 +1,289 @@
+{
+  "id": "lvhou",
+  "name": "吕后",
+  "born": {
+    "year": -241,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -180,
+    "certainty": "确知"
+  },
+  "lifeSpan": 61,
+  "thesis": "刘邦发妻，助诛韩信、彭越，高祖死后临朝称制十五年。",
+  "sources": [
+    {
+      "label": "《汉书·卷三 高后纪 第三》",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7003"
+    }
+  ],
+  "events": [
+    {
+      "year": -241,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于单父",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "地方大户之女",
+      "summary": "单父人，父吕公避仇徙沛",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -222,
+      "age": 19,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "嫁刘邦",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": -5,
+      "rationale": "嫁给一介亭长",
+      "summary": "吕公奇刘邦之相，以女妻之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -205,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被项羽所虏",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 5,
+      "delta": -15,
+      "rationale": "人质处境",
+      "summary": "彭城之败后与太公同被楚军所获，为质两年余",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -203,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿沟议和归汉",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 67,
+      "rationale": "汉王正室",
+      "summary": "鸿沟议和后归汉",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -202,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立为皇后",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 14,
+      "rationale": "皇后之尊",
+      "summary": "刘邦称帝，立为皇后",
+      "evidence": "原文",
+      "quote": {
+        "text": "高皇后呂氏，生惠帝。",
+        "textSimplified": "高皇后吕氏，生惠帝。",
+        "source": "《汉书·卷三 高后纪 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    },
+    {
+      "year": -196,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "诛韩信彭越",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 2,
+      "rationale": "参与重大决策",
+      "summary": "与萧何计诛韩信，又劝诛彭越",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -195,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "惠帝即位为太后",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 2,
+      "rationale": "实际执政",
+      "summary": "高祖崩，惠帝立，尊为皇太后，掌实权",
+      "evidence": "原文",
+      "quote": {
+        "text": "惠帝即位，尊呂后為太后。",
+        "textSimplified": "惠帝即位，尊吕后为太后。",
+        "source": "《汉书·卷三 高后纪 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    },
+    {
+      "year": -194,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "人彘之祸",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 0,
+      "rationale": "手段酷烈",
+      "summary": "鸩杀赵王如意，残害戚夫人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -188,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "临朝称制",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": 5,
+      "rationale": "天下政令出于一人",
+      "summary": "惠帝崩，立少帝，临朝称制，封诸吕为王",
+      "evidence": "原文",
+      "quote": {
+        "text": "惠帝崩，太子立為皇帝，年幼，太后臨朝稱制，大赦天下。",
+        "textSimplified": "惠帝崩，太子立为皇帝，年幼，太后临朝称制，大赦天下。",
+        "source": "《汉书·卷三 高后纪 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    },
+    {
+      "year": -181,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "大封诸吕",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 90,
+      "delta": 0,
+      "rationale": "埋下诛吕之祸",
+      "summary": "封诸吕为王，违白马之盟，大臣侧目",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃立兄子呂台、產、祿、台子通四人為王，封諸呂六人為列侯。",
+        "textSimplified": "乃立兄子吕台、产、禄、台子通四人为王，封诸吕六人为列侯。",
+        "source": "《汉书·卷三 高后纪 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -180,
+    "age": 61,
+    "title": "病崩",
+    "retention": 0.85,
+    "reason": "身后诸吕被诛，但与民休息的政策延续",
+    "score": 80.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": -180,
+      "title": "诸吕被诛",
+      "score": 40,
+      "rationale": "大臣诛诸吕，吕氏宗族覆灭",
+      "inferred": false
+    },
+    {
+      "year": -91,
+      "title": "《史记》立吕太后本纪",
+      "score": 68,
+      "rationale": "司马迁肯定其「政不出房户，天下晏然」",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 74,
+      "rationale": "中国第一位临朝称制的皇后，酷烈与治绩并存",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "争议",
+    "rationale": "中国第一位临朝称制的皇后，酷烈与治绩并存"
+  },
+  "peak": {
+    "title": "临朝称制",
+    "age": 53,
+    "score": 95
+  },
+  "trough": {
+    "title": "被项羽所虏",
+    "age": 36,
+    "score": 5
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 19,
+      "years": 19
+    },
+    {
+      "fromAge": 19,
+      "toAge": 36,
+      "years": 17
+    }
+  ],
+  "quality": {
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
+    "author": "claude"
+  }
+}

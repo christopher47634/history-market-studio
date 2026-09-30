@@ -1,0 +1,160 @@
+{
+  "id": "wanyanliang",
+  "name": "完颜亮",
+  "born": {
+    "year": 1122,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1161,
+    "certainty": "确知"
+  },
+  "lifeSpan": 39,
+  "thesis": "海陵王，弑君篡位，迁都燕京，南侵兵败被杀。",
+  "sources": [
+    {
+      "label": "《金史·卷五 本纪第五 海陵》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B75"
+    }
+  ],
+  "events": [
+    {
+      "year": 1122,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于金朝宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "宗室",
+      "summary": "太祖之孙",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1149,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弑熙宗篡位",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 55,
+      "rationale": "篡位",
+      "summary": "即位",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1153,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迁都燕京",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 2,
+      "rationale": "改革",
+      "summary": "建中都",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1161,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南侵采石之败",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 58,
+      "delta": -34,
+      "rationale": "败",
+      "summary": "虞允文败之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1161,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被部将所杀",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 25,
+      "delta": -33,
+      "rationale": "死",
+      "summary": "完颜元宜杀之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1161,
+    "age": 39,
+    "title": "被杀，废为庶人",
+    "retention": 0.8,
+    "reason": "金世宗即位",
+    "score": 20,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 50,
+      "rationale": "金海陵王",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "有影响",
+    "score": 50,
+    "label": "负面",
+    "rationale": "金海陵王"
+  },
+  "peak": {
+    "title": "迁都燕京",
+    "age": 31,
+    "score": 92
+  },
+  "trough": {
+    "title": "被部将所杀",
+    "age": 39,
+    "score": 25
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 27,
+      "years": 27
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

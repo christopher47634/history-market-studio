@@ -1,0 +1,146 @@
+{
+  "id": "zhude",
+  "author": "claude",
+  "born": {
+    "year": 1886,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1976,
+    "certainty": "确知"
+  },
+  "thesis": "红军总司令，南昌起义、井冈山会师，十大元帅之首。",
+  "events": [
+    {
+      "year": 1886,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于仪陇",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "佃农",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "云南讲武堂参加辛亥",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "滇军",
+      "rationale": "军人",
+      "quote": null
+    },
+    {
+      "year": 1916,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "护国战争",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "旅长",
+      "rationale": "名将",
+      "quote": null
+    },
+    {
+      "year": 1922,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴德留学",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "放弃高官",
+      "rationale": "转变",
+      "quote": null
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "井冈山会师",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "朱毛",
+      "rationale": "统帅",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "张国焘分裂被扣",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "被挟",
+      "rationale": "困境",
+      "quote": null
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "八路军总司令",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "总司令",
+      "rationale": "统帅",
+      "quote": null
+    },
+    {
+      "year": 1955,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "元帅",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十大元帅之首",
+      "rationale": "荣誉",
+      "quote": null
+    },
+    {
+      "year": 1959,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "全国人大常委会委员长",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "委员长",
+      "rationale": "国家领导",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1976,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "红军之父",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "人民军队主要缔造者之一"
+  }
+}

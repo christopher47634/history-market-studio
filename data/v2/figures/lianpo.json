@@ -1,0 +1,218 @@
+{
+  "id": "lianpo",
+  "name": "廉颇",
+  "born": {
+    "year": -327,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -243,
+    "certainty": "估计"
+  },
+  "lifeSpan": 84,
+  "thesis": "赵国名将，负荆请罪，长平前坚守，晚年奔魏终老于楚。",
+  "sources": [
+    {
+      "label": "《史记·巻八十一 廉颇蔺相如列传 第二十一》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+    }
+  ],
+  "events": [
+    {
+      "year": -327,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于赵",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "赵之良将",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -283,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "伐齐拜上卿",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 52,
+      "rationale": "赵国名将",
+      "summary": "伐齐大破之，取阳晋，拜为上卿",
+      "evidence": "原文",
+      "quote": {
+        "text": "趙惠文王十六年，廉頗爲趙將伐齊，大破之，取陽晉，拜爲上卿，以勇氣聞-{於}-諸侯。",
+        "textSimplified": "赵惠文王十六年，廉颇为赵将伐齐，大破之，取阳晋，拜为上卿，以勇气闻-{于}-诸侯。",
+        "source": "《史记·巻八十一 廉颇蔺相如列传 第二十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+      },
+      "verified": true
+    },
+    {
+      "year": -279,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "负荆请罪",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 74,
+      "delta": 2,
+      "rationale": "将相和",
+      "summary": "与蔺相如将相和",
+      "evidence": "原文",
+      "quote": {
+        "text": "廉頗聞之，肉袒負荊，因賓客至藺相如門謝罪。",
+        "textSimplified": "廉颇闻之，肉袒负荆，因宾客至蔺相如门谢罪。",
+        "source": "《史记·巻八十一 廉颇蔺相如列传 第二十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7081"
+      },
+      "verified": true
+    },
+    {
+      "year": -260,
+      "age": 67,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长平坚壁",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 66,
+      "delta": -8,
+      "rationale": "被撤换",
+      "summary": "秦攻长平，廉颇坚壁不战，赵王中反间以赵括代之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -251,
+      "age": 76,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破燕封信平君",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 16,
+      "rationale": "复起巅峰",
+      "summary": "破燕军，围燕都，拜相国，封信平君",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -245,
+      "age": 82,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被夺兵权奔魏",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 31,
+      "delta": -51,
+      "rationale": "被迫出奔",
+      "summary": "赵悼襄王以乐乘代之，廉颇怒攻乐乘，出奔魏",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -243,
+      "age": 84,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "一饭斗米",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 50,
+      "delta": 0,
+      "rationale": "不得召回",
+      "summary": "赵王使使视之，廉颇一饭斗米肉十斤，被谮三遗矢",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": -243,
+    "age": 84,
+    "title": "卒于楚寿春",
+    "retention": 0.9,
+    "reason": "「廉颇老矣尚能饭否」流传",
+    "score": 27.9,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1204,
+      "title": "辛弃疾「廉颇老矣」",
+      "score": 82,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "战国四大名将之一",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "战国四大名将之一"
+  },
+  "peak": {
+    "title": "破燕封信平君",
+    "age": 76,
+    "score": 82
+  },
+  "trough": {
+    "title": "被夺兵权奔魏",
+    "age": 82,
+    "score": 31
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 44,
+      "years": 44
+    },
+    {
+      "fromAge": 48,
+      "toAge": 67,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
+    "author": "claude"
+  }
+}

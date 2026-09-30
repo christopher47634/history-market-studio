@@ -1,0 +1,147 @@
+{
+  "id": "huoqubing",
+  "author": "claude",
+  "born": {
+    "year": -140,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -117,
+    "certainty": "确知"
+  },
+  "thesis": "十七岁从军，两击河西、封狼居胥，二十四岁病逝的少年名将。",
+  "events": [
+    {
+      "year": -140,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于平阳",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "卫少儿私生子，舅卫青",
+      "rationale": "微贱出身",
+      "quote": {
+        "find": [
+          "卫少儿"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -123,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "首战封冠军侯",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十八岁为剽姚校尉，斩捕首虏过当，封冠军侯",
+      "rationale": "一战成名",
+      "quote": {
+        "find": [
+          "冠军侯",
+          "剽姚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -121,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "两击河西",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为骠骑将军，两出陇西，破匈奴浑邪、休屠，河西归汉",
+      "rationale": "独当一面",
+      "quote": {
+        "find": [
+          "骠骑将军",
+          "河西"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -121,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "受降浑邪王",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "浑邪王率众来降，驰入营中斩欲逃者",
+      "rationale": "威震匈奴",
+      "quote": {
+        "find": [
+          "浑邪王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -119,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封狼居胥",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "漠北之战，封狼居胥山，禅于姑衍",
+      "rationale": "武功巅峰",
+      "quote": {
+        "find": [
+          "狼居胥",
+          "姑衍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -119,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "拜大司马",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "置大司马位，与卫青并为大司马",
+      "rationale": "军界之首",
+      "quote": {
+        "find": [
+          "大司马"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -117,
+      "title": "陪葬茂陵，冢象祁连山",
+      "score": 82,
+      "rationale": "武帝为之起冢象祁连山"
+    }
+  ],
+  "finale": {
+    "year": -117,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "二十四岁早逝，开拓河西之功长存",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "中国历史上最著名的少年名将，「匈奴未灭，何以家为」"
+  }
+}

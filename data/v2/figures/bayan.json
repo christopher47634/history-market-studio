@@ -1,0 +1,165 @@
+{
+  "id": "bayan",
+  "name": "伯颜",
+  "born": {
+    "year": 1236,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1295,
+    "certainty": "确知"
+  },
+  "lifeSpan": 59,
+  "thesis": "统帅元军灭南宋，下临安不杀。",
+  "sources": [
+    {
+      "label": "《元史·表第五下》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7111"
+    }
+  ],
+  "events": [
+    {
+      "year": 1236,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于伊儿汗国",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "贵族",
+      "summary": "蒙古贵族",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1265,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入朝忽必烈",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 20,
+      "rationale": "入仕",
+      "summary": "奉使来朝",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1274,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统军伐宋",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 34,
+      "rationale": "统帅",
+      "summary": "二十万",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1276,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下临安",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 4,
+      "rationale": "灭宋",
+      "summary": "宋太后降",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1294,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拥立成宗",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "重臣",
+      "summary": "辅政",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1295,
+    "age": 59,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "元朝统一",
+    "score": 83.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 70,
+      "rationale": "灭宋统帅",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "争议",
+    "rationale": "灭宋统帅"
+  },
+  "peak": {
+    "title": "下临安",
+    "age": 40,
+    "score": 88
+  },
+  "trough": {
+    "title": "入朝忽必烈",
+    "age": 29,
+    "score": 50
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    },
+    {
+      "fromAge": 40,
+      "toAge": 58,
+      "years": 18
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

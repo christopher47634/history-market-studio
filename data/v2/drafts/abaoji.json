@@ -1,0 +1,99 @@
+{
+  "id": "abaoji",
+  "author": "claude",
+  "born": {
+    "year": 872,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 926,
+    "certainty": "确知"
+  },
+  "thesis": "统一契丹诸部，建辽称帝，东灭渤海。",
+  "events": [
+    {
+      "year": 872,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于契丹迭剌部",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "部落贵族",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 901,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任夷离堇",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "统兵",
+      "rationale": "部落军帅",
+      "quote": null
+    },
+    {
+      "year": 907,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任可汗",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "代遥辇氏为可汗",
+      "rationale": "契丹之主",
+      "quote": null
+    },
+    {
+      "year": 916,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建辽",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "称皇帝",
+      "rationale": "建国",
+      "quote": null
+    },
+    {
+      "year": 926,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭渤海",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东灭渤海国",
+      "rationale": "拓地",
+      "quote": {
+        "find": [
+          "渤海"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 926,
+    "title": "崩于归途",
+    "retention": 0.95,
+    "reason": "辽国延续二百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "辽朝开国皇帝"
+  }
+}

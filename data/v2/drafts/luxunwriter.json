@@ -1,0 +1,133 @@
+{
+  "id": "luxunwriter",
+  "author": "claude",
+  "born": {
+    "year": 1881,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1936,
+    "certainty": "确知"
+  },
+  "thesis": "弃医从文，《狂人日记》《阿Q正传》，现代文学奠基人。",
+  "events": [
+    {
+      "year": 1881,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绍兴",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破落士绅",
+      "rationale": "士绅",
+      "quote": null
+    },
+    {
+      "year": 1893,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "祖父下狱家道中落",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "出入当铺",
+      "rationale": "家败",
+      "quote": null
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "仙台学医",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "幻灯片事件",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "教育部佥事",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "京官",
+      "rationale": "小官",
+      "quote": null
+    },
+    {
+      "year": 1918,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《狂人日记》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "白话小说",
+      "rationale": "成名",
+      "quote": null
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《阿Q正传》",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国民性批判",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1926,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三一八后南下",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "被通缉",
+      "rationale": "流离",
+      "quote": null
+    },
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "左联",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "左翼文坛领袖",
+      "rationale": "领袖",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1936,
+    "title": "病逝上海",
+    "retention": 0.95,
+    "reason": "民族魂",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 94,
+    "label": "正面",
+    "rationale": "中国现代文学奠基人"
+  }
+}

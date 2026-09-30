@@ -1,0 +1,133 @@
+{
+  "id": "hushi",
+  "author": "claude",
+  "born": {
+    "year": 1891,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1962,
+    "certainty": "确知"
+  },
+  "thesis": "新文化运动领袖，白话文，驻美大使。",
+  "events": [
+    {
+      "year": 1891,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上海",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦，早孤",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "庚款留美",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "康奈尔",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《文学改良刍议》",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北大教授",
+      "rationale": "成名",
+      "quote": null
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "问题与主义",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "新文化领袖",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "驻美大使",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大使",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京大学校长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "校长",
+      "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "离开大陆",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "赴美",
+      "rationale": "去国",
+      "quote": null
+    },
+    {
+      "year": 1958,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中研院院长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "台北",
+      "rationale": "学术",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1962,
+    "title": "病逝台北",
+    "retention": 0.95,
+    "reason": "白话文",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "新文化运动领袖"
+  }
+}

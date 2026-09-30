@@ -1,0 +1,104 @@
+{
+  "id": "yuwentai",
+  "author": "claude",
+  "born": {
+    "year": 507,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 556,
+    "certainty": "确知"
+  },
+  "thesis": "关陇集团缔造者，创府兵制，奠定北周、隋、唐基业。",
+  "events": [
+    {
+      "year": 507,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于武川镇",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "代武川人",
+      "rationale": "边镇",
+      "quote": {
+        "find": [
+          "武川"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 534,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迎孝武帝建西魏",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孝武帝入关，旋鸩杀之，立文帝",
+      "rationale": "掌握西魏",
+      "quote": null
+    },
+    {
+      "year": 537,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "沙苑之战",
+      "tier": "一方之主",
+      "tierScore": 89,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以少胜多大破高欢",
+      "rationale": "扭转局势",
+      "quote": {
+        "find": [
+          "沙苑"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 543,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "邙山之败",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "与高欢战于邙山，大败",
+      "rationale": "惨败",
+      "quote": null
+    },
+    {
+      "year": 550,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创府兵制",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "置府兵，建六官",
+      "rationale": "制度奠基",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 556,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "其子建北周",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "关陇集团缔造者"
+  }
+}

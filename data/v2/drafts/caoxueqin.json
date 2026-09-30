@@ -1,0 +1,107 @@
+{
+  "id": "caoxueqin",
+  "author": "claude",
+  "born": {
+    "year": 1715,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1763,
+    "certainty": "确知"
+  },
+  "thesis": "江宁织造之后，家道中落，披阅十载著《红楼梦》。",
+  "events": [
+    {
+      "year": 1715,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于江宁",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "江宁织造",
+      "rationale": "豪门",
+      "quote": null
+    },
+    {
+      "year": 1728,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抄家",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "迁回北京",
+      "rationale": "家败",
+      "quote": null
+    },
+    {
+      "year": 1740,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "宗学任职",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "右翼宗学",
+      "rationale": "小职",
+      "quote": null
+    },
+    {
+      "year": 1750,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "西山著书",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "举家食粥",
+      "rationale": "贫困",
+      "quote": null
+    },
+    {
+      "year": 1754,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "脂砚斋评本",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《石头记》",
+      "rationale": "著书",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1791,
+      "title": "程甲本刊行",
+      "score": 80,
+      "rationale": ""
+    },
+    {
+      "year": 1921,
+      "title": "胡适考证",
+      "score": 92,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1763,
+    "title": "贫病而卒",
+    "retention": 0.9,
+    "reason": "红楼梦流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "《红楼梦》作者"
+  }
+}

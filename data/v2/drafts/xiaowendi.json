@@ -1,0 +1,130 @@
+{
+  "id": "xiaowendi",
+  "author": "claude",
+  "born": {
+    "year": 467,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 499,
+    "certainty": "确知"
+  },
+  "thesis": "北魏孝文帝，迁都洛阳、全面汉化，推动民族融合。",
+  "events": [
+    {
+      "year": 467,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为北魏皇子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "献文帝长子",
+      "rationale": "皇子",
+      "quote": null
+    },
+    {
+      "year": 471,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五岁即位",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "即位，冯太后临朝",
+      "rationale": "傀儡少主",
+      "quote": null
+    },
+    {
+      "year": 485,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "推行均田制",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "冯太后主持，颁均田诏",
+      "rationale": "改革",
+      "quote": {
+        "find": [
+          "均田"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 490,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "冯太后死亲政",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太后崩，始亲政",
+      "rationale": "亲政",
+      "quote": null
+    },
+    {
+      "year": 494,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迁都洛阳",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以南伐为名，迁都洛阳",
+      "rationale": "改革巅峰",
+      "quote": null
+    },
+    {
+      "year": 496,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "太子谋反",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "太子恂不乐汉化，谋北归，废为庶人",
+      "rationale": "改革阻力",
+      "quote": {
+        "find": [
+          "太子恂"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 496,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "改姓元氏",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "诏改拓跋为元",
+      "rationale": "汉化",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 499,
+    "title": "崩于南征途中",
+    "retention": 0.9,
+    "reason": "汉化深远影响",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "民族融合的改革家"
+  }
+}

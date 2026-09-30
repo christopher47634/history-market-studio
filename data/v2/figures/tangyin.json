@@ -1,0 +1,142 @@
+{
+  "id": "tangyin",
+  "name": "唐寅",
+  "born": {
+    "year": 1470,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1524,
+    "certainty": "确知"
+  },
+  "lifeSpan": 54,
+  "thesis": "江南第一才子，科场舞弊案断送仕途，卖画为生。",
+  "sources": [
+    {
+      "label": "《明史·卷二百八十六 列传第一百七十四 文苑二》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7286"
+    }
+  ],
+  "events": [
+    {
+      "year": 1470,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于苏州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "商人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1498,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "解元",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 18,
+      "rationale": "才名",
+      "summary": "南京解元",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1499,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "科场舞弊案",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -36,
+      "rationale": "断送仕途",
+      "summary": "下诏狱，罢为吏",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1514,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁王之聘佯狂脱身",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 30,
+      "delta": 28,
+      "rationale": "避祸",
+      "summary": "佯狂",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1524,
+    "age": 54,
+    "title": "贫病而卒",
+    "retention": 0.9,
+    "reason": "诗画传世",
+    "score": 27,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 82,
+      "rationale": "江南第一才子",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "江南第一才子"
+  },
+  "peak": {
+    "title": "解元",
+    "age": 28,
+    "score": 38
+  },
+  "trough": {
+    "title": "科场舞弊案",
+    "age": 29,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 28,
+      "years": 28
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

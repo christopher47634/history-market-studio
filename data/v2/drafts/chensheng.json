@@ -1,0 +1,133 @@
+{
+  "id": "chensheng",
+  "author": "claude",
+  "born": {
+    "year": -240,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -208,
+    "certainty": "确知"
+  },
+  "thesis": "雇农出身，大泽乡首举反秦大旗，建立张楚政权。",
+  "events": [
+    {
+      "year": -240,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于阳城",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少时为人佣耕",
+      "rationale": "雇农",
+      "quote": {
+        "find": [
+          "佣耕"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -225,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "鸿鹄之志",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "燕雀安知鸿鹄之志",
+      "rationale": "胸怀大志",
+      "quote": {
+        "find": [
+          "鸿鹄"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大泽乡起义",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "戍卒失期当斩，揭竿而起",
+      "rationale": "起事即是死中求生",
+      "quote": {
+        "find": [
+          "大泽",
+          "失期"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称王建张楚",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "攻下陈，号为张楚，天下响应",
+      "rationale": "天下反秦领袖",
+      "quote": {
+        "find": [
+          "张楚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下城父被杀",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "章邯击败，为车夫庄贾所杀",
+      "rationale": "政权瓦解",
+      "quote": {
+        "find": [
+          "庄贾"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -202,
+      "title": "汉高祖为其置守冢",
+      "score": 60,
+      "rationale": "刘邦为之置守冢三十家"
+    },
+    {
+      "year": -91,
+      "title": "《史记》立陈涉世家",
+      "score": 72,
+      "rationale": "与诸侯同列"
+    }
+  ],
+  "finale": {
+    "year": -208,
+    "title": "死于庄贾之手",
+    "retention": 0.8,
+    "reason": "反秦大潮不可逆",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "中国第一次大规模农民起义领袖，「王侯将相宁有种乎」"
+  }
+}

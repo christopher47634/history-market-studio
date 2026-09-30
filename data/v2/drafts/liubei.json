@@ -1,0 +1,281 @@
+{
+  "id": "liubei",
+  "author": "claude",
+  "born": {
+    "year": 161,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 223,
+    "certainty": "确知"
+  },
+  "thesis": "织席贩履的汉室远支，半生颠沛，赤壁后据荆益称帝，夷陵大败托孤白帝。",
+  "events": [
+    {
+      "year": 161,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于涿郡",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中山靖王之后，少孤，与母贩履织席为业",
+      "rationale": "没落宗室",
+      "quote": {
+        "find": [
+          "織席",
+          "販履"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 184,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "讨黄巾起兵",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "率其属从校尉邹靖讨黄巾",
+      "rationale": "起兵",
+      "quote": {
+        "find": [
+          "黃巾",
+          "鄒靖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 194,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "领徐州牧",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陶谦病笃，以徐州让之",
+      "rationale": "据有一州",
+      "quote": {
+        "find": [
+          "徐州",
+          "陶謙"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "徐州被吕布袭取",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "吕布袭下邳，虏先主妻子",
+      "rationale": "失去根据地",
+      "quote": {
+        "find": [
+          "呂布",
+          "妻子"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投袁绍再奔荆州",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "曹操东征，先主奔袁绍，后依刘表屯新野",
+      "rationale": "寄人篱下",
+      "quote": {
+        "find": [
+          "袁紹",
+          "新野"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 207,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "三顾茅庐",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "往诸葛亮处凡三往乃见",
+      "rationale": "得诸葛亮",
+      "quote": {
+        "find": [
+          "三往",
+          "諸葛亮"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长坂之败",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "曹操追及于当阳长坂，弃妻子走",
+      "rationale": "几乎覆灭",
+      "quote": {
+        "find": [
+          "長阪",
+          "棄妻子"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赤壁后取荆南",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与孙权破曹于赤壁，收荆南四郡",
+      "rationale": "绝处逢生",
+      "quote": {
+        "find": [
+          "赤壁",
+          "四郡"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 214,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "取益州",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "刘璋出降，领益州牧",
+      "rationale": "三分之势成",
+      "quote": {
+        "find": [
+          "劉璋",
+          "益州牧"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称汉中王",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "败曹操于汉中，称汉中王",
+      "rationale": "事业巅峰",
+      "quote": {
+        "find": [
+          "漢中王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "关羽失荆州",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "孙权袭杀关羽，荆州尽失",
+      "rationale": "丢失荆州",
+      "quote": null
+    },
+    {
+      "year": 221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即皇帝位",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即皇帝位于武担之南，国号汉",
+      "rationale": "称帝",
+      "quote": {
+        "find": [
+          "即皇帝位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 222,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夷陵大败",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "为陆逊所破，退还白帝",
+      "rationale": "大败",
+      "quote": {
+        "find": [
+          "陸議",
+          "白帝"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 285,
+      "title": "《三国志》立先主传",
+      "score": 78,
+      "rationale": "陈寿称其弘毅宽厚"
+    },
+    {
+      "year": 1360,
+      "title": "《三国演义》奉为仁君",
+      "score": 88,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 223,
+    "title": "病逝白帝城",
+    "retention": 0.9,
+    "reason": "托孤诸葛亮，蜀汉延续四十年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "蜀汉开国皇帝，仁德之主的形象"
+  }
+}

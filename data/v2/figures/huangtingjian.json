@@ -1,0 +1,175 @@
+{
+  "id": "huangtingjian",
+  "name": "黄庭坚",
+  "born": {
+    "year": 1045,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1105,
+    "certainty": "确知"
+  },
+  "lifeSpan": 60,
+  "thesis": "江西诗派之祖，苏门四学士，屡遭贬谪。",
+  "sources": [
+    {
+      "label": "《宋史·卷四百四十四 列传第二百三 文苑六》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7444"
+    }
+  ],
+  "events": [
+    {
+      "year": 1045,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洪州分宁",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1067,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 7,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1086,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "修《神宗实录》",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 17,
+      "rationale": "馆阁",
+      "summary": "秘书省",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1094,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬黔州",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 2,
+      "delta": -50,
+      "rationale": "远贬",
+      "summary": "实录诬罔",
+      "evidence": "原文",
+      "quote": {
+        "text": "貶涪州別駕、黔州安置，言者猶以處善地為骫法。",
+        "textSimplified": "贬涪州别驾、黔州安置，言者犹以处善地为骫法。",
+        "source": "《宋史·卷四百四十四 列传第二百三 文苑六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7444"
+      },
+      "verified": true
+    },
+    {
+      "year": 1104,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "再贬宜州",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 2,
+      "delta": 0,
+      "rationale": "贬",
+      "summary": "编管宜州",
+      "evidence": "原文",
+      "quote": {
+        "text": "轉運判官陳舉承風旨，上其所作《荊南承天院記》，指為幸災，復除名、羈管宜州。",
+        "textSimplified": "转运判官陈举承风旨，上其所作《荆南承天院记》，指为幸灾，复除名、羁管宜州。",
+        "source": "《宋史·卷四百四十四 列传第二百三 文苑六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7444"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1105,
+    "age": 60,
+    "title": "卒于宜州",
+    "retention": 0.9,
+    "reason": "江西诗派",
+    "score": 1.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "宋四家、江西诗派之祖",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "宋四家、江西诗派之祖"
+  },
+  "peak": {
+    "title": "修《神宗实录》",
+    "age": 41,
+    "score": 52
+  },
+  "trough": {
+    "title": "贬黔州",
+    "age": 49,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    },
+    {
+      "fromAge": 22,
+      "toAge": 41,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
+    "author": "claude"
+  }
+}

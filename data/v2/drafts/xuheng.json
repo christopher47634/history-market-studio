@@ -1,0 +1,99 @@
+{
+  "id": "xuheng",
+  "author": "claude",
+  "born": {
+    "year": 1209,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1281,
+    "certainty": "确知"
+  },
+  "thesis": "元代理学大儒，国子祭酒，推行汉法。",
+  "events": [
+    {
+      "year": 1209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于怀州",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1250,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "讲学苏门山",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "讲程朱之学",
+      "rationale": "讲学",
+      "quote": null
+    },
+    {
+      "year": 1254,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "忽必烈召为京兆提学",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1271,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国子祭酒",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "教蒙古子弟",
+      "rationale": "教育",
+      "quote": {
+        "find": [
+          "國子祭酒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1280,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与郭守敬修历",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "授时历",
+      "rationale": "修历",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1281,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "理学官学化",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "元代理学大儒"
+  }
+}

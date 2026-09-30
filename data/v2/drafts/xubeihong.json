@@ -1,0 +1,94 @@
+{
+  "id": "xubeihong",
+  "author": "claude",
+  "born": {
+    "year": 1895,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1953,
+    "certainty": "确知"
+  },
+  "thesis": "中西融合，奔马，美术教育家。",
+  "events": [
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于宜兴",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "画师之子",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上海卖画",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "困顿",
+      "rationale": "困顿",
+      "quote": null
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "公费留法",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "巴黎美院",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中央大学艺术系主任",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "教授",
+      "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中央美术学院院长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "院长",
+      "rationale": "巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1953,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "奔马",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "美术教育家"
+  }
+}

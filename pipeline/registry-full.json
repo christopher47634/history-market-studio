@@ -1,0 +1,3252 @@
+{
+ "zhangliang": {
+  "id": "zhangliang",
+  "name": "张良",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷055",
+    "label": "《史记·卷五十五 留侯世家 第二十五》"
+   }
+  ],
+  "wiki": "张良",
+  "note": ""
+ },
+ "lvhou": {
+  "id": "lvhou",
+  "name": "吕后",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷003",
+    "label": "《汉书·卷三 高后纪 第三》"
+   }
+  ],
+  "wiki": "吕后",
+  "note": ""
+ },
+ "liuxiu": {
+  "id": "liuxiu",
+  "name": "刘秀",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷1上",
+    "label": "《后汉书·卷一上‧光武帝纪第一上》"
+   }
+  ],
+  "wiki": "刘秀",
+  "note": ""
+ },
+ "duguhuanghou": {
+  "id": "duguhuanghou",
+  "name": "独孤皇后",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "隋書/卷36",
+    "label": "《隋书·列传第一》"
+   }
+  ],
+  "wiki": "独孤皇后",
+  "note": ""
+ },
+ "huatuo": {
+  "id": "huatuo",
+  "name": "华佗",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷82下",
+    "label": "《后汉书·卷八十二下·方术列传第七十二下》"
+   }
+  ],
+  "wiki": "华佗",
+  "note": ""
+ },
+ "xiahe": {
+  "id": "xiahe",
+  "name": "萧何",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷053",
+    "label": "《史记·卷五十三 萧相国世家第二十三》"
+   }
+  ],
+  "wiki": "萧何",
+  "note": ""
+ },
+ "fanzeng": {
+  "id": "fanzeng",
+  "name": "范增",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷007",
+    "label": "《史记·卷七 项羽本纪 第七》"
+   }
+  ],
+  "wiki": "范增",
+  "note": ""
+ },
+ "sunwu": {
+  "id": "sunwu",
+  "name": "孙武",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷065",
+    "label": "《史记·卷六十五 孙子吴起列传 第五》"
+   }
+  ],
+  "wiki": "孙武",
+  "note": ""
+ },
+ "quyuan": {
+  "id": "quyuan",
+  "name": "屈原",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷084",
+    "label": "《史记·卷八十四 屈原贾生列传 第二十四》"
+   }
+  ],
+  "wiki": "屈原",
+  "note": ""
+ },
+ "liubei": {
+  "id": "liubei",
+  "name": "刘备",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷32",
+    "label": "《三国志·蜀书二 先主传》"
+   }
+  ],
+  "wiki": "刘备",
+  "note": ""
+ },
+ "sunquan": {
+  "id": "sunquan",
+  "name": "孙权",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷47",
+    "label": "《三国志·吴书·吴主传》"
+   }
+  ],
+  "wiki": "孙权",
+  "note": ""
+ },
+ "suiwendi": {
+  "id": "suiwendi",
+  "name": "隋文帝",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "隋書/卷01",
+    "label": "《隋书·帝纪第一》"
+   }
+  ],
+  "wiki": "隋文帝",
+  "note": ""
+ },
+ "zhaokuangyin": {
+  "id": "zhaokuangyin",
+  "name": "赵匡胤",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷001",
+    "label": "《宋史·卷一 本纪第一 太祖一》"
+   }
+  ],
+  "wiki": "赵匡胤",
+  "note": ""
+ },
+ "kublai": {
+  "id": "kublai",
+  "name": "忽必烈",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷004",
+    "label": "《元史·本纪第四》"
+   }
+  ],
+  "wiki": "忽必烈",
+  "note": ""
+ },
+ "zhudi": {
+  "id": "zhudi",
+  "name": "朱棣",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷5",
+    "label": "《明史·本纪第五 成祖一》"
+   }
+  ],
+  "wiki": "朱棣",
+  "note": ""
+ },
+ "zhenghe": {
+  "id": "zhenghe",
+  "name": "郑和",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷304",
+    "label": "《明史·卷三百〇四列传第一百九十二 宦官一郑和 金英 王振 曹吉祥 怀恩 汪直 梁芳 何鼎 李广 蒋琮 刘瑾 张永 谷大用》"
+   }
+  ],
+  "wiki": "郑和",
+  "note": ""
+ },
+ "yongzheng": {
+  "id": "yongzheng",
+  "name": "雍正",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷9",
+    "label": "《清史稿·本纪九 世宗本纪》"
+   }
+  ],
+  "wiki": "雍正",
+  "note": ""
+ },
+ "qianlong": {
+  "id": "qianlong",
+  "name": "乾隆",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷10",
+    "label": "《清史稿·本纪十 高宗本纪一》"
+   }
+  ],
+  "wiki": "乾隆",
+  "note": ""
+ },
+ "zengguofan": {
+  "id": "zengguofan",
+  "name": "曾国藩",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷190",
+    "label": "《清史稿·卷一百九十 表三十 部院大臣年表七上》"
+   }
+  ],
+  "wiki": "曾国藩",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "laozi": {
+  "id": "laozi",
+  "name": "老子",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷063",
+    "label": "《史记·卷六十三 老子韩非列传 第三》"
+   }
+  ],
+  "wiki": "老子",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "mozi": {
+  "id": "mozi",
+  "name": "墨子",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷074",
+    "label": "《史记·卷七十四 孟子荀卿列传 第十四》"
+   }
+  ],
+  "wiki": "墨子",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "mencius": {
+  "id": "mencius",
+  "name": "孟子",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷074",
+    "label": "《史记·卷七十四 孟子荀卿列传 第十四》"
+   }
+  ],
+  "wiki": "孟子",
+  "note": ""
+ },
+ "zhuangzi": {
+  "id": "zhuangzi",
+  "name": "庄子",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷063",
+    "label": "《史记·卷六十三 老子韩非列传 第三》"
+   }
+  ],
+  "wiki": "庄子",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "xunzi": {
+  "id": "xunzi",
+  "name": "荀子",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷074",
+    "label": "《史记·卷七十四 孟子荀卿列传 第十四》"
+   }
+  ],
+  "wiki": "荀子",
+  "note": ""
+ },
+ "hanfei": {
+  "id": "hanfei",
+  "name": "韩非",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷063",
+    "label": "《史记·卷六十三 老子韩非列传 第三》"
+   }
+  ],
+  "wiki": "韩非",
+  "note": ""
+ },
+ "wuzixu": {
+  "id": "wuzixu",
+  "name": "伍子胥",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷066",
+    "label": "《史记·卷六十六 伍子胥列传 第六》"
+   }
+  ],
+  "wiki": "伍子胥",
+  "note": ""
+ },
+ "goujian": {
+  "id": "goujian",
+  "name": "勾践",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷041",
+    "label": "《史记·巻四十一 越王勾践世家 第十一》"
+   }
+  ],
+  "wiki": "勾践",
+  "note": ""
+ },
+ "lianpo": {
+  "id": "lianpo",
+  "name": "廉颇",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷081",
+    "label": "《史记·巻八十一 廉颇蔺相如列传 第二十一》"
+   }
+  ],
+  "wiki": "廉颇",
+  "note": ""
+ },
+ "limu": {
+  "id": "limu",
+  "name": "李牧",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷081",
+    "label": "《史记·巻八十一 廉颇蔺相如列传 第二十一》"
+   }
+  ],
+  "wiki": "李牧",
+  "note": ""
+ },
+ "baiqi": {
+  "id": "baiqi",
+  "name": "白起",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷073",
+    "label": "《史记·卷七十三 白起王翦列传 第十三》"
+   }
+  ],
+  "wiki": "白起",
+  "note": ""
+ },
+ "chenping": {
+  "id": "chenping",
+  "name": "陈平",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷056",
+    "label": "《史记·卷五十六 陈丞相世家 第二十六》"
+   }
+  ],
+  "wiki": "陈平",
+  "note": ""
+ },
+ "huoqubing": {
+  "id": "huoqubing",
+  "name": "霍去病",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷111",
+    "label": "《史记·卷一百一十一 卫将军骠骑列传 第五十一》"
+   }
+  ],
+  "wiki": "霍去病",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "weiqing": {
+  "id": "weiqing",
+  "name": "卫青",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷055",
+    "label": "《汉书·卷五十五 衞青霍去病传 第二十五》"
+   }
+  ],
+  "wiki": "卫青",
+  "note": ""
+ },
+ "wangzhaojun": {
+  "id": "wangzhaojun",
+  "name": "王昭君",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷89",
+    "label": "《后汉书·卷八十九·南匈奴列传第七十九》"
+   }
+  ],
+  "wiki": "王昭君",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "banchao": {
+  "id": "banchao",
+  "name": "班超",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷47",
+    "label": "《后汉书·班梁列传 第三十七》"
+   }
+  ],
+  "wiki": "班超",
+  "note": ""
+ },
+ "cailun": {
+  "id": "cailun",
+  "name": "蔡伦",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷78",
+    "label": "《后汉书·卷七十八·宦者列传第六十八》"
+   }
+  ],
+  "wiki": "蔡伦",
+  "note": ""
+ },
+ "huoguang": {
+  "id": "huoguang",
+  "name": "霍光",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷068",
+    "label": "《汉书·卷六十八 霍光金日䃅传 第三十八》"
+   }
+  ],
+  "wiki": "霍光",
+  "note": ""
+ },
+ "guanyu": {
+  "id": "guanyu",
+  "name": "关羽",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷36",
+    "label": "《三国志·蜀书六 关张马黄赵传》"
+   }
+  ],
+  "wiki": "关羽",
+  "note": ""
+ },
+ "zhangfei": {
+  "id": "zhangfei",
+  "name": "张飞",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷36",
+    "label": "《三国志·蜀书六 关张马黄赵传》"
+   }
+  ],
+  "wiki": "张飞",
+  "note": ""
+ },
+ "zhaoyun": {
+  "id": "zhaoyun",
+  "name": "赵云",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷36",
+    "label": "《三国志·蜀书六 关张马黄赵传》"
+   }
+  ],
+  "wiki": "赵云",
+  "note": ""
+ },
+ "zhouyu": {
+  "id": "zhouyu",
+  "name": "周瑜",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷54",
+    "label": "《三国志·吴书·周瑜、鲁肃、吕蒙传》"
+   }
+  ],
+  "wiki": "周瑜",
+  "note": ""
+ },
+ "simayi": {
+  "id": "simayi",
+  "name": "司马懿",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "晉書/卷001",
+    "label": "《晋书·卷一帝纪第一》"
+   }
+  ],
+  "wiki": "司马懿",
+  "note": ""
+ },
+ "luxun": {
+  "id": "luxun",
+  "name": "陆逊",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷58",
+    "label": "《三国志·吴书·陆逊传》"
+   }
+  ],
+  "wiki": "陆逊",
+  "note": ""
+ },
+ "caopi": {
+  "id": "caopi",
+  "name": "曹丕",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷02",
+    "label": "《三国志·魏书·文帝纪》"
+   }
+  ],
+  "wiki": "曹丕",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "caozhi": {
+  "id": "caozhi",
+  "name": "曹植",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷19",
+    "label": "《三国志·魏书·任城陈萧王传》"
+   }
+  ],
+  "wiki": "曹植",
+  "note": ""
+ },
+ "simayan": {
+  "id": "simayan",
+  "name": "司马炎",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷003",
+    "label": "《晋书·卷三 帝纪第三》"
+   }
+  ],
+  "wiki": "司马炎",
+  "note": ""
+ },
+ "zuti": {
+  "id": "zuti",
+  "name": "祖逖",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷062",
+    "label": "《晋书·卷六十二 列传第三十二》"
+   }
+  ],
+  "wiki": "祖逖",
+  "note": ""
+ },
+ "xiean": {
+  "id": "xiean",
+  "name": "谢安",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷079",
+    "label": "《晋书·卷七十九 列传第四十九》"
+   }
+  ],
+  "wiki": "谢安",
+  "note": ""
+ },
+ "taoyuanming": {
+  "id": "taoyuanming",
+  "name": "陶渊明",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷094",
+    "label": "《晋书·卷九十四 列传第六十四 隐逸传》"
+   }
+  ],
+  "wiki": "陶渊明",
+  "note": ""
+ },
+ "xiaowendi": {
+  "id": "xiaowendi",
+  "name": "拓跋宏",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "魏書/卷7上",
+    "label": "《魏书·高祖纪第七上》"
+   }
+  ],
+  "wiki": "拓跋宏",
+  "note": ""
+ },
+ "liuyu": {
+  "id": "liuyu",
+  "name": "刘裕",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "宋書/卷1",
+    "label": "《宋书·本纪第一》"
+   }
+  ],
+  "wiki": "刘裕",
+  "note": ""
+ },
+ "yangguang": {
+  "id": "yangguang",
+  "name": "杨广",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "隋書/卷03",
+    "label": "《隋书·卷三帝纪第三 炀帝上》"
+   }
+  ],
+  "wiki": "杨广",
+  "note": ""
+ },
+ "fangxuanling": {
+  "id": "fangxuanling",
+  "name": "房玄龄",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷66",
+    "label": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》"
+   }
+  ],
+  "wiki": "房玄龄",
+  "note": ""
+ },
+ "weizheng": {
+  "id": "weizheng",
+  "name": "魏征",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷71",
+    "label": "《旧唐书·卷七十一列传第二十一 魏徵》"
+   }
+  ],
+  "wiki": "魏征",
+  "note": ""
+ },
+ "direnjie": {
+  "id": "direnjie",
+  "name": "狄仁杰",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷89",
+    "label": "《旧唐书·卷八十九列传第三十九 狄仁杰族曾孙:兼谟 王方庆 姚璹弟:珽》"
+   }
+  ],
+  "wiki": "狄仁杰",
+  "note": ""
+ },
+ "guoziyi": {
+  "id": "guoziyi",
+  "name": "郭子仪",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷120",
+    "label": "《旧唐书·卷一百二十列传第七十 郭子仪》"
+   }
+  ],
+  "wiki": "郭子仪",
+  "note": ""
+ },
+ "baijuyi": {
+  "id": "baijuyi",
+  "name": "白居易",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "新唐書/卷119",
+    "label": "《新唐书·新唐书卷一百十九 列传第四十四》"
+   }
+  ],
+  "wiki": "白居易",
+  "note": ""
+ },
+ "hanyu": {
+  "id": "hanyu",
+  "name": "韩愈",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷160",
+    "label": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》"
+   }
+  ],
+  "wiki": "韩愈",
+  "note": ""
+ },
+ "liuzongyuan": {
+  "id": "liuzongyuan",
+  "name": "柳宗元",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷160",
+    "label": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》"
+   }
+  ],
+  "wiki": "柳宗元",
+  "note": ""
+ },
+ "licunxu": {
+  "id": "licunxu",
+  "name": "李存勖",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷27",
+    "label": "《旧五代史·卷二十七》"
+   }
+  ],
+  "wiki": "李存勖",
+  "note": ""
+ },
+ "ouyangxiu": {
+  "id": "ouyangxiu",
+  "name": "欧阳修",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷319",
+    "label": "《宋史·卷三百十九 列传第七十八》"
+   }
+  ],
+  "wiki": "欧阳修",
+  "note": ""
+ },
+ "simaguang": {
+  "id": "simaguang",
+  "name": "司马光",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷336",
+    "label": "《宋史·卷三百三十六 列传第九十五》"
+   }
+  ],
+  "wiki": "司马光",
+  "note": ""
+ },
+ "baozheng": {
+  "id": "baozheng",
+  "name": "包拯",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷316",
+    "label": "《宋史·卷三百十六 列传第七十五》"
+   }
+  ],
+  "wiki": "包拯",
+  "note": ""
+ },
+ "shenkuo": {
+  "id": "shenkuo",
+  "name": "沈括",
+  "dynasty": "宋",
+  "ws": [],
+  "wiki": "沈括",
+  "note": "正史中未找到"
+ },
+ "xinqiji": {
+  "id": "xinqiji",
+  "name": "辛弃疾",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷401",
+    "label": "《宋史·卷四百一 列传第一百六十》"
+   }
+  ],
+  "wiki": "辛弃疾",
+  "note": ""
+ },
+ "abaoji": {
+  "id": "abaoji",
+  "name": "耶律阿保机",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "遼史/卷1",
+    "label": "《辽史·卷一 本纪第一》"
+   }
+  ],
+  "wiki": "耶律阿保机",
+  "note": ""
+ },
+ "aguda": {
+  "id": "aguda",
+  "name": "完颜阿骨打",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "金史/卷2",
+    "label": "《金史·卷二 本纪第二 太祖》"
+   }
+  ],
+  "wiki": "完颜阿骨打",
+  "note": ""
+ },
+ "liubo": {
+  "id": "liubo",
+  "name": "刘基",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷128",
+    "label": "《明史·卷一百二十八 列传第十六》"
+   }
+  ],
+  "wiki": "刘基",
+  "note": ""
+ },
+ "hairui": {
+  "id": "hairui",
+  "name": "海瑞",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷226",
+    "label": "《明史·卷二百二十六 列传第一百十四》"
+   }
+  ],
+  "wiki": "海瑞",
+  "note": ""
+ },
+ "qijiguang": {
+  "id": "qijiguang",
+  "name": "戚继光",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷212",
+    "label": "《明史·卷二百十二 列传第一百》"
+   }
+  ],
+  "wiki": "戚继光",
+  "note": ""
+ },
+ "xuguangqi": {
+  "id": "xuguangqi",
+  "name": "徐光启",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷251",
+    "label": "《明史·卷二百五十一列传第一百三十九 李标 刘鸿训 钱龙锡 成基命 何如宠 徐光启 文震孟 蒋德璟 方岳贡》"
+   }
+  ],
+  "wiki": "徐光启",
+  "note": ""
+ },
+ "lishizhen": {
+  "id": "lishizhen",
+  "name": "李时珍",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷299",
+    "label": "《明史·卷二百九十九 列传第一百八十七 方伎》"
+   }
+  ],
+  "wiki": "李时珍",
+  "note": ""
+ },
+ "yuanchonghuan": {
+  "id": "yuanchonghuan",
+  "name": "袁崇焕",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷259",
+    "label": "《明史·卷二百五十九 列传第一百四十七》"
+   }
+  ],
+  "wiki": "袁崇焕",
+  "note": ""
+ },
+ "lizicheng": {
+  "id": "lizicheng",
+  "name": "李自成",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷309",
+    "label": "《明史·卷三百九 列传第一百九十七》"
+   }
+  ],
+  "wiki": "李自成",
+  "note": ""
+ },
+ "zhengchenggong": {
+  "id": "zhengchenggong",
+  "name": "郑成功",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷224",
+    "label": "《清史稿·卷二百二十四 列传十一》"
+   }
+  ],
+  "wiki": "郑成功",
+  "note": ""
+ },
+ "caoxueqin": {
+  "id": "caoxueqin",
+  "name": "曹雪芹",
+  "dynasty": "清",
+  "ws": [],
+  "wiki": "曹雪芹",
+  "note": "正史中未找到"
+ },
+ "zuozongtang": {
+  "id": "zuozongtang",
+  "name": "左宗棠",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷412",
+    "label": "《清史稿·卷四百十二》"
+   }
+  ],
+  "wiki": "左宗棠",
+  "note": ""
+ },
+ "lihongzhang": {
+  "id": "lihongzhang",
+  "name": "李鸿章",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷411",
+    "label": "《清史稿·卷四百十一》"
+   }
+  ],
+  "wiki": "李鸿章",
+  "note": ""
+ },
+ "cixi": {
+  "id": "cixi",
+  "name": "慈禧",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷214",
+    "label": "《清史稿·卷二百一十四 列传一》"
+   }
+  ],
+  "wiki": "慈禧",
+  "note": ""
+ },
+ "wangxizhi": {
+  "id": "wangxizhi",
+  "name": "王羲之",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷080",
+    "label": "《晋书·卷八十 列传第五十》"
+   }
+  ],
+  "wiki": "王羲之",
+  "note": ""
+ },
+ "jikang": {
+  "id": "jikang",
+  "name": "嵇康",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷049",
+    "label": "《晋书·巻四十九 列传第十九》"
+   }
+  ],
+  "wiki": "嵇康",
+  "note": ""
+ },
+ "xielingyun": {
+  "id": "xielingyun",
+  "name": "谢灵运",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "宋書/卷67",
+    "label": "《宋书·列传第二十七·谢灵运》"
+   }
+  ],
+  "wiki": "谢灵运",
+  "note": ""
+ },
+ "jianzhen": {
+  "id": "jianzhen",
+  "name": "鉴真",
+  "dynasty": "隋唐",
+  "ws": [],
+  "wiki": "鉴真",
+  "note": "正史中未找到"
+ },
+ "zhuwen": {
+  "id": "zhuwen",
+  "name": "朱温",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷1",
+    "label": "《旧五代史·本纪第一 梁太祖纪》"
+   }
+  ],
+  "wiki": "朱温",
+  "note": ""
+ },
+ "chairong": {
+  "id": "chairong",
+  "name": "柴荣",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷114",
+    "label": "《旧五代史·卷一百十四》"
+   }
+  ],
+  "wiki": "柴荣",
+  "note": ""
+ },
+ "liyu": {
+  "id": "liyu",
+  "name": "李煜",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "新五代史/卷62",
+    "label": "《新五代史·南唐世家第二》"
+   }
+  ],
+  "wiki": "李煜",
+  "note": ""
+ },
+ "fengdao": {
+  "id": "fengdao",
+  "name": "冯道",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "新五代史/卷54",
+    "label": "《新五代史·杂传第四十二》"
+   }
+  ],
+  "wiki": "冯道",
+  "note": ""
+ },
+ "xiaochuo": {
+  "id": "xiaochuo",
+  "name": "萧绰",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "遼史/卷71",
+    "label": "《辽史·巻七十一 列传第一》"
+   }
+  ],
+  "wiki": "萧绰",
+  "note": ""
+ },
+ "liyuanhao": {
+  "id": "liyuanhao",
+  "name": "李元昊",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "宋史/卷485",
+    "label": "《宋史·列传卷第二百四十四 外国一》"
+   }
+  ],
+  "wiki": "李元昊",
+  "note": ""
+ },
+ "wanyanliang": {
+  "id": "wanyanliang",
+  "name": "完颜亮",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "金史/卷5",
+    "label": "《金史·卷五 本纪第五 海陵》"
+   }
+  ],
+  "wiki": "完颜亮",
+  "note": ""
+ },
+ "yeluchucai": {
+  "id": "yeluchucai",
+  "name": "耶律楚材",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷146",
+    "label": "《元史·列传第三十三》"
+   }
+  ],
+  "wiki": "耶律楚材",
+  "note": ""
+ },
+ "guoshoujing": {
+  "id": "guoshoujing",
+  "name": "郭守敬",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷164",
+    "label": "《元史·列传第五十一》"
+   }
+  ],
+  "wiki": "郭守敬",
+  "note": ""
+ },
+ "zhaomengfu": {
+  "id": "zhaomengfu",
+  "name": "赵孟頫",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "新元史/卷190",
+    "label": "《新元史·卷一百九十 列传第八十七》"
+   }
+  ],
+  "wiki": "赵孟頫",
+  "note": ""
+ },
+ "huangdaopo": {
+  "id": "huangdaopo",
+  "name": "黄道婆",
+  "dynasty": "元",
+  "ws": [],
+  "wiki": "黄道婆",
+  "note": "正史中未找到"
+ },
+ "xuheng": {
+  "id": "xuheng",
+  "name": "许衡",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷158",
+    "label": "《元史·列传第四十五》"
+   }
+  ],
+  "wiki": "许衡",
+  "note": ""
+ },
+ "yuqian": {
+  "id": "yuqian",
+  "name": "于谦",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷170",
+    "label": "《明史·卷一百七十 列传第五十八》"
+   }
+  ],
+  "wiki": "于谦",
+  "note": ""
+ },
+ "guyanwu": {
+  "id": "guyanwu",
+  "name": "顾炎武",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷481",
+    "label": "《清史稿·卷四百八十一》"
+   }
+  ],
+  "wiki": "顾炎武",
+  "note": ""
+ },
+ "sunzhongshan": {
+  "id": "sunzhongshan",
+  "name": "孙中山",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "孙中山",
+  "note": ""
+ },
+ "huangxing": {
+  "id": "huangxing",
+  "name": "黄兴",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "黄兴",
+  "note": ""
+ },
+ "qiujin": {
+  "id": "qiujin",
+  "name": "秋瑾",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "秋瑾",
+  "note": ""
+ },
+ "liangqichao": {
+  "id": "liangqichao",
+  "name": "梁启超",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "梁启超",
+  "note": ""
+ },
+ "kangyouwei": {
+  "id": "kangyouwei",
+  "name": "康有为",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "康有为",
+  "note": ""
+ },
+ "yanfu": {
+  "id": "yanfu",
+  "name": "严复",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "严复",
+  "note": ""
+ },
+ "caiyuanpei": {
+  "id": "caiyuanpei",
+  "name": "蔡元培",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "蔡元培",
+  "note": ""
+ },
+ "luxunwriter": {
+  "id": "luxunwriter",
+  "name": "鲁迅",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "鲁迅",
+  "note": ""
+ },
+ "hushi": {
+  "id": "hushi",
+  "name": "胡适",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "胡适",
+  "note": ""
+ },
+ "chenduxiu": {
+  "id": "chenduxiu",
+  "name": "陈独秀",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "陈独秀",
+  "note": ""
+ },
+ "lidazhao": {
+  "id": "lidazhao",
+  "name": "李大钊",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "李大钊",
+  "note": ""
+ },
+ "songqingling": {
+  "id": "songqingling",
+  "name": "宋庆龄",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "宋庆龄",
+  "note": ""
+ },
+ "linhuiyin": {
+  "id": "linhuiyin",
+  "name": "林徽因",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "林徽因",
+  "note": ""
+ },
+ "meilanfang": {
+  "id": "meilanfang",
+  "name": "梅兰芳",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "梅兰芳",
+  "note": ""
+ },
+ "zhouenlai": {
+  "id": "zhouenlai",
+  "name": "周恩来",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "周恩来",
+  "note": ""
+ },
+ "dengxiaoping": {
+  "id": "dengxiaoping",
+  "name": "邓小平",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "邓小平",
+  "note": ""
+ },
+ "zhude": {
+  "id": "zhude",
+  "name": "朱德",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "朱德",
+  "note": ""
+ },
+ "qianxuesen": {
+  "id": "qianxuesen",
+  "name": "钱学森",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "钱学森",
+  "note": ""
+ },
+ "dengjiaxian": {
+  "id": "dengjiaxian",
+  "name": "邓稼先",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "邓稼先",
+  "note": ""
+ },
+ "yuanlongping": {
+  "id": "yuanlongping",
+  "name": "袁隆平",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "袁隆平",
+  "note": ""
+ },
+ "hualuogeng": {
+  "id": "hualuogeng",
+  "name": "华罗庚",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "华罗庚",
+  "note": ""
+ },
+ "qiansanqiang": {
+  "id": "qiansanqiang",
+  "name": "钱三强",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "钱三强",
+  "note": ""
+ },
+ "zhukezhen": {
+  "id": "zhukezhen",
+  "name": "竺可桢",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "竺可桢",
+  "note": ""
+ },
+ "lisiguang": {
+  "id": "lisiguang",
+  "name": "李四光",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "李四光",
+  "note": ""
+ },
+ "qihuangong": {
+  "id": "qihuangong",
+  "name": "齐桓公",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷032",
+    "label": "《史记·卷三十二 齐太公世家 第二》"
+   }
+  ],
+  "wiki": "齐桓公",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "jinwengong": {
+  "id": "jinwengong",
+  "name": "晋文公",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷039",
+    "label": "《史记·巻三十九 晋世家 第九》"
+   }
+  ],
+  "wiki": "晋文公",
+  "note": ""
+ },
+ "wuqi": {
+  "id": "wuqi",
+  "name": "吴起",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷065",
+    "label": "《史记·卷六十五 孙子吴起列传 第五》"
+   }
+  ],
+  "wiki": "吴起",
+  "note": ""
+ },
+ "suqin": {
+  "id": "suqin",
+  "name": "苏秦",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷069",
+    "label": "《史记·卷六十九 苏秦列传 第九》"
+   }
+  ],
+  "wiki": "苏秦",
+  "note": ""
+ },
+ "zhangyi": {
+  "id": "zhangyi",
+  "name": "张仪",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷070",
+    "label": "《史记·卷七十 张仪列传 第十》"
+   }
+  ],
+  "wiki": "张仪",
+  "note": ""
+ },
+ "lisi": {
+  "id": "lisi",
+  "name": "李斯",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷087",
+    "label": "《史记·卷八十七 李斯列传 第二十七》"
+   }
+  ],
+  "wiki": "李斯",
+  "note": ""
+ },
+ "wangmang": {
+  "id": "wangmang",
+  "name": "王莽",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷099上",
+    "label": "《汉书·卷九十九上 王莽传第六十九上》"
+   }
+  ],
+  "wiki": "王莽",
+  "note": ""
+ },
+ "liguang": {
+  "id": "liguang",
+  "name": "李广",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷109",
+    "label": "《史记·卷一百零九 李将军列传 第四十九》"
+   }
+  ],
+  "wiki": "李广",
+  "note": ""
+ },
+ "bangu": {
+  "id": "bangu",
+  "name": "班固",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷40下",
+    "label": "《后汉书·班彪列传 第三十下》"
+   }
+  ],
+  "wiki": "班固",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "banzhao": {
+  "id": "banzhao",
+  "name": "班昭",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷84",
+    "label": "《后汉书·卷八十四·列女传 第七十四》"
+   }
+  ],
+  "wiki": "班昭",
+  "note": ""
+ },
+ "zhangzhongjing": {
+  "id": "zhangzhongjing",
+  "name": "张仲景",
+  "dynasty": "秦汉",
+  "ws": [],
+  "wiki": "张仲景",
+  "note": "正史中未找到"
+ },
+ "wangdao": {
+  "id": "wangdao",
+  "name": "王导",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷065",
+    "label": "《晋书·卷六十五 列传第三十五》"
+   }
+  ],
+  "wiki": "王导",
+  "note": ""
+ },
+ "liyuan": {
+  "id": "liyuan",
+  "name": "李渊",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷1",
+    "label": "《旧唐书·本纪第一 高祖》"
+   }
+  ],
+  "wiki": "李渊",
+  "note": ""
+ },
+ "lijing": {
+  "id": "lijing",
+  "name": "李靖",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷67",
+    "label": "《旧唐书·卷六十七列传第十七 李靖 李𪟝》"
+   }
+  ],
+  "wiki": "李靖",
+  "note": ""
+ },
+ "changsunqueen": {
+  "id": "changsunqueen",
+  "name": "长孙皇后",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷51",
+    "label": "《旧唐书·后妃上》"
+   }
+  ],
+  "wiki": "长孙皇后",
+  "note": ""
+ },
+ "wangwei": {
+  "id": "wangwei",
+  "name": "王维",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷190下",
+    "label": "《旧唐书·卷一百九十下列传第一百四十下 文苑下》"
+   }
+  ],
+  "wiki": "王维",
+  "note": ""
+ },
+ "zhuxi": {
+  "id": "zhuxi",
+  "name": "朱熹",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷429",
+    "label": "《宋史·卷四百二十九 列传第一百八十八 道学三》"
+   }
+  ],
+  "wiki": "朱熹",
+  "note": ""
+ },
+ "luyou": {
+  "id": "luyou",
+  "name": "陆游",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷395",
+    "label": "《宋史·卷三百九十五 列传第一百五十四》"
+   }
+  ],
+  "wiki": "陆游",
+  "note": ""
+ },
+ "luxiufu": {
+  "id": "luxiufu",
+  "name": "陆秀夫",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷451",
+    "label": "《宋史·卷四百五十一 列传第二百一十 忠义六》"
+   }
+  ],
+  "wiki": "陆秀夫",
+  "note": ""
+ },
+ "tangxianzu": {
+  "id": "tangxianzu",
+  "name": "汤显祖",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷230",
+    "label": "《明史·卷二百三十列传第一百十八 蔡时鼎 万国钦 饶伸 汤显祖 逯中立 杨恂 姜士昌 马孟祯 汪若霖》"
+   }
+  ],
+  "wiki": "汤显祖",
+  "note": ""
+ },
+ "songyingxing": {
+  "id": "songyingxing",
+  "name": "宋应星",
+  "dynasty": "明",
+  "ws": [],
+  "wiki": "宋应星",
+  "note": "正史中未找到"
+ },
+ "xuxiake": {
+  "id": "xuxiake",
+  "name": "徐霞客",
+  "dynasty": "明",
+  "ws": [],
+  "wiki": "徐霞客",
+  "note": "正史中未找到"
+ },
+ "huangzongxi": {
+  "id": "huangzongxi",
+  "name": "黄宗羲",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷480",
+    "label": "《清史稿·列传二百六十七 儒林一》"
+   }
+  ],
+  "wiki": "黄宗羲",
+  "note": ""
+ },
+ "wangfuzhi": {
+  "id": "wangfuzhi",
+  "name": "王夫之",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷480",
+    "label": "《清史稿·列传二百六十七 儒林一》"
+   }
+  ],
+  "wiki": "王夫之",
+  "note": ""
+ },
+ "weiyuan": {
+  "id": "weiyuan",
+  "name": "魏源",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷486",
+    "label": "《清史稿·卷四百八十六》"
+   }
+  ],
+  "wiki": "魏源",
+  "note": ""
+ },
+ "zhantianyou": {
+  "id": "zhantianyou",
+  "name": "詹天佑",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "詹天佑",
+  "note": ""
+ },
+ "zhangjian": {
+  "id": "zhangjian",
+  "name": "张謇",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "张謇",
+  "note": ""
+ },
+ "qibaishi": {
+  "id": "qibaishi",
+  "name": "齐白石",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "齐白石",
+  "note": ""
+ },
+ "caie": {
+  "id": "caie",
+  "name": "蔡锷",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "蔡锷",
+  "note": ""
+ },
+ "xubeihong": {
+  "id": "xubeihong",
+  "name": "徐悲鸿",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "徐悲鸿",
+  "note": ""
+ },
+ "maoyisheng": {
+  "id": "maoyisheng",
+  "name": "茅以升",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "茅以升",
+  "note": ""
+ },
+ "zhougong": {
+  "id": "zhougong",
+  "name": "周公旦",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/魯周公世家",
+    "label": "《史记·鲁周公世家 第三》"
+   }
+  ],
+  "wiki": "周公旦",
+  "note": ""
+ },
+ "jiangshang": {
+  "id": "jiangshang",
+  "name": "姜尚",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷032",
+    "label": "《史记·卷三十二 齐太公世家 第二》"
+   }
+  ],
+  "wiki": "姜尚",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "yanying": {
+  "id": "yanying",
+  "name": "晏婴",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷062",
+    "label": "《史记·卷六十二 管晏列传 第二》"
+   }
+  ],
+  "wiki": "晏婴",
+  "note": ""
+ },
+ "sunbin": {
+  "id": "sunbin",
+  "name": "孙膑",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷065",
+    "label": "《史记·卷六十五 孙子吴起列传 第五》"
+   }
+  ],
+  "wiki": "孙膑",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "yueyi": {
+  "id": "yueyi",
+  "name": "乐毅",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷080",
+    "label": "《史记·卷八十 乐毅列传 第二十》"
+   }
+  ],
+  "wiki": "乐毅",
+  "note": ""
+ },
+ "tiandan": {
+  "id": "tiandan",
+  "name": "田单",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷082",
+    "label": "《史记·卷八十二 田单列传 第二十二》"
+   }
+  ],
+  "wiki": "田单",
+  "note": ""
+ },
+ "xinlingjun": {
+  "id": "xinlingjun",
+  "name": "信陵君",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷077",
+    "label": "《史记·卷七十七 魏公子列传 第十七》"
+   }
+  ],
+  "wiki": "信陵君",
+  "note": ""
+ },
+ "mengchangjun": {
+  "id": "mengchangjun",
+  "name": "孟尝君",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷075",
+    "label": "《史记·巻七十五 孟尝君列传 第十五》"
+   }
+  ],
+  "wiki": "孟尝君",
+  "note": ""
+ },
+ "zhaowulingwang": {
+  "id": "zhaowulingwang",
+  "name": "赵武灵王",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷043",
+    "label": "《史记·巻四十三 赵世家 第十三》"
+   }
+  ],
+  "wiki": "赵武灵王",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "jingke": {
+  "id": "jingke",
+  "name": "荆轲",
+  "dynasty": "先秦",
+  "ws": [
+   {
+    "title": "史記/卷086",
+    "label": "《史记·巻八十六 刺客列传 第二十六》"
+   }
+  ],
+  "wiki": "荆轲",
+  "note": ""
+ },
+ "mengtian": {
+  "id": "mengtian",
+  "name": "蒙恬",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷088",
+    "label": "《史记·卷八十八 蒙恬列传 第二十八》"
+   }
+  ],
+  "wiki": "蒙恬",
+  "note": ""
+ },
+ "fusu": {
+  "id": "fusu",
+  "name": "扶苏",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷087",
+    "label": "《史记·卷八十七 李斯列传 第二十七》"
+   }
+  ],
+  "wiki": "扶苏",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "chensheng": {
+  "id": "chensheng",
+  "name": "陈胜",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷048",
+    "label": "《史记·卷四十八 陈涉世家 第十八》"
+   }
+  ],
+  "wiki": "陈胜",
+  "note": ""
+ },
+ "xiangliang": {
+  "id": "xiangliang",
+  "name": "项梁",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷007",
+    "label": "《史记·卷七 项羽本纪 第七》"
+   }
+  ],
+  "wiki": "项梁",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "yingbu": {
+  "id": "yingbu",
+  "name": "英布",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷091",
+    "label": "《史记·卷九十一 黥布列传 第三十一》"
+   }
+  ],
+  "wiki": "英布",
+  "note": ""
+ },
+ "zhouyafu": {
+  "id": "zhouyafu",
+  "name": "周亚夫",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "史記/卷057",
+    "label": "《史记·卷五十七 绛侯周勃世家 第二十七》"
+   }
+  ],
+  "wiki": "周亚夫",
+  "note": ""
+ },
+ "jiayi": {
+  "id": "jiayi",
+  "name": "贾谊",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷048",
+    "label": "《汉书·卷四十八 贾谊传 第十八》"
+   }
+  ],
+  "wiki": "贾谊",
+  "note": ""
+ },
+ "dongzhongshu": {
+  "id": "dongzhongshu",
+  "name": "董仲舒",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷056",
+    "label": "《汉书·卷五十六 董仲舒传 第二十六》"
+   }
+  ],
+  "wiki": "董仲舒",
+  "note": ""
+ },
+ "zhangqian": {
+  "id": "zhangqian",
+  "name": "张骞",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷061",
+    "label": "《汉书·卷六十一 张骞李广利传 第三十一》"
+   }
+  ],
+  "wiki": "张骞",
+  "note": ""
+ },
+ "suwu": {
+  "id": "suwu",
+  "name": "苏武",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "漢書/卷054",
+    "label": "《汉书·卷五十四 李广苏建传 第二十四》"
+   }
+  ],
+  "wiki": "苏武",
+  "note": ""
+ },
+ "mayuan": {
+  "id": "mayuan",
+  "name": "马援",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷24",
+    "label": "《后汉书·马援列传 第十四》"
+   }
+  ],
+  "wiki": "马援",
+  "note": ""
+ },
+ "douxian": {
+  "id": "douxian",
+  "name": "窦宪",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷23",
+    "label": "《后汉书·窦融列传 第十三》"
+   }
+  ],
+  "wiki": "窦宪",
+  "note": ""
+ },
+ "wangchong": {
+  "id": "wangchong",
+  "name": "王充",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷49",
+    "label": "《后汉书·王充王符仲长统列传 第三十九》"
+   }
+  ],
+  "wiki": "王充",
+  "note": ""
+ },
+ "zhengxuan": {
+  "id": "zhengxuan",
+  "name": "郑玄",
+  "dynasty": "秦汉",
+  "ws": [
+   {
+    "title": "後漢書/卷35",
+    "label": "《后汉书·张曹郑列传 第二十五》"
+   }
+  ],
+  "wiki": "郑玄",
+  "note": ""
+ },
+ "xunyu": {
+  "id": "xunyu",
+  "name": "荀彧",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "後漢書/卷70",
+    "label": "《后汉书·卷七十 郑孔荀列传 第六十》"
+   }
+  ],
+  "wiki": "荀彧",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "guojia": {
+  "id": "guojia",
+  "name": "郭嘉",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷14",
+    "label": "《三国志·魏书·程郭董刘蒋刘传》"
+   }
+  ],
+  "wiki": "郭嘉",
+  "note": ""
+ },
+ "lubu": {
+  "id": "lubu",
+  "name": "吕布",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "後漢書/卷75",
+    "label": "《后汉书·卷七十五·刘焉袁术吕布列传第六十五》"
+   }
+  ],
+  "wiki": "吕布",
+  "note": ""
+ },
+ "yuanshao": {
+  "id": "yuanshao",
+  "name": "袁绍",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "後漢書/卷74上",
+    "label": "《后汉书·袁绍刘表列传 第六十四上》"
+   }
+  ],
+  "wiki": "袁绍",
+  "note": ""
+ },
+ "dongzhuo": {
+  "id": "dongzhuo",
+  "name": "董卓",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "後漢書/卷72",
+    "label": "《后汉书·董卓列传 第六十二》"
+   }
+  ],
+  "wiki": "董卓",
+  "note": ""
+ },
+ "lusu": {
+  "id": "lusu",
+  "name": "鲁肃",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷54",
+    "label": "《三国志·吴书·周瑜、鲁肃、吕蒙传》"
+   }
+  ],
+  "wiki": "鲁肃",
+  "note": ""
+ },
+ "jiangwei": {
+  "id": "jiangwei",
+  "name": "姜维",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "三國志/卷44",
+    "label": "《三国志·蜀书十四 蒋琬费祎姜维传》"
+   }
+  ],
+  "wiki": "姜维",
+  "note": ""
+ },
+ "simazhao": {
+  "id": "simazhao",
+  "name": "司马昭",
+  "dynasty": "三国",
+  "ws": [
+   {
+    "title": "晉書/卷002",
+    "label": "《晋书·卷二 帝纪第二》"
+   }
+  ],
+  "wiki": "司马昭",
+  "note": ""
+ },
+ "huanwen": {
+  "id": "huanwen",
+  "name": "桓温",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷098",
+    "label": "《晋书·卷九十八 列传第六十八》"
+   }
+  ],
+  "wiki": "桓温",
+  "note": ""
+ },
+ "wangmeng": {
+  "id": "wangmeng",
+  "name": "王猛",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷114",
+    "label": "《晋书·卷一百十四 载记第十四》"
+   }
+  ],
+  "wiki": "王猛",
+  "note": ""
+ },
+ "fujian": {
+  "id": "fujian",
+  "name": "苻坚",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷113",
+    "label": "《晋书·卷一百十三 载记第十三》"
+   }
+  ],
+  "wiki": "苻坚",
+  "note": ""
+ },
+ "chenqingzhi": {
+  "id": "chenqingzhi",
+  "name": "陈庆之",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "梁書/卷32",
+    "label": "《梁书·卷三十二 列传第二十六》"
+   }
+  ],
+  "wiki": "陈庆之",
+  "note": ""
+ },
+ "gaohuan": {
+  "id": "gaohuan",
+  "name": "高欢",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "北齊書/卷1",
+    "label": "《北齐书·第一卷 补帝纪第一 神武帝 高欢上》"
+   }
+  ],
+  "wiki": "高欢",
+  "note": ""
+ },
+ "yuwentai": {
+  "id": "yuwentai",
+  "name": "宇文泰",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "周書/卷01",
+    "label": "《周书·卷一 帝纪第一 文帝上》"
+   }
+  ],
+  "wiki": "宇文泰",
+  "note": ""
+ },
+ "gaochanggong": {
+  "id": "gaochanggong",
+  "name": "高长恭",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "北齊書/卷11",
+    "label": "《北齐书·卷十一补列传第三 文襄六王》"
+   }
+  ],
+  "wiki": "高长恭",
+  "note": ""
+ },
+ "duguxin": {
+  "id": "duguxin",
+  "name": "独孤信",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "周書/卷16",
+    "label": "《周书·巻十六 列传第八》"
+   }
+  ],
+  "wiki": "独孤信",
+  "note": ""
+ },
+ "gukaizhi": {
+  "id": "gukaizhi",
+  "name": "顾恺之",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷092",
+    "label": "《晋书·卷九十二 列传第六十二 文苑传》"
+   }
+  ],
+  "wiki": "顾恺之",
+  "note": ""
+ },
+ "zuchongzhi": {
+  "id": "zuchongzhi",
+  "name": "祖冲之",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "南齊書/卷52",
+    "label": "《南齐书·卷五十二 列传第三十三》"
+   }
+  ],
+  "wiki": "祖冲之",
+  "note": ""
+ },
+ "taohongjing": {
+  "id": "taohongjing",
+  "name": "陶弘景",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "南史/卷76",
+    "label": "《南史·卷七十六 列传第六十六 隐逸下》"
+   }
+  ],
+  "wiki": "陶弘景",
+  "note": ""
+ },
+ "lidaoyuan": {
+  "id": "lidaoyuan",
+  "name": "郦道元",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "魏書/卷89",
+    "label": "《魏书·列传酷吏第七十七》"
+   }
+  ],
+  "wiki": "郦道元",
+  "note": ""
+ },
+ "jiasixie": {
+  "id": "jiasixie",
+  "name": "贾思勰",
+  "dynasty": "魏晋南北朝",
+  "ws": [],
+  "wiki": "贾思勰",
+  "note": "正史中未找到"
+ },
+ "liuxie": {
+  "id": "liuxie",
+  "name": "刘勰",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "梁書/卷50",
+    "label": "《梁书·卷五十 列传第四十四文学下》"
+   }
+  ],
+  "wiki": "刘勰",
+  "note": ""
+ },
+ "xiedaoyun": {
+  "id": "xiedaoyun",
+  "name": "谢道韫",
+  "dynasty": "魏晋南北朝",
+  "ws": [
+   {
+    "title": "晉書/卷096",
+    "label": "《晋书·卷九十六 列传第六十六 列女传》"
+   }
+  ],
+  "wiki": "谢道韫",
+  "note": ""
+ },
+ "yangsu": {
+  "id": "yangsu",
+  "name": "杨素",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "隋書/卷48",
+    "label": "《隋书·卷四十八列传第十三 杨素》"
+   }
+  ],
+  "wiki": "杨素",
+  "note": ""
+ },
+ "changsunwuji": {
+  "id": "changsunwuji",
+  "name": "长孙无忌",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷65",
+    "label": "《旧唐书·卷六十五列传第十五 高士廉 长孙无忌》"
+   }
+  ],
+  "wiki": "长孙无忌",
+  "note": ""
+ },
+ "duruhui": {
+  "id": "duruhui",
+  "name": "杜如晦",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷66",
+    "label": "《旧唐书·卷六十六列传第十六 房玄龄 杜如晦》"
+   }
+  ],
+  "wiki": "杜如晦",
+  "note": ""
+ },
+ "xuerenhui": {
+  "id": "xuerenhui",
+  "name": "薛仁贵",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷83",
+    "label": "《旧唐书·卷八十三列传第三十三 郭孝恪 张俭 苏定方 薛仁贵 程务挺 张士贵 赵道兴》"
+   }
+  ],
+  "wiki": "薛仁贵",
+  "note": ""
+ },
+ "shangguanwaner": {
+  "id": "shangguanwaner",
+  "name": "上官婉儿",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷51",
+    "label": "《旧唐书·后妃上》"
+   }
+  ],
+  "wiki": "上官婉儿",
+  "note": ""
+ },
+ "yaochong": {
+  "id": "yaochong",
+  "name": "姚崇",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷96",
+    "label": "《旧唐书·卷九十六列传第四十六 姚崇 宋璟》"
+   }
+  ],
+  "wiki": "姚崇",
+  "note": ""
+ },
+ "zhangjiuling": {
+  "id": "zhangjiuling",
+  "name": "张九龄",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷99",
+    "label": "《旧唐书·列传第四十九 崔日用 张嘉贞 萧嵩 张九龄 李适之 严挺之》"
+   }
+  ],
+  "wiki": "张九龄",
+  "note": ""
+ },
+ "yanzhenqing": {
+  "id": "yanzhenqing",
+  "name": "颜真卿",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷128",
+    "label": "《旧唐书·卷一百二十八列传第七十八 段秀实 颜真卿》"
+   }
+  ],
+  "wiki": "颜真卿",
+  "note": ""
+ },
+ "yangguifei": {
+  "id": "yangguifei",
+  "name": "杨贵妃",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷51",
+    "label": "《旧唐书·后妃上》"
+   }
+  ],
+  "wiki": "杨贵妃",
+  "note": ""
+ },
+ "anlushan": {
+  "id": "anlushan",
+  "name": "安禄山",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷200上",
+    "label": "《旧唐书·卷二百上列传第一百五十上 安禄山 高尚 孙孝哲 史思明》"
+   }
+  ],
+  "wiki": "安禄山",
+  "note": ""
+ },
+ "libi": {
+  "id": "libi",
+  "name": "李泌",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷130",
+    "label": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》"
+   }
+  ],
+  "wiki": "李泌",
+  "note": ""
+ },
+ "liuyuxi": {
+  "id": "liuyuxi",
+  "name": "刘禹锡",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷160",
+    "label": "《旧唐书·卷一百六十列传第一百一十 韩愈 张籍 孟郊 唐衢 李翱 宇文籍 刘禹锡 柳宗元 韩辞》"
+   }
+  ],
+  "wiki": "刘禹锡",
+  "note": ""
+ },
+ "dumu": {
+  "id": "dumu",
+  "name": "杜牧",
+  "dynasty": "隋唐",
+  "ws": [],
+  "wiki": "杜牧",
+  "note": "正史中未找到"
+ },
+ "liugongquan": {
+  "id": "liugongquan",
+  "name": "柳公权",
+  "dynasty": "隋唐",
+  "ws": [],
+  "wiki": "柳公权",
+  "note": "正史中未找到"
+ },
+ "huangchao": {
+  "id": "huangchao",
+  "name": "黄巢",
+  "dynasty": "隋唐",
+  "ws": [
+   {
+    "title": "舊唐書/卷200下",
+    "label": "《旧唐书·卷二百下列传第一百五十下 朱泚 黄巢 秦宗权》"
+   }
+  ],
+  "wiki": "黄巢",
+  "note": ""
+ },
+ "likeiyong": {
+  "id": "likeiyong",
+  "name": "李克用",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷25",
+    "label": "《旧五代史·卷二十五》"
+   }
+  ],
+  "wiki": "李克用",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "shijingtang": {
+  "id": "shijingtang",
+  "name": "石敬瑭",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷75",
+    "label": "《旧五代史·卷七十五》"
+   }
+  ],
+  "wiki": "石敬瑭",
+  "note": ""
+ },
+ "liuzhiyuan": {
+  "id": "liuzhiyuan",
+  "name": "刘知远",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷99",
+    "label": "《旧五代史·卷九十九》"
+   }
+  ],
+  "wiki": "刘知远",
+  "note": ""
+ },
+ "guowei": {
+  "id": "guowei",
+  "name": "郭威",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷110",
+    "label": "《旧五代史·卷一百十》"
+   }
+  ],
+  "wiki": "郭威",
+  "note": ""
+ },
+ "lisiyuan": {
+  "id": "lisiyuan",
+  "name": "李嗣源",
+  "dynasty": "五代十国",
+  "ws": [
+   {
+    "title": "舊五代史/卷35",
+    "label": "《旧五代史·卷三十五》"
+   }
+  ],
+  "wiki": "李嗣源",
+  "note": ""
+ },
+ "zhaopu": {
+  "id": "zhaopu",
+  "name": "赵普",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷256",
+    "label": "《宋史·卷二百五十六 列传第十五》"
+   }
+  ],
+  "wiki": "赵普",
+  "note": ""
+ },
+ "kouzhun": {
+  "id": "kouzhun",
+  "name": "寇准",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷281",
+    "label": "《宋史·卷二百八十一 列传第四十》"
+   }
+  ],
+  "wiki": "寇准",
+  "note": ""
+ },
+ "diqing": {
+  "id": "diqing",
+  "name": "狄青",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷290",
+    "label": "《宋史·卷二百九十 列传第四十八》"
+   }
+  ],
+  "wiki": "狄青",
+  "note": ""
+ },
+ "yangye": {
+  "id": "yangye",
+  "name": "杨业",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷272",
+    "label": "《宋史·卷二百七十二 列传第三十一》"
+   }
+  ],
+  "wiki": "杨业",
+  "note": ""
+ },
+ "yanshu": {
+  "id": "yanshu",
+  "name": "晏殊",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷311",
+    "label": "《宋史·卷三百十一 列传第七十》"
+   }
+  ],
+  "wiki": "晏殊",
+  "note": ""
+ },
+ "liuyong": {
+  "id": "liuyong",
+  "name": "柳永",
+  "dynasty": "宋",
+  "ws": [],
+  "wiki": "柳永",
+  "note": "正史中未找到"
+ },
+ "zhoudunyi": {
+  "id": "zhoudunyi",
+  "name": "周敦颐",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷427",
+    "label": "《宋史·卷四百二十七 列传第一百八十六 道学一》"
+   }
+  ],
+  "wiki": "周敦颐",
+  "note": ""
+ },
+ "chenghao": {
+  "id": "chenghao",
+  "name": "程颢",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷427",
+    "label": "《宋史·卷四百二十七 列传第一百八十六 道学一》"
+   }
+  ],
+  "wiki": "程颢",
+  "note": ""
+ },
+ "chengyi": {
+  "id": "chengyi",
+  "name": "程颐",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷427",
+    "label": "《宋史·卷四百二十七 列传第一百八十六 道学一》"
+   }
+  ],
+  "wiki": "程颐",
+  "note": ""
+ },
+ "mifu": {
+  "id": "mifu",
+  "name": "米芾",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷444",
+    "label": "《宋史·卷四百四十四 列传第二百三 文苑六》"
+   }
+  ],
+  "wiki": "米芾",
+  "note": ""
+ },
+ "huangtingjian": {
+  "id": "huangtingjian",
+  "name": "黄庭坚",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷444",
+    "label": "《宋史·卷四百四十四 列传第二百三 文苑六》"
+   }
+  ],
+  "wiki": "黄庭坚",
+  "note": ""
+ },
+ "zongze": {
+  "id": "zongze",
+  "name": "宗泽",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷360",
+    "label": "《宋史·卷三百六十 列传第一百十九》"
+   }
+  ],
+  "wiki": "宗泽",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "hanshizhong": {
+  "id": "hanshizhong",
+  "name": "韩世忠",
+  "dynasty": "宋",
+  "ws": [
+   {
+    "title": "宋史/卷027",
+    "label": "《宋史·卷二十七 本纪第二十七 高宗四》"
+   }
+  ],
+  "wiki": "韩世忠",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "ligang": {
+  "id": "ligang",
+  "name": "李纲",
+  "dynasty": "宋",
+  "ws": [],
+  "wiki": "李纲",
+  "note": "正史中未找到"
+ },
+ "qinhui": {
+  "id": "qinhui",
+  "name": "秦桧",
+  "dynasty": "宋",
+  "ws": [],
+  "wiki": "秦桧",
+  "note": "正史中未找到"
+ },
+ "yeludashi": {
+  "id": "yeludashi",
+  "name": "耶律大石",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "遼史/卷30",
+    "label": "《辽史·本纪第三十》"
+   }
+  ],
+  "wiki": "耶律大石",
+  "note": ""
+ },
+ "wanyanzongbi": {
+  "id": "wanyanzongbi",
+  "name": "完颜宗弼",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "宋史/卷399",
+    "label": "《宋史·卷三百九十九 列传第一百五十八》"
+   }
+  ],
+  "wiki": "完颜宗弼",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "yuanhaowen": {
+  "id": "yuanhaowen",
+  "name": "元好问",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "金史/卷126",
+    "label": "《金史·卷一百二十六 列传第六十四 文艺下》"
+   }
+  ],
+  "wiki": "元好问",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "yeluhongji": {
+  "id": "yeluhongji",
+  "name": "耶律洪基",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "遼史/卷21",
+    "label": "《辽史·卷二十一 本纪第二十一》"
+   }
+  ],
+  "wiki": "耶律洪基",
+  "note": ""
+ },
+ "wanyanjing": {
+  "id": "wanyanjing",
+  "name": "完颜璟",
+  "dynasty": "辽金西夏",
+  "ws": [
+   {
+    "title": "金史/卷9",
+    "label": "《金史·卷九 本纪第九 章宗一》"
+   }
+  ],
+  "wiki": "完颜璟",
+  "note": ""
+ },
+ "tolui": {
+  "id": "tolui",
+  "name": "拖雷",
+  "dynasty": "元",
+  "ws": [],
+  "wiki": "拖雷",
+  "note": "正史中未找到"
+ },
+ "ogedei": {
+  "id": "ogedei",
+  "name": "窝阔台",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷002",
+    "label": "《元史·本纪第二》"
+   }
+  ],
+  "wiki": "窝阔台",
+  "note": ""
+ },
+ "hulagu": {
+  "id": "hulagu",
+  "name": "旭烈兀",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "新元史/卷108",
+    "label": "《新元史·卷一百八 列传第五》"
+   }
+  ],
+  "wiki": "旭烈兀",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "bayan": {
+  "id": "bayan",
+  "name": "伯颜",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷111",
+    "label": "《元史·表第五下》"
+   }
+  ],
+  "wiki": "伯颜",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "zhanghongfan": {
+  "id": "zhanghongfan",
+  "name": "张弘范",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "元史/卷156",
+    "label": "《元史·列传第四十三》"
+   }
+  ],
+  "wiki": "张弘范",
+  "note": ""
+ },
+ "guahanqing": {
+  "id": "guahanqing",
+  "name": "关汉卿",
+  "dynasty": "元",
+  "ws": [],
+  "wiki": "关汉卿",
+  "note": "正史中未找到"
+ },
+ "mazhiyuan": {
+  "id": "mazhiyuan",
+  "name": "马致远",
+  "dynasty": "元",
+  "ws": [],
+  "wiki": "马致远",
+  "note": "正史中未找到"
+ },
+ "wangmian": {
+  "id": "wangmian",
+  "name": "王冕",
+  "dynasty": "元",
+  "ws": [
+   {
+    "title": "新元史/卷238",
+    "label": "《新元史·卷二百三十八 列传第一百三十五》"
+   }
+  ],
+  "wiki": "王冕",
+  "note": ""
+ },
+ "xuda": {
+  "id": "xuda",
+  "name": "徐达",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷2",
+    "label": "《明史·本纪第二 太祖二》"
+   }
+  ],
+  "wiki": "徐达",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "changyuchun": {
+  "id": "changyuchun",
+  "name": "常遇春",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷1",
+    "label": "《明史·本纪第一 太祖一》"
+   }
+  ],
+  "wiki": "常遇春",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "xiejin": {
+  "id": "xiejin",
+  "name": "解缙",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷147",
+    "label": "《明史·卷一百四十七 列传第三十五》"
+   }
+  ],
+  "wiki": "解缙",
+  "note": ""
+ },
+ "yangtinghe": {
+  "id": "yangtinghe",
+  "name": "杨廷和",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷190",
+    "label": "《明史·卷一百九十列传第七十八 杨廷和 梁储 蒋冕 毛纪 石珤》"
+   }
+  ],
+  "wiki": "杨廷和",
+  "note": ""
+ },
+ "xujie": {
+  "id": "xujie",
+  "name": "徐阶",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷213",
+    "label": "《明史·卷二百十三 列传第一百一》"
+   }
+  ],
+  "wiki": "徐阶",
+  "note": ""
+ },
+ "gaogong": {
+  "id": "gaogong",
+  "name": "高拱",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷213",
+    "label": "《明史·卷二百十三 列传第一百一》"
+   }
+  ],
+  "wiki": "高拱",
+  "note": ""
+ },
+ "lizhi": {
+  "id": "lizhi",
+  "name": "李贽",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷221",
+    "label": "《明史·卷二百二十一列传第一百〇九 袁洪愈 王廷瞻 郭应聘 耿定向 王樵 魏时亮 郝杰 赵参鲁 张孟男 李祯 丁宾》"
+   }
+  ],
+  "wiki": "李贽",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "dongqichang": {
+  "id": "dongqichang",
+  "name": "董其昌",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷288",
+    "label": "《明史·卷二百八十八列传第一百七十六 文苑四》"
+   }
+  ],
+  "wiki": "董其昌",
+  "note": ""
+ },
+ "wuchengen": {
+  "id": "wuchengen",
+  "name": "吴承恩",
+  "dynasty": "明",
+  "ws": [],
+  "wiki": "吴承恩",
+  "note": "正史中未找到"
+ },
+ "tangyin": {
+  "id": "tangyin",
+  "name": "唐寅",
+  "dynasty": "明",
+  "ws": [
+   {
+    "title": "明史/卷286",
+    "label": "《明史·卷二百八十六 列传第一百七十四 文苑二》"
+   }
+  ],
+  "wiki": "唐寅",
+  "note": ""
+ },
+ "duoergun": {
+  "id": "duoergun",
+  "name": "多尔衮",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷218",
+    "label": "《清史稿·列传五 诸王四》"
+   }
+  ],
+  "wiki": "多尔衮",
+  "note": ""
+ },
+ "xiaozhuang": {
+  "id": "xiaozhuang",
+  "name": "孝庄文皇后",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷214",
+    "label": "《清史稿·卷二百一十四 列传一》"
+   }
+  ],
+  "wiki": "孝庄文皇后",
+  "note": ""
+ },
+ "wusangui": {
+  "id": "wusangui",
+  "name": "吴三桂",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷259",
+    "label": "《清史稿·卷二百五十九》"
+   }
+  ],
+  "wiki": "吴三桂",
+  "note": "未找到传首，按首次出现截取，需人工确认"
+ },
+ "shilang": {
+  "id": "shilang",
+  "name": "施琅",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷260",
+    "label": "《清史稿·卷二百六十 列传四十七》"
+   }
+  ],
+  "wiki": "施琅",
+  "note": ""
+ },
+ "niangengyao": {
+  "id": "niangengyao",
+  "name": "年羹尧",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷295",
+    "label": "《清史稿·卷二百九十五 列传八十二》"
+   }
+  ],
+  "wiki": "年羹尧",
+  "note": ""
+ },
+ "heshen": {
+  "id": "heshen",
+  "name": "和珅",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷319",
+    "label": "《清史稿·卷三百十九 列传一百六》"
+   }
+  ],
+  "wiki": "和珅",
+  "note": ""
+ },
+ "jixiaolan": {
+  "id": "jixiaolan",
+  "name": "纪昀",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷320",
+    "label": "《清史稿·卷三百二十 列传一百七》"
+   }
+  ],
+  "wiki": "纪昀",
+  "note": ""
+ },
+ "dengshichang": {
+  "id": "dengshichang",
+  "name": "邓世昌",
+  "dynasty": "清",
+  "ws": [
+   {
+    "title": "清史稿/卷460",
+    "label": "《清史稿·卷四百六十》"
+   }
+  ],
+  "wiki": "邓世昌",
+  "note": ""
+ },
+ "chenjiageng": {
+  "id": "chenjiageng",
+  "name": "陈嘉庚",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "陈嘉庚",
+  "note": ""
+ },
+ "nieer": {
+  "id": "nieer",
+  "name": "聂耳",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "聂耳",
+  "note": ""
+ },
+ "xianxinghai": {
+  "id": "xianxinghai",
+  "name": "冼星海",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "冼星海",
+  "note": ""
+ },
+ "qianweichang": {
+  "id": "qianweichang",
+  "name": "钱伟长",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "钱伟长",
+  "note": ""
+ },
+ "tongdizhou": {
+  "id": "tongdizhou",
+  "name": "童第周",
+  "dynasty": "近现代",
+  "ws": [],
+  "wiki": "童第周",
+  "note": ""
+ }
+}

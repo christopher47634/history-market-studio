@@ -1,0 +1,81 @@
+{
+  "id": "gukaizhi",
+  "author": "claude",
+  "born": {
+    "year": 348,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 409,
+    "certainty": "确知"
+  },
+  "thesis": "画绝、才绝、痴绝，《女史箴图》《洛神赋图》。",
+  "events": [
+    {
+      "year": 348,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于晋陵无锡",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士族",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 366,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为桓温参军",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大司马桓温引为参军",
+      "rationale": "入幕",
+      "quote": null
+    },
+    {
+      "year": 380,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "画名动京师",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "瓦官寺画维摩诘，一时施钱百万",
+      "rationale": "画名",
+      "quote": null
+    },
+    {
+      "year": 400,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任散骑常侍",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "义熙中为散骑常侍",
+      "rationale": "官职",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 409,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "画作摹本流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "中国人物画奠基者"
+  }
+}

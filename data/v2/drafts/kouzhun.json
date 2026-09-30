@@ -1,0 +1,130 @@
+{
+  "id": "kouzhun",
+  "author": "claude",
+  "born": {
+    "year": 961,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1023,
+    "certainty": "确知"
+  },
+  "thesis": "澶渊之役力主亲征，晚年被丁谓陷害贬死雷州。",
+  "events": [
+    {
+      "year": 961,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于华州",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 980,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十九岁",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 994,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参知政事",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "执政",
+      "rationale": "宰执",
+      "quote": null
+    },
+    {
+      "year": 1004,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相力主澶渊亲征",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "澶渊之盟",
+      "rationale": "救国",
+      "quote": {
+        "find": [
+          "澶淵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1006,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "王钦若谗罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "罢",
+      "rationale": "罢相",
+      "quote": null
+    },
+    {
+      "year": 1019,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "复相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "复相",
+      "rationale": "复起",
+      "quote": null
+    },
+    {
+      "year": 1022,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "丁谓陷害贬雷州",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "贬雷州司户",
+      "rationale": "远贬",
+      "quote": {
+        "find": [
+          "雷州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1023,
+    "title": "卒于雷州",
+    "retention": 0.9,
+    "reason": "后平反",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "澶渊名相"
+  }
+}

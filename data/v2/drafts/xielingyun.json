@@ -1,0 +1,119 @@
+{
+  "id": "xielingyun",
+  "author": "claude",
+  "born": {
+    "year": 385,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 433,
+    "certainty": "确知"
+  },
+  "thesis": "谢玄之孙，开创山水诗，狂傲不羁终被弃市。",
+  "events": [
+    {
+      "year": 385,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于会稽",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "谢玄之孙",
+      "rationale": "顶级士族",
+      "quote": null
+    },
+    {
+      "year": 405,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭封康乐公",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "袭封康乐公",
+      "rationale": "贵族",
+      "quote": {
+        "find": [
+          "康樂公"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 422,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出任永嘉太守",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "少帝时出为永嘉太守，游山水",
+      "rationale": "外放",
+      "quote": {
+        "find": [
+          "永嘉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 426,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召为秘书监",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文帝征为秘书监",
+      "rationale": "复用",
+      "quote": {
+        "find": [
+          "秘書監"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 431,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "流放广州",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "被劾谋反，流徙广州",
+      "rationale": "获罪",
+      "quote": {
+        "find": [
+          "廣州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 433,
+    "title": "弃市广州",
+    "retention": 0.8,
+    "reason": "山水诗流传",
+    "quote": {
+      "find": [
+        "棄市"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "山水诗鼻祖"
+  }
+}

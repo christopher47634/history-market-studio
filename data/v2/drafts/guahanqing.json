@@ -1,0 +1,81 @@
+{
+  "id": "guahanqing",
+  "author": "claude",
+  "born": {
+    "year": 1220,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 1300,
+    "certainty": "估计"
+  },
+  "thesis": "元曲四大家之首，《窦娥冤》。",
+  "events": [
+    {
+      "year": 1220,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于大都",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "医户",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1250,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "玉京书会",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "杂剧创作",
+      "rationale": "编剧",
+      "quote": null
+    },
+    {
+      "year": 1260,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "编写杂剧成名",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "作杂剧六十余种，与杨显之、梁进之等交游",
+      "rationale": "剧坛领袖",
+      "quote": null
+    },
+    {
+      "year": 1280,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "作《窦娥冤》",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "感天动地",
+      "rationale": "名作",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1300,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "元曲流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "中国戏剧之父"
+  }
+}

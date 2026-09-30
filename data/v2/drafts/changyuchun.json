@@ -1,0 +1,81 @@
+{
+  "id": "changyuchun",
+  "author": "claude",
+  "born": {
+    "year": 1330,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1369,
+    "certainty": "确知"
+  },
+  "thesis": "常十万，冲锋陷阵，北伐途中暴卒。",
+  "events": [
+    {
+      "year": 1330,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于怀远",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "农民",
+      "quote": null
+    },
+    {
+      "year": 1355,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投朱元璋",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "先锋",
+      "rationale": "先锋",
+      "quote": null
+    },
+    {
+      "year": 1363,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鄱阳湖救驾",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "射张定边",
+      "rationale": "救驾",
+      "quote": null
+    },
+    {
+      "year": 1367,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "副将军北伐",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "常十万",
+      "rationale": "名将",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1369,
+    "title": "暴卒柳河川",
+    "retention": 0.95,
+    "reason": "开平王",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "开国名将"
+  }
+}

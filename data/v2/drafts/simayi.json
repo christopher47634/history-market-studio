@@ -1,0 +1,189 @@
+{
+  "id": "simayi",
+  "author": "claude",
+  "born": {
+    "year": 179,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 251,
+    "certainty": "确知"
+  },
+  "thesis": "隐忍多谋，抗诸葛亮北伐，高平陵之变夺曹魏大权，奠定晋朝基业。",
+  "events": [
+    {
+      "year": 179,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于河内温县",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世为二千石",
+      "rationale": "官宦世家",
+      "quote": {
+        "find": [
+          "溫縣"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被迫出仕曹操",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "魏武辟之，惧而就职",
+      "rationale": "被迫出仕",
+      "quote": null
+    },
+    {
+      "year": 220,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "曹丕即位受重用",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "魏受禅，转尚书，领抚军将军",
+      "rationale": "曹丕心腹",
+      "quote": {
+        "find": [
+          "撫軍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 226,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受遗诏辅政",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与曹真、陈群受遗诏辅政",
+      "rationale": "辅政大臣",
+      "quote": null
+    },
+    {
+      "year": 231,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抗诸葛亮",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "西屯长安，拒诸葛亮",
+      "rationale": "西线统帅",
+      "quote": {
+        "find": [
+          "諸葛亮"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 238,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平辽东公孙渊",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破公孙渊，斩之",
+      "rationale": "功高",
+      "quote": {
+        "find": [
+          "公孫文懿"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 239,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受遗诏辅曹芳",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与曹爽受遗诏辅政",
+      "rationale": "首辅",
+      "quote": {
+        "find": [
+          "曹爽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 247,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称病被夺权",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "曹爽专政，司马懿称疾不与政事",
+      "rationale": "被架空",
+      "quote": {
+        "find": [
+          "稱疾"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 249,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "高平陵之变",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "诛曹爽，魏政归于司马氏",
+      "rationale": "实际执掌魏国",
+      "quote": {
+        "find": [
+          "曹爽",
+          "誅"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 266,
+      "title": "晋追尊宣皇帝",
+      "score": 85,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 251,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "其孙司马炎篡魏建晋",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "争议",
+    "rationale": "晋朝奠基人，隐忍权谋的代表"
+  }
+}

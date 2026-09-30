@@ -1,0 +1,81 @@
+{
+  "id": "wangmian",
+  "author": "claude",
+  "born": {
+    "year": 1287,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1359,
+    "certainty": "确知"
+  },
+  "thesis": "牧童出身，墨梅画家，隐居不仕。",
+  "events": [
+    {
+      "year": 1287,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于诸暨",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家，放牛",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1300,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "寺中夜读",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "佛寺长明灯下读书",
+      "rationale": "苦学",
+      "quote": null
+    },
+    {
+      "year": 1330,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "屡试不第",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "放弃科举",
+      "rationale": "不第",
+      "quote": null
+    },
+    {
+      "year": 1350,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "画梅名世",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "隐居九里山",
+      "rationale": "画家",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1359,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "墨梅流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "墨梅画家"
+  }
+}

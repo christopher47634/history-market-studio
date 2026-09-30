@@ -1,0 +1,240 @@
+{
+  "id": "zhangliang",
+  "author": "claude",
+  "born": {
+    "year": -250,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -186,
+    "certainty": "确知"
+  },
+  "thesis": "韩国相门之后，刺秦失败亡命，辅佐刘邦定天下后功成身退。",
+  "events": [
+    {
+      "year": -250,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于韩国相门",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "祖父、父亲五世相韩，韩亡时尚年少",
+      "rationale": "贵族之后，但故国已亡",
+      "quote": {
+        "find": [
+          "五世相韩",
+          "留侯张良者"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -218,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "博浪沙刺秦",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "募力士以铁椎狙击秦始皇于博浪沙，误中副车，更名亡匿下邳",
+      "rationale": "刺杀失败，被天下大索",
+      "quote": {
+        "find": [
+          "博浪沙",
+          "大索天下"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -216,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "圯上受书",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "下邳圯上老父授以《太公兵法》",
+      "rationale": "隐匿中得兵书",
+      "quote": {
+        "find": [
+          "太公兵法"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归附沛公",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "聚少年百余人，道遇沛公，遂属之，为厩将",
+      "rationale": "成为刘邦谋士",
+      "quote": {
+        "find": [
+          "厩将",
+          "遂属焉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿门护主",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "项伯夜告，劝沛公赴鸿门谢罪，席间周旋得脱",
+      "rationale": "主公生死系于一线",
+      "quote": {
+        "find": [
+          "鸿门"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "劝烧栈道",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "送汉王至褒中，劝烧绝栈道示无东归之心",
+      "rationale": "汉王核心谋臣",
+      "quote": {
+        "find": [
+          "栈道"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -204,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "借箸阻封六国",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "借箸为汉王陈说复立六国之不可，汉王罢议",
+      "rationale": "左右大局的谋主",
+      "quote": {
+        "find": [
+          "借前箸",
+          "箸"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -202,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "垓下定策",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劝汉王许韩信、彭越以地，诸侯会兵垓下",
+      "rationale": "决胜之策出于其手",
+      "quote": {
+        "find": [
+          "彭越",
+          "垓下"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -201,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封留侯",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "辞齐地三万户，只受留地",
+      "rationale": "开国首功之一",
+      "quote": {
+        "find": [
+          "留侯",
+          "三万户"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -196,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "迎商山四皓",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为吕后画策迎四皓辅太子，太子位遂定",
+      "rationale": "卷入储位之争而全身",
+      "quote": {
+        "find": [
+          "四人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -190,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "辟谷从赤松子游",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "自言愿弃人间事，学辟谷导引",
+      "rationale": "主动淡出朝政",
+      "quote": {
+        "find": [
+          "赤松子"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立留侯世家",
+      "score": 84,
+      "rationale": "司马迁以世家记之，谋圣形象确立"
+    }
+  ],
+  "finale": {
+    "year": -186,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "功成身退，汉初格局由其谋划奠定",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "汉初三杰之首，谋臣与功成身退的典范"
+  }
+}

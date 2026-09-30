@@ -1,0 +1,154 @@
+{
+  "id": "wangfuzhi",
+  "name": "王夫之",
+  "born": {
+    "year": 1619,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1692,
+    "certainty": "确知"
+  },
+  "lifeSpan": 73,
+  "thesis": "隐居石船山四十年，著述八百万字。",
+  "sources": [
+    {
+      "label": "《清史稿·列传二百六十七 儒林一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7480"
+    }
+  ],
+  "events": [
+    {
+      "year": 1619,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于衡阳",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "士人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1642,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中举",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 7,
+      "rationale": "入仕",
+      "summary": "举人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1648,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "衡山起兵",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 15,
+      "delta": -17,
+      "rationale": "败",
+      "summary": "抗清失败",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1660,
+      "age": 41,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "隐居船山",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 29,
+      "rationale": "隐",
+      "summary": "著述",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1692,
+    "age": 73,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "著作晚清刊行",
+    "score": 41.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1865,
+      "title": "曾国藩刊行《船山遗书》",
+      "score": 86,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "明清思想家",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "明清思想家"
+  },
+  "peak": {
+    "title": "隐居船山",
+    "age": 41,
+    "score": 44
+  },
+  "trough": {
+    "title": "衡山起兵",
+    "age": 29,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 23,
+      "years": 23
+    },
+    {
+      "fromAge": 41,
+      "toAge": 73,
+      "years": 32
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

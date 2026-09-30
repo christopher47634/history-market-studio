@@ -1,0 +1,94 @@
+{
+  "id": "lidazhao",
+  "author": "claude",
+  "born": {
+    "year": 1889,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1927,
+    "certainty": "确知"
+  },
+  "thesis": "中国最早的马克思主义传播者，中共创始人之一，就义于绞刑架。",
+  "events": [
+    {
+      "year": 1889,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于乐亭",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家，早孤",
+      "rationale": "孤贫",
+      "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学早稻田",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "留学",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1918,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北大图书馆主任",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "庶民的胜利",
+      "rationale": "传播者",
+      "quote": null
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中共创始人之一",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北方区",
+      "rationale": "领袖",
+      "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被张作霖逮捕",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "绞刑",
+      "rationale": "殉难",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1927,
+    "title": "就义",
+    "retention": 0.9,
+    "reason": "革命先驱",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "革命先驱"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "id": "zhuxi",
+  "name": "朱熹",
+  "born": {
+    "year": 1130,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1200,
+    "certainty": "确知"
+  },
+  "lifeSpan": 70,
+  "thesis": "理学集大成者，《四书章句集注》，庆元党禁中去世。",
+  "sources": [
+    {
+      "label": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+    }
+  ],
+  "events": [
+    {
+      "year": 1130,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于尤溪",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "父朱松",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1148,
+      "age": 18,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 12,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1179,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知南康军复白鹿洞书院",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 18,
+      "rationale": "讲学",
+      "summary": "兴学",
+      "evidence": "原文",
+      "quote": {
+        "text": "訪白鹿洞書院遺址，奏復其舊，為學規俾守之。",
+        "textSimplified": "访白鹿洞书院遗址，奏复其旧，为学规俾守之。",
+        "source": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+      },
+      "verified": true
+    },
+    {
+      "year": 1194,
+      "age": 64,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "侍讲",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 8,
+      "rationale": "近臣",
+      "summary": "宁宗侍讲四十六日",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1196,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "庆元党禁",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 2,
+      "delta": -58,
+      "rationale": "被禁",
+      "summary": "伪学之禁",
+      "evidence": "原文",
+      "quote": {
+        "text": "劉德秀仕長沙，不為張栻之徒所禮，及為諫官，首論留正引偽學之罪。",
+        "textSimplified": "刘德秀仕长沙，不为张栻之徒所礼，及为谏官，首论留正引伪学之罪。",
+        "source": "《宋史·卷四百二十九 列传第一百八十八 道学三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7429"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1200,
+    "age": 70,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "身后理学成为官学",
+    "score": 1.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1212,
+      "title": "平反，诏立《论语》《孟子》集注于学官",
+      "score": 80,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 1313,
+      "title": "元定四书集注为科举标准",
+      "score": 96,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 95,
+      "rationale": "理学集大成者",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "理学集大成者"
+  },
+  "peak": {
+    "title": "侍讲",
+    "age": 64,
+    "score": 60
+  },
+  "trough": {
+    "title": "庆元党禁",
+    "age": 66,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 18,
+      "years": 18
+    },
+    {
+      "fromAge": 18,
+      "toAge": 49,
+      "years": 31
+    }
+  ],
+  "quality": {
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "simayan",
+  "author": "claude",
+  "born": {
+    "year": 236,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 290,
+    "certainty": "确知"
+  },
+  "thesis": "受魏禅建晋，灭吴统一，晚年怠政，身后八王之乱。",
+  "events": [
+    {
+      "year": 236,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于河内",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "司马昭长子",
+      "rationale": "豪门",
+      "quote": null
+    },
+    {
+      "year": 265,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受魏禅称帝",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "受禅即皇帝位，国号晋",
+      "rationale": "西晋开国",
+      "quote": {
+        "find": [
+          "受禪"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 280,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭吴统一",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "王濬楼船下益州，孙皓投降，天下一统",
+      "rationale": "重归统一",
+      "quote": {
+        "find": [
+          "孫皓",
+          "平吳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 282,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "罢州郡兵",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "悉去州郡兵，大郡置武吏百人",
+      "rationale": "埋下隐患",
+      "quote": null
+    },
+    {
+      "year": 285,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "晚年怠政",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "耽于游宴，宠后党，委政杨骏",
+      "rationale": "晚节不保",
+      "quote": {
+        "find": [
+          "楊駿"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 307,
+      "title": "八王之乱",
+      "score": 55,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 290,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "身后八王之乱、五胡乱华",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "结束三国分裂的统一者，亦是西晋速亡的根源"
+  }
+}

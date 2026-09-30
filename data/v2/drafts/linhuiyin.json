@@ -1,0 +1,94 @@
+{
+  "id": "linhuiyin",
+  "author": "claude",
+  "born": {
+    "year": 1904,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1955,
+    "certainty": "确知"
+  },
+  "thesis": "建筑学家，参与设计国徽与人民英雄纪念碑。",
+  "events": [
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于杭州",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "林长民之女",
+      "rationale": "名门",
+      "quote": null
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学宾大",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建筑",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "营造学社考察古建筑",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "佛光寺",
+      "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抗战流亡李庄",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "肺病",
+      "rationale": "困顿",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "设计国徽",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国徽",
+      "rationale": "国家工程",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1955,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "建筑学",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "建筑学家"
+  }
+}

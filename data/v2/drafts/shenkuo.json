@@ -1,0 +1,140 @@
+{
+  "id": "shenkuo",
+  "author": "claude",
+  "born": {
+    "year": 1031,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1095,
+    "certainty": "确知"
+  },
+  "thesis": "《梦溪笔谈》作者，百科全书式科学家。",
+  "events": [
+    {
+      "year": 1031,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于杭州钱塘",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1063,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1072,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "提举司天监",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "修浑仪，编奉元历",
+      "rationale": "天文",
+      "quote": {
+        "find": [
+          "司天"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1075,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出使辽国",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "据理争地界",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1080,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知延州",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抗西夏",
+      "rationale": "方面",
+      "quote": {
+        "find": [
+          "延州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1082,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "永乐城之败",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "贬均州安置",
+      "rationale": "获罪",
+      "quote": {
+        "find": [
+          "永樂"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1088,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "隐居梦溪著书",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "著《梦溪笔谈》",
+      "rationale": "著述",
+      "quote": {
+        "find": [
+          "夢溪"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1095,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "《梦溪笔谈》传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "中国科学史上的坐标人物"
+  }
+}

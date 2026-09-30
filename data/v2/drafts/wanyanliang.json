@@ -1,0 +1,99 @@
+{
+  "id": "wanyanliang",
+  "author": "claude",
+  "born": {
+    "year": 1122,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1161,
+    "certainty": "确知"
+  },
+  "thesis": "海陵王，弑君篡位，迁都燕京，南侵兵败被杀。",
+  "events": [
+    {
+      "year": 1122,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于金朝宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太祖之孙",
+      "rationale": "宗室",
+      "quote": null
+    },
+    {
+      "year": 1149,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弑熙宗篡位",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即位",
+      "rationale": "篡位",
+      "quote": null
+    },
+    {
+      "year": 1153,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迁都燕京",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建中都",
+      "rationale": "改革",
+      "quote": null
+    },
+    {
+      "year": 1161,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南侵采石之败",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "虞允文败之",
+      "rationale": "败",
+      "quote": {
+        "find": [
+          "采石"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1161,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被部将所杀",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "完颜元宜杀之",
+      "rationale": "死",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1161,
+    "title": "被杀，废为庶人",
+    "retention": 0.8,
+    "reason": "金世宗即位",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 50,
+    "label": "负面",
+    "rationale": "金海陵王"
+  }
+}

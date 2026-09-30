@@ -44,6 +44,7 @@ export function LifeMarketChart({
   onEventAnchor,
   onEventBlur,
   onGranularityChange,
+  axis,
 }) {
   const descriptionId = useId();
   const rootRef = useRef(null);
@@ -72,7 +73,7 @@ export function LifeMarketChart({
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   }));
-  const comparison = useMemo(() => buildComparison(left, right), [left, right]);
+  const comparison = useMemo(() => buildComparison(left, right, axis), [left, right, axis]);
   const colors = useMemo(() => getPairColors(left, right), [left, right]);
   const candleView = useMemo(
     () => getCandleView(candleFigure, zoom.end - zoom.start),
@@ -108,6 +109,13 @@ export function LifeMarketChart({
     () =>
       mode === "line"
         ? [
+            // 身后段的节点（平反、追封等）也可以吸附查看。
+            ...(comparison.leftTail ?? [])
+              .filter((point) => point.event)
+              .map((point) => ({ key: `${left.id}-身后-${point.event.title}`, axisValue: point.axisLabel, value: point.value, event: { ...point.event, axisLabel: point.axisLabel, figure: left } })),
+            ...(comparison.rightTail ?? [])
+              .filter((point) => point.event)
+              .map((point) => ({ key: `${right.id}-身后-${point.event.title}`, axisValue: point.axisLabel, value: point.value, event: { ...point.event, axisLabel: point.axisLabel, figure: right } })),
             ...comparison.left
               .filter((point) => point.event)
               .map((point) => ({
@@ -541,7 +549,7 @@ export function LifeMarketChart({
         min: 0,
         max: 100,
         interval: 25,
-        name: narrow ? "" : "历史综合势能（0—100）",
+        name: narrow ? "" : "当时的势（0—100）",
         nameTextStyle: { color: label, fontSize: 10, padding: [0, 0, 8, 0] },
         axisLine: { show: false },
         axisTick: { show: false },
@@ -690,6 +698,32 @@ export function LifeMarketChart({
         emphasis: { disabled: true },
         tooltip: { show: false },
       }));
+      // 身后声望线：接在去世之后，画得更细更淡；身后区段用浅底色标出（横轴在这里是压缩的）。
+      const tailSeries = comparison.leftTail
+        ? [left, right].map((figure, index) => ({
+            name: `${figure.name} · 身后`,
+            type: "line",
+            xAxisIndex: 0,
+            yAxisIndex: 0,
+            data: (index ? comparison.rightTail : comparison.leftTail).map((point) => ({ ...point, figure })),
+            smooth: 0.3,
+            showSymbol: true,
+            symbol: "circle",
+            symbolSize: (value, params) => (params.data?.event ? 4 : 0),
+            connectNulls: false,
+            z: 3,
+            lineStyle: { width: 1, color: colors[index], opacity: paper ? 0.42 : 0.5, type: "solid" },
+            itemStyle: { color: paper ? "#fffaf0" : "#071513", borderColor: colors[index], borderWidth: 1, opacity: 0.8 },
+            endLabel: { show: true, formatter: `后世 ${figure.legacy?.score ?? ""}`, color: colors[index], fontSize: narrow ? 8.5 : 9.5, opacity: 0.85 },
+            emphasis: { disabled: true },
+            markArea: index === 0 && comparison.lifeEndIndex != null ? {
+              silent: true,
+              itemStyle: { color: paper ? "rgba(92,65,41,.045)" : "rgba(214,232,226,.035)" },
+              label: { show: !narrow, position: "insideTop", color: label, fontSize: 9, formatter: "身后 → 今日（压缩）" },
+              data: [[{ xAxis: comparison.axis[comparison.lifeEndIndex] }, { xAxis: comparison.axis.at(-1) }]],
+            } : undefined,
+          }))
+        : [];
       const candleData = candleView.candles.map((item) => ({
         value: [item.open, item.close, item.low, item.high],
         event: item.event,
@@ -788,6 +822,7 @@ export function LifeMarketChart({
             ...eventHitSeries,
             ...eventSeries,
             ...miniSeries,
+            ...tailSeries,
           ],
         },
         true,
@@ -837,7 +872,7 @@ export function LifeMarketChart({
             min: 0,
             max: 100,
             interval: 25,
-            name: narrow ? "" : "历史综合势能 OHLC",
+            name: narrow ? "" : "人生阶段 K 线（当时的势）",
             nameTextStyle: { color: label, fontSize: 10 },
             axisLabel: { color: label, fontSize: narrow ? 8.5 : 10 },
             axisLine: { show: false },

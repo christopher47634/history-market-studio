@@ -1,0 +1,112 @@
+{
+  "id": "shilang",
+  "author": "claude",
+  "born": {
+    "year": 1621,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1696,
+    "certainty": "确知"
+  },
+  "thesis": "郑成功部将降清，收复台湾。",
+  "events": [
+    {
+      "year": 1621,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于晋江",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "将门",
+      "rationale": "将门",
+      "quote": null
+    },
+    {
+      "year": 1646,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "降清又归郑",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "反复",
+      "rationale": "反复",
+      "quote": null
+    },
+    {
+      "year": 1651,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "父兄被郑成功所杀",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "投清",
+      "rationale": "家破",
+      "quote": null
+    },
+    {
+      "year": 1663,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "福建水师提督",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "提督",
+      "rationale": "方面",
+      "quote": null
+    },
+    {
+      "year": 1668,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻台失败留京十三年",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "闲居",
+      "rationale": "闲置",
+      "quote": null
+    },
+    {
+      "year": 1683,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "澎湖海战收复台湾",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "郑克塽降",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "澎湖"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1696,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "台湾入版图",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "争议",
+    "rationale": "收复台湾"
+  }
+}

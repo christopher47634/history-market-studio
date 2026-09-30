@@ -1,0 +1,130 @@
+{
+  "id": "yanying",
+  "author": "claude",
+  "born": {
+    "year": -578,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -500,
+    "certainty": "确知"
+  },
+  "thesis": "齐国名相，历仕三君，节俭力行，使楚不辱。",
+  "events": [
+    {
+      "year": -578,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于夷维",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "莱之夷维人，父晏弱为齐大夫",
+      "rationale": "官宦之后",
+      "quote": {
+        "find": [
+          "夷維"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -556,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "继父为齐卿",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父卒，晏婴继为大夫",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": -548,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "崔杼弑君不死",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "崔杼弑庄公，晏子伏尸而哭，不死亦不亡",
+      "rationale": "冒死守礼",
+      "quote": {
+        "find": [
+          "崔杼"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -547,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事景公为相",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "相齐景公，食不重肉，妾不衣帛",
+      "rationale": "名相",
+      "quote": {
+        "find": [
+          "景公",
+          "重肉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -531,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "使楚",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "使楚，楚王欲辱之，晏子以辞折之",
+      "rationale": "外交之名",
+      "quote": null
+    },
+    {
+      "year": -500,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "晚年仍任相",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "事景公五十余年",
+      "rationale": "历仕三君",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立管晏列传",
+      "score": 78,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -500,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "齐国政事延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "名相典范"
+  }
+}

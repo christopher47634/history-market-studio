@@ -1,0 +1,195 @@
+{
+  "id": "sunquan",
+  "author": "claude",
+  "born": {
+    "year": 182,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 252,
+    "certainty": "确知"
+  },
+  "thesis": "十八岁接掌江东，赤壁联刘破曹，夺荆州，称帝建吴。",
+  "events": [
+    {
+      "year": 182,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于下邳",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孙坚次子",
+      "rationale": "将门之子",
+      "quote": {
+        "find": [
+          "孫堅"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "继兄统江东",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "孙策遇刺，权年十九代领其众",
+      "rationale": "少年掌权",
+      "quote": {
+        "find": [
+          "策薨",
+          "領"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赤壁破曹",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与刘备合兵，大破曹公于赤壁",
+      "rationale": "三分之势由此",
+      "quote": {
+        "find": [
+          "赤壁"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭取荆州",
+      "tier": "一方之主",
+      "tierScore": 89,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "吕蒙袭江陵，擒杀关羽",
+      "rationale": "全据长江",
+      "quote": {
+        "find": [
+          "關羽",
+          "江陵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受魏封吴王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "称臣于魏，受封吴王",
+      "rationale": "屈身称藩",
+      "quote": {
+        "find": [
+          "吳王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 222,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夷陵破刘备",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陆逊大破刘备于夷陵",
+      "rationale": "保境",
+      "quote": {
+        "find": [
+          "陸議"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 229,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即皇帝位于武昌",
+      "rationale": "吴国皇帝",
+      "quote": {
+        "find": [
+          "即皇帝位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 233,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "辽东受辱",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "遣使封公孙渊，渊斩使降魏",
+      "rationale": "被欺",
+      "quote": {
+        "find": [
+          "公孫淵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 245,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "二宫之争",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "summary": "太子和与鲁王霸争位，陆逊忧愤而死",
+      "rationale": "晚年昏乱",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1360,
+      "title": "《三国演义》中英主形象",
+      "score": 80,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 252,
+    "title": "病卒",
+    "retention": 0.9,
+    "reason": "吴国延续至280年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "三国东吴开国之主"
+  }
+}

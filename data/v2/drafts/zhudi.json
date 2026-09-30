@@ -1,0 +1,135 @@
+{
+  "id": "zhudi",
+  "author": "claude",
+  "born": {
+    "year": 1360,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1424,
+    "certainty": "确知"
+  },
+  "thesis": "燕王起兵靖难夺位，迁都北京，修《永乐大典》，派郑和下西洋。",
+  "events": [
+    {
+      "year": 1360,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于应天",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "朱元璋第四子",
+      "rationale": "皇子",
+      "quote": null
+    },
+    {
+      "year": 1380,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "就藩北平",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "燕王",
+      "rationale": "藩王",
+      "quote": {
+        "find": [
+          "燕"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1399,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "靖难起兵",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "建文削藩，被迫起兵",
+      "rationale": "生死之战",
+      "quote": {
+        "find": [
+          "靖難"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1402,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻入南京即位",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建文帝下落不明",
+      "rationale": "即位",
+      "quote": null
+    },
+    {
+      "year": 1405,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "郑和下西洋",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "派遣",
+      "rationale": "盛世",
+      "quote": null
+    },
+    {
+      "year": 1421,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迁都北京",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三大殿被焚",
+      "rationale": "迁都",
+      "quote": null
+    },
+    {
+      "year": 1424,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五征蒙古崩于途",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "榆木川",
+      "rationale": "病",
+      "quote": {
+        "find": [
+          "榆木川"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1424,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "永乐盛世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "争议",
+    "rationale": "永乐大帝"
+  }
+}

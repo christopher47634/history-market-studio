@@ -1,0 +1,112 @@
+{
+  "id": "lihongzhang",
+  "author": "claude",
+  "born": {
+    "year": 1823,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1901,
+    "certainty": "确知"
+  },
+  "thesis": "淮军统帅，洋务运动主将，签订马关辛丑条约。",
+  "events": [
+    {
+      "year": 1823,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于合肥",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1847,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1862,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "组建淮军",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "江苏巡抚",
+      "rationale": "方面",
+      "quote": null
+    },
+    {
+      "year": 1870,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "直隶总督",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北洋大臣",
+      "rationale": "权重",
+      "quote": null
+    },
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "甲午战败签马关条约",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "遇刺",
+      "rationale": "国耻",
+      "quote": {
+        "find": [
+          "馬關"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1900,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辛丑议和",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "签约后吐血",
+      "rationale": "病重",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1901,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "洋务",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "争议",
+    "rationale": "晚清重臣"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "wangmang",
+  "author": "claude",
+  "born": {
+    "year": -45,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 23,
+    "certainty": "确知"
+  },
+  "thesis": "外戚起家，以谦恭博取声望，篡汉建新，改制失败身死国灭。",
+  "events": [
+    {
+      "year": -45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于魏郡",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "元帝皇后王政君之侄，然父早死家贫",
+      "rationale": "外戚旁支",
+      "quote": {
+        "find": [
+          "王政君",
+          "孤贫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "侍奉伯父王凤",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "伯父大将军王凤病，莽侍疾，蓬首垢面",
+      "rationale": "以孝谨得名",
+      "quote": {
+        "find": [
+          "王凤"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -16,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封新都侯",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "封新都侯，迁骑都尉光禄大夫侍中",
+      "rationale": "谦恭下士",
+      "quote": {
+        "find": [
+          "新都侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -8,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任大司马",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "代王根为大司马辅政",
+      "rationale": "执掌朝政",
+      "quote": {
+        "find": [
+          "大司马"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -7,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "哀帝即位就国",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "哀帝即位，外戚丁傅用事，王莽罢归新都",
+      "rationale": "失势",
+      "quote": {
+        "find": [
+          "就国",
+          "新都"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "复任大司马",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "哀帝崩，太皇太后召莽为大司马，立平帝",
+      "rationale": "重掌大权",
+      "quote": {
+        "find": [
+          "安汉公",
+          "大司马"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 6,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "居摄称假皇帝",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平帝崩，立孺子婴，居摄践祚",
+      "rationale": "代行天子事",
+      "quote": {
+        "find": [
+          "居摄"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 9,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "篡汉建新",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即真天子位，定国号新",
+      "rationale": "新朝皇帝",
+      "quote": {
+        "find": [
+          "即真",
+          "新"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 14,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "改制失序",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "王田、私属、五均六筦屡改，天下扰动",
+      "rationale": "改制失败",
+      "quote": {
+        "find": [
+          "王田",
+          "五均"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "昆阳大败",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "四十余万大军覆没于昆阳，汉兵入长安",
+      "rationale": "政权崩溃",
+      "quote": {
+        "find": [
+          "昆阳"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 100,
+      "title": "《汉书》立王莽传",
+      "score": 45,
+      "rationale": "班固斥为篡贼，但以专传详载其事"
+    },
+    {
+      "year": 1900,
+      "title": "近代部分学者称其改革者",
+      "score": 48,
+      "rationale": "胡适等称其为「社会主义皇帝」，评价出现分歧"
+    }
+  ],
+  "finale": {
+    "year": 23,
+    "title": "死于渐台",
+    "retention": 0.8,
+    "reason": "新朝随其身死而亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 62,
+    "label": "争议",
+    "rationale": "篡汉者与改革者两种形象并存"
+  }
+}

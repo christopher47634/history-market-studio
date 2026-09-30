@@ -1,0 +1,173 @@
+{
+  "id": "zhantianyou",
+  "name": "詹天佑",
+  "born": {
+    "year": 1861,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1919,
+    "certainty": "确知"
+  },
+  "lifeSpan": 58,
+  "thesis": "京张铁路总工程师。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1861,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南海",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "茶商",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1872,
+      "age": 11,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留美幼童",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 10,
+      "rationale": "留学",
+      "summary": "十二岁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1881,
+      "age": 20,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "耶鲁毕业回国",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 5,
+      "rationale": "冷遇",
+      "summary": "海军",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1888,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投身铁路",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 6,
+      "rationale": "工程师",
+      "summary": "津唐铁路",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1905,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "京张铁路总工程师",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 18,
+      "rationale": "巅峰",
+      "summary": "人字形",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1909,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "京张铁路通车",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 10,
+      "rationale": "巅峰",
+      "summary": "提前完工",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1919,
+    "age": 58,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "中国铁路之父",
+    "score": 60.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "中国铁路之父",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "中国铁路之父"
+  },
+  "peak": {
+    "title": "京张铁路通车",
+    "age": 48,
+    "score": 64
+  },
+  "trough": {
+    "title": "留美幼童",
+    "age": 11,
+    "score": 25
+  },
+  "gaps": [
+    {
+      "fromAge": 27,
+      "toAge": 44,
+      "years": 17
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

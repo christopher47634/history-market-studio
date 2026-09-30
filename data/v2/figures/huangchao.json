@@ -1,0 +1,193 @@
+{
+  "id": "huangchao",
+  "name": "黄巢",
+  "born": {
+    "year": 835,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 884,
+    "certainty": "确知"
+  },
+  "lifeSpan": 49,
+  "thesis": "屡试不第的盐商，率起义军攻入长安称帝。",
+  "sources": [
+    {
+      "label": "《旧唐书·卷二百下列传第一百五十下 朱泚 黄巢 秦宗权》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8B"
+    }
+  ],
+  "events": [
+    {
+      "year": 835,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于曹州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "盐商",
+      "summary": "世代贩盐",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 870,
+      "age": 35,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "屡试不第",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 13,
+      "delta": -7,
+      "rationale": "失意",
+      "summary": "不第后赋菊花诗",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 875,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵响应王仙芝",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 25,
+      "rationale": "起义",
+      "summary": "起兵",
+      "evidence": "原文",
+      "quote": {
+        "text": "初，里人王仙芝、尚君長聚盜，起于濮陽，攻剽城邑，陷曹、濮及鄆州。",
+        "textSimplified": "初，里人王仙芝、尚君长聚盗，起于濮阳，攻剽城邑，陷曹、濮及郓州。",
+        "source": "《旧唐书·卷二百下列传第一百五十下 朱泚 黄巢 秦宗权》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8B"
+      },
+      "verified": true
+    },
+    {
+      "year": 880,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻入长安称帝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 50,
+      "rationale": "称帝",
+      "summary": "国号大齐",
+      "evidence": "原文",
+      "quote": {
+        "text": "十三日，賊巢僭位，國號大齊，年稱金統，仍御樓宣赦，且陳符命曰：「唐帝知朕起義",
+        "textSimplified": "十三日，贼巢僭位，国号大齐，年称金统，仍御楼宣赦，且陈符命曰：「唐帝知朕起义",
+        "source": "《旧唐书·卷二百下列传第一百五十下 朱泚 黄巢 秦宗权》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8B"
+      },
+      "verified": true
+    },
+    {
+      "year": 883,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "撤出长安",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 50,
+      "delta": -38,
+      "rationale": "败退",
+      "summary": "李克用等攻破",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 884,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "狼虎谷败亡",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 25,
+      "delta": -25,
+      "rationale": "死",
+      "summary": "败死",
+      "evidence": "原文",
+      "quote": {
+        "text": "至狼虎穀，巢將林言斬巢及二弟鄴、揆等七人首，並妻子皆送徐州。",
+        "textSimplified": "至狼虎谷，巢将林言斩巢及二弟邺、揆等七人首，并妻子皆送徐州。",
+        "source": "《旧唐书·卷二百下列传第一百五十下 朱泚 黄巢 秦宗权》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8B"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 884,
+    "age": 49,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "唐亡于二十年后",
+    "score": 20,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 68,
+      "rationale": "唐末农民起义领袖",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 68,
+    "label": "争议",
+    "rationale": "唐末农民起义领袖"
+  },
+  "peak": {
+    "title": "攻入长安称帝",
+    "age": 45,
+    "score": 88
+  },
+  "trough": {
+    "title": "屡试不第",
+    "age": 35,
+    "score": 13
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 35,
+      "years": 35
+    }
+  ],
+  "quality": {
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
+    "author": "claude"
+  }
+}

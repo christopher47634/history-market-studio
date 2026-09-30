@@ -1,0 +1,225 @@
+{
+  "id": "zhaoyun",
+  "name": "赵云",
+  "born": {
+    "year": 168,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 229,
+    "certainty": "确知"
+  },
+  "lifeSpan": 61,
+  "thesis": "常山真定人，长坂救主，谨慎持重，老而弥坚。",
+  "sources": [
+    {
+      "label": "《三国志·蜀书六 关张马黄赵传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+    }
+  ],
+  "events": [
+    {
+      "year": 168,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于常山真定",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "常山真定人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 191,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从公孙瓒",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 13,
+      "rationale": "从军",
+      "summary": "为本郡将义从吏兵诣公孙瓒",
+      "evidence": "原文",
+      "quote": {
+        "text": "本屬公孫瓚，瓚遣先主為田楷拒袁紹，雲遂隨從，為先主主騎。",
+        "textSimplified": "本属公孙瓒，瓒遣先主为田楷拒袁绍，云遂随从，为先主主骑。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 200,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归刘备",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 7,
+      "rationale": "追随明主",
+      "summary": "先主就袁绍，云见于邺",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 208,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长坂救主",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 10,
+      "delta": -25,
+      "rationale": "单骑救主",
+      "summary": "身抱弱子，保护甘夫人，皆得免难",
+      "evidence": "原文",
+      "quote": {
+        "text": "及先主為曹公所追於當陽長阪，棄妻子南走，雲身抱弱子，即後主也，保護甘夫人，即後主母也，皆得免難。",
+        "textSimplified": "及先主为曹公所追于当阳长阪，弃妻子南走，云身抱弱子，即后主也，保护甘夫人，即后主母也，皆得免难。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 211,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留营司马",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 44,
+      "rationale": "宿卫",
+      "summary": "先主入蜀，云留营司马",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 221,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏伐吴",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 67,
+      "delta": 13,
+      "rationale": "不被采纳",
+      "summary": "谏伐吴，不听",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 228,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "箕谷兵败",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 57,
+      "delta": -10,
+      "rationale": "兵败降职",
+      "summary": "与邓芝拒曹真于箕谷，兵弱敌强失利，贬为镇军将军",
+      "evidence": "原文",
+      "quote": {
+        "text": "軍退，貶為鎮軍將軍。",
+        "textSimplified": "军退，贬为镇军将军。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 229,
+    "age": 61,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "后追谥顺平侯",
+    "score": 54.1,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 261,
+      "title": "追谥顺平侯",
+      "score": 72,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 1360,
+      "title": "《三国演义》常胜将军",
+      "score": 88,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 80,
+      "rationale": "常胜将军",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "常胜将军"
+  },
+  "peak": {
+    "title": "谏伐吴",
+    "age": 53,
+    "score": 67
+  },
+  "trough": {
+    "title": "长坂救主",
+    "age": 40,
+    "score": 10
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 23,
+      "years": 23
+    }
+  ],
+  "quality": {
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
+    "author": "claude"
+  }
+}

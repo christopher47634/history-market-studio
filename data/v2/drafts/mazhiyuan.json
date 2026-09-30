@@ -1,0 +1,81 @@
+{
+  "id": "mazhiyuan",
+  "author": "claude",
+  "born": {
+    "year": 1250,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 1321,
+    "certainty": "估计"
+  },
+  "thesis": "枯藤老树昏鸦，秋思之祖。",
+  "events": [
+    {
+      "year": 1250,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于大都",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1280,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "江浙行省务官",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小吏",
+      "rationale": "小吏",
+      "quote": null
+    },
+    {
+      "year": 1285,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "元贞书会作《汉宫秋》",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与李时中等合作杂剧",
+      "rationale": "名家",
+      "quote": null
+    },
+    {
+      "year": 1300,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "退隐作《天净沙·秋思》",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "晚年退隐田园，散曲《天净沙·秋思》传世",
+      "rationale": "名家",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1321,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "秋思之祖",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "元曲四大家之一"
+  }
+}

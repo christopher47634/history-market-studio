@@ -1,0 +1,242 @@
+{
+  "id": "qihuangong",
+  "name": "齐桓公",
+  "born": {
+    "year": -716,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -643,
+    "certainty": "确知"
+  },
+  "lifeSpan": 73,
+  "thesis": "春秋第一位霸主，任管仲为相，九合诸侯一匡天下。",
+  "sources": [
+    {
+      "label": "《史记·卷三十二 齐太公世家 第二》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7032"
+    }
+  ],
+  "events": [
+    {
+      "year": -716,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为齐公子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "公子",
+      "summary": "齐僖公之子，名小白",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -686,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出奔莒",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 15,
+      "delta": -20,
+      "rationale": "流亡",
+      "summary": "襄公无道，鲍叔牙奉之奔莒",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -685,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抢先入齐即位",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 81,
+      "delta": 66,
+      "rationale": "险死还生",
+      "summary": "管仲射中带钩，佯死，先入即位",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -685,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任管仲为相",
+      "tier": "一方之主",
+      "tierScore": 87,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 87,
+      "delta": 6,
+      "rationale": "用人之明",
+      "summary": "用鲍叔之言，任管仲以政",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -681,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北杏会盟",
+      "tier": "一方之主",
+      "tierScore": 89,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 89,
+      "delta": 2,
+      "rationale": "霸业开端",
+      "summary": "会诸侯于北杏，始霸",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -663,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北伐山戎救燕",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 91,
+      "delta": 2,
+      "rationale": "尊王攘夷",
+      "summary": "伐山戎救燕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -651,
+      "age": 65,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "葵丘之会",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 94,
+      "delta": 3,
+      "rationale": "霸主巅峰",
+      "summary": "会诸侯于葵丘，周天子赐胙",
+      "evidence": "原文",
+      "quote": {
+        "text": "十二年，初，襄公使連稱、管至父戍葵丘，瓜時而往，及瓜而代。",
+        "textSimplified": "十二年，初，襄公使连称、管至父戍葵丘，瓜时而往，及瓜而代。",
+        "source": "《史记·卷三十二 齐太公世家 第二》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7032"
+      },
+      "verified": true
+    },
+    {
+      "year": -645,
+      "age": 71,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "管仲死后用竖刁",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 78,
+      "delta": -16,
+      "rationale": "用人失据",
+      "summary": "管仲卒，桓公复用易牙、竖刁、开方",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -643,
+      "age": 73,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五公子争立",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "score": 30,
+      "delta": -48,
+      "rationale": "困死宫中",
+      "summary": "病中五公子各树党争立，宫中无人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": -643,
+    "age": 73,
+    "title": "卒，尸在床六十七日",
+    "retention": 0.8,
+    "reason": "身后齐国霸业中断",
+    "score": 24,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "春秋五霸之首",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "春秋五霸之首"
+  },
+  "peak": {
+    "title": "葵丘之会",
+    "age": 65,
+    "score": 94
+  },
+  "trough": {
+    "title": "出奔莒",
+    "age": 30,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 30,
+      "years": 30
+    },
+    {
+      "fromAge": 35,
+      "toAge": 53,
+      "years": 18
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

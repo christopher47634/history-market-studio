@@ -1,0 +1,122 @@
+{
+  "id": "wangxizhi",
+  "author": "claude",
+  "born": {
+    "year": 303,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 361,
+    "certainty": "确知"
+  },
+  "thesis": "琅琊王氏子弟，书圣，兰亭集序天下第一行书。",
+  "events": [
+    {
+      "year": 303,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于琅琊",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "王导从子",
+      "rationale": "顶级士族",
+      "quote": null
+    },
+    {
+      "year": 330,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "东床坦腹",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "郗鉴择婿，羲之坦腹东床",
+      "rationale": "名士",
+      "quote": {
+        "find": [
+          "東牀"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 345,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任右军将军",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为右军将军、会稽内史",
+      "rationale": "名流官员",
+      "quote": {
+        "find": [
+          "右軍",
+          "會稽內史"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 353,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "兰亭雅集",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "修禊兰亭，作序",
+      "rationale": "书法巅峰",
+      "quote": {
+        "find": [
+          "蘭亭"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 355,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "誓墓辞官",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与王述不和，誓墓不仕",
+      "rationale": "归隐",
+      "quote": {
+        "find": [
+          "誓"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 630,
+      "title": "唐太宗推崇，兰亭入昭陵",
+      "score": 95,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 361,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "书法被尊为书圣",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "书圣"
+  }
+}

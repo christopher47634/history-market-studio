@@ -1,0 +1,160 @@
+{
+  "id": "qiansanqiang",
+  "name": "钱三强",
+  "born": {
+    "year": 1913,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1992,
+    "certainty": "确知"
+  },
+  "lifeSpan": 79,
+  "thesis": "中国原子能事业开拓者。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1913,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绍兴",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "书香",
+      "summary": "钱玄同之子",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1937,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学法国居里实验室",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 6,
+      "rationale": "留学",
+      "summary": "约里奥-居里",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1946,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "发现三分裂四分裂",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 22,
+      "rationale": "成名",
+      "summary": "原子核",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1948,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 2,
+      "rationale": "归国",
+      "summary": "归国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1958,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "原子能研究所所长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 20,
+      "rationale": "领军",
+      "summary": "领军",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1992,
+    "age": 79,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "原子能",
+    "score": 76,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "两弹一星元勋",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "两弹一星元勋"
+  },
+  "peak": {
+    "title": "原子能研究所所长",
+    "age": 45,
+    "score": 80
+  },
+  "trough": {
+    "title": "留学法国居里实验室",
+    "age": 24,
+    "score": 36
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 24,
+      "years": 24
+    },
+    {
+      "fromAge": 45,
+      "toAge": 79,
+      "years": 34
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

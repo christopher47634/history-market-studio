@@ -1,0 +1,125 @@
+{
+  "id": "chairong",
+  "author": "claude",
+  "born": {
+    "year": 921,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 959,
+    "certainty": "确知"
+  },
+  "thesis": "五代第一明君，改革、北伐，三十九岁早逝。",
+  "events": [
+    {
+      "year": 921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邢州",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "家道中落，贩茶",
+      "rationale": "商贩",
+      "quote": null
+    },
+    {
+      "year": 940,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "郭威养子",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "郭威之养子",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 954,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "郭威崩，即位",
+      "rationale": "后周皇帝",
+      "quote": null
+    },
+    {
+      "year": 954,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "高平之战",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "亲征大败北汉契丹",
+      "rationale": "立威",
+      "quote": {
+        "find": [
+          "高平"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 955,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭佛铸钱",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "毁佛像铸钱",
+      "rationale": "改革",
+      "quote": null
+    },
+    {
+      "year": 958,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "取南唐江北",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "得江北十四州",
+      "rationale": "拓地",
+      "quote": null
+    },
+    {
+      "year": 959,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北伐收三关",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "收瀛莫二州，病倒",
+      "rationale": "病",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 959,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "其部将赵匡胤代周",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "五代第一明君"
+  }
+}

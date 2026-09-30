@@ -1,0 +1,107 @@
+{
+  "id": "songqingling",
+  "author": "claude",
+  "born": {
+    "year": 1893,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1981,
+    "certainty": "确知"
+  },
+  "thesis": "孙中山夫人，国家名誉主席。",
+  "events": [
+    {
+      "year": 1893,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上海",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宋氏家族",
+      "rationale": "名门",
+      "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与孙中山结婚",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东京",
+      "rationale": "革命伴侣",
+      "quote": null
+    },
+    {
+      "year": 1925,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "孙中山逝世",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "守志",
+      "rationale": "孀居",
+      "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反对清党出走苏联",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "发表声明",
+      "rationale": "异见",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中央人民政府副主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "副主席",
+      "rationale": "国家领导",
+      "quote": null
+    },
+    {
+      "year": 1981,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国家名誉主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "病中",
+      "rationale": "荣誉",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1981,
+    "title": "病逝",
+    "retention": 0.97,
+    "reason": "国之瑰宝",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "国家名誉主席"
+  }
+}

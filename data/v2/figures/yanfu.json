@@ -1,0 +1,178 @@
+{
+  "id": "yanfu",
+  "name": "严复",
+  "born": {
+    "year": 1854,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1921,
+    "certainty": "确知"
+  },
+  "lifeSpan": 67,
+  "thesis": "翻译《天演论》，信达雅。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1854,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于侯官",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "医家",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1877,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学英国",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 12,
+      "rationale": "留学",
+      "summary": "海军",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1880,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北洋水师学堂",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 14,
+      "rationale": "教育",
+      "summary": "总办",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1898,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《天演论》刊行",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 18,
+      "rationale": "名著",
+      "summary": "物竞天择",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1912,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京大学首任校长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 4,
+      "rationale": "学术",
+      "summary": "校长",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1915,
+      "age": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "筹安会",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 15,
+      "delta": -51,
+      "rationale": "名誉受损",
+      "summary": "列名",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1921,
+    "age": 67,
+    "title": "病逝",
+    "retention": 0.9,
+    "reason": "翻译影响一代人",
+    "score": 13.5,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "近代启蒙翻译家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "近代启蒙翻译家"
+  },
+  "peak": {
+    "title": "北京大学首任校长",
+    "age": 58,
+    "score": 66
+  },
+  "trough": {
+    "title": "筹安会",
+    "age": 61,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 23,
+      "years": 23
+    },
+    {
+      "fromAge": 26,
+      "toAge": 44,
+      "years": 18
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "fujian",
+  "author": "claude",
+  "born": {
+    "year": 338,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 385,
+    "certainty": "确知"
+  },
+  "thesis": "前秦天王，统一北方，淝水之战惨败，国破身死。",
+  "events": [
+    {
+      "year": 338,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于略阳临渭",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "氐族贵族",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 357,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "政变即天王位",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "杀苻生自立",
+      "rationale": "称王",
+      "quote": null
+    },
+    {
+      "year": 376,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统一北方",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "灭前凉、代国，北方统一",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 383,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "淝水之战",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "百万之众大败于淝水",
+      "rationale": "惨败",
+      "quote": {
+        "find": [
+          "淝水"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 385,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被姚苌缢杀",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "姚苌俘而缢杀之",
+      "rationale": "死",
+      "quote": {
+        "find": [
+          "姚萇"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 385,
+    "title": "被缢杀",
+    "retention": 0.8,
+    "reason": "前秦崩溃",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "争议",
+    "rationale": "统一北方而一战覆灭"
+  }
+}

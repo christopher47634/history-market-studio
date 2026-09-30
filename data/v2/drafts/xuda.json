@@ -1,0 +1,112 @@
+{
+  "id": "xuda",
+  "author": "claude",
+  "born": {
+    "year": 1332,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1385,
+    "certainty": "确知"
+  },
+  "thesis": "明朝开国第一功臣，北伐攻克大都。",
+  "events": [
+    {
+      "year": 1332,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于濠州",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "农民",
+      "quote": null
+    },
+    {
+      "year": 1353,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从朱元璋",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "同乡",
+      "rationale": "追随",
+      "quote": null
+    },
+    {
+      "year": 1363,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鄱阳湖之战",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大将",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 1367,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "征虏大将军北伐",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "统帅",
+      "rationale": "北伐",
+      "quote": null
+    },
+    {
+      "year": 1368,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻克大都",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "元顺帝北逃",
+      "rationale": "大功",
+      "quote": {
+        "find": [
+          "大都"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1372,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "岭北之败",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "败于王保保",
+      "rationale": "挫败",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1385,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "追封中山王",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "明朝开国第一功臣"
+  }
+}

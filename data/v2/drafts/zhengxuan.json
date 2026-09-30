@@ -1,0 +1,184 @@
+{
+  "id": "zhengxuan",
+  "author": "claude",
+  "born": {
+    "year": 127,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 200,
+    "certainty": "确知"
+  },
+  "thesis": "遍注群经，融合今古文，成为汉代经学集大成者。",
+  "events": [
+    {
+      "year": 127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北海高密",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少为乡啬夫，不乐为吏",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "高密",
+          "啬夫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 147,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "入太学",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "造太学受业，师事第五元先",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "太学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 160,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "师事马融",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "西入关事马融，三年不得见，后得见",
+      "rationale": "求学大儒",
+      "quote": {
+        "find": [
+          "马融"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 167,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归乡授徒",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "客耕东莱，学徒相随数百千人",
+      "rationale": "讲学",
+      "quote": {
+        "find": [
+          "东莱",
+          "学徒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 169,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "党锢之祸",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "坐党锢禁锢，隐修经业，杜门不出",
+      "rationale": "被禁锢",
+      "quote": {
+        "find": [
+          "禁锢",
+          "杜门"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 184,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "党禁解除",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "黄巾起，党禁解，大将军何进辟之",
+      "rationale": "名重天下",
+      "quote": {
+        "find": [
+          "何进"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 196,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "黄巾不入其境",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "黄巾数万人见玄皆拜，相约不敢入县境",
+      "rationale": "声望",
+      "quote": {
+        "find": [
+          "黄巾"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袁绍逼随军",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "袁绍令其子谭遣使逼玄随军，病卒于元城",
+      "rationale": "被迫随军",
+      "quote": {
+        "find": [
+          "元城",
+          "袁绍"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 650,
+      "title": "唐《五经正义》采其注",
+      "score": 90,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 200,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "所注群经成为后世官学标准",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "汉代经学集大成者，「郑学」"
+  }
+}

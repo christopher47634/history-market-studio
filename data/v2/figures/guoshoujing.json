@@ -1,0 +1,170 @@
+{
+  "id": "guoshoujing",
+  "name": "郭守敬",
+  "born": {
+    "year": 1231,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1316,
+    "certainty": "确知"
+  },
+  "lifeSpan": 85,
+  "thesis": "制《授时历》，开凿通惠河，天文水利大家。",
+  "sources": [
+    {
+      "label": "《元史·列传第五十一》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7164"
+    }
+  ],
+  "events": [
+    {
+      "year": 1231,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邢台",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "祖父郭荣通数学",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1262,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "面陈水利六事",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 22,
+      "rationale": "入仕",
+      "summary": "忽必烈召见",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1276,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主持四海测验",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 8,
+      "rationale": "天文",
+      "summary": "编历",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1280,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "颁《授时历》",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 14,
+      "rationale": "巅峰",
+      "summary": "一年365.2425天",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1292,
+      "age": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "开通惠河",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": 2,
+      "rationale": "水利",
+      "summary": "都水监",
+      "evidence": "原文",
+      "quote": {
+        "text": "見舳艫敝水，大悅，名曰通惠河，賜守敬鈔萬二千五百貫，仍以舊職兼提調通惠河漕運事。",
+        "textSimplified": "见舳舻敝水，大悦，名曰通惠河，赐守敬钞万二千五百贯，仍以旧职兼提调通惠河漕运事。",
+        "source": "《元史·列传第五十一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%83%E5%8F%B2%2F%E5%8D%B7164"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1316,
+    "age": 85,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "授时历行用三百六十年",
+    "score": 64.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "元代科学家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "元代科学家"
+  },
+  "peak": {
+    "title": "开通惠河",
+    "age": 61,
+    "score": 68
+  },
+  "trough": {
+    "title": "面陈水利六事",
+    "age": 31,
+    "score": 44
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 31,
+      "years": 31
+    },
+    {
+      "fromAge": 61,
+      "toAge": 85,
+      "years": 24
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

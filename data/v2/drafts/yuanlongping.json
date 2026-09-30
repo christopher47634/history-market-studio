@@ -1,0 +1,107 @@
+{
+  "id": "yuanlongping",
+  "author": "claude",
+  "born": {
+    "year": 1930,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 2021,
+    "certainty": "确知"
+  },
+  "thesis": "杂交水稻之父。",
+  "events": [
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北平",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "书香",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1953,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "分配安江农校",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "教师",
+      "rationale": "教师",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "发表雄性不育论文",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "起步",
+      "rationale": "研究",
+      "quote": null
+    },
+    {
+      "year": 1973,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "籼型杂交水稻配套成功",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "突破",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1995,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国工程院院士",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "院士",
+      "rationale": "荣誉",
+      "quote": null
+    },
+    {
+      "year": 2014,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "超级稻亩产千公斤",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "超级稻",
+      "rationale": "巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 2021,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "杂交水稻",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "杂交水稻之父"
+  }
+}

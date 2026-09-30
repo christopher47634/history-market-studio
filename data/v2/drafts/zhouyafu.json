@@ -1,0 +1,182 @@
+{
+  "id": "zhouyafu",
+  "author": "claude",
+  "born": {
+    "year": -199,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -143,
+    "certainty": "确知"
+  },
+  "thesis": "周勃之子，细柳治军，三月平定七国之乱，后被诬谋反饿死狱中。",
+  "events": [
+    {
+      "year": -199,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于沛县",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "绛侯周勃之子",
+      "rationale": "功臣之后",
+      "quote": {
+        "find": [
+          "周勃"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -162,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封条侯",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以周勃贤，封亚夫为条侯",
+      "rationale": "列侯",
+      "quote": {
+        "find": [
+          "条侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -158,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "细柳屯军",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文帝劳军，军中闻将军令不闻天子诏",
+      "rationale": "治军严整",
+      "quote": {
+        "find": [
+          "细柳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -157,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任车骑将军",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文帝临崩嘱景帝即有缓急，周亚夫真可任将兵",
+      "rationale": "托付军权",
+      "quote": {
+        "find": [
+          "车骑将军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -154,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三月平七国之乱",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "坚壁昌邑，断吴楚粮道，三月平定",
+      "rationale": "武功巅峰",
+      "quote": {
+        "find": [
+          "吴楚",
+          "粮道"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -150,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任丞相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "迁为丞相，景帝甚重之",
+      "rationale": "宰相",
+      "quote": {
+        "find": [
+          "丞相"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -147,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏阻封侯罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "数谏不合景帝意，免相",
+      "rationale": "失宠",
+      "quote": {
+        "find": [
+          "免相",
+          "谢病"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -143,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下狱",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "其子买甲盾葬器被告，召诣廷尉",
+      "rationale": "将死于狱",
+      "quote": {
+        "find": [
+          "廷尉"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立绛侯周勃世家",
+      "score": 70,
+      "rationale": "细柳之名流传"
+    }
+  ],
+  "finale": {
+    "year": -143,
+    "title": "绝食呕血死",
+    "retention": 0.8,
+    "reason": "有功不终",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "西汉名将，「细柳营」代指军纪严明"
+  }
+}

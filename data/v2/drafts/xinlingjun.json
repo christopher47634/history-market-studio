@@ -1,0 +1,153 @@
+{
+  "id": "xinlingjun",
+  "author": "claude",
+  "born": {
+    "year": -310,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -243,
+    "certainty": "确知"
+  },
+  "thesis": "魏国公子，窃符救赵，统五国之兵破秦，后被魏王猜忌饮酒而死。",
+  "events": [
+    {
+      "year": -310,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为魏昭王少子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "魏昭王少子",
+      "rationale": "王子",
+      "quote": {
+        "find": [
+          "少子"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -276,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封信陵君",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "安釐王即位，封公子为信陵君，食客三千",
+      "rationale": "名满诸侯",
+      "quote": {
+        "find": [
+          "信陵君",
+          "三千"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -257,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "窃符救赵",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "窃虎符，杀晋鄙，破秦救邯郸，不敢归魏",
+      "rationale": "救赵而得罪魏王",
+      "quote": {
+        "find": [
+          "竊符",
+          "晉鄙"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -257,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留居赵国",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "留赵十年",
+      "rationale": "有家难回",
+      "quote": {
+        "find": [
+          "留趙"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -247,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统五国之兵破秦",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "归魏为上将军，率五国之兵破秦于河外",
+      "rationale": "声威巅峰",
+      "quote": {
+        "find": [
+          "五國",
+          "河外"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -246,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被猜忌谢病",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "秦行反间，魏王使人代将",
+      "rationale": "失兵权",
+      "quote": {
+        "find": [
+          "謝病",
+          "代公子將"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -195,
+      "title": "汉高祖为之置守冢",
+      "score": 75,
+      "rationale": "刘邦每过大梁常祠公子"
+    }
+  ],
+  "finale": {
+    "year": -243,
+    "title": "饮酒而死",
+    "retention": 0.8,
+    "reason": "十八年后魏亡",
+    "quote": {
+      "find": [
+        "飲醇酒"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "战国四公子之首"
+  }
+}

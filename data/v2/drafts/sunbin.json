@@ -1,0 +1,166 @@
+{
+  "id": "sunbin",
+  "author": "claude",
+  "born": {
+    "year": -382,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -316,
+    "certainty": "估计"
+  },
+  "thesis": "孙武后代，被庞涓陷害受膑刑，桂陵、马陵两败魏军。",
+  "events": [
+    {
+      "year": -382,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐阿鄄",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孙武之后世子孙",
+      "rationale": "名门之后",
+      "quote": {
+        "find": [
+          "阿鄄"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -360,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "与庞涓同学",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "尝与庞涓俱学兵法",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "龐涓"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -358,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受膑刑",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "summary": "庞涓以法刑断其两足而黥之",
+      "rationale": "残疾囚徒",
+      "quote": {
+        "find": [
+          "斷其兩足"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -356,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "齐使者窃载归齐",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐使者窃载与之齐，为田忌客",
+      "rationale": "脱险",
+      "quote": {
+        "find": [
+          "竊載",
+          "田忌"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -354,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "田忌赛马",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以赛马之法胜齐王，荐于威王",
+      "rationale": "得到赏识",
+      "quote": {
+        "find": [
+          "馳逐",
+          "威王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -353,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "桂陵之战",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为军师，围魏救赵，大败魏军于桂陵",
+      "rationale": "名震诸侯",
+      "quote": {
+        "find": [
+          "師",
+          "桂陵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -341,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "马陵之战",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "减灶诱敌，庞涓自刭于马陵",
+      "rationale": "军事巅峰",
+      "quote": {
+        "find": [
+          "馬陵",
+          "自剄"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1972,
+      "title": "银雀山出土《孙膑兵法》",
+      "score": 85,
+      "rationale": "失传千年的兵法重见天日"
+    }
+  ],
+  "finale": {
+    "year": -316,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "《孙膑兵法》传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "兵家代表"
+  }
+}

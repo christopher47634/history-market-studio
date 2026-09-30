@@ -1,0 +1,135 @@
+{
+  "id": "zhuwen",
+  "author": "claude",
+  "born": {
+    "year": 852,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 912,
+    "certainty": "确知"
+  },
+  "thesis": "黄巢部将降唐，篡唐建梁，被亲子所杀。",
+  "events": [
+    {
+      "year": 852,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于宋州砀山",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父为塾师，早卒，佣于刘崇家",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 877,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投黄巢",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "从黄巢",
+      "rationale": "起义军",
+      "quote": null
+    },
+    {
+      "year": 882,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "降唐赐名全忠",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "任宣武节度使",
+      "rationale": "方镇",
+      "quote": {
+        "find": [
+          "全忠"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 903,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "挟天子迁洛阳",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劫昭宗",
+      "rationale": "控制朝廷",
+      "quote": null
+    },
+    {
+      "year": 907,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "篡唐建梁",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "受禅，国号梁",
+      "rationale": "称帝",
+      "quote": null
+    },
+    {
+      "year": 911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "柏乡之败",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "为李存勖所败",
+      "rationale": "败",
+      "quote": {
+        "find": [
+          "柏鄉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被亲子所杀",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "朱友珪弑之",
+      "rationale": "死",
+      "quote": {
+        "find": [
+          "朱友珪"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 912,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "五代开始",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 62,
+    "label": "负面",
+    "rationale": "唐朝终结者"
+  }
+}

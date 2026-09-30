@@ -1,0 +1,172 @@
+{
+  "id": "cailun",
+  "author": "claude",
+  "born": {
+    "year": 61,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 121,
+    "certainty": "确知"
+  },
+  "thesis": "宦官出身，主管尚方，改进造纸术，「蔡侯纸」行于天下。",
+  "events": [
+    {
+      "year": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于桂阳",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "桂阳郡人",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "桂阳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 75,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入宫为宦官",
+      "tier": "初起",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "永平末年入宫给事宫掖",
+      "rationale": "宦官起步",
+      "quote": {
+        "find": [
+          "给事宫掖",
+          "宫掖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 89,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任中常侍",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "和帝即位，转中常侍，豫参帷幄",
+      "rationale": "近侍参政",
+      "quote": {
+        "find": [
+          "中常侍",
+          "帷幄"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 97,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "监作尚方",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "加位尚方令，监作秘剑及诸器械",
+      "rationale": "主持宫廷工坊",
+      "quote": {
+        "find": [
+          "尚方"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 105,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "奏上造纸法",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "用树肤、麻头、敝布、鱼网为纸，奏上之，天下咸称蔡侯纸",
+      "rationale": "发明传世",
+      "quote": {
+        "find": [
+          "蔡侯纸",
+          "鱼网"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 114,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封龙亭侯",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以长期宿卫，封龙亭侯",
+      "rationale": "封侯",
+      "quote": {
+        "find": [
+          "龙亭侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 121,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "安帝追究旧案",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "安帝亲政，追查其陷害祖母宋贵人事，敕诣廷尉",
+      "rationale": "将受审问",
+      "quote": {
+        "find": [
+          "廷尉",
+          "宋贵人"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 500,
+      "title": "造纸术普及东亚",
+      "score": 80,
+      "rationale": "纸张成为书写主流"
+    },
+    {
+      "year": 1900,
+      "title": "被列为四大发明之一",
+      "score": 90,
+      "rationale": "近代被列入中国古代四大发明"
+    }
+  ],
+  "finale": {
+    "year": 121,
+    "title": "饮药自尽",
+    "retention": 0.8,
+    "reason": "造纸术流传天下，个人则以罪死",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 93,
+    "label": "正面",
+    "rationale": "改进造纸术，影响整个人类文明的书写方式"
+  }
+}

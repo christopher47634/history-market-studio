@@ -1,0 +1,145 @@
+{
+  "id": "baijuyi",
+  "author": "claude",
+  "born": {
+    "year": 772,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 846,
+    "certainty": "确知"
+  },
+  "thesis": "《长恨歌》《琵琶行》作者，新乐府运动领袖。",
+  "events": [
+    {
+      "year": 772,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于新郑",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小官僚家庭",
+      "rationale": "寒门士人",
+      "quote": null
+    },
+    {
+      "year": 788,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "离离原上草",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "顾况称其「道得个语，居即易矣」",
+      "rationale": "少年成名",
+      "quote": {
+        "find": [
+          "顧況"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 800,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "登进士第",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 807,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任翰林学士",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "作新乐府",
+      "rationale": "近臣",
+      "quote": {
+        "find": [
+          "翰林學士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 815,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬江州司马",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "越职言事被贬",
+      "rationale": "被贬",
+      "quote": {
+        "find": [
+          "江州司馬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 822,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任杭州刺史",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "修筑白堤",
+      "rationale": "地方长官",
+      "quote": {
+        "find": [
+          "杭州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 842,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "以刑部尚书致仕",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "晚居洛阳香山",
+      "rationale": "名望",
+      "quote": {
+        "find": [
+          "刑部尚書"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 846,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "诗传海外",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "唐代三大诗人之一"
+  }
+}

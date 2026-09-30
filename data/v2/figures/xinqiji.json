@@ -1,0 +1,211 @@
+{
+  "id": "xinqiji",
+  "name": "辛弃疾",
+  "born": {
+    "year": 1140,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1207,
+    "certainty": "确知"
+  },
+  "lifeSpan": 67,
+  "thesis": "二十二岁率五十骑擒叛徒南归，一生志在恢复，词中之龙。",
+  "sources": [
+    {
+      "label": "《宋史·卷四百一 列传第一百六十》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7401"
+    }
+  ],
+  "events": [
+    {
+      "year": 1140,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于济南",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "沦陷区士人",
+      "summary": "金占区，祖父辛赞仕金",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1161,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起义抗金",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 7,
+      "rationale": "起兵",
+      "summary": "聚众二千",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1162,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五十骑擒张安国",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 16,
+      "rationale": "成名",
+      "summary": "缚叛将南归",
+      "evidence": "原文",
+      "quote": {
+        "text": "會張安國、邵進已殺京降金，棄疾還至海州，與眾謀曰：「我緣主帥來歸朝，不期事變，何以復命？",
+        "textSimplified": "会张安国、邵进已杀京降金，弃疾还至海州，与众谋曰：「我缘主帅来归朝，不期事变，何以复命？",
+        "source": "《宋史·卷四百一 列传第一百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7401"
+      },
+      "verified": true
+    },
+    {
+      "year": 1175,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平茶商军",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 14,
+      "rationale": "地方官",
+      "summary": "江西提点刑狱",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1180,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "建飞虎军",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 4,
+      "rationale": "方面",
+      "summary": "湖南安抚使",
+      "evidence": "原文",
+      "quote": {
+        "text": "乞依廣東摧鋒、荊南神勁、福建左翼例，別剙一軍，以湖南飛虎為名，止撥屬三牙、密院，專聽帥臣節制調度",
+        "textSimplified": "乞依广东摧锋、荆南神劲、福建左翼例，别剙一军，以湖南飞虎为名，止拨属三牙、密院，专听帅臣节制调度",
+        "source": "《宋史·卷四百一 列传第一百六十》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7401"
+      },
+      "verified": true
+    },
+    {
+      "year": 1182,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被劾罢官闲居",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 15,
+      "delta": -51,
+      "rationale": "投闲",
+      "summary": "带湖闲居二十年",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1203,
+      "age": 63,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起知镇江",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 45,
+      "rationale": "复起",
+      "summary": "作《永遇乐》",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1207,
+    "age": 67,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "词中之龙",
+    "score": 57,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 90,
+      "rationale": "豪放派词人",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "豪放派词人"
+  },
+  "peak": {
+    "title": "建飞虎军",
+    "age": 40,
+    "score": 66
+  },
+  "trough": {
+    "title": "被劾罢官闲居",
+    "age": 42,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 21,
+      "years": 21
+    },
+    {
+      "fromAge": 42,
+      "toAge": 63,
+      "years": 21
+    }
+  ],
+  "quality": {
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
+    "author": "claude"
+  }
+}

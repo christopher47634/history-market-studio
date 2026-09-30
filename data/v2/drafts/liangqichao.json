@@ -1,0 +1,133 @@
+{
+  "id": "liangqichao",
+  "author": "claude",
+  "born": {
+    "year": 1873,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1929,
+    "certainty": "确知"
+  },
+  "thesis": "戊戌变法领袖，新民说，饮冰室，学术大师。",
+  "events": [
+    {
+      "year": 1873,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于新会",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1889,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中举",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十六岁",
+      "rationale": "才子",
+      "quote": null
+    },
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "公车上书",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "随康有为",
+      "rationale": "维新",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "戊戌变法失败流亡",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "东渡日本",
+      "rationale": "流亡",
+      "quote": null
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《新民丛报》",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "舆论领袖",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "司法总长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "进步党",
+      "rationale": "入阁",
+      "quote": null
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "财政总长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "讨袁后",
+      "rationale": "入阁",
+      "quote": null
+    },
+    {
+      "year": 1925,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "清华国学院导师",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四大导师",
+      "rationale": "学术",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1929,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "学术思想影响深远",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "近代启蒙思想家"
+  }
+}

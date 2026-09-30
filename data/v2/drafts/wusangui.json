@@ -1,0 +1,112 @@
+{
+  "id": "wusangui",
+  "author": "claude",
+  "born": {
+    "year": 1612,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1678,
+    "certainty": "确知"
+  },
+  "thesis": "冲冠一怒为红颜，引清兵入关，三藩之乱称帝。",
+  "events": [
+    {
+      "year": 1612,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于辽东",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "将门",
+      "rationale": "将门",
+      "quote": null
+    },
+    {
+      "year": 1640,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁远总兵",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "关宁军",
+      "rationale": "大将",
+      "quote": null
+    },
+    {
+      "year": 1644,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "引清兵入关",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "山海关",
+      "rationale": "倒戈",
+      "quote": {
+        "find": [
+          "山海關"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1662,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀永历帝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平西王",
+      "rationale": "藩王",
+      "quote": null
+    },
+    {
+      "year": 1673,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三藩之乱",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "起兵",
+      "rationale": "反清",
+      "quote": null
+    },
+    {
+      "year": 1678,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "衡州称帝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "国号周",
+      "rationale": "称帝",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1678,
+    "title": "病死",
+    "retention": 0.8,
+    "reason": "三年后三藩平",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "负面",
+    "rationale": "反复之人"
+  }
+}

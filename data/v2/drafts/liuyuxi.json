@@ -1,0 +1,117 @@
+{
+  "id": "liuyuxi",
+  "author": "claude",
+  "born": {
+    "year": 772,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 842,
+    "certainty": "确知"
+  },
+  "thesis": "诗豪，永贞革新被贬二十三年。",
+  "events": [
+    {
+      "year": 772,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于嘉兴",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 793,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 805,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "永贞革新",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "屯田员外郎",
+      "rationale": "革新派",
+      "quote": null
+    },
+    {
+      "year": 805,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬朗州司马",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "被贬",
+      "rationale": "长期贬谪",
+      "quote": {
+        "find": [
+          "朗州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 815,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄都观诗再贬",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "再贬连州",
+      "rationale": "再贬",
+      "quote": {
+        "find": [
+          "玄都觀"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 828,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召还任主客郎中",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二十三年弃置身",
+      "rationale": "复用",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 842,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "诗豪",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "诗豪"
+  }
+}

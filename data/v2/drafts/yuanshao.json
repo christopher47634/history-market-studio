@@ -1,0 +1,157 @@
+{
+  "id": "yuanshao",
+  "author": "claude",
+  "born": {
+    "year": 154,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 202,
+    "certainty": "确知"
+  },
+  "thesis": "四世三公，讨董盟主，雄踞河北，官渡之败后忧死。",
+  "events": [
+    {
+      "year": 154,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于汝南",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四世三公",
+      "rationale": "顶级豪门",
+      "quote": {
+        "find": [
+          "四世三公"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 189,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "诛宦官",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与何进谋诛宦官，何进死，绍勒兵尽诛宦官",
+      "rationale": "名重天下",
+      "quote": {
+        "find": [
+          "宦官"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "讨董盟主",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "关东州郡起兵，推绍为盟主",
+      "rationale": "盟主",
+      "quote": {
+        "find": [
+          "盟主"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 191,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夺冀州",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "迫韩馥让冀州",
+      "rationale": "据有冀州",
+      "quote": {
+        "find": [
+          "韓馥",
+          "冀州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 199,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭公孙瓒据四州",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破瓒，据冀青幽并四州",
+      "rationale": "北方最强",
+      "quote": {
+        "find": [
+          "公孫瓚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "官渡大败",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "乌巢被烧，大军溃散",
+      "rationale": "决定性失败",
+      "quote": {
+        "find": [
+          "烏巢",
+          "官渡"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 202,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "冀州叛乱忧死",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "冀州城邑多叛，发病呕血",
+      "rationale": "败亡前夕",
+      "quote": {
+        "find": [
+          "嘔血"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 202,
+    "title": "病卒",
+    "retention": 0.85,
+    "reason": "诸子相争，四年后为曹操所灭",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 68,
+    "label": "负面",
+    "rationale": "官渡之败的失败者典型"
+  }
+}

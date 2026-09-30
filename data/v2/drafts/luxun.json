@@ -1,0 +1,157 @@
+{
+  "id": "luxun",
+  "author": "claude",
+  "born": {
+    "year": 183,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 245,
+    "certainty": "确知"
+  },
+  "thesis": "江东世家子，夷陵火烧连营大破刘备，官至丞相，忧愤而死。",
+  "events": [
+    {
+      "year": 183,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于吴郡",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "江东大族",
+      "rationale": "名门",
+      "quote": {
+        "find": [
+          "吳郡"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 203,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入孙权幕府",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年二十一，始仕幕府",
+      "rationale": "入仕",
+      "quote": {
+        "find": [
+          "幕府"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "代吕蒙袭荆州",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以书骄关羽，袭取荆州",
+      "rationale": "初露锋芒",
+      "quote": {
+        "find": [
+          "關羽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 222,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夷陵之战",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "火攻破刘备，封江陵侯",
+      "rationale": "一战成名",
+      "quote": {
+        "find": [
+          "劉備",
+          "江陵侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 228,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "石亭破曹休",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大破曹休",
+      "rationale": "再立大功",
+      "quote": {
+        "find": [
+          "曹休"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 244,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任丞相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "代顾雍为丞相",
+      "rationale": "位极人臣",
+      "quote": {
+        "find": [
+          "丞相"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 245,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "二宫之争受责",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "权累遣中使责让逊，逊愤恚致卒",
+      "rationale": "死于忧愤",
+      "quote": {
+        "find": [
+          "責讓",
+          "憤恚"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 245,
+    "title": "愤恚而卒",
+    "retention": 0.9,
+    "reason": "东吴失柱石",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "东吴名将，夷陵之战统帅"
+  }
+}

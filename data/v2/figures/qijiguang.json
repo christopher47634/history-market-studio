@@ -1,0 +1,201 @@
+{
+  "id": "qijiguang",
+  "name": "戚继光",
+  "born": {
+    "year": 1528,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1588,
+    "certainty": "确知"
+  },
+  "lifeSpan": 60,
+  "thesis": "戚家军平倭，北镇蓟州十六年，晚年罢归贫病而死。",
+  "sources": [
+    {
+      "label": "《明史·卷二百十二 列传第一百》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+    }
+  ],
+  "events": [
+    {
+      "year": 1528,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于山东",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "将门",
+      "summary": "世袭登州卫指挥佥事",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1544,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭职",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 8,
+      "rationale": "军官",
+      "summary": "袭职",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1559,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "组建戚家军",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 26,
+      "rationale": "练兵",
+      "summary": "义乌招兵",
+      "evidence": "原文",
+      "quote": {
+        "text": "繼光至浙時，見衛所軍不習戰，而金華、義烏俗稱慓悍，請召募三千人，教以擊刺法",
+        "textSimplified": "继光至浙时，见卫所军不习战，而金华、义乌俗称慓悍，请召募三千人，教以击刺法",
+        "source": "《明史·卷二百十二 列传第一百》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7212"
+      },
+      "verified": true
+    },
+    {
+      "year": 1561,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "台州九战九捷",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 14,
+      "rationale": "大功",
+      "summary": "平浙倭",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1563,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平福建倭",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 4,
+      "rationale": "大功",
+      "summary": "兴化",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1568,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "镇守蓟州",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 2,
+      "rationale": "北疆",
+      "summary": "修长城",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1583,
+      "age": 55,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "张居正死后调广东",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 31,
+      "delta": -53,
+      "rationale": "失势",
+      "summary": "被弹劾",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1588,
+    "age": 60,
+    "title": "贫病而卒",
+    "retention": 0.85,
+    "reason": "戚家军",
+    "score": 26.3,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "抗倭名将",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "抗倭名将"
+  },
+  "peak": {
+    "title": "镇守蓟州",
+    "age": 40,
+    "score": 84
+  },
+  "trough": {
+    "title": "张居正死后调广东",
+    "age": 55,
+    "score": 31
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 16,
+      "years": 16
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

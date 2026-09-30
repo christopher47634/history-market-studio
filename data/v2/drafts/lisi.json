@@ -1,0 +1,203 @@
+{
+  "id": "lisi",
+  "author": "claude",
+  "born": {
+    "year": -280,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -208,
+    "certainty": "确知"
+  },
+  "thesis": "上蔡小吏入秦，辅佐秦始皇统一，定郡县、同文字，终被赵高所害。",
+  "events": [
+    {
+      "year": -280,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上蔡",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楚上蔡人，少为郡小吏",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "上蔡"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -255,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从荀卿学帝王术",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "从荀卿学帝王之术，西入秦",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "荀卿"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -247,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为吕不韦舍人",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入秦为吕不韦舍人，任为郎",
+      "rationale": "入仕秦国",
+      "quote": {
+        "find": [
+          "舍人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -237,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上《谏逐客书》",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "秦下逐客令，李斯在逐中，上书谏止",
+      "rationale": "险被驱逐",
+      "quote": {
+        "find": [
+          "逐客",
+          "谏"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -237,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复官为廷尉",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦王除逐客令，复其官，后官至廷尉",
+      "rationale": "得到重用",
+      "quote": {
+        "find": [
+          "廷尉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统一后任丞相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦并天下，议郡县，同文字，为丞相",
+      "rationale": "帝国宰相",
+      "quote": {
+        "find": [
+          "丞相",
+          "郡县"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -213,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "建议焚书",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "请烧诗书百家语",
+      "rationale": "主导文化政策",
+      "quote": {
+        "find": [
+          "烧",
+          "诗书"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -210,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "沙丘之谋",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "始皇崩，与赵高矫诏立胡亥，赐死扶苏",
+      "rationale": "不得不附赵高",
+      "quote": {
+        "find": [
+          "沙丘",
+          "胡亥"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下狱",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "赵高诬其谋反，下狱受五刑",
+      "rationale": "身陷死局",
+      "quote": {
+        "find": [
+          "具五刑",
+          "下狱"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立李斯列传",
+      "score": 55,
+      "rationale": "司马迁肯定其功，责其阿顺苟合"
+    }
+  ],
+  "finale": {
+    "year": -208,
+    "title": "腰斩咸阳",
+    "retention": 0.85,
+    "reason": "郡县制与统一文字延续两千年，个人夷三族",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "争议",
+    "rationale": "秦统一制度的主要设计者，结局悲剧"
+  }
+}

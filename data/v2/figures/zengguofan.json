@@ -1,0 +1,214 @@
+{
+  "id": "zengguofan",
+  "name": "曾国藩",
+  "born": {
+    "year": 1811,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1872,
+    "certainty": "确知"
+  },
+  "lifeSpan": 61,
+  "thesis": "湘军统帅，平定太平天国，洋务运动发起人之一。",
+  "sources": [
+    {
+      "label": "《清史稿·卷一百九十 表三十 部院大臣年表七上》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7190"
+    }
+  ],
+  "events": [
+    {
+      "year": 1811,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湘乡",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "耕读之家",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1838,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 18,
+      "rationale": "入仕",
+      "summary": "翰林",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1849,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "礼部侍郎",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 30,
+      "rationale": "京官",
+      "summary": "十年七迁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1853,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "在籍办团练",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": -6,
+      "rationale": "起步",
+      "summary": "湘军",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1854,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "靖港之败投水",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 15,
+      "delta": -45,
+      "rationale": "绝境",
+      "summary": "跳水被救",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1860,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "两江总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 69,
+      "rationale": "方面",
+      "summary": "督办江南军务",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1864,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻克天京",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 4,
+      "rationale": "巅峰",
+      "summary": "太平天国灭亡",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1870,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "天津教案",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 53,
+      "delta": -35,
+      "rationale": "名誉受损",
+      "summary": "举国诟骂",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1872,
+    "age": 61,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "湘军、淮军",
+    "score": 50.3,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "晚清中兴名臣",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "争议",
+    "rationale": "晚清中兴名臣"
+  },
+  "peak": {
+    "title": "攻克天京",
+    "age": 53,
+    "score": 88
+  },
+  "trough": {
+    "title": "靖港之败投水",
+    "age": 43,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 27,
+      "years": 27
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

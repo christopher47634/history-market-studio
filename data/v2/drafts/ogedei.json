@@ -1,0 +1,81 @@
+{
+  "id": "ogedei",
+  "author": "claude",
+  "born": {
+    "year": 1186,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1241,
+    "certainty": "确知"
+  },
+  "thesis": "第二任大汗，灭金，建和林，派拔都西征。",
+  "events": [
+    {
+      "year": 1186,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于蒙古",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "第三子",
+      "rationale": "王子",
+      "quote": null
+    },
+    {
+      "year": 1229,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即大汗位",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "忽里台大会",
+      "rationale": "大汗",
+      "quote": null
+    },
+    {
+      "year": 1234,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭金",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "金哀宗自杀",
+      "rationale": "灭国",
+      "quote": null
+    },
+    {
+      "year": 1235,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "建和林派长子西征",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拔都西征",
+      "rationale": "扩张",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1241,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "蒙古帝国扩张",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "窝阔台汗"
+  }
+}

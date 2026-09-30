@@ -1,0 +1,107 @@
+{
+  "id": "cixi",
+  "author": "claude",
+  "born": {
+    "year": 1835,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1908,
+    "certainty": "确知"
+  },
+  "thesis": "垂帘听政四十七年，晚清实际统治者。",
+  "events": [
+    {
+      "year": 1835,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北京",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "叶赫那拉氏",
+      "rationale": "满洲旗人",
+      "quote": null
+    },
+    {
+      "year": 1852,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入宫",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兰贵人",
+      "rationale": "宫嫔",
+      "quote": null
+    },
+    {
+      "year": 1856,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生载淳封懿妃",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "皇子生母",
+      "rationale": "妃",
+      "quote": null
+    },
+    {
+      "year": 1861,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辛酉政变垂帘",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "诛肃顺",
+      "rationale": "掌权",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "戊戌政变",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "囚光绪",
+      "rationale": "独断",
+      "quote": null
+    },
+    {
+      "year": 1900,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "八国联军西逃",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "西狩",
+      "rationale": "绝境",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1908,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "三年后清亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "负面",
+    "rationale": "晚清实际统治者"
+  }
+}

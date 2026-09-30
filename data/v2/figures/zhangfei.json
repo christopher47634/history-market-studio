@@ -1,0 +1,238 @@
+{
+  "id": "zhangfei",
+  "name": "张飞",
+  "born": {
+    "year": 165,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 221,
+    "certainty": "确知"
+  },
+  "lifeSpan": 56,
+  "thesis": "燕人，与关羽随刘备，长坂断后，为部下所杀。",
+  "sources": [
+    {
+      "label": "《三国志·蜀书六 关张马黄赵传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+    }
+  ],
+  "events": [
+    {
+      "year": 165,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于涿郡",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "涿郡人",
+      "evidence": "原文",
+      "quote": {
+        "text": "張飛字益德，涿郡人也，少與關羽俱事先主。",
+        "textSimplified": "张飞字益德，涿郡人也，少与关羽俱事先主。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 184,
+      "age": 19,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随刘备起兵",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 18,
+      "rationale": "起兵",
+      "summary": "少与关羽俱事先主",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 208,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长坂据水断桥",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 47,
+      "delta": 17,
+      "rationale": "名扬",
+      "summary": "将二十骑拒后，据水断桥，曹军无敢近者",
+      "evidence": "原文",
+      "quote": {
+        "text": "飛據水斷橋，瞋目橫矛曰：「身是張益德也，可來共決死！",
+        "textSimplified": "飞据水断桥，瞋目横矛曰：「身是张益德也，可来共决死！",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 214,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入蜀义释严颜",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 25,
+      "rationale": "独当一面",
+      "summary": "破巴郡，生获严颜，义释之",
+      "evidence": "原文",
+      "quote": {
+        "text": "至江州，破璋將巴郡太守嚴顏，生獲顏。",
+        "textSimplified": "至江州，破璋将巴郡太守严颜，生获颜。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 215,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宕渠破张郃",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 4,
+      "rationale": "名将",
+      "summary": "与张郃战于宕渠，大破之",
+      "evidence": "原文",
+      "quote": {
+        "text": "曹公破張魯，留夏侯淵、張郃守漢川。",
+        "textSimplified": "曹公破张鲁，留夏侯渊、张郃守汉川。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 221,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜车骑将军",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 6,
+      "rationale": "位列上将",
+      "summary": "先主称帝，拜车骑将军",
+      "evidence": "原文",
+      "quote": {
+        "text": "章武元年，遷車騎將軍，領司隸校尉，進封西鄉侯，策曰：「朕承天序，嗣奉洪業，除殘靖亂，未燭厥理。",
+        "textSimplified": "章武元年，迁车骑将军，领司隶校尉，进封西乡侯，策曰：「朕承天序，嗣奉洪业，除残靖乱，未烛厥理。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    },
+    {
+      "year": 221,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被部下所杀",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 18,
+      "delta": -64,
+      "rationale": "死于非命",
+      "summary": "帐下将张达、范强杀之",
+      "evidence": "原文",
+      "quote": {
+        "text": "臨發，其帳下將張達、范彊殺飛，持其首，順流而奔孫權。",
+        "textSimplified": "临发，其帐下将张达、范彊杀飞，持其首，顺流而奔孙权。",
+        "source": "《三国志·蜀书六 关张马黄赵传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B736"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 221,
+    "age": 56,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "蜀汉失一上将",
+    "score": 14.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1360,
+      "title": "《三国演义》猛张飞",
+      "score": 80,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 78,
+      "rationale": "蜀汉名将",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "蜀汉名将"
+  },
+  "peak": {
+    "title": "拜车骑将军",
+    "age": 56,
+    "score": 82
+  },
+  "trough": {
+    "title": "被部下所杀",
+    "age": 56,
+    "score": 18
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 19,
+      "years": 19
+    },
+    {
+      "fromAge": 19,
+      "toAge": 43,
+      "years": 24
+    }
+  ],
+  "quality": {
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
+    "author": "claude"
+  }
+}

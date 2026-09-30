@@ -1,0 +1,201 @@
+{
+  "id": "chenjiageng",
+  "name": "陈嘉庚",
+  "born": {
+    "year": 1874,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1961,
+    "certainty": "确知"
+  },
+  "lifeSpan": 87,
+  "thesis": "橡胶大王，倾资兴学，创办厦门大学。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1874,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于集美",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "华侨",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1890,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴新加坡",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 6,
+      "rationale": "学徒",
+      "summary": "米店",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1904,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创办菠萝罐头与橡胶",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 32,
+      "rationale": "商人",
+      "summary": "实业",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1921,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创办厦门大学",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 16,
+      "rationale": "巅峰",
+      "summary": "倾资",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1934,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "企业破产",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 38,
+      "delta": 0,
+      "rationale": "企业倒闭",
+      "summary": "大萧条",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1938,
+      "age": 64,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南侨总会主席",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": 2,
+      "rationale": "领袖",
+      "summary": "抗战捐助",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1949,
+      "age": 75,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "政协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 10,
+      "rationale": "国家领导",
+      "summary": "归国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1961,
+    "age": 87,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "华侨旗帜",
+    "score": 74.1,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "华侨领袖",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "华侨领袖"
+  },
+  "peak": {
+    "title": "政协副主席",
+    "age": 75,
+    "score": 78
+  },
+  "trough": {
+    "title": "赴新加坡",
+    "age": 16,
+    "score": 18
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 16,
+      "years": 16
+    },
+    {
+      "fromAge": 30,
+      "toAge": 47,
+      "years": 17
+    },
+    {
+      "fromAge": 47,
+      "toAge": 64,
+      "years": 17
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

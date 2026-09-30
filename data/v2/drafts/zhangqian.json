@@ -1,0 +1,202 @@
+{
+  "id": "zhangqian",
+  "author": "claude",
+  "born": {
+    "year": -164,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -114,
+    "certainty": "确知"
+  },
+  "thesis": "两度出使西域，凿空之行打通丝绸之路。",
+  "events": [
+    {
+      "year": -164,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于汉中",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "汉中人",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "汉中"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -139,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "应募出使月氏",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以郎应募使月氏",
+      "rationale": "郎官出使",
+      "quote": {
+        "find": [
+          "月氏",
+          "应募"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -139,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被匈奴扣留十年",
+      "tier": "初起",
+      "tierScore": 26,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "经匈奴被扣，留十余岁，娶妻生子",
+      "rationale": "身陷敌境",
+      "quote": {
+        "find": [
+          "留骞",
+          "十余岁"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -128,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "逃至大宛月氏",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "亡向月氏，至大宛、康居，终不能得月氏要领",
+      "rationale": "使命未竟",
+      "quote": {
+        "find": [
+          "大宛",
+          "要领"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -126,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归汉拜太中大夫",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十三年后归汉，仅二人得还，拜太中大夫",
+      "rationale": "凿空而归",
+      "quote": {
+        "find": [
+          "太中大夫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -123,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从征封博望侯",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "从大将军击匈奴，知水草处，封博望侯",
+      "rationale": "封侯",
+      "quote": {
+        "find": [
+          "博望侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -121,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "失期当斩",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "与李广击匈奴失期，当斩，赎为庶人",
+      "rationale": "削爵为民",
+      "quote": {
+        "find": [
+          "赎为庶人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -119,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "再使乌孙",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拜中郎将，率三百人出使乌孙，分遣副使至诸国",
+      "rationale": "再度出使",
+      "quote": {
+        "find": [
+          "乌孙",
+          "中郎将"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -115,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜大行",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "还，拜为大行，列于九卿",
+      "rationale": "九卿之位",
+      "quote": {
+        "find": [
+          "大行"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -104,
+      "title": "丝绸之路贯通",
+      "score": 85,
+      "rationale": "西北诸国始通于汉"
+    }
+  ],
+  "finale": {
+    "year": -114,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "西域诸国由此通汉",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "丝绸之路的开拓者，「凿空」第一人"
+  }
+}

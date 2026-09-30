@@ -1,0 +1,247 @@
+{
+  "id": "mayuan",
+  "name": "马援",
+  "born": {
+    "year": -14,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 49,
+    "certainty": "确知"
+  },
+  "lifeSpan": 62,
+  "thesis": "伏波将军，平交趾、击五溪，「马革裹尸」之语出其口。",
+  "sources": [
+    {
+      "label": "《后汉书·马援列传 第十四》",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+    }
+  ],
+  "events": [
+    {
+      "year": -14,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于扶风",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "名将之后",
+      "summary": "其先赵奢为马服君",
+      "evidence": "原文",
+      "quote": {
+        "text": "馬援字文淵，扶風茂陵人也。",
+        "textSimplified": "马援字文渊，扶风茂陵人也。",
+        "source": "《后汉书·马援列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+      },
+      "verified": true
+    },
+    {
+      "year": 10,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督邮纵囚亡命北地",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "score": 14,
+      "delta": -11,
+      "rationale": "亡命",
+      "summary": "为郡督邮，哀而纵囚，亡命北地畜牧",
+      "evidence": "原文",
+      "quote": {
+        "text": "後爲郡督郵，送囚至司命府，囚有重罪，援哀而縱之，遂亡命北地。",
+        "textSimplified": "后为郡督邮，送囚至司命府，囚有重罪，援哀而纵之，遂亡命北地。",
+        "source": "《后汉书·马援列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+      },
+      "verified": true
+    },
+    {
+      "year": 25,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事隗嚣",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 24,
+      "rationale": "割据者幕僚",
+      "summary": "隗嚣甚敬重之，以为绥德将军",
+      "evidence": "原文",
+      "quote": {
+        "text": "隗囂與援共臥起，問以東方流言及京師得失。",
+        "textSimplified": "隗嚣与援共卧起，问以东方流言及京师得失。",
+        "source": "《后汉书·马援列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+      },
+      "verified": true
+    },
+    {
+      "year": 28,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归光武",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 10,
+      "rationale": "择主而事",
+      "summary": "使洛阳见光武，遂归之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 35,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任陇西太守",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 12,
+      "rationale": "方面之任",
+      "summary": "拜陇西太守，击破先零羌",
+      "evidence": "原文",
+      "quote": {
+        "text": "十一年夏，璽書拜援隴西太守。",
+        "textSimplified": "十一年夏，玺书拜援陇西太守。",
+        "source": "《后汉书·马援列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+      },
+      "verified": true
+    },
+    {
+      "year": 41,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平交趾封新息侯",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 74,
+      "delta": 14,
+      "rationale": "南疆立功",
+      "summary": "拜伏波将军，平征侧征贰，封新息侯",
+      "evidence": "原文",
+      "quote": {
+        "text": "於是璽書拜援伏波將軍，以扶樂侯劉隆爲副，督樓船將軍段-{志}-等南擊交阯。",
+        "textSimplified": "于是玺书拜援伏波将军，以扶乐侯刘隆为副，督楼船将军段-{志}-等南击交阯。",
+        "source": "《后汉书·马援列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+      },
+      "verified": true
+    },
+    {
+      "year": 48,
+      "age": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "击五溪蛮",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 57,
+      "delta": -17,
+      "rationale": "老将远征",
+      "summary": "年六十二请行，军次壶头，暑疫",
+      "evidence": "原文",
+      "quote": {
+        "text": "初，軍次下雋，有兩道可人，從壺頭則路近而水崄，從充則塗夷而運遠，帝初以爲疑。",
+        "textSimplified": "初，军次下隽，有两道可人，从壶头则路近而水崄，从充则涂夷而运远，帝初以为疑。",
+        "source": "《后汉书·马援列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B724"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 49,
+    "age": 62,
+    "title": "病卒军中",
+    "retention": 0.8,
+    "reason": "死后被梁松诬陷，夺侯印",
+    "score": 45.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 49,
+      "title": "梁松诬陷，追收新息侯印",
+      "score": 35,
+      "rationale": "宾客故人莫敢吊会",
+      "inferred": false
+    },
+    {
+      "year": 60,
+      "title": "明帝图画云台不列",
+      "score": 45,
+      "rationale": "因椒房之嫌不入云台",
+      "inferred": false
+    },
+    {
+      "year": 76,
+      "title": "章帝追谥忠成侯",
+      "score": 68,
+      "rationale": "昭雪",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 80,
+      "rationale": "伏波将军，「马革裹尸」「老当益壮」",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "伏波将军，「马革裹尸」「老当益壮」"
+  },
+  "peak": {
+    "title": "平交趾封新息侯",
+    "age": 54,
+    "score": 74
+  },
+  "trough": {
+    "title": "督邮纵囚亡命北地",
+    "age": 23,
+    "score": 14
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 23,
+      "years": 24
+    }
+  ],
+  "quality": {
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
+    "author": "claude"
+  }
+}

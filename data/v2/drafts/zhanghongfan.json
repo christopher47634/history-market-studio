@@ -1,0 +1,81 @@
+{
+  "id": "zhanghongfan",
+  "author": "claude",
+  "born": {
+    "year": 1238,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1280,
+    "certainty": "确知"
+  },
+  "thesis": "汉人元将，崖山灭宋，勒石「张弘范灭宋于此」。",
+  "events": [
+    {
+      "year": 1238,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于易州",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "张柔之子",
+      "rationale": "将门",
+      "quote": null
+    },
+    {
+      "year": 1273,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻襄阳",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "襄樊之战",
+      "rationale": "战功",
+      "quote": null
+    },
+    {
+      "year": 1278,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "俘文天祥",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "五坡岭",
+      "rationale": "战功",
+      "quote": null
+    },
+    {
+      "year": 1279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "崖山灭宋",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宋亡",
+      "rationale": "灭宋",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1280,
+    "title": "病卒",
+    "retention": 0.9,
+    "reason": "崖山之后",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 48,
+    "label": "负面",
+    "rationale": "崖山灭宋的汉人元将"
+  }
+}

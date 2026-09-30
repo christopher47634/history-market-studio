@@ -1,0 +1,172 @@
+{
+  "id": "dengxiaoping",
+  "author": "claude",
+  "born": {
+    "year": 1904,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1997,
+    "certainty": "确知"
+  },
+  "thesis": "三落三起，改革开放总设计师。",
+  "events": [
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于广安",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "地主",
+      "rationale": "乡绅",
+      "quote": null
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴法勤工俭学",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "勤工俭学",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1929,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "百色起义",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "红七军",
+      "rationale": "领导",
+      "quote": null
+    },
+    {
+      "year": 1933,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第一次被打倒",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "邓毛谢古",
+      "rationale": "一落",
+      "quote": null
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "淮海战役总前委书记",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "淮海",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中共中央总书记",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "总书记",
+      "rationale": "核心",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "文革被打倒",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "下放江西",
+      "rationale": "二落",
+      "quote": null
+    },
+    {
+      "year": 1975,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "复出主持工作",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "整顿",
+      "rationale": "复起",
+      "quote": null
+    },
+    {
+      "year": 1976,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "再次被打倒",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "三落",
+      "rationale": "三落",
+      "quote": null
+    },
+    {
+      "year": 1978,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "十一届三中全会",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "改革开放",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1992,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南方谈话",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南巡",
+      "rationale": "定调",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1997,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "改革开放",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 96,
+    "label": "正面",
+    "rationale": "改革开放总设计师"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "yongzheng",
+  "author": "claude",
+  "born": {
+    "year": 1678,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1735,
+    "certainty": "确知"
+  },
+  "thesis": "九子夺嫡中胜出，设军机处、摊丁入亩、火耗归公。",
+  "events": [
+    {
+      "year": 1678,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为康熙第四子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "皇四子胤禛",
+      "rationale": "皇子",
+      "quote": null
+    },
+    {
+      "year": 1709,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封雍亲王",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "亲王",
+      "rationale": "亲王",
+      "quote": null
+    },
+    {
+      "year": 1712,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "九子夺嫡隐忍",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "太子再废，诸子相争",
+      "rationale": "储位未定",
+      "quote": null
+    },
+    {
+      "year": 1722,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "康熙崩于畅春园",
+      "rationale": "即位",
+      "quote": null
+    },
+    {
+      "year": 1723,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "秘密立储",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建储匣",
+      "rationale": "制度",
+      "quote": null
+    },
+    {
+      "year": 1726,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "除年羹尧隆科多",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "整肃",
+      "rationale": "集权",
+      "quote": null
+    },
+    {
+      "year": 1729,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "设军机处",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "军机房",
+      "rationale": "集权",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1735,
+    "title": "暴崩圆明园",
+    "retention": 0.95,
+    "reason": "承上启下",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "争议",
+    "rationale": "改革之君"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "simaguang",
+  "author": "claude",
+  "born": {
+    "year": 1019,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1086,
+    "certainty": "确知"
+  },
+  "thesis": "砸缸救友，主编《资治通鉴》，反对王安石变法，元祐更化。",
+  "events": [
+    {
+      "year": 1019,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于光州",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父司马池为光州光山令",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 1026,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "砸缸救友",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破瓮救儿",
+      "rationale": "少年成名",
+      "quote": null
+    },
+    {
+      "year": 1038,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士甲科",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1066,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "编《资治通鉴》",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "奉诏编史",
+      "rationale": "修史",
+      "quote": null
+    },
+    {
+      "year": 1070,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反对变法退居洛阳",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "十五年编书",
+      "rationale": "退居",
+      "quote": {
+        "find": [
+          "洛"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1084,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《资治通鉴》成书",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三百五十四卷",
+      "rationale": "巨著",
+      "quote": null
+    },
+    {
+      "year": 1086,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相废新法",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "尽废新法",
+      "rationale": "执政",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1086,
+    "title": "卒于相位",
+    "retention": 0.95,
+    "reason": "元祐更化",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "《资治通鉴》主编"
+  }
+}

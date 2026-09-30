@@ -1,0 +1,148 @@
+{
+  "id": "liuyu",
+  "author": "claude",
+  "born": {
+    "year": 363,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 422,
+    "certainty": "确知"
+  },
+  "thesis": "寒门出身的北府兵将，灭桓玄、两度北伐，代晋建宋。",
+  "events": [
+    {
+      "year": 363,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于京口",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "家贫，以卖履为业",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 399,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投北府军",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为孙无终司马",
+      "rationale": "从军",
+      "quote": null
+    },
+    {
+      "year": 404,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵讨桓玄",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "京口起兵，桓玄败亡",
+      "rationale": "掌握东晋",
+      "quote": {
+        "find": [
+          "桓玄"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 409,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北伐灭南燕",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "灭南燕，俘慕容超",
+      "rationale": "北伐",
+      "quote": {
+        "find": [
+          "慕容超"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 417,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭后秦收复长安",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破长安，灭后秦",
+      "rationale": "北伐巅峰",
+      "quote": {
+        "find": [
+          "長安",
+          "姚泓"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 418,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "关中得而复失",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "南归后长安失守",
+      "rationale": "功败",
+      "quote": null
+    },
+    {
+      "year": 420,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "代晋称帝",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "受晋禅，国号宋",
+      "rationale": "南朝开国",
+      "quote": {
+        "find": [
+          "受禪"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1204,
+      "title": "辛弃疾「气吞万里如虎」",
+      "score": 85,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 422,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "南朝宋延续六十年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "「气吞万里如虎」的寒人帝王"
+  }
+}

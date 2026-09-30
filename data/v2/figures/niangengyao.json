@@ -1,0 +1,183 @@
+{
+  "id": "niangengyao",
+  "name": "年羹尧",
+  "born": {
+    "year": 1679,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1726,
+    "certainty": "确知"
+  },
+  "lifeSpan": 47,
+  "thesis": "平定青海，雍正宠臣，九十二款大罪赐死。",
+  "sources": [
+    {
+      "label": "《清史稿·卷二百九十五 列传八十二》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7295"
+    }
+  ],
+  "events": [
+    {
+      "year": 1679,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北京",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 0,
+      "rationale": "旗人",
+      "summary": "汉军旗",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1700,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 8,
+      "rationale": "入仕",
+      "summary": "翰林",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1718,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "四川总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 46,
+      "rationale": "方面",
+      "summary": "督抚",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1724,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平定青海",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 4,
+      "rationale": "巅峰",
+      "summary": "大将军",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1725,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬杭州将军",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 20,
+      "delta": -68,
+      "rationale": "贬",
+      "summary": "失宠",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1726,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "九十二款大罪",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 2,
+      "delta": -18,
+      "rationale": "死局",
+      "summary": "赐死",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1726,
+    "age": 47,
+    "title": "自裁",
+    "retention": 0.8,
+    "reason": "功高震主",
+    "score": 1.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 56,
+      "rationale": "功高震主",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "有影响",
+    "score": 56,
+    "label": "负面",
+    "rationale": "功高震主"
+  },
+  "peak": {
+    "title": "平定青海",
+    "age": 45,
+    "score": 88
+  },
+  "trough": {
+    "title": "九十二款大罪",
+    "age": 47,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 21,
+      "years": 21
+    },
+    {
+      "fromAge": 21,
+      "toAge": 39,
+      "years": 18
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

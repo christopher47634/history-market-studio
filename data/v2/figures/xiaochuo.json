@@ -1,0 +1,170 @@
+{
+  "id": "xiaochuo",
+  "name": "萧绰",
+  "born": {
+    "year": 953,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1009,
+    "certainty": "确知"
+  },
+  "lifeSpan": 56,
+  "thesis": "辽承天太后，摄政二十七年，澶渊之盟。",
+  "sources": [
+    {
+      "label": "《辽史·巻七十一 列传第一》",
+      "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B771"
+    }
+  ],
+  "events": [
+    {
+      "year": 953,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于辽国",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "贵族",
+      "summary": "北府宰相萧思温之女",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 969,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立为皇后",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 54,
+      "rationale": "后",
+      "summary": "景宗皇后",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 982,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "摄政",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 4,
+      "rationale": "执政",
+      "summary": "景宗崩，摄政",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 986,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "雍熙北伐击退宋军",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 2,
+      "rationale": "击退",
+      "summary": "破杨业等",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1004,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "澶渊之盟",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 0,
+      "rationale": "和平",
+      "summary": "与宋盟约",
+      "evidence": "原文",
+      "quote": {
+        "text": "習知軍政，澶淵之役，親禦戎軍，指麾三軍，賞罰信明，將士用命。",
+        "textSimplified": "习知军政，澶渊之役，亲御戎军，指麾三军，赏罚信明，将士用命。",
+        "source": "《辽史·巻七十一 列传第一》",
+        "url": "https://zh.wikisource.org/wiki/%E9%81%BC%E5%8F%B2%2F%E5%8D%B771"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1009,
+    "age": 56,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "辽国鼎盛",
+    "score": 87.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 80,
+      "rationale": "辽国最杰出的女政治家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "辽国最杰出的女政治家"
+  },
+  "peak": {
+    "title": "雍熙北伐击退宋军",
+    "age": 33,
+    "score": 92
+  },
+  "trough": {
+    "title": "立为皇后",
+    "age": 16,
+    "score": 86
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 16,
+      "years": 16
+    },
+    {
+      "fromAge": 33,
+      "toAge": 51,
+      "years": 18
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

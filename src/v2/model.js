@@ -1,7 +1,7 @@
 // v2 图表模型：只用 data/v2/figures 里经过校验的数据，不生成任何假波动。
-const modules = import.meta.glob("../../data/v2/figures/*.json", { eager: true, import: "default" });
+import generated from "./figures.generated.js";
 
-export const figuresV2 = Object.values(modules).sort((a, b) => a.born.year - b.born.year);
+export const figuresV2 = [...generated].sort((a, b) => a.born.year - b.born.year);
 export const figureV2ById = Object.fromEntries(figuresV2.map((f) => [f.id, f]));
 
 export const TODAY = 2026;

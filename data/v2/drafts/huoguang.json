@@ -1,0 +1,172 @@
+{
+  "id": "huoguang",
+  "author": "claude",
+  "born": {
+    "year": -128,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -68,
+    "certainty": "确知"
+  },
+  "thesis": "霍去病异母弟，受武帝遗诏辅政，废立皇帝，权倾朝野二十年。",
+  "events": [
+    {
+      "year": -128,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于平阳",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "霍仲孺之子，霍去病异母弟",
+      "rationale": "庶出小吏之子",
+      "quote": {
+        "find": [
+          "霍仲孺"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -117,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随兄入长安为郎",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十余岁为郎，稍迁诸曹侍中",
+      "rationale": "得入宫廷",
+      "quote": {
+        "find": [
+          "为郎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -91,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任光禄大夫",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出入禁闼二十余年，小心谨慎未尝有过",
+      "rationale": "武帝近臣",
+      "quote": {
+        "find": [
+          "禁闼",
+          "谨慎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -87,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受遗诏辅政",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拜大司马大将军，受遗诏辅佐昭帝",
+      "rationale": "首席辅政",
+      "quote": {
+        "find": [
+          "遗诏",
+          "大司马"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -80,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "粉碎上官桀之谋",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "上官桀、燕王等谋废之，昭帝明察，诛上官氏",
+      "rationale": "化险为夷",
+      "quote": {
+        "find": [
+          "上官桀",
+          "燕王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -74,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "废立昌邑王",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "昭帝崩，立昌邑王，二十七日而废之，迎立宣帝",
+      "rationale": "行废立之权",
+      "quote": {
+        "find": [
+          "昌邑",
+          "废"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -74,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "宣帝芒刺在背",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宣帝谒高庙，霍光骖乘，严惮之若芒刺在背",
+      "rationale": "权倾人主",
+      "quote": {
+        "find": [
+          "芒刺"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -66,
+      "title": "霍氏族灭",
+      "score": 40,
+      "rationale": "其妻子谋反，霍氏宗族诛灭"
+    },
+    {
+      "year": -51,
+      "title": "麒麟阁十一功臣之首",
+      "score": 72,
+      "rationale": "宣帝图画功臣于麒麟阁，霍光居首而不名"
+    }
+  ],
+  "finale": {
+    "year": -68,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "身死三年霍氏以谋反族灭",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "争议",
+    "rationale": "「伊霍」之一，辅政权臣的典型"
+  }
+}

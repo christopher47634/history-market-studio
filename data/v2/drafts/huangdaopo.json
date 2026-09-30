@@ -1,0 +1,81 @@
+{
+  "id": "huangdaopo",
+  "author": "claude",
+  "born": {
+    "year": 1245,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1330,
+    "certainty": "确知"
+  },
+  "thesis": "童养媳逃至崖州学纺织，归乡改进棉纺织技术。",
+  "events": [
+    {
+      "year": 1245,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于松江乌泥泾",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "贫苦",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1257,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "童养媳逃往崖州",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "受虐逃走",
+      "rationale": "逃亡",
+      "quote": null
+    },
+    {
+      "year": 1270,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "崖州习黎族棉纺",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "在崖州向黎族妇女学习棉纺织技术近三十年",
+      "rationale": "寄居他乡学艺",
+      "quote": null
+    },
+    {
+      "year": 1295,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "返乡传授纺织术",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "改进搅车弹弓织机",
+      "rationale": "技术革新",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1330,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "松江布衣被天下",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "棉纺织技术革新者"
+  }
+}

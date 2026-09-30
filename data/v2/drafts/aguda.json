@@ -1,0 +1,125 @@
+{
+  "id": "aguda",
+  "author": "claude",
+  "born": {
+    "year": 1068,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1123,
+    "certainty": "确知"
+  },
+  "thesis": "起兵反辽，以少胜多建金，两年间攻陷辽五京。",
+  "events": [
+    {
+      "year": 1068,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于女真完颜部",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "部落酋长之子",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 1112,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "头鱼宴拒舞",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "辽天祚帝命其跳舞，不从",
+      "rationale": "受辱",
+      "quote": null
+    },
+    {
+      "year": 1113,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任都勃极烈",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "统一女真",
+      "rationale": "部落首领",
+      "quote": null
+    },
+    {
+      "year": 1114,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁江州起兵",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二千五百人破辽",
+      "rationale": "起兵",
+      "quote": {
+        "find": [
+          "寧江"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1115,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建金",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国号大金",
+      "rationale": "建国",
+      "quote": null
+    },
+    {
+      "year": 1115,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "护步答冈之战",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "两万破辽七十万",
+      "rationale": "以少胜多",
+      "quote": null
+    },
+    {
+      "year": 1122,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻陷辽五京",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "燕京降",
+      "rationale": "灭辽在即",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1123,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "两年后灭北宋",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "金朝开国皇帝"
+  }
+}

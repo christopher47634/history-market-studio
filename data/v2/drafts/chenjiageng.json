@@ -1,0 +1,120 @@
+{
+  "id": "chenjiageng",
+  "author": "claude",
+  "born": {
+    "year": 1874,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1961,
+    "certainty": "确知"
+  },
+  "thesis": "橡胶大王，倾资兴学，创办厦门大学。",
+  "events": [
+    {
+      "year": 1874,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于集美",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "华侨",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1890,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴新加坡",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "米店",
+      "rationale": "学徒",
+      "quote": null
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创办菠萝罐头与橡胶",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "实业",
+      "rationale": "商人",
+      "quote": null
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创办厦门大学",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "倾资",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "企业破产",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "大萧条",
+      "rationale": "企业倒闭",
+      "quote": null
+    },
+    {
+      "year": 1938,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南侨总会主席",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抗战捐助",
+      "rationale": "领袖",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "政协副主席",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "归国",
+      "rationale": "国家领导",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1961,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "华侨旗帜",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "华侨领袖"
+  }
+}

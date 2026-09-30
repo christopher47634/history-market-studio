@@ -1,0 +1,183 @@
+{
+  "id": "yuanlongping",
+  "name": "袁隆平",
+  "born": {
+    "year": 1930,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 2021,
+    "certainty": "确知"
+  },
+  "lifeSpan": 91,
+  "thesis": "杂交水稻之父。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1930,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北平",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "书香",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1953,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "分配安江农校",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 5,
+      "rationale": "教师",
+      "summary": "教师",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1966,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "发表雄性不育论文",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 14,
+      "rationale": "研究",
+      "summary": "起步",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1973,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "籼型杂交水稻配套成功",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 22,
+      "rationale": "巅峰",
+      "summary": "突破",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1995,
+      "age": 65,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国工程院院士",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 10,
+      "rationale": "荣誉",
+      "summary": "院士",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 2014,
+      "age": 84,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "超级稻亩产千公斤",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 4,
+      "rationale": "巅峰",
+      "summary": "超级稻",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 2021,
+    "age": 91,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "杂交水稻",
+    "score": 77.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "杂交水稻之父",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "杂交水稻之父"
+  },
+  "peak": {
+    "title": "超级稻亩产千公斤",
+    "age": 84,
+    "score": 80
+  },
+  "trough": {
+    "title": "分配安江农校",
+    "age": 23,
+    "score": 30
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 23,
+      "years": 23
+    },
+    {
+      "fromAge": 43,
+      "toAge": 65,
+      "years": 22
+    },
+    {
+      "fromAge": 65,
+      "toAge": 84,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

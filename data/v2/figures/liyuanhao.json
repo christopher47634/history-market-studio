@@ -1,0 +1,183 @@
+{
+  "id": "liyuanhao",
+  "name": "李元昊",
+  "born": {
+    "year": 1003,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1048,
+    "certainty": "确知"
+  },
+  "lifeSpan": 45,
+  "thesis": "西夏开国皇帝，三败宋军，被太子所杀。",
+  "sources": [
+    {
+      "label": "《宋史·列传卷第二百四十四 外国一》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7485"
+    }
+  ],
+  "events": [
+    {
+      "year": 1003,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于灵州",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "贵族",
+      "summary": "李德明之子",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1032,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嗣位",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 85,
+      "delta": 50,
+      "rationale": "首领",
+      "summary": "继位",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1038,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建夏",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 3,
+      "rationale": "建国",
+      "summary": "国号大夏",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1041,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "好水川之战",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 2,
+      "rationale": "胜",
+      "summary": "大败宋军",
+      "evidence": "原文",
+      "quote": {
+        "text": "福分兵，夕與懌為一軍，屯好水川，川與能家川隔在隴山外，觀、英為一軍，屯籠洛川，相離五里。",
+        "textSimplified": "福分兵，夕与怿为一军，屯好水川，川与能家川隔在陇山外，观、英为一军，屯笼洛川，相离五里。",
+        "source": "《宋史·列传卷第二百四十四 外国一》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7485"
+      },
+      "verified": true
+    },
+    {
+      "year": 1044,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "河曲之战败辽",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 0,
+      "rationale": "胜",
+      "summary": "败辽",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1048,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被太子刺杀",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 26,
+      "delta": -64,
+      "rationale": "死",
+      "summary": "宁令哥刺之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1048,
+    "age": 45,
+    "title": "伤重而死",
+    "retention": 0.8,
+    "reason": "西夏延续近二百年",
+    "score": 20.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 70,
+      "rationale": "西夏开国皇帝",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "争议",
+    "rationale": "西夏开国皇帝"
+  },
+  "peak": {
+    "title": "好水川之战",
+    "age": 38,
+    "score": 90
+  },
+  "trough": {
+    "title": "被太子刺杀",
+    "age": 45,
+    "score": 26
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

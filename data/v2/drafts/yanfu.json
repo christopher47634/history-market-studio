@@ -1,0 +1,107 @@
+{
+  "id": "yanfu",
+  "author": "claude",
+  "born": {
+    "year": 1854,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1921,
+    "certainty": "确知"
+  },
+  "thesis": "翻译《天演论》，信达雅。",
+  "events": [
+    {
+      "year": 1854,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于侯官",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "医家",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1877,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学英国",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "海军",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1880,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北洋水师学堂",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "总办",
+      "rationale": "教育",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《天演论》刊行",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "物竞天择",
+      "rationale": "名著",
+      "quote": null
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京大学首任校长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "校长",
+      "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "筹安会",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "列名",
+      "rationale": "名誉受损",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1921,
+    "title": "病逝",
+    "retention": 0.9,
+    "reason": "翻译影响一代人",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "近代启蒙翻译家"
+  }
+}

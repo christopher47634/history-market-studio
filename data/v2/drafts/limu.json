@@ -1,0 +1,128 @@
+{
+  "id": "limu",
+  "author": "claude",
+  "born": {
+    "year": -290,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -229,
+    "certainty": "确知"
+  },
+  "thesis": "赵国北边良将，大破匈奴十余万骑，两败秦军，被赵王冤杀。",
+  "events": [
+    {
+      "year": -290,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于赵",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "赵之北边良将",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": -260,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "守代雁门",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "居代雁门备匈奴，谨烽火，多间谍",
+      "rationale": "边将",
+      "quote": {
+        "find": [
+          "鴈門"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -250,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "大破匈奴",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破杀匈奴十余万骑，单于奔走，其后十余岁匈奴不敢近赵边",
+      "rationale": "北边之功",
+      "quote": {
+        "find": [
+          "十餘萬騎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -233,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "肥之战破秦封武安君",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大破秦军于宜安，封武安君",
+      "rationale": "救赵",
+      "quote": {
+        "find": [
+          "武安君"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -232,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "番吾再破秦",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦攻番吾，李牧击破之",
+      "rationale": "守国柱石",
+      "quote": null
+    },
+    {
+      "year": -229,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被谗夺兵",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "summary": "秦反间郭开，赵王使赵葱代之，李牧不受命",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "郭開",
+          "趙蔥"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -229,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "三月后赵亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "战国四大名将之一，冤死而国亡"
+  }
+}

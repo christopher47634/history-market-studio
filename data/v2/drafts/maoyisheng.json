@@ -1,0 +1,94 @@
+{
+  "id": "maoyisheng",
+  "author": "claude",
+  "born": {
+    "year": 1896,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1989,
+    "certainty": "确知"
+  },
+  "thesis": "钱塘江大桥设计者。",
+  "events": [
+    {
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于镇江",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学康奈尔",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "桥梁",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "钱塘江大桥开工",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "自主设计",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "亲手炸桥",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "抗战炸桥",
+      "rationale": "悲壮",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "铁道科学研究院院长",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "院长",
+      "rationale": "领导",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1989,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "桥梁",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "桥梁专家"
+  }
+}

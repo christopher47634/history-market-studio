@@ -1,0 +1,94 @@
+{
+  "id": "yuanhaowen",
+  "author": "claude",
+  "born": {
+    "year": 1190,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1257,
+    "certainty": "确知"
+  },
+  "thesis": "金末文坛领袖，「问世间情为何物」，亡国后纂史。",
+  "events": [
+    {
+      "year": 1190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于忻州",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1205,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "作《摸鱼儿·雁丘词》",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "问世间情为何物",
+      "rationale": "少年成名",
+      "quote": null
+    },
+    {
+      "year": 1221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1233,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "金亡被羁",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "汴京陷落被羁押",
+      "rationale": "亡国",
+      "quote": null
+    },
+    {
+      "year": 1240,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "编纂金史资料",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建野史亭",
+      "rationale": "存史",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1257,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "金代文学集大成",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "北方文雄"
+  }
+}

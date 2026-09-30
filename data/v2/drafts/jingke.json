@@ -1,0 +1,127 @@
+{
+  "id": "jingke",
+  "author": "claude",
+  "born": {
+    "year": -260,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -227,
+    "certainty": "确知"
+  },
+  "thesis": "卫国刺客，受燕太子丹之托刺秦王，事败被杀。",
+  "events": [
+    {
+      "year": -260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于卫",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "卫人，好读书击剑",
+      "rationale": "游侠",
+      "quote": {
+        "find": [
+          "衛人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -240,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "游历燕市",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与狗屠及高渐离饮于燕市",
+      "rationale": "落魄游侠",
+      "quote": {
+        "find": [
+          "高漸離"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -228,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受太子丹礼遇",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太子丹尊荆卿为上卿",
+      "rationale": "被委以大事",
+      "quote": {
+        "find": [
+          "上卿"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -227,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "易水送别",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "风萧萧兮易水寒",
+      "rationale": "慷慨赴死",
+      "quote": {
+        "find": [
+          "易水"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -227,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "咸阳刺秦",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "图穷匕见，不中，被杀",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "圖窮",
+          "匕首"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立刺客列传",
+      "score": 72,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -227,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "秦加兵灭燕",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "刺客的代名词，「风萧萧兮易水寒」"
+  }
+}

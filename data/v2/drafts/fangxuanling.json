@@ -1,0 +1,135 @@
+{
+  "id": "fangxuanling",
+  "author": "claude",
+  "born": {
+    "year": 579,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 648,
+    "certainty": "确知"
+  },
+  "thesis": "秦王府首席谋臣，玄武门定策，贞观宰相二十年。",
+  "events": [
+    {
+      "year": 579,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐州临淄",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父房彦谦为隋司隶刺史",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 597,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "隋进士入仕",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年十八举进士",
+      "rationale": "小官",
+      "quote": {
+        "find": [
+          "進士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 617,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投李世民",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "杖策谒于军门，引为秦王府记室",
+      "rationale": "得遇明主",
+      "quote": {
+        "find": [
+          "記室"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄武门定策",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与杜如晦定策",
+      "rationale": "核心谋臣",
+      "quote": null
+    },
+    {
+      "year": 629,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任尚书左仆射",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "总百司，号为贤相",
+      "rationale": "宰相",
+      "quote": {
+        "find": [
+          "左僕射"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 645,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "留守京师",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太宗征辽，房玄龄留守",
+      "rationale": "托付",
+      "quote": null
+    },
+    {
+      "year": 648,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "病笃谏罢辽东之役",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "病中上表谏伐高丽",
+      "rationale": "老臣忠谏",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 648,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "房谋杜断，贞观之治",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "贞观名相，「房谋杜断」"
+  }
+}

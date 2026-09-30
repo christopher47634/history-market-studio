@@ -1,0 +1,166 @@
+{
+  "id": "sunzhongshan",
+  "author": "claude",
+  "born": {
+    "year": 1866,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1925,
+    "certainty": "确知"
+  },
+  "thesis": "革命先行者，创兴中会、同盟会，推翻帝制，任临时大总统。",
+  "events": [
+    {
+      "year": 1866,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于香山翠亨村",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "农民",
+      "quote": null
+    },
+    {
+      "year": 1892,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "香港西医书院毕业",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "行医澳门广州",
+      "rationale": "医生",
+      "quote": null
+    },
+    {
+      "year": 1894,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创兴中会",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "檀香山",
+      "rationale": "革命",
+      "quote": null
+    },
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "广州起义失败流亡",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "被清廷通缉",
+      "rationale": "流亡",
+      "quote": null
+    },
+    {
+      "year": 1896,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "伦敦蒙难",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "被清使馆诱禁",
+      "rationale": "险死",
+      "quote": null
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "同盟会总理",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东京成立",
+      "rationale": "革命领袖",
+      "quote": null
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "就任临时大总统",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中华民国成立",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "让位袁世凯",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "辞职",
+      "rationale": "让权",
+      "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "二次革命失败流亡",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "讨袁失败",
+      "rationale": "流亡",
+      "quote": null
+    },
+    {
+      "year": 1923,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "广州大元帅府",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "联俄联共扶助农工",
+      "rationale": "再起",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1940,
+      "title": "尊为国父",
+      "score": 92,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1925,
+    "title": "北京病逝",
+    "retention": 0.95,
+    "reason": "革命尚未成功",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 96,
+    "label": "正面",
+    "rationale": "中国民主革命先行者"
+  }
+}

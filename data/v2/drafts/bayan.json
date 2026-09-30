@@ -1,0 +1,99 @@
+{
+  "id": "bayan",
+  "author": "claude",
+  "born": {
+    "year": 1236,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1295,
+    "certainty": "确知"
+  },
+  "thesis": "统帅元军灭南宋，下临安不杀。",
+  "events": [
+    {
+      "year": 1236,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于伊儿汗国",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "蒙古贵族",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 1265,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入朝忽必烈",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "奉使来朝",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1274,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统军伐宋",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二十万",
+      "rationale": "统帅",
+      "quote": null
+    },
+    {
+      "year": 1276,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下临安",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宋太后降",
+      "rationale": "灭宋",
+      "quote": {
+        "find": [
+          "臨安"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1294,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拥立成宗",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "辅政",
+      "rationale": "重臣",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1295,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "元朝统一",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "争议",
+    "rationale": "灭宋统帅"
+  }
+}

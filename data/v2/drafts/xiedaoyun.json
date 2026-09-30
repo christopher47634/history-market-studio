@@ -1,0 +1,96 @@
+{
+  "id": "xiedaoyun",
+  "author": "claude",
+  "born": {
+    "year": 349,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 409,
+    "certainty": "估计"
+  },
+  "thesis": "才女，「未若柳絮因风起」，孙恩之乱中持刃杀敌。",
+  "events": [
+    {
+      "year": 349,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于陈郡谢氏",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "谢奕之女",
+      "rationale": "名门",
+      "quote": null
+    },
+    {
+      "year": 360,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "咏絮之才",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "未若柳絮因风起",
+      "rationale": "才名",
+      "quote": {
+        "find": [
+          "柳絮"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 370,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "嫁王凝之",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "王羲之子",
+      "rationale": "名门之妇",
+      "quote": {
+        "find": [
+          "王凝之"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 399,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "孙恩之乱",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "夫与子被杀，抽刃出门杀数人",
+      "rationale": "家破人亡",
+      "quote": {
+        "find": [
+          "孫恩"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 409,
+    "title": "寡居会稽",
+    "retention": 0.9,
+    "reason": "才名流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "咏絮才女"
+  }
+}

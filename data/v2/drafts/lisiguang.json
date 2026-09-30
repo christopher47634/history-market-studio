@@ -1,0 +1,107 @@
+{
+  "id": "lisiguang",
+  "author": "claude",
+  "born": {
+    "year": 1889,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1971,
+    "certainty": "确知"
+  },
+  "thesis": "地质学家，第四纪冰川，找油。",
+  "events": [
+    {
+      "year": 1889,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于黄冈",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "塾师",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学日本",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "同盟会",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北大地质系教授",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "教授",
+      "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中研院地质所所长",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "领军",
+      "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1950,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "突破封锁",
+      "rationale": "归国",
+      "quote": null
+    },
+    {
+      "year": 1952,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "地质部部长",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "部长",
+      "rationale": "领导",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1971,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "地质",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "地质学家"
+  }
+}

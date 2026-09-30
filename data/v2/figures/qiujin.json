@@ -1,0 +1,137 @@
+{
+  "id": "qiujin",
+  "name": "秋瑾",
+  "born": {
+    "year": 1875,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1907,
+    "certainty": "确知"
+  },
+  "lifeSpan": 32,
+  "thesis": "鉴湖女侠，光复会，绍兴就义。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1875,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于厦门",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1904,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东渡日本",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 3,
+      "rationale": "留学",
+      "summary": "留学",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1906,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创《中国女报》",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 16,
+      "rationale": "报人",
+      "summary": "女权",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1907,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大通学堂起义",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "score": 2,
+      "delta": -42,
+      "rationale": "死局",
+      "summary": "被捕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1907,
+    "age": 32,
+    "title": "绍兴轩亭口就义",
+    "retention": 0.9,
+    "reason": "秋风秋雨愁煞人",
+    "score": 1.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "女革命家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "女革命家"
+  },
+  "peak": {
+    "title": "创《中国女报》",
+    "age": 31,
+    "score": 44
+  },
+  "trough": {
+    "title": "大通学堂起义",
+    "age": 32,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "id": "dengshichang",
+  "name": "邓世昌",
+  "born": {
+    "year": 1849,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1894,
+    "certainty": "确知"
+  },
+  "lifeSpan": 45,
+  "thesis": "致远舰管带，黄海海战撞向吉野殉国。",
+  "sources": [
+    {
+      "label": "《清史稿·卷四百六十》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7460"
+    }
+  ],
+  "events": [
+    {
+      "year": 1849,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于广州",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "商人",
+      "summary": "茶商",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1867,
+      "age": 18,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "福州船政学堂",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 3,
+      "rationale": "学生",
+      "summary": "学堂",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1880,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴英接舰",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 10,
+      "rationale": "军官",
+      "summary": "军官",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1887,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "致远舰管带",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 12,
+      "rationale": "舰长",
+      "summary": "管带",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1894,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄海海战",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 2,
+      "delta": -48,
+      "rationale": "殉国",
+      "summary": "撞吉野殉国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1894,
+    "age": 45,
+    "title": "殉国",
+    "retention": 0.9,
+    "reason": "民族英雄",
+    "score": 1.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 80,
+      "rationale": "甲午英烈",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "甲午英烈"
+  },
+  "peak": {
+    "title": "致远舰管带",
+    "age": 38,
+    "score": 50
+  },
+  "trough": {
+    "title": "黄海海战",
+    "age": 45,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 18,
+      "years": 18
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

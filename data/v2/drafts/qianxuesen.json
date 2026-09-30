@@ -1,0 +1,120 @@
+{
+  "id": "qianxuesen",
+  "author": "claude",
+  "born": {
+    "year": 1911,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 2009,
+    "certainty": "确知"
+  },
+  "thesis": "冲破阻挠回国，两弹一星元勋，航天之父。",
+  "events": [
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上海",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "钱氏望族",
+      "rationale": "名门",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学美国",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "MIT、加州理工",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1945,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "美军科学顾问团",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "考察德国",
+      "rationale": "专家",
+      "quote": null
+    },
+    {
+      "year": 1950,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被软禁五年",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "麦卡锡主义",
+      "rationale": "被扣",
+      "quote": null
+    },
+    {
+      "year": 1955,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "归国",
+      "rationale": "归国",
+      "quote": null
+    },
+    {
+      "year": 1956,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国防部五院院长",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "导弹",
+      "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1970,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东方红一号",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "卫星",
+      "rationale": "巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 2009,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "航天",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "中国航天之父"
+  }
+}

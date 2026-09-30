@@ -1,0 +1,120 @@
+{
+  "id": "zuozongtang",
+  "author": "claude",
+  "born": {
+    "year": 1812,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1885,
+    "certainty": "确知"
+  },
+  "thesis": "抬棺出征收复新疆。",
+  "events": [
+    {
+      "year": 1812,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湘阴",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "寒士",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 1832,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中举后三试不第",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "会试不第",
+      "rationale": "布衣",
+      "quote": null
+    },
+    {
+      "year": 1852,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入湖南巡抚幕",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "师爷",
+      "rationale": "幕僚",
+      "quote": null
+    },
+    {
+      "year": 1859,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "樊燮案",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "险被杀",
+      "rationale": "险境",
+      "quote": null
+    },
+    {
+      "year": 1863,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "闽浙总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "方面",
+      "rationale": "督抚",
+      "quote": null
+    },
+    {
+      "year": 1866,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创福州船政局",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "洋务",
+      "rationale": "洋务",
+      "quote": null
+    },
+    {
+      "year": 1878,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复新疆",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抬棺",
+      "rationale": "巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1885,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "新疆建省",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "收复新疆"
+  }
+}

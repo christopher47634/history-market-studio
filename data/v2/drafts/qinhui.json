@@ -1,0 +1,133 @@
+{
+  "id": "qinhui",
+  "author": "claude",
+  "born": {
+    "year": 1091,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1155,
+    "certainty": "确知"
+  },
+  "thesis": "主和权相，以莫须有罪名杀岳飞，独相十九年。",
+  "events": [
+    {
+      "year": 1091,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于江宁",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1115,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被金俘虏北去",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "随二帝北去",
+      "rationale": "被俘",
+      "quote": null
+    },
+    {
+      "year": 1130,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南归",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "自称杀监己者",
+      "rationale": "南归",
+      "quote": null
+    },
+    {
+      "year": 1131,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "首次拜相",
+      "rationale": "宰相",
+      "quote": null
+    },
+    {
+      "year": 1138,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "独相主和",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "主持和议",
+      "rationale": "权相",
+      "quote": null
+    },
+    {
+      "year": 1142,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀岳飞",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "莫须有",
+      "rationale": "权势巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1206,
+      "title": "追夺王爵，改谥谬丑",
+      "score": 45,
+      "rationale": "官方地位被剥夺"
+    },
+    {
+      "year": 1500,
+      "title": "跪像立于岳庙",
+      "score": 56,
+      "rationale": "作为奸臣的反面典型家喻户晓"
+    }
+  ],
+  "finale": {
+    "year": 1155,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "和议延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 60,
+    "label": "负面",
+    "rationale": "奸臣的代名词"
+  }
+}

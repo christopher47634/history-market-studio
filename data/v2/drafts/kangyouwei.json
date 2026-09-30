@@ -1,0 +1,107 @@
+{
+  "id": "kangyouwei",
+  "author": "claude",
+  "born": {
+    "year": 1858,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1927,
+    "certainty": "确知"
+  },
+  "thesis": "戊戌变法领袖，后为保皇党。",
+  "events": [
+    {
+      "year": 1858,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南海",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1888,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上书请变法",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "不达",
+      "rationale": "布衣上书",
+      "quote": null
+    },
+    {
+      "year": 1895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "公车上书",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "进士",
+      "rationale": "维新领袖",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "戊戌变法",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "光绪召见",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "变法失败流亡",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "六君子被杀",
+      "rationale": "流亡",
+      "quote": null
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参与张勋复辟",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "复辟失败",
+      "rationale": "声誉受损",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1927,
+    "title": "卒于青岛",
+    "retention": 0.9,
+    "reason": "维新先驱，晚年保皇",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "争议",
+    "rationale": "维新派领袖"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "yangye",
+  "author": "claude",
+  "born": {
+    "year": 923,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 986,
+    "certainty": "确知"
+  },
+  "thesis": "杨家将之祖，陈家谷兵败被俘绝食而死。",
+  "events": [
+    {
+      "year": 923,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于麟州",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "地方豪强",
+      "rationale": "将门",
+      "quote": null
+    },
+    {
+      "year": 950,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "事北汉",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "号杨无敌",
+      "rationale": "名将",
+      "quote": {
+        "find": [
+          "無敵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 979,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归宋",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "代州刺史",
+      "rationale": "边将",
+      "quote": null
+    },
+    {
+      "year": 980,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "雁门之战",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大败辽军",
+      "rationale": "名震",
+      "quote": {
+        "find": [
+          "雁門"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 986,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陈家谷被俘",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "潘美王侁逼战，被俘",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "陳家谷"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1500,
+      "title": "杨家将演义",
+      "score": 84,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 986,
+    "title": "绝食而死",
+    "retention": 0.85,
+    "reason": "杨家将故事流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "杨家将"
+  }
+}

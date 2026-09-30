@@ -1,0 +1,325 @@
+{
+  "id": "chenping",
+  "name": "陈平",
+  "born": {
+    "year": -250,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -178,
+    "certainty": "确知"
+  },
+  "lifeSpan": 72,
+  "thesis": "多出奇计的谋臣，六出奇计助刘邦，诛诸吕安刘氏，官至丞相。",
+  "sources": [
+    {
+      "label": "《史记·卷五十六 陈丞相世家 第二十六》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+    }
+  ],
+  "events": [
+    {
+      "year": -250,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于阳武户牖",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 10,
+      "delta": 0,
+      "rationale": "家贫",
+      "summary": "少时家贫，好读书，兄伯耕田供其游学",
+      "evidence": "原文",
+      "quote": {
+        "text": "少時家貧，好讀書，有田三十畝，獨與兄伯居。",
+        "textSimplified": "少时家贫，好读书，有田三十亩，独与兄伯居。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -209,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事魏王咎",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 18,
+      "rationale": "小国小吏",
+      "summary": "往事魏王咎为太仆，说不听，去",
+      "evidence": "原文",
+      "quote": {
+        "text": "陳平固已前謝其兄伯，從少年往事魏王咎-{於}-臨濟。",
+        "textSimplified": "陈平固已前谢其兄伯，从少年往事魏王咎-{于}-临济。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事项羽",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "score": 27,
+      "delta": -1,
+      "rationale": "处境不安",
+      "summary": "从项羽入关，后惧诛封金挂印而去",
+      "evidence": "原文",
+      "quote": {
+        "text": "陳平懼誅，乃封其金與印，使使歸項王，而平身間行杖-{劎}-亡。",
+        "textSimplified": "陈平惧诛，乃封其金与印，使使归项王，而平身间行杖-{劎}-亡。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -205,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归汉为都尉",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 11,
+      "rationale": "得汉王信任",
+      "summary": "因魏无知见汉王，拜都尉、护军",
+      "evidence": "原文",
+      "quote": {
+        "text": "是日乃拜平爲都尉，使爲參乘，典護軍。",
+        "textSimplified": "是日乃拜平为都尉，使为参乘，典护军。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -204,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反间项羽",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 34,
+      "rationale": "奇计显效",
+      "summary": "捐金四万斤行反间，离间项羽与范增",
+      "evidence": "原文",
+      "quote": {
+        "text": "漢王以爲然，乃出黃金四萬斤，與陳平，恣所爲，不問其出入。",
+        "textSimplified": "汉王以为然，乃出黄金四万斤，与陈平，恣所为，不问其出入。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -201,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "伪游云梦擒韩信",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 0,
+      "rationale": "奇计之一",
+      "summary": "献计伪游云梦，擒韩信",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -200,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "白登解围",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 6,
+      "rationale": "救驾之功",
+      "summary": "白登之围，用秘计使匈奴解围",
+      "evidence": "原文",
+      "quote": {
+        "text": "卒至平城，爲匈奴所圍，七日不得食。",
+        "textSimplified": "卒至平城，为匈奴所围，七日不得食。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -189,
+      "age": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任左丞相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 8,
+      "rationale": "位居宰相",
+      "summary": "惠帝六年，拜左丞相",
+      "evidence": "原文",
+      "quote": {
+        "text": "孝惠帝六年，相國曹參卒，以安國侯王陵爲右丞相，陳平爲左丞相。",
+        "textSimplified": "孝惠帝六年，相国曹参卒，以安国侯王陵为右丞相，陈平为左丞相。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -187,
+      "age": 63,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "吕后专权自保",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 75,
+      "delta": -11,
+      "rationale": "委曲求全",
+      "summary": "吕后欲王诸吕，王陵力争被免，陈平顺之",
+      "evidence": "原文",
+      "quote": {
+        "text": "{{ProperNoun|高-{后}-}}欲立諸呂爲王，問王陵，王陵曰：「不可。",
+        "textSimplified": "{{ProperNoun|高-{后}-}}欲立诸吕为王，问王陵，王陵曰：「不可。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -180,
+      "age": 70,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "诛诸吕迎文帝",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 15,
+      "rationale": "安刘氏首功",
+      "summary": "与周勃合谋诛诸吕，迎立代王为文帝",
+      "evidence": "原文",
+      "quote": {
+        "text": "及{{ProperNoun|呂太-{后}-}}崩，平與太尉勃合謀，卒誅諸呂，立孝文皇帝，陳平本謀也。",
+        "textSimplified": "及{{ProperNoun|吕太-{后}-}}崩，平与太尉勃合谋，卒诛诸吕，立孝文皇帝，陈平本谋也。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    },
+    {
+      "year": -179,
+      "age": 71,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "让右丞相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "宰相之首",
+      "summary": "让周勃为右丞相，旋独为丞相",
+      "evidence": "原文",
+      "quote": {
+        "text": "-{願}-以右丞相讓勃。",
+        "textSimplified": "-{愿}-以右丞相让勃。",
+        "source": "《史记·卷五十六 陈丞相世家 第二十六》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7056"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -178,
+    "age": 72,
+    "title": "卒于丞相任上",
+    "retention": 0.95,
+    "reason": "安刘之功，文景之治的开端",
+    "score": 85.5,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立陈丞相世家",
+      "score": 76,
+      "rationale": "奇计之名流传",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 78,
+      "rationale": "汉初最善奇计的谋臣，诛吕安刘",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "汉初最善奇计的谋臣，诛吕安刘"
+  },
+  "peak": {
+    "title": "诛诸吕迎文帝",
+    "age": 70,
+    "score": 90
+  },
+  "trough": {
+    "title": "事项羽",
+    "age": 44,
+    "score": 27
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 41,
+      "years": 41
+    }
+  ],
+  "quality": {
+    "quotesVerified": 10,
+    "quotesClaimed": 10,
+    "author": "claude"
+  }
+}

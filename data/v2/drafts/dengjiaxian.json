@@ -1,0 +1,107 @@
+{
+  "id": "dengjiaxian",
+  "author": "claude",
+  "born": {
+    "year": 1924,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1986,
+    "certainty": "确知"
+  },
+  "thesis": "隐姓埋名二十八年，原子弹氢弹理论设计负责人。",
+  "events": [
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于怀宁",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "邓以蛰之子",
+      "rationale": "书香",
+      "quote": null
+    },
+    {
+      "year": 1948,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学普渡",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "物理学",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1950,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "获博士后归国",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "九天",
+      "rationale": "归国",
+      "quote": null
+    },
+    {
+      "year": 1958,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "隐姓埋名投身核武",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "九所",
+      "rationale": "领军",
+      "quote": null
+    },
+    {
+      "year": 1964,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "原子弹爆炸",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "理论设计",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1979,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "核弹事故受辐射",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "亲手捡碎片",
+      "rationale": "健康受损",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1986,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "两弹元勋",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "两弹一星元勋"
+  }
+}

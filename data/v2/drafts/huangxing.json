@@ -1,0 +1,107 @@
+{
+  "id": "huangxing",
+  "author": "claude",
+  "born": {
+    "year": 1874,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1916,
+    "certainty": "确知"
+  },
+  "thesis": "辛亥革命元勋，黄花岗起义总指挥，与孙中山并称孙黄。",
+  "events": [
+    {
+      "year": 1874,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长沙",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士绅",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1903,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创华兴会",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "长沙",
+      "rationale": "革命",
+      "quote": null
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄花岗起义",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "断二指",
+      "rationale": "惨败",
+      "quote": null
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "武昌督战",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "战时总司令",
+      "rationale": "统帅",
+      "quote": null
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南京留守",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陆军总长",
+      "rationale": "高位",
+      "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "二次革命失败",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "流亡",
+      "rationale": "流亡",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1916,
+    "title": "病逝上海",
+    "retention": 0.95,
+    "reason": "孙黄",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "辛亥革命元勋"
+  }
+}

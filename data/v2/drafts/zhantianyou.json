@@ -1,0 +1,107 @@
+{
+  "id": "zhantianyou",
+  "author": "claude",
+  "born": {
+    "year": 1861,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1919,
+    "certainty": "确知"
+  },
+  "thesis": "京张铁路总工程师。",
+  "events": [
+    {
+      "year": 1861,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南海",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "茶商",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1872,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留美幼童",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十二岁",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1881,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "耶鲁毕业回国",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "海军",
+      "rationale": "冷遇",
+      "quote": null
+    },
+    {
+      "year": 1888,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投身铁路",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "津唐铁路",
+      "rationale": "工程师",
+      "quote": null
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "京张铁路总工程师",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "人字形",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1909,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "京张铁路通车",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "提前完工",
+      "rationale": "巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1919,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "中国铁路之父",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "中国铁路之父"
+  }
+}

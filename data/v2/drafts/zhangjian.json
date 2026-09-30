@@ -1,0 +1,107 @@
+{
+  "id": "zhangjian",
+  "author": "claude",
+  "born": {
+    "year": 1853,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1926,
+    "certainty": "确知"
+  },
+  "thesis": "状元实业家，大生纱厂，南通模式。",
+  "events": [
+    {
+      "year": 1853,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于海门",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1874,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入吴长庆幕",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "幕僚",
+      "rationale": "幕僚",
+      "quote": null
+    },
+    {
+      "year": 1894,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "状元",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四十一岁",
+      "rationale": "状元",
+      "quote": null
+    },
+    {
+      "year": 1899,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大生纱厂投产",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "实业",
+      "rationale": "实业",
+      "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "农商总长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入阁",
+      "rationale": "高位",
+      "quote": null
+    },
+    {
+      "year": 1922,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大生危机",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "棉价下跌",
+      "rationale": "困境",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1926,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "实业救国",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "状元实业家"
+  }
+}

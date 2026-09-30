@@ -1,0 +1,139 @@
+{
+  "id": "wuqi",
+  "author": "claude",
+  "born": {
+    "year": -440,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -381,
+    "certainty": "确知"
+  },
+  "thesis": "兵家、法家，魏国西河守将，入楚变法，楚悼王死被乱箭射杀。",
+  "events": [
+    {
+      "year": -440,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于卫",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "卫人，家累千金",
+      "rationale": "富家子",
+      "quote": {
+        "find": [
+          "衛人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -412,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "杀妻求将",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "鲁人欲以为将，其妻齐女，杀妻以明不与齐",
+      "rationale": "污名",
+      "quote": {
+        "find": [
+          "殺其妻"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -409,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为魏西河守",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "魏文侯以为将，击秦拔五城，为西河守",
+      "rationale": "名将",
+      "quote": {
+        "find": [
+          "西河守"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -390,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "魏武侯时被疑",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "公叔痤谗之，吴起惧诛而去",
+      "rationale": "被迫离魏",
+      "quote": {
+        "find": [
+          "公叔",
+          "懼得罪"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -386,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "入楚为令尹变法",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楚悼王以为相，明法审令，捐不急之官",
+      "rationale": "楚国改革",
+      "quote": {
+        "find": [
+          "令尹",
+          "明法"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -381,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "悼王死被射杀",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "宗室大臣作乱攻吴起，伏王尸而被射杀",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "伏王尸"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -381,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "变法中断",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "争议",
+    "rationale": "兵家与法家的双重代表"
+  }
+}

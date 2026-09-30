@@ -1,0 +1,125 @@
+{
+  "id": "yanzhenqing",
+  "author": "claude",
+  "born": {
+    "year": 709,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 785,
+    "certainty": "确知"
+  },
+  "thesis": "颜体书法，安史之乱首倡义兵，被李希烈缢杀。",
+  "events": [
+    {
+      "year": 709,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "琅琊颜氏",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 734,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 753,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任平原太守",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出为平原太守",
+      "rationale": "地方",
+      "quote": null
+    },
+    {
+      "year": 755,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "首倡义兵",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "河北诸郡响应",
+      "rationale": "忠义",
+      "quote": null
+    },
+    {
+      "year": 758,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "侄颜季明死难",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "作《祭侄文稿》",
+      "rationale": "悲痛",
+      "quote": null
+    },
+    {
+      "year": 764,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任刑部尚书",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入朝",
+      "rationale": "重臣",
+      "quote": null
+    },
+    {
+      "year": 784,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宣慰李希烈被扣",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "卢杞陷之，被扣",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "李希烈"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 785,
+    "title": "被缢杀",
+    "retention": 0.8,
+    "reason": "书法与忠义千古",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "颜体书法"
+  }
+}

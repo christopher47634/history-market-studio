@@ -1,0 +1,158 @@
+{
+  "id": "jinwengong",
+  "author": "claude",
+  "born": {
+    "year": -697,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -628,
+    "certainty": "确知"
+  },
+  "thesis": "流亡十九年，六十二岁归国即位，城濮之战称霸。",
+  "events": [
+    {
+      "year": -697,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为晋公子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "晋献公之子重耳",
+      "rationale": "公子",
+      "quote": {
+        "find": [
+          "重耳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -656,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "骊姬之乱出奔",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "献公信骊姬，重耳奔翟",
+      "rationale": "流亡",
+      "quote": {
+        "find": [
+          "驪姬",
+          "奔翟"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -644,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "过卫乞食于野人",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "过卫，卫文公不礼，乞食于野人",
+      "rationale": "流亡困顿",
+      "quote": {
+        "find": [
+          "野人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -638,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "楚成王厚待",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "至楚，楚成王以诸侯礼待之，许退避三舍",
+      "rationale": "得大国礼遇",
+      "quote": {
+        "find": [
+          "三舍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -636,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "秦送归国即位",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦穆公发兵送之，入晋即位",
+      "rationale": "六十二岁即位",
+      "quote": {
+        "find": [
+          "秦繆公",
+          "即位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -635,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "勤王定周",
+      "tier": "一方之主",
+      "tierScore": 89,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "纳周襄王，受赐河内之地",
+      "rationale": "尊王",
+      "quote": {
+        "find": [
+          "襄王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -632,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "城濮之战称霸",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "退避三舍，大败楚军于城濮，践土会盟",
+      "rationale": "春秋霸主",
+      "quote": {
+        "find": [
+          "城濮",
+          "踐土"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -628,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "晋国霸业延续百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "春秋五霸之一，流亡归国的典范"
+  }
+}

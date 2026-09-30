@@ -1,0 +1,175 @@
+{
+  "id": "wangmeng",
+  "name": "王猛",
+  "born": {
+    "year": 325,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 375,
+    "certainty": "确知"
+  },
+  "lifeSpan": 50,
+  "thesis": "扪虱谈天下，辅佐苻坚统一北方的名相。",
+  "sources": [
+    {
+      "label": "《晋书·卷一百十四 载记第十四》",
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7114"
+    }
+  ],
+  "events": [
+    {
+      "year": 325,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北海剧县",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 8,
+      "delta": 0,
+      "rationale": "贫寒",
+      "summary": "少贫贱，以鬻畚为业",
+      "evidence": "原文",
+      "quote": {
+        "text": "少貧賤，以鬻畚為業。",
+        "textSimplified": "少贫贱，以鬻畚为业。",
+        "source": "《晋书·卷一百十四 载记第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7114"
+      },
+      "verified": true
+    },
+    {
+      "year": 354,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "扪虱见桓温",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 12,
+      "rationale": "名士",
+      "summary": "被褐诣温，扪虱而谈",
+      "evidence": "原文",
+      "quote": {
+        "text": "桓溫入關，猛被褐而詣之，一面談當世之事，捫虱而言，旁若無人。",
+        "textSimplified": "桓温入关，猛被褐而诣之，一面谈当世之事，扪虱而言，旁若无人。",
+        "source": "《晋书·卷一百十四 载记第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7114"
+      },
+      "verified": true
+    },
+    {
+      "year": 357,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辅苻坚",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 32,
+      "rationale": "得遇明主",
+      "summary": "苻坚以为中书侍郎",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 370,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭前燕",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 36,
+      "rationale": "大功",
+      "summary": "率军灭燕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 372,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任丞相",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 2,
+      "rationale": "首辅",
+      "summary": "为丞相，总揽朝政",
+      "evidence": "原文",
+      "quote": {
+        "text": "尚書仇騰、丞相長史席寶數譖毀之，堅大怒，黜騰為甘松護軍，寶白衣領長史。",
+        "textSimplified": "尚书仇腾、丞相长史席宝数谮毁之，坚大怒，黜腾为甘松护军，宝白衣领长史。",
+        "source": "《晋书·卷一百十四 载记第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7114"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 375,
+    "age": 50,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "遗言勿伐晋；八年后淝水之败",
+    "score": 85.5,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "十六国第一名相",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "十六国第一名相"
+  },
+  "peak": {
+    "title": "任丞相",
+    "age": 47,
+    "score": 90
+  },
+  "trough": {
+    "title": "扪虱见桓温",
+    "age": 29,
+    "score": 20
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    }
+  ],
+  "quality": {
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
+    "author": "claude"
+  }
+}

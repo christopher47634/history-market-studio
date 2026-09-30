@@ -1,0 +1,183 @@
+{
+  "id": "zhukezhen",
+  "name": "竺可桢",
+  "born": {
+    "year": 1890,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1974,
+    "certainty": "确知"
+  },
+  "lifeSpan": 84,
+  "thesis": "气象学家，浙江大学校长，西迁办学。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1890,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上虞",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "商人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1910,
+      "age": 20,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "庚款留美",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 16,
+      "rationale": "留学",
+      "summary": "哈佛",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1928,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中研院气象所所长",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 20,
+      "rationale": "领军",
+      "summary": "气象",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1936,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "浙江大学校长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 12,
+      "rationale": "校长",
+      "summary": "求是",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1938,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "浙大西迁",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 50,
+      "delta": -16,
+      "rationale": "困顿",
+      "summary": "流亡办学",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1949,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国科学院副院长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 30,
+      "rationale": "领导",
+      "summary": "副院长",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1974,
+    "age": 84,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "气象",
+    "score": 76,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "气象学家、教育家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "气象学家、教育家"
+  },
+  "peak": {
+    "title": "中国科学院副院长",
+    "age": 59,
+    "score": 80
+  },
+  "trough": {
+    "title": "庚款留美",
+    "age": 20,
+    "score": 34
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 20,
+      "years": 20
+    },
+    {
+      "fromAge": 20,
+      "toAge": 38,
+      "years": 18
+    },
+    {
+      "fromAge": 59,
+      "toAge": 84,
+      "years": 25
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

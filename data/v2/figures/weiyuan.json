@@ -1,0 +1,165 @@
+{
+  "id": "weiyuan",
+  "name": "魏源",
+  "born": {
+    "year": 1794,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1857,
+    "certainty": "确知"
+  },
+  "lifeSpan": 63,
+  "thesis": "师夷长技以制夷，《海国图志》。",
+  "sources": [
+    {
+      "label": "《清史稿·卷四百八十六》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
+    }
+  ],
+  "events": [
+    {
+      "year": 1794,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邵阳",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "士人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1822,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "举人",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 12,
+      "rationale": "入仕",
+      "summary": "举人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1825,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "编《皇朝经世文编》",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 46,
+      "delta": 14,
+      "rationale": "编纂",
+      "summary": "经世",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1842,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "著《海国图志》",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 6,
+      "rationale": "名著",
+      "summary": "师夷长技",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1845,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第知州",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": -4,
+      "rationale": "地方",
+      "summary": "高邮知州",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1857,
+    "age": 63,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "影响日本明治维新",
+    "score": 45.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "开眼看世界",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "开眼看世界"
+  },
+  "peak": {
+    "title": "著《海国图志》",
+    "age": 48,
+    "score": 52
+  },
+  "trough": {
+    "title": "举人",
+    "age": 28,
+    "score": 32
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 28,
+      "years": 28
+    },
+    {
+      "fromAge": 31,
+      "toAge": 48,
+      "years": 17
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "hanfei",
+  "author": "claude",
+  "born": {
+    "year": -280,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -233,
+    "certainty": "确知"
+  },
+  "thesis": "韩国公子，口吃善著书，法家集大成者，入秦被李斯所害。",
+  "events": [
+    {
+      "year": -280,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于韩国宗室",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "韩之诸公子也",
+      "rationale": "宗室",
+      "quote": {
+        "find": [
+          "諸公子"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -250,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "与李斯同学于荀卿",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与李斯俱事荀卿",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "荀卿"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -245,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "数谏韩王不用",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "数以书谏韩王，韩王不能用",
+      "rationale": "不得志",
+      "quote": {
+        "find": [
+          "諫韓王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -240,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《孤愤》《五蠹》",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "观往者得失之变，作孤愤五蠹十余万言",
+      "rationale": "著书",
+      "quote": {
+        "find": [
+          "孤憤",
+          "五蠹"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -234,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "秦王见书求之",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦王见其书，恨不得与之游",
+      "rationale": "名动秦王",
+      "quote": {
+        "find": [
+          "恨不得"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -233,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "使秦被囚",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "summary": "李斯、姚贾害之，下吏治非",
+      "rationale": "下狱",
+      "quote": {
+        "find": [
+          "下吏",
+          "李斯"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -221,
+      "title": "其学成为秦政基础",
+      "score": 70,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -233,
+    "title": "服毒死于狱",
+    "retention": 0.8,
+    "reason": "其学为秦所用",
+    "quote": {
+      "find": [
+        "使人遺非藥"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "法家集大成者"
+  }
+}

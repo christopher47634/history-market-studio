@@ -1,0 +1,101 @@
+{
+  "id": "zhoudunyi",
+  "author": "claude",
+  "born": {
+    "year": 1017,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1073,
+    "certainty": "确知"
+  },
+  "thesis": "理学开山，《爱莲说》《太极图说》。",
+  "events": [
+    {
+      "year": 1017,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于道州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父早卒",
+      "rationale": "孤",
+      "quote": null
+    },
+    {
+      "year": 1036,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "荫补入仕",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "分宁主簿",
+      "rationale": "小官",
+      "quote": null
+    },
+    {
+      "year": 1046,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "程颢程颐从学",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二程受业",
+      "rationale": "理学",
+      "quote": null
+    },
+    {
+      "year": 1063,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "作《爱莲说》",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出淤泥而不染",
+      "rationale": "名篇",
+      "quote": null
+    },
+    {
+      "year": 1072,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知南康军",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "隐居庐山",
+      "rationale": "隐",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1220,
+      "title": "追谥元公",
+      "score": 80,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1073,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "理学开山",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "理学开山"
+  }
+}

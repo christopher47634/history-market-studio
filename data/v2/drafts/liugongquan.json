@@ -1,0 +1,86 @@
+{
+  "id": "liugongquan",
+  "author": "claude",
+  "born": {
+    "year": 778,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 865,
+    "certainty": "确知"
+  },
+  "thesis": "柳体书法，心正则笔正。",
+  "events": [
+    {
+      "year": 778,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于京兆华原",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 808,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 821,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任右拾遗侍书学士",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "心正则笔正",
+      "rationale": "侍书",
+      "quote": {
+        "find": [
+          "心正則筆正"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 850,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任太子少师",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官至太子少师",
+      "rationale": "高位",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 865,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "柳体",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "颜筋柳骨"
+  }
+}

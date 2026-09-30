@@ -1,0 +1,214 @@
+{
+  "id": "hushi",
+  "name": "胡适",
+  "born": {
+    "year": 1891,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1962,
+    "certainty": "确知"
+  },
+  "lifeSpan": 71,
+  "thesis": "新文化运动领袖，白话文，驻美大使。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1891,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上海",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦，早孤",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1910,
+      "age": 19,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "庚款留美",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 12,
+      "rationale": "留学",
+      "summary": "康奈尔",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1917,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《文学改良刍议》",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 28,
+      "rationale": "成名",
+      "summary": "北大教授",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1919,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "问题与主义",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 4,
+      "rationale": "巅峰",
+      "summary": "新文化领袖",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1938,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "驻美大使",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 12,
+      "rationale": "外交",
+      "summary": "大使",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1946,
+      "age": 55,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京大学校长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": -10,
+      "rationale": "学术",
+      "summary": "校长",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1949,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "离开大陆",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 30,
+      "delta": -38,
+      "rationale": "去国",
+      "summary": "赴美",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1958,
+      "age": 67,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中研院院长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 36,
+      "rationale": "学术",
+      "summary": "台北",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1962,
+    "age": 71,
+    "title": "病逝台北",
+    "retention": 0.95,
+    "reason": "白话文",
+    "score": 62.7,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 90,
+      "rationale": "新文化运动领袖",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "新文化运动领袖"
+  },
+  "peak": {
+    "title": "驻美大使",
+    "age": 47,
+    "score": 78
+  },
+  "trough": {
+    "title": "离开大陆",
+    "age": 58,
+    "score": 30
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 19,
+      "years": 19
+    },
+    {
+      "fromAge": 28,
+      "toAge": 47,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

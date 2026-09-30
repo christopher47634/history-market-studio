@@ -1,0 +1,155 @@
+{
+  "id": "lidazhao",
+  "name": "李大钊",
+  "born": {
+    "year": 1889,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1927,
+    "certainty": "确知"
+  },
+  "lifeSpan": 38,
+  "thesis": "中国最早的马克思主义传播者，中共创始人之一，就义于绞刑架。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1889,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于乐亭",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "孤贫",
+      "summary": "农家，早孤",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1913,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学早稻田",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 15,
+      "rationale": "留学",
+      "summary": "留学",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1918,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北大图书馆主任",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 56,
+      "delta": 26,
+      "rationale": "传播者",
+      "summary": "庶民的胜利",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1921,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中共创始人之一",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 10,
+      "rationale": "领袖",
+      "summary": "北方区",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1927,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被张作霖逮捕",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 2,
+      "delta": -64,
+      "rationale": "殉难",
+      "summary": "绞刑",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1927,
+    "age": 38,
+    "title": "就义",
+    "retention": 0.9,
+    "reason": "革命先驱",
+    "score": 1.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 88,
+      "rationale": "革命先驱",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "革命先驱"
+  },
+  "peak": {
+    "title": "中共创始人之一",
+    "age": 32,
+    "score": 66
+  },
+  "trough": {
+    "title": "被张作霖逮捕",
+    "age": 38,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 24,
+      "years": 24
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

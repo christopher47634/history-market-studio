@@ -1,0 +1,132 @@
+{
+  "id": "zhenghe",
+  "author": "claude",
+  "born": {
+    "year": 1371,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1433,
+    "certainty": "确知"
+  },
+  "thesis": "宦官，七下西洋，最远到达东非。",
+  "events": [
+    {
+      "year": 1371,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于云南昆阳",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "回族马氏",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1382,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "明军入云南被阉",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "被俘阉割",
+      "rationale": "沦为宦官",
+      "quote": null
+    },
+    {
+      "year": 1399,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "靖难立功",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "燕王府",
+      "rationale": "战功",
+      "quote": null
+    },
+    {
+      "year": 1404,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赐姓郑任内官监太监",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "赐姓",
+      "rationale": "宦官首领",
+      "quote": null
+    },
+    {
+      "year": 1405,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "首下西洋",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二万七千余人",
+      "rationale": "远航",
+      "quote": {
+        "find": [
+          "西洋"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1421,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第六次下西洋",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "到达东非",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1433,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第七次下西洋",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "卒于古里",
+      "rationale": "病",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1905,
+      "title": "梁启超作《郑和传》",
+      "score": 82,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1433,
+    "title": "卒于归途",
+    "retention": 0.95,
+    "reason": "下西洋停止",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "航海家"
+  }
+}

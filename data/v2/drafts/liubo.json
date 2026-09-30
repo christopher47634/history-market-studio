@@ -1,0 +1,125 @@
+{
+  "id": "liubo",
+  "author": "claude",
+  "born": {
+    "year": 1311,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1375,
+    "certainty": "确知"
+  },
+  "thesis": "刘伯温，辅佐朱元璋定天下，晚年被胡惟庸毒害。",
+  "events": [
+    {
+      "year": 1311,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于青田",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1333,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "元进士",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1348,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弃官隐居",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "不满元政",
+      "rationale": "隐",
+      "quote": null
+    },
+    {
+      "year": 1360,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "应朱元璋之聘",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陈时务十八策",
+      "rationale": "谋臣",
+      "quote": null
+    },
+    {
+      "year": 1363,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鄱阳湖之战",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "谋主",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 1370,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封诚意伯",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "封伯",
+      "rationale": "功臣",
+      "quote": {
+        "find": [
+          "誠意伯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1371,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "致仕归乡",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "被胡惟庸所忌",
+      "rationale": "避祸",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1375,
+    "title": "服胡惟庸所遣医药而卒",
+    "retention": 0.85,
+    "reason": "神化形象流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "刘伯温"
+  }
+}

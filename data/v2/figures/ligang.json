@@ -1,0 +1,155 @@
+{
+  "id": "ligang",
+  "name": "李纲",
+  "born": {
+    "year": 1083,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1140,
+    "certainty": "确知"
+  },
+  "lifeSpan": 57,
+  "thesis": "东京保卫战主帅，力主抗战，七十日罢相。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1083,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邵武",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1112,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 10,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1126,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东京保卫战",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 47,
+      "rationale": "救国",
+      "summary": "击退金兵",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1127,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 6,
+      "rationale": "宰相",
+      "summary": "高宗即位",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1127,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "七十日罢相",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 26,
+      "delta": -62,
+      "rationale": "罢",
+      "summary": "主和派排挤",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1140,
+    "age": 57,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "抗战派领袖",
+    "score": 24.7,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 78,
+      "rationale": "抗金名臣",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "抗金名臣"
+  },
+  "peak": {
+    "title": "拜相",
+    "age": 44,
+    "score": 88
+  },
+  "trough": {
+    "title": "七十日罢相",
+    "age": 44,
+    "score": 26
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

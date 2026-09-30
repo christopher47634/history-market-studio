@@ -1,0 +1,112 @@
+{
+  "id": "chengyi",
+  "author": "claude",
+  "born": {
+    "year": 1033,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1107,
+    "certainty": "确知"
+  },
+  "thesis": "程颐，程门立雪，洛学领袖。",
+  "events": [
+    {
+      "year": 1033,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洛阳",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1056,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "游太学",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "胡瑗奇之",
+      "rationale": "才名",
+      "quote": null
+    },
+    {
+      "year": 1086,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "崇政殿说书",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "哲宗侍讲",
+      "rationale": "帝师",
+      "quote": null
+    },
+    {
+      "year": 1087,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "洛蜀党争罢",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "与苏轼党争",
+      "rationale": "罢",
+      "quote": null
+    },
+    {
+      "year": 1097,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "编管涪州",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "绍述被贬",
+      "rationale": "远贬",
+      "quote": {
+        "find": [
+          "涪州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1103,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "程门立雪",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "杨时游酢侍立雪中",
+      "rationale": "尊崇",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1107,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "身后理学官学化",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "理学奠基人"
+  }
+}

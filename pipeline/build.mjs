@@ -6,7 +6,8 @@ import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
 import { SAMPLE } from "./registry.mjs";
 import { TIERS, CRISIS, LEGACY_TIERS, LABELS, RETENTION, GAP_YEARS, ANCHORS, capFor, eventScore } from "./rubric.mjs";
-import { quoteFound, toSimplified } from "./text.mjs";
+import { quoteFound, toSimplified, findSentence } from "./text.mjs";
+import { ALL } from "./registry.mjs";
 
 const DATA = new URL("../data/v2/", import.meta.url);
 const TODAY = 2026;
@@ -32,7 +33,17 @@ export function buildFigure(person, draft, sources, rescore = null) {
   const died = draft.died.year;
   const srcLabel = (i) => person.ws[i]?.label ?? "未知来源";
 
+  const cursors = sources.map(() => 0);
   const checkQuote = (quote, where) => {
+    // 关键词式引文：到原文里找出整句，逐字照抄。
+    if (quote?.find && !quote.text) {
+      const src = sources[quote.source ?? 0];
+      const hit = findSentence(src, quote.find, cursors[quote.source ?? 0]);
+      if (!hit) { warnings.push(`${where}：原文里找不到关键词 ${quote.find.join("/")}，记为「概括」`); return { evidence: "概括", quote: null, verified: false }; }
+      if (hit.fromStart) warnings.push(`${where}：关键词在前文命中，可能对应的不是这件事——「${hit.text.slice(0, 20)}」`);
+      cursors[quote.source ?? 0] = hit.pos;
+      quote = { ...quote, text: hit.text };
+    }
     if (!quote?.text) return { evidence: "概括", quote: null, verified: false };
     if (!person.ws[quote.source]) { errors.push(`${where}：引文来源编号 ${quote.source} 不存在`); return { evidence: "概括", quote: null, verified: false }; }
     if (quoteFound(quote.text, [sources[quote.source]])) {
@@ -152,7 +163,7 @@ const adjudications = existsSync(adjFile) ? JSON.parse(await readFile(adjFile, "
 const drafts = (await readdir(new URL("drafts/", DATA))).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
 const built = [];
 for (const id of drafts.filter((d) => !wanted.length || wanted.includes(d))) {
-  const person = SAMPLE.find((p) => p.id === id);
+  const person = ALL.find((p) => p.id === id);
   if (!person) { console.log(`✗ ${id}：不在样板登记表里`); continue; }
   const draft = JSON.parse(await readFile(new URL(`drafts/${id}.json`, DATA), "utf8"));
   // 裁定：起草与复核分歧的事件，按 adjudications.json 覆盖档位和危局，并从复核比对里剔除。
@@ -196,8 +207,25 @@ for (const [title, list] of byTitle) {
 }
 
 const report = built.map(({ figure, errors, warnings }) => ({ id: figure.id, name: figure.name, ok: !errors.length, errors, warnings }));
+if (!wanted.length) await writeBundle();
 await writeFile(new URL("report.json", DATA), JSON.stringify(report, null, 2));
 const failed = report.filter((r) => !r.ok).length;
 console.log(`\n共 ${report.length} 人，通过 ${report.length - failed}，未通过 ${failed}`);
 process.exitCode = failed ? 1 : 0;
+}
+
+// 前端和服务端共用的数据包：把所有通过校验的人物合成一个 JS 模块（去掉只供审核用的字段）。
+async function writeBundle() {
+  const files = (await readdir(new URL("figures/", DATA))).filter((f) => f.endsWith(".json")).sort();
+  const strip = (e) => { const { draftRationale, rejectedQuote, ...rest } = e; return rest; };
+  const all = [];
+  for (const f of files) {
+    const fig = JSON.parse(await readFile(new URL(`figures/${f}`, DATA), "utf8"));
+    all.push({ ...fig, events: fig.events.map(strip) });
+  }
+  const out = new URL("../src/v2/figures.generated.js", import.meta.url);
+  await writeFile(out, `// 由 pipeline/build.mjs 生成，勿手改。
+export default ${JSON.stringify(all)};
+`);
+  console.log(`数据包：${all.length} 人 → src/v2/figures.generated.js`);
 }

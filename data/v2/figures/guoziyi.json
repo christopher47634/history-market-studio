@@ -1,0 +1,231 @@
+{
+  "id": "guoziyi",
+  "name": "郭子仪",
+  "born": {
+    "year": 697,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 781,
+    "certainty": "确知"
+  },
+  "lifeSpan": 84,
+  "thesis": "平定安史之乱，再造唐室，权倾天下而主不疑。",
+  "sources": [
+    {
+      "label": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+    }
+  ],
+  "events": [
+    {
+      "year": 697,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于华州郑县",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "官宦",
+      "summary": "父郭敬之历任刺史",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 720,
+      "age": 23,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "武举高等",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 7,
+      "rationale": "入仕",
+      "summary": "以武举高等补左卫长史",
+      "evidence": "原文",
+      "quote": {
+        "text": "子儀長六尺餘，體貌秀傑，始以武舉高等補左衛長史，累歷諸軍使。",
+        "textSimplified": "子仪长六尺余，体貌秀杰，始以武举高等补左卫长史，累历诸军使。",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
+    },
+    {
+      "year": 755,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任朔方节度使",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 48,
+      "rationale": "临危受命",
+      "summary": "安禄山反，诏为朔方节度使",
+      "evidence": "原文",
+      "quote": {
+        "text": "移橫塞軍及安北都護府於永清柵北築城，仍改橫塞為天德軍，子儀為之使，兼九原太守、朔方節度右兵馬使。",
+        "textSimplified": "移横塞军及安北都护府于永清栅北筑城，仍改横塞为天德军，子仪为之使，兼九原太守、朔方节度右兵马使。",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
+    },
+    {
+      "year": 757,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复两京",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 8,
+      "rationale": "再造唐室",
+      "summary": "与广平王收复长安、洛阳",
+      "evidence": "原文",
+      "quote": {
+        "text": "七月，肅宗即位，以賊據兩京，方謀收復，詔子儀班師。",
+        "textSimplified": "七月，肃宗即位，以贼据两京，方谋收复，诏子仪班师。",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
+    },
+    {
+      "year": 759,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "相州之败被夺兵权",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 37,
+      "delta": -51,
+      "rationale": "被闲置",
+      "summary": "九节度围相州溃败，鱼朝恩谗之",
+      "evidence": "原文",
+      "quote": {
+        "text": "唯以中官魚朝恩為觀軍容宣慰使。",
+        "textSimplified": "唯以中官鱼朝恩为观军容宣慰使。",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
+    },
+    {
+      "year": 763,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "单骑退回纥",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 51,
+      "rationale": "复起",
+      "summary": "单骑见回纥，吐蕃退走",
+      "evidence": "原文",
+      "quote": {
+        "text": "俄而梁崇義據襄陽叛，僕固懷恩阻兵於汾州，引回紇、吐蕃之眾入寇河西。",
+        "textSimplified": "俄而梁崇义据襄阳叛，仆固怀恩阻兵于汾州，引回纥、吐蕃之众入寇河西。",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
+    },
+    {
+      "year": 770,
+      "age": 73,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "号尚父",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 2,
+      "rationale": "位极人臣",
+      "summary": "权倾天下而朝不忌",
+      "evidence": "原文",
+      "quote": {
+        "text": "攝冢宰，充山陵使，賜號「尚父」，進位太尉、中書令，增實封通計二千戶，給一千五百人糧",
+        "textSimplified": "摄冢宰，充山陵使，赐号「尚父」，进位太尉、中书令，增实封通计二千户，给一千五百人粮",
+        "source": "《旧唐书·卷一百二十列传第七十 郭子仪》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7120"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 781,
+    "age": 84,
+    "title": "卒",
+    "retention": 0.97,
+    "reason": "子孙繁盛",
+    "score": 87.3,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "再造唐室的名将",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "再造唐室的名将"
+  },
+  "peak": {
+    "title": "号尚父",
+    "age": 73,
+    "score": 90
+  },
+  "trough": {
+    "title": "武举高等",
+    "age": 23,
+    "score": 32
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 23,
+      "years": 23
+    },
+    {
+      "fromAge": 23,
+      "toAge": 58,
+      "years": 35
+    }
+  ],
+  "quality": {
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
+    "author": "claude"
+  }
+}

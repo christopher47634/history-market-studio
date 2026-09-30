@@ -1,0 +1,94 @@
+{
+  "id": "gaogong",
+  "author": "claude",
+  "born": {
+    "year": 1513,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1578,
+    "certainty": "确知"
+  },
+  "thesis": "隆庆首辅，与张居正联手又被其逐。",
+  "events": [
+    {
+      "year": 1513,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于新郑",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1541,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1566,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入阁",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "裕王旧臣",
+      "rationale": "阁臣",
+      "quote": null
+    },
+    {
+      "year": 1570,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "首辅兼吏部尚书",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "改革",
+      "rationale": "首辅",
+      "quote": null
+    },
+    {
+      "year": 1572,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被张居正联冯保逐",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "即日驱逐",
+      "rationale": "罢",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1578,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "张居正独相",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 62,
+    "label": "争议",
+    "rationale": "隆庆首辅"
+  }
+}

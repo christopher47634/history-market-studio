@@ -1,0 +1,164 @@
+{
+  "id": "baiqi",
+  "author": "claude",
+  "born": {
+    "year": -332,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -257,
+    "certainty": "确知"
+  },
+  "thesis": "秦国战神，伊阙、鄢郢、长平歼敌百万，封武安君，终被赐死。",
+  "events": [
+    {
+      "year": -332,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于郿",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "郿人，善用兵",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "郿人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -294,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任左庶长",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为左庶长攻韩",
+      "rationale": "初为将",
+      "quote": {
+        "find": [
+          "左庶長"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -293,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "伊阙之战",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "斩首二十四万",
+      "rationale": "成名一战",
+      "quote": {
+        "find": [
+          "伊闕",
+          "二十四萬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻楚拔郢",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拔鄢郢，烧夷陵，封武安君",
+      "rationale": "威震诸侯",
+      "quote": {
+        "find": [
+          "武安君",
+          "郢"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长平之战",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "坑赵卒四十万",
+      "rationale": "战功巅峰",
+      "quote": {
+        "find": [
+          "長平",
+          "四十萬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -259,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与范雎不和罢兵",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "应侯言于秦王罢兵，自此与范雎有隙",
+      "rationale": "被掣肘",
+      "quote": {
+        "find": [
+          "應侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -257,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谪迁阴密",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "称病不肯将，免为士伍，迁阴密",
+      "rationale": "削爵流放",
+      "quote": {
+        "find": [
+          "士伍",
+          "陰密"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -257,
+    "title": "赐剑自刎于杜邮",
+    "retention": 0.8,
+    "reason": "秦军功体系延续",
+    "quote": {
+      "find": [
+        "杜郵"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "争议",
+    "rationale": "战神与杀神的双重形象"
+  }
+}

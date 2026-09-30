@@ -1,0 +1,119 @@
+{
+  "id": "lizhi",
+  "author": "claude",
+  "born": {
+    "year": 1527,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1602,
+    "certainty": "确知"
+  },
+  "thesis": "异端思想家，童心说，死于狱中。",
+  "events": [
+    {
+      "year": 1527,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于泉州",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "回族商人家庭",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1552,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "举人",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "举人",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1577,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "姚安知府",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "知府",
+      "rationale": "地方官",
+      "quote": null
+    },
+    {
+      "year": 1580,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弃官讲学",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "麻城芝佛院",
+      "rationale": "讲学",
+      "quote": null
+    },
+    {
+      "year": 1590,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "刊《焚书》",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "童心说",
+      "rationale": "名著",
+      "quote": {
+        "find": [
+          "焚書"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1602,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被劾下狱",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "惑世诬民",
+      "rationale": "死局",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1900,
+      "title": "近代推为思想解放先驱",
+      "score": 72,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1602,
+    "title": "狱中自刎",
+    "retention": 0.8,
+    "reason": "著作被禁",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "争议",
+    "rationale": "明代异端思想家"
+  }
+}

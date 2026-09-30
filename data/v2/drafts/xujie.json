@@ -1,0 +1,107 @@
+{
+  "id": "xujie",
+  "author": "claude",
+  "born": {
+    "year": 1503,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1583,
+    "certainty": "确知"
+  },
+  "thesis": "隐忍斗倒严嵩，首辅，起用海瑞张居正。",
+  "events": [
+    {
+      "year": 1503,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于松江",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1523,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "探花",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "探花",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1530,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬延平推官",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "忤张璁",
+      "rationale": "贬",
+      "quote": null
+    },
+    {
+      "year": 1552,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入阁",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与严嵩共事",
+      "rationale": "阁臣",
+      "quote": null
+    },
+    {
+      "year": 1562,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "斗倒严嵩任首辅",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "严嵩罢",
+      "rationale": "首辅",
+      "quote": null
+    },
+    {
+      "year": 1568,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "致仕",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "高拱排挤",
+      "rationale": "去职",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1583,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "张居正改革",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "首辅"
+  }
+}

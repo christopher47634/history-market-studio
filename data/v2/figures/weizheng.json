@@ -1,0 +1,220 @@
+{
+  "id": "weizheng",
+  "name": "魏征",
+  "born": {
+    "year": 580,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 643,
+    "certainty": "确知"
+  },
+  "lifeSpan": 63,
+  "thesis": "先事李建成，玄武门后被太宗重用，以直谏闻名。",
+  "sources": [
+    {
+      "label": "《旧唐书·卷七十一列传第二十一 魏徵》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+    }
+  ],
+  "events": [
+    {
+      "year": 580,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于巨鹿",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "寒门",
+      "summary": "少孤贫，出家为道士",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 617,
+      "age": 37,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随李密起事",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 20,
+      "rationale": "入仕",
+      "summary": "为元宝藏书记",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 619,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归唐辅太子建成",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 18,
+      "rationale": "储君幕僚",
+      "summary": "为太子洗马",
+      "evidence": "原文",
+      "quote": {
+        "text": "隱太子聞其名，引直洗馬，甚禮之。",
+        "textSimplified": "隐太子闻其名，引直洗马，甚礼之。",
+        "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+      },
+      "verified": true
+    },
+    {
+      "year": 626,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄武门后被召",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 4,
+      "delta": -46,
+      "rationale": "生死一线",
+      "summary": "太宗召而责之，征举止自若",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 626,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "太宗释之任詹事主簿",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 0,
+      "rationale": "化险为夷",
+      "summary": "太宗器之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 629,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任秘书监参朝政",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 76,
+      "rationale": "直谏",
+      "summary": "前后谏二百余事",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 636,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜特进知门下事",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 6,
+      "rationale": "宰辅",
+      "summary": "参与朝章国典",
+      "evidence": "原文",
+      "quote": {
+        "text": "其年，徵又面請遜位，太宗難違之，乃拜徵特進，仍知門下事。",
+        "textSimplified": "其年，征又面请逊位，太宗难违之，乃拜征特进，仍知门下事。",
+        "source": "《旧唐书·卷七十一列传第二十一 魏徵》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B771"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 643,
+    "age": 63,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "太宗「以人为镜」",
+    "score": 81.7,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 643,
+      "title": "太宗推倒其碑",
+      "score": 60,
+      "rationale": "因荐人不当，太宗推碑",
+      "inferred": false
+    },
+    {
+      "year": 645,
+      "title": "太宗重立其碑",
+      "score": 82,
+      "rationale": "征辽后悔之，复立碑",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 88,
+      "rationale": "千古诤臣",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "千古诤臣"
+  },
+  "peak": {
+    "title": "拜特进知门下事",
+    "age": 56,
+    "score": 86
+  },
+  "trough": {
+    "title": "玄武门后被召",
+    "age": 46,
+    "score": 4
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 37,
+      "years": 37
+    }
+  ],
+  "quality": {
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "guyanwu",
+  "name": "顾炎武",
+  "born": {
+    "year": 1613,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1682,
+    "certainty": "确知"
+  },
+  "lifeSpan": 69,
+  "thesis": "天下兴亡匹夫有责，经世致用。",
+  "sources": [
+    {
+      "label": "《清史稿·卷四百八十一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7481"
+    }
+  ],
+  "events": [
+    {
+      "year": 1613,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于昆山",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "士族",
+      "summary": "江南望族",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1645,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抗清失败母绝食",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -26,
+      "rationale": "家国破",
+      "summary": "嗣母绝食殉国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1657,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北游",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 42,
+      "rationale": "游学",
+      "summary": "考察",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1670,
+      "age": 57,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "著《日知录》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 16,
+      "rationale": "巨著",
+      "summary": "经世",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1682,
+    "age": 69,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "清学开山",
+    "score": 57,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "天下兴亡匹夫有责",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "天下兴亡匹夫有责"
+  },
+  "peak": {
+    "title": "著《日知录》",
+    "age": 57,
+    "score": 60
+  },
+  "trough": {
+    "title": "抗清失败母绝食",
+    "age": 32,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 32,
+      "years": 32
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "huangzongxi",
+  "author": "claude",
+  "born": {
+    "year": 1610,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1695,
+    "certainty": "确知"
+  },
+  "thesis": "《明夷待访录》，民主启蒙先声。",
+  "events": [
+    {
+      "year": 1610,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于余姚",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父东林党",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "父被阉党害死",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "父死",
+      "rationale": "家难",
+      "quote": null
+    },
+    {
+      "year": 1628,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "锥刺许显纯",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "袖锥",
+      "rationale": "复仇",
+      "quote": null
+    },
+    {
+      "year": 1645,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抗清",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "世忠营",
+      "rationale": "败",
+      "quote": null
+    },
+    {
+      "year": 1663,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "著《明夷待访录》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "天下为主君为客",
+      "rationale": "名著",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1695,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "启蒙",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "中国思想启蒙先驱"
+  }
+}

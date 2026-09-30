@@ -1,0 +1,104 @@
+{
+  "id": "hanshizhong",
+  "author": "claude",
+  "born": {
+    "year": 1089,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1151,
+    "certainty": "确知"
+  },
+  "thesis": "黄天荡困兀术四十八日，岳飞死后闭门不出。",
+  "events": [
+    {
+      "year": 1089,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于延安",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "贫寒",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1106,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从军",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "御西夏",
+      "rationale": "士卒",
+      "quote": null
+    },
+    {
+      "year": 1129,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "苗刘兵变救驾",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平叛",
+      "rationale": "救驾",
+      "quote": null
+    },
+    {
+      "year": 1130,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄天荡之战",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "困兀术四十八日",
+      "rationale": "名震",
+      "quote": {
+        "find": [
+          "黃天蕩"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1141,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "解兵权",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "岳飞下狱，质问秦桧",
+      "rationale": "去职",
+      "quote": {
+        "find": [
+          "莫須有"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1151,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "中兴四将",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "中兴四将之一"
+  }
+}

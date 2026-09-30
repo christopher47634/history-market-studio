@@ -1,0 +1,117 @@
+{
+  "id": "shangguanwaner",
+  "author": "claude",
+  "born": {
+    "year": 664,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 710,
+    "certainty": "确知"
+  },
+  "thesis": "罪臣之女，入宫为武则天掌诏命，称量天下文士。",
+  "events": [
+    {
+      "year": 664,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "上官仪孙女",
+      "rationale": "名门",
+      "quote": null
+    },
+    {
+      "year": 664,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "祖父被诛没入掖庭",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "随母配入掖庭为婢",
+      "rationale": "罪臣之后",
+      "quote": {
+        "find": [
+          "掖庭"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 677,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "武后掌诏命",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "百司表奏，多令参决",
+      "rationale": "掌诏命",
+      "quote": null
+    },
+    {
+      "year": 698,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "黥面",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "忤旨当死，黥其面",
+      "rationale": "险死",
+      "quote": null
+    },
+    {
+      "year": 705,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中宗立为昭容",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "专掌制命",
+      "rationale": "权势",
+      "quote": {
+        "find": [
+          "昭容"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 710,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "唐隆政变被杀",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "李隆基起兵，斩之",
+      "rationale": "死",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 710,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "才名流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "巾帼宰相"
+  }
+}

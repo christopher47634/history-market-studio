@@ -1,0 +1,178 @@
+{
+  "id": "zhaopu",
+  "name": "赵普",
+  "born": {
+    "year": 922,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 992,
+    "certainty": "确知"
+  },
+  "lifeSpan": 70,
+  "thesis": "半部论语治天下，陈桥兵变谋主，三度为相。",
+  "sources": [
+    {
+      "label": "《宋史·卷二百五十六 列传第十五》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7256"
+    }
+  ],
+  "events": [
+    {
+      "year": 922,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于幽州",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "士人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 954,
+      "age": 32,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "入赵匡胤幕",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 14,
+      "rationale": "幕僚",
+      "summary": "掌书记",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 960,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陈桥兵变",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 40,
+      "rationale": "定策",
+      "summary": "谋主",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 964,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 12,
+      "rationale": "宰相",
+      "summary": "独相十年",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 973,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 35,
+      "delta": -53,
+      "rationale": "罢",
+      "summary": "与太宗不合",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 981,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "金匮之盟复相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 51,
+      "rationale": "复起",
+      "summary": "复相",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 992,
+    "age": 70,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "半部论语治天下",
+    "score": 81.7,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 76,
+      "rationale": "宋初宰相",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "争议",
+    "rationale": "宋初宰相"
+  },
+  "peak": {
+    "title": "拜相",
+    "age": 42,
+    "score": 88
+  },
+  "trough": {
+    "title": "罢相",
+    "age": 51,
+    "score": 35
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 32,
+      "years": 32
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

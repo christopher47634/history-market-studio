@@ -1,0 +1,170 @@
+{
+  "id": "libi",
+  "name": "李泌",
+  "born": {
+    "year": 722,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 789,
+    "certainty": "确知"
+  },
+  "lifeSpan": 67,
+  "thesis": "神童，四朝布衣宰相，屡隐屡出。",
+  "sources": [
+    {
+      "label": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7130"
+    }
+  ],
+  "events": [
+    {
+      "year": 722,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于京兆",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "少年成名",
+      "summary": "神童",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 729,
+      "age": 7,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄宗召见",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 5,
+      "rationale": "神童",
+      "summary": "七岁能赋",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 756,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "肃宗布衣谋主",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 46,
+      "rationale": "布衣宰相",
+      "summary": "号为山人，出谋画策",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 757,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被李辅国排挤隐衡山",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 19,
+      "delta": -57,
+      "rationale": "隐退",
+      "summary": "归隐",
+      "evidence": "原文",
+      "quote": {
+        "text": "泌懼，乞游衡山，優詔許之，給以三品祿俸，遂隱衡岳，絕粒棲神。",
+        "textSimplified": "泌惧，乞游衡山，优诏许之，给以三品禄俸，遂隐衡岳，绝粒栖神。",
+        "source": "《旧唐书·卷一百三十列传第八十 王玙 李泌 崔造 关播》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7130"
+      },
+      "verified": true
+    },
+    {
+      "year": 787,
+      "age": 65,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 69,
+      "rationale": "宰相",
+      "summary": "德宗时拜相",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 789,
+    "age": 67,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "屡安社稷",
+    "score": 83.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 76,
+      "rationale": "四朝布衣宰相",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "四朝布衣宰相"
+  },
+  "peak": {
+    "title": "拜相",
+    "age": 65,
+    "score": 88
+  },
+  "trough": {
+    "title": "被李辅国排挤隐衡山",
+    "age": 35,
+    "score": 19
+  },
+  "gaps": [
+    {
+      "fromAge": 7,
+      "toAge": 34,
+      "years": 27
+    },
+    {
+      "fromAge": 35,
+      "toAge": 65,
+      "years": 30
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

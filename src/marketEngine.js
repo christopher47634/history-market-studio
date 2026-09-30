@@ -1,3 +1,4 @@
+import { getCandleViewV2 } from "./v2/engine.js";
 import { interpolateTrajectoryScore } from "./trajectoryModel.js";
 
 const hashText = (text) => [...text].reduce((sum,char)=>((sum*33)^char.charCodeAt(0))>>>0,5381);
@@ -55,6 +56,7 @@ export function granularityForSpan(span) {
 }
 
 export function getCandleView(figure,span=100) {
+  if (figure.v2) return getCandleViewV2(figure, span);
   const granularity=granularityForSpan(span);
   const candles=aggregateCandles(buildMicroCandles(figure),granularity.bucket);
   return {

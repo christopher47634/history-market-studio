@@ -1,0 +1,153 @@
+{
+  "id": "zhouenlai",
+  "author": "claude",
+  "born": {
+    "year": 1898,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1976,
+    "certainty": "确知"
+  },
+  "thesis": "中华人民共和国第一任总理，外交家。",
+  "events": [
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于淮安",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦没落",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴法勤工俭学",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "旅欧支部",
+      "rationale": "革命",
+      "quote": null
+    },
+    {
+      "year": 1924,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄埔军校政治部主任",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "黄埔",
+      "rationale": "要职",
+      "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南昌起义",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "起义后南下失败",
+      "rationale": "失利",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "遵义会议",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "最高军事指挥",
+      "rationale": "核心",
+      "quote": null
+    },
+    {
+      "year": 1949,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "政务院总理兼外长",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建国",
+      "rationale": "总理",
+      "quote": null
+    },
+    {
+      "year": 1954,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "日内瓦会议",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "外交",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1971,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中美破冰",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "基辛格",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1974,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "病重批林批孔",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "受冲击",
+      "rationale": "病",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1976,
+      "title": "四五运动悼念",
+      "score": 94,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1976,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "人民的总理",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 94,
+    "label": "正面",
+    "rationale": "人民的总理"
+  }
+}

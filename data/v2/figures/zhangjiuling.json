@@ -1,0 +1,180 @@
+{
+  "id": "zhangjiuling",
+  "name": "张九龄",
+  "born": {
+    "year": 678,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 740,
+    "certainty": "确知"
+  },
+  "lifeSpan": 62,
+  "thesis": "岭南第一宰相，曲江风度，被李林甫排挤罢相。",
+  "sources": [
+    {
+      "label": "《旧唐书·列传第四十九 崔日用 张嘉贞 萧嵩 张九龄 李适之 严挺之》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B799"
+    }
+  ],
+  "events": [
+    {
+      "year": 678,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于韶州曲江",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "寒门",
+      "summary": "岭南寒门",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 702,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 12,
+      "rationale": "入仕",
+      "summary": "登进士第",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 733,
+      "age": 55,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 54,
+      "rationale": "宰相",
+      "summary": "中书令",
+      "evidence": "原文",
+      "quote": {
+        "text": "時張說為中書令，與九齡同姓，敘為昭穆，尤親重之，常謂人曰：「後來詞人稱首也。",
+        "textSimplified": "时张说为中书令，与九龄同姓，叙为昭穆，尤亲重之，常谓人曰：「后来词人称首也。",
+        "source": "《旧唐书·列传第四十九 崔日用 张嘉贞 萧嵩 张九龄 李适之 严挺之》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B799"
+      },
+      "verified": true
+    },
+    {
+      "year": 736,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 35,
+      "delta": -53,
+      "rationale": "失势",
+      "summary": "李林甫排挤罢相",
+      "evidence": "原文",
+      "quote": {
+        "text": "李林甫自無學術，以九齡文行為上所知，心頗忌之。",
+        "textSimplified": "李林甫自无学术，以九龄文行为上所知，心颇忌之。",
+        "source": "《旧唐书·列传第四十九 崔日用 张嘉贞 萧嵩 张九龄 李适之 严挺之》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B799"
+      },
+      "verified": true
+    },
+    {
+      "year": 737,
+      "age": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬荆州长史",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 38,
+      "delta": 3,
+      "rationale": "外放",
+      "summary": "被贬",
+      "evidence": "原文",
+      "quote": {
+        "text": "九齡坐引非其人，左遷荊州大都督府長史。",
+        "textSimplified": "九龄坐引非其人，左迁荆州大都督府长史。",
+        "source": "《旧唐书·列传第四十九 崔日用 张嘉贞 萧嵩 张九龄 李适之 严挺之》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B799"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 740,
+    "age": 62,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "玄宗后悔",
+    "score": 36.1,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 82,
+      "rationale": "岭南第一相",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "岭南第一相"
+  },
+  "peak": {
+    "title": "拜相",
+    "age": 55,
+    "score": 88
+  },
+  "trough": {
+    "title": "进士及第",
+    "age": 24,
+    "score": 34
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 24,
+      "years": 24
+    },
+    {
+      "fromAge": 24,
+      "toAge": 55,
+      "years": 31
+    }
+  ],
+  "quality": {
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
+    "author": "claude"
+  }
+}

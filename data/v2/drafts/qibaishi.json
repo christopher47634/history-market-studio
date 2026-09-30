@@ -1,0 +1,107 @@
+{
+  "id": "qibaishi",
+  "author": "claude",
+  "born": {
+    "year": 1864,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1957,
+    "certainty": "确知"
+  },
+  "thesis": "木匠出身，衰年变法，大器晚成。",
+  "events": [
+    {
+      "year": 1864,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湘潭",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "贫农",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1878,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "学木匠",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "雕花木匠",
+      "rationale": "工匠",
+      "quote": null
+    },
+    {
+      "year": 1889,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜师学画",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "胡沁园",
+      "rationale": "学画",
+      "quote": null
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "定居北京卖画",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北漂",
+      "rationale": "卖画",
+      "quote": null
+    },
+    {
+      "year": 1920,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "衰年变法",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "红花墨叶",
+      "rationale": "变法",
+      "quote": null
+    },
+    {
+      "year": 1953,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国美协主席",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "人民艺术家",
+      "rationale": "巅峰",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1957,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "齐白石",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "国画大师"
+  }
+}

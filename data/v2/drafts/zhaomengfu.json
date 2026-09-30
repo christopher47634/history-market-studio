@@ -1,0 +1,81 @@
+{
+  "id": "zhaomengfu",
+  "author": "claude",
+  "born": {
+    "year": 1254,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1322,
+    "certainty": "确知"
+  },
+  "thesis": "宋宗室仕元，赵体书法，书画双绝。",
+  "events": [
+    {
+      "year": 1254,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湖州",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宋太祖十一世孙",
+      "rationale": "宗室",
+      "quote": null
+    },
+    {
+      "year": 1276,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宋亡家居",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "亡国",
+      "rationale": "亡国",
+      "quote": null
+    },
+    {
+      "year": 1286,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "程钜夫征入元",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "忽必烈召见",
+      "rationale": "仕元",
+      "quote": null
+    },
+    {
+      "year": 1316,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "翰林学士承旨",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "荣际五朝",
+      "rationale": "高位",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1322,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "书画影响深远",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "争议",
+    "rationale": "赵体书法，以宋宗室仕元"
+  }
+}

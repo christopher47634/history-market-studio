@@ -1,0 +1,197 @@
+{
+  "id": "fengdao",
+  "name": "冯道",
+  "born": {
+    "year": 882,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 954,
+    "certainty": "确知"
+  },
+  "lifeSpan": 72,
+  "thesis": "历仕五朝十一帝，长乐老，印刷九经。",
+  "sources": [
+    {
+      "label": "《新五代史·杂传第四十二》",
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B754"
+    }
+  ],
+  "events": [
+    {
+      "year": 882,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于瀛州景城",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "耕读之家",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 907,
+      "age": 25,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "事刘守光",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 15,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 927,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "后唐拜相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 56,
+      "rationale": "宰相",
+      "summary": "同中书门下平章事",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 932,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主持雕印九经",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 0,
+      "rationale": "文化工程",
+      "summary": "国子监刻印九经",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 947,
+      "age": 65,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事契丹",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 35,
+      "delta": -51,
+      "rationale": "屈节",
+      "summary": "契丹入汴，冯道朝见",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 951,
+      "age": 69,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事后周仍为相",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 85,
+      "delta": 50,
+      "rationale": "长乐老",
+      "summary": "五朝元老",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 954,
+    "age": 72,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "评价两极",
+    "score": 80.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1060,
+      "title": "欧阳修斥其无耻",
+      "score": 30,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 1900,
+      "title": "近代部分重评",
+      "score": 55,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 56,
+      "rationale": "不倒翁宰相",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "有影响",
+    "score": 56,
+    "label": "争议",
+    "rationale": "不倒翁宰相"
+  },
+  "peak": {
+    "title": "后唐拜相",
+    "age": 45,
+    "score": 86
+  },
+  "trough": {
+    "title": "事刘守光",
+    "age": 25,
+    "score": 30
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 25,
+      "years": 25
+    },
+    {
+      "fromAge": 25,
+      "toAge": 45,
+      "years": 20
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

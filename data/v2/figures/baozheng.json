@@ -1,0 +1,200 @@
+{
+  "id": "baozheng",
+  "name": "包拯",
+  "born": {
+    "year": 999,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1062,
+    "certainty": "确知"
+  },
+  "lifeSpan": 63,
+  "thesis": "包青天，铁面无私，知开封府。",
+  "sources": [
+    {
+      "label": "《宋史·卷三百十六 列传第七十五》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7316"
+    }
+  ],
+  "events": [
+    {
+      "year": 999,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于庐州合肥",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1027,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 12,
+      "rationale": "孝",
+      "summary": "侍亲不仕十年",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1040,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知端州不持一砚",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 46,
+      "delta": 12,
+      "rationale": "清廉",
+      "summary": "不持一砚归",
+      "evidence": "原文",
+      "quote": {
+        "text": "徙知端州，遷殿中丞。",
+        "textSimplified": "徙知端州，迁殿中丞。",
+        "source": "《宋史·卷三百十六 列传第七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7316"
+      },
+      "verified": true
+    },
+    {
+      "year": 1045,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "使辽",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 4,
+      "rationale": "外交",
+      "summary": "出使契丹",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1056,
+      "age": 57,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知开封府",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 16,
+      "rationale": "包青天",
+      "summary": "关节不到，有阎罗包老",
+      "evidence": "原文",
+      "quote": {
+        "text": "京師為之語曰：「關節不到，有閻羅包老。",
+        "textSimplified": "京师为之语曰：「关节不到，有阎罗包老。",
+        "source": "《宋史·卷三百十六 列传第七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7316"
+      },
+      "verified": true
+    },
+    {
+      "year": 1061,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "枢密副使",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 14,
+      "rationale": "高位",
+      "summary": "执政",
+      "evidence": "原文",
+      "quote": {
+        "text": "數日，拜樞密副使。",
+        "textSimplified": "数日，拜枢密副使。",
+        "source": "《宋史·卷三百十六 列传第七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7316"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1062,
+    "age": 63,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "包青天形象流传",
+    "score": 76,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1300,
+      "title": "元杂剧包公戏",
+      "score": 82,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "清官的化身",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "清官的化身"
+  },
+  "peak": {
+    "title": "枢密副使",
+    "age": 62,
+    "score": 80
+  },
+  "trough": {
+    "title": "进士及第",
+    "age": 28,
+    "score": 34
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 28,
+      "years": 28
+    }
+  ],
+  "quality": {
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
+    "author": "claude"
+  }
+}

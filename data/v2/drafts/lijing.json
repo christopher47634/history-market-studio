@@ -1,0 +1,122 @@
+{
+  "id": "lijing",
+  "author": "claude",
+  "born": {
+    "year": 571,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 649,
+    "certainty": "确知"
+  },
+  "thesis": "隋末名将，灭东突厥、吐谷浑，唐初第一名将。",
+  "events": [
+    {
+      "year": 571,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于雍州三原",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦之家",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 617,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "告变被俘",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "欲告李渊起兵，被俘将斩",
+      "rationale": "险死",
+      "quote": null
+    },
+    {
+      "year": 618,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事李世民",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世民请释之",
+      "rationale": "得救",
+      "quote": null
+    },
+    {
+      "year": 621,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平萧铣",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "收江陵",
+      "rationale": "大功",
+      "quote": {
+        "find": [
+          "蕭銑"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 630,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭东突厥",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "夜袭定襄，擒颉利",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "頡利"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 635,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平吐谷浑",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年已六十余",
+      "rationale": "老将",
+      "quote": {
+        "find": [
+          "吐谷渾"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 649,
+    "title": "卒",
+    "retention": 0.97,
+    "reason": "兵法传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "唐初第一名将"
+  }
+}

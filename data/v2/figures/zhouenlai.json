@@ -1,0 +1,239 @@
+{
+  "id": "zhouenlai",
+  "name": "周恩来",
+  "born": {
+    "year": 1898,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1976,
+    "certainty": "确知"
+  },
+  "lifeSpan": 78,
+  "thesis": "中华人民共和国第一任总理，外交家。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1898,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于淮安",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦没落",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1920,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴法勤工俭学",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 5,
+      "rationale": "革命",
+      "summary": "旅欧支部",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1924,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄埔军校政治部主任",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 24,
+      "rationale": "要职",
+      "summary": "黄埔",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1927,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南昌起义",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 54,
+      "delta": 0,
+      "rationale": "失利",
+      "summary": "起义后南下失败",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1935,
+      "age": 37,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "遵义会议",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 28,
+      "rationale": "核心",
+      "summary": "最高军事指挥",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1949,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "政务院总理兼外长",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 8,
+      "rationale": "总理",
+      "summary": "建国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1954,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "日内瓦会议",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 0,
+      "rationale": "外交",
+      "summary": "外交",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1971,
+      "age": 73,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中美破冰",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 0,
+      "rationale": "外交",
+      "summary": "基辛格",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1974,
+      "age": 76,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "病重批林批孔",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 71,
+      "delta": -19,
+      "rationale": "病",
+      "summary": "受冲击",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1976,
+    "age": 78,
+    "title": "逝世",
+    "retention": 0.97,
+    "reason": "人民的总理",
+    "score": 68.9,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1976,
+      "title": "四五运动悼念",
+      "score": 94,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 94,
+      "rationale": "人民的总理",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 94,
+    "label": "正面",
+    "rationale": "人民的总理"
+  },
+  "peak": {
+    "title": "政务院总理兼外长",
+    "age": 51,
+    "score": 90
+  },
+  "trough": {
+    "title": "赴法勤工俭学",
+    "age": 22,
+    "score": 30
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    },
+    {
+      "fromAge": 56,
+      "toAge": 73,
+      "years": 17
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

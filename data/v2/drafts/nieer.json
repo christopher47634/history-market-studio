@@ -1,0 +1,88 @@
+{
+  "id": "nieer",
+  "author": "claude",
+  "born": {
+    "year": 1912,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1935,
+    "certainty": "确知"
+  },
+  "thesis": "《义勇军进行曲》作曲者，二十三岁溺亡。",
+  "events": [
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于昆明",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "医家",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴上海",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "打工",
+      "rationale": "谋生",
+      "quote": null
+    },
+    {
+      "year": 1933,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "加入左翼音乐",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "创作",
+      "rationale": "作曲",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "作《义勇军进行曲》",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "电影插曲",
+      "rationale": "名作",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1949,
+      "title": "《义勇军进行曲》定为代国歌",
+      "score": 88,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1935,
+    "title": "日本溺亡",
+    "retention": 0.9,
+    "reason": "国歌作曲者",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "国歌作曲者"
+  }
+}

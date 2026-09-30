@@ -1,0 +1,171 @@
+{
+  "id": "lubu",
+  "author": "claude",
+  "born": {
+    "year": 161,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 199,
+    "certainty": "确知"
+  },
+  "thesis": "三国第一猛将，反复无常，先后杀丁原、董卓，白门楼被缢杀。",
+  "events": [
+    {
+      "year": 161,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于五原九原",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以骁武给并州",
+      "rationale": "边地武人",
+      "quote": {
+        "find": [
+          "九原"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 189,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀丁原投董卓",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "董卓诱布杀原，拜骑都尉",
+      "rationale": "武勇闻名",
+      "quote": {
+        "find": [
+          "丁原",
+          "騎都尉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 192,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "诛董卓",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与王允合谋诛卓，拜奋威将军",
+      "rationale": "名震天下",
+      "quote": {
+        "find": [
+          "董卓",
+          "奮威"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 192,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "李傕破长安出逃",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "李傕等攻长安，布败走",
+      "rationale": "流亡",
+      "quote": {
+        "find": [
+          "武關"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 194,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭取兖州",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "陈宫迎之，与曹操争兖州",
+      "rationale": "据地",
+      "quote": {
+        "find": [
+          "兗州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭取徐州",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "乘刘备出击袁术，袭取下邳",
+      "rationale": "据徐州",
+      "quote": {
+        "find": [
+          "下邳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 198,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下邳被围",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "曹操围下邳，决泗沂水灌城",
+      "rationale": "困守",
+      "quote": {
+        "find": [
+          "泗",
+          "沂"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1360,
+      "title": "「人中吕布，马中赤兔」",
+      "score": 72,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 199,
+    "title": "白门楼被缢",
+    "retention": 0.8,
+    "reason": "众叛亲离",
+    "quote": {
+      "find": [
+        "白門",
+        "縊殺"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "负面",
+    "rationale": "三国第一猛将与反复无常的象征"
+  }
+}

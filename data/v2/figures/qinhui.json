@@ -1,0 +1,205 @@
+{
+  "id": "qinhui",
+  "name": "秦桧",
+  "born": {
+    "year": 1091,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1155,
+    "certainty": "确知"
+  },
+  "lifeSpan": 64,
+  "thesis": "主和权相，以莫须有罪名杀岳飞，独相十九年。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1091,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于江宁",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "士人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1115,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 14,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1127,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被金俘虏北去",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -34,
+      "rationale": "被俘",
+      "summary": "随二帝北去",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1130,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南归",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 48,
+      "rationale": "南归",
+      "summary": "自称杀监己者",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1131,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 36,
+      "rationale": "宰相",
+      "summary": "首次拜相",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1138,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "独相主和",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 4,
+      "rationale": "权相",
+      "summary": "主持和议",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1142,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀岳飞",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 2,
+      "rationale": "权势巅峰",
+      "summary": "莫须有",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1155,
+    "age": 64,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "和议延续",
+    "score": 87.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1206,
+      "title": "追夺王爵，改谥谬丑",
+      "score": 45,
+      "rationale": "官方地位被剥夺",
+      "inferred": false
+    },
+    {
+      "year": 1500,
+      "title": "跪像立于岳庙",
+      "score": 56,
+      "rationale": "作为奸臣的反面典型家喻户晓",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 60,
+      "rationale": "奸臣的代名词",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 60,
+    "label": "负面",
+    "rationale": "奸臣的代名词"
+  },
+  "peak": {
+    "title": "杀岳飞",
+    "age": 51,
+    "score": 92
+  },
+  "trough": {
+    "title": "被金俘虏北去",
+    "age": 36,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 24,
+      "years": 24
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "gaohuan",
+  "author": "claude",
+  "born": {
+    "year": 496,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 547,
+    "certainty": "确知"
+  },
+  "thesis": "怀朔镇兵出身，控制东魏，与宇文泰对峙，为北齐奠基。",
+  "events": [
+    {
+      "year": 496,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于怀朔镇",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "累世北边，习鲜卑俗",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 528,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投尔朱荣",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为亲信都督",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 531,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵讨尔朱",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "信都起兵",
+      "rationale": "自立",
+      "quote": null
+    },
+    {
+      "year": 534,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立东魏",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孝武帝西奔，立孝静帝，迁都邺",
+      "rationale": "掌控东魏",
+      "quote": {
+        "find": [
+          "鄴"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 546,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玉璧之败",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "攻玉璧五旬不克，士卒死者七万",
+      "rationale": "惨败",
+      "quote": {
+        "find": [
+          "玉壁"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 547,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "其子高洋建北齐",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "北齐奠基者"
+  }
+}

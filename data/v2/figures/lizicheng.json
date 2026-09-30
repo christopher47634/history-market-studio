@@ -1,0 +1,196 @@
+{
+  "id": "lizicheng",
+  "name": "李自成",
+  "born": {
+    "year": 1606,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1645,
+    "certainty": "确知"
+  },
+  "lifeSpan": 39,
+  "thesis": "驿卒起义，攻入北京推翻明朝，一片石兵败身死。",
+  "sources": [
+    {
+      "label": "《明史·卷三百九 列传第一百九十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7309"
+    }
+  ],
+  "events": [
+    {
+      "year": 1606,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于米脂",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 10,
+      "delta": 0,
+      "rationale": "贫寒",
+      "summary": "贫苦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1628,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "驿站裁撤失业",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 3,
+      "delta": -7,
+      "rationale": "失业",
+      "summary": "被裁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1630,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起义",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 33,
+      "rationale": "起义",
+      "summary": "投高迎祥",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1638,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "潼关南原大败",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "score": 2,
+      "delta": -34,
+      "rationale": "绝境",
+      "summary": "仅十八骑",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1641,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻洛阳杀福王",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 78,
+      "rationale": "崛起",
+      "summary": "均田免粮",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1644,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "西安称帝攻入北京",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 12,
+      "rationale": "推翻明朝",
+      "summary": "崇祯自缢",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1644,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "一片石之败",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 53,
+      "delta": -39,
+      "rationale": "败退",
+      "summary": "清军入关",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1645,
+    "age": 39,
+    "title": "九宫山遇害",
+    "retention": 0.8,
+    "reason": "大顺覆灭",
+    "score": 42.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 74,
+      "rationale": "推翻明朝的农民起义领袖",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "争议",
+    "rationale": "推翻明朝的农民起义领袖"
+  },
+  "peak": {
+    "title": "西安称帝攻入北京",
+    "age": 38,
+    "score": 92
+  },
+  "trough": {
+    "title": "潼关南原大败",
+    "age": 32,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "shijingtang",
+  "name": "石敬瑭",
+  "born": {
+    "year": 892,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 942,
+    "certainty": "确知"
+  },
+  "lifeSpan": 50,
+  "thesis": "割燕云十六州，认契丹为父，儿皇帝。",
+  "sources": [
+    {
+      "label": "《旧五代史·卷七十五》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B775"
+    }
+  ],
+  "events": [
+    {
+      "year": 892,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于太原",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "部落",
+      "summary": "沙陀人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 925,
+      "age": 33,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "李嗣源女婿",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 47,
+      "rationale": "将领",
+      "summary": "随李嗣源",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 933,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "河东节度使",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 10,
+      "rationale": "方镇",
+      "summary": "镇太原",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 936,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "割燕云称儿皇帝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 6,
+      "rationale": "称帝",
+      "summary": "借契丹兵灭后唐",
+      "evidence": "原文",
+      "quote": {
+        "text": "為後唐張敬達所敗，亟遣趙瑩持表重賂，許割燕雲，求兵為援，契丹主曰：「我非為石郎興師",
+        "textSimplified": "为后唐张敬达所败，亟遣赵莹持表重赂，许割燕云，求兵为援，契丹主曰：「我非为石郎兴师",
+        "source": "《旧五代史·卷七十五》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E4%BA%94%E4%BB%A3%E5%8F%B2%2F%E5%8D%B775"
+      },
+      "verified": true
+    },
+    {
+      "year": 941,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "安重荣之乱",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 70,
+      "delta": -18,
+      "rationale": "忧惧",
+      "summary": "藩镇反叛",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 942,
+    "age": 50,
+    "title": "忧死",
+    "retention": 0.9,
+    "reason": "燕云十六州四百年未复",
+    "score": 63,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 48,
+      "rationale": "儿皇帝",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "有影响",
+    "score": 48,
+    "label": "负面",
+    "rationale": "儿皇帝"
+  },
+  "peak": {
+    "title": "割燕云称儿皇帝",
+    "age": 44,
+    "score": 88
+  },
+  "trough": {
+    "title": "安重荣之乱",
+    "age": 49,
+    "score": 70
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 33,
+      "years": 33
+    }
+  ],
+  "quality": {
+    "quotesVerified": 1,
+    "quotesClaimed": 1,
+    "author": "claude"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "id": "zhaoyun",
+  "author": "claude",
+  "born": {
+    "year": 168,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 229,
+    "certainty": "确知"
+  },
+  "thesis": "常山真定人，长坂救主，谨慎持重，老而弥坚。",
+  "events": [
+    {
+      "year": 168,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于常山真定",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "常山真定人",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 191,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从公孙瓒",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为本郡将义从吏兵诣公孙瓒",
+      "rationale": "从军",
+      "quote": {
+        "find": [
+          "公孫瓚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归刘备",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "先主就袁绍，云见于邺",
+      "rationale": "追随明主",
+      "quote": null
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长坂救主",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "身抱弱子，保护甘夫人，皆得免难",
+      "rationale": "单骑救主",
+      "quote": {
+        "find": [
+          "弱子",
+          "甘夫人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 211,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留营司马",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "先主入蜀，云留营司马",
+      "rationale": "宿卫",
+      "quote": null
+    },
+    {
+      "year": 221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏伐吴",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "谏伐吴，不听",
+      "rationale": "不被采纳",
+      "quote": null
+    },
+    {
+      "year": 228,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "箕谷兵败",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "与邓芝拒曹真于箕谷，兵弱敌强失利，贬为镇军将军",
+      "rationale": "兵败降职",
+      "quote": {
+        "find": [
+          "箕谷",
+          "鎮軍將軍"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 261,
+      "title": "追谥顺平侯",
+      "score": 72,
+      "rationale": ""
+    },
+    {
+      "year": 1360,
+      "title": "《三国演义》常胜将军",
+      "score": 88,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 229,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "后追谥顺平侯",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "常胜将军"
+  }
+}

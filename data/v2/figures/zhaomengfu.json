@@ -1,0 +1,147 @@
+{
+  "id": "zhaomengfu",
+  "name": "赵孟頫",
+  "born": {
+    "year": 1254,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1322,
+    "certainty": "确知"
+  },
+  "lifeSpan": 68,
+  "thesis": "宋宗室仕元，赵体书法，书画双绝。",
+  "sources": [
+    {
+      "label": "《新元史·卷一百九十 列传第八十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%96%B0%E5%85%83%E5%8F%B2%2F%E5%8D%B7190"
+    }
+  ],
+  "events": [
+    {
+      "year": 1254,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湖州",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "宗室",
+      "summary": "宋太祖十一世孙",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1276,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宋亡家居",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 15,
+      "delta": -17,
+      "rationale": "亡国",
+      "summary": "亡国",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1286,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "程钜夫征入元",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 33,
+      "rationale": "仕元",
+      "summary": "忽必烈召见",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1316,
+      "age": 62,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "翰林学士承旨",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 18,
+      "rationale": "高位",
+      "summary": "荣际五朝",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1322,
+    "age": 68,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "书画影响深远",
+    "score": 62.7,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "赵体书法，以宋宗室仕元",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "争议",
+    "rationale": "赵体书法，以宋宗室仕元"
+  },
+  "peak": {
+    "title": "翰林学士承旨",
+    "age": 62,
+    "score": 66
+  },
+  "trough": {
+    "title": "宋亡家居",
+    "age": 22,
+    "score": 15
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    },
+    {
+      "fromAge": 32,
+      "toAge": 62,
+      "years": 30
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

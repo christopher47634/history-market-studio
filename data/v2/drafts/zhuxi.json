@@ -1,0 +1,117 @@
+{
+  "id": "zhuxi",
+  "author": "claude",
+  "born": {
+    "year": 1130,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1200,
+    "certainty": "确知"
+  },
+  "thesis": "理学集大成者，《四书章句集注》，庆元党禁中去世。",
+  "events": [
+    {
+      "year": 1130,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于尤溪",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父朱松",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1148,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1179,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知南康军复白鹿洞书院",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兴学",
+      "rationale": "讲学",
+      "quote": {
+        "find": [
+          "白鹿洞"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1194,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "侍讲",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宁宗侍讲四十六日",
+      "rationale": "近臣",
+      "quote": null
+    },
+    {
+      "year": 1196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "庆元党禁",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "伪学之禁",
+      "rationale": "被禁",
+      "quote": {
+        "find": [
+          "偽學"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1212,
+      "title": "平反，诏立《论语》《孟子》集注于学官",
+      "score": 80,
+      "rationale": ""
+    },
+    {
+      "year": 1313,
+      "title": "元定四书集注为科举标准",
+      "score": 96,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1200,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "身后理学成为官学",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "理学集大成者"
+  }
+}

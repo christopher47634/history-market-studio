@@ -1,0 +1,201 @@
+{
+  "id": "zuozongtang",
+  "name": "左宗棠",
+  "born": {
+    "year": 1812,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1885,
+    "certainty": "确知"
+  },
+  "lifeSpan": 73,
+  "thesis": "抬棺出征收复新疆。",
+  "sources": [
+    {
+      "label": "《清史稿·卷四百十二》",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7412"
+    }
+  ],
+  "events": [
+    {
+      "year": 1812,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湘阴",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "寒门",
+      "summary": "寒士",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1832,
+      "age": 20,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中举后三试不第",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 17,
+      "delta": -1,
+      "rationale": "布衣",
+      "summary": "会试不第",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1852,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入湖南巡抚幕",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 33,
+      "rationale": "幕僚",
+      "summary": "师爷",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1859,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "樊燮案",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -48,
+      "rationale": "险境",
+      "summary": "险被杀",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1863,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "闽浙总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 82,
+      "rationale": "督抚",
+      "summary": "方面",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1866,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创福州船政局",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 0,
+      "rationale": "洋务",
+      "summary": "洋务",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1878,
+      "age": 66,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复新疆",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 4,
+      "rationale": "巅峰",
+      "summary": "抬棺",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1885,
+    "age": 73,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "新疆建省",
+    "score": 83.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 88,
+      "rationale": "收复新疆",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "收复新疆"
+  },
+  "peak": {
+    "title": "收复新疆",
+    "age": 66,
+    "score": 88
+  },
+  "trough": {
+    "title": "樊燮案",
+    "age": 47,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 20,
+      "years": 20
+    },
+    {
+      "fromAge": 20,
+      "toAge": 40,
+      "years": 20
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

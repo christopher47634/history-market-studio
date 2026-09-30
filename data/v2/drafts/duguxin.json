@@ -1,0 +1,99 @@
+{
+  "id": "duguxin",
+  "author": "claude",
+  "born": {
+    "year": 503,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 557,
+    "certainty": "确知"
+  },
+  "thesis": "西魏八柱国之一，三个女儿分别为北周、隋、唐皇后。",
+  "events": [
+    {
+      "year": 503,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于云中",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "鲜卑部落首领之后",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 534,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随孝武入关",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "追随孝武帝",
+      "rationale": "忠臣",
+      "quote": null
+    },
+    {
+      "year": 537,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复洛阳",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "克洛阳",
+      "rationale": "战功",
+      "quote": null
+    },
+    {
+      "year": 549,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "位列八柱国",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为柱国大将军",
+      "rationale": "顶级贵族",
+      "quote": {
+        "find": [
+          "柱國"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 557,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赵贵之乱被逼自尽",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "宇文护逼令自尽",
+      "rationale": "死",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 557,
+    "title": "自尽",
+    "retention": 0.8,
+    "reason": "女儿为三朝皇后",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "正面",
+    "rationale": "「史上最强岳父」"
+  }
+}

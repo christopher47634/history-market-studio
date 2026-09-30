@@ -1,0 +1,117 @@
+{
+  "id": "likeiyong",
+  "author": "claude",
+  "born": {
+    "year": 856,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 908,
+    "certainty": "确知"
+  },
+  "thesis": "沙陀独眼龙，镇压黄巢，与朱温争霸，临终赐三矢。",
+  "events": [
+    {
+      "year": 856,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于神武川",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沙陀首领李国昌之子",
+      "rationale": "部落贵族",
+      "quote": null
+    },
+    {
+      "year": 878,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵被击败逃鞑靼",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "败走",
+      "rationale": "流亡",
+      "quote": null
+    },
+    {
+      "year": 883,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破黄巢收复长安",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "功第一",
+      "rationale": "名将",
+      "quote": null
+    },
+    {
+      "year": 884,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上源驿之变",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "朱温夜袭，缒城得脱",
+      "rationale": "险死",
+      "quote": {
+        "find": [
+          "上源驛"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封晋王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "据河东",
+      "rationale": "一方之主",
+      "quote": {
+        "find": [
+          "晉王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 902,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "朱温围太原",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "几陷",
+      "rationale": "危局",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 908,
+    "title": "卒，赐三矢",
+    "retention": 0.9,
+    "reason": "其子灭梁",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 66,
+    "label": "正面",
+    "rationale": "沙陀独眼龙"
+  }
+}

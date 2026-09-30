@@ -1,0 +1,150 @@
+{
+  "id": "guoziyi",
+  "author": "claude",
+  "born": {
+    "year": 697,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 781,
+    "certainty": "确知"
+  },
+  "thesis": "平定安史之乱，再造唐室，权倾天下而主不疑。",
+  "events": [
+    {
+      "year": 697,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于华州郑县",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父郭敬之历任刺史",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 720,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "武举高等",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以武举高等补左卫长史",
+      "rationale": "入仕",
+      "quote": {
+        "find": [
+          "武舉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 755,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任朔方节度使",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "安禄山反，诏为朔方节度使",
+      "rationale": "临危受命",
+      "quote": {
+        "find": [
+          "朔方"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 757,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复两京",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与广平王收复长安、洛阳",
+      "rationale": "再造唐室",
+      "quote": {
+        "find": [
+          "兩京"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 759,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "相州之败被夺兵权",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "九节度围相州溃败，鱼朝恩谗之",
+      "rationale": "被闲置",
+      "quote": {
+        "find": [
+          "魚朝恩"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 763,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "单骑退回纥",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "单骑见回纥，吐蕃退走",
+      "rationale": "复起",
+      "quote": {
+        "find": [
+          "回紇"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 770,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "号尚父",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "权倾天下而朝不忌",
+      "rationale": "位极人臣",
+      "quote": {
+        "find": [
+          "尚父"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 781,
+    "title": "卒",
+    "retention": 0.97,
+    "reason": "子孙繁盛",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "再造唐室的名将"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "id": "zhangyi",
+  "author": "claude",
+  "born": {
+    "year": -370,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -309,
+    "certainty": "确知"
+  },
+  "thesis": "魏国人，连横破合纵，两度为秦相，死于魏。",
+  "events": [
+    {
+      "year": -370,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于魏",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "魏人",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "魏人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -340,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "楚相门下被辱",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "从楚相饮，被疑盗璧，掠笞数百",
+      "rationale": "受辱",
+      "quote": {
+        "find": [
+          "掠笞",
+          "璧"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -328,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入秦为相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦惠王以为相",
+      "rationale": "秦国宰相",
+      "quote": {
+        "find": [
+          "相秦"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -313,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "欺楚绝齐",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "许楚商於六百里，使楚绝齐",
+      "rationale": "连横得手",
+      "quote": {
+        "find": [
+          "商於",
+          "六百里"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -311,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "使楚被囚得脱",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "楚怀王欲杀之，靳尚、郑袖救之",
+      "rationale": "险死",
+      "quote": {
+        "find": [
+          "鄭袖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -310,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "惠王死被疑去秦",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "秦武王不说张仪，群臣日夜恶之，惧诛去魏",
+      "rationale": "失势",
+      "quote": {
+        "find": [
+          "武王",
+          "惡張儀"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -309,
+    "title": "卒于魏",
+    "retention": 0.9,
+    "reason": "连横之策被秦延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "争议",
+    "rationale": "纵横家代表"
+  }
+}

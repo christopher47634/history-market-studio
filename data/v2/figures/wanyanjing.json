@@ -1,0 +1,142 @@
+{
+  "id": "wanyanjing",
+  "name": "完颜璟",
+  "born": {
+    "year": 1168,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1208,
+    "certainty": "确知"
+  },
+  "lifeSpan": 40,
+  "thesis": "金章宗，文治鼎盛，蒙古崛起前夜。",
+  "sources": [
+    {
+      "label": "《金史·卷九 本纪第九 章宗一》",
+      "url": "https://zh.wikisource.org/wiki/%E9%87%91%E5%8F%B2%2F%E5%8D%B79"
+    }
+  ],
+  "events": [
+    {
+      "year": 1168,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于金宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "宗室",
+      "summary": "世宗之孙",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1189,
+      "age": 21,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 53,
+      "rationale": "金帝",
+      "summary": "即位",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1195,
+      "age": 27,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "明昌之治",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 2,
+      "rationale": "盛世",
+      "summary": "文治鼎盛",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1206,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "泰和南征",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 0,
+      "rationale": "胜",
+      "summary": "败宋开禧北伐",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1208,
+    "age": 40,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "金朝由盛转衰",
+    "score": 81,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 52,
+      "rationale": "金章宗",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "有影响",
+    "score": 52,
+    "label": "正面",
+    "rationale": "金章宗"
+  },
+  "peak": {
+    "title": "明昌之治",
+    "age": 27,
+    "score": 90
+  },
+  "trough": {
+    "title": "即位",
+    "age": 21,
+    "score": 88
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 21,
+      "years": 21
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

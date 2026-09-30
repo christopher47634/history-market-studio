@@ -1,0 +1,221 @@
+{
+  "id": "jiangwei",
+  "name": "姜维",
+  "born": {
+    "year": 202,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 264,
+    "certainty": "确知"
+  },
+  "lifeSpan": 62,
+  "thesis": "魏将降蜀，继承诸葛亮遗志九伐中原，蜀亡后谋复国被杀。",
+  "sources": [
+    {
+      "label": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+    }
+  ],
+  "events": [
+    {
+      "year": 202,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于天水冀县",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "寒门",
+      "summary": "少孤，与母居",
+      "evidence": "原文",
+      "quote": {
+        "text": "姜維，字伯約，天水冀人也。",
+        "textSimplified": "姜维，字伯约，天水冀人也。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
+    },
+    {
+      "year": 228,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "降诸葛亮",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 39,
+      "delta": 17,
+      "rationale": "改投蜀汉",
+      "summary": "诸葛亮北伐，姜维不见容于魏，诣亮",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 234,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任右监军",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 15,
+      "rationale": "继承者",
+      "summary": "亮卒，维还成都",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 247,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任卫将军",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 76,
+      "delta": 22,
+      "rationale": "重臣",
+      "summary": "与费祎共录尚书事",
+      "evidence": "原文",
+      "quote": {
+        "text": "十年，遷衛將軍，與大將軍費禕共錄尚書事。",
+        "textSimplified": "十年，迁卫将军，与大将军费祎共录尚书事。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
+    },
+    {
+      "year": 253,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任大将军主持北伐",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 6,
+      "rationale": "蜀汉统帅",
+      "summary": "费祎卒，维主持军政，数出陇西",
+      "evidence": "原文",
+      "quote": {
+        "text": "十年，遷衛將軍，與大將軍費禕共錄尚書事。",
+        "textSimplified": "十年，迁卫将军，与大将军费祎共录尚书事。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
+    },
+    {
+      "year": 262,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北伐失利避祸沓中",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 45,
+      "delta": -37,
+      "rationale": "被排挤",
+      "summary": "宦官黄皓弄权，维惧而屯田沓中",
+      "evidence": "原文",
+      "quote": {
+        "text": "五年，維率眾出漢、侯和，為鄧艾所破，還住沓中。",
+        "textSimplified": "五年，维率众出汉、侯和，为邓艾所破，还住沓中。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
+    },
+    {
+      "year": 263,
+      "age": 61,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "剑阁坚守后奉命投降",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "score": 27,
+      "delta": -18,
+      "rationale": "国亡",
+      "summary": "后主投降，维被敕令投降钟会",
+      "evidence": "原文",
+      "quote": {
+        "text": "適與翼、厥合，皆退保劍閣以拒會。",
+        "textSimplified": "适与翼、厥合，皆退保剑阁以拒会。",
+        "source": "《三国志·蜀书十四 蒋琬费祎姜维传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B744"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 264,
+    "age": 62,
+    "title": "与钟会谋反被杀",
+    "retention": 0.8,
+    "reason": "蜀汉最后的忠臣",
+    "score": 21.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 78,
+      "rationale": "继承诸葛亮遗志的蜀汉末代统帅",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "继承诸葛亮遗志的蜀汉末代统帅"
+  },
+  "peak": {
+    "title": "任大将军主持北伐",
+    "age": 51,
+    "score": 82
+  },
+  "trough": {
+    "title": "剑阁坚守后奉命投降",
+    "age": 61,
+    "score": 27
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 26,
+      "years": 26
+    }
+  ],
+  "quality": {
+    "quotesVerified": 5,
+    "quotesClaimed": 5,
+    "author": "claude"
+  }
+}

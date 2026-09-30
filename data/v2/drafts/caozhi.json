@@ -1,0 +1,170 @@
+{
+  "id": "caozhi",
+  "author": "claude",
+  "born": {
+    "year": 192,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 232,
+    "certainty": "确知"
+  },
+  "thesis": "才高八斗，争储失败，终身被猜忌，七步诗千古传诵。",
+  "events": [
+    {
+      "year": 192,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于东武阳",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "曹操之子",
+      "rationale": "豪门",
+      "quote": null
+    },
+    {
+      "year": 210,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "铜雀台赋",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "援笔立成，太祖甚异之",
+      "rationale": "文才受宠",
+      "quote": {
+        "find": [
+          "銅雀"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 214,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封临淄侯",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "几为太子者数矣",
+      "rationale": "争储有望",
+      "quote": {
+        "find": [
+          "臨菑侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "醉酒失宠",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "曹仁被围，植醉不能受命",
+      "rationale": "失宠",
+      "quote": {
+        "find": [
+          "醉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 220,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "曹丕即位受打压",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "诛其党丁仪兄弟",
+      "rationale": "被猜忌",
+      "quote": {
+        "find": [
+          "丁儀"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 221,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "七步成诗",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "传说文帝令其七步中作诗",
+      "rationale": "险遭杀身",
+      "quote": null
+    },
+    {
+      "year": 223,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "徙封雍丘王",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "数徙封地，常汲汲无欢",
+      "rationale": "被监控",
+      "quote": {
+        "find": [
+          "雍丘"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 232,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封陈王",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "求自试不得，发疾薨",
+      "rationale": "郁郁而终",
+      "quote": {
+        "find": [
+          "陳王"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 500,
+      "title": "钟嵘《诗品》列上品",
+      "score": 85,
+      "rationale": "「才高八斗」"
+    }
+  ],
+  "finale": {
+    "year": 232,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "诗名流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "建安文学的代表诗人"
+  }
+}

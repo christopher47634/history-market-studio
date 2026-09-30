@@ -1,0 +1,81 @@
+{
+  "id": "xuxiake",
+  "author": "claude",
+  "born": {
+    "year": 1587,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1641,
+    "certainty": "确知"
+  },
+  "thesis": "三十年游历，《徐霞客游记》。",
+  "events": [
+    {
+      "year": 1587,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于江阴",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "富户",
+      "rationale": "士绅",
+      "quote": null
+    },
+    {
+      "year": 1607,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "开始远游",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "母亲支持",
+      "rationale": "远游",
+      "quote": null
+    },
+    {
+      "year": 1636,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "万里遐征",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "西南",
+      "rationale": "远游",
+      "quote": null
+    },
+    {
+      "year": 1640,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "足疾归乡",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "滇中足疾",
+      "rationale": "病",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1641,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "游记传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "地理学家、旅行家"
+  }
+}

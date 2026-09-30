@@ -1,0 +1,137 @@
+{
+  "id": "jiasixie",
+  "name": "贾思勰",
+  "born": {
+    "year": 480,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 550,
+    "certainty": "估计"
+  },
+  "lifeSpan": 70,
+  "thesis": "北魏高阳太守，著《齐民要术》。",
+  "sources": [],
+  "events": [
+    {
+      "year": 480,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于益都",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "平民",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 530,
+      "age": 50,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任高阳太守",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 28,
+      "rationale": "地方官",
+      "summary": "北魏高阳太守",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 535,
+      "age": 55,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "游历北方考察农事",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 42,
+      "delta": -8,
+      "rationale": "实地调查",
+      "summary": "走访山东河北河南各地，询问老农",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 540,
+      "age": 60,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《齐民要术》",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 16,
+      "rationale": "农学巨著",
+      "summary": "现存最早最完整的农书",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 550,
+    "age": 70,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "农书传世",
+    "score": 55.1,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "中国古代农学经典作者",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "中国古代农学经典作者"
+  },
+  "peak": {
+    "title": "著《齐民要术》",
+    "age": 60,
+    "score": 58
+  },
+  "trough": {
+    "title": "游历北方考察农事",
+    "age": 55,
+    "score": 42
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 50,
+      "years": 50
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

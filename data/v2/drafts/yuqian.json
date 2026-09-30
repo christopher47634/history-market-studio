@@ -1,0 +1,119 @@
+{
+  "id": "yuqian",
+  "author": "claude",
+  "born": {
+    "year": 1398,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1457,
+    "certainty": "确知"
+  },
+  "thesis": "土木之变后北京保卫战，拥立景帝，夺门之变被杀。",
+  "events": [
+    {
+      "year": 1398,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于钱塘",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1421,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1430,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "巡抚河南山西",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十九年",
+      "rationale": "方面",
+      "quote": null
+    },
+    {
+      "year": 1449,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "土木之变任兵部尚书",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "反对南迁",
+      "rationale": "临危受命",
+      "quote": null
+    },
+    {
+      "year": 1449,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京保卫战",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "击退瓦剌",
+      "rationale": "救国",
+      "quote": null
+    },
+    {
+      "year": 1457,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夺门之变下狱",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "英宗复辟",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "奪門"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1466,
+      "title": "平反",
+      "score": 72,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1457,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "粉骨碎身浑不怕",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "救时宰相"
+  }
+}

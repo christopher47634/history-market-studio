@@ -1,0 +1,86 @@
+{
+  "id": "duguhuanghou",
+  "author": "claude",
+  "born": {
+    "year": 544,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 602,
+    "certainty": "确知"
+  },
+  "thesis": "隋文帝皇后，与帝并称二圣，一夫一妻之约。",
+  "events": [
+    {
+      "year": 544,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北周贵族",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "独孤信之女",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 557,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嫁杨坚",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父死家变中出嫁",
+      "rationale": "婚姻",
+      "quote": null
+    },
+    {
+      "year": 581,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立为皇后",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与文帝并称二圣",
+      "rationale": "二圣",
+      "quote": {
+        "find": [
+          "二聖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 600,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "废太子杨勇",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "力主废勇立广",
+      "rationale": "影响储位",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 602,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "身后杨广即位亡国",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "争议",
+    "rationale": "隋朝「二圣」之一"
+  }
+}

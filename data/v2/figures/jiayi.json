@@ -1,0 +1,268 @@
+{
+  "id": "jiayi",
+  "name": "贾谊",
+  "born": {
+    "year": -200,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -168,
+    "certainty": "确知"
+  },
+  "lifeSpan": 32,
+  "thesis": "少年才子，二十余岁为博士，屡陈治安之策而被谗贬长沙。",
+  "sources": [
+    {
+      "label": "《汉书·卷四十八 贾谊传 第十八》",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+    }
+  ],
+  "events": [
+    {
+      "year": -200,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洛阳",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "少有才名",
+      "summary": "十八岁以能诵诗属书闻于郡中",
+      "evidence": "原文",
+      "quote": {
+        "text": "賈誼，雒陽人也，年十八，以能誦詩書屬文稱於郡中。",
+        "textSimplified": "贾谊，雒阳人也，年十八，以能诵诗书属文称于郡中。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -178,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召为博士",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 26,
+      "rationale": "少年博士",
+      "summary": "文帝召为博士，时年二十余，最为少",
+      "evidence": "原文",
+      "quote": {
+        "text": "文帝召以爲博士。",
+        "textSimplified": "文帝召以为博士。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -177,
+      "age": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "超迁太中大夫",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 8,
+      "rationale": "得宠",
+      "summary": "一岁中超迁至太中大夫，议更正朔",
+      "evidence": "原文",
+      "quote": {
+        "text": "文帝說之，超遷，歲中至太中大夫。",
+        "textSimplified": "文帝说之，超迁，岁中至太中大夫。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -176,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谗贬长沙",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 20,
+      "delta": -32,
+      "rationale": "被外放",
+      "summary": "绛灌之属尽害之，出为长沙王太傅",
+      "evidence": "原文",
+      "quote": {
+        "text": "於是天子後亦踈之，不用其議，以誼爲長沙王太傅。",
+        "textSimplified": "于是天子后亦踈之，不用其议，以谊为长沙王太傅。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -176,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "作《吊屈原赋》",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 40,
+      "delta": 0,
+      "rationale": "自伤不遇",
+      "summary": "渡湘水，为赋以吊屈原",
+      "evidence": "原文",
+      "quote": {
+        "text": "誼旣以適去，意不自得，及度湘水，爲賦以弔屈原。",
+        "textSimplified": "谊既以适去，意不自得，及度湘水，为赋以吊屈原。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -173,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召对宣室",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 28,
+      "rationale": "复被召见",
+      "summary": "文帝召见宣室，问鬼神之本",
+      "evidence": "原文",
+      "quote": {
+        "text": "至，入見，上方受釐，坐宣室。",
+        "textSimplified": "至，入见，上方受厘，坐宣室。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -172,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任梁王太傅",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 0,
+      "rationale": "辅导皇子",
+      "summary": "拜为梁怀王太傅",
+      "evidence": "原文",
+      "quote": {
+        "text": "迺拜誼爲梁懷王太傅。",
+        "textSimplified": "迺拜谊为梁怀王太傅。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    },
+    {
+      "year": -169,
+      "age": 31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "梁王坠马",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 22,
+      "delta": -26,
+      "rationale": "自责忧郁",
+      "summary": "梁王骑坠马死，贾生自伤为傅无状",
+      "evidence": "原文",
+      "quote": {
+        "text": "梁王勝墜馬死，李竒曰：「文三王傳言揖，此言勝，爲有兩名。",
+        "textSimplified": "梁王胜坠马死，李竒曰：「文三王传言揖，此言胜，为有两名。",
+        "source": "《汉书·卷四十八 贾谊传 第十八》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7048"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -168,
+    "age": 32,
+    "title": "哭泣岁余而死",
+    "retention": 0.95,
+    "reason": "《治安策》等主张后被采行",
+    "score": 20.9,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": -154,
+      "title": "削藩之策被采纳",
+      "score": 70,
+      "rationale": "七国之乱后，其削藩主张被证实",
+      "inferred": false
+    },
+    {
+      "year": -91,
+      "title": "《史记》与屈原同传",
+      "score": 78,
+      "rationale": "屈贾并称",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 82,
+      "rationale": "西汉政论家，《过秦论》作者",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "西汉政论家，《过秦论》作者"
+  },
+  "peak": {
+    "title": "超迁太中大夫",
+    "age": 23,
+    "score": 52
+  },
+  "trough": {
+    "title": "谗贬长沙",
+    "age": 24,
+    "score": 20
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    }
+  ],
+  "quality": {
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
+    "author": "claude"
+  }
+}

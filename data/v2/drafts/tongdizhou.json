@@ -1,0 +1,94 @@
+{
+  "id": "tongdizhou",
+  "author": "claude",
+  "born": {
+    "year": 1902,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1979,
+    "certainty": "确知"
+  },
+  "thesis": "克隆先驱，实验胚胎学家。",
+  "events": [
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于鄞县",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "农家",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "留学比利时",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "布鲁塞尔",
+      "rationale": "留学",
+      "quote": null
+    },
+    {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国任教",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "山东大学",
+      "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1963,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鱼类细胞核移植",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "克隆鱼",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1978,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中科院副院长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "副院长",
+      "rationale": "领导",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1979,
+    "title": "逝世",
+    "retention": 0.95,
+    "reason": "克隆先驱",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "中国克隆之父"
+  }
+}

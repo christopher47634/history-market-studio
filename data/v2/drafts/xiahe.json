@@ -1,0 +1,205 @@
+{
+  "id": "xiahe",
+  "author": "claude",
+  "born": {
+    "year": -257,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -193,
+    "certainty": "确知"
+  },
+  "thesis": "沛县小吏出身，收秦律令图书、镇守关中，汉朝第一任相国。",
+  "events": [
+    {
+      "year": -257,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于沛县",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沛县丰邑人，出身寒微",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "沛丰人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -215,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任沛县主吏掾",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以文无害为沛主吏掾，屡护刘邦",
+      "rationale": "县中要吏",
+      "quote": {
+        "find": [
+          "主吏掾",
+          "文无害"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迎立沛公",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与曹参等迎刘邦为沛公，为丞督事",
+      "rationale": "反秦集团骨干",
+      "quote": {
+        "find": [
+          "丞督事",
+          "沛公"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收秦律令图书",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入咸阳独先收秦丞相御史律令图书",
+      "rationale": "掌握天下户口形势",
+      "quote": {
+        "find": [
+          "律令图书"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "月下追韩信",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "追回亡去的韩信，力荐为大将",
+      "rationale": "知人之功",
+      "quote": {
+        "find": [
+          "国士无双",
+          "追之"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -205,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "镇守关中",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "留守关中，给军粮兵员，侍太子治栎阳",
+      "rationale": "汉军后方总管",
+      "quote": {
+        "find": [
+          "关中",
+          "给军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -201,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "功居第一封酂侯",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "论功行封，萧何第一，封酂侯，食邑最多",
+      "rationale": "百官之首",
+      "quote": {
+        "find": [
+          "酂侯",
+          "功第一"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "诛韩信",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与吕后定计诱杀韩信，拜相国，益封五千户",
+      "rationale": "权位顶点",
+      "quote": {
+        "find": [
+          "相国",
+          "五千户"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -195,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "贱买民田自污",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "恐高帝疑忌，强买民田自污，一度下廷尉械系",
+      "rationale": "功高见疑",
+      "quote": {
+        "find": [
+          "械系",
+          "廷尉"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立萧相国世家",
+      "score": 86,
+      "rationale": "开国第一功臣的定位确立"
+    }
+  ],
+  "finale": {
+    "year": -193,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "萧规曹随，制度延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "汉初三杰之一，开国宰相的典范"
+  }
+}

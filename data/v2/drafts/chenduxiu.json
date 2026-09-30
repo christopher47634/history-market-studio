@@ -1,0 +1,120 @@
+{
+  "id": "chenduxiu",
+  "author": "claude",
+  "born": {
+    "year": 1879,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1942,
+    "certainty": "确知"
+  },
+  "thesis": "《新青年》主编，中共创始人之一，后被开除。",
+  "events": [
+    {
+      "year": 1879,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于安庆",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创《新青年》",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "新文化",
+      "rationale": "舆论",
+      "quote": null
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北大文科学长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "蔡元培聘",
+      "rationale": "学术",
+      "quote": null
+    },
+    {
+      "year": 1921,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中共中央局书记",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中共一大",
+      "rationale": "领袖",
+      "quote": null
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大革命失败去职",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "右倾",
+      "rationale": "失势",
+      "quote": null
+    },
+    {
+      "year": 1929,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被开除党籍",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "开除",
+      "rationale": "失势",
+      "quote": null
+    },
+    {
+      "year": 1932,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被捕入狱",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "国民党判刑",
+      "rationale": "入狱",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1942,
+    "title": "病逝江津",
+    "retention": 0.9,
+    "reason": "晚年贫病",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "争议",
+    "rationale": "新文化运动旗手"
+  }
+}

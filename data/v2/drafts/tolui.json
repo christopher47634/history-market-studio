@@ -1,0 +1,94 @@
+{
+  "id": "tolui",
+  "author": "claude",
+  "born": {
+    "year": 1193,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1232,
+    "certainty": "确知"
+  },
+  "thesis": "成吉思汗幼子，监国，三峰山大败金军。",
+  "events": [
+    {
+      "year": 1193,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于蒙古",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "幼子",
+      "rationale": "王子",
+      "quote": null
+    },
+    {
+      "year": 1219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随父西征",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "屠城",
+      "rationale": "战将",
+      "quote": null
+    },
+    {
+      "year": 1227,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "监国",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "成吉思汗崩，监国两年",
+      "rationale": "监国",
+      "quote": null
+    },
+    {
+      "year": 1229,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "让位窝阔台",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "推举窝阔台",
+      "rationale": "让位",
+      "quote": null
+    },
+    {
+      "year": 1232,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三峰山大败金军",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "灭金主力",
+      "rationale": "战功",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1232,
+    "title": "暴卒",
+    "retention": 0.9,
+    "reason": "其子蒙哥、忽必烈皆为大汗",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 58,
+    "label": "正面",
+    "rationale": "拖雷"
+  }
+}

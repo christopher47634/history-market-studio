@@ -1,0 +1,183 @@
+{
+  "id": "songqingling",
+  "name": "宋庆龄",
+  "born": {
+    "year": 1893,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1981,
+    "certainty": "确知"
+  },
+  "lifeSpan": 88,
+  "thesis": "孙中山夫人，国家名誉主席。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1893,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上海",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "名门",
+      "summary": "宋氏家族",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1915,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与孙中山结婚",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 16,
+      "rationale": "革命伴侣",
+      "summary": "东京",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1925,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "孙中山逝世",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 50,
+      "delta": 2,
+      "rationale": "孀居",
+      "summary": "守志",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1927,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反对清党出走苏联",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 46,
+      "delta": -4,
+      "rationale": "异见",
+      "summary": "发表声明",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1949,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中央人民政府副主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 40,
+      "rationale": "国家领导",
+      "summary": "副主席",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1981,
+      "age": 88,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国家名誉主席",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 0,
+      "rationale": "荣誉",
+      "summary": "病中",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1981,
+    "age": 88,
+    "title": "病逝",
+    "retention": 0.97,
+    "reason": "国之瑰宝",
+    "score": 83.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "国家名誉主席",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "国家名誉主席"
+  },
+  "peak": {
+    "title": "中央人民政府副主席",
+    "age": 56,
+    "score": 86
+  },
+  "trough": {
+    "title": "反对清党出走苏联",
+    "age": 34,
+    "score": 46
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    },
+    {
+      "fromAge": 34,
+      "toAge": 56,
+      "years": 22
+    },
+    {
+      "fromAge": 56,
+      "toAge": 88,
+      "years": 32
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

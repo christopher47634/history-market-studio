@@ -1,0 +1,99 @@
+{
+  "id": "changsunqueen",
+  "author": "claude",
+  "born": {
+    "year": 601,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 636,
+    "certainty": "确知"
+  },
+  "thesis": "唐太宗文德皇后，贤德之后的典范。",
+  "events": [
+    {
+      "year": 601,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "长孙晟之女",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 614,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嫁李世民",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十三岁嫁",
+      "rationale": "秦王妃",
+      "quote": null
+    },
+    {
+      "year": 626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄武门亲慰将士",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "亲慰勉将士",
+      "rationale": "生死一搏",
+      "quote": null
+    },
+    {
+      "year": 626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立为皇后",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "册为皇后",
+      "rationale": "母仪天下",
+      "quote": {
+        "find": [
+          "皇后"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 636,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "病逝",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "病笃仍谏",
+      "rationale": "贤后",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 636,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "太宗建层观望昭陵",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "贤后典范"
+  }
+}

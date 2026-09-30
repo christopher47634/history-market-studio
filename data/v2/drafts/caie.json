@@ -1,0 +1,94 @@
+{
+  "id": "caie",
+  "author": "claude",
+  "born": {
+    "year": 1882,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1916,
+    "certainty": "确知"
+  },
+  "thesis": "护国战争讨袁。",
+  "events": [
+    {
+      "year": 1882,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邵阳",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "贫寒",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "日本士官学校毕业",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "留学",
+      "rationale": "军校",
+      "quote": null
+    },
+    {
+      "year": 1911,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "昆明重九起义",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "云南都督",
+      "rationale": "都督",
+      "quote": null
+    },
+    {
+      "year": 1913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被调北京软禁",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "袁世凯监视",
+      "rationale": "软禁",
+      "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "潜回云南护国",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "护国军",
+      "rationale": "首义",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1916,
+    "title": "病逝日本",
+    "retention": 0.95,
+    "reason": "再造共和",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "护国元勋"
+  }
+}

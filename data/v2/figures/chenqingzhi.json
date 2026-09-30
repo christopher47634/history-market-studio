@@ -1,0 +1,160 @@
+{
+  "id": "chenqingzhi",
+  "name": "陈庆之",
+  "born": {
+    "year": 484,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 539,
+    "certainty": "确知"
+  },
+  "lifeSpan": 55,
+  "thesis": "白袍将军，七千人从铚县打到洛阳。",
+  "sources": [
+    {
+      "label": "《梁书·卷三十二 列传第二十六》",
+      "url": "https://zh.wikisource.org/wiki/%E6%A2%81%E6%9B%B8%2F%E5%8D%B732"
+    }
+  ],
+  "events": [
+    {
+      "year": 484,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于义兴",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 10,
+      "delta": 0,
+      "rationale": "寒门",
+      "summary": "寒门",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 525,
+      "age": 41,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任武威将军",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 26,
+      "rationale": "将领",
+      "summary": "为梁武帝旧臣",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 528,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "护送元颢入洛",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 44,
+      "rationale": "传奇远征",
+      "summary": "以七千人，自铚至洛阳，四十七战，所向无前",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 529,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "洛阳兵败",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 44,
+      "delta": -36,
+      "rationale": "全军覆没",
+      "summary": "尔朱荣反攻，军败，削发为僧逃归",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 533,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任北兖州刺史",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 20,
+      "rationale": "方面",
+      "summary": "镇守边地",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 539,
+    "age": 55,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "「名师大将莫自牢，千兵万马避白袍」",
+    "score": 60.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 76,
+      "rationale": "白袍将军",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "白袍将军"
+  },
+  "peak": {
+    "title": "护送元颢入洛",
+    "age": 44,
+    "score": 80
+  },
+  "trough": {
+    "title": "任武威将军",
+    "age": 41,
+    "score": 36
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 41,
+      "years": 41
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

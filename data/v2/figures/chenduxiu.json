@@ -1,0 +1,191 @@
+{
+  "id": "chenduxiu",
+  "name": "陈独秀",
+  "born": {
+    "year": 1879,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1942,
+    "certainty": "确知"
+  },
+  "lifeSpan": 63,
+  "thesis": "《新青年》主编，中共创始人之一，后被开除。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1879,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于安庆",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1915,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创《新青年》",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 37,
+      "rationale": "舆论",
+      "summary": "新文化",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1917,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北大文科学长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 4,
+      "rationale": "学术",
+      "summary": "蔡元培聘",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1921,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中共中央局书记",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 14,
+      "rationale": "领袖",
+      "summary": "中共一大",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1927,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大革命失败去职",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 9,
+      "delta": -71,
+      "rationale": "失势",
+      "summary": "右倾",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1929,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被开除党籍",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 16,
+      "delta": 7,
+      "rationale": "失势",
+      "summary": "开除",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1932,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被捕入狱",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -14,
+      "rationale": "入狱",
+      "summary": "国民党判刑",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1942,
+    "age": 63,
+    "title": "病逝江津",
+    "retention": 0.9,
+    "reason": "晚年贫病",
+    "score": 1.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 86,
+      "rationale": "新文化运动旗手",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "争议",
+    "rationale": "新文化运动旗手"
+  },
+  "peak": {
+    "title": "中共中央局书记",
+    "age": 42,
+    "score": 80
+  },
+  "trough": {
+    "title": "被捕入狱",
+    "age": 53,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 36,
+      "years": 36
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

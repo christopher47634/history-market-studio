@@ -1,0 +1,146 @@
+{
+  "id": "hanyu",
+  "author": "claude",
+  "born": {
+    "year": 768,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 824,
+    "certainty": "确知"
+  },
+  "thesis": "文起八代之衰，谏迎佛骨被贬潮州。",
+  "events": [
+    {
+      "year": 768,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于河阳",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三岁而孤，随兄嫂生活",
+      "rationale": "孤贫",
+      "quote": null
+    },
+    {
+      "year": 792,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三试乃中",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 803,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上疏被贬阳山",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "任监察御史，论宫市贬阳山令",
+      "rationale": "被贬",
+      "quote": {
+        "find": [
+          "陽山"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 817,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平淮西行军司马",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "从裴度平淮西",
+      "rationale": "立功",
+      "quote": {
+        "find": [
+          "淮西"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 819,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏迎佛骨贬潮州",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "上表谏迎佛骨，贬潮州刺史",
+      "rationale": "险些被杀",
+      "quote": {
+        "find": [
+          "佛骨",
+          "潮州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 820,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召回任国子祭酒",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "穆宗即位召回",
+      "rationale": "复用",
+      "quote": {
+        "find": [
+          "國子祭酒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 822,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宣抚镇州",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "单车宣抚王廷凑",
+      "rationale": "名臣",
+      "quote": {
+        "find": [
+          "鎮州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 824,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "古文运动影响千年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 94,
+    "label": "正面",
+    "rationale": "唐宋八大家之首"
+  }
+}

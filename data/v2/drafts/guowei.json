@@ -1,0 +1,81 @@
+{
+  "id": "guowei",
+  "author": "claude",
+  "born": {
+    "year": 904,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 954,
+    "certainty": "确知"
+  },
+  "thesis": "后周太祖，黄旗加身，节俭爱民。",
+  "events": [
+    {
+      "year": 904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邢州",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少孤",
+      "rationale": "孤贫",
+      "quote": null
+    },
+    {
+      "year": 947,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "后汉枢密使",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "位高权重",
+      "rationale": "重臣",
+      "quote": null
+    },
+    {
+      "year": 950,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "家族被诛起兵",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "隐帝杀其全家",
+      "rationale": "起兵",
+      "quote": null
+    },
+    {
+      "year": 951,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄旗加身称帝",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "建后周",
+      "rationale": "开国",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 954,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "传位柴荣",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 66,
+    "label": "正面",
+    "rationale": "后周开国之主"
+  }
+}

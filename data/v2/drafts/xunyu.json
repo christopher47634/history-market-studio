@@ -1,0 +1,143 @@
+{
+  "id": "xunyu",
+  "author": "claude",
+  "born": {
+    "year": 163,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 212,
+    "certainty": "确知"
+  },
+  "thesis": "王佐之才，为曹操定策奉迎天子，因反对曹操称公忧死。",
+  "events": [
+    {
+      "year": 163,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于颍川",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "荀淑之孙，颍川名门",
+      "rationale": "名门",
+      "quote": {
+        "find": [
+          "潁川"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 189,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "举孝廉",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "举孝廉，拜守宫令",
+      "rationale": "入仕",
+      "quote": {
+        "find": [
+          "守宮令"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 191,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "去袁绍投曹操",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "袁绍待以上宾，知其不能成事去从太祖",
+      "rationale": "择主",
+      "quote": {
+        "find": [
+          "吾之子房"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "奉迎天子",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劝太祖迎天子都许，为侍中守尚书令",
+      "rationale": "中枢",
+      "quote": {
+        "find": [
+          "尚書令",
+          "迎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "官渡定策",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官渡时劝太祖坚守",
+      "rationale": "决策之功",
+      "quote": {
+        "find": [
+          "官渡"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 212,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "反对曹操进爵国公",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "董昭等议太祖进爵国公，彧以为不宜",
+      "rationale": "与曹操决裂",
+      "quote": {
+        "find": [
+          "國公"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 212,
+    "title": "忧卒于寿春",
+    "retention": 0.85,
+    "reason": "曹操称魏公",
+    "quote": {
+      "find": [
+        "壽春"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "王佐之才"
+  }
+}

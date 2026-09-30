@@ -1,3 +1,5 @@
+import { figureV2ById } from "./v2/model.js";
+import { toLegacyFigure, buildComparisonV2 } from "./v2/engine.js";
 import { additionalFigures, dynastyOrder } from "./catalog.js";
 import { expandedFigures } from "./expandedCatalog.js";
 import { extendedFigures } from "./extendedCatalog.js";
@@ -198,7 +200,9 @@ export const figures = allFigures
   .map(attachFigureIndex)
   .map(attachDataQuality)
   .map(attachLegacyAwareTerminal)
-  .map(attachHistoricalCitations);
+  .map(attachHistoricalCitations)
+  // v2：经过校验的新数据覆盖旧数据，旧版的分期、领域、配色等索引字段保留。
+  .map((figure) => (figureV2ById[figure.id] ? toLegacyFigure(figureV2ById[figure.id], figure) : figure));
 
 export { dynastyOrder };
 
@@ -221,7 +225,8 @@ function addMicroTexture(figure,index,value,isEvent){
   return +Math.max(0,Math.min(100,value)).toFixed(1);
 }
 
-export function buildComparison(left, right) {
+export function buildComparison(left, right, axisChoice) {
+  if (left.v2 && right.v2) return buildComparisonV2(left, right, axisChoice);
   const step=.25;
   const maxAge=Math.ceil(Math.max(left.lifeSpan,right.lifeSpan));
   const rawAxis=Array.from({length:Math.round(maxAge/step)+1},(_,index)=>+(index*step).toFixed(1));

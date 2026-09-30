@@ -1,0 +1,104 @@
+{
+  "id": "guoshoujing",
+  "author": "claude",
+  "born": {
+    "year": 1231,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1316,
+    "certainty": "确知"
+  },
+  "thesis": "制《授时历》，开凿通惠河，天文水利大家。",
+  "events": [
+    {
+      "year": 1231,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邢台",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "祖父郭荣通数学",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1262,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "面陈水利六事",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "忽必烈召见",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1276,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主持四海测验",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "编历",
+      "rationale": "天文",
+      "quote": null
+    },
+    {
+      "year": 1280,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "颁《授时历》",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "一年365.2425天",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "授時曆"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1292,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "开通惠河",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "都水监",
+      "rationale": "水利",
+      "quote": {
+        "find": [
+          "通惠河"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1316,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "授时历行用三百六十年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "元代科学家"
+  }
+}

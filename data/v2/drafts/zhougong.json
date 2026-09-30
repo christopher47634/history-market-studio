@@ -1,0 +1,155 @@
+{
+  "id": "zhougong",
+  "author": "claude",
+  "born": {
+    "year": -1100,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -1032,
+    "certainty": "确知"
+  },
+  "thesis": "周文王之子，辅武王克商，摄政平叛，制礼作乐。",
+  "events": [
+    {
+      "year": -1100,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为周室公子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文王第四子",
+      "rationale": "王子",
+      "quote": null
+    },
+    {
+      "year": -1046,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辅武王克商",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "牧野之战，佐武王灭商",
+      "rationale": "开国功臣",
+      "quote": null
+    },
+    {
+      "year": -1043,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "摄政",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "武王崩，成王少，周公摄政当国",
+      "rationale": "天下政令出于周公",
+      "quote": {
+        "find": [
+          "攝行政當國"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1042,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "管蔡流言",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "管叔蔡叔流言周公将不利于成王",
+      "rationale": "遭疑",
+      "quote": {
+        "find": [
+          "流言"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1040,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东征平三监",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东征诛武庚、管叔，放蔡叔",
+      "rationale": "平定叛乱",
+      "quote": {
+        "find": [
+          "武庚",
+          "管叔"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1038,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "营建洛邑",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "营成周洛邑",
+      "rationale": "制度建设",
+      "quote": {
+        "find": [
+          "雒邑",
+          "成周"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1036,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "还政成王",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "成王长，周公反政成王，北面就臣位",
+      "rationale": "主动还政",
+      "quote": {
+        "find": [
+          "反政",
+          "北面"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -500,
+      "title": "孔子尊周公",
+      "score": 95,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -1032,
+    "title": "卒",
+    "retention": 0.97,
+    "reason": "礼乐制度奠定周代八百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "礼乐文明奠基者，孔子心中的圣人"
+  }
+}

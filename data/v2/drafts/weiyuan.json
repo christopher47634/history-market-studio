@@ -1,0 +1,94 @@
+{
+  "id": "weiyuan",
+  "author": "claude",
+  "born": {
+    "year": 1794,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1857,
+    "certainty": "确知"
+  },
+  "thesis": "师夷长技以制夷，《海国图志》。",
+  "events": [
+    {
+      "year": 1794,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邵阳",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1822,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "举人",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "举人",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1825,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "编《皇朝经世文编》",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "经世",
+      "rationale": "编纂",
+      "quote": null
+    },
+    {
+      "year": 1842,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "著《海国图志》",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "师夷长技",
+      "rationale": "名著",
+      "quote": null
+    },
+    {
+      "year": 1845,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第知州",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "高邮知州",
+      "rationale": "地方",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1857,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "影响日本明治维新",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "开眼看世界"
+  }
+}

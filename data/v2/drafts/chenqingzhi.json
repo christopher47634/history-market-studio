@@ -1,0 +1,94 @@
+{
+  "id": "chenqingzhi",
+  "author": "claude",
+  "born": {
+    "year": 484,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 539,
+    "certainty": "确知"
+  },
+  "thesis": "白袍将军，七千人从铚县打到洛阳。",
+  "events": [
+    {
+      "year": 484,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于义兴",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "寒门",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 525,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任武威将军",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为梁武帝旧臣",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 528,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "护送元颢入洛",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以七千人，自铚至洛阳，四十七战，所向无前",
+      "rationale": "传奇远征",
+      "quote": null
+    },
+    {
+      "year": 529,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "洛阳兵败",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "尔朱荣反攻，军败，削发为僧逃归",
+      "rationale": "全军覆没",
+      "quote": null
+    },
+    {
+      "year": 533,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任北兖州刺史",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "镇守边地",
+      "rationale": "方面",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 539,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "「名师大将莫自牢，千兵万马避白袍」",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "白袍将军"
+  }
+}

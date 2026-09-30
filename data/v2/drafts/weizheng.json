@@ -1,0 +1,153 @@
+{
+  "id": "weizheng",
+  "author": "claude",
+  "born": {
+    "year": 580,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 643,
+    "certainty": "确知"
+  },
+  "thesis": "先事李建成，玄武门后被太宗重用，以直谏闻名。",
+  "events": [
+    {
+      "year": 580,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于巨鹿",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少孤贫，出家为道士",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 617,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随李密起事",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为元宝藏书记",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 619,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归唐辅太子建成",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为太子洗马",
+      "rationale": "储君幕僚",
+      "quote": {
+        "find": [
+          "洗馬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄武门后被召",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "太宗召而责之，征举止自若",
+      "rationale": "生死一线",
+      "quote": null
+    },
+    {
+      "year": 626,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "太宗释之任詹事主簿",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太宗器之",
+      "rationale": "化险为夷",
+      "quote": null
+    },
+    {
+      "year": 629,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任秘书监参朝政",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "前后谏二百余事",
+      "rationale": "直谏",
+      "quote": {
+        "find": [
+          "諫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 636,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜特进知门下事",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "参与朝章国典",
+      "rationale": "宰辅",
+      "quote": {
+        "find": [
+          "特進"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 643,
+      "title": "太宗推倒其碑",
+      "score": 60,
+      "rationale": "因荐人不当，太宗推碑"
+    },
+    {
+      "year": 645,
+      "title": "太宗重立其碑",
+      "score": 82,
+      "rationale": "征辽后悔之，复立碑"
+    }
+  ],
+  "finale": {
+    "year": 643,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "太宗「以人为镜」",
+    "quote": {
+      "find": [
+        "鏡"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "千古诤臣"
+  }
+}

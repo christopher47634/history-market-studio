@@ -1,0 +1,209 @@
+{
+  "id": "liangqichao",
+  "name": "梁启超",
+  "born": {
+    "year": 1873,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1929,
+    "certainty": "确知"
+  },
+  "lifeSpan": 56,
+  "thesis": "戊戌变法领袖，新民说，饮冰室，学术大师。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1873,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于新会",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "农家",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1889,
+      "age": 16,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中举",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 15,
+      "rationale": "才子",
+      "summary": "十六岁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1895,
+      "age": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "公车上书",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 13,
+      "rationale": "维新",
+      "summary": "随康有为",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1898,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "戊戌变法失败流亡",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -46,
+      "rationale": "流亡",
+      "summary": "东渡日本",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1902,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《新民丛报》",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 62,
+      "rationale": "巅峰",
+      "summary": "舆论领袖",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1913,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "司法总长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 14,
+      "rationale": "入阁",
+      "summary": "进步党",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1917,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "财政总长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 0,
+      "rationale": "入阁",
+      "summary": "讨袁后",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1925,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "清华国学院导师",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 68,
+      "delta": -10,
+      "rationale": "学术",
+      "summary": "四大导师",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1929,
+    "age": 56,
+    "title": "病逝",
+    "retention": 0.95,
+    "reason": "学术思想影响深远",
+    "score": 64.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 90,
+      "rationale": "近代启蒙思想家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "近代启蒙思想家"
+  },
+  "peak": {
+    "title": "司法总长",
+    "age": 40,
+    "score": 78
+  },
+  "trough": {
+    "title": "戊戌变法失败流亡",
+    "age": 25,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 16,
+      "years": 16
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

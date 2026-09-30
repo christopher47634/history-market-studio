@@ -1,0 +1,148 @@
+{
+  "id": "zengguofan",
+  "author": "claude",
+  "born": {
+    "year": 1811,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1872,
+    "certainty": "确知"
+  },
+  "thesis": "湘军统帅，平定太平天国，洋务运动发起人之一。",
+  "events": [
+    {
+      "year": 1811,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于湘乡",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "耕读之家",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1838,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翰林",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1849,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "礼部侍郎",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十年七迁",
+      "rationale": "京官",
+      "quote": null
+    },
+    {
+      "year": 1853,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "在籍办团练",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "湘军",
+      "rationale": "起步",
+      "quote": null
+    },
+    {
+      "year": 1854,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "靖港之败投水",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "跳水被救",
+      "rationale": "绝境",
+      "quote": {
+        "find": [
+          "靖港"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1860,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "两江总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "督办江南军务",
+      "rationale": "方面",
+      "quote": {
+        "find": [
+          "兩江總督"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1864,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻克天京",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太平天国灭亡",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1870,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "天津教案",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "举国诟骂",
+      "rationale": "名誉受损",
+      "quote": {
+        "find": [
+          "天津"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1872,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "湘军、淮军",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "争议",
+    "rationale": "晚清中兴名臣"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "xianxinghai",
+  "name": "冼星海",
+  "born": {
+    "year": 1905,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1945,
+    "certainty": "确知"
+  },
+  "lifeSpan": 40,
+  "thesis": "《黄河大合唱》作曲者。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1905,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于澳门",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 10,
+      "delta": 0,
+      "rationale": "贫寒",
+      "summary": "船工",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1929,
+      "age": 24,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴巴黎勤工学音乐",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 8,
+      "rationale": "苦学",
+      "summary": "餐馆",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1935,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 14,
+      "rationale": "作曲",
+      "summary": "救亡歌曲",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1939,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《黄河大合唱》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 28,
+      "rationale": "巅峰",
+      "summary": "延安",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1940,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴苏联",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 31,
+      "delta": -29,
+      "rationale": "困顿",
+      "summary": "滞留困顿",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1945,
+    "age": 40,
+    "title": "病逝莫斯科",
+    "retention": 0.9,
+    "reason": "黄河大合唱",
+    "score": 27.9,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "人民音乐家",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "人民音乐家"
+  },
+  "peak": {
+    "title": "《黄河大合唱》",
+    "age": 34,
+    "score": 60
+  },
+  "trough": {
+    "title": "赴巴黎勤工学音乐",
+    "age": 24,
+    "score": 18
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 24,
+      "years": 24
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

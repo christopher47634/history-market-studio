@@ -1,0 +1,206 @@
+{
+  "id": "anlushan",
+  "name": "安禄山",
+  "born": {
+    "year": 703,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 757,
+    "certainty": "确知"
+  },
+  "lifeSpan": 54,
+  "thesis": "胡人节度使，身兼三镇，起兵叛唐，被其子所杀。",
+  "sources": [
+    {
+      "label": "《旧唐书·卷二百上列传第一百五十上 安禄山 高尚 孙孝哲 史思明》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+    }
+  ],
+  "events": [
+    {
+      "year": 703,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于营州",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 8,
+      "delta": 0,
+      "rationale": "边地胡人",
+      "summary": "胡人，母为巫",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 733,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "偷羊将斩获赦",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -6,
+      "rationale": "险死",
+      "summary": "张守珪欲杀之，爱其骁勇释之",
+      "evidence": "原文",
+      "quote": {
+        "text": "二十年，張守珪為幽州節度，祿山盜羊事覺，守珪剝坐，欲棒殺之，大呼曰：「大夫不欲滅兩蕃耶？",
+        "textSimplified": "二十年，张守珪为幽州节度，禄山盗羊事觉，守珪剥坐，欲棒杀之，大呼曰：「大夫不欲灭两蕃耶？",
+        "source": "《旧唐书·卷二百上列传第一百五十上 安禄山 高尚 孙孝哲 史思明》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 742,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平卢节度使",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 78,
+      "rationale": "方镇",
+      "summary": "迁平卢节度使",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 751,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "身兼三镇",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 8,
+      "rationale": "权倾北方",
+      "summary": "兼河东节度",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 755,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "范阳起兵",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 2,
+      "rationale": "叛乱",
+      "summary": "起兵叛唐",
+      "evidence": "原文",
+      "quote": {
+        "text": "三載，代裴寬為范陽節度，河北採訪、平盧軍等使如故。",
+        "textSimplified": "三载，代裴宽为范阳节度，河北采访、平卢军等使如故。",
+        "source": "《旧唐书·卷二百上列传第一百五十上 安禄山 高尚 孙孝哲 史思明》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B7200%E4%B8%8A"
+      },
+      "verified": true
+    },
+    {
+      "year": 756,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "洛阳称帝",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 91,
+      "delta": 1,
+      "rationale": "称帝",
+      "summary": "国号大燕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 757,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被子所杀",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 28,
+      "delta": -63,
+      "rationale": "死",
+      "summary": "其子安庆绪杀之",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 757,
+    "age": 54,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "安史之乱持续",
+    "score": 22.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 68,
+      "rationale": "盛唐由盛转衰的罪魁",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 68,
+    "label": "负面",
+    "rationale": "盛唐由盛转衰的罪魁"
+  },
+  "peak": {
+    "title": "洛阳称帝",
+    "age": 53,
+    "score": 91
+  },
+  "trough": {
+    "title": "偷羊将斩获赦",
+    "age": 30,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 30,
+      "years": 30
+    }
+  ],
+  "quality": {
+    "quotesVerified": 2,
+    "quotesClaimed": 2,
+    "author": "claude"
+  }
+}
