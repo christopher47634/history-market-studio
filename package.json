@@ -20,7 +20,7 @@
     "test:lab": "node tests/e2e-lab.mjs",
     "test:app": "node tests/e2e-app.mjs",
     "test:cross": "node tests/e2e-cross.mjs",
-    "test:static": "npm run test:data && npm run test:trajectories && npm run test:ui && npm run test:v2 && npm run test:sites",
+    "test:static": "npm run test:data && npm run test:trajectories && npm run test:ui && npm run test:v2",
     "v2:pin-wiki": "node pipeline/pin-wiki.mjs",
     "v2:audit": "node pipeline/audit-consistency.mjs --modern"
   },

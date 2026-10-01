@@ -22,11 +22,11 @@ jobs:
       - run: npm run test:trajectories
       - run: npm run test:ui
       - run: npm run test:v2
-      - run: npm run test:sites
 
       # 生产包：体积预算、CSP 哈希、首屏骨架
       - run: npm run build
       - run: npm run test:production
+      - run: npm run test:sites
 
       # 真实浏览器：Chrome（CDP）+ Firefox + WebKit（Safari 内核）
       - run: npx playwright install --with-deps firefox webkit
