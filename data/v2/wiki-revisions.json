@@ -1,0 +1,217 @@
+{
+ "maozedong": {
+  "title": "毛泽东",
+  "revid": 94685932,
+  "timestamp": "2026-10-01T09:55:51Z"
+ },
+ "linzexu": {
+  "title": "林则徐",
+  "revid": 93187041,
+  "timestamp": "2026-06-24T10:32:14Z"
+ },
+ "zengguofan": {
+  "title": "曾国藩",
+  "revid": 92940727,
+  "timestamp": "2026-06-04T01:05:31Z"
+ },
+ "zuozongtang": {
+  "title": "左宗棠",
+  "revid": 94257007,
+  "timestamp": "2026-09-09T06:09:14Z"
+ },
+ "lihongzhang": {
+  "title": "李鴻章",
+  "revid": 94087335,
+  "timestamp": "2026-08-29T03:02:03Z"
+ },
+ "cixi": {
+  "title": "慈禧太后",
+  "revid": 94537230,
+  "timestamp": "2026-09-24T15:21:24Z"
+ },
+ "sunzhongshan": {
+  "title": "孫中山",
+  "revid": 94535291,
+  "timestamp": "2026-09-24T12:34:01Z"
+ },
+ "huangxing": {
+  "title": "黄兴",
+  "revid": 94447001,
+  "timestamp": "2026-09-19T18:59:25Z"
+ },
+ "qiujin": {
+  "title": "秋瑾",
+  "revid": 94586671,
+  "timestamp": "2026-09-26T12:22:56Z"
+ },
+ "liangqichao": {
+  "title": "梁启超",
+  "revid": 94060916,
+  "timestamp": "2026-08-27T03:20:56Z"
+ },
+ "kangyouwei": {
+  "title": "康有为",
+  "revid": 94229023,
+  "timestamp": "2026-09-07T07:43:40Z"
+ },
+ "yanfu": {
+  "title": "嚴復",
+  "revid": 94603249,
+  "timestamp": "2026-09-27T09:07:42Z"
+ },
+ "caiyuanpei": {
+  "title": "蔡元培",
+  "revid": 94354846,
+  "timestamp": "2026-09-14T09:59:44Z"
+ },
+ "luxunwriter": {
+  "title": "鲁迅",
+  "revid": 93388577,
+  "timestamp": "2026-07-09T22:06:52Z"
+ },
+ "hushi": {
+  "title": "胡適",
+  "revid": 94628340,
+  "timestamp": "2026-09-28T16:01:13Z"
+ },
+ "chenduxiu": {
+  "title": "陈独秀",
+  "revid": 94610687,
+  "timestamp": "2026-09-27T17:10:50Z"
+ },
+ "lidazhao": {
+  "title": "李大钊",
+  "revid": 94441829,
+  "timestamp": "2026-09-19T12:31:39Z"
+ },
+ "songqingling": {
+  "title": "宋庆龄",
+  "revid": 94598978,
+  "timestamp": "2026-09-27T03:59:17Z"
+ },
+ "linhuiyin": {
+  "title": "林徽因",
+  "revid": 93196521,
+  "timestamp": "2026-06-25T07:06:04Z"
+ },
+ "meilanfang": {
+  "title": "梅兰芳",
+  "revid": 94299256,
+  "timestamp": "2026-09-11T13:22:17Z"
+ },
+ "zhouenlai": {
+  "title": "周恩来",
+  "revid": 94675833,
+  "timestamp": "2026-09-30T22:03:02Z"
+ },
+ "dengxiaoping": {
+  "title": "邓小平",
+  "revid": 94675670,
+  "timestamp": "2026-09-30T21:46:17Z"
+ },
+ "zhude": {
+  "title": "朱德",
+  "revid": 94337854,
+  "timestamp": "2026-09-13T12:31:06Z"
+ },
+ "qianxuesen": {
+  "title": "钱学森",
+  "revid": 94644003,
+  "timestamp": "2026-09-29T12:51:37Z"
+ },
+ "dengjiaxian": {
+  "title": "邓稼先",
+  "revid": 94476275,
+  "timestamp": "2026-09-21T07:54:20Z"
+ },
+ "yuanlongping": {
+  "title": "袁隆平",
+  "revid": 93294245,
+  "timestamp": "2026-07-02T17:21:13Z"
+ },
+ "hualuogeng": {
+  "title": "华罗庚",
+  "revid": 93827407,
+  "timestamp": "2026-08-09T15:19:06Z"
+ },
+ "qiansanqiang": {
+  "title": "錢三強",
+  "revid": 93197267,
+  "timestamp": "2026-06-25T07:42:43Z"
+ },
+ "zhukezhen": {
+  "title": "竺可桢",
+  "revid": 92870494,
+  "timestamp": "2026-05-31T15:54:13Z"
+ },
+ "lisiguang": {
+  "title": "李四光",
+  "revid": 93201721,
+  "timestamp": "2026-06-25T14:23:12Z"
+ },
+ "weiyuan": {
+  "title": "魏源",
+  "revid": 93770745,
+  "timestamp": "2026-08-04T16:21:10Z"
+ },
+ "zhantianyou": {
+  "title": "詹天佑",
+  "revid": 93785746,
+  "timestamp": "2026-08-06T01:29:42Z"
+ },
+ "zhangjian": {
+  "title": "张謇",
+  "revid": 94275117,
+  "timestamp": "2026-09-10T06:43:33Z"
+ },
+ "qibaishi": {
+  "title": "齐白石",
+  "revid": 94499632,
+  "timestamp": "2026-09-22T14:21:28Z"
+ },
+ "caie": {
+  "title": "蔡锷",
+  "revid": 94229895,
+  "timestamp": "2026-09-07T08:58:59Z"
+ },
+ "xubeihong": {
+  "title": "徐悲鸿",
+  "revid": 93578102,
+  "timestamp": "2026-07-21T05:23:34Z"
+ },
+ "maoyisheng": {
+  "title": "茅以昇",
+  "revid": 94310760,
+  "timestamp": "2026-09-12T05:50:30Z"
+ },
+ "dengshichang": {
+  "title": "邓世昌",
+  "revid": 94110381,
+  "timestamp": "2026-08-30T17:47:48Z"
+ },
+ "chenjiageng": {
+  "title": "陈嘉庚",
+  "revid": 93845708,
+  "timestamp": "2026-08-11T05:10:48Z"
+ },
+ "nieer": {
+  "title": "聂耳",
+  "revid": 93761659,
+  "timestamp": "2026-08-04T01:01:18Z"
+ },
+ "xianxinghai": {
+  "title": "冼星海",
+  "revid": 94513758,
+  "timestamp": "2026-09-23T08:13:13Z"
+ },
+ "qianweichang": {
+  "title": "钱伟长",
+  "revid": 94232759,
+  "timestamp": "2026-09-07T13:24:58Z"
+ },
+ "tongdizhou": {
+  "title": "童第周",
+  "revid": 93760259,
+  "timestamp": "2026-08-03T20:40:54Z"
+ }
+}

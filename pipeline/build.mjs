@@ -13,7 +13,9 @@ const DATA = new URL("../data/v2/", import.meta.url);
 const TODAY = 2026;
 const wsUrl = (title) => `https://zh.wikisource.org/wiki/${encodeURIComponent(title)}`;
 // 近现代人物没有正史，另挂中文维基条目：引句同样逐字核验，但依据标为「百科」，不冒充原文。
-const srcUrl = (w) => (w.site === "wp" ? `https://zh.wikipedia.org/wiki/${encodeURIComponent(w.title)}` : wsUrl(w.title));
+// 固定了版本（wiki-revisions.json）的条目用 oldid 永久链接，打开就是当时核对的那一版。
+const srcUrl = (w, rev) => (w.site !== "wp" ? wsUrl(w.title) : rev ? `https://zh.wikipedia.org/w/index.php?title=${encodeURIComponent(rev.title)}&oldid=${rev.revid}` : `https://zh.wikipedia.org/wiki/${encodeURIComponent(w.title)}`);
+const srcLabel0 = (w, rev) => (w.site === "wp" && rev ? `${w.label}（${rev.timestamp.slice(0, 10)} 版）` : w.label);
 // 公元前没有 0 年：前 1 年的下一年是 1 年。
 const ageAt = (born, year) => year - born - (born < 0 && year > 0 ? 1 : 0);
 const inBand = ([lo, hi], value) => Number.isFinite(value) && value >= lo && value <= hi;
@@ -36,7 +38,7 @@ export function buildFigure(person, draft, sources, rescore = null) {
   const cap = capFor(person.id);
   const born = draft.born.year;
   const died = draft.died.year;
-  const srcLabel = (i) => person.ws[i]?.label ?? "未知来源";
+  const srcLabel = (i) => (person.ws[i] ? srcLabel0(person.ws[i], person.wikiRev) : "未知来源");
 
   const cursors = sources.map(() => 0);
   const checkQuote = (quote, where) => {
@@ -56,7 +58,7 @@ export function buildFigure(person, draft, sources, rescore = null) {
     if (!person.ws[quote.source]) { errors.push(`${where}：引文来源编号 ${quote.source} 不存在`); return { evidence: "概括", quote: null, verified: false }; }
     if (quoteFound(quote.text, [sources[quote.source]])) {
       const w = person.ws[quote.source];
-      return { evidence: w.site === "wp" ? "百科" : "原文", verified: true, quote: { text: quote.text, textSimplified: toSimplified(quote.text), source: srcLabel(quote.source), url: srcUrl(w) } };
+      return { evidence: w.site === "wp" ? "百科" : "原文", verified: true, quote: { text: quote.text, textSimplified: toSimplified(quote.text), source: srcLabel(quote.source), url: srcUrl(w, person.wikiRev) } };
     }
     warnings.push(`${where}：引文在原文里找不到，已降为「概括」——「${quote.text.slice(0, 24)}」`);
     return { evidence: "概括", quote: null, verified: false, rejectedQuote: quote.text };
@@ -150,7 +152,7 @@ export function buildFigure(person, draft, sources, rescore = null) {
   return {
     figure: {
       id: person.id, name: person.name, born: draft.born, died: draft.died, lifeSpan: ageAt(born, died), thesis: draft.thesis,
-      sources: person.ws.map((w) => ({ label: w.label, url: srcUrl(w), ...(w.site === "wp" ? { site: "wp" } : {}) })),
+      sources: person.ws.map((w) => ({ label: srcLabel0(w, person.wikiRev), url: srcUrl(w, person.wikiRev), ...(w.site === "wp" ? { site: "wp", license: "CC BY-SA 4.0" } : {}) })),
       events, finale, posthumous, legacy,
       peak: { title: peak.title, age: peak.age, score: peak.score },
       trough: trough ? { title: trough.title, age: trough.age, score: trough.score } : null,
@@ -171,11 +173,14 @@ const picksFile = new URL("quote-picks.json", DATA);
 const quotePicks = existsSync(picksFile) ? JSON.parse(await readFile(picksFile, "utf8")) : {};
 const adjFile = new URL("adjudications.json", DATA);
 const adjudications = existsSync(adjFile) ? JSON.parse(await readFile(adjFile, "utf8")) : {};
+const revFile = new URL("wiki-revisions.json", DATA);
+const wikiRevs = existsSync(revFile) ? JSON.parse(await readFile(revFile, "utf8")) : {};
 const drafts = (await readdir(new URL("drafts/", DATA))).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5));
 const built = [];
 for (const id of drafts.filter((d) => !wanted.length || wanted.includes(d))) {
-  const person = ALL.find((p) => p.id === id);
-  if (!person) { console.log(`✗ ${id}：不在样板登记表里`); continue; }
+  const found = ALL.find((p) => p.id === id);
+  if (!found) { console.log(`✗ ${id}：不在样板登记表里`); continue; }
+  const person = wikiRevs[id] ? { ...found, wikiRev: wikiRevs[id] } : found;
   const draft = JSON.parse(await readFile(new URL(`drafts/${id}.json`, DATA), "utf8"));
   // 裁定：起草与复核分歧的事件，按 adjudications.json 覆盖档位和危局，并从复核比对里剔除。
   const ruling = adjudications[id] ?? {};

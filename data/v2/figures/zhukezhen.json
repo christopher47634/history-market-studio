@@ -13,9 +13,10 @@
   "thesis": "气象学家，浙江大学校长，西迁办学。",
   "sources": [
     {
-      "label": "维基百科「竺可桢」",
-      "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2",
-      "site": "wp"
+      "label": "维基百科「竺可桢」（2026-05-31 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494",
+      "site": "wp",
+      "license": "CC BY-SA 4.0"
     }
   ],
   "events": [
@@ -55,8 +56,8 @@
       "quote": {
         "text": "1905年进入复旦公学中学部学习。",
         "textSimplified": "1905年进入复旦公学中学部学习。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -78,8 +79,8 @@
       "quote": {
         "text": "1910年，凭庚子赔款奖学金赴美留学。",
         "textSimplified": "1910年，凭庚子赔款奖学金赴美留学。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -101,8 +102,8 @@
       "quote": {
         "text": "1918年获博士学位，论文课题为《远东台风的新分类》。",
         "textSimplified": "1918年获博士学位，论文课题为《远东台风的新分类》。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -142,8 +143,8 @@
       "quote": {
         "text": "1925年，因东南大学派系斗争，竺可桢转任商务出版社编辑。",
         "textSimplified": "1925年，因东南大学派系斗争，竺可桢转任商务出版社编辑。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -153,20 +154,20 @@
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "中研院气象所所长",
-      "tier": "成名",
-      "tierScore": 54,
+      "tier": "方面名家",
+      "tierScore": 58,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "score": 54,
-      "delta": 6,
+      "score": 58,
+      "delta": 10,
       "rationale": "领军",
       "summary": "建全国气象台网",
       "evidence": "百科",
       "quote": {
         "text": "1929年到1936年任中央研究院气象研究所所长。",
         "textSimplified": "1929年到1936年任中央研究院气象研究所所长。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -181,15 +182,15 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 66,
-      "delta": 12,
+      "delta": 8,
       "rationale": "校长",
       "summary": "求是校训",
       "evidence": "百科",
       "quote": {
         "text": "1936年4月赴杭州就任国立浙江大学校长时，并未作长久计，“家”还在南京",
         "textSimplified": "1936年4月赴杭州就任国立浙江大学校长时，并未作长久计，“家”还在南京",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -247,8 +248,8 @@
       "quote": {
         "text": "1948年，当选为中央研究院第一届院士。",
         "textSimplified": "1948年，当选为中央研究院第一届院士。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -270,8 +271,8 @@
       "quote": {
         "text": "1949年中国科学院成立后，任副院长。",
         "textSimplified": "1949年中国科学院成立后，任副院长。",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -293,8 +294,8 @@
       "quote": {
         "text": "1962年，竺可桢向中共递交入党申请书，当年6月4日，中国科学院办公厅秘书处党支部举行党员大会",
         "textSimplified": "1962年，竺可桢向中共递交入党申请书，当年6月4日，中国科学院办公厅秘书处党支部举行党员大会",
-        "source": "维基百科「竺可桢」",
-        "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+        "source": "维基百科「竺可桢」（2026-05-31 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
       },
       "verified": true
     },
@@ -328,8 +329,8 @@
     "quote": {
       "text": "1974年2月7日，因肺病在北京逝世。",
       "textSimplified": "1974年2月7日，因肺病在北京逝世。",
-      "source": "维基百科「竺可桢」",
-      "url": "https://zh.wikipedia.org/wiki/%E7%AB%BA%E5%8F%AF%E6%A1%A2"
+      "source": "维基百科「竺可桢」（2026-05-31 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E7%AB%BA%E5%8F%AF%E6%A1%A2&oldid=92870494"
     },
     "verified": true
   },

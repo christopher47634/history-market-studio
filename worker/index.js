@@ -8,7 +8,7 @@ const secure = (response) => {
   secured.headers.set("x-frame-options", "SAMEORIGIN");
   secured.headers.set(
     "content-security-policy",
-    "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'self'",
+    "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-V++obZ3w5ENFJUMivHkvZjDRmTQ24DR/WvO7VdEaoas='; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'self'",
   );
   return secured;
 };

@@ -13,9 +13,10 @@
   "thesis": "地质学家，第四纪冰川，找油。",
   "sources": [
     {
-      "label": "维基百科「李四光」",
-      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89",
-      "site": "wp"
+      "label": "维基百科「李四光」（2026-06-25 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721",
+      "site": "wp",
+      "license": "CC BY-SA 4.0"
     }
   ],
   "events": [
@@ -55,8 +56,8 @@
       "quote": {
         "text": "李四光原名李仲揆，十三周岁（1902年冬，虚岁十四岁）赴武昌求学小学报名时误将年龄“十四”填入姓名一栏",
         "textSimplified": "李四光原名李仲揆，十三周岁（1902年冬，虚岁十四岁）赴武昌求学小学报名时误将年龄“十四”填入姓名一栏",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -78,8 +79,8 @@
       "quote": {
         "text": "光绪三十年五月1904年赴日本留学，同年参加同盟会，先后在东京弘文学院、大阪高等工业学校学习",
         "textSimplified": "光绪三十年五月1904年赴日本留学，同年参加同盟会，先后在东京弘文学院、大阪高等工业学校学习",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -89,11 +90,11 @@
       "yearCertainty": "确知",
       "kind": "sub",
       "title": "湖北军政府实业部长",
-      "tier": "初起",
-      "tierScore": 36,
+      "tier": "成名",
+      "tierScore": 44,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "score": 36,
+      "score": 44,
       "delta": 0,
       "rationale": "入仕",
       "summary": "同盟会最年轻成员",
@@ -101,8 +102,8 @@
       "quote": {
         "text": "1911年，作为中国同盟会年龄最小的第一批成员，李四光参与革命，并出任湖北同盟会支部书记与湖北军政府实业部部长。",
         "textSimplified": "1911年，作为中国同盟会年龄最小的第一批成员，李四光参与革命，并出任湖北同盟会支部书记与湖北军政府实业部部长。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -124,8 +125,8 @@
       "quote": {
         "text": "1913年后，李四光留学英国，在伯明翰大学学习地质学，并在1918年获得硕士学位。",
         "textSimplified": "1913年后，李四光留学英国，在伯明翰大学学习地质学，并在1918年获得硕士学位。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -147,8 +148,8 @@
       "quote": {
         "text": "1920年，李四光受丁文江号召回国，并于次年担任北京大学地质系主任。",
         "textSimplified": "1920年，李四光受丁文江号召回国，并于次年担任北京大学地质系主任。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -170,8 +171,8 @@
       "quote": {
         "text": "1927年，李四光主持筹建中央研究院地质研究所，并于次年担任所长。",
         "textSimplified": "1927年，李四光主持筹建中央研究院地质研究所，并于次年担任所长。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -193,8 +194,8 @@
       "quote": {
         "text": "1928年7月至1938年4月任国立武汉大学建筑筹备委员长，后在南京参与创建中央研究院",
         "textSimplified": "1928年7月至1938年4月任国立武汉大学建筑筹备委员长，后在南京参与创建中央研究院",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -216,8 +217,8 @@
       "quote": {
         "text": "1934年，李四光赴英讲授“中国地质学”，并出版同名著作。",
         "textSimplified": "1934年，李四光赴英讲授“中国地质学”，并出版同名著作。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -257,8 +258,8 @@
       "quote": {
         "text": "抗战期间，他在重庆大学任教，并在1948年前往英国参与国际地质学会会议。",
         "textSimplified": "抗战期间，他在重庆大学任教，并在1948年前往英国参与国际地质学会会议。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -280,8 +281,8 @@
       "quote": {
         "text": "李四光秘密回国，随后出任地质部部长、中国科学院副院长、中国科学院学部委员、中国地质学会理事长、中国科协主席、世界科学工作者协会副主席、全国政协副主席、苏联科学院外籍院士、中共中央委员、国务院科教组组长等要职",
         "textSimplified": "李四光秘密回国，随后出任地质部部长、中国科学院副院长、中国科学院学部委员、中国地质学会理事长、中国科协主席、世界科学工作者协会副主席、全国政协副主席、苏联科学院外籍院士、中共中央委员、国务院科教组组长等要职",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -321,8 +322,8 @@
       "quote": {
         "text": "1958年当选为中国科学技术协会首任主席。",
         "textSimplified": "1958年当选为中国科学技术协会首任主席。",
-        "source": "维基百科「李四光」",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+        "source": "维基百科「李四光」（2026-06-25 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
       },
       "verified": true
     },
@@ -349,7 +350,7 @@
       "age": 77,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "周恩来保护",
+      "title": "文革中受到保护",
       "tier": "重臣主帅",
       "tierScore": 80,
       "crisis": "受挫",
@@ -357,7 +358,7 @@
       "score": 75,
       "delta": 0,
       "rationale": "受冲击",
-      "summary": "文革中受冲击较轻",
+      "summary": "列入周恩来提出的保护名单，受冲击较轻",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -374,8 +375,8 @@
     "quote": {
       "text": "1971年4月29日在北京逝世，享年82岁。",
       "textSimplified": "1971年4月29日在北京逝世，享年82岁。",
-      "source": "维基百科「李四光」",
-      "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%9B%9B%E5%85%89"
+      "source": "维基百科「李四光」（2026-06-25 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9D%8E%E5%9B%9B%E5%85%89&oldid=93201721"
     },
     "verified": true
   },

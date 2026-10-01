@@ -265,7 +265,7 @@ export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pin
   };
   useImperativeHandle(ref, () => api);
 
-  return <div ref={box} className="v3-chart-canvas" role="img" aria-label="人生走势图：滚轮缩放，拖动平移，点击节点查看详情" />;
+  return <div ref={box} className="v3-chart-canvas" role="img" aria-label="人生走势图：滚轮缩放，拖动平移，点击节点查看详情；完整数据见「文字版」" aria-describedby="v3-chart-summary" />;
 });
 
 export { LEVELS };

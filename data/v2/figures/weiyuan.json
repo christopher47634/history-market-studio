@@ -17,9 +17,10 @@
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7486"
     },
     {
-      "label": "维基百科「魏源」",
-      "url": "https://zh.wikipedia.org/wiki/%E9%AD%8F%E6%BA%90",
-      "site": "wp"
+      "label": "维基百科「魏源」（2026-08-04 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%AD%8F%E6%BA%90&oldid=93770745",
+      "site": "wp",
+      "license": "CC BY-SA 4.0"
     }
   ],
   "events": [
@@ -105,8 +106,8 @@
       "quote": {
         "text": "1840年至1841年，曾参与裕谦戎幕，依照英国战俘的口供编成《英吉利小志》。",
         "textSimplified": "1840年至1841年，曾参与裕谦戎幕，依照英国战俘的口供编成《英吉利小志》。",
-        "source": "维基百科「魏源」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%AD%8F%E6%BA%90"
+        "source": "维基百科「魏源」（2026-08-04 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%AD%8F%E6%BA%90&oldid=93770745"
       },
       "verified": true
     },
@@ -128,8 +129,8 @@
       "quote": {
         "text": "1841年7月，在镇江与林则徐相遇，纵谈时事和今后对策。",
         "textSimplified": "1841年7月，在镇江与林则徐相遇，纵谈时事和今后对策。",
-        "source": "维基百科「魏源」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%AD%8F%E6%BA%90"
+        "source": "维基百科「魏源」（2026-08-04 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%AD%8F%E6%BA%90&oldid=93770745"
       },
       "verified": true
     },

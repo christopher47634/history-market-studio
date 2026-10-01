@@ -20,9 +20,32 @@
     <meta property="og:description" content="比较中国历史人物的人生影响力走势、关键节点与微观蜡烛行情。" />
     <meta property="og:image" content="/assets/yuheng-terminal-target.webp" />
     <title>历史行情局</title>
+    <!-- 在首帧之前定好主题，避免先闪一下深色再变浅色。脚本保持单行：CSP 哈希按这一行算，不受换行符影响。 -->
+    <script>document.documentElement.dataset.theme = location.hash === "#c" ? "cinnabar" : "jade";</script>
+    <style>
+      /* 首屏骨架：脚本加载完之前就能看到页面框架（React 挂载后整体替换）。 */
+      :root { --sk-bg: #0a0e0d; --sk-card: #111816; --sk-line: #25302c; --sk-ink: #dce5e0; --sk-ink3: #66726c; --sk-accent: #6fd6a8; }
+      :root[data-theme="cinnabar"] { --sk-bg: #f4f1ea; --sk-card: #fbfaf6; --sk-line: #e2dcd0; --sk-ink: #25231e; --sk-ink3: #9a9488; --sk-accent: #b8412e; }
+      html, body { margin: 0; background: var(--sk-bg); color: var(--sk-ink); font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; }
+      .sk { max-width: 1480px; margin: 0 auto; padding: 22px 28px; box-sizing: border-box; }
+      .sk-brand { display: flex; align-items: center; gap: 10px; font: 600 18px/1.1 "Songti SC", "STSong", serif; letter-spacing: .08em; }
+      .sk-brand svg { width: 30px; height: 30px; fill: none; stroke: var(--sk-accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .sk-pills { display: flex; gap: 10px; margin: 22px 0 16px; }
+      .sk-pills i { width: 212px; height: 48px; border-radius: 99px; border: 1px solid var(--sk-line); background: var(--sk-card); }
+      .sk-card { height: min(70vh, 720px); border-radius: 18px; border: 1px solid var(--sk-line); background: var(--sk-card); display: grid; place-content: center; justify-items: center; gap: 12px; color: var(--sk-ink3); font-size: 13px; }
+      .sk-card b { width: 120px; height: 2px; background: linear-gradient(90deg, transparent, var(--sk-accent), transparent); background-size: 200% 100%; animation: sk 1.2s linear infinite; }
+      @keyframes sk { to { background-position: -200% 0; } }
+      @media (max-width: 720px) { .sk { padding: 14px 16px; } .sk-pills i { flex: 1; width: auto; } }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="sk" aria-busy="true">
+        <div class="sk-brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 23 11 15l5 5 6-9 6 6" /></svg>历史行情局</div>
+        <div class="sk-pills"><i></i><i></i></div>
+        <div class="sk-card"><b></b>正在排列人生节点</div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

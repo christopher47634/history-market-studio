@@ -22,6 +22,18 @@ if (!app.includes("navigator.share") || !app.includes("navigator.clipboard")) {
   fail("缺少原生分享与复制链接回退");
 }
 
+// 首屏内联脚本改了以后，CSP 里的哈希要跟着改，否则线上主题脚本会被浏览器拦下。
+const { createHash } = await import("node:crypto");
+const html = await readFile(path.join(root, "dist", "client", "index.html"), "utf8");
+const inlineHashes = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map((m) => `sha256-${createHash("sha256").update(m[1]).digest("base64")}`);
+for (const file of ["vercel.json", path.join("worker", "index.js")]) {
+  const text = await readFile(path.join(root, file), "utf8");
+  for (const h of inlineHashes) if (!text.includes(h)) fail(`${file}: CSP 缺少首屏内联脚本的哈希 ${h}`);
+}
+if (!html.includes('class="sk"')) fail("index.html 缺少首屏骨架");
+const vercel = JSON.parse(await readFile(path.join(root, "vercel.json"), "utf8"));
+if (vercel.outputDirectory !== "dist/client") fail("vercel.json 的输出目录不对");
+
 const publicAssets = path.join(root, "public", "assets");
 for (const name of await readdir(publicAssets)) {
   const file = path.join(publicAssets, name);

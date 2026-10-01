@@ -77,6 +77,42 @@ function Strip({ nodes, pinned, hover, onPick }) {
   );
 }
 
+// 文字版：图上每个节点的表格。读屏软件读不到画布，这里给出同样的信息；平时也方便通读。
+function TextTable({ scene, onPick, pinned }) {
+  return (
+    <div className="v3-table">
+      {scene.people.map((p) => (
+        <table key={p.figure.id} style={{ "--c": `var(--p${p.slot})` }}>
+          <caption><i className="v3-dot" />{p.figure.name}：后世评价 {p.figure.legacy.score}（{p.figure.legacy.tier} · {p.figure.legacy.label}）</caption>
+          <thead><tr><th scope="col">年份</th><th scope="col">事件</th><th scope="col">当时的势</th><th scope="col">依据</th></tr></thead>
+          <tbody>
+            {[...p.nodes, ...p.posthumous].map((n) => {
+              const d = nodeDetail(n);
+              return (
+                <tr key={n.id} className={`${n.kind === "sub" ? "is-sub" : ""}${pinned?.id === n.id ? " is-pinned" : ""}`}>
+                  <td>{d.when}</td>
+                  <td><button type="button" onClick={() => onPick(n)}>{d.title}</button></td>
+                  <td>{d.score}{d.kind !== "sub" && d.delta ? <small className={d.delta > 0 ? "is-up" : "is-down"}> {d.delta > 0 ? "+" : ""}{d.delta}</small> : null}</td>
+                  <td>{d.basis === "原文" ? "史书原文" : d.basis === "百科" ? "维基百科" : "概括"}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      ))}
+    </div>
+  );
+}
+
+// 给画布的文字摘要：每人的峰值、谷底和后世评价。
+function chartSummary(scene) {
+  return scene.people.map((p) => {
+    const peak = p.main.reduce((a, b) => (b.score > a.score ? b : a));
+    const low = p.main.slice(1).reduce((a, b) => (b.score < a.score ? b : a));
+    return `${p.figure.name}：峰值 ${peak.score}（${peak.year} 年 ${peak.event.title}），谷底 ${low.score}（${low.year} 年 ${low.event.title}），后世评价 ${p.figure.legacy.score}`;
+  }).join("；");
+}
+
 export function App() {
   const [themeKey, setThemeKey] = useState(themeFromHash);
   const [ids, setIds] = useState(initialIds);
@@ -84,6 +120,7 @@ export function App() {
   const [error, setError] = useState(null);
   const [axis, setAxis] = useState(null);
   const [mode, setMode] = useState("line");
+  const [textView, setTextView] = useState(false);
   const [hover, setHover] = useState(null);
   const [pinned, setPinned] = useState(null);
   const [view, setView] = useState({ level: LEVELS[0], window: [0, 1] });
@@ -197,9 +234,11 @@ export function App() {
             <div className="v3-chart__tools">
               <Segmented label="缩放层级" value={view.level.key} onChange={(k) => chart.current?.zoomToLevel(k, pinned)} options={LEVELS.map((l) => ({ value: l.key, label: l.label, hint: l.hint }))} />
               <Segmented label="图形" size="sm" value={mode} onChange={setMode} options={[{ value: "line", label: "折线" }, { value: "k", label: "K 线" }]} />
+              <button type="button" className="v3-text-toggle" aria-pressed={textView} onClick={() => setTextView((v) => !v)}>文字版</button>
               {scene?.people.length > 1 && <Segmented label="横轴" size="sm" value={scene.axis} onChange={setAxis} options={[{ value: "year", label: "纪年" }, { value: "age", label: "年龄" }]} />}
             </div>
           </div>
+          {scene && <p className="v3-sr" id="v3-chart-summary">{chartSummary(scene)}</p>}
           <div className="v3-chart__stage" ref={chartBox}>
             {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pinned} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
             <HoverCard hover={hover} box={chartBox.current} />
@@ -209,6 +248,7 @@ export function App() {
             <em>{view.level.label} · {view.level.hint}</em>
           </p>
           <Strip nodes={inWindow} pinned={pinned} hover={hover} onPick={go} />
+          {textView && scene && <TextTable scene={scene} pinned={pinned} onPick={go} />}
         </section>
         <div className="rise" style={{ "--d": 3 }}>
           <Reader node={pinned} prev={prev} next={next} onGo={go} onFocus={(n) => chart.current?.focus(n)} />
@@ -218,6 +258,7 @@ export function App() {
       <footer className="v3-foot">
         <p><b>怎么算的</b>势 = 权位档分 − 危局折损，所有人用同一把尺子；只有毛泽东达到 100，其余人最高 98。后世评价衡量历史分量，不等于褒扬。</p>
         <p><b>依据</b>古代人物引自正史原文（维基文库），近现代人物引自维基百科；每一句都在原文里逐字核对过，找不到原句的节点标为「概括」。</p>
+        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
       </footer>
     </div>
   );

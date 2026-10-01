@@ -84,6 +84,7 @@ const pairColors=getPairColors(sameColorPair,colorMate);
 if(pairColors[0]===pairColors[1])fail("同色人物对比没有生成可辨识的配色");
 
 const withPrimary=figures.filter((figure)=>figure.v2.sources.some((source)=>source.site!=="wp")).length;
+for(const figure of figures)for(const source of figure.v2.sources)if(source.site==="wp"&&(!/[?&]oldid=\d+/.test(source.url)||source.license!=="CC BY-SA 4.0"))fail(`${figure.name}: 维基来源没有固定版本号或缺少许可证`);
 const encyclopedic=figures.reduce((sum,figure)=>sum+[...figure.events,...(figure.subEvents??[])].filter((event)=>event.evidence?.basis==="百科").length,0);
 if(figures.filter((figure)=>figure.born>=1780).some((figure)=>figure.events.filter((event)=>!event.posthumous).length+(figure.subEvents?.length??0)<9))fail("近现代人物的生前节点少于 9 个");
 if(withPrimary<230)fail(`有正史原文来源的人物少于 230 位，当前 ${withPrimary}`);

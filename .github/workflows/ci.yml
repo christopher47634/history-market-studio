@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main, rebuild/v2]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      # 数据与契约：300 人、引句核验、分数轨迹、缩放分层、界面约定
+      - run: npm run test:data
+      - run: npm run test:trajectories
+      - run: npm run test:ui
+      - run: npm run test:v2
+      - run: npm run test:sites
+
+      # 生产包：体积预算、CSP 哈希、首屏骨架
+      - run: npm run build
+      - run: npm run test:production
+
+      # 真实浏览器：Chrome（CDP）+ Firefox + WebKit（Safari 内核）
+      - run: npx playwright install --with-deps firefox webkit
+      - name: Start dev server
+        run: |
+          npx vite --port 4174 --strictPort > vite.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://localhost:4174/ >/dev/null && break; sleep 1; done
+      - run: npm run test:app
+      - run: npm run test:lab
+      - run: npm run test:cross
+      - if: failure()
+        run: cat vite.log || true

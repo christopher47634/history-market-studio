@@ -16,7 +16,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export async function launch({ width = 1440, height = 900, mobile = false, scale = 1, port = 9300 + Math.floor(Math.random() * 500) } = {}) {
   const profile = mkdtempSync(join(tmpdir(), "hms-cdp-"));
-  const proc = spawn(CHROME, ["--headless=new", `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, "--no-first-run", "--hide-scrollbars", "about:blank"], { stdio: "ignore" });
+  const proc = spawn(CHROME, ["--headless=new", `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, "--no-first-run", "--hide-scrollbars", ...(process.env.CI ? ["--no-sandbox"] : []), "about:blank"], { stdio: "ignore" });
   let target;
   for (let i = 0; i < 50 && !target; i++) {
     await sleep(200);

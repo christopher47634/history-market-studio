@@ -18,9 +18,10 @@
       "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF%2F%E5%8D%B7369"
     },
     {
-      "label": "维基百科「林则徐」",
-      "url": "https://zh.wikipedia.org/wiki/%E6%9E%97%E5%88%99%E5%BE%90",
-      "site": "wp"
+      "label": "维基百科「林则徐」（2026-06-24 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E6%9E%97%E5%88%99%E5%BE%90&oldid=93187041",
+      "site": "wp",
+      "license": "CC BY-SA 4.0"
     }
   ],
   "events": [

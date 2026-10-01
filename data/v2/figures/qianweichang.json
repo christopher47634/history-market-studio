@@ -13,9 +13,10 @@
   "thesis": "弃文从理的力学家，上海大学校长。",
   "sources": [
     {
-      "label": "维基百科「钱伟长」",
-      "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF",
-      "site": "wp"
+      "label": "维基百科「钱伟长」（2026-09-07 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759",
+      "site": "wp",
+      "license": "CC BY-SA 4.0"
     }
   ],
   "events": [
@@ -55,8 +56,8 @@
       "quote": {
         "text": "1928年秋，苏州中学开考招生，钱伟长按照钱穆的嘱咐，参加了考试。",
         "textSimplified": "1928年秋，苏州中学开考招生，钱伟长按照钱穆的嘱咐，参加了考试。",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -78,8 +79,8 @@
       "quote": {
         "text": "1931年9月16日，钱伟长来到北京，先在时任北大文学院院长的汤用彤家住了一夜",
         "textSimplified": "1931年9月16日，钱伟长来到北京，先在时任北大文学院院长的汤用彤家住了一夜",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -101,8 +102,8 @@
       "quote": {
         "text": "1939年，钱伟长参加了第七届中英庚款会公费留学力学专业的考试，此次参加人数众多",
         "textSimplified": "1939年，钱伟长参加了第七届中英庚款会公费留学力学专业的考试，此次参加人数众多",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -202,14 +203,14 @@
       "yearCertainty": "确知",
       "kind": "stage",
       "title": "被划右派",
-      "tier": "初起",
-      "tierScore": 30,
-      "crisis": "绝境",
-      "crisisPenalty": 40,
-      "score": 2,
-      "delta": -64,
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 19,
+      "delta": -47,
       "rationale": "困顿",
-      "summary": "下放",
+      "summary": "撤销清华副校长等职务，教学科研受限",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -220,11 +221,11 @@
       "yearCertainty": "确知",
       "kind": "sub",
       "title": "下放炼钢车间",
-      "tier": "初起",
-      "tierScore": 26,
-      "crisis": "绝境",
-      "crisisPenalty": 40,
-      "score": 2,
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 15,
       "delta": 0,
       "rationale": "劳动",
       "summary": "北京特种钢厂",
@@ -232,8 +233,8 @@
       "quote": {
         "text": "1968年至1971年被下放到北京特种钢厂炼钢车间劳动锻炼。",
         "textSimplified": "1968年至1971年被下放到北京特种钢厂炼钢车间劳动锻炼。",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -255,8 +256,8 @@
       "quote": {
         "text": "1972年由周恩来亲自点名，参加科学家代表团访问英国、瑞典、加拿大和美国。",
         "textSimplified": "1972年由周恩来亲自点名，参加科学家代表团访问英国、瑞典、加拿大和美国。",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -271,15 +272,15 @@
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 60,
-      "delta": 58,
+      "delta": 41,
       "rationale": "平反",
       "summary": "撤销右派决定",
       "evidence": "百科",
       "quote": {
         "text": "1979年中央撤销把钱伟长划为右派分子的决定。",
         "textSimplified": "1979年中央撤销把钱伟长划为右派分子的决定。",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -319,8 +320,8 @@
       "quote": {
         "text": "1987年任全国政协副主席、《中国应用数学和力学进展》杂志主编。",
         "textSimplified": "1987年任全国政协副主席、《中国应用数学和力学进展》杂志主编。",
-        "source": "维基百科「钱伟长」",
-        "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+        "source": "维基百科「钱伟长」（2026-09-07 版）",
+        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
       },
       "verified": true
     },
@@ -354,8 +355,8 @@
     "quote": {
       "text": "2010年7月30日6时20分，钱伟长在上海逝世，享耆寿96岁。",
       "textSimplified": "2010年7月30日6时20分，钱伟长在上海逝世，享耆寿96岁。",
-      "source": "维基百科「钱伟长」",
-      "url": "https://zh.wikipedia.org/wiki/%E9%92%B1%E4%BC%9F%E9%95%BF"
+      "source": "维基百科「钱伟长」（2026-09-07 版）",
+      "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759"
     },
     "verified": true
   },
@@ -382,7 +383,7 @@
   "trough": {
     "title": "被划右派",
     "age": 44,
-    "score": 2
+    "score": 19
   },
   "gaps": [
     {
