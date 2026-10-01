@@ -8,3 +8,5 @@ work/
 Thumbs.db
 
 data/v2/sources/
+
+.vercel
