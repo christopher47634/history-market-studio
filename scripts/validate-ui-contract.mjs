@@ -1,7 +1,7 @@
 // v3 界面契约：静态检查关键约定 + 用真实数据跑一遍缩放分层的纯函数。
 import { readFileSync } from "node:fs";
 import { figureV2ById } from "../src/v2/all.js";
-import { buildScene, LEVELS, levelOf, visibleNodes, labelBudget, candles, readingOrder } from "../src/v3/scene.js";
+import { buildScene, LEVELS, levelOf, visibleNodes, labelBudget, candles, readingOrder, nearest, yRange, valueAt } from "../src/v3/scene.js";
 
 const root = new URL("..", import.meta.url);
 const read = (path) => readFileSync(new URL(path, root), "utf8");
@@ -35,6 +35,19 @@ if (!chart.includes('level.key === "overview"') || !chart.includes("{q|「")) fa
 if (!/zoomOnMouseWheel:\s*true/.test(chart) || !chart.includes('filterMode: "none"')) fail("缺少滚轮缩放或会截断线条");
 if (!chart.includes('zr.on("mousemove"') || !chart.includes('zr.on("dblclick"') || !chart.includes("nearest(")) fail("缺少节点吸附、点击固定或双击细读");
 if (!chart.includes("红涨绿跌")) fail("K 线配色约定缺少说明");
+
+// 看盘交互：十字光标按列吸附（光标高度不影响单人吸附）、带滞回；放大后纵轴自适应；K 线带涨跌副图；拖动不算点击。
+const px = (n) => [n.x * 10, 400 - n.score * 4];
+const far = nearest(p.main, [p.main[5].x * 10 + 1, 0], px);
+if (far !== p.main[5]) fail("十字光标应按列吸附：光标远离圆点也要吸到同一列的节点");
+const mid = (p.main[5].x + p.main[6].x) * 5;
+if (nearest(p.main, [mid + 1, 0], px, { prev: p.main[5] }) !== p.main[5]) fail("吸附缺少滞回，两列之间会来回跳");
+const [lo0, hi0] = yRange(scene.people, LEVELS[0], whole);
+const [lo2, hi2] = yRange(scene.people, LEVELS[2], [p.main[8].x - 4, p.main[8].x + 4]);
+if (lo0 !== 0 || hi0 !== 100 || hi2 - lo2 >= 100 || hi2 - lo2 < 20) fail("全景纵轴应固定 0–100，放大后应自适应且至少跨 20");
+if (valueAt(p, p.main[3].x, LEVELS[0]) !== p.main[3].score || valueAt(p, p.main[0].x - 5, LEVELS[0]) !== null) fail("同期取值应沿图上的线取，出生前为空");
+if (!chart.includes("makeCrosshair") || !chart.includes('id: `vol-${slot}`') || !chart.includes("S.dragging")) fail("缺少十字光标、涨跌副图或拖动与点击的区分");
+if (!app.includes("function Legend") || !app.includes("开<em>")) fail("缺少开高低收信息栏");
 
 // 阅读：依据分三类，百科不冒充原文；键盘逐个翻看。
 if (!bits.includes("百科") || !bits.includes("史书原文") || !bits.includes("概括")) fail("依据徽标没有区分原文 / 百科 / 概括");

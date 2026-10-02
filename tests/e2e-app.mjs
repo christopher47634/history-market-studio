@@ -44,13 +44,20 @@ for (const [hash, theme] of [["b", "jade"], ["c", "cinnabar"]]) {
     assert.equal(await checked("缩放层级"), "全景");
   });
 
-  await check(`${hash}：悬停吸附到节点，卡片出现，读数切到当时的势`, async () => {
+  await check(`${hash}：十字光标按列吸附，卡片出现在一侧、不压住目标，读数切到当时的势`, async () => {
+    const b = await box();
+    // 看盘软件的手感：光标停在图上任意高度都能吸到最近的那一列。
+    await page.mouse(b.x + b.w * 0.5, b.y + b.h * 0.15);
+    await page.sleep(200);
+    assert.ok(await q(".v3-hover"), "光标在图上却没有吸附到任何节点");
     const at = await hoverUntilCard();
     lastAt = at;
     assert.ok(at, "扫遍图表都没有吸附到节点");
     assert.ok((await texts(".v3-readout__label")).some((l) => l.startsWith("当时的势")));
-    const card = await page.eval(`(()=>{const r=document.querySelector('.v3-hover').getBoundingClientRect();return {x:r.x+r.width/2,top:r.top,bottom:r.bottom}})()`);
-    assert.ok(Math.abs(card.x - at.x) < 160, `卡片离指针太远：${Math.round(card.x - at.x)}px`);
+    const card = await page.eval(`(()=>{const el=document.querySelector('.v3-hover');const r=el.getBoundingClientRect();const c=document.querySelector('.v3-chart-canvas').getBoundingClientRect();return {left:r.left,right:r.right,nodeX:c.left+ +el.dataset.nodeX}})()`);
+    assert.ok(card.right < card.nodeX || card.left > card.nodeX, `卡片压住了目标节点（节点 x=${Math.round(card.nodeX)}，卡片 ${Math.round(card.left)}–${Math.round(card.right)}）`);
+    assert.ok(Math.min(Math.abs(card.left - card.nodeX), Math.abs(card.right - card.nodeX)) < 60, "卡片离目标太远");
+    assert.ok((await text(".v3-legend")).includes("势"), "信息栏没有显示读数");
   });
 
   await check(`${hash}：点击固定节点，阅读面板换成这个节点`, async () => {
@@ -96,10 +103,22 @@ await check("细读层显示细节小事，全景不显示", async () => {
   await page.sleep(900);
   assert.equal(await checked("缩放层级"), "细读");
 });
-await check("K 线模式可切换，无报错", async () => {
+await check("K 线模式：信息栏显示开高低收，拖动平移不会误固定节点", async () => {
   await pick("图形", "K 线");
   await page.sleep(700);
   assert.equal(await checked("图形"), "K 线");
+  const b = await box();
+  const y = b.y + b.h * 0.4;
+  await page.mouse(b.x + b.w * 0.5, y);
+  await page.sleep(200);
+  const legend = await text(".v3-legend");
+  assert.ok(/开\s*[\d.]+.*高.*低.*收/.test(legend), `信息栏：${legend}`);
+  const before = await text(".v3-reader__title");
+  await page.mouse(b.x + b.w * 0.5, y, "mousePressed");
+  for (let i = 1; i <= 8; i++) await page.send("Input.dispatchMouseEvent", { type: "mouseMoved", x: b.x + b.w * 0.5 - i * 20, y, button: "left", buttons: 1 });
+  await page.mouse(b.x + b.w * 0.5 - 160, y, "mouseReleased");
+  await page.sleep(400);
+  assert.equal(await text(".v3-reader__title"), before);
   await pick("缩放层级", "全景");
   await page.sleep(700);
 });

@@ -84,13 +84,14 @@ export function labelBudget(level, widthPx, peopleCount) {
 
 // K 线。全景：一根 = 一个人生阶段（上一个阶段事件 → 这个阶段事件），影线取阶段内子事件的高低；
 // 章节 / 细读：一根 = 一个事件（含子事件），开盘是前一个事件的势。不虚构盘中波动。
+// 每根都画在收盘那件事的时间点上（x = 收盘节点），和标签、十字光标对齐；x0 记下这一段从哪年开始。
 export function candles(person, level) {
   if (level.key === "overview") {
     return person.main.slice(1).map((n, i) => {
       const prev = person.main[i];
       const inside = person.subs.filter((s) => s.x > prev.x && s.x <= n.x + 0.6);
       const all = [prev.score, n.score, ...inside.map((s) => s.score)];
-      return { id: n.id, x0: prev.x, x1: n.x, x: (prev.x + n.x) / 2, open: prev.score, close: n.score, low: Math.min(...all), high: Math.max(...all), node: n, subs: inside };
+      return { id: n.id, x0: prev.x, x1: n.x, x: n.x, open: prev.score, close: n.score, low: Math.min(...all), high: Math.max(...all), node: n, subs: inside };
     });
   }
   const seq = person.nodes;
@@ -100,15 +101,58 @@ export function candles(person, level) {
   });
 }
 
-// 离光标最近的节点（像素距离），用于吸附。
-export function nearest(nodes, px, toPixel, radius = 28) {
-  let best = null, bestD = radius;
+// 光标吸附（看盘软件的十字光标）：按列吸附，横向离得最近的节点胜出，不必压中小点。
+// 两人同图时竖直距离也算一部分，用来在同一年的两个人之间挑；prev 是上一次吸附的节点，
+// 新候选要明显更近（hold 像素）才换过去，免得在两根 K 线中间来回跳。
+export function nearest(nodes, px, toPixel, { yWeight = 0.02, prev = null, hold = 4 } = {}) {
+  let best = null, bestD = Infinity, prevD = Infinity;
   for (const n of nodes) {
     const [x, y] = toPixel(n);
-    const d = Math.hypot(x - px[0], (y - px[1]) * 0.6);
+    const d = Math.abs(x - px[0]) + Math.abs(y - px[1]) * yWeight;
+    if (n === prev) prevD = d;
     if (d < bestD) { best = n; bestD = d; }
   }
-  return best;
+  return prev && best !== prev && prevD - bestD < hold ? prev : best;
+}
+
+// 当前层级下某个节点对应的那根 K 线（没有就返回 null，比如全景里的细节小事）。
+export function candleOf(person, level, node) {
+  return node ? candles(person, level).find((k) => k.node.id === node.id) ?? null : null;
+}
+
+// 某人在横坐标 x 处的势（沿图上画出的那条线线性取值）；还没出生返回 null。
+// 用于两人同图时，光标停在一个人身上，另一个人显示「同期」读数。
+export function valueAt(person, x, level) {
+  const line = [...(level.key === "overview" ? person.main : person.nodes), ...person.tail.slice(1)];
+  if (x < line[0].x) return null;
+  for (let i = 1; i < line.length; i++) {
+    const a = line[i - 1], b = line[i];
+    if (x <= b.x) return +(a.score + ((b.score - a.score) * (x - a.x)) / (b.x - a.x || 1)).toFixed(1);
+  }
+  return line.at(-1).score;
+}
+
+// 纵轴范围：全景固定 0–100、每 25 一格（跨人物可比）；放大后按视窗里的数据自动适配（看盘软件的做法），
+// 上下留一点余量，按跨度挑 5 / 10 / 20 的整刻度，至少跨 20。返回 [下限, 上限, 刻度]。
+export function yRange(people, level, window) {
+  if (level.key === "overview") return [0, 100, 25];
+  const vals = people.flatMap((p) => [...p.nodes, ...p.tail].filter((n) => n.x >= window[0] - 1 && n.x <= window[1] + 1).map((n) => n.score));
+  people.forEach((p) => {
+    // 视窗边缘外的第一个点也算上，线条从画面外伸进来时不会被截掉。
+    const before = p.nodes.filter((n) => n.x < window[0]).at(-1);
+    const after = [...p.nodes, ...p.tail].find((n) => n.x > window[1]);
+    if (before) vals.push(before.score);
+    if (after) vals.push(after.score);
+  });
+  if (!vals.length) return [0, 100, 25];
+  const min = Math.min(...vals), max = Math.max(...vals);
+  const pad = Math.max(3, (max - min) * 0.15);
+  const raw = Math.max(20, max - min + pad * 2);
+  const step = raw <= 30 ? 5 : raw <= 60 ? 10 : 20;
+  let lo = Math.max(0, Math.floor((min - pad) / step) * step);
+  let hi = Math.min(100, Math.ceil((max + pad) / step) * step);
+  while (hi - lo < 20) { if (hi < 100) hi += step; else lo -= step; }
+  return [Math.max(0, lo), hi, step];
 }
 
 // 阅读顺序：两人的全部生前节点按时间排好，供左右键逐个翻看和底部时间条使用。

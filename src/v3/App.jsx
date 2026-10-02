@@ -1,7 +1,7 @@
 // v3 界面：一张主图 + 阅读面板 + 事件时间条。两套主题（玉衡深色 / 朱砂浅色）共用同一套结构。
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { figureById, loadFigure } from "../data.js";
-import { buildScene, readingOrder, LEVELS } from "./scene.js";
+import { buildScene, readingOrder, LEVELS, candleOf, valueAt } from "./scene.js";
 import { LifeChart } from "./LifeChart.jsx";
 import { Picker } from "./Picker.jsx";
 import { Reader } from "./Reader.jsx";
@@ -21,15 +21,27 @@ function initialIds() {
   return { left, right };
 }
 
-function HoverCard({ hover, box }) {
+// 悬停卡片：宽屏放在十字光标的一侧（不压住目标那根 K 线），窄屏放在节点上方或下方。
+// 不随节点换 key，光标横扫时卡片平滑滑过去，而不是一闪一闪地重建。
+function HoverCard({ hover, box, scene, level, mode }) {
   if (!hover) return null;
   const d = nodeDetail(hover.node);
+  // K 线模式下涨跌按这一根算（开盘是前一个事件），和信息栏一致。
+  const k = mode === "k" && scene ? candleOf(scene.people[hover.node.slot], level, hover.node) : null;
+  if (k) d.delta = +(k.close - k.open).toFixed(1);
   const [x, y] = hover.pixel;
-  const w = box?.clientWidth ?? 800;
-  const below = y < 170;
-  const left = Math.max(130, Math.min(w - 130, x));
+  const w = box?.clientWidth ?? 800, h = box?.clientHeight ?? 500;
+  const side = w >= 640;
+  const cardW = 244;
+  let style;
+  if (side) {
+    const right = x + 22 + cardW <= w - 8 && x < w * 0.62;
+    style = { left: right ? x + 22 : x - 22 - cardW, top: Math.max(8, Math.min(h - 190, y - 46)) };
+  } else {
+    style = { left: Math.max(115, Math.min(w - 115, x)), top: y };
+  }
   return (
-    <div className={`v3-hover${below ? " is-below" : ""}`} style={{ left, top: y, "--c": `var(--p${d.slot})` }} key={hover.node.id} role="tooltip">
+    <div className={`v3-hover${side ? " is-side" : y < 170 ? " is-below" : ""}`} style={{ ...style, "--c": `var(--p${d.slot})` }} data-node-x={Math.round(x)} role="tooltip">
       <p className="v3-eyebrow"><i className="v3-dot" />{d.person}<span>·</span>{d.when}</p>
       <b className="v3-hover__title">{d.title}</b>
       <p className="v3-hover__score">
@@ -43,15 +55,57 @@ function HoverCard({ hover, box }) {
   );
 }
 
-function Readout({ person, hover }) {
+// 信息栏（看盘软件左上角那一行）：光标所在那根的开高低收和涨跌；光标不在图上时显示固定的节点。
+// 两人同图时另一个人显示同一时刻的势（沿曲线取值）。
+function Legend({ scene, level, mode, node, live }) {
+  if (!scene || !node) return null;
+  const fmt = (v) => (v == null ? "—" : String(v));
+  const signed = (v) => (v > 0 ? `+${v}` : `${v}`);
+  return (
+    <div className={`v3-legend${live ? " is-live" : ""}`} aria-hidden="true">
+      {scene.people.map((p) => {
+        const mine = p.figure.id === node.figure.id;
+        const k = mine && mode === "k" ? candleOf(p, level, node) : null;
+        const after = node.x > scene.lifeEnd;
+        const v = mine ? node.score : valueAt(p, node.x, level);
+        const delta = k ? +(k.close - k.open).toFixed(1) : mine && node.kind !== "sub" && !after ? node.delta : null;
+        const tone = delta > 0 ? "is-up" : delta < 0 ? "is-down" : "";
+        return (
+          <p key={p.figure.id} className={mine ? "is-on" : ""} style={{ "--c": `var(--p${p.slot})` }}>
+            <i className="v3-dot" /><b>{p.figure.name}</b>
+            {mine && <time>{node.year < 0 ? `前${-node.year}` : node.year}{node.age != null && !after ? ` · ${node.age}岁` : ""}</time>}
+            {k ? (
+              <>
+                <span>开<em>{k.open}</em></span><span>高<em>{k.high}</em></span><span>低<em>{k.low}</em></span>
+                <span>收<em className={tone}>{k.close}</em></span>
+                <span className={tone}>{signed(delta)}{k.open ? ` · ${signed(+((delta / k.open) * 100).toFixed(1))}%` : ""}</span>
+              </>
+            ) : (
+              <>
+                <span>{mine ? (after ? "声望" : "势") : "同期"}<em>{fmt(v)}</em></span>
+                {delta ? <span className={tone}>{signed(delta)}</span> : null}
+              </>
+            )}
+            {mine && <small>{clipText(node.event?.title ?? "", 14)}</small>}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+const clipText = (s, n) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);
+
+function Readout({ person, hover, level }) {
   const f = person.figure;
   const then = hover && hover.node.figure.id === f.id;
-  const value = then ? hover.node.score : f.legacy.score;
+  // 光标停在另一个人身上、而此人当时在世：显示同一时刻此人的势。
+  const peer = hover && !then && hover.node.x <= person.main.at(-1).x ? valueAt(person, hover.node.x, level) : null;
+  const value = then ? hover.node.score : peer ?? f.legacy.score;
   return (
-    <div className={`v3-readout${then ? " is-then" : ""}`} style={{ "--c": `var(--p${person.slot})` }}>
+    <div className={`v3-readout${then || peer != null ? " is-then" : ""}`} style={{ "--c": `var(--p${person.slot})` }}>
       <span className="v3-readout__who"><i className="v3-dot" />{f.name}</span>
       <strong className="v3-readout__num"><AnimatedNumber value={value} digits={value % 1 ? 1 : 0} /></strong>
-      <span className="v3-readout__label">{then ? <>当时的势<em>{hover.node.event?.title}</em></> : <>后世评价<em>{f.legacy.tier} · {f.legacy.label}</em></>}</span>
+      <span className="v3-readout__label">{then ? <>当时的势<em>{hover.node.event?.title}</em></> : peer != null ? <>同期的势<em>{hover.node.year < 0 ? `前${-hover.node.year}` : hover.node.year} 年</em></> : <>后世评价<em>{f.legacy.tier} · {f.legacy.label}</em></>}</span>
     </div>
   );
 }
@@ -221,7 +275,7 @@ export function App() {
         <Picker slot={0} value={ids.left} exclude={ids.right} onChange={(id) => id && setIds((s) => ({ ...s, left: id }))} />
         <button type="button" className="v3-swap" onClick={swap} disabled={!ids.right} aria-label="交换两人">⇄</button>
         <Picker slot={1} value={ids.right} exclude={ids.left} allowEmpty onChange={(id) => setIds((s) => ({ ...s, right: id }))} />
-        <div className="v3-readouts">{scene?.people.map((p) => <Readout key={p.figure.id} person={p} hover={hover} />)}</div>
+        <div className="v3-readouts">{scene?.people.map((p) => <Readout key={p.figure.id} person={p} hover={hover} level={view.level} />)}</div>
       </section>
 
       <main className="v3-main">
@@ -241,10 +295,11 @@ export function App() {
           {scene && <p className="v3-sr" id="v3-chart-summary">{chartSummary(scene)}</p>}
           <div className="v3-chart__stage" ref={chartBox}>
             {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pinned} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
-            <HoverCard hover={hover} box={chartBox.current} />
+            <Legend scene={scene} level={view.level} mode={mode} node={hover?.node ?? pinned} live={!!hover} />
+            <HoverCard hover={hover} box={chartBox.current} scene={scene} level={view.level} mode={mode} />
           </div>
           <p className="v3-chart__hint">
-            <span><kbd>滚轮</kbd>缩放</span><span><kbd>拖动</kbd>平移</span><span><kbd>点击</kbd>固定节点</span><span><kbd>双击</kbd>细读</span><span><kbd>←</kbd><kbd>→</kbd>逐个翻看</span><span><kbd>Esc</kbd>回全景</span>
+            <span><kbd>滚轮</kbd>缩放</span><span><kbd>拖动</kbd>平移</span><span><kbd>悬停</kbd>十字光标</span><span><kbd>点击</kbd>固定节点</span><span><kbd>双击</kbd>细读</span><span><kbd>←</kbd><kbd>→</kbd>逐个翻看</span><span><kbd>Esc</kbd>回全景</span>
             <em>{view.level.label} · {view.level.hint}</em>
           </p>
           <Strip nodes={inWindow} pinned={pinned} hover={hover} onPick={go} />

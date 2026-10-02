@@ -116,8 +116,21 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-chart__title p span { margin: 0 6px; opacity: .6; }
 .v3-chart__tools { display: flex; gap: 8px; flex-wrap: wrap; }
 .v3-chart__stage { position: relative; height: clamp(420px, 60vh, 660px); margin: 4px -6px 0; }
-.v3-chart-canvas { position: absolute; inset: 0; cursor: grab; }
-.v3-chart-canvas:active { cursor: grabbing; }
+.v3-chart-canvas { position: absolute; inset: 0; cursor: crosshair; }
+/* zrender 会在自己的层上写 cursor:default，这里让它跟随外层（十字 / 抓手由图表脚本切换）。 */
+.v3-chart-canvas > div { cursor: inherit !important; }
+
+/* 信息栏：看盘软件左上角那一行开高低收。等宽数字，光标横扫时数字原地跳，不挪位置。 */
+.v3-legend { position: absolute; z-index: 4; top: 6px; left: 44px; right: 72px; display: grid; gap: 3px; pointer-events: none; font: 500 11.5px/1.5 var(--font-mono); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.v3-legend p { margin: 0; padding-left: 4px; display: flex; align-items: baseline; gap: 12px; white-space: nowrap; overflow: hidden; opacity: .72; transition: opacity .2s; }
+.v3-legend p.is-on, .v3-legend.is-live p { opacity: 1; }
+.v3-legend .v3-dot { align-self: center; flex: none; margin-right: -4px; }
+.v3-legend b { font: 600 12px/1 var(--font-sans); color: var(--ink); }
+.v3-legend time { color: var(--ink-2); }
+.v3-legend span { display: inline-flex; gap: 4px; }
+.v3-legend em { font-style: normal; color: var(--ink); min-width: 2.2ch; }
+.v3-legend span.is-up, .v3-legend span.is-down { font-weight: 600; }
+.v3-legend small { font: 12px/1 var(--font-sans); color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; }
 .v3-chart__loading { position: absolute; inset: 0; display: grid; place-content: center; gap: 12px; justify-items: center; color: var(--ink-3); font-size: 13px; }
 .v3-chart__loading span { width: 120px; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent); background-size: 200% 100%; animation: sweep 1.2s linear infinite; }
 @keyframes sweep { to { background-position: -200% 0; } }
@@ -128,6 +141,8 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 /* 悬停卡片：贴着节点，淡入放大。 */
 .v3-hover { position: absolute; z-index: 5; width: 244px; transform: translate(-50%, calc(-100% - 16px)); padding: 12px 14px; border-radius: 14px; background: color-mix(in srgb, var(--surface) 92%, transparent); backdrop-filter: blur(14px) saturate(1.2); border: 1px solid var(--line); border-top: 2px solid var(--c); box-shadow: 0 24px 50px -18px rgba(0,0,0,.5); pointer-events: none; animation: hover-in .22s var(--ease); }
 .v3-hover.is-below { transform: translate(-50%, 18px); }
+/* 宽屏：卡片在十字光标一侧，光标横扫时滑过去。 */
+.v3-hover.is-side { transform: none; transition: left .16s var(--ease), top .16s var(--ease); }
 @keyframes hover-in { from { opacity: 0; scale: .96; } }
 .v3-hover__title { display: block; margin: 5px 0 4px; font: 600 15px/1.35 var(--font-serif); }
 .v3-hover__score { display: flex; align-items: baseline; gap: 8px; margin: 0; font-size: 12px; color: var(--ink-3); }
@@ -238,6 +253,9 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
   .v3-strip button { width: 150px; }
   .v3-foot { grid-template-columns: 1fr; }
   .v3-hover { width: 210px; }
+  .v3-legend { left: 32px; right: 46px; font-size: 10.5px; }
+  .v3-legend p { gap: 6px; }
+  .v3-legend small, .v3-legend time { display: none; }  /* 年份在十字光标的横轴读数牌上 */
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
