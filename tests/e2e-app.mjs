@@ -162,6 +162,24 @@ await check("切换主题", async () => {
   await page.sleep(600);
   assert.equal(await page.eval("document.documentElement.dataset.theme"), "cinnabar");
 });
+// 图表画布用的颜色必须跟着主题走：取缩放条底色的亮度（玉衡深、朱砂浅）。
+const sliderLum = () => page.eval(`(()=>{const c=document.querySelector('.v3-chart-canvas canvas');const k=c.width/c.clientWidth;const d=c.getContext('2d').getImageData(Math.round(c.width*0.5),Math.round(c.height-25*k),1,1).data;return (d[0]+d[1]+d[2])/3})()`);
+await check("朱砂切回玉衡：图表画布换回深色（不残留浅色网格和缩放条）", async () => {
+  assert.ok((await sliderLum()) > 150, `朱砂下缩放条应是浅色，实际亮度 ${await sliderLum()}`);
+  await pick("主题", "玉衡");
+  await page.sleep(800);
+  const lum = await sliderLum();
+  assert.ok(lum < 80, `玉衡下缩放条应是深色，实际亮度 ${lum}`);
+});
+// 下拉框必须浮在最上层：弹层中心点最上面的元素要属于弹层本身，不能被图表卡片盖住。
+const popOnTop = () => page.eval(`(()=>{const p=document.querySelector('.v3-picker__pop');if(!p)return 'no-pop';const r=p.getBoundingClientRect();const pts=[[.5,.5],[.5,.85],[.2,.7]].map(([fx,fy])=>document.elementFromPoint(r.left+r.width*fx,r.top+r.height*fy));return pts.every(e=>p.contains(e))?'ok':pts.map(e=>e&&e.className).join('|')})()`);
+await check("人物下拉框浮在图表之上，可以直接点选", async () => {
+  await page.eval(`document.querySelectorAll('.v3-picker__btn')[1].click()`);
+  await page.sleep(400);
+  assert.equal(await popOnTop(), "ok");
+  await page.send("Input.dispatchKeyEvent", { type: "keyDown", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27 });
+  await page.sleep(200);
+});
 
 await page.setViewport(390, 844, true);
 await page.goto(`${base}/?left=zhouenlai&right=dengxiaoping#c`, 3500);
@@ -169,6 +187,13 @@ await check("手机宽度：无横向滚动，图表和阅读面板都在", asyn
   assert.ok(await page.eval("document.documentElement.scrollWidth <= innerWidth + 1"), "页面出现横向滚动");
   assert.ok(await q(".v3-chart-canvas canvas"));
   assert.ok(await q(".v3-reader"));
+});
+await check("手机宽度：下拉框浮在最上层且不超出屏幕", async () => {
+  await page.eval(`document.querySelector('.v3-picker__btn').click()`);
+  await page.sleep(400);
+  assert.equal(await popOnTop(), "ok");
+  const r = await page.eval(`(()=>{const r=document.querySelector('.v3-picker__pop').getBoundingClientRect();return {l:r.left,r:r.right,b:r.bottom,w:innerWidth,h:innerHeight}})()`);
+  assert.ok(r.l >= 0 && r.r <= r.w && r.b <= r.h + 1, JSON.stringify(r));
 });
 
 await check("全程没有控制台错误", async () => {

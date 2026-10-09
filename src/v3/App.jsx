@@ -1,5 +1,5 @@
 // v3 界面：一张主图 + 阅读面板 + 事件时间条。两套主题（玉衡深色 / 朱砂浅色）共用同一套结构。
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { figureById, loadFigure } from "../data.js";
 import { buildScene, readingOrder, LEVELS, candleOf, valueAt } from "./scene.js";
 import { LifeChart } from "./LifeChart.jsx";
@@ -186,7 +186,9 @@ export function App() {
     addEventListener("hashchange", sync);
     return () => removeEventListener("hashchange", sync);
   }, []);
-  useEffect(() => {
+  // 用 layout effect：子组件（图表）的普通 effect 会先于父组件执行，若这里也用普通 effect，
+  // 图表切主题时读到的还是旧主题的颜色（朱砂切回玉衡会画出浅色网格和白边）。
+  useLayoutEffect(() => {
     document.documentElement.dataset.theme = THEMES[themeKey];
     document.querySelector('meta[name="theme-color"]')?.setAttribute("content", themeKey === "b" ? "#0a0e0d" : "#f4f1ea");
   }, [themeKey]);

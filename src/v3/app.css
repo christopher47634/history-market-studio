@@ -45,7 +45,9 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-muted { color: var(--ink-3); }
 
 /* 进场：模糊 + 上移，逐块错开。 */
-.rise { animation: rise .9s var(--ease) both; animation-delay: calc(var(--d, 0) * 90ms); }
+/* 只用 backwards：动画结束后不留下 transform / filter。留下的话每个区块都会变成独立层叠上下文，
+   下拉框等浮层的 z-index 出不去，position: fixed 也会被困在区块里。 */
+.rise { animation: rise .9s var(--ease) backwards; animation-delay: calc(var(--d, 0) * 90ms); }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); filter: blur(10px); } to { opacity: 1; transform: none; filter: blur(0); } }
 
 /* 顶栏 */
@@ -77,12 +79,12 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-picker__text--empty b { color: var(--ink-2); font-weight: 500; }
 .v3-picker__btn svg { width: 12px; height: 12px; fill: none; stroke: var(--ink-3); stroke-width: 1.5; transition: transform .3s var(--ease); }
 .v3-picker.is-open .v3-picker__btn svg { transform: rotate(180deg); }
-.v3-picker__pop { position: absolute; top: calc(100% + 8px); left: 0; z-index: 30; width: 340px; max-width: calc(100vw - 32px); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); overflow: hidden; animation: pop .28s var(--ease); transform-origin: top left; }
+.v3-picker__pop { position: fixed; z-index: 1000; display: flex; flex-direction: column; width: 340px; max-width: calc(100vw - 32px); background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); overflow: hidden; animation: pop .28s var(--ease); transform-origin: top left; }
 @keyframes pop { from { opacity: 0; transform: translateY(-6px) scale(.98); } }
 .v3-picker__search { display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
 .v3-picker__search svg { width: 16px; height: 16px; fill: none; stroke: var(--ink-3); stroke-width: 1.5; }
 .v3-picker__search input { flex: 1; border: 0; background: transparent; outline: none; font-size: 14px; }
-.v3-picker__list { list-style: none; margin: 0; padding: 6px; max-height: 360px; overflow: auto; overscroll-behavior: contain; }
+.v3-picker__list { list-style: none; margin: 0; padding: 6px; max-height: 360px; min-height: 0; overflow: auto; overscroll-behavior: contain; }
 .v3-picker__group { position: sticky; top: -6px; padding: 8px 10px 4px; font: 600 10.5px/1 var(--font-mono); letter-spacing: .12em; color: var(--ink-3); background: var(--surface); }
 .v3-picker__list button { display: grid; grid-template-columns: 1fr auto 30px; gap: 10px; align-items: baseline; width: 100%; padding: 8px 10px; border: 0; border-radius: 9px; background: transparent; text-align: left; }
 .v3-picker__list button.is-active { background: var(--surface-3); }
@@ -243,7 +245,6 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
   .v3-picker__mark { width: 30px; height: 30px; font-size: 13px; }
   .v3-picker__text { min-width: 0; }
   .v3-picker__text small { font-size: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .v3-picker__pop { position: fixed; left: 16px; right: 16px; top: 120px; width: auto; }
   .v3-readouts { margin-left: 0; width: 100%; justify-content: space-between; gap: 12px; }
   .v3-readout__num { font-size: 32px; }
   .v3-chart { padding: 14px 10px 10px; border-radius: 14px; }

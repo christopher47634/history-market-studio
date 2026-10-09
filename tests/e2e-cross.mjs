@@ -19,6 +19,13 @@ const inkRatio = (page) => page.evaluate(() => {
   for (let i = 3; i < data.length; i += 16) if (data[i] > 0) ink++;
   return ink / (data.length / 16);
 });
+// 下拉框中心点最上层的元素必须属于弹层（不能被图表卡片盖住）。
+const popOnTop = (page) => page.evaluate(() => {
+  const p = document.querySelector(".v3-picker__pop");
+  if (!p) return "no-pop";
+  const r = p.getBoundingClientRect();
+  return [[0.5, 0.5], [0.5, 0.85]].every(([fx, fy]) => p.contains(document.elementFromPoint(r.left + r.width * fx, r.top + r.height * fy))) ? "ok" : "covered";
+});
 const level = (page) => page.locator('.v3-seg[aria-label="缩放层级"] [aria-checked="true"]').textContent();
 
 async function scanFor(page, selector, act) {
@@ -58,6 +65,23 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
     for (let i = 0; i < 16 && (await level(desk)) === "全景"; i++) { await desk.mouse.wheel(0, -240); await desk.waitForTimeout(150); }
     assert.notEqual(await level(desk), "全景");
   });
+  await check(`${name} 桌面：人物下拉框浮在图表之上`, async () => {
+    await desk.locator(".v3-picker__btn").nth(1).click();
+    await desk.waitForTimeout(400);
+    assert.equal(await popOnTop(desk), "ok");
+    await desk.keyboard.press("Escape");
+  });
+  await check(`${name} 桌面：朱砂切回玉衡后图表是深色`, async () => {
+    await desk.evaluate(() => { location.hash = "b"; });
+    await desk.waitForTimeout(900);
+    const lum = await desk.evaluate(() => {
+      const c = document.querySelector(".v3-chart-canvas canvas");
+      const k = c.width / c.clientWidth;
+      const d = c.getContext("2d").getImageData(Math.round(c.width * 0.5), Math.round(c.height - 25 * k), 1, 1).data;
+      return (d[0] + d[1] + d[2]) / 3;
+    });
+    assert.ok(lum < 80, `缩放条亮度 ${lum}`);
+  });
   await check(`${name} 桌面：文字版表格可打开`, async () => {
     await desk.getByRole("button", { name: "文字版" }).click();
     assert.ok((await desk.locator(".v3-table tbody tr").count()) > 20);
@@ -85,6 +109,11 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
         changed = (await mob.locator(".v3-reader__title").textContent()) !== before;
       }
     assert.ok(changed, "点遍图表都没有固定到新节点");
+  });
+  await check(`${name} 手机：下拉框浮在最上层`, async () => {
+    await mob.locator(".v3-picker__btn").first().click();
+    await mob.waitForTimeout(400);
+    assert.equal(await popOnTop(mob), "ok");
   });
   await check(`${name}：全程没有脚本报错`, async () => assert.deepEqual(errors, []));
   await browser.close();
