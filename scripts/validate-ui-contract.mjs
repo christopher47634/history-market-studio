@@ -1,6 +1,7 @@
 // v3 界面契约：静态检查关键约定 + 用真实数据跑一遍缩放分层的纯函数。
 import { readFileSync } from "node:fs";
 import { figureV2ById } from "../src/v2/all.js";
+import { existsSync } from "node:fs";
 import { buildScene, LEVELS, levelOf, visibleNodes, labelBudget, candles, readingOrder, nearest, yRange, valueAt } from "../src/v3/scene.js";
 
 const root = new URL("..", import.meta.url);
@@ -48,6 +49,22 @@ if (lo0 !== 0 || hi0 !== 100 || hi2 - lo2 >= 100 || hi2 - lo2 < 20) fail("全景
 if (valueAt(p, p.main[3].x, LEVELS[0]) !== p.main[3].score || valueAt(p, p.main[0].x - 5, LEVELS[0]) !== null) fail("同期取值应沿图上的线取，出生前为空");
 if (!chart.includes("makeCrosshair") || !chart.includes('id: `vol-${slot}`') || !chart.includes("S.dragging")) fail("缺少十字光标、涨跌副图或拖动与点击的区分");
 if (!app.includes("function Legend") || !app.includes("开<em>")) fail("缺少开高低收信息栏");
+
+// 角色页：六个领域板块 + 特色板块；每个板块都有人；角色卡素材 300 人齐全，头像都有许可证和作者。
+const { BOARDS, filterFigures } = await import("../src/v3/boards.js");
+const { default: index } = await import("../src/v2/index.generated.js");
+const { default: roles } = await import("../src/v2/roles.generated.js");
+for (const b of BOARDS) if (!filterFigures(index, { board: b }).length) fail(`板块「${b.label}」没有人物`);
+if (index.some((f) => !f.trend || f.trend.length < 3)) fail("索引缺少一生走势（trend），角色页画不出迷你走势");
+const missing = index.filter((f) => !roles[f.id]);
+if (missing.length) fail(`角色卡缺少维基简介：${missing.map((f) => f.name).join("、")}`);
+for (const [id, r] of Object.entries(roles)) {
+  if (!r.revid || !r.brief) fail(`角色卡 ${id} 缺少版本号或简介`);
+  if (!JSON.parse(readFileSync(new URL(`../data/v2/client/${id}.json`, import.meta.url), "utf8")).wikiIntro) fail(`${id} 的按需数据包缺少完整维基导语`);
+  if (r.img && (!r.img.license || !r.img.artist || !r.img.page || !existsSync(new URL(`../public/${r.img.src}`, import.meta.url)))) fail(`角色卡 ${id} 的头像缺少许可证、作者、来源页或图片文件`);
+}
+const rolesView = read("src/v3/RolesView.jsx");
+if (!rolesView.includes("onDragStart") || !rolesView.includes("onDrop") || !rolesView.includes("BriefCard") || !rolesView.includes("FullCard")) fail("角色页缺少拖放对比、简要角色卡或完整角色卡");
 
 // 阅读：依据分三类，百科不冒充原文；键盘逐个翻看。
 if (!bits.includes("百科") || !bits.includes("史书原文") || !bits.includes("概括")) fail("依据徽标没有区分原文 / 百科 / 概括");

@@ -5,6 +5,7 @@ import { buildScene, readingOrder, LEVELS, candleOf, valueAt } from "./scene.js"
 import { LifeChart } from "./LifeChart.jsx";
 import { Picker } from "./Picker.jsx";
 import { Reader } from "./Reader.jsx";
+import { RolesView } from "./RolesView.jsx";
 import { AnimatedNumber, Segmented } from "./bits.jsx";
 import { nodeDetail } from "./detail.js";
 
@@ -167,9 +168,13 @@ function chartSummary(scene) {
   }).join("；");
 }
 
+// 「角色」页的地址是 ?view=roles（早先的 ?view=index 也认）。
+const viewFromUrl = () => (["roles", "index"].includes(new URLSearchParams(location.search).get("view")) ? "roles" : "chart");
+
 export function App() {
   const [themeKey, setThemeKey] = useState(themeFromHash);
   const [ids, setIds] = useState(initialIds);
+  const [page, setPage] = useState(viewFromUrl);
   const [loaded, setLoaded] = useState({});
   const [error, setError] = useState(null);
   const [axis, setAxis] = useState(null);
@@ -185,6 +190,22 @@ export function App() {
     const sync = () => setThemeKey(themeFromHash());
     addEventListener("hashchange", sync);
     return () => removeEventListener("hashchange", sync);
+  }, []);
+  // 走势 ⇄ 索引用 pushState 切换，浏览器「返回」能回到上一页；人物参数一直留在地址里。
+  useEffect(() => {
+    const pop = () => { setPage(viewFromUrl()); setIds(initialIds()); };
+    addEventListener("popstate", pop);
+    return () => removeEventListener("popstate", pop);
+  }, []);
+  const openPage = useCallback((next, nextIds) => {
+    const url = new URL(location.href);
+    if (next === "roles") url.searchParams.set("view", "roles");
+    else ["view", "board", "q", "role"].forEach((k) => url.searchParams.delete(k));
+    if (nextIds) { url.searchParams.set("left", nextIds.left); url.searchParams.set("right", nextIds.right); }
+    history.pushState(null, "", url);
+    if (nextIds) setIds(nextIds);
+    setPage(next);
+    scrollTo({ top: 0 });
   }, []);
   // 用 layout effect：子组件（图表）的普通 effect 会先于父组件执行，若这里也用普通 effect，
   // 图表切主题时读到的还是旧主题的颜色（朱砂切回玉衡会画出浅色网格和白边）。
@@ -202,7 +223,7 @@ export function App() {
     const url = new URL(location.href);
     url.searchParams.set("left", ids.left);
     if (ids.right) url.searchParams.set("right", ids.right); else url.searchParams.set("right", "");
-    history.replaceState(null, "", url);
+    history.replaceState(history.state, "", url);
     try { localStorage.setItem(STORE, JSON.stringify(ids)); } catch {}
     return () => { alive = false; };
   }, [ids.left, ids.right]);
@@ -269,10 +290,14 @@ export function App() {
           <span><b>历史行情局</b><small>HISTORY · MARKET</small></span>
         </a>
         <p className="v3-top__lede">把一个人的一生画成走势：<em>当时的势</em>随经历起落，<em>后世评价</em>在身后慢慢落定。</p>
-        <button type="button" className="v3-share" onClick={share} aria-live="polite">{shared || "分享这张图"}</button>
+        <Segmented label="页面" value={page} onChange={(v) => openPage(v)} options={[{ value: "chart", label: "走势", hint: "人生走势与对比" }, { value: "roles", label: "角色", hint: "按板块和搜索找人，看角色卡，挑人对比" }]} />
+        {page === "chart" && <button type="button" className="v3-share" onClick={share} aria-live="polite">{shared || "分享这张图"}</button>}
         <Segmented label="主题" size="sm" value={themeKey} onChange={setTheme} options={[{ value: "b", label: "玉衡" }, { value: "c", label: "朱砂" }]} />
       </header>
 
+      {page === "roles" ? (
+        <RolesView current={ids} onCompare={(left, right) => openPage("chart", { left, right })} />
+      ) : (<>
       <section className="v3-pick rise" style={{ "--d": 1 }} aria-label="选择人物">
         <Picker slot={0} value={ids.left} exclude={ids.right} onChange={(id) => id && setIds((s) => ({ ...s, left: id }))} />
         <button type="button" className="v3-swap" onClick={swap} disabled={!ids.right} aria-label="交换两人">⇄</button>
@@ -311,11 +336,12 @@ export function App() {
           <Reader node={pinned} prev={prev} next={next} onGo={go} onFocus={(n) => chart.current?.focus(n)} />
         </div>
       </main>
+      </>)}
 
       <footer className="v3-foot">
         <p><b>怎么算的</b>势 = 权位档分 − 危局折损，所有人用同一把尺子；只有毛泽东达到 100，其余人最高 98。后世评价衡量历史分量，不等于褒扬。</p>
         <p><b>依据</b>古代人物引自正史原文（维基文库），近现代人物引自维基百科；每一句都在原文里逐字核对过，找不到原句的节点标为「概括」。</p>
-        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
+        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片，作者与许可写在每张完整角色卡上。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
       </footer>
     </div>
   );

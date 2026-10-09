@@ -33,3 +33,11 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## 2026-10-09 chart label decision
 
 - 图上的节点标签是透明玻璃：极薄的半透明底 + 细亮边，后面的走势线必须透出来；字靠与底色同色的描边（halo）保证可读，不能再用实心底把线挡住。
+
+## 2026-10-09 「角色」页
+
+- 主界面之外有第二个页面「角色」（?view=roles），顶栏「走势 / 角色」切换，浏览器返回键可来回。
+- 板块：六个领域板块 + 按一生走势形态算出的特色板块（逆袭、长牛、大起大落、盛极而衰、身后封神），逻辑在 src/v3/boards.js。
+- 光标停在一行 → 右侧玻璃拟态「简要角色卡」；单击 → 「完整角色卡」（手机是底部抽屉）。
+- 对比：把行或角色卡拖到底部对比栏 A / B 格，或点「+」；再点「对比走势」回主图。
+- 头像与简介来自维基百科：头像只用 Wikimedia Commons 上公有领域 / CC 许可的图片，必须带作者与许可证署名；简介按 CC BY-SA 4.0 标注出处和版本。素材管线：npm run v2:portraits（fetch-portraits.mjs → roles.py），之后跑 client-index。

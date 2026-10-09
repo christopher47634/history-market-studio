@@ -50,8 +50,15 @@ const built = await Promise.all(
     size: (await stat(path.join(builtAssets, name))).size,
   })),
 );
+// 预算：assets 里大部分是每人一个的按需数据分包，外加角色页的简介包（约 330KB，进角色页才加载）。
 const total = built.reduce((sum, item) => sum + item.size, 0);
-if (total > 3.2 * 1024 * 1024) fail("生产静态资源总量超过 3.2MB");
+if (total > 3.6 * 1024 * 1024) fail("生产静态资源总量超过 3.6MB");
+// 角色头像在 dist/client/portraits，逐张懒加载，单独算：每张 ≤ 40KB，总量 ≤ 4MB。
+const portraitDir = path.join(root, "dist", "client", "portraits");
+const portraits = await Promise.all((await readdir(portraitDir)).map(async (name) => ({ name, size: (await stat(path.join(portraitDir, name))).size })));
+if (portraits.length < 250) fail(`角色头像只有 ${portraits.length} 张，构建没有带上 public/portraits`);
+if (portraits.some((item) => item.size > 40 * 1024)) fail("有角色头像超过 40KB，应先跑 pipeline/roles.py 压缩");
+if (portraits.reduce((sum, item) => sum + item.size, 0) > 4 * 1024 * 1024) fail("角色头像总量超过 4MB");
 for (const item of built) {
   if (
     item.name.endsWith(".js") &&
@@ -63,5 +70,5 @@ for (const item of built) {
 }
 
 console.log(
-  `production validation passed: ${built.length} assets, ${(total / 1024 / 1024).toFixed(2)}MB total, shareable deep links and install metadata verified`,
+  `production validation passed: ${built.length} assets, ${(total / 1024 / 1024).toFixed(2)}MB app + ${portraits.length} portraits, shareable deep links and install metadata verified`,
 );

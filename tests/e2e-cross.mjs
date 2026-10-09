@@ -82,6 +82,20 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
     });
     assert.ok(lum < 80, `缩放条亮度 ${lum}`);
   });
+  // Playwright 的 Windows 版 WebKit 模拟不了 HTML5 拖放，WebKit 改测「+」填入（触屏也走这条路）。
+  await check(`${name} 桌面：角色页把人${name === "WebKit" ? "用 + " : "拖"}进对比栏 A 格`, async () => {
+    await desk.goto(`${base}/?left=maozedong&right=zhouenlai&view=roles#b`);
+    await desk.waitForSelector(".v3-row");
+    await desk.waitForTimeout(1200);
+    const name2 = (await desk.locator(".v3-row__who b").nth(2).textContent()).trim();
+    if (name === "WebKit") await desk.locator(".v3-row__check").nth(2).click();
+    else await desk.locator(".v3-row").nth(2).dragTo(desk.locator(".v3-tray__slot").first());
+    await desk.waitForTimeout(300);
+    assert.equal((await desk.locator(".v3-tray__slot b").first().textContent()).trim(), name2);
+    await desk.goto(`${base}/?left=maozedong&right=zhouenlai#c`);
+    await desk.waitForSelector(".v3-reader__title");
+    await desk.waitForTimeout(1200);
+  });
   await check(`${name} 桌面：文字版表格可打开`, async () => {
     await desk.getByRole("button", { name: "文字版" }).click();
     assert.ok((await desk.locator(".v3-table tbody tr").count()) > 20);
