@@ -75,12 +75,16 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
   const [ylo, yhi, ystep] = yRange(scene.people, level, window);
   const yspan = yhi - ylo;
   const series = [];
+  // 节点标签是透明玻璃：底色只留薄薄一层，后面的线看得见；
+  // 每个字描一圈与底色同色的柔边（halo），线从字后穿过时字仍然清楚。
+  const dark = T.bg.trim().toLowerCase() < "#808080";
+  const halo = { textBorderColor: alpha(T.bg, dark ? 0.85 : 0.9), textBorderWidth: 3 };
   const rich = {
-    t: { fontSize: 12, fontWeight: 500, color: T.ink, fontFamily: T.sans, lineHeight: 17 },
-    m: { fontSize: 10.5, color: T.ink3, fontFamily: T.mono, lineHeight: 15 },
-    up: { fontSize: 10.5, color: T.up, fontFamily: T.mono, fontWeight: 600 },
-    down: { fontSize: 10.5, color: T.down, fontFamily: T.mono, fontWeight: 600 },
-    q: { fontSize: 11, color: T.ink2, fontFamily: T.serif, lineHeight: 17 },
+    t: { fontSize: 12, fontWeight: 500, color: T.ink, fontFamily: T.sans, lineHeight: 17, ...halo },
+    m: { fontSize: 10.5, color: T.ink2, fontFamily: T.mono, lineHeight: 15, ...halo },
+    up: { fontSize: 10.5, color: T.up, fontFamily: T.mono, fontWeight: 600, ...halo },
+    down: { fontSize: 10.5, color: T.down, fontFamily: T.mono, fontWeight: 600, ...halo },
+    q: { fontSize: 11, color: T.ink2, fontFamily: T.serif, lineHeight: 17, ...halo },
   };
   const visibleK = scene.people.map((p) => (kMode ? candles(p, level).filter((k) => k.x >= window[0] - 1 && k.x <= window[1] + 1) : []));
   const { sized, base } = sizeCandles(visibleK, window, width - G.left - G.right);
@@ -160,8 +164,9 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
           show: labeled.has(n.id), formatter: labelFor(scene, level, n), rich,
           position: n.score > yhi - yspan * 0.14 ? "bottom" : n.score < ylo + yspan * 0.18 ? "top" : n.delta < 0 || (pair && slot === 1 && n.delta === 0) ? "bottom" : "top",
           distance: kMode ? 12 : 9, align: "center",
-          backgroundColor: T.surface, borderColor: T.line, borderWidth: 1, borderRadius: 7, padding: [4, 7, 3, 7],
-          shadowColor: "rgba(0,0,0,0.08)", shadowBlur: 8, shadowOffsetY: 2,
+          backgroundColor: dark ? "rgba(255,255,255,0.045)" : "rgba(255,255,255,0.32)",
+          borderColor: dark ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0.85)", borderWidth: 1, borderRadius: 8, padding: [4, 8, 3, 8],
+          shadowColor: dark ? "rgba(0,0,0,0.18)" : "rgba(80,60,30,0.08)", shadowBlur: 10, shadowOffsetY: 2,
         },
       })),
       labelLayout: { hideOverlap: true, moveOverlap: "shiftY" },

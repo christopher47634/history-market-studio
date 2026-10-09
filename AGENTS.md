@@ -29,3 +29,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Production data is available through `/api/health`, `/api/figures`, `/api/figures/:id`, and `/api/compare`. The client automatically falls back to the embedded validated dataset when the API is unavailable.
 - The deployed worker bundles the same historical model used by the client and adds a restrictive security-header baseline. The local Vite server exposes the same API contract.
 - Settings dialogs trap focus and restore it on close; event cards close with Escape; ECharts ARIA descriptions and a textual chart summary are required.
+
+## 2026-10-09 chart label decision
+
+- 图上的节点标签是透明玻璃：极薄的半透明底 + 细亮边，后面的走势线必须透出来；字靠与底色同色的描边（halo）保证可读，不能再用实心底把线挡住。
