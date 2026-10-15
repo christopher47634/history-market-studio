@@ -30,7 +30,7 @@ export const SPECIAL_BOARDS = [
   { id: "逆袭", label: "逆袭", hint: "起点很低（≤20），一生做到 90 以上", test: (f) => f.trend[0] <= 20 && peakOf(f.trend) >= 90, metric: (f) => peakOf(f.trend) - f.trend[0] },
   { id: "长牛", label: "长牛", hint: "一路走高，生前最大回撤不超过 5", test: (f) => drawdown(f.trend) <= 5 && peakOf(f.trend) >= 80, metric: (f) => peakOf(f.trend) },
   { id: "大起大落", label: "大起大落", hint: "生前跌过 45 以上，之后又涨回 25 以上", test: (f) => drawdown(f.trend) >= 45 && rebound(f.trend) >= 25, metric: (f) => drawdown(f.trend) },
-  { id: "盛极而衰", label: "盛极而衰", hint: "终章比一生最高点低 55 以上", test: (f) => f.trend.at(-1) <= peakOf(f.trend) - 55, metric: (f) => peakOf(f.trend) - f.trend.at(-1) },
+  { id: "盛极而衰", label: "盛极而衰", hint: "终章比一生最高点低 55 以上", test: (f) => f.trend.slice(-1)[0] <= peakOf(f.trend) - 55, metric: (f) => peakOf(f.trend) - f.trend.slice(-1)[0] },
   { id: "身后封神", label: "身后封神", hint: "后世评价比生前最高的势还高 25 以上", test: (f) => f.legacy.score - peakOf(f.trend) >= 25, metric: (f) => f.legacy.score - peakOf(f.trend) },
 ];
 

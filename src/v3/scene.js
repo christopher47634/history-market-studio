@@ -9,7 +9,7 @@ export const LEVELS = [
   { key: "chapter", label: "章节", hint: "逐个阶段，标出每一步", minSpan: 12 },
   { key: "detail", label: "细读", hint: "逐年细节，连小事和原文", minSpan: 0 },
 ];
-export const levelOf = (span) => LEVELS.find((l) => span >= l.minSpan) ?? LEVELS.at(-1);
+export const levelOf = (span) => LEVELS.find((l) => span >= l.minSpan) ?? LEVELS.slice(-1)[0];
 // 点击层级按钮时用的目标跨度。
 export const LEVEL_SPAN = { overview: Infinity, chapter: 24, detail: 8 };
 
@@ -129,7 +129,7 @@ export function valueAt(person, x, level) {
     const a = line[i - 1], b = line[i];
     if (x <= b.x) return +(a.score + ((b.score - a.score) * (x - a.x)) / (b.x - a.x || 1)).toFixed(1);
   }
-  return line.at(-1).score;
+  return line.slice(-1)[0].score;
 }
 
 // 纵轴范围：全景固定 0–100、每 25 一格（跨人物可比）；放大后按视窗里的数据自动适配（看盘软件的做法），
@@ -139,7 +139,7 @@ export function yRange(people, level, window) {
   const vals = people.flatMap((p) => [...p.nodes, ...p.tail].filter((n) => n.x >= window[0] - 1 && n.x <= window[1] + 1).map((n) => n.score));
   people.forEach((p) => {
     // 视窗边缘外的第一个点也算上，线条从画面外伸进来时不会被截掉。
-    const before = p.nodes.filter((n) => n.x < window[0]).at(-1);
+    const before = p.nodes.filter((n) => n.x < window[0]).slice(-1)[0];
     const after = [...p.nodes, ...p.tail].find((n) => n.x > window[1]);
     if (before) vals.push(before.score);
     if (after) vals.push(after.score);

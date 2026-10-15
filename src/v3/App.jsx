@@ -100,7 +100,7 @@ function Readout({ person, hover, level }) {
   const f = person.figure;
   const then = hover && hover.node.figure.id === f.id;
   // 光标停在另一个人身上、而此人当时在世：显示同一时刻此人的势。
-  const peer = hover && !then && hover.node.x <= person.main.at(-1).x ? valueAt(person, hover.node.x, level) : null;
+  const peer = hover && !then && hover.node.x <= person.main.slice(-1)[0].x ? valueAt(person, hover.node.x, level) : null;
   const value = then ? hover.node.score : peer ?? f.legacy.score;
   return (
     <div className={`v3-readout${then || peer != null ? " is-then" : ""}`} style={{ "--c": `var(--p${person.slot})` }}>

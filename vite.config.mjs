@@ -31,6 +31,8 @@ export default defineConfig({
   },
   build: {
     outDir: "dist/client",
+    // 显式目标：旧版 iOS Safari 也能解析（esbuild 只转语法、不补方法，方法调用已在源码里改成兼容写法）。
+    target: ["es2020", "safari14"],
     chunkSizeWarningLimit: 500,
     rollupOptions: {
       output: {
@@ -51,7 +53,8 @@ export default defineConfig({
     include: ["react", "react-dom/client"],
   },
   server: {
-    host: "0.0.0.0",
+    // 默认只监听本机；需要局域网/手机访问时设 VITE_HOST=0.0.0.0。
+    host: process.env.VITE_HOST || "127.0.0.1",
     allowedHosts: ["terminal.local"],
     warmup: {
       clientFiles: ["./src/main.jsx"],

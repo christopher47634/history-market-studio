@@ -31,12 +31,12 @@ export function Spark({ f, w = 116, h = 30, big = false }) {
   const X = (i) => (i / (t.length - 1)) * lifeW;
   const Y = (v) => h - 2 - (v / 100) * (h - 4);
   const d = t.map((v, i) => `${i ? "L" : "M"}${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join("");
-  const up = f.legacy.score >= t.at(-1);
+  const up = f.legacy.score >= t.slice(-1)[0];
   return (
     <svg className={`v3-spark${big ? " is-big" : ""} ${up ? "is-up" : "is-down"}`} viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden="true">
       <path className="v3-spark__area" d={`${d}L${lifeW},${h}L0,${h}Z`} />
       <path className="v3-spark__line" d={d} vectorEffect="non-scaling-stroke" />
-      <path className="v3-spark__tail" d={`M${lifeW},${Y(t.at(-1)).toFixed(1)}L${w - 2},${Y(f.legacy.score).toFixed(1)}`} vectorEffect="non-scaling-stroke" />
+      <path className="v3-spark__tail" d={`M${lifeW},${Y(t.slice(-1)[0]).toFixed(1)}L${w - 2},${Y(f.legacy.score).toFixed(1)}`} vectorEffect="non-scaling-stroke" />
       <circle cx={w - 2} cy={Y(f.legacy.score)} r={big ? 3 : 2} />
     </svg>
   );

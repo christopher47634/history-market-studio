@@ -47,17 +47,17 @@ const squash = (d, total) => Math.log1p(Math.max(0, d)) / Math.log1p(total);
 export function axisLayout(figures, axis) {
   const lives = figures.map((f) => lifePoints(f));
   const lifeStart = Math.min(...lives.map((p) => xOf(p[0], axis)));
-  const lifeEnd = Math.max(...lives.map((p) => xOf(p.at(-1), axis)));
+  const lifeEnd = Math.max(...lives.map((p) => xOf(p.slice(-1)[0], axis)));
   const tail = Math.max(4, (lifeEnd - lifeStart) * 0.2);
   const endX = lifeEnd + tail;
   // 纪年轴：先按真实年份走到最后一人去世，再压缩到今日；年龄轴：从本人去世年龄起压缩。
   const lastDeathYear = Math.max(...figures.map((f) => f.died.year));
   const afterX = (f, year) => {
     if (axis === "year") {
-      if (year <= lastDeathYear) return year === f.died.year ? xOf(lifePoints(f).at(-1), axis) : year;
+      if (year <= lastDeathYear) return year === f.died.year ? xOf(lifePoints(f).slice(-1)[0], axis) : year;
       return lifeEnd + (endX - lifeEnd) * squash(year - lastDeathYear, TODAY - lastDeathYear);
     }
-    const from = xOf(lifePoints(f).at(-1), axis);
+    const from = xOf(lifePoints(f).slice(-1)[0], axis);
     return from + (endX - from) * squash(year - f.died.year, TODAY - f.died.year);
   };
   return { lifeStart, lifeEnd, endX, afterX };
@@ -71,7 +71,7 @@ export const xOf = (point, axis) => (axis === "year" ? point.t ?? point.year : p
 // 分段线性取值（用于比较和反超点计算，画线时 ECharts 另做单调平滑）。
 export function valueAt(points, x, axis) {
   const xs = points.map((p) => xOf(p, axis));
-  if (x < xs[0] || x > xs.at(-1)) return null;
+  if (x < xs[0] || x > xs.slice(-1)[0]) return null;
   for (let i = 1; i < points.length; i++) {
     if (x <= xs[i]) {
       const span = xs[i] - xs[i - 1];
@@ -79,14 +79,14 @@ export function valueAt(points, x, axis) {
       return points[i - 1].score + (points[i].score - points[i - 1].score) * t;
     }
   }
-  return points.at(-1).score;
+  return points.slice(-1)[0].score;
 }
 
 // 反超点：两条生前线在共同区间内高低次序发生变化的位置，归因到离它最近的一个事件。
 export function crossovers(a, b, axis) {
   const pa = lifePoints(a), pb = lifePoints(b);
   const lo = Math.max(xOf(pa[0], axis), xOf(pb[0], axis));
-  const hi = Math.min(xOf(pa.at(-1), axis), xOf(pb.at(-1), axis));
+  const hi = Math.min(xOf(pa.slice(-1)[0], axis), xOf(pb.slice(-1)[0], axis));
   if (lo >= hi) return [];
   const xs = [...new Set([...pa, ...pb].map((p) => xOf(p, axis)).filter((x) => x >= lo && x <= hi))].sort((m, n) => m - n);
   const out = [];
