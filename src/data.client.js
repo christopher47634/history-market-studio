@@ -54,8 +54,9 @@ export function getTurningPoints(comparison, left, right) {
     if (le) candidates.push({ ...le, figure: left, axisLabel: comparison.axis[index], score: comparison.left[index].value });
     if (re) candidates.push({ ...re, figure: right, axisLabel: comparison.axis[index], score: comparison.right[index].value });
   });
-  return candidates.sort((a, b) => a.age - b.age).filter((item, index, arr) => {
-    if (index === 0 || index === arr.length - 1) return true;
-    return Math.abs(item.delta) >= 12 || index % 3 === 0;
-  }).slice(0, 8);
+  // 先按 |delta| 取波动最大的 8 个（不能按年龄截断，否则只剩前半生），再按年龄排序用于展示。
+  return candidates
+    .sort((a, b) => Math.abs(b.delta ?? 0) - Math.abs(a.delta ?? 0) || a.age - b.age)
+    .slice(0, 8)
+    .sort((a, b) => a.age - b.age);
 }

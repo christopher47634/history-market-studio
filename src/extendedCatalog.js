@@ -1,4 +1,5 @@
 import { sourceByEra } from "./catalog.js";
+import { hashText } from "./hash.js";
 
 const palette = [
   "#b95d4f",
@@ -30,11 +31,7 @@ const sources = {
   },
 };
 
-const hash = (text) =>
-  [...text].reduce(
-    (sum, char) => ((sum * 33) ^ char.charCodeAt(0)) >>> 0,
-    5381,
-  );
+const hash = hashText;
 
 const milestone = (year, title, score, dimension, summary) => ({
   year,

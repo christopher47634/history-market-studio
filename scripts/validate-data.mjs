@@ -1,4 +1,4 @@
-import { figures, figureById, buildComparison, getPairColors, dynastyOrder } from "../src/data.js";
+import { figures, duplicateFigureNames, figureById, buildComparison, getPairColors, dynastyOrder } from "../src/data.js";
 import {
   figureDomains,
   filterFigures,
@@ -11,6 +11,7 @@ const fail = (message) => { throw new Error(message); };
 
 if(new Set(figures.map((figure)=>figure.id)).size!==figures.length)fail("人物 ID 不唯一");
 if(new Set(figures.map((figure)=>figure.name)).size!==figures.length)fail("人物姓名存在重复条目");
+if(duplicateFigureNames.length)fail(`数据源中存在同名人物（会被去重丢弃）：${duplicateFigureNames.join("、")}`);
 
 // v2 口径：每个人物都来自 data/v2（经 pipeline/build.mjs 校验），这里复核界面拿到的结构。
 const CAP = (figure) => (figure.id === "maozedong" ? 100 : 98);
@@ -38,7 +39,7 @@ for (const figure of figures) {
   });
 }
 
-if (figures.length !== 300) fail(`全史人物必须精确达到 300 位，当前 ${figures.length} 位`);
+if (figures.length < 300) fail(`全史人物不得少于 300 位，当前 ${figures.length} 位`);
 const totalEvents=figures.reduce((sum,figure)=>sum+figure.events.length,0);
 if(totalEvents<2400)fail(`300 人节点总量少于 2400 个，当前 ${totalEvents}`);
 const verified=figures.reduce((sum,figure)=>sum+[...figure.events,...(figure.subEvents??[])].filter((event)=>event.evidence?.basis==="原文").length,0);

@@ -1,9 +1,10 @@
 import { getCandleViewV2 } from "./v2/engine.js";
 import { interpolateTrajectoryScore } from "./trajectoryModel.js";
 
-const hashText = (text) => [...text].reduce((sum,char)=>((sum*33)^char.charCodeAt(0))>>>0,5381);
+import { hashText } from "./hash.js";
 
 function nearestEvent(events, age, tolerance=.15) {
+  if(!events.length)return null;
   const event = events.reduce((best,item)=>Math.abs(item.age-age)<Math.abs(best.age-age)?item:best,events[0]);
   return Math.abs(event.age-age)<=tolerance ? event : null;
 }
@@ -39,7 +40,7 @@ export function aggregateCandles(candles,bucketSize=1) {
       age:group[Math.floor(group.length/2)].age,
       phase:group[Math.floor(group.length/2)].phase,
       open:group[0].open,
-      close:group.at(-1).close,
+      close:group.slice(-1)[0].close,
       low:Math.min(...group.map((item)=>item.low)),
       high:Math.max(...group.map((item)=>item.high)),
       event:group.find((item)=>item.event)?.event || null,
@@ -58,6 +59,9 @@ export function granularityForSpan(span) {
 export function getCandleView(figure,span=100) {
   if (figure.v2) return getCandleViewV2(figure, span);
   const granularity=granularityForSpan(span);
+  if(!figure.events?.length){
+    return {granularity:{...granularity,label:"无事件"},candles:[],categories:[],values:[],trend:[]};
+  }
   const candles=aggregateCandles(buildMicroCandles(figure),granularity.bucket);
   return {
     granularity:{...granularity,label:`${granularity.key==="macro"?"按年":granularity.key==="swing"?"半年":"季度"} · ${candles.length} 段`},

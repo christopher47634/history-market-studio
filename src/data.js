@@ -189,10 +189,15 @@ const allFigures = [
   ...canonicalLateModernFigures,
 ];
 
+// 同名人物不再静默去重：先到先得会悄悄丢数据。这里保留去重保证运行，但在控制台报错；validate-data 对重名直接失败。
 const seenFigureNames = new Set();
+export const duplicateFigureNames = [];
 export const figures = allFigures
   .filter((figure) => {
-    if (seenFigureNames.has(figure.name)) return false;
+    if (seenFigureNames.has(figure.name)) {
+      duplicateFigureNames.push(figure.name);
+      return false;
+    }
     seenFigureNames.add(figure.name);
     return true;
   })
@@ -203,6 +208,8 @@ export const figures = allFigures
   .map(attachHistoricalCitations)
   // v2：经过校验的新数据覆盖旧数据，旧版的分期、领域、配色等索引字段保留。
   .map((figure) => (figureV2ById[figure.id] ? toLegacyFigure(figureV2ById[figure.id], figure) : figure));
+
+if (duplicateFigureNames.length) console.error("[data] 人物姓名重复：" + duplicateFigureNames.join("、"));
 
 export { dynastyOrder };
 
@@ -229,10 +236,19 @@ export function buildComparison(left, right, axisChoice) {
   if (left.v2 && right.v2) return buildComparisonV2(left, right, axisChoice);
   const step=.25;
   const maxAge=Math.ceil(Math.max(left.lifeSpan,right.lifeSpan));
-  const rawAxis=Array.from({length:Math.round(maxAge/step)+1},(_,index)=>+(index*step).toFixed(1));
+  const rawAxis=Array.from({length:Math.round(maxAge/step)+1},(_,index)=>Math.round(index*step*100)/100);
   const axis=rawAxis.map(formatAge);
   const lifeEvents=(figure)=>figure.events.filter((event)=>!event.posthumous&&event.age<=figure.lifeSpan);
-  const eventMap=(figure)=>new Map(lifeEvents(figure).map((event)=>[Math.round(event.age/step),event]));
+  // 同一 0.25 步长槽内有多个事件时保留 |score| 更高的，不再靠 Map 后写覆盖。
+  const eventMap=(figure)=>{
+    const map=new Map();
+    lifeEvents(figure).forEach((event)=>{
+      const slot=Math.round(event.age/step);
+      const held=map.get(slot);
+      if(!held||Math.abs(event.score)>Math.abs(held.score))map.set(slot,event);
+    });
+    return map;
+  };
   const seriesFor=(figure)=>{
     const events=lifeEvents(figure);
     const map=eventMap(figure);
@@ -271,14 +287,15 @@ export function toCandles(points) {
 
 export function getTurningPoints(comparison, left, right) {
   const candidates = [];
-  comparison.rawAxis.forEach((raw,index) => {
+  comparison.rawAxis.forEach((raw, index) => {
     const le = comparison.left[index].event;
     const re = comparison.right[index].event;
-    if (le) candidates.push({ ...le, figure:left, axisLabel:comparison.axis[index], score:comparison.left[index].value });
-    if (re) candidates.push({ ...re, figure:right, axisLabel:comparison.axis[index], score:comparison.right[index].value });
+    if (le) candidates.push({ ...le, figure: left, axisLabel: comparison.axis[index], score: comparison.left[index].value });
+    if (re) candidates.push({ ...re, figure: right, axisLabel: comparison.axis[index], score: comparison.right[index].value });
   });
-  return candidates.sort((a,b) => a.age-b.age).filter((item,index,arr) => {
-    if (index===0 || index===arr.length-1) return true;
-    return Math.abs(item.delta) >= 12 || index % 3 === 0;
-  }).slice(0,8);
+  // 先按 |delta| 取波动最大的 8 个（不能按年龄截断，否则只剩前半生），再按年龄排序用于展示。
+  return candidates
+    .sort((a, b) => Math.abs(b.delta ?? 0) - Math.abs(a.delta ?? 0) || a.age - b.age)
+    .slice(0, 8)
+    .sort((a, b) => a.age - b.age);
 }
