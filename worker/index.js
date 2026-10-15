@@ -15,7 +15,15 @@ const secure = (response) => {
 
 export default {
   async fetch(request, env) {
-    const apiResponse = await handleHistoryApi(request);
+    let apiResponse;
+    try {
+      apiResponse = await handleHistoryApi(request);
+    } catch {
+      apiResponse = new Response(JSON.stringify({ error: "internal_error" }), {
+        status: 500,
+        headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
+      });
+    }
     if (apiResponse) return secure(apiResponse);
 
     const response = await env.ASSETS.fetch(request);
