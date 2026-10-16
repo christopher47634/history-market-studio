@@ -76,12 +76,12 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
         <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
       </button>
       {open && place && createPortal(
-        <div className="v3-picker__pop" ref={pop} role="dialog" aria-label="选择人物" style={{ left: place.left, top: place.top, width: place.width, maxHeight: place.maxHeight, "--c": `var(--p${slot})` }}>
+        <div className="v3-picker__pop lg" ref={pop} role="dialog" aria-label="选择人物" style={{ left: place.left, top: place.top, width: place.width, maxHeight: place.maxHeight, "--c": `var(--p${slot})` }}>
           <div className="v3-picker__search">
             <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" /><path d="m10.5 10.5 3 3" /></svg>
             <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={key} placeholder="搜人名、朝代或事件，如「长征」" aria-label="搜索人物" role="combobox" aria-expanded="true" aria-controls={`v3-list-${slot}`} />
           </div>
-          <ul className="v3-picker__list" role="listbox" id={`v3-list-${slot}`}>
+          <ul className="v3-picker__list" data-glow="" role="listbox" id={`v3-list-${slot}`}>
             {allowEmpty && value && <li><button type="button" className="v3-picker__clear" onClick={() => choose("")}>只看一个人</button></li>}
             {list.map((f, i) => {
               const head = f.dynasty !== lastDynasty ? (lastDynasty = f.dynasty) : null;

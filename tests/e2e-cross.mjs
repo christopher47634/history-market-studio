@@ -85,11 +85,11 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
   // Playwright 的 Windows 版 WebKit 模拟不了 HTML5 拖放，WebKit 改测「+」填入（触屏也走这条路）。
   await check(`${name} 桌面：角色页把人${name === "WebKit" ? "用 + " : "拖"}进对比栏 A 格`, async () => {
     await desk.goto(`${base}/?left=maozedong&right=zhouenlai&view=roles#b`);
-    await desk.waitForSelector(".v3-row");
-    await desk.waitForTimeout(1200);
-    const name2 = (await desk.locator(".v3-row__who b").nth(2).textContent()).trim();
-    if (name === "WebKit") await desk.locator(".v3-row__check").nth(2).click();
-    else await desk.locator(".v3-row").nth(2).dragTo(desk.locator(".v3-tray__slot").first());
+    await desk.waitForSelector(".v3-tile");
+    await desk.waitForTimeout(1500);
+    const name2 = (await desk.locator(".v3-tile__name").nth(2).textContent()).trim();
+    if (name === "WebKit") { await desk.locator(".v3-tile").nth(2).hover(); await desk.locator(".v3-tile__add").nth(2).click(); }
+    else await desk.locator(".v3-tile").nth(2).dragTo(desk.locator(".v3-tray__slot").first());
     await desk.waitForTimeout(300);
     assert.equal((await desk.locator(".v3-tray__slot b").first().textContent()).trim(), name2);
     await desk.goto(`${base}/?left=maozedong&right=zhouenlai#c`);

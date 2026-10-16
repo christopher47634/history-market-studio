@@ -5,7 +5,7 @@ import { nodeDetail } from "./detail.js";
 export function Reader({ node, prev, next, onGo, onFocus, figures }) {
   if (!node) {
     return (
-      <aside className="v3-reader v3-card is-empty" aria-live="polite">
+      <aside className="v3-reader v3-card spot is-empty" aria-live="polite">
         <p className="v3-eyebrow">阅读</p>
         <h2>点图上的任意节点</h2>
         <p className="v3-muted">这里会展开那一刻发生了什么、当时的势怎么算出来，以及能逐字核对的原文。</p>
@@ -15,7 +15,7 @@ export function Reader({ node, prev, next, onGo, onFocus, figures }) {
   const d = nodeDetail(node);
   const tierPct = d.tierScore != null ? Math.min(100, d.tierScore) : null;
   return (
-    <aside className="v3-reader v3-card" aria-live="polite" style={{ "--c": `var(--p${d.slot})` }}>
+    <aside className="v3-reader v3-card spot" aria-live="polite" style={{ "--c": `var(--p${d.slot})` }}>
       <div className="v3-reader__body" key={`${node.id}`}>
         <p className="v3-eyebrow"><i className="v3-dot" />{d.person}<span>·</span>{d.when}{!d.certain && <span className="v3-tag">年份为估计</span>}<span className="v3-tag">{d.tag}</span></p>
         <h2 className="v3-reader__title">{d.title}</h2>

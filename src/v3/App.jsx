@@ -1,5 +1,6 @@
 // v3 界面：一张主图 + 阅读面板 + 事件时间条。两套主题（玉衡深色 / 朱砂浅色）共用同一套结构。
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { flushSync } from "react-dom";
 import { figureById, loadFigure } from "../data.js";
 import { buildScene, readingOrder, LEVELS, candleOf, valueAt } from "./scene.js";
 import { LifeChart } from "./LifeChart.jsx";
@@ -102,10 +103,18 @@ function Readout({ person, hover, level }) {
   // 光标停在另一个人身上、而此人当时在世：显示同一时刻此人的势。
   const peer = hover && !then && hover.node.x <= person.main.slice(-1)[0].x ? valueAt(person, hover.node.x, level) : null;
   const value = then ? hover.node.score : peer ?? f.legacy.score;
+  // 报价闪烁：读数一变，底色按涨跌闪一下（看盘软件的逐笔跳动）。
+  const last = useRef(value);
+  const [tick, setTick] = useState({ dir: "", n: 0 });
+  useEffect(() => {
+    const d = value - last.current;
+    last.current = value;
+    if (Math.abs(d) >= 0.1) setTick((t) => ({ dir: d > 0 ? "tick-up" : "tick-down", n: t.n + 1 }));
+  }, [value]);
   return (
     <div className={`v3-readout${then || peer != null ? " is-then" : ""}`} style={{ "--c": `var(--p${person.slot})` }}>
       <span className="v3-readout__who"><i className="v3-dot" />{f.name}</span>
-      <strong className="v3-readout__num"><AnimatedNumber value={value} digits={value % 1 ? 1 : 0} /></strong>
+      <strong className="v3-readout__num">{tick.n > 0 && <i key={tick.n} className={`v3-tick ${tick.dir}`} aria-hidden="true" />}<AnimatedNumber value={value} digits={value % 1 ? 1 : 0} /></strong>
       <span className="v3-readout__label">{then ? <>当时的势<em>{hover.node.event?.title}</em></> : peer != null ? <>同期的势<em>{hover.node.year < 0 ? `前${-hover.node.year}` : hover.node.year} 年</em></> : <>后世评价<em>{f.legacy.tier} · {f.legacy.label}</em></>}</span>
     </div>
   );
@@ -118,10 +127,10 @@ function Strip({ nodes, pinned, hover, onPick }) {
     el?.scrollIntoView({ block: "nearest", inline: "center", behavior: document.hidden ? "auto" : "smooth" });
   }, [pinned?.id]);
   return (
-    <ol className="v3-strip" ref={ref} aria-label="视窗内的事件">
+    <ol className="v3-strip" ref={ref} aria-label="视窗内的事件" data-hscroll="">
       {nodes.map((n) => (
         <li key={n.id} style={{ "--c": `var(--p${n.slot})` }}>
-          <button type="button" className={`${pinned?.id === n.id ? "is-pinned" : ""}${hover?.node.id === n.id ? " is-hover" : ""}${n.kind === "sub" ? " is-sub" : ""}`} onClick={() => onPick(n)}>
+          <button type="button" className={`spot${pinned?.id === n.id ? " is-pinned" : ""}${hover?.node.id === n.id ? " is-hover" : ""}${n.kind === "sub" ? " is-sub" : ""}`} onClick={() => onPick(n)}>
             <time>{n.year < 0 ? `前${-n.year}` : n.year}</time>
             <b>{n.event?.title}</b>
             <span>{n.score}</span>
@@ -203,9 +212,17 @@ export function App() {
     else ["view", "board", "q", "role"].forEach((k) => url.searchParams.delete(k));
     if (nextIds) { url.searchParams.set("left", nextIds.left); url.searchParams.set("right", nextIds.right); }
     history.pushState(null, "", url);
-    if (nextIds) setIds(nextIds);
-    setPage(next);
-    scrollTo({ top: 0 });
+    const apply = () => {
+      if (nextIds) setIds(nextIds);
+      setPage(next);
+      scrollTo({ top: 0 });
+    };
+    // 两页之间用 View Transitions 过渡：旧页模糊淡出、新页上浮。不支持或减少动效时直接切。
+    if ("startViewTransition" in document && !matchMedia("(prefers-reduced-motion: reduce)").matches && !document.hidden) {
+      const t = document.startViewTransition(() => flushSync(apply));
+      t.ready.catch(() => {});
+      t.finished.catch(() => {});
+    } else apply();
   }, []);
   // 用 layout effect：子组件（图表）的普通 effect 会先于父组件执行，若这里也用普通 effect，
   // 图表切主题时读到的还是旧主题的颜色（朱砂切回玉衡会画出浅色网格和白边）。
@@ -306,7 +323,7 @@ export function App() {
       </section>
 
       <main className="v3-main">
-        <section className="v3-card v3-chart rise" style={{ "--d": 2 }} aria-label="人生走势">
+        <section className="v3-card v3-chart spot rise" style={{ "--d": 2 }} aria-label="人生走势">
           <div className="v3-chart__bar">
             <div className="v3-chart__title">
               <h1>当时的势 <span>0–100</span></h1>

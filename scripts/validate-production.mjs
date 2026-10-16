@@ -59,6 +59,13 @@ const portraits = await Promise.all((await readdir(portraitDir)).map(async (name
 if (portraits.length < 250) fail(`角色头像只有 ${portraits.length} 张，构建没有带上 public/portraits`);
 if (portraits.some((item) => item.size > 40 * 1024)) fail("有角色头像超过 40KB，应先跑 pipeline/roles.py 压缩");
 if (portraits.reduce((sum, item) => sum + item.size, 0) > 4 * 1024 * 1024) fail("角色头像总量超过 4MB");
+// 自托管字体在 dist/client/fonts：按 unicode-range 分片，浏览器只下载屏幕上出现的字所在的片。每片 ≤ 170KB，总量 ≤ 1.8MB，要带 OFL 许可。
+const fontDir = path.join(root, "dist", "client", "fonts");
+const fonts = await Promise.all((await readdir(fontDir)).map(async (name) => ({ name, size: (await stat(path.join(fontDir, name))).size })));
+const woff = fonts.filter((f) => f.name.endsWith(".woff2"));
+if (woff.length < 2 || !fonts.some((f) => f.name === "OFL.txt")) fail("自托管字体缺失或没带 OFL 许可文本，先跑 python pipeline/fonts.py");
+if (woff.some((f) => f.size > 170 * 1024)) fail("有字体分片超过 170KB");
+if (woff.reduce((s, f) => s + f.size, 0) > 1.8 * 1024 * 1024) fail("自托管字体总量超过 1.8MB");
 for (const item of built) {
   if (
     item.name.endsWith(".js") &&
@@ -70,5 +77,5 @@ for (const item of built) {
 }
 
 console.log(
-  `production validation passed: ${built.length} assets, ${(total / 1024 / 1024).toFixed(2)}MB app + ${portraits.length} portraits, shareable deep links and install metadata verified`,
+  `production validation passed: ${built.length} assets, ${(total / 1024 / 1024).toFixed(2)}MB app + ${portraits.length} portraits + ${woff.length} font slices (${(woff.reduce((s, f) => s + f.size, 0) / 1024 / 1024).toFixed(2)}MB), shareable deep links and install metadata verified`,
 );

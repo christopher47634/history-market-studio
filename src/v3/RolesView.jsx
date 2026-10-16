@@ -2,11 +2,13 @@
 // - 光标停在一行上：右侧玻璃角色卡显示简要介绍（维基百科头像 + 导语 + 行情摘要）。
 // - 单击一行：打开完整角色卡（完整导语、一生节点、出处署名）。
 // - 对比：把行（或角色卡）拖到底部对比栏的 A / B 格，或点「+」填入；再点「对比走势」回主图。
+// - 两种排布：卡片墙（默认，头像为主）和列表（信息密集，便于横向比较），地址里 ?layout=list 记住选择。
 import { useEffect, useMemo, useRef, useState } from "react";
+import { flushSync } from "react-dom";
 import { figures, figureById, dynastyOrder, loadFigure } from "../data.js";
 import { lifePoints } from "../v2/model.js";
 import { BOARDS, DOMAIN_BOARDS, SPECIAL_BOARDS, SORTS, boardById, boardStats, filterFigures } from "./boards.js";
-import { Segmented } from "./bits.jsx";
+import { AnimatedNumber, Segmented } from "./bits.jsx";
 
 const fmtYear = (y) => (y < 0 ? `前${-y}` : `${y}`);
 const years = (f) => `${fmtYear(f.born)}—${fmtYear(f.died)}`;
@@ -35,7 +37,7 @@ export function Spark({ f, w = 116, h = 30, big = false }) {
   return (
     <svg className={`v3-spark${big ? " is-big" : ""} ${up ? "is-up" : "is-down"}`} viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden="true">
       <path className="v3-spark__area" d={`${d}L${lifeW},${h}L0,${h}Z`} />
-      <path className="v3-spark__line" d={d} vectorEffect="non-scaling-stroke" />
+      <path className="v3-spark__line" d={d} pathLength="1" vectorEffect="non-scaling-stroke" />
       <path className="v3-spark__tail" d={`M${lifeW},${Y(t.slice(-1)[0]).toFixed(1)}L${w - 2},${Y(f.legacy.score).toFixed(1)}`} vectorEffect="non-scaling-stroke" />
       <circle cx={w - 2} cy={Y(f.legacy.score)} r={big ? 3 : 2} />
     </svg>
@@ -43,12 +45,37 @@ export function Spark({ f, w = 116, h = 30, big = false }) {
 }
 
 // 头像：有维基头像用头像，没有就用姓氏字章（人物主色）。
-function Avatar({ f, role, size = "sm" }) {
+function Avatar({ f, role, size = "sm", vt }) {
+  const style = vt ? { viewTransitionName: vt } : undefined;
   return role?.img ? (
-    <img className={`v3-ava v3-ava--${size}`} src={role.img.src} alt="" loading="lazy" decoding="async" width={role.img.w} height={role.img.h} draggable="false" />
+    <img className={`v3-ava v3-ava--${size}`} src={role.img.src} alt="" loading="lazy" decoding="async" width={role.img.w} height={role.img.h} draggable="false" style={style} />
   ) : (
-    <span className={`v3-ava v3-ava--${size} v3-ava--mono`} style={{ "--fc": f.color }} aria-hidden="true">{f.name[0]}</span>
+    <span className={`v3-ava v3-ava--${size} v3-ava--mono`} style={{ "--fc": f.color, ...style }} aria-hidden="true">{f.name[0]}</span>
   );
+}
+
+// 共享元素转场：点开卡片时头像从卡片墙「飞」进完整角色卡，关上时飞回去。
+// 浏览器不支持 View Transitions 或开了减少动效时，直接切换（完整卡自己的淡入照常）。
+const canMorph = () => typeof document !== "undefined" && "startViewTransition" in document && !matchMedia("(prefers-reduced-motion: reduce)").matches;
+function morph(id, update) {
+  const tile = document.querySelector(`[data-figure="${id}"] .v3-tile__media > .v3-ava`);
+  if (!canMorph() || !tile) { update(); return; }
+  const root = document.documentElement;
+  root.dataset.vt = "card";
+  tile.style.viewTransitionName = "role-portrait";
+  const t = document.startViewTransition(() => {
+    tile.style.viewTransitionName = "";
+    flushSync(update);
+    // 关卡片的方向：新状态里卡片墙的头像接过这个名字。
+    const back = document.querySelector(`[data-figure="${id}"] .v3-tile__media > .v3-ava`);
+    if (back && !document.querySelector(".v3-full")) back.style.viewTransitionName = "role-portrait";
+  });
+  // 转场被浏览器放弃（截图失败、页面在后台等）时状态照样已更新，这里只吞掉拒绝、收拾名字。
+  t.ready.catch(() => {});
+  t.finished.catch(() => {}).finally(() => {
+    delete root.dataset.vt;
+    document.querySelectorAll(".v3-tile__media > .v3-ava").forEach((el) => { el.style.viewTransitionName = ""; });
+  });
 }
 
 const startDrag = (e, id) => {
@@ -61,7 +88,7 @@ const startDrag = (e, id) => {
 function BriefCard({ f, role, onOpen, onAdd }) {
   if (!f) return null;
   return (
-    <article className="v3-role v3-glass" key={f.id} draggable onDragStart={(e) => startDrag(e, f.id)} aria-label={`${f.name} 简要角色卡`}>
+    <article className="v3-role v3-glass lg spot" key={f.id} draggable onDragStart={(e) => startDrag(e, f.id)} aria-label={`${f.name} 简要角色卡`}>
       <div className="v3-glass__bg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : { "--fc": f.color }} aria-hidden="true" />
       <header className="v3-role__head">
         <Avatar f={f} role={role} size="lg" />
@@ -73,10 +100,10 @@ function BriefCard({ f, role, onOpen, onAdd }) {
       </header>
       <p className="v3-role__brief">{role?.brief ?? f.thesis}</p>
       <div className="v3-role__stats">
-        <span><small>峰值</small><b>{f.peak?.score ?? "—"}</b><em>{f.peak?.title}</em></span>
-        <span><small>后世评价</small><b className="is-accent">{f.legacy.score}</b><em>{f.legacy.tier} · {f.legacy.label}</em></span>
+        <span><small>峰值</small><b><AnimatedNumber value={f.peak?.score ?? 0} /></b><em>{f.peak?.title}</em></span>
+        <span><small>后世评价</small><b className="is-accent"><AnimatedNumber value={f.legacy.score} /></b><em>{f.legacy.tier} · {f.legacy.label}</em></span>
       </div>
-      <Spark f={f} w={300} h={56} big />
+      <div className="draw-on"><Spark f={f} w={300} h={56} big /></div>
       <footer className="v3-role__foot">
         <button type="button" className="v3-btn" onClick={() => onOpen(f.id)}>完整角色卡</button>
         <button type="button" className="v3-btn v3-btn--ghost" onClick={() => onAdd(f.id)}>＋ 加入对比</button>
@@ -107,22 +134,22 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
   const slot = tray.indexOf(f.id);
   return (
     <div className="v3-sheet" role="dialog" aria-modal="true" aria-label={`${f.name} 完整角色卡`} onClick={(e) => e.target === e.currentTarget && onClose()}>
-      <article className="v3-full v3-glass">
+      <article className="v3-full v3-glass lg spot" data-glow="">
         <div className="v3-glass__bg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : { "--fc": f.color }} aria-hidden="true" />
         <button ref={close} type="button" className="v3-full__close" onClick={onClose} aria-label="关闭">×</button>
         <aside className="v3-full__side">
-          <Avatar f={f} role={role} size="xl" />
+          <Avatar f={f} role={role} size="xl" vt="role-portrait" />
           {role?.img && (
             <p className="v3-full__credit">
               头像：<a href={role.img.page} target="_blank" rel="noreferrer">{role.img.artist}</a>，{role.img.license}，来自 Wikimedia Commons
             </p>
           )}
           <div className="v3-full__stats">
-            <span><small>峰值</small><b>{f.peak?.score ?? "—"}</b></span>
-            <span><small>后世评价</small><b className="is-accent">{f.legacy.score}</b></span>
-            <span><small>人生节点</small><b>{f.eventCount}</b></span>
+            <span><small>峰值</small><b><AnimatedNumber value={f.peak?.score ?? 0} /></b></span>
+            <span><small>后世评价</small><b className="is-accent"><AnimatedNumber value={f.legacy.score} /></b></span>
+            <span><small>人生节点</small><b><AnimatedNumber value={f.eventCount} /></b></span>
           </div>
-          <Spark f={f} w={260} h={64} big />
+          <div className="draw-on"><Spark f={f} w={260} h={64} big /></div>
           <p className="v3-full__legend">实线：生前的势 · 虚线：到后世评价</p>
         </aside>
         <div className="v3-full__body">
@@ -136,10 +163,10 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
             </blockquote>
           )}
           <h3>一生节点</h3>
-          <ol className="v3-full__life">
+          <ol className="v3-full__life" data-glow="">
             {life === null && <li className="is-loading">正在载入…</li>}
             {life?.map((p, i) => (
-              <li key={i} className={p.kind === "finale" ? "is-end" : ""}>
+              <li key={i} className={p.kind === "finale" ? "is-end" : ""} style={{ "--i": Math.min(i, 14) }}>
                 <time>{fmtYear(p.year)}</time>
                 <b>{p.event?.title}</b>
                 <span className={i && p.score - life[i - 1].score < 0 ? "is-down" : i && p.score - life[i - 1].score > 0 ? "is-up" : ""}>{Math.round(p.score)}</span>
@@ -156,9 +183,33 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
   );
 }
 
+// 卡片墙里的一张：头像占满上半，人名、朝代、迷你走势在下；角上「+」加入对比。整张可拖。
+function Tile({ f, role, at, focus, i, onFocus, onOpen, onToggle }) {
+  return (
+    <div role="listitem" data-figure={f.id} className={`v3-tile spot tilt${at >= 0 ? " is-picked" : ""}${focus ? " is-focus draw-on" : ""}`}
+      style={{ "--i": Math.min(i, 24), "--fc": f.color, ...(at >= 0 ? { "--c": `var(--p${at})` } : {}) }}
+      draggable onDragStart={(e) => startDrag(e, f.id)} onMouseEnter={() => onFocus(f.id)} onFocus={() => onFocus(f.id)}>
+      <button type="button" className="v3-tile__open" onClick={() => onOpen(f.id)} aria-label={`${f.name}：查看完整角色卡`}>
+        <span className={`v3-tile__media${role?.img ? "" : " is-seal"}`}>
+          <Avatar f={f} role={role} size="tile" />
+          {!role?.img && <i aria-hidden="true">{f.name}</i>}
+        </span>
+        <span className="v3-tile__score" title="后世评价"><small>后世</small><b>{f.legacy.score}</b></span>
+        <span className="v3-tile__body">
+          <span className="v3-tile__meta">{f.dynasty}<em>·</em>{domainLabel[f.domain] ?? f.domain}</span>
+          <b className="v3-tile__name">{f.name}</b>
+          <span className="v3-tile__years">{years(f)}</span>
+          <Spark f={f} w={150} h={24} />
+        </span>
+      </button>
+      <button type="button" className="v3-tile__add" onClick={() => onToggle(f.id)} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : "+"}</button>
+    </div>
+  );
+}
+
 function BoardCard({ board, active, onPick, stats }) {
   return (
-    <button type="button" className={`v3-board${active ? " is-active" : ""}${board.test ? " is-special" : ""}`} onClick={() => onPick(board.id)} aria-pressed={active} title={board.hint}>
+    <button type="button" className={`v3-board spot${active ? " is-active" : ""}${board.test ? " is-special" : ""}`} onClick={() => onPick(board.id)} aria-pressed={active} title={board.hint}>
       <span className="v3-board__head"><b>{board.label}</b><em>{stats.count}</em></span>
       <span className="v3-board__avg">均 {stats.avg}</span>
       <span className="v3-board__lead">{stats.leaders.map((f) => f.name).join(" · ") || "—"}</span>
@@ -177,6 +228,8 @@ export function RolesView({ current, onCompare }) {
   const [focus, setFocus] = useState(null);
   const [open, setOpen] = useState(params.get("role") && figureById[params.get("role")] ? params.get("role") : null);
   const [over, setOver] = useState(-1);
+  const [layout, setLayout] = useState(params.get("layout") === "list" ? "list" : "cards");
+  const [dragging, setDragging] = useState(false);
   const search = useRef(null);
 
   useEffect(() => {
@@ -184,8 +237,18 @@ export function RolesView({ current, onCompare }) {
     board === "all" ? url.searchParams.delete("board") : url.searchParams.set("board", board);
     q ? url.searchParams.set("q", q) : url.searchParams.delete("q");
     open ? url.searchParams.set("role", open) : url.searchParams.delete("role");
+    layout === "list" ? url.searchParams.set("layout", "list") : url.searchParams.delete("layout");
     history.replaceState(history.state, "", url);
-  }, [board, q, open]);
+  }, [board, q, open, layout]);
+  // 拖人的时候对比栏亮起来，告诉人往哪放。
+  useEffect(() => {
+    const on = (e) => e.dataTransfer?.types?.includes(DRAG) && setDragging(true);
+    const off = () => { setDragging(false); setOver(-1); };
+    addEventListener("dragstart", on);
+    addEventListener("dragend", off);
+    addEventListener("drop", off);
+    return () => { removeEventListener("dragstart", on); removeEventListener("dragend", off); removeEventListener("drop", off); };
+  }, []);
   useEffect(() => {
     const key = (e) => { if (e.key === "/" && !e.target.closest?.("input, textarea")) { e.preventDefault(); search.current?.focus(); } };
     addEventListener("keydown", key);
@@ -208,38 +271,59 @@ export function RolesView({ current, onCompare }) {
   const remove = (id) => setTray((t) => t.filter((x) => x !== id));
   const go = (ids) => onCompare(ids[0], ids[1] ?? "");
   const drop = (i) => (e) => { e.preventDefault(); setOver(-1); const id = e.dataTransfer.getData(DRAG); if (figureById[id]) put(i, id); };
+  const toggle = (id) => (tray.includes(id) ? remove(id) : add(id));
+  const openCard = (id) => morph(id, () => setOpen(id));
+  const closeCard = () => { const id = open; morph(id, () => setOpen(null)); };
 
   return (
     <section className="v3-roles" aria-label="角色">
       <div className="v3-roles__main">
-        <div className="v3-index__head rise" style={{ "--d": 1 }}>
-          <label className="v3-index__search">
+        <header className="v3-roles__hero rise" style={{ "--d": 1 }}>
+          <div className="v3-roles__title">
+            <p className="v3-roles__kicker">ROLES<span>·</span>{figures.length} 位历史人物</p>
+            <h1>角色</h1>
+          </div>
+          <p className="v3-roles__lede">按<em>领域</em>或<em>一生走势的形态</em>分板块。光标停留看简要角色卡，点开看完整角色卡；拖到下方对比栏，两人同图对比走势。</p>
+        </header>
+        <div className="v3-index__head rise" style={{ "--d": 2 }}>
+          <label className="v3-index__search lg spot">
             <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" /><path d="m10.5 10.5 3 3" /></svg>
             <input ref={search} value={q} onChange={(e) => setQ(e.target.value)} placeholder="搜人名、字号、朝代或事件，如「长征」「变法」" aria-label="搜索人物" />
             <kbd>/</kbd>
           </label>
-          <p className="v3-index__count"><b>{list.length}</b> / {figures.length} 人<span>·</span>{b.hint}</p>
+          <p className="v3-index__count"><b><AnimatedNumber value={list.length} /></b> / {figures.length} 人<span>·</span>{b.hint}</p>
         </div>
 
-        <div className="v3-boards rise" style={{ "--d": 2 }} role="group" aria-label="板块">
+        <div className="v3-boards rise" style={{ "--d": 3 }} role="group" aria-label="板块">
           <div className="v3-boards__group">
             <span className="v3-boards__label">领域板块</span>
-            <div className="v3-boards__row">{[boardById.all, ...DOMAIN_BOARDS].map((x) => <BoardCard key={x.id} board={x} active={board === x.id} onPick={setBoard} stats={stats[x.id]} />)}</div>
+            <div className="v3-boards__row" data-hscroll="">{[boardById.all, ...DOMAIN_BOARDS].map((x) => <BoardCard key={x.id} board={x} active={board === x.id} onPick={setBoard} stats={stats[x.id]} />)}</div>
           </div>
           <div className="v3-boards__group">
             <span className="v3-boards__label">特色板块 <small>按一生走势的形态归类</small></span>
-            <div className="v3-boards__row">{SPECIAL_BOARDS.map((x) => <BoardCard key={x.id} board={x} active={board === x.id} onPick={setBoard} stats={stats[x.id]} />)}</div>
+            <div className="v3-boards__row" data-hscroll="">{SPECIAL_BOARDS.map((x) => <BoardCard key={x.id} board={x} active={board === x.id} onPick={setBoard} stats={stats[x.id]} />)}</div>
           </div>
         </div>
 
-        <div className="v3-index__tools rise" style={{ "--d": 3 }}>
-          <div className="v3-eras" role="radiogroup" aria-label="时代">
+        <div className="v3-index__tools rise" style={{ "--d": 4 }}>
+          <div className="v3-eras" role="radiogroup" aria-label="时代" data-hscroll="">
             {["all", ...eras].map((d) => <button key={d} type="button" role="radio" aria-checked={era === d} className={era === d ? "is-on" : ""} onClick={() => setEra(d)}>{d === "all" ? "全部时代" : d}</button>)}
           </div>
-          <Segmented label="排序" size="sm" value={sort} onChange={setSort} options={sorts} />
+          <div className="v3-index__sorts">
+            <Segmented label="排序" size="sm" value={sort} onChange={setSort} options={sorts} />
+            <Segmented label="排布" size="sm" value={layout} onChange={setLayout} options={[{ value: "cards", label: "卡片" }, { value: "list", label: "列表" }]} />
+          </div>
         </div>
 
-        <div className="v3-rows rise" style={{ "--d": 4 }} role="list" aria-label="人物列表" onMouseLeave={() => setFocus(null)}>
+        {layout === "cards" ? (
+          <div className="v3-tiles rise" style={{ "--d": 5 }} role="list" aria-label="人物卡片" key={`${board}|${era}|${sort}`} onMouseLeave={() => setFocus(null)}>
+            {list.map((f, i) => (
+              <Tile key={f.id} f={f} role={roles[f.id]} at={tray.indexOf(f.id)} focus={shown?.id === f.id} i={i} onFocus={setFocus} onOpen={openCard} onToggle={toggle} />
+            ))}
+            {!list.length && <p className="v3-rows__empty">这个条件下没有人物，换个板块或关键词试试</p>}
+          </div>
+        ) : (
+        <div className="v3-rows rise" style={{ "--d": 5 }} role="list" aria-label="人物列表" onMouseLeave={() => setFocus(null)}>
           <div className="v3-rows__head" aria-hidden="true"><span>人物</span><span>板块</span><span>一生走势</span><span>峰值</span><span>后世评价</span></div>
           {list.map((f) => {
             const at = tray.indexOf(f.id);
@@ -260,13 +344,14 @@ export function RolesView({ current, onCompare }) {
           })}
           {!list.length && <p className="v3-rows__empty">这个条件下没有人物，换个板块或关键词试试</p>}
         </div>
+        )}
       </div>
 
       <div className="v3-roles__aside rise" style={{ "--d": 2 }}>
-        <BriefCard f={shown} role={roles[shown?.id]} onOpen={setOpen} onAdd={add} />
+        <BriefCard f={shown} role={roles[shown?.id]} onOpen={openCard} onAdd={add} />
       </div>
 
-      <div className={`v3-tray${tray.length ? " is-on" : ""}`} role="region" aria-label="对比栏">
+      <div className={`v3-tray lg${tray.length ? " is-on" : ""}${dragging ? " is-dragging" : ""}`} role="region" aria-label="对比栏">
         <div className="v3-tray__slots">
           {[0, 1].map((i) => {
             const f = figureById[tray[i]];
@@ -284,7 +369,7 @@ export function RolesView({ current, onCompare }) {
         <button type="button" className="v3-tray__go" disabled={!tray.length} onClick={() => go(tray)}>{tray.length === 2 ? "对比走势 →" : "看走势 →"}</button>
       </div>
 
-      {open && figureById[open] && <FullCard f={figureById[open]} role={roles[open]} tray={tray} onClose={() => setOpen(null)} onAdd={add} onSolo={(id) => go([id])} />}
+      {open && figureById[open] && <FullCard f={figureById[open]} role={roles[open]} tray={tray} onClose={closeCard} onAdd={add} onSolo={(id) => go([id])} />}
     </section>
   );
 }

@@ -81,4 +81,28 @@ if (/#fff\b|#ffffff|#000\b|#000000/i.test(css)) fail("不使用纯白或纯黑")
 if (!css.includes("@media (max-width: 720px)") || !css.includes("prefers-reduced-motion") || !css.includes(":focus-visible")) fail("缺少移动端、减少动态效果或键盘焦点样式");
 if (!bits.includes('role="radiogroup"') || !bits.includes("aria-checked")) fail("分段选择器缺少无障碍语义");
 
-console.log("ui contract validation passed: three zoom levels, label avoidance, evidence badges, two themes, keyboard and mobile rules verified");
+// 材质层：不用纯黑纯白；原生滚动条全部隐藏、由光束代替；竖向滚动区挂 data-glow，横向滚动区挂 data-hscroll。
+const material = read("src/v3/material.css");
+if (/#fff\b|#ffffff|#000\b|#000000/i.test(material)) fail("material.css 不使用纯白或纯黑");
+if (!material.includes("scrollbar-width: none") || !material.includes("::-webkit-scrollbar") || !material.includes(".gs-thumb")) fail("原生滚动条没有全部隐藏，或缺少光束滚动条样式");
+if (!material.includes("prefers-reduced-motion")) fail("材质层缺少减少动态效果的处理");
+const picker = read("src/v3/Picker.jsx");
+if (!picker.includes("data-glow") || !rolesView.includes('data-glow=""') || !app.includes("data-hscroll")) fail("滚动区没有挂上光束（data-glow）或横向滚动处理（data-hscroll）");
+for (const f of ["src/v3/glowscroll.js", "src/v3/pointer.js"]) if (!existsSync(new URL(f, root))) fail(`缺少 ${f}`);
+if (!read("src/main.jsx").includes("installGlowScroll()")) fail("入口没有启用光束滚动条");
+
+// 自托管字体：页面上出现的每个汉字都要落在某个宋体分片里（数据或界面文字改了要重跑 pipeline/fonts.py）。
+const fontsCss = read("src/v3/fonts.css");
+const covered = new Set();
+for (const m of fontsCss.matchAll(/font-family: "HMS Serif";[^}]*unicode-range: ([^;]+);/g)) {
+  for (const part of m[1].split(",")) {
+    const [a, b] = part.trim().replace(/^U\+/, "").split("-").map((h) => parseInt(h, 16));
+    for (let cp = a; cp <= (b ?? a); cp++) covered.add(cp);
+  }
+}
+for (const m of fontsCss.matchAll(/url\("\/fonts\/([^"]+)"\)/g)) if (!existsSync(new URL(`public/fonts/${m[1]}`, root))) fail(`字体文件不存在：${m[1]}`);
+const shown = [...index.map((f) => [f.name, f.dynasty, f.thesis, f.legacy?.label, f.legacy?.tier, f.peak?.title].join("")), ...Object.values(roles).map((r) => r.brief), rolesView, app, read("src/v3/boards.js")].join("");
+const uncovered = [...new Set([...shown].filter((c) => c.codePointAt(0) >= 0x2e80 && !covered.has(c.codePointAt(0))))];
+if (uncovered.length) fail(`有 ${uncovered.length} 个字不在自托管宋体里（${uncovered.slice(0, 20).join("")}），请重跑 python pipeline/fonts.py`);
+
+console.log("ui contract validation passed: three zoom levels, label avoidance, evidence badges, two themes, keyboard and mobile rules, glow scrollbars and font coverage verified");

@@ -98,7 +98,8 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
       // 全景只连阶段事件；放大后连上每个事件（含细节），走势跟着变细。K 线模式下蜡烛本身就是走势，线隐去。
       id: `life-${slot}`, type: "line", data: (level.key === "overview" ? p.main : p.nodes).map((n) => [n.x, n.score]), smooth: kMode ? 0 : 0.28, smoothMonotone: "x",
       symbol: "none", z: 3, silent: true,
-      lineStyle: { color: c, width: 2.2, opacity: kMode ? 0 : 1, cap: "round" },
+      // 线自带一层同色柔光（看盘软件的「发光价格线」），浅色主题收弱，免得发糊。
+      lineStyle: { color: c, width: 2.2, opacity: kMode ? 0 : 1, cap: "round", shadowColor: alpha(c, dark ? 0.55 : 0.28), shadowBlur: dark ? 10 : 6, shadowOffsetY: dark ? 0 : 1 },
       areaStyle: kMode ? undefined : { opacity: pair ? 0.1 : 0.18, origin: "start", color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: alpha(c, 1) }, { offset: 1, color: alpha(c, 0) }]) },
       animationDuration: first ? 1200 : 0, animationEasing: "cubicOut",
       ...(slot === 0 ? {
@@ -132,10 +133,13 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
           const fill = pair ? (rising ? color : T.surface) : color;
           const top = Math.min(yo, yc), h = Math.max(1, Math.abs(yo - yc));
           const op = isSub ? 0.62 : 1;
+          // 第一次出现时从实体中线竖向长出来，按从左到右的顺序错开（行情软件切到 K 线时的进场）。
+          const grow = { scaleY: 0, style: { opacity: 0 } };
+          const enter = { duration: 520, delay: Math.min(params.dataIndex, 40) * 14, easing: "cubicOut" };
           return {
-            type: "group", children: [
+            type: "group", originX: cx, originY: (top + h / 2), enterFrom: grow, enterAnimation: enter, children: [
               { type: "line", shape: { x1: cx, y1: yh, x2: cx, y2: yl }, style: { stroke: color, lineWidth: 1, opacity: op } },
-              { type: "rect", shape: { x: Math.round(cx - w / 2), y: top, width: Math.round(w), height: h, r: w > 6 ? 1.5 : 0 }, style: { fill, stroke: color, lineWidth: pair && !rising ? 1.2 : 0.8, opacity: op } },
+              { type: "rect", shape: { x: Math.round(cx - w / 2), y: top, width: Math.round(w), height: h, r: w > 6 ? 1.5 : 0 }, style: { fill, stroke: color, lineWidth: pair && !rising ? 1.2 : 0.8, opacity: op, shadowColor: dark && !isSub ? alpha(color, 0.35) : "transparent", shadowBlur: dark ? 6 : 0 } },
             ],
           };
         },
@@ -149,7 +153,8 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
           const cx = Math.round(api.coord([x, 0])[0] + off) + 0.5;
           const y0 = api.coord([x, 0])[1], y1 = api.coord([x, Math.abs(delta)])[1];
           const color = colorOf(s, delta >= 0);
-          return { type: "rect", shape: { x: Math.round(cx - w / 2), y: Math.min(y0, y1), width: Math.round(w), height: Math.max(1, Math.abs(y1 - y0)) }, style: { fill: alpha(color, isSub ? 0.4 : 0.72) } };
+          return { type: "rect", shape: { x: Math.round(cx - w / 2), y: Math.min(y0, y1), width: Math.round(w), height: Math.max(1, Math.abs(y1 - y0)) }, style: { fill: alpha(color, isSub ? 0.4 : 0.72) },
+            originX: cx, originY: y0, enterFrom: { scaleY: 0 }, enterAnimation: { duration: 520, delay: Math.min(params.dataIndex, 40) * 14 + 80, easing: "cubicOut" } };
         },
       });
     }
@@ -195,6 +200,12 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
     label: { show: true, color: T.ink2, fontFamily: T.mono, fontSize: 10.5, distance: 2 + base / 2 },
   });
 
+  // 「最新价」：每人身后声望线的终点（后世评价）是一颗缓慢呼吸的亮点，像行情图右端跳动的现价。
+  series.push({
+    id: "last", type: "effectScatter", z: 6, silent: true, symbolSize: 6,
+    data: scene.people.map((p) => ({ value: [p.tail.slice(-1)[0].x, p.figure.legacy.score], itemStyle: { color: T.p[p.slot], shadowColor: alpha(T.p[p.slot], 0.8), shadowBlur: 10 } })),
+    rippleEffect: { brushType: "fill", scale: 3.2, period: 4.4, number: 2 },
+  });
   const pin = pinned ? [{ value: [pinned.x, pinned.score] }] : [];
   series.push({
     id: "pin", type: "effectScatter", z: 7, silent: true, data: pin, symbolSize: kMode ? 8 : 11,
@@ -330,6 +341,15 @@ export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pin
   }, [ready, scene]);
 
   useEffect(() => { if (ready && state.current.window) render(); }, [mode, theme, pinned?.id]);
+  // 画布上的字不会在网页字体到达后自动重排：字体（分片按需下载）每到一批就重画一次。
+  useEffect(() => {
+    const fonts = document.fonts;
+    if (!ready || !fonts?.addEventListener) return;
+    let t = 0;
+    const redraw = () => { clearTimeout(t); t = setTimeout(() => state.current.window && render(), 120); };
+    fonts.addEventListener("loadingdone", redraw);
+    return () => { fonts.removeEventListener("loadingdone", redraw); clearTimeout(t); };
+  }, [ready, scene, mode]);
 
   useEffect(() => {
     const c = chart.current;

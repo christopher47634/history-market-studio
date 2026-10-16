@@ -181,35 +181,58 @@ await check("人物下拉框浮在图表之上，可以直接点选", async () =
   await page.sleep(200);
 });
 
-// 角色页：悬停出简要角色卡，单击出完整角色卡，「+」填入对比栏后回主图对比，浏览器返回能回到角色页。
+// 角色页：卡片墙（默认）——悬停出简要角色卡，单击出完整角色卡（头像共享元素转场），「+」填入对比栏后回主图对比；
+// 列表排布照常可用；浏览器返回能回到角色页。
 await page.goto(`${base}/?left=maozedong&right=zhouenlai&view=roles#b`, 3500);
-const rowAt = (i) => page.eval(`(()=>{const r=document.querySelectorAll('.v3-row')[${i}].getBoundingClientRect();return {x:r.x+r.width*0.35,y:r.y+r.height/2}})()`);
-await check("角色页：光标停在一行上，右侧玻璃角色卡换成这个人（带维基简介）", async () => {
-  const name = (await text(".v3-row:nth-of-type(3) .v3-row__who b")).trim();
-  const at = await rowAt(1);
+const tileAt = (i) => page.eval(`(()=>{const r=document.querySelectorAll('.v3-tile')[${i}].getBoundingClientRect();return {x:r.x+r.width*0.5,y:r.y+r.height*0.45}})()`);
+await check("角色页默认是卡片墙：每张卡有头像或字章、人名和后世评价", async () => {
+  const n = await page.eval(`document.querySelectorAll('.v3-tile').length`);
+  assert.equal(n, 300);
+  assert.ok(await page.eval(`[...document.querySelectorAll('.v3-tile')].slice(0,12).every(t=>t.querySelector('.v3-ava')&&t.querySelector('.v3-tile__name').textContent&&/\\d/.test(t.querySelector('.v3-tile__score').textContent))`));
+});
+await check("角色页：光标停在一张卡上，右侧玻璃角色卡换成这个人（带维基简介），卡片亮边跟手", async () => {
+  const name = (await page.eval(`document.querySelectorAll('.v3-tile')[2].querySelector('.v3-tile__name').textContent`)).trim();
+  const at = await tileAt(2);
+  await page.mouse(at.x - 30, at.y - 20);
   await page.mouse(at.x, at.y);
-  await page.sleep(400);
+  await page.sleep(500);
   assert.equal((await text(".v3-role h2")).trim(), name);
   assert.ok((await text(".v3-role__brief")).length > 20, "简要介绍是空的");
   assert.ok(await page.eval(`!!document.querySelector('.v3-role .v3-glass__bg')`), "角色卡缺少玻璃背景层");
+  assert.ok(await page.eval(`document.querySelectorAll('.v3-tile')[2].hasAttribute('data-spot-on')`), "卡片没有跟手的光");
 });
-await check("角色页：单击一行打开完整角色卡（简介出处、一生节点），Esc 关闭", async () => {
-  const at = await rowAt(1);
+await check("角色页：单击卡片打开完整角色卡（简介出处、一生节点），Esc 关闭", async () => {
+  const at = await tileAt(2);
   await page.click(at.x, at.y);
-  await page.sleep(1200);
+  await page.sleep(1400);
   assert.ok(await q(".v3-full"), "完整角色卡没有打开");
   assert.ok((await text(".v3-full__intro cite")).includes("CC BY-SA"), "缺少维基出处与许可");
   assert.ok((await texts(".v3-full__life li")).length >= 3, "一生节点没有载入");
+  const op = await page.eval(`getComputedStyle(document.querySelector('.v3-full')).opacity`);
+  assert.equal(op, "1", `完整角色卡没有完全显示（opacity ${op}）`);
   await page.send("Input.dispatchKeyEvent", { type: "keyDown", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27 });
-  await page.sleep(300);
+  await page.sleep(800);
   assert.ok(!(await q(".v3-full")), "Esc 没有关闭角色卡");
+});
+await check("滚动条是光束：原生滚动条隐藏，滚动时页面右缘的光束亮起并随位置移动", async () => {
+  assert.equal(await page.eval(`getComputedStyle(document.documentElement).scrollbarWidth`), "none");
+  await page.eval(`scrollTo(0, 1200)`);
+  await page.sleep(250);
+  const r = JSON.parse(await page.eval(`(()=>{const rail=document.querySelector('.gs-rail.is-page');const th=rail.querySelector('.gs-thumb');return JSON.stringify({on:rail.classList.contains('is-on'),op:getComputedStyle(rail).opacity,y:th.getBoundingClientRect().top,x:rail.getBoundingClientRect().right,w:innerWidth})})()`));
+  assert.ok(r.on, "滚动时光束没有亮起");
+  assert.ok(r.y > 20, `光束没有随滚动下移：${r.y}`);
+  assert.ok(r.x > r.w - 20, `光束不在右缘：${r.x}`);
+  await page.sleep(1700);
+  assert.ok(!(await page.eval(`document.querySelector('.gs-rail.is-page').classList.contains('is-on')`)), "停下后光束没有熄灭");
+  await page.eval(`scrollTo(0, 0)`);
+  await page.sleep(300);
 });
 await check("角色页：点 + 填入对比栏两格，再点「对比走势」回主图对比这两人；返回键回到角色页", async () => {
   await page.eval(`[...document.querySelectorAll('.v3-board')].find(b=>b.textContent.includes('军事')).click()`);
-  await page.sleep(400);
-  const names = await page.eval(`[...document.querySelectorAll('.v3-row__who b')].slice(0,2).map(b=>b.textContent)`);
-  await page.eval(`document.querySelectorAll('.v3-row__check')[0].click()`);
-  await page.eval(`document.querySelectorAll('.v3-row__check')[1].click()`);
+  await page.sleep(600);
+  const names = await page.eval(`[...document.querySelectorAll('.v3-tile__name')].slice(0,2).map(b=>b.textContent)`);
+  await page.eval(`document.querySelectorAll('.v3-tile__add')[0].click()`);
+  await page.eval(`document.querySelectorAll('.v3-tile__add')[1].click()`);
   await page.sleep(300);
   assert.deepEqual(await texts(".v3-tray__slot b"), names);
   await page.eval(`document.querySelector('.v3-tray__go').click()`);
@@ -219,6 +242,35 @@ await check("角色页：点 + 填入对比栏两格，再点「对比走势」�
   await page.eval("history.back()");
   await page.sleep(1200);
   assert.ok(await q(".v3-roles"), "返回后没有回到角色页");
+});
+await check("角色页列表排布：悬停换角色卡、单击开完整卡、+ 填对比栏", async () => {
+  await page.goto(`${base}/?left=maozedong&right=zhouenlai&view=roles&layout=list#b`, 3500);
+  const name = (await text(".v3-row:nth-of-type(3) .v3-row__who b")).trim();
+  const at = await page.eval(`(()=>{const r=document.querySelectorAll('.v3-row')[1].getBoundingClientRect();return {x:r.x+r.width*0.35,y:r.y+r.height/2}})()`);
+  await page.mouse(at.x, at.y);
+  await page.sleep(400);
+  assert.equal((await text(".v3-role h2")).trim(), name);
+  await page.eval(`document.querySelectorAll('.v3-row__check')[0].click()`);
+  await page.sleep(200);
+  assert.equal((await texts(".v3-tray__slot b")).length, 1);
+  await page.click(at.x, at.y);
+  await page.sleep(1200);
+  assert.ok(await q(".v3-full"), "列表单击没有打开完整角色卡");
+  await page.send("Input.dispatchKeyEvent", { type: "keyDown", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27 });
+  await page.sleep(500);
+});
+await check("事件时间条没有横向滚动条：竖向滚轮转成横向滚动", async () => {
+  await page.goto(`${base}/?left=maozedong&right=zhouenlai#b`, 3500);
+  const s = await page.eval(`(()=>{const s=document.querySelector('.v3-strip');return JSON.stringify({sb:getComputedStyle(s).scrollbarWidth,h:s.offsetHeight-s.clientHeight,max:s.scrollWidth-s.clientWidth})})()`);
+  const m = JSON.parse(s);
+  assert.equal(m.sb, "none");
+  assert.equal(m.h, 0, "时间条还占着横向滚动条的高度");
+  if (m.max > 20) {
+    const r = await page.eval(`(()=>{const r=document.querySelector('.v3-strip').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);
+    await page.send("Input.dispatchMouseEvent", { type: "mouseWheel", x: r.x, y: r.y, deltaX: 0, deltaY: 240 });
+    await page.sleep(700);
+    assert.ok((await page.eval(`document.querySelector('.v3-strip').scrollLeft`)) > 20, "滚轮没有让时间条横移");
+  }
 });
 
 await page.setViewport(390, 844, true);
@@ -240,8 +292,8 @@ await check("手机宽度：角色页和完整角色卡都不超出屏幕", asyn
   await page.goto(`${base}/?left=zhouenlai&right=&view=roles#b`, 3500);
   const fits = (sel) => page.eval(`(()=>{const r=document.querySelector(${JSON.stringify(sel)}).getBoundingClientRect();return r.left>=-1&&r.right<=innerWidth+1})()`);
   assert.ok(await page.eval("document.documentElement.scrollWidth <= innerWidth + 1"), "角色页出现横向滚动");
-  for (const sel of [".v3-index__search", ".v3-rows", ".v3-tray"]) assert.ok(await fits(sel), `${sel} 超出屏幕`);
-  await page.eval(`document.querySelectorAll('.v3-row__main')[0].click()`);
+  for (const sel of [".v3-index__search", ".v3-tiles", ".v3-tray"]) assert.ok(await fits(sel), `${sel} 超出屏幕`);
+  await page.eval(`document.querySelectorAll('.v3-tile__open')[0].click()`);
   await page.sleep(1200);
   assert.ok(await fits(".v3-full"), "完整角色卡超出屏幕");
 });
