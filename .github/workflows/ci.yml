@@ -17,8 +17,9 @@ jobs:
           cache: npm
       - run: npm ci
 
-      # 数据与契约：300 人、引句核验、分数轨迹、缩放分层、界面约定
+      # 数据与契约：300 人、字段结构与评分口径、引句核验、分数轨迹、缩放分层、界面约定
       - run: npm run test:data
+      - run: npm run test:schema
       - run: npm run test:trajectories
       - run: npm run test:ui
       - run: npm run test:v2
