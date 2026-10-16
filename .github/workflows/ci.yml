@@ -17,6 +17,10 @@ jobs:
           cache: npm
       - run: npm ci
 
+      # JSDoc 类型检查（jsconfig.json 列出的核心模块）与算法层单测
+      - run: npm run typecheck
+      - run: npm run test:algorithms
+
       # 数据与契约：300 人、字段结构与评分口径、引句核验、分数轨迹、缩放分层、界面约定
       - run: npm run test:data
       - run: npm run test:schema

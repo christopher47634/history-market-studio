@@ -33,6 +33,11 @@ const sources = {
 
 const hash = hashText;
 
+/** @typedef {import("./types").Milestone} Milestone */
+/** @typedef {import("./types").FigureSpec} FigureSpec */
+/** @typedef {import("./types").Figure} Figure */
+
+/** @returns {Milestone} */
 const milestone = (year, title, score, dimension, summary) => ({
   year,
   title,
@@ -41,6 +46,10 @@ const milestone = (year, title, score, dimension, summary) => ({
   summary,
 });
 
+/**
+ * @param {FigureSpec} spec
+ * @returns {Figure}
+ */
 function figure({
   id,
   name,

@@ -26,7 +26,8 @@
     "v2:audit": "node pipeline/audit-consistency.mjs --modern",
     "v2:portraits": "node pipeline/fetch-portraits.mjs && python pipeline/roles.py",
     "test:algorithms": "node --test tests/algorithms.test.mjs",
-    "test": "npm run test:static && npm run test:sites && npm run test:algorithms"
+    "test": "npm run typecheck && npm run test:static && npm run test:sites && npm run test:algorithms",
+    "typecheck": "tsc -p jsconfig.json"
   },
   "dependencies": {
     "echarts": "^6.1.0",
@@ -38,6 +39,7 @@
     "esbuild": "^0.25.10",
     "opencc-js": "^1.4.2",
     "playwright": "^1.63.0",
+    "typescript": "^5.6.3",
     "vite": "6.4.3"
   }
 }
