@@ -40,7 +40,9 @@ npm run dev
 ## 验证
 
 ```bash
+npm test                 # 下面 static / sites / algorithms 三组全部
 npm run test:data
+npm run test:schema      # 300 个人物文件的字段结构与评分口径
 npm run test:trajectories
 npm run test:ui
 npm run build
@@ -52,7 +54,7 @@ npm audit --omit=dev --audit-level=high
 
 ## 数据声明
 
-势能指数是解释性叙事模型，不是史学定论、道德评分、概率预测或可交易资产。300 位人物均关联原始/机构索引和人物辅助专页；联网审计覆盖 61/61 个来源索引与 300/300 个人物页。部分链接是典籍或馆藏的集合入口，正式史学出版仍应逐事件补充版本、卷次、页码与原文校勘。
+势能指数是解释性叙事模型，不是史学定论、道德评分、概率预测或可交易资产。哪些数字是程序算的、哪些是判断，事件理由与打分中有多少是模型生成的，见 [docs/MEASUREMENT.md](docs/MEASUREMENT.md)。300 位人物均关联原始/机构索引和人物辅助专页；联网审计覆盖 61/61 个来源索引与 300/300 个人物页。部分链接是典籍或馆藏的集合入口，正式史学出版仍应逐事件补充版本、卷次、页码与原文校勘。
 
 ## 开源技术参考
 
