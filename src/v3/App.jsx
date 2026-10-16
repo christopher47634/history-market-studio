@@ -23,36 +23,30 @@ function initialIds() {
   return { left, right };
 }
 
-// 悬停卡片：宽屏放在十字光标的一侧（不压住目标那根 K 线），窄屏放在节点上方或下方。
-// 不随节点换 key，光标横扫时卡片平滑滑过去，而不是一闪一闪地重建。
-function HoverCard({ hover, box, scene, level, mode }) {
-  if (!hover) return null;
-  const d = nodeDetail(hover.node);
+// 节点详情：停靠在图表上方的「详情栏」里（宽屏在右上，和左上的开高低收信息栏并排；手机在图表下方），
+// 永远不浮在走势或 K 线上——看盘软件的数据窗口也是这样停靠的。
+// 光标在图上显示光标所在节点（is-live），离开后显示固定的节点，所以这一栏不会忽有忽无、不让图跳动。
+function Dock({ hover, pinned, scene, level, mode }) {
+  const node = hover?.node ?? pinned;
+  if (!node || !scene) return null;
+  const d = nodeDetail(node);
   // K 线模式下涨跌按这一根算（开盘是前一个事件），和信息栏一致。
-  const k = mode === "k" && scene ? candleOf(scene.people[hover.node.slot], level, hover.node) : null;
+  const k = mode === "k" ? candleOf(scene.people[node.slot], level, node) : null;
   if (k) d.delta = +(k.close - k.open).toFixed(1);
-  const [x, y] = hover.pixel;
-  const w = box?.clientWidth ?? 800, h = box?.clientHeight ?? 500;
-  const side = w >= 640;
-  const cardW = 244;
-  let style;
-  if (side) {
-    const right = x + 22 + cardW <= w - 8 && x < w * 0.62;
-    style = { left: right ? x + 22 : x - 22 - cardW, top: Math.max(8, Math.min(h - 190, y - 46)) };
-  } else {
-    style = { left: Math.max(115, Math.min(w - 115, x)), top: y };
-  }
+  const live = !!hover;
   return (
-    <div className={`v3-hover${side ? " is-side" : y < 170 ? " is-below" : ""}`} style={{ ...style, "--c": `var(--p${d.slot})` }} data-node-x={Math.round(x)} role="tooltip">
-      <p className="v3-eyebrow"><i className="v3-dot" />{d.person}<span>·</span>{d.when}</p>
-      <b className="v3-hover__title">{d.title}</b>
+    <div className={`v3-dock${live ? " v3-hover is-live" : " is-idle"}`} style={{ "--c": `var(--p${d.slot})` }} role={live ? "tooltip" : undefined}
+      data-node-x={live ? Math.round(hover.pixel[0]) : undefined} data-node-y={live ? Math.round(hover.pixel[1]) : undefined}>
+      <div className="v3-dock__main" key={node.id}>
+        <p className="v3-eyebrow"><i className="v3-dot" />{d.person}<span>·</span>{d.when}{!live && <em className="v3-dock__pin">已固定</em>}</p>
+        <b className="v3-hover__title">{d.title}</b>
+        {d.summary && <p className="v3-hover__sum">{d.summary}</p>}
+      </div>
       <p className="v3-hover__score">
-        <span>{d.kind === "posthumous" ? "声望" : "势"} <strong>{d.score}</strong></span>
-        {d.kind !== "sub" && d.delta !== 0 && d.kind !== "posthumous" && <em className={d.delta > 0 ? "is-up" : "is-down"}>{d.delta > 0 ? "+" : ""}{d.delta}</em>}
+        <small>{d.kind === "posthumous" ? "声望" : "当时的势"}</small>
+        <span><strong>{d.score}</strong>{d.kind !== "sub" && d.delta !== 0 && d.kind !== "posthumous" && <em className={d.delta > 0 ? "is-up" : "is-down"}>{d.delta > 0 ? "+" : ""}{d.delta}</em>}</span>
         {d.tier && <small>{d.tier}{d.penalty ? ` · ${d.crisis}` : ""}</small>}
       </p>
-      {d.summary && <p className="v3-hover__sum">{d.summary}</p>}
-      <p className="v3-hover__hint">点击固定 · 双击细读</p>
     </div>
   );
 }
@@ -340,7 +334,7 @@ export function App() {
           <div className="v3-chart__stage" ref={chartBox}>
             {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pinned} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
             <Legend scene={scene} level={view.level} mode={mode} node={hover?.node ?? pinned} live={!!hover} />
-            <HoverCard hover={hover} box={chartBox.current} scene={scene} level={view.level} mode={mode} />
+            <Dock hover={hover} pinned={pinned} scene={scene} level={view.level} mode={mode} />
           </div>
           <p className="v3-chart__hint">
             <span><kbd>滚轮</kbd>缩放</span><span><kbd>拖动</kbd>平移</span><span><kbd>悬停</kbd>十字光标</span><span><kbd>点击</kbd>固定节点</span><span><kbd>双击</kbd>细读</span><span><kbd>←</kbd><kbd>→</kbd>逐个翻看</span><span><kbd>Esc</kbd>回全景</span>
@@ -358,7 +352,7 @@ export function App() {
       <footer className="v3-foot">
         <p><b>怎么算的</b>势 = 权位档分 − 危局折损，所有人用同一把尺子；只有毛泽东达到 100，其余人最高 98。后世评价衡量历史分量，不等于褒扬。</p>
         <p><b>依据</b>古代人物引自正史原文（维基文库），近现代人物引自维基百科；每一句都在原文里逐字核对过，找不到原句的节点标为「概括」。</p>
-        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片，作者与许可写在每张完整角色卡上。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
+        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片；少数没有自由版权图片的人物取自百度百科词条配图。每张头像的来源写在完整角色卡上。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
       </footer>
     </div>
   );

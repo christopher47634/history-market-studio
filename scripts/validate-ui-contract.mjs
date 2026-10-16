@@ -81,13 +81,13 @@ if (/#fff\b|#ffffff|#000\b|#000000/i.test(css)) fail("不使用纯白或纯黑")
 if (!css.includes("@media (max-width: 720px)") || !css.includes("prefers-reduced-motion") || !css.includes(":focus-visible")) fail("缺少移动端、减少动态效果或键盘焦点样式");
 if (!bits.includes('role="radiogroup"') || !bits.includes("aria-checked")) fail("分段选择器缺少无障碍语义");
 
-// 材质层：不用纯黑纯白；原生滚动条全部隐藏、由光束代替；竖向滚动区挂 data-glow，横向滚动区挂 data-hscroll。
+// 材质层：不用纯黑纯白；原生滚动条全部隐藏，竖向滚动由 OverlayScrollbars（发光主题）接管，横向滚动区挂 data-hscroll。
 const material = read("src/v3/material.css");
 if (/#fff\b|#ffffff|#000\b|#000000/i.test(material)) fail("material.css 不使用纯白或纯黑");
-if (!material.includes("scrollbar-width: none") || !material.includes("::-webkit-scrollbar") || !material.includes(".gs-thumb")) fail("原生滚动条没有全部隐藏，或缺少光束滚动条样式");
+if (!material.includes("scrollbar-width: none") || !material.includes("::-webkit-scrollbar") || !material.includes(".os-theme-glow")) fail("原生滚动条没有全部隐藏，或缺少 OverlayScrollbars 发光主题");
 if (!material.includes("prefers-reduced-motion")) fail("材质层缺少减少动态效果的处理");
 const picker = read("src/v3/Picker.jsx");
-if (!picker.includes("data-glow") || !rolesView.includes('data-glow=""') || !app.includes("data-hscroll")) fail("滚动区没有挂上光束（data-glow）或横向滚动处理（data-hscroll）");
+if (!picker.includes("<Scroll") || !rolesView.includes("<Scroll") || !app.includes("data-hscroll") || !bits.includes("OverlayScrollbarsComponent")) fail("滚动区没有用 OverlayScrollbars（<Scroll>），或横向滚动区缺少 data-hscroll");
 for (const f of ["src/v3/glowscroll.js", "src/v3/pointer.js"]) if (!existsSync(new URL(f, root))) fail(`缺少 ${f}`);
 if (!read("src/main.jsx").includes("installGlowScroll()")) fail("入口没有启用光束滚动条");
 

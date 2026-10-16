@@ -3,6 +3,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { figures, dynastyOrder } from "../data.js";
+import { Scroll } from "./bits.jsx";
 
 const years = (f) => `${f.born < 0 ? `前${-f.born}` : f.born}—${f.died < 0 ? `前${-f.died}` : f.died}`;
 
@@ -51,7 +52,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
     return () => { removeEventListener("resize", put); removeEventListener("scroll", put, true); };
   }, [open]);
   useEffect(() => setActive(0), [q]);
-  useEffect(() => { root.current?.querySelector(`[data-i="${active}"]`)?.scrollIntoView({ block: "nearest" }); }, [active]);
+  useEffect(() => { pop.current?.querySelector(`[data-i="${active}"]`)?.scrollIntoView({ block: "nearest" }); }, [active]);
 
   const choose = (id) => { onChange(id); setOpen(false); setQ(""); };
   const key = (e) => {
@@ -81,7 +82,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
             <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" /><path d="m10.5 10.5 3 3" /></svg>
             <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={key} placeholder="搜人名、朝代或事件，如「长征」" aria-label="搜索人物" role="combobox" aria-expanded="true" aria-controls={`v3-list-${slot}`} />
           </div>
-          <ul className="v3-picker__list" data-glow="" role="listbox" id={`v3-list-${slot}`}>
+          <Scroll className="v3-picker__scroll"><ul className="v3-picker__list" role="listbox" id={`v3-list-${slot}`}>
             {allowEmpty && value && <li><button type="button" className="v3-picker__clear" onClick={() => choose("")}>只看一个人</button></li>}
             {list.map((f, i) => {
               const head = f.dynasty !== lastDynasty ? (lastDynasty = f.dynasty) : null;
@@ -95,7 +96,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
               ];
             })}
             {!list.length && <li className="v3-picker__empty">没有找到，换个关键词试试</li>}
-          </ul>
+          </ul></Scroll>
         </div>,
         document.body,
       )}

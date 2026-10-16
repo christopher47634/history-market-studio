@@ -1,14 +1,15 @@
 // 「角色」页：按板块（领域 + 走势形态）和搜索浏览 300 人。
-// - 光标停在一行上：右侧玻璃角色卡显示简要介绍（维基百科头像 + 导语 + 行情摘要）。
+// - 卡片墙：光标停在一张卡上，卡片翻面（Motion 弹簧 3D 翻转），背面是简介；列表排布：光标停在一行，右侧玻璃角色卡显示简要介绍。
 // - 单击一行：打开完整角色卡（完整导语、一生节点、出处署名）。
 // - 对比：把行（或角色卡）拖到底部对比栏的 A / B 格，或点「+」填入；再点「对比走势」回主图。
 // - 两种排布：卡片墙（默认，头像为主）和列表（信息密集，便于横向比较），地址里 ?layout=list 记住选择。
 import { useEffect, useMemo, useRef, useState } from "react";
+import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "motion/react";
 import { flushSync } from "react-dom";
 import { figures, figureById, dynastyOrder, loadFigure } from "../data.js";
 import { lifePoints } from "../v2/model.js";
 import { BOARDS, DOMAIN_BOARDS, SPECIAL_BOARDS, SORTS, boardById, boardStats, filterFigures } from "./boards.js";
-import { AnimatedNumber, Segmented } from "./bits.jsx";
+import { AnimatedNumber, Scroll, Segmented } from "./bits.jsx";
 
 const fmtYear = (y) => (y < 0 ? `前${-y}` : `${y}`);
 const years = (f) => `${fmtYear(f.born)}—${fmtYear(f.died)}`;
@@ -58,7 +59,8 @@ function Avatar({ f, role, size = "sm", vt }) {
 // 浏览器不支持 View Transitions 或开了减少动效时，直接切换（完整卡自己的淡入照常）。
 const canMorph = () => typeof document !== "undefined" && "startViewTransition" in document && !matchMedia("(prefers-reduced-motion: reduce)").matches;
 function morph(id, update) {
-  const tile = document.querySelector(`[data-figure="${id}"] .v3-tile__media > .v3-ava`);
+  // 翻面状态下看得见的是背面的头像，没翻面是正面的大头像。
+  const tile = document.querySelector(`[data-figure="${id}"][data-flipped] .v3-tile__back .v3-ava, [data-figure="${id}"]:not([data-flipped]) .v3-tile__media > .v3-ava`);
   if (!canMorph() || !tile) { update(); return; }
   const root = document.documentElement;
   root.dataset.vt = "card";
@@ -74,7 +76,7 @@ function morph(id, update) {
   t.ready.catch(() => {});
   t.finished.catch(() => {}).finally(() => {
     delete root.dataset.vt;
-    document.querySelectorAll(".v3-tile__media > .v3-ava").forEach((el) => { el.style.viewTransitionName = ""; });
+    document.querySelectorAll(".v3-tile .v3-ava").forEach((el) => { el.style.viewTransitionName = ""; });
   });
 }
 
@@ -114,7 +116,7 @@ function BriefCard({ f, role, onOpen, onAdd }) {
 }
 
 // 完整角色卡：弹出的玻璃面板。一生节点按需加载该人的完整数据。
-function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
+function FullCard({ f, role, onClose, onAdd, onSolo, tray, morphed }) {
   const [life, setLife] = useState(null);
   const [intro, setIntro] = useState(null);
   const close = useRef(null);
@@ -133,15 +135,19 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
   }, [f.id]);
   const slot = tray.indexOf(f.id);
   return (
-    <div className="v3-sheet" role="dialog" aria-modal="true" aria-label={`${f.name} 完整角色卡`} onClick={(e) => e.target === e.currentTarget && onClose()}>
-      <article className="v3-full v3-glass lg spot" data-glow="">
+    <div className={`v3-sheet${morphed ? " is-morph" : ""}`} role="dialog" aria-modal="true" aria-label={`${f.name} 完整角色卡`} onClick={(e) => e.target === e.currentTarget && onClose()}>
+      <article className="v3-full v3-glass lg spot">
         <div className="v3-glass__bg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : { "--fc": f.color }} aria-hidden="true" />
         <button ref={close} type="button" className="v3-full__close" onClick={onClose} aria-label="关闭">×</button>
+        <Scroll className="v3-full__scroll">
+        <div className="v3-full__grid">
         <aside className="v3-full__side">
           <Avatar f={f} role={role} size="xl" vt="role-portrait" />
           {role?.img && (
             <p className="v3-full__credit">
-              头像：<a href={role.img.page} target="_blank" rel="noreferrer">{role.img.artist}</a>，{role.img.license}，来自 Wikimedia Commons
+              {role.img.source === "baike"
+                ? <>头像：来自<a href={role.img.page} target="_blank" rel="noreferrer">百度百科「{role.img.pageTitle ?? f.name}」</a>词条（未标注许可）</>
+                : <>头像：<a href={role.img.page} target="_blank" rel="noreferrer">{role.img.artist}</a>，{role.img.license}，来自 Wikimedia Commons</>}
             </p>
           )}
           <div className="v3-full__stats">
@@ -163,7 +169,7 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
             </blockquote>
           )}
           <h3>一生节点</h3>
-          <ol className="v3-full__life" data-glow="">
+          <Scroll className="v3-full__lifescroll"><ol className="v3-full__life">
             {life === null && <li className="is-loading">正在载入…</li>}
             {life?.map((p, i) => (
               <li key={i} className={p.kind === "finale" ? "is-end" : ""} style={{ "--i": Math.min(i, 14) }}>
@@ -172,36 +178,86 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray }) {
                 <span className={i && p.score - life[i - 1].score < 0 ? "is-down" : i && p.score - life[i - 1].score > 0 ? "is-up" : ""}>{Math.round(p.score)}</span>
               </li>
             ))}
-          </ol>
+          </ol></Scroll>
           <footer className="v3-full__foot">
             <button type="button" className="v3-btn" onClick={() => onSolo(f.id)}>看走势 →</button>
             <button type="button" className="v3-btn v3-btn--ghost" onClick={() => onAdd(f.id)} disabled={slot >= 0}>{slot >= 0 ? `已在对比栏 ${slot ? "B" : "A"}` : "＋ 加入对比"}</button>
           </footer>
         </div>
+        </div>
+        </Scroll>
       </article>
     </div>
   );
 }
 
-// 卡片墙里的一张：头像占满上半，人名、朝代、迷你走势在下；角上「+」加入对比。整张可拖。
-function Tile({ f, role, at, focus, i, onFocus, onOpen, onToggle }) {
+// 卡片墙里的一张。动效全部交给 Motion（原 Framer Motion，MIT）：
+// - 进场：模糊 + 上浮，按位置错开；
+// - 倾斜：光标位置 → 弹簧（stiffness 300 / damping 30），离开时弹回；
+// - 翻面：光标停留约 0.15 秒后绕 Y 轴翻到背面看简介（弹簧 stiffness 260 / damping 26，轻微过冲后落定）。
+//   触屏没有悬停：第一次点翻面，翻过来再点才打开完整角色卡。
+// 正面：头像、人名、朝代、迷你走势；背面：简介、峰值 / 后世评价、领域印章和「完整角色卡」。角上「+」加入对比，整张可拖。
+const SPRING_FLIP = { type: "spring", stiffness: 260, damping: 26, mass: 0.9 };
+const SPRING_TILT = { stiffness: 300, damping: 30 };
+const EASE_EXPO = [0.19, 1, 0.22, 1];
+const touchOnly = () => typeof matchMedia !== "undefined" && matchMedia("(hover: none)").matches;
+function Tile({ f, role, at, i, onOpen, onToggle }) {
+  const reduce = useReducedMotion();
+  const [flip, setFlip] = useState(false);
+  const timer = useRef(0);
+  const mx = useMotionValue(0.5), my = useMotionValue(0.5);
+  const rotateX = useSpring(useTransform(my, [0, 1], [7, -7]), SPRING_TILT);
+  const rotateY = useSpring(useTransform(mx, [0, 1], [-7, 7]), SPRING_TILT);
+  useEffect(() => () => clearTimeout(timer.current), []);
+  const enter = () => { if (touchOnly()) return; clearTimeout(timer.current); timer.current = setTimeout(() => setFlip(true), 150); };
+  const leave = () => { clearTimeout(timer.current); setFlip(false); mx.set(0.5); my.set(0.5); };
+  const move = (e) => {
+    if (reduce || e.pointerType !== "mouse") return;
+    const r = e.currentTarget.getBoundingClientRect();
+    mx.set((e.clientX - r.left) / r.width);
+    my.set((e.clientY - r.top) / r.height);
+  };
+  const open = () => { if (touchOnly() && !flip) { setFlip(true); return; } onOpen(f.id); };
+  const brief = role?.brief ?? f.thesis;
   return (
-    <div role="listitem" data-figure={f.id} className={`v3-tile spot tilt${at >= 0 ? " is-picked" : ""}${focus ? " is-focus draw-on" : ""}`}
-      style={{ "--i": Math.min(i, 24), "--fc": f.color, ...(at >= 0 ? { "--c": `var(--p${at})` } : {}) }}
-      draggable onDragStart={(e) => startDrag(e, f.id)} onMouseEnter={() => onFocus(f.id)} onFocus={() => onFocus(f.id)}>
-      <button type="button" className="v3-tile__open" onClick={() => onOpen(f.id)} aria-label={`${f.name}：查看完整角色卡`}>
-        <span className={`v3-tile__media${role?.img ? "" : " is-seal"}`}>
-          <Avatar f={f} role={role} size="tile" />
-          {!role?.img && <i aria-hidden="true">{f.name}</i>}
-        </span>
-        <span className="v3-tile__score" title="后世评价"><small>后世</small><b>{f.legacy.score}</b></span>
-        <span className="v3-tile__body">
-          <span className="v3-tile__meta">{f.dynasty}<em>·</em>{domainLabel[f.domain] ?? f.domain}</span>
-          <b className="v3-tile__name">{f.name}</b>
-          <span className="v3-tile__years">{years(f)}</span>
-          <Spark f={f} w={150} h={24} />
-        </span>
-      </button>
+    <div role="listitem" data-figure={f.id} data-flipped={flip ? "" : undefined} className={`v3-tile spot${at >= 0 ? " is-picked" : ""}`}
+      style={{ "--fc": f.color, ...(at >= 0 ? { "--c": `var(--p${at})` } : {}) }}
+      draggable onDragStart={(e) => { leave(); startDrag(e, f.id); }} onMouseEnter={enter} onMouseLeave={leave} onPointerMove={move}
+      onFocus={() => setFlip(true)} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setFlip(false); }}>
+      <motion.div className="v3-tile__tilt" style={reduce ? undefined : { rotateX, rotateY, transformPerspective: 900 }}
+        initial={reduce ? false : { opacity: 0, y: 22, filter: "blur(8px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.8, ease: EASE_EXPO, delay: Math.min(i, 24) * 0.028 }}>
+        <motion.div className="v3-tile__inner" initial={false} animate={{ rotateY: flip ? 180 : 0 }} transition={reduce ? { duration: 0 } : SPRING_FLIP}>
+          <button type="button" className="v3-tile__face v3-tile__front" onClick={open} aria-label={`${f.name}：查看完整角色卡`} tabIndex={flip ? -1 : 0}>
+            <span className={`v3-tile__media${role?.img ? "" : " is-seal"}`}>
+              <Avatar f={f} role={role} size="tile" />
+              {!role?.img && <i aria-hidden="true">{f.name}</i>}
+            </span>
+            <span className="v3-tile__score" title="后世评价"><small>后世</small><b>{f.legacy.score}</b></span>
+            <span className="v3-tile__body">
+              <span className="v3-tile__meta">{f.dynasty}<em>·</em>{domainLabel[f.domain] ?? f.domain}</span>
+              <b className="v3-tile__name">{f.name}</b>
+              <span className="v3-tile__years">{years(f)}</span>
+              <Spark f={f} w={150} h={24} />
+            </span>
+          </button>
+          <button type="button" className="v3-tile__face v3-tile__back" onClick={() => onOpen(f.id)} aria-label={`${f.name}：${brief}。查看完整角色卡`} tabIndex={flip ? 0 : -1}>
+            <span className="v3-tile__backbg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : undefined} aria-hidden="true" />
+            <span className="v3-tile__head">
+              <Avatar f={f} role={role} size="sm" />
+              <span><b>{f.name}</b><small>{f.dynasty} · {years(f)}</small></span>
+            </span>
+            <span className="v3-tile__seal" aria-hidden="true">{domainLabel[f.domain] ?? f.domain}</span>
+            <span className="v3-tile__brief">{brief}</span>
+            <span className="v3-tile__nums">
+              <span><small>峰值</small><b>{f.peak?.score ?? "—"}</b></span>
+              <span><small>后世评价</small><b className="is-accent">{f.legacy.score}</b></span>
+            </span>
+            <span className={flip ? "draw-on" : ""}><Spark f={f} w={150} h={22} /></span>
+            <span className="v3-tile__more">完整角色卡 <i aria-hidden="true">→</i></span>
+          </button>
+        </motion.div>
+      </motion.div>
       <button type="button" className="v3-tile__add" onClick={() => onToggle(f.id)} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : "+"}</button>
     </div>
   );
@@ -272,11 +328,13 @@ export function RolesView({ current, onCompare }) {
   const go = (ids) => onCompare(ids[0], ids[1] ?? "");
   const drop = (i) => (e) => { e.preventDefault(); setOver(-1); const id = e.dataTransfer.getData(DRAG); if (figureById[id]) put(i, id); };
   const toggle = (id) => (tray.includes(id) ? remove(id) : add(id));
-  const openCard = (id) => morph(id, () => setOpen(id));
+  // 用共享元素转场打开的卡片不再播自己的进场动画（否则转场结束后会再淡入一次）。
+  const [morphed, setMorphed] = useState(false);
+  const openCard = (id) => { setMorphed(canMorph() && !!document.querySelector(`[data-figure="${id}"]`)); morph(id, () => setOpen(id)); };
   const closeCard = () => { const id = open; morph(id, () => setOpen(null)); };
 
   return (
-    <section className="v3-roles" aria-label="角色">
+    <section className={`v3-roles is-${layout}`} aria-label="角色">
       <div className="v3-roles__main">
         <header className="v3-roles__hero rise" style={{ "--d": 1 }}>
           <div className="v3-roles__title">
@@ -316,9 +374,9 @@ export function RolesView({ current, onCompare }) {
         </div>
 
         {layout === "cards" ? (
-          <div className="v3-tiles rise" style={{ "--d": 5 }} role="list" aria-label="人物卡片" key={`${board}|${era}|${sort}`} onMouseLeave={() => setFocus(null)}>
+          <div className="v3-tiles" role="list" aria-label="人物卡片" key={`${board}|${era}|${sort}`}>
             {list.map((f, i) => (
-              <Tile key={f.id} f={f} role={roles[f.id]} at={tray.indexOf(f.id)} focus={shown?.id === f.id} i={i} onFocus={setFocus} onOpen={openCard} onToggle={toggle} />
+              <Tile key={f.id} f={f} role={roles[f.id]} at={tray.indexOf(f.id)} i={i} onOpen={openCard} onToggle={toggle} />
             ))}
             {!list.length && <p className="v3-rows__empty">这个条件下没有人物，换个板块或关键词试试</p>}
           </div>
@@ -347,9 +405,11 @@ export function RolesView({ current, onCompare }) {
         )}
       </div>
 
-      <div className="v3-roles__aside rise" style={{ "--d": 2 }}>
-        <BriefCard f={shown} role={roles[shown?.id]} onOpen={openCard} onAdd={add} />
-      </div>
+      {layout === "list" && (
+        <div className="v3-roles__aside rise" style={{ "--d": 2 }}>
+          <BriefCard f={shown} role={roles[shown?.id]} onOpen={openCard} onAdd={add} />
+        </div>
+      )}
 
       <div className={`v3-tray lg${tray.length ? " is-on" : ""}${dragging ? " is-dragging" : ""}`} role="region" aria-label="对比栏">
         <div className="v3-tray__slots">
@@ -369,7 +429,7 @@ export function RolesView({ current, onCompare }) {
         <button type="button" className="v3-tray__go" disabled={!tray.length} onClick={() => go(tray)}>{tray.length === 2 ? "对比走势 →" : "看走势 →"}</button>
       </div>
 
-      {open && figureById[open] && <FullCard f={figureById[open]} role={roles[open]} tray={tray} onClose={closeCard} onAdd={add} onSolo={(id) => go([id])} />}
+      {open && figureById[open] && <FullCard f={figureById[open]} role={roles[open]} tray={tray} morphed={morphed} onClose={closeCard} onAdd={add} onSolo={(id) => go([id])} />}
     </section>
   );
 }

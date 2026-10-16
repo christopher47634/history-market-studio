@@ -21,33 +21,27 @@
   --lg-shadow: 0 1px 0 rgba(255, 253, 248, 0.8) inset, 0 22px 50px -26px rgba(80, 56, 28, 0.32), 0 2px 6px -2px rgba(80, 56, 28, 0.12);
 }
 
-/* ───────── 滚动条：原生的全部隐藏，换成光束 ───────── */
+/* ───────── 滚动条：OverlayScrollbars 覆盖式滚动条 + 自定义发光主题 os-theme-glow ───────── */
+/* 原生滚动条全部隐藏（横向滚动区也不显示任何滚动条）；竖向滚动由库接管，行为（淡入淡出、悬停加粗、拖动、点轨道）是库自带的。 */
 html, body, * { scrollbar-width: none; }
 *::-webkit-scrollbar { display: none; width: 0; height: 0; }
 html { overflow-x: clip; }
 body { overflow-x: clip; }
-
-.gs-rail { position: fixed; z-index: 1200; left: 0; top: 0; width: 8px; pointer-events: none; opacity: 0; transition: opacity .5s var(--ease-out); will-change: transform; }
-.gs-rail.is-on { opacity: 1; }
-.gs-rail.is-near, .gs-rail.is-drag { pointer-events: auto; cursor: grab; }
-.gs-rail.is-drag { cursor: grabbing; }
-/* 轨道：贴近时才显出一根极淡的细线。 */
-.gs-rail::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 1px; transform: translateX(-50%); background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--ink) 14%, transparent) 12%, color-mix(in srgb, var(--ink) 14%, transparent) 88%, transparent); opacity: 0; transition: opacity .35s var(--ease-out); }
-.gs-rail.is-near::before, .gs-rail.is-drag::before { opacity: 1; }
-/* 光束本体：两头渐隐的亮线 + 外发光；贴近 / 拖动时变粗变亮。拖尾（scaleY）由脚本按滚动速度设置。 */
-.gs-thumb { position: absolute; left: 50%; top: 0; width: 2px; margin-left: -1px; border-radius: 99px;
-  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--beam) 80%, transparent) 18%, var(--beam) 50%, color-mix(in srgb, var(--beam) 80%, transparent) 82%, transparent);
-  box-shadow: 0 0 6px color-mix(in srgb, var(--beam) 70%, transparent), 0 0 18px color-mix(in srgb, var(--beam) 40%, transparent);
-  transition: width .3s var(--ease-out), margin .3s var(--ease-out), box-shadow .3s var(--ease-out), transform .18s var(--ease-out); }
-.gs-thumb::after { content: ""; position: absolute; inset: 30% -1px; border-radius: inherit; background: color-mix(in srgb, var(--beam) 35%, #f4fbf7); opacity: .55; filter: blur(.5px); }
-.gs-rail.is-near .gs-thumb, .gs-rail.is-drag .gs-thumb { width: 5px; margin-left: -2.5px; box-shadow: 0 0 10px color-mix(in srgb, var(--beam) 80%, transparent), 0 0 28px color-mix(in srgb, var(--beam) 50%, transparent); }
-:root[data-theme="cinnabar"] .gs-thumb { box-shadow: 0 0 6px color-mix(in srgb, var(--beam) 45%, transparent), 0 0 16px color-mix(in srgb, var(--beam) 22%, transparent); }
-:root[data-theme="cinnabar"] .gs-thumb::after { background: color-mix(in srgb, var(--beam) 30%, #fffaf0); }
-
+.os-theme-glow {
+  --os-size: 14px; --os-padding-perpendicular: 4px; --os-padding-axis: 6px;
+  --os-track-border-radius: 99px; --os-track-bg: transparent; --os-track-bg-hover: color-mix(in srgb, var(--ink) 6%, transparent); --os-track-bg-active: color-mix(in srgb, var(--ink) 9%, transparent);
+  --os-handle-border-radius: 99px; --os-handle-perpendicular-size: 3px; --os-handle-perpendicular-size-hover: 7px; --os-handle-perpendicular-size-active: 7px; --os-handle-min-size: 40px; --os-handle-interactive-area-offset: 5px;
+  --os-handle-bg: color-mix(in srgb, var(--beam) 85%, transparent); --os-handle-bg-hover: var(--beam); --os-handle-bg-active: color-mix(in srgb, var(--beam) 75%, #f4fbf7);
+}
+/* 发光：手柄本身是亮线，外面两层同色光晕；悬停 / 拖动时光更强。库在显隐时做透明度过渡，这里只把时长调柔。 */
+.os-theme-glow .os-scrollbar-handle { box-shadow: 0 0 6px color-mix(in srgb, var(--beam) 75%, transparent), 0 0 18px color-mix(in srgb, var(--beam) 40%, transparent); background-image: linear-gradient(to bottom, transparent, rgba(244,251,247,.35) 50%, transparent); transition: opacity .15s, background-color .3s, box-shadow .3s, width .25s var(--ease-out), height .25s var(--ease-out); }
+.os-theme-glow .os-scrollbar-track:hover .os-scrollbar-handle, .os-theme-glow .os-scrollbar-handle:active { box-shadow: 0 0 10px color-mix(in srgb, var(--beam) 85%, transparent), 0 0 30px color-mix(in srgb, var(--beam) 55%, transparent); }
+.os-theme-glow.os-scrollbar { transition: opacity .45s var(--ease-out), visibility .45s, top .3s, right .3s, bottom .3s, left .3s; z-index: 1200; }
+:root[data-theme="cinnabar"] .os-theme-glow .os-scrollbar-handle { box-shadow: 0 0 6px color-mix(in srgb, var(--beam) 45%, transparent), 0 0 14px color-mix(in srgb, var(--beam) 22%, transparent); }
 /* 竖向滚动区的边缘渐隐（Claude 的 7 档非线性遮罩，羽化 28px）。 */
-[data-glow] { --ft: 0px; --fb: 0px; -webkit-mask-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.05) calc(var(--ft) * .15), rgba(0,0,0,.3) calc(var(--ft) * .45), rgba(0,0,0,.7) calc(var(--ft) * .75), #0b0d0c var(--ft), #0b0d0c calc(100% - var(--fb)), rgba(0,0,0,.7) calc(100% - var(--fb) * .75), rgba(0,0,0,.3) calc(100% - var(--fb) * .45), rgba(0,0,0,.05) calc(100% - var(--fb) * .15), transparent); mask-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.05) calc(var(--ft) * .15), rgba(0,0,0,.3) calc(var(--ft) * .45), rgba(0,0,0,.7) calc(var(--ft) * .75), #0b0d0c var(--ft), #0b0d0c calc(100% - var(--fb)), rgba(0,0,0,.7) calc(100% - var(--fb) * .75), rgba(0,0,0,.3) calc(100% - var(--fb) * .45), rgba(0,0,0,.05) calc(100% - var(--fb) * .15), transparent); }
-[data-glow][data-fade-top] { --ft: 28px; }
-[data-glow][data-fade-bottom] { --fb: 28px; }
+[data-glow] > [data-overlayscrollbars-viewport] { --ft: 0px; --fb: 0px; -webkit-mask-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.05) calc(var(--ft) * .15), rgba(0,0,0,.3) calc(var(--ft) * .45), rgba(0,0,0,.7) calc(var(--ft) * .75), #0b0d0c var(--ft), #0b0d0c calc(100% - var(--fb)), rgba(0,0,0,.7) calc(100% - var(--fb) * .75), rgba(0,0,0,.3) calc(100% - var(--fb) * .45), rgba(0,0,0,.05) calc(100% - var(--fb) * .15), transparent); mask-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.05) calc(var(--ft) * .15), rgba(0,0,0,.3) calc(var(--ft) * .45), rgba(0,0,0,.7) calc(var(--ft) * .75), #0b0d0c var(--ft), #0b0d0c calc(100% - var(--fb)), rgba(0,0,0,.7) calc(100% - var(--fb) * .75), rgba(0,0,0,.3) calc(100% - var(--fb) * .45), rgba(0,0,0,.05) calc(100% - var(--fb) * .15), transparent); }
+[data-glow][data-fade-top] > [data-overlayscrollbars-viewport] { --ft: 28px; }
+[data-glow][data-fade-bottom] > [data-overlayscrollbars-viewport] { --fb: 28px; }
 /* 横向滚动区：没有滚动条，两侧按位置渐隐，鼠标拖动时显示抓手。 */
 [data-hscroll] { --fl: 0px; --fr: 0px; -webkit-mask-image: linear-gradient(to right, transparent, #0b0d0c var(--fl), #0b0d0c calc(100% - var(--fr)), transparent); mask-image: linear-gradient(to right, transparent, #0b0d0c var(--fl), #0b0d0c calc(100% - var(--fr)), transparent); }
 [data-hscroll]:is([data-fade-left], [data-fade-right]) { cursor: grab; }
@@ -71,7 +65,6 @@ body { overflow-x: clip; }
 /* 盖在图表上的浮层：玻璃要厚一点，否则后面的线会和字打架。 */
 .v3-picker__pop.lg { border-color: transparent; background: color-mix(in srgb, var(--surface) 80%, transparent); -webkit-backdrop-filter: blur(22px) saturate(1.6); backdrop-filter: blur(22px) saturate(1.6); }
 .v3-picker__pop.lg .v3-picker__group { background: transparent; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
-.v3-hover { background: color-mix(in srgb, var(--surface) 76%, transparent); -webkit-backdrop-filter: blur(16px) saturate(1.5); backdrop-filter: blur(16px) saturate(1.5); box-shadow: var(--lg-shadow); }
 
 /* 内容卡片的聚光：不是玻璃，只在光标附近亮一团、并点亮一段边框（Magic Card）。 */
 :where(.spot) { position: relative; }
@@ -114,5 +107,4 @@ body { overflow-x: clip; }
 
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-old(root), ::view-transition-new(root), ::view-transition-group(*) { animation: none !important; }
-  .gs-thumb { transition: none; }
 }

@@ -16,10 +16,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - A-share color convention is red rise and green fall.
 - Desktop uses enhanced inertial cursor glow; touch and reduced-motion modes disable it.
 - Visual sources of truth are the selected local B and C mockups; B is dark jade glass + dense market structure, C is warm xuan-paper + sticky chart and narrative chapters.
-- Event detail cards are cursor/node anchored on desktop, dismiss shortly after hover leaves, and open by tap as a bottom sheet on touch devices; never pin them over the chart by default.
+- (Superseded 2026-10-16) Event detail is docked above the plot area, never floating over the chart.
 - 玉衡终端 keeps the homepage trend-first. Its event timeline, filters, and autoplay controls live inside the Settings secondary surface instead of occupying a homepage panel.
 - 玉衡终端 typography should pair classical Chinese display faces for titles with restrained Song-style body copy and tabular sans-serif numerals; motion stays subtle, glassy, and historically inflected.
-- 玉衡终端的图表节点采用二维最近距离范围吸附与轻微滞回，光标无需精确压中小点；吸附后显示命中反馈，详情卡跟随光标附近且不得遮住目标节点。
+- 玉衡终端的图表节点采用二维最近距离范围吸附与轻微滞回，光标无需精确压中小点；吸附后显示命中反馈，详情在图表上方的停靠栏里显示（2026-10-16 起不再跟随光标浮在图上）。
 - 玉衡终端的人物选择下拉使用 body portal 顶层浮层，不受对比栏、图表面板或页面 overflow / stacking context 裁切。
 
 ## 2026-08-02 industrialization decisions
@@ -44,10 +44,11 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## 2026-10-16 全站质感升级
 
-- 滚动条：全站不用原生滚动条（含横向）。竖向滚动（页面、下拉列表、完整角色卡、一生节点）是一道会发光的细光束（src/v3/glowscroll.js，滚动时亮、停 1 秒熄、快滚有拖尾、可拖可点），滚动区两端按 Claude 的 7 档遮罩渐隐；横向滚动区（事件时间条、手机板块行、时代筛选）没有滚动条，滚轮转横向、鼠标可拖、两侧渐隐。新滚动区挂 data-glow / data-hscroll 即可。
+- 滚动条：全站不用原生滚动条（含横向）。用户要求用现成工业化方案：竖向滚动用 OverlayScrollbars（页面在 body 上初始化，内部滚动区用 bits.jsx 的 <Scroll>），自定义发光主题 os-theme-glow，滚动时出现、停下淡出、悬停加粗可拖；横向滚动区（data-hscroll）没有滚动条，滚轮转横向、鼠标可拖、两侧渐隐。
 - 字体：标题、人名、引文用自托管思源宋体（Noto Serif SC，OFL，按字频切 12 片 unicode-range），西文和数字用自托管 Inter（tabular-nums）。改了数据或界面文字后跑 python pipeline/fonts.py，test:ui 会查有没有字没覆盖。
 - 玻璃：只在导航/控件/浮层用（顶栏分段、搜索框、对比栏、下拉框、角色卡、完整卡），清透 + 少量模糊 + 计算高光边 + 跟手镜面光（.lg）；内容卡片（图表、阅读面板、板块、时间条）只做跟手聚光和一段亮边（.spot）。光标状态用 data-spot-on 属性，不用 class（React 重渲染会冲掉）。
-- 角色页默认是头像卡片墙（?layout=list 切回列表）；卡片悬停微倾斜 + 迷你走势重画，点开时头像以共享元素转场飞进完整角色卡。走势 ⇄ 角色切页用 View Transitions。
+- 角色页默认是头像卡片墙（?layout=list 切回列表，列表才有右侧简要角色卡）。用户要求卡片交互用现成的工业级动画库：用 Motion（原 Framer Motion）——光标停留约 0.15 秒卡片弹簧翻面，背面是简介、峰值/后世评价、领域印章；倾斜也是弹簧。触屏第一下翻面、第二下打开。点开时头像以共享元素转场飞进完整角色卡。走势 ⇄ 角色切页用 View Transitions。
+- 图表上的节点详情不再浮在图上（用户：卡片挡住 K 线很怪）：宽屏停靠在绘图区上方的保留带右侧（layout top 100），手机在图下方；光标离开时显示固定节点。
 - 看盘动效：价格线带同色柔光，后世评价端点是呼吸的「现价点」，切 K 线时蜡烛从左到右长出，顶部读数变化时按涨跌闪底色。
 - 动效参数：进场 power3/expo.out、不回弹；按压 scale .97；浮层轻微超调；全部尊重减少动态效果。
 

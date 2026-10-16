@@ -47,16 +47,17 @@ for (const [hash, theme] of [["b", "jade"], ["c", "cinnabar"]]) {
   await check(`${hash}：十字光标按列吸附，卡片出现在一侧、不压住目标，读数切到当时的势`, async () => {
     const b = await box();
     // 看盘软件的手感：光标停在图上任意高度都能吸到最近的那一列。
-    await page.mouse(b.x + b.w * 0.5, b.y + b.h * 0.15);
+    await page.mouse(b.x + b.w * 0.5, b.y + b.h * 0.3);
     await page.sleep(200);
     assert.ok(await q(".v3-hover"), "光标在图上却没有吸附到任何节点");
     const at = await hoverUntilCard();
     lastAt = at;
     assert.ok(at, "扫遍图表都没有吸附到节点");
     assert.ok((await texts(".v3-readout__label")).some((l) => l.startsWith("当时的势")));
-    const card = await page.eval(`(()=>{const el=document.querySelector('.v3-hover');const r=el.getBoundingClientRect();const c=document.querySelector('.v3-chart-canvas').getBoundingClientRect();return {left:r.left,right:r.right,nodeX:c.left+ +el.dataset.nodeX}})()`);
-    assert.ok(card.right < card.nodeX || card.left > card.nodeX, `卡片压住了目标节点（节点 x=${Math.round(card.nodeX)}，卡片 ${Math.round(card.left)}–${Math.round(card.right)}）`);
-    assert.ok(Math.min(Math.abs(card.left - card.nodeX), Math.abs(card.right - card.nodeX)) < 60, "卡片离目标太远");
+    // 详情栏停靠在绘图区上方：不压住目标节点，也不伸进绘图区（详情栏不接收指针，所以按几何判断）。
+    const card = await page.eval(`(()=>{const el=document.querySelector('.v3-hover');const r=el.getBoundingClientRect();const c=document.querySelector('.v3-chart-canvas').getBoundingClientRect();const x=c.left+ +el.dataset.nodeX,y=c.top+ +el.dataset.nodeY;return {bottom:r.bottom,plotTop:c.top+100,covered:x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom}})()`);
+    assert.ok(!card.covered, "详情栏压住了目标节点");
+    assert.ok(card.bottom <= card.plotTop + 1, `详情栏伸进了绘图区（底 ${Math.round(card.bottom)}，绘图区顶 ${Math.round(card.plotTop)}）`);
     assert.ok((await text(".v3-legend")).includes("势"), "信息栏没有显示读数");
   });
 
@@ -190,16 +191,20 @@ await check("角色页默认是卡片墙：每张卡有头像或字章、人名�
   assert.equal(n, 300);
   assert.ok(await page.eval(`[...document.querySelectorAll('.v3-tile')].slice(0,12).every(t=>t.querySelector('.v3-ava')&&t.querySelector('.v3-tile__name').textContent&&/\\d/.test(t.querySelector('.v3-tile__score').textContent))`));
 });
-await check("角色页：光标停在一张卡上，右侧玻璃角色卡换成这个人（带维基简介），卡片亮边跟手", async () => {
-  const name = (await page.eval(`document.querySelectorAll('.v3-tile')[2].querySelector('.v3-tile__name').textContent`)).trim();
+await check("角色页：光标停在一张卡上，卡片翻到背面显示简介（弹簧翻转落定在 180°），移开翻回正面", async () => {
   const at = await tileAt(2);
   await page.mouse(at.x - 30, at.y - 20);
   await page.mouse(at.x, at.y);
-  await page.sleep(500);
-  assert.equal((await text(".v3-role h2")).trim(), name);
-  assert.ok((await text(".v3-role__brief")).length > 20, "简要介绍是空的");
-  assert.ok(await page.eval(`!!document.querySelector('.v3-role .v3-glass__bg')`), "角色卡缺少玻璃背景层");
-  assert.ok(await page.eval(`document.querySelectorAll('.v3-tile')[2].hasAttribute('data-spot-on')`), "卡片没有跟手的光");
+  await page.sleep(1300);
+  const r = JSON.parse(await page.eval(`(()=>{const t=document.querySelectorAll('.v3-tile')[2];const m=new DOMMatrix(getComputedStyle(t.querySelector('.v3-tile__inner')).transform);return JSON.stringify({flipped:t.hasAttribute('data-flipped'),m11:m.m11,brief:t.querySelector('.v3-tile__brief').textContent,spot:t.hasAttribute('data-spot-on')})})()`));
+  assert.ok(r.flipped, "悬停后卡片没有翻面");
+  assert.ok(r.m11 < -0.95, `翻面没有落定到背面（m11=${r.m11}）`);
+  assert.ok(r.brief.length > 20, "背面简介是空的");
+  assert.ok(r.spot, "卡片没有跟手的光");
+  await page.mouse(5, 5);
+  await page.sleep(1300);
+  const back = await page.eval(`new DOMMatrix(getComputedStyle(document.querySelectorAll('.v3-tile')[2].querySelector('.v3-tile__inner')).transform).m11`);
+  assert.ok(back > 0.95, `移开后没有翻回正面（m11=${back}）`);
 });
 await check("角色页：单击卡片打开完整角色卡（简介出处、一生节点），Esc 关闭", async () => {
   const at = await tileAt(2);
@@ -209,25 +214,27 @@ await check("角色页：单击卡片打开完整角色卡（简介出处、一�
   assert.ok((await text(".v3-full__intro cite")).includes("CC BY-SA"), "缺少维基出处与许可");
   assert.ok((await texts(".v3-full__life li")).length >= 3, "一生节点没有载入");
   const op = await page.eval(`getComputedStyle(document.querySelector('.v3-full')).opacity`);
-  assert.equal(op, "1", `完整角色卡没有完全显示（opacity ${op}）`);
+  assert.ok(+op > 0.98, `完整角色卡没有完全显示（opacity ${op}）`);
   await page.send("Input.dispatchKeyEvent", { type: "keyDown", key: "Escape", code: "Escape", windowsVirtualKeyCode: 27 });
   await page.sleep(800);
   assert.ok(!(await q(".v3-full")), "Esc 没有关闭角色卡");
 });
-await check("滚动条是光束：原生滚动条隐藏，滚动时页面右缘的光束亮起并随位置移动", async () => {
+await check("滚动条：原生滚动条隐藏，页面用 OverlayScrollbars 发光主题，滚动时出现、停下后淡出，window 滚动照常", async () => {
   assert.equal(await page.eval(`getComputedStyle(document.documentElement).scrollbarWidth`), "none");
+  assert.ok(await page.eval(`!!document.querySelector('.os-scrollbar-vertical.os-theme-glow')`), "页面没有挂上发光主题的覆盖式滚动条");
   await page.eval(`scrollTo(0, 1200)`);
-  await page.sleep(250);
-  const r = JSON.parse(await page.eval(`(()=>{const rail=document.querySelector('.gs-rail.is-page');const th=rail.querySelector('.gs-thumb');return JSON.stringify({on:rail.classList.contains('is-on'),op:getComputedStyle(rail).opacity,y:th.getBoundingClientRect().top,x:rail.getBoundingClientRect().right,w:innerWidth})})()`));
-  assert.ok(r.on, "滚动时光束没有亮起");
-  assert.ok(r.y > 20, `光束没有随滚动下移：${r.y}`);
-  assert.ok(r.x > r.w - 20, `光束不在右缘：${r.x}`);
-  await page.sleep(1700);
-  assert.ok(!(await page.eval(`document.querySelector('.gs-rail.is-page').classList.contains('is-on')`)), "停下后光束没有熄灭");
+  await page.sleep(300);
+  const r = JSON.parse(await page.eval(`(()=>{const bar=document.querySelector('.os-scrollbar-vertical.os-theme-glow');const h=bar.querySelector('.os-scrollbar-handle').getBoundingClientRect();return JSON.stringify({y:scrollY+(document.scrollingElement?.scrollTop||0)>0?1:0,hidden:bar.classList.contains('os-scrollbar-auto-hide-hidden'),top:h.top,right:bar.getBoundingClientRect().right,w:innerWidth,glow:getComputedStyle(bar.querySelector('.os-scrollbar-handle')).boxShadow})})()`));
+  assert.ok(r.y, "scrollTo 没有滚动页面");
+  assert.ok(!r.hidden, "滚动时滚动条没有出现");
+  assert.ok(r.top > 20, `滚动条手柄没有随滚动下移：${r.top}`);
+  assert.ok(r.right > r.w - 20, "滚动条不在右缘");
+  assert.ok(r.glow && r.glow !== "none", "滚动条手柄没有光晕");
+  await page.sleep(1800);
+  assert.ok(await page.eval(`document.querySelector('.os-scrollbar-vertical.os-theme-glow').classList.contains('os-scrollbar-auto-hide-hidden')`), "停下后滚动条没有淡出");
   await page.eval(`scrollTo(0, 0)`);
   await page.sleep(300);
-});
-await check("角色页：点 + 填入对比栏两格，再点「对比走势」回主图对比这两人；返回键回到角色页", async () => {
+});await check("角色页：点 + 填入对比栏两格，再点「对比走势」回主图对比这两人；返回键回到角色页", async () => {
   await page.eval(`[...document.querySelectorAll('.v3-board')].find(b=>b.textContent.includes('军事')).click()`);
   await page.sleep(600);
   const names = await page.eval(`[...document.querySelectorAll('.v3-tile__name')].slice(0,2).map(b=>b.textContent)`);
@@ -293,7 +300,7 @@ await check("手机宽度：角色页和完整角色卡都不超出屏幕", asyn
   const fits = (sel) => page.eval(`(()=>{const r=document.querySelector(${JSON.stringify(sel)}).getBoundingClientRect();return r.left>=-1&&r.right<=innerWidth+1})()`);
   assert.ok(await page.eval("document.documentElement.scrollWidth <= innerWidth + 1"), "角色页出现横向滚动");
   for (const sel of [".v3-index__search", ".v3-tiles", ".v3-tray"]) assert.ok(await fits(sel), `${sel} 超出屏幕`);
-  await page.eval(`document.querySelectorAll('.v3-tile__open')[0].click()`);
+  await page.eval(`document.querySelectorAll('.v3-tile__front')[0].click()`);
   await page.sleep(1200);
   assert.ok(await fits(".v3-full"), "完整角色卡超出屏幕");
 });

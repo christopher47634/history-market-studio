@@ -1,5 +1,21 @@
-// 小部件：滚动数字、分段选择器、依据徽标。
+// 小部件：滚动数字、分段选择器、依据徽标、滚动区。
 import { useEffect, useRef, useState } from "react";
+import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+import { SCROLL_OPTIONS } from "./glowscroll.js";
+
+// 竖向滚动区：OverlayScrollbars 官方 React 组件 + 发光主题；没到顶 / 没到底的一侧在内容边缘渐隐。
+export function Scroll({ as = "div", className = "", children, ...rest }) {
+  const fade = (os) => {
+    const { host, viewport } = os.elements();
+    host.toggleAttribute("data-fade-top", viewport.scrollTop > 2);
+    host.toggleAttribute("data-fade-bottom", viewport.scrollTop < viewport.scrollHeight - viewport.clientHeight - 2);
+  };
+  return (
+    <OverlayScrollbarsComponent element={as} className={className} data-glow="" options={SCROLL_OPTIONS} events={{ initialized: fade, updated: fade, scroll: fade }} defer {...rest}>
+      {children}
+    </OverlayScrollbarsComponent>
+  );
+}
 
 // 数字滚动到新值（约 0.45 秒，缓出）。页面隐藏时直接跳到终值。
 export function AnimatedNumber({ value, digits = 0 }) {
