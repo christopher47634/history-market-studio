@@ -7,6 +7,7 @@ import { createPortal } from "react-dom";
 import { figures, figureById } from "../data.js";
 import { Avatar, lifeYears, useRoles } from "./people.jsx";
 import { Scroll } from "./bits.jsx";
+import { eraOf } from "./eras.js";
 import { ChartIcon, CompareIcon, EnterIcon, ICON, LinkIcon, MoonIcon, RolesIcon, SearchIcon, SunIcon } from "./icons.jsx";
 
 const TOP = [...figures].sort((a, b) => b.legacy.score - a.legacy.score).slice(0, 8);
@@ -81,7 +82,7 @@ export function CommandPalette({ open, onClose, page, current, themeKey, actions
               const label = group !== head ? (head = group) : null;
               return [
                 label && <li key={`g-${label}`} className="v3-cmd__group" role="presentation">{label}</li>,
-                <li key={row.kind + row.id} id={`v3-cmd-${i}`} role="option" aria-selected={i === active} data-i={i} className={`v3-cmd__row${i === active ? " is-active" : ""}`}
+                <li key={row.kind + row.id} id={`v3-cmd-${i}`} data-era={row.f ? eraOf(row.f) : undefined} role="option" aria-selected={i === active} data-i={i} className={`v3-cmd__row${i === active ? " is-active" : ""}`}
                   onPointerMove={() => i !== active && setActive(i)} onClick={() => run(row)}>
                   {row.kind === "cmd" ? (
                     <>

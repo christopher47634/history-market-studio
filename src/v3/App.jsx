@@ -10,6 +10,7 @@ import { RolesView } from "./RolesView.jsx";
 import { CommandPalette } from "./Command.jsx";
 import { AnimatedNumber, Segmented } from "./bits.jsx";
 import { nodeDetail } from "./detail.js";
+import { eraOf } from "./eras.js";
 import { CheckIcon, ICON, SearchIcon, ShareIcon, SwapIcon } from "./icons.jsx";
 
 const THEMES = { b: "jade", c: "cinnabar" };
@@ -37,7 +38,7 @@ function Dock({ hover, pinned, scene, level, mode }) {
   if (k) d.delta = +(k.close - k.open).toFixed(1);
   const live = !!hover;
   return (
-    <div className={`v3-dock${live ? " v3-hover is-live" : " is-idle"}`} style={{ "--c": `var(--p${d.slot})` }} role={live ? "tooltip" : undefined}
+    <div className={`v3-dock${live ? " v3-hover is-live" : " is-idle"}`} data-era={eraOf(node.figure)} style={{ "--c": `var(--p${d.slot})` }} role={live ? "tooltip" : undefined}
       data-node-x={live ? Math.round(hover.pixel[0]) : undefined} data-node-y={live ? Math.round(hover.pixel[1]) : undefined}>
       <div className="v3-dock__main" key={node.id}>
         <p className="v3-eyebrow"><i className="v3-dot" />{d.person}<span>·</span>{d.when}{!live && <em className="v3-dock__pin">已固定</em>}</p>
@@ -69,7 +70,7 @@ function Legend({ scene, level, mode, node, live }) {
         const delta = k ? +(k.close - k.open).toFixed(1) : mine && node.kind !== "sub" && !after ? node.delta : null;
         const tone = delta > 0 ? "is-up" : delta < 0 ? "is-down" : "";
         return (
-          <p key={p.figure.id} className={mine ? "is-on" : ""} style={{ "--c": `var(--p${p.slot})` }}>
+          <p key={p.figure.id} className={mine ? "is-on" : ""} data-era={eraOf(p.figure)} style={{ "--c": `var(--p${p.slot})` }}>
             <i className="v3-dot" /><b>{p.figure.name}</b>
             {mine && <time>{node.year < 0 ? `前${-node.year}` : node.year}{node.age != null && !after ? ` · ${node.age}岁` : ""}</time>}
             {k ? (
@@ -125,7 +126,7 @@ function Strip({ nodes, pinned, hover, onPick }) {
   return (
     <ol className="v3-strip" ref={ref} aria-label="视窗内的事件" data-hscroll="">
       {nodes.map((n) => (
-        <li key={n.id} style={{ "--c": `var(--p${n.slot})` }}>
+        <li key={n.id} data-era={eraOf(n.figure)} style={{ "--c": `var(--p${n.slot})` }}>
           <button type="button" className={`spot${pinned?.id === n.id ? " is-pinned" : ""}${hover?.node.id === n.id ? " is-hover" : ""}${n.kind === "sub" ? " is-sub" : ""}`} onClick={() => onPick(n)}>
             <time>{n.year < 0 ? `前${-n.year}` : n.year}</time>
             <b>{n.event?.title}</b>
@@ -360,14 +361,14 @@ export function App() {
         <p><em>当时的势</em>随经历起落，<em>后世评价</em>在身后慢慢落定。挑一到两个人，悬停看每个节点，点下去读原文。</p>
       </section>
       <section className="v3-tickers rise" style={{ "--d": 1 }} aria-label="选择人物">
-        <div className="v3-ticker lg" style={{ "--c": "var(--p0)" }}>
+        <div className="v3-ticker lg" data-era={eraOf(ids.left)} style={{ "--c": "var(--p0)" }}>
           <Picker slot={0} value={ids.left} exclude={ids.right} onChange={(id) => id && setIds((s) => ({ ...s, left: id }))} />
           {personOf(ids.left) && <Readout person={personOf(ids.left)} hover={hover} level={view.level} />}
         </div>
         <button type="button" className="v3-swap lg" onClick={swap} disabled={!ids.right} aria-label="交换两人" title="交换左右">
           <SwapIcon {...ICON} />
         </button>
-        <div className={`v3-ticker lg${ids.right ? "" : " is-empty"}`} style={{ "--c": "var(--p1)" }}>
+        <div className={`v3-ticker lg${ids.right ? "" : " is-empty"}`} data-era={ids.right ? eraOf(ids.right) : undefined} style={{ "--c": "var(--p1)" }}>
           <Picker slot={1} value={ids.right} exclude={ids.left} allowEmpty onChange={(id) => setIds((s) => ({ ...s, right: id }))} />
           {ids.right && personOf(ids.right) && <Readout person={personOf(ids.right)} hover={hover} level={view.level} />}
         </div>

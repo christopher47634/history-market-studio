@@ -322,6 +322,25 @@ await check("吸顶导航：停在顶上透明，往下滚后玻璃显出来；�
   assert.ok(await page.eval(`!!document.querySelector('svg defs filter[id^=lgf-] feDisplacementMap')`), "没有生成位移贴图滤镜");
   await page.eval(`scrollTo(0, 0)`);
 });
+await check("下拉框里的「只看一个人」是一行横排（不被挤进头像列竖着排）", async () => {
+  await page.goto(`${base}/?left=maozedong&right=zhouenlai#b`, 3500);
+  await page.eval(`document.querySelectorAll('.v3-picker__btn')[1].click()`);
+  await page.sleep(500);
+  const r = await page.eval(`(()=>{const b=document.querySelector('.v3-picker__clear').getBoundingClientRect();return {w:b.width,h:b.height}})()`);
+  assert.ok(r.h < 44 && r.w > 120, `「只看一个人」尺寸 ${Math.round(r.w)}×${Math.round(r.h)}`);
+  await keyK("Escape", 0, "Escape");
+  await page.sleep(200);
+});
+await check("朝代字体：三国人名用行书、宋人用宋风标题字，正文用文楷 / 新致宋，字体文件真的加载了", async () => {
+  await page.goto(`${base}/?left=zhugeliang&right=sushi#b`, 4500);
+  await page.sleep(1500);
+  const fam = (sel) => page.eval(`getComputedStyle(document.querySelector(${JSON.stringify(sel)})).fontFamily`);
+  assert.ok((await fam(".v3-ticker[data-era=wei] .v3-picker__text b")).startsWith('"HMS Xing"'), "三国人名不是行书");
+  assert.ok((await fam(".v3-ticker[data-era=song] .v3-picker__text b")).startsWith('"HMS Xiaowei"'), "宋人人名不是宋风标题字");
+  assert.ok((await fam(".v3-reader__title")).includes("HMS Kai"), "三国人物的阅读面板标题不是文楷");
+  const ok = await page.eval(`(async()=>{await document.fonts.ready;return document.fonts.check('20px "HMS Xing"','诸葛亮')&&document.fonts.check('20px "HMS Xiaowei"','苏轼')})()`);
+  assert.ok(ok, "朝代字体文件没有加载");
+});
 await check("分享按钮：给出玻璃提示条，2 秒后自己退场", async () => {
   await page.eval(`document.querySelector('.v3-bar .v3-icon-btn').click()`);
   await page.sleep(300);

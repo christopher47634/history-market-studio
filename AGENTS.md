@@ -86,6 +86,25 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
   - pipeline/set-baike-portraits.mjs
   - work/baike-dl.mjs
 
+## 2026-10-19 朝代字体（用户：加古风，按人物所处年代用不同字体，但不能用甲骨文这类读不动的）
+
+- 分组和字体在 src/v3/eras.json，前端用 src/v3/eras.js 的 eraOf / eraFonts。人物相关的容器都标 data-era，CSS 在 chrome.css 的「朝代字体」一节。
+
+  | 组 | 包含朝代 | 人名字体 | 正文字体 |
+  | --- | --- | --- | --- |
+  | 古拙 | 先秦、秦汉 | 马善政毛笔楷书 | 霞鹜文楷 |
+  | 魏晋 | 三国、魏晋南北朝 | 志莽行书 | 霞鹜文楷 |
+  | 唐 | 隋唐、五代 | 霞鹜文楷中粗 | 霞鹜文楷 |
+  | 宋 | 宋、辽金西夏、元 | 站酷小薇（宋风标题字） | 霞鹜新致宋 |
+  | 明 | 明、清 | 霞鹜新致宋（明朝体） | 霞鹜新致宋 |
+  | 近现代 | 近现代 | 思源宋体 | 思源宋体 |
+
+- 正文字体覆盖：简介、完整卡、阅读面板、K 线详情栏、事件条，以及图上的节点卡片（画布用 eraFonts，并主动 document.fonts.load）。
+- 行书只用在 ≥18px 的人名上。下拉、搜索、对比栏这些小字号处，魏晋人名换成楷书。K 线左上的数据行人名保持黑体。
+- 字体都可再分发：马善政、志莽行书、站酷小薇、文楷是 OFL 1.1，新致宋是 IPA 1.0。
+- 子集化后改名 HMS ×××，许可证放在 public/fonts/era/。源文件在 E:\Claude local\fonts-src。
+- 数据改了以后重跑 python pipeline/era-fonts.py，test:ui 会检查每个人名的字有没有覆盖到。
+
 ## 2026-10-09 头像与简介
 
 - 头像与简介来自维基百科：头像只用 Wikimedia Commons 上公有领域 / CC 许可的图片，必须带作者与许可证署名；简介按 CC BY-SA 4.0 标注出处和版本。素材管线：npm run v2:portraits（fetch-portraits.mjs → roles.py），之后跑 client-index。

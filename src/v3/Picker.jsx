@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import { figures, dynastyOrder } from "../data.js";
 import { Scroll } from "./bits.jsx";
 import { Avatar, lifeYears as years, useRoles } from "./people.jsx";
+import { eraOf } from "./eras.js";
 import { ChevronIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
 export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
@@ -66,7 +67,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
 
   let lastDynasty = null;
   return (
-    <div className={`v3-picker${open ? " is-open" : ""}`} ref={root} style={{ "--c": `var(--p${slot})` }}>
+    <div className={`v3-picker${open ? " is-open" : ""}`} ref={root} data-era={current ? eraOf(current) : undefined} style={{ "--c": `var(--p${slot})` }}>
       <button type="button" className="v3-picker__btn" aria-haspopup="listbox" aria-expanded={open} onClick={() => setOpen((o) => !o)} title={current ? `换一个人（现在是${current.name}）` : "加一个人，同图对比"}>
         {current ? (
           <>
@@ -93,7 +94,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
               const head = f.dynasty !== lastDynasty ? (lastDynasty = f.dynasty) : null;
               return [
                 head && <li key={`h-${head}`} className="v3-picker__group">{head}</li>,
-                <li key={f.id} role="option" aria-selected={i === active}>
+                <li key={f.id} role="option" aria-selected={i === active} data-era={eraOf(f)}>
                   <button type="button" data-i={i} className={i === active ? "is-active" : ""} onMouseEnter={() => setActive(i)} onClick={() => choose(f.id)}>
                     <Avatar f={f} role={roles[f.id]} size="xs" /><b>{f.name}</b><span>{years(f)}</span><em>{f.legacy.score}</em>
                   </button>

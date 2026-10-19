@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { App } from "./v3/App.jsx";
 import { AppErrorBoundary } from "./components/AppErrorBoundary.jsx";
 import "./v3/fonts.css";
+import "./v3/era-fonts.css";
 import "./v3/app.css";
 import "./v3/material.css";
 import "./v3/type.css";

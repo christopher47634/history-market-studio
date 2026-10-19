@@ -107,6 +107,29 @@ const allCss = [css, material, chrome, read("src/v3/type.css")].join("\n");
 if (/background-clip:\s*text/.test(allCss)) fail("不用渐变字");
 if (/border-left:\s*[2-9]px/.test(allCss)) fail("不用侧边彩色竖条");
 
+// 朝代字体：每个朝代都归了组；每个人名里的字都在他那一组人名字体（或正文字体）的分片里。
+const eras = JSON.parse(read("src/v3/eras.json"));
+const eraCss = read("src/v3/era-fonts.css");
+const eraCover = {};
+for (const m of eraCss.matchAll(/font-family: "([^"]+)";[^}]*unicode-range: ([^;]+);/g)) {
+  const set = (eraCover[m[1]] ??= new Set());
+  for (const part of m[2].split(",")) {
+    const [a, b] = part.trim().replace(/^U\+/, "").split("-").map((h) => parseInt(h, 16));
+    for (let cp = a; cp <= (b ?? a); cp++) set.add(cp);
+  }
+}
+const eraGroupOf = Object.fromEntries(Object.entries(eras.groups).flatMap(([g, v]) => v.dynasties.map((d) => [d, g])));
+for (const f of index) {
+  const g = eraGroupOf[f.dynasty];
+  if (!g) fail(`朝代「${f.dynasty}」没有归到任何字体组（src/v3/eras.json）`);
+  const { name, text } = eras.groups[g];
+  if (name === "HMS Serif") continue;
+  const miss = [...f.name].filter((c) => !eraCover[name]?.has(c.codePointAt(0)) && !eraCover[text]?.has(c.codePointAt(0)));
+  if (miss.length) fail(`${f.name} 的「${miss.join("")}」不在 ${name} / ${text} 里，请重跑 python pipeline/era-fonts.py`);
+}
+for (const f of ["public/fonts/era/LICENSES.md", "public/fonts/era/OFL.txt", "public/fonts/era/IPA-LICENSE.md"]) if (!existsSync(new URL(f, root))) fail(`朝代字体缺少许可文件 ${f}`);
+if (!read("src/main.jsx").includes("era-fonts.css")) fail("入口没有引入朝代字体");
+
 // 自托管字体：页面上出现的每个汉字都要落在某个宋体分片里（数据或界面文字改了要重跑 pipeline/fonts.py）。
 const fontsCss = read("src/v3/fonts.css");
 const covered = new Set();

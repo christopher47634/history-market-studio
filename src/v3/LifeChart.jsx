@@ -4,6 +4,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
 import echarts from "./echarts.js";
 import { LEVELS, LEVEL_SPAN, levelOf, visibleNodes, labelBudget, candles, nearest, yRange } from "./scene.js";
+import { eraFonts } from "./eras.js";
 
 const TIER_LINES = [[95, "天下共主"], [85, "一方之主"], [70, "重臣主帅"], [55, "方面名家"], [40, "成名"], [25, "初起"]];
 
@@ -87,6 +88,11 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
     down: { fontSize: 10.5, color: T.down, fontFamily: T.mono, fontWeight: 600, ...halo },
     q: { fontSize: 11, color: T.ink2, fontFamily: T.serif, lineHeight: 17, ...halo },
   };
+  // 节点卡片上的事件标题和引文用这个人所处年代的正文字（霞鹜文楷 / 新致宋 / 思源宋体），年份和涨跌仍用数字字体。
+  const richOf = scene.people.map((p) => {
+    const text = eraFonts(p.figure).text;
+    return { ...rich, t: { ...rich.t, fontFamily: text, fontSize: 12.5 }, q: { ...rich.q, fontFamily: text } };
+  });
   const visibleK = scene.people.map((p) => (kMode ? candles(p, level).filter((k) => k.x >= window[0] - 1 && k.x <= window[1] + 1) : []));
   const { sized, base } = sizeCandles(visibleK, window, width - G.left - G.right);
   const colorOf = (slot, rising) => (pair ? T.p[slot] : rising ? T.up : T.down);
@@ -167,7 +173,7 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
         symbolSize: kMode ? 0 : n.kind === "sub" ? 5 : n.kind === "finale" ? 9 : 7.5,
         itemStyle: { color: n.kind === "sub" ? c : T.surface, borderColor: c, borderWidth: n.kind === "sub" ? 0 : 1.8, opacity: n.kind === "sub" ? 0.7 : 1 },
         label: {
-          show: labeled.has(n.id), formatter: labelFor(scene, level, n), rich,
+          show: labeled.has(n.id), formatter: labelFor(scene, level, n), rich: richOf[slot],
           position: n.score > yhi - yspan * 0.14 ? "bottom" : n.score < ylo + yspan * 0.18 ? "top" : n.delta < 0 || (pair && slot === 1 && n.delta === 0) ? "bottom" : "top",
           distance: kMode ? 12 : 9, align: "center",
           backgroundColor: dark ? "rgba(255,255,255,0.045)" : "rgba(255,255,255,0.32)",
@@ -298,6 +304,19 @@ function makeCrosshair(zr) {
   };
 }
 
+// 画布不会因为用到某个网页字体就去下载它：主动按每人卡片上会出现的字请求一次朝代字体，
+// 字到了以后 document.fonts 的 loadingdone 会让图表重画（见下面的 effect）。
+const primed = new Set();
+function primeFonts(scene) {
+  if (!document.fonts?.load) return;
+  for (const p of scene.people) {
+    if (primed.has(p.figure.id)) continue;
+    primed.add(p.figure.id);
+    const sample = [...p.nodes, ...p.posthumous].map((n) => `${n.event?.title ?? ""}${n.event?.quote?.t ?? n.event?.quote?.textSimplified ?? ""}`).join("");
+    document.fonts.load(`12px ${eraFonts(p.figure).text}`, sample || p.figure.name).catch(() => {});
+  }
+}
+
 export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pinned, onHover, onPin, onView, initialWindow }, ref) {
   const box = useRef(null);
   const chart = useRef(null);
@@ -320,6 +339,7 @@ export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pin
     option.dataZoom[0].startValue = option.dataZoom[1].startValue = window[0];
     option.dataZoom[0].endValue = option.dataZoom[1].endValue = window[1];
     c.setOption(option, { replaceMerge: ["series"], lazyUpdate: false });
+    primeFonts(scene);
     onView?.({ level, window, span: window[1] - window[0] });
     // 缩放、平移后光标没动：按原位置重新吸附，十字光标留在原处（看盘软件的手感）。
     state.current.retrack?.();

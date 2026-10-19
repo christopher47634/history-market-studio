@@ -1,6 +1,7 @@
 // 阅读面板：固定下来的那个节点的完整说明——分数怎么来的、发生了什么、原文依据。
 import { AnimatedNumber, BasisBadge } from "./bits.jsx";
 import { nodeDetail } from "./detail.js";
+import { eraOf } from "./eras.js";
 import { DownIcon, ICON, NextIcon, OutIcon, PrevIcon, UpIcon, ZoomIcon } from "./icons.jsx";
 
 export function Reader({ node, prev, next, onGo, onFocus, figures }) {
@@ -15,7 +16,7 @@ export function Reader({ node, prev, next, onGo, onFocus, figures }) {
   const d = nodeDetail(node);
   const tierPct = d.tierScore != null ? Math.min(100, d.tierScore) : null;
   return (
-    <aside className="v3-reader v3-card spot" aria-live="polite" style={{ "--c": `var(--p${d.slot})` }}>
+    <aside className="v3-reader v3-card spot" aria-live="polite" data-era={eraOf(node.figure)} style={{ "--c": `var(--p${d.slot})` }}>
       <div className="v3-reader__body" key={`${node.id}`}>
         <p className="v3-eyebrow"><i className="v3-dot" />{d.person}<span>·</span>{d.when}{!d.certain && <span className="v3-tag">年份为估计</span>}<span className="v3-tag">{d.tag}</span></p>
         <h2 className="v3-reader__title">{d.title}</h2>

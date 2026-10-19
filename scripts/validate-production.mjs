@@ -66,6 +66,14 @@ const woff = fonts.filter((f) => f.name.endsWith(".woff2"));
 if (woff.length < 2 || !fonts.some((f) => f.name === "OFL.txt")) fail("自托管字体缺失或没带 OFL 许可文本，先跑 python pipeline/fonts.py");
 if (woff.some((f) => f.size > 170 * 1024)) fail("有字体分片超过 170KB");
 if (woff.reduce((s, f) => s + f.size, 0) > 3.4 * 1024 * 1024) fail("自托管字体总量超过 3.4MB");
+// 朝代字体在 dist/client/fonts/era：同样按需分片，每片 ≤ 170KB，总量 ≤ 2MB，要带 OFL / IPA 许可和来源说明。
+const eraDir = path.join(fontDir, "era");
+const eraFiles = await Promise.all((await readdir(eraDir)).map(async (name) => ({ name, size: (await stat(path.join(eraDir, name))).size })));
+const eraWoff = eraFiles.filter((f) => f.name.endsWith(".woff2"));
+for (const lic of ["LICENSES.md", "OFL.txt", "IPA-LICENSE.md"]) if (!eraFiles.some((f) => f.name === lic)) fail(`朝代字体缺少 ${lic}`);
+if (eraWoff.length < 6 || eraWoff.some((f) => f.size > 170 * 1024)) fail("朝代字体缺失或有分片超过 170KB");
+if (eraWoff.reduce((s, f) => s + f.size, 0) > 2 * 1024 * 1024) fail("朝代字体总量超过 2MB");
+woff.push(...eraWoff);
 for (const item of built) {
   if (
     item.name.endsWith(".js") &&

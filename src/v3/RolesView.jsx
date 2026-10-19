@@ -11,6 +11,7 @@ import { lifePoints } from "../v2/model.js";
 import { BOARDS, DOMAIN_BOARDS, SPECIAL_BOARDS, SORTS, boardById, boardStats, filterFigures } from "./boards.js";
 import { AnimatedNumber, Scroll, Segmented } from "./bits.jsx";
 import { Avatar, lifeYears as years, useRoles } from "./people.jsx";
+import { eraOf } from "./eras.js";
 import { ChartIcon, CloseIcon, CompareIcon, GoIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
 const fmtYear = (y) => (y < 0 ? `前${-y}` : `${y}`);
@@ -72,7 +73,7 @@ const startDrag = (e, id) => {
 function BriefCard({ f, role, onOpen, onAdd }) {
   if (!f) return null;
   return (
-    <article className="v3-role v3-glass lg spot" key={f.id} draggable onDragStart={(e) => startDrag(e, f.id)} aria-label={`${f.name} 简要角色卡`}>
+    <article className="v3-role v3-glass lg spot" key={f.id} data-era={eraOf(f)} draggable onDragStart={(e) => startDrag(e, f.id)} aria-label={`${f.name} 简要角色卡`}>
       <div className="v3-glass__bg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : { "--fc": f.color }} aria-hidden="true" />
       <header className="v3-role__head">
         <Avatar f={f} role={role} size="lg" />
@@ -118,7 +119,7 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray, morphed }) {
   const slot = tray.indexOf(f.id);
   return (
     <div className={`v3-sheet${morphed ? " is-morph" : ""}`} role="dialog" aria-modal="true" aria-label={`${f.name} 完整角色卡`} onClick={(e) => e.target === e.currentTarget && onClose()}>
-      <article className="v3-full v3-glass lg spot">
+      <article className="v3-full v3-glass lg spot" data-era={eraOf(f)}>
         <div className="v3-glass__bg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : { "--fc": f.color }} aria-hidden="true" />
         <button ref={close} type="button" className="v3-full__close" onClick={onClose} aria-label="关闭"><CloseIcon {...ICON} size={18} /></button>
         <Scroll className="v3-full__scroll">
@@ -202,7 +203,7 @@ function Tile({ f, role, at, i, onOpen, onToggle }) {
   const open = () => { if (touchOnly() && !flip) { setFlip(true); return; } onOpen(f.id); };
   const brief = role?.brief ?? f.thesis;
   return (
-    <div role="listitem" data-figure={f.id} data-flipped={flip ? "" : undefined} className={`v3-tile spot${at >= 0 ? " is-picked" : ""}`}
+    <div role="listitem" data-figure={f.id} data-era={eraOf(f)} data-flipped={flip ? "" : undefined} className={`v3-tile spot${at >= 0 ? " is-picked" : ""}`}
       style={{ "--fc": f.color, ...(at >= 0 ? { "--c": `var(--p${at})` } : {}) }}
       draggable onDragStart={(e) => { leave(); startDrag(e, f.id); }} onMouseEnter={enter} onMouseLeave={leave} onPointerMove={move}
       onFocus={() => setFlip(true)} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setFlip(false); }}>
@@ -382,7 +383,7 @@ export function RolesView({ current, onCompare }) {
           {list.map((f) => {
             const at = tray.indexOf(f.id);
             return (
-              <div key={f.id} role="listitem" className={`v3-row${at >= 0 ? " is-picked" : ""}${shown?.id === f.id ? " is-focus" : ""}`} style={at >= 0 ? { "--c": `var(--p${at})` } : undefined}
+              <div key={f.id} role="listitem" data-era={eraOf(f)} className={`v3-row${at >= 0 ? " is-picked" : ""}${shown?.id === f.id ? " is-focus" : ""}`} style={at >= 0 ? { "--c": `var(--p${at})` } : undefined}
                 draggable onDragStart={(e) => startDrag(e, f.id)} onMouseEnter={() => setFocus(f.id)} onFocus={() => setFocus(f.id)}>
                 <button type="button" className="v3-row__check" onClick={() => (at >= 0 ? remove(f.id) : add(f.id))} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : <PlusIcon {...ICON} size={15} />}</button>
                 <button type="button" className="v3-row__main" onClick={() => setOpen(f.id)} aria-label={`${f.name}：查看完整角色卡`}>
@@ -417,7 +418,7 @@ export function RolesView({ current, onCompare }) {
           {[0, 1].map((i) => {
             const f = figureById[tray[i]];
             return (
-              <span key={i} className={`v3-tray__slot${f ? " is-full" : ""}${over === i ? " is-over" : ""}`} style={{ "--c": `var(--p${i})` }}
+              <span key={i} data-era={f ? eraOf(f) : undefined} className={`v3-tray__slot${f ? " is-full" : ""}${over === i ? " is-over" : ""}`} style={{ "--c": `var(--p${i})` }}
                 onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = "copy"; setOver(i); }} onDragLeave={() => setOver(-1)} onDrop={drop(i)}>
                 {f ? <Avatar f={f} role={roles[f.id]} size="xs" /> : <i className="v3-dot" />}
                 {f ? <><b>{f.name}</b><button type="button" onClick={() => remove(f.id)} aria-label={`移出${f.name}`}><CloseIcon {...ICON} size={13} /></button></> : <em>{i ? "B：可不选" : "A：拖进来或点卡片上的 +"}</em>}

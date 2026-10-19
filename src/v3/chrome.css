@@ -42,6 +42,34 @@ body::before { display: none; }
 .v3-seg.lg .v3-seg__pill { top: 4px; bottom: 4px; left: 4px; width: calc((100% - 8px) / var(--n)); background: color-mix(in srgb, var(--surface) 72%, transparent); box-shadow: inset 0 1px 0 rgba(236,248,242,.12), inset 0 0 0 .5px color-mix(in srgb, var(--ink) 16%, transparent), 0 4px 14px -6px rgba(0,0,0,.55); }
 :root[data-theme="cinnabar"] .v3-seg.lg .v3-seg__pill { background: rgba(255,253,248,.85); box-shadow: inset 0 1px 0 rgba(255,255,255,1), 0 0 0 .5px rgba(80,56,28,.12), 0 4px 14px -6px rgba(80,56,28,.3); }
 
+/* ───────── 朝代字体（eras.json）：人名用该年代风格的标题字，简介 / 事件 / 引文用好读的正文字 ───────── */
+[data-era] { --era-name: var(--font-serif); --era-text: var(--font-serif); --era-name-w: 700; }
+[data-era="gu"]   { --era-name: "HMS Brush", "HMS Kai", var(--font-serif); --era-text: "HMS Kai", var(--font-serif); --era-name-w: 400; }
+[data-era="wei"]  { --era-name: "HMS Xing", "HMS Kai", var(--font-serif);  --era-text: "HMS Kai", var(--font-serif); --era-name-w: 400; }
+[data-era="tang"] { --era-name: "HMS Kai Medium", "HMS Kai", var(--font-serif); --era-text: "HMS Kai", var(--font-serif); --era-name-w: 400; }
+[data-era="song"] { --era-name: "HMS Xiaowei", "HMS Ming", var(--font-serif); --era-text: "HMS Ming", var(--font-serif); --era-name-w: 400; }
+[data-era="ming"] { --era-name: "HMS Ming", var(--font-serif);             --era-text: "HMS Ming", var(--font-serif); --era-name-w: 400; }
+/* 人名：毛笔楷书、行书这些只有一个字重，关掉浏览器的仿粗体，否则笔画会被描胖、发糊。
+   行书只用在大字号（≥18px）的人名上；下拉、搜索、对比栏、列表这些小字号处换成同朝代的楷书，免得草得认不出。
+   K 线左上的信息栏是 12px 的数据行，人名保持黑体。 */
+[data-era] { --era-name-sm: var(--era-name); }
+[data-era="wei"] { --era-name-sm: "HMS Kai", var(--font-serif); }
+[data-era] :is(.v3-tile__name, .v3-full__body h2, .v3-role__head h2, .v3-picker__text b) {
+  font-family: var(--era-name) !important; font-weight: var(--era-name-w) !important; font-synthesis: none;
+}
+[data-era] :is(.v3-tile__head b, .v3-row__who b, .v3-cmd__text b), .v3-picker__list [data-era] > button > b, .v3-tray__slot[data-era] > b {
+  font-family: var(--era-name-sm) !important; font-weight: var(--era-name-w) !important; font-synthesis: none;
+}
+[data-era]:not([data-era="jin"]) :is(.v3-tile__name, .v3-full__body h2, .v3-role__head h2, .v3-picker__text b) { letter-spacing: .06em; }
+[data-era] .v3-ava--mono, [data-era] .v3-tile__media.is-seal > .v3-ava { font-family: var(--era-name); font-weight: var(--era-name-w); font-synthesis: none; }
+/* 正文：简介、论断、导语、一生节点、阅读面板、K 线详情栏、事件条。 */
+[data-era] :is(.v3-tile__brief, .v3-full__thesis, .v3-full__intro p, .v3-full__life b, .v3-role__brief, .v3-reader__title, .v3-reader__summary, .v3-reader__why, .v3-quote blockquote, .v3-hover__title, .v3-hover__sum),
+.v3-strip [data-era] > button > b {
+  font-family: var(--era-text); font-synthesis: none;
+}
+[data-era]:not([data-era="jin"]) :is(.v3-reader__title, .v3-hover__title, .v3-full__thesis) { font-weight: 400; letter-spacing: .03em; }
+[data-era]:not([data-era="jin"]) :is(.v3-tile__brief, .v3-full__intro p, .v3-reader__summary, .v3-quote blockquote) { letter-spacing: .02em; }
+
 /* ───────── 走势页：一句话标题 + 两张行情卡 ───────── */
 .v3-intro { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 32px; flex-wrap: wrap; margin: 6px 2px 18px; }
 .v3-intro h1 { margin: 0; font: 700 32px/1.15 var(--font-serif); letter-spacing: .02em; text-wrap: balance; }
@@ -72,6 +100,9 @@ body::before { display: none; }
 .v3-swap { align-self: center; width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border-radius: 50%; color: var(--ink-2); }
 .v3-swap:hover:not(:disabled) { color: var(--ink); transform: rotate(180deg); }
 .v3-picker__list button { grid-template-columns: 24px minmax(0, 1fr) auto 30px; align-items: center; }
+/* 「只看一个人」不是人物行，不套四列网格（否则字会挤进 24px 的头像列里竖着排）。 */
+.v3-picker__list button.v3-picker__clear { display: flex; align-items: center; gap: 8px; color: var(--ink-2); font-size: 13.5px; white-space: nowrap; }
+.v3-picker__list button.v3-picker__clear:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); color: var(--ink); }
 .v3-picker__list .v3-ava--xs { width: 24px; height: 24px; }
 .v3-picker__search { gap: 10px; color: var(--ink-3); }
 
