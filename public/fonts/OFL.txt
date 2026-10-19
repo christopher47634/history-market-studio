@@ -1,4 +1,4 @@
-Noto Serif SC — Copyright 2017 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
+Noto Serif SC, Noto Sans SC — Copyright 2017–2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.
 Inter — Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter).
 Both fonts are licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org
-The files here are subsets made by pipeline/fonts.py and are renamed (HMS Serif / HMS Latin) as the licence requires for modified versions.
+The files here are subsets made by pipeline/fonts.py and are renamed (HMS Serif / HMS Sans / HMS Latin) as the licence requires for modified versions.

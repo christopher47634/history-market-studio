@@ -21,6 +21,7 @@ def installed(name):
     raise SystemExit(f"找不到字体 {name}，请用环境变量指定路径")
 SERIF = pathlib.Path(os.environ.get("HMS_SERIF") or installed("NotoSerifSC-VF.ttf"))
 LATIN = pathlib.Path(os.environ.get("HMS_LATIN") or installed("InterVariable.ttf"))
+SANS = pathlib.Path(os.environ.get("HMS_SANS") or installed("NotoSansSC-VF.ttf"))
 SLICE = 320
 ASCII = "".join(chr(c) for c in range(0x20, 0x7F))
 PUNCT = "·—–‘’“”…、。，；：？！「」『』（）《》〈〉【】〔〕～×→←↑↓↗＋－％"
@@ -77,6 +78,16 @@ for i, chars in enumerate(slices):
     (OUT / name).write_bytes(data)
     faces.append((name, "HMS Serif", "400 800", ranges(text), len(data)))
 
+# 界面小字：思源黑体可变字体 Noto Sans SC（OFL），字重轴 400–600。Windows 上中文小字默认落到微软雅黑，10–12px 发虚；
+# 换成同一套分片后各平台一致、小字清楚。西文和数字仍走前面的 Inter（字体栈里 HMS Latin 排在前面）。
+sans = instancer.instantiateVariableFont(TTFont(SANS), {"wght": (400, 600)})
+for i, chars in enumerate(slices):
+    text = "".join(chars)
+    data = woff2(sans, text, ["kern", "palt", "vpal"])
+    name = f"hms-sans-{i}.woff2"
+    (OUT / name).write_bytes(data)
+    faces.append((name, "HMS Sans", "400 600", ranges(text), len(data)))
+
 latin = TTFont(LATIN)
 axes = {a.axisTag: a for a in latin["fvar"].axes}
 pin = {"wght": (300, 700)}
@@ -88,16 +99,16 @@ data = woff2(latin, lat_text, ["kern", "liga", "calt", "tnum", "case", "ss01", "
 (OUT / "hms-latin.woff2").write_bytes(data)
 faces.append(("hms-latin.woff2", "HMS Latin", "300 700", ranges(lat_text), len(data)))
 
-css = ["/* 由 pipeline/fonts.py 生成，勿手改。字体：Noto Serif SC、Inter，均为 SIL Open Font License 1.1（见 /fonts/OFL.txt）。 */"]
+css = ["/* 由 pipeline/fonts.py 生成，勿手改。字体：Noto Serif SC、Noto Sans SC、Inter，均为 SIL Open Font License 1.1（见 /fonts/OFL.txt）。 */"]
 for name, family, weight, urange, _ in faces:
     css.append(f'@font-face {{ font-family: "{family}"; src: url("/fonts/{name}") format("woff2"); font-weight: {weight}; font-style: normal; font-display: swap; unicode-range: {urange}; }}')
 (ROOT / "src/v3/fonts.css").write_text("\n".join(css) + "\n", encoding="utf-8")
 (OUT / "OFL.txt").write_text(
-    "Noto Serif SC — Copyright 2017 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.\n"
+    "Noto Serif SC, Noto Sans SC — Copyright 2017–2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'.\n"
     "Inter — Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter).\n"
     "Both fonts are licensed under the SIL Open Font License, Version 1.1: https://openfontlicense.org\n"
-    "The files here are subsets made by pipeline/fonts.py and are renamed (HMS Serif / HMS Latin) as the licence requires for modified versions.\n",
+    "The files here are subsets made by pipeline/fonts.py and are renamed (HMS Serif / HMS Sans / HMS Latin) as the licence requires for modified versions.\n",
     encoding="utf-8",
 )
 total = sum(f[4] for f in faces)
-print(f"字体：宋体 {len(slices)} 片（{len(ranked)} 字），西文 1 片；共 {total / 1024:.0f} KB，最大一片 {max(f[4] for f in faces) / 1024:.0f} KB")
+print(f"字体：宋体、黑体各 {len(slices)} 片（{len(ranked)} 字），西文 1 片；共 {total / 1024:.0f} KB，最大一片 {max(f[4] for f in faces) / 1024:.0f} KB")

@@ -5,6 +5,7 @@ import { AppErrorBoundary } from "./components/AppErrorBoundary.jsx";
 import "./v3/fonts.css";
 import "./v3/app.css";
 import "./v3/material.css";
+import "./v3/type.css";
 import { installReporter } from "./v3/report.js";
 import { installGlowScroll } from "./v3/glowscroll.js";
 import { installPointer } from "./v3/pointer.js";

@@ -1,0 +1,74 @@
+/* 小字排版层：全站 13px 以下的字统一到几种「角色」，不再各写各的字号。
+   - 中文小字用自托管思源黑体（HMS Sans），最小 11.5px；西文和数字走 Inter（HMS Latin），等宽数字。
+   - 字号只有三档：11 / 12 / 13；层级靠字重、字距和灰阶区分，不靠再缩一号。
+   - 灰阶：小字不用最浅那一级（对比度不够、看着廉价），最浅也是 ink-2 的七成。 */
+:root, :root[data-theme="jade"] { --ink-3: #78837d; --meta: color-mix(in srgb, var(--ink-2) 82%, var(--bg)); --faint: color-mix(in srgb, var(--ink-2) 68%, var(--bg)); }
+:root[data-theme="cinnabar"] { --ink-3: #8c867a; --meta: color-mix(in srgb, var(--ink-2) 88%, var(--bg)); --faint: color-mix(in srgb, var(--ink-2) 74%, var(--bg)); }
+:root {
+  --font-sans: "HMS Latin", "HMS Sans", "PingFang SC", "HarmonyOS Sans SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif;
+  --font-mono: "HMS Latin", "HMS Sans", "PingFang SC", "Microsoft YaHei UI", system-ui, sans-serif;
+}
+body { font-optical-sizing: auto; font-kerning: normal; }
+
+/* ① 元信息：朝代 · 年份 · 领域、按钮下的说明、人物小注。 */
+.v3-eyebrow, .v3-role__eyebrow, .v3-tile__meta, .v3-tile__head small, .v3-picker__text small, .v3-board__lead,
+.v3-row small, .v3-readout__label, .v3-legend small, .v3-chart__title p, .v3-index__count, .v3-tray__now, .v3-tray__slot em, .v3-roles__lede {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 450; line-height: 1.5; letter-spacing: .02em; color: var(--meta);
+}
+.v3-eyebrow span, .v3-role__eyebrow span, .v3-tile__meta em { margin: 0 .45em; opacity: .45; }
+.v3-roles__lede { font-size: 13px; line-height: 1.8; }
+
+/* ② 数字与年份：Inter 等宽数字，略收字距，读起来像行情软件的报价。 */
+.v3-tile__years, .v3-strip time, .v3-strip span, .v3-full__life time, .v3-picker__list span, .v3-picker__list em, .v3-board__avg,
+.v3-row__era small, .v3-legend, .v3-legend time, .v3-chart__title h1 span, .v3-formula p {
+  font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: .01em; font-variant-numeric: tabular-nums; font-feature-settings: "tnum", "cv11", "ss01";
+}
+.v3-tile__years, .v3-strip time, .v3-board__avg, .v3-picker__list span { color: var(--faint); }
+.v3-legend { font-size: 12px; }
+
+/* ③ 栏目标签：小号、加宽字距、半粗——像杂志的栏目名，不像正文缩小版。 */
+.v3-boards__label, .v3-picker__group, .v3-table th, .v3-foot b, .v3-reader__why span, .v3-rows__head, .v3-full__body h3 {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: .16em; color: var(--faint); text-transform: uppercase;
+}
+.v3-boards__label small { font-weight: 450; letter-spacing: .02em; font-size: 12px; text-transform: none; }
+.v3-roles__kicker { font: 600 11px/1 var(--font-mono); letter-spacing: .32em; color: var(--faint); }
+.v3-brand small { font: 600 9.5px/1.5 var(--font-mono); letter-spacing: .34em; color: var(--faint); }
+
+/* ④ 数据格里的小标题（峰值 / 后世评价 / 当时的势）。 */
+.v3-tile__nums small, .v3-role__stats small, .v3-full__stats small, .v3-hover__score small, .v3-reader__score small, .v3-tile__score small {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 500; letter-spacing: .08em; color: var(--faint);
+}
+.v3-tile__score small { color: inherit; opacity: .75; letter-spacing: .04em; }
+
+/* ⑤ 出处、图例、提示：最轻的一层，但仍保证可读。 */
+.v3-full__credit, .v3-full__legend, .v3-full__intro cite, .v3-role__hint, .v3-foot .v3-license, .v3-chart__hint, .v3-quote figcaption {
+  font-family: var(--font-sans); font-size: 11.5px; font-weight: 400; line-height: 1.65; letter-spacing: .02em; color: var(--faint);
+}
+.v3-full__credit a, .v3-full__intro cite a, .v3-foot a { text-decoration: none; border-bottom: 1px solid color-mix(in srgb, currentColor 35%, transparent); transition: color .2s, border-color .2s; }
+.v3-full__credit a:hover, .v3-full__intro cite a:hover, .v3-foot a:hover { color: var(--accent); border-color: var(--accent); }
+.v3-chart__hint em { font: 500 12px/1 var(--font-mono); letter-spacing: .02em; }
+
+/* ⑥ 小胶囊与徽标。 */
+.v3-tag, .v3-basis b, .v3-dock__pin, .v3-row__tag { font-family: var(--font-sans); font-size: 11px; font-weight: 600; letter-spacing: .06em; }
+.v3-basis { font-size: 11.5px; letter-spacing: .02em; color: var(--faint); }
+
+/* ⑦ 键帽：小号半粗 + 底边一道内阴影，像真的按键。 */
+kbd, .v3-index__search kbd { font: 600 10.5px/1 var(--font-mono); letter-spacing: .02em; padding: 3px 6px 4px; border-radius: 6px; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); background: color-mix(in srgb, var(--ink) 5%, transparent); color: var(--ink-2); box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--ink) 12%, transparent); }
+.v3-chart__hint span { gap: 6px; }
+
+/* ⑧ 控件里的字：分段、按钮、筛选统一 12.5 / 13，字距略开。 */
+.v3-seg button, .v3-eras button, .v3-text-toggle, .v3-share, .v3-row__go, .v3-reader__nav button, .v3-tray__clear { font-family: var(--font-sans); font-weight: 500; letter-spacing: .03em; }
+.v3-seg--sm button { font-size: 12.5px; }
+.v3-tile__more { font: 600 12.5px/1 var(--font-sans); letter-spacing: .06em; }
+
+@media (max-width: 720px) {
+  .v3-picker__text small, .v3-legend { font-size: 11px; }
+  .v3-chart__hint { font-size: 11.5px; }
+}
+
+/* 板块卡：名字不折行，卡片最窄 148px。 */
+.v3-boards__row { grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); }
+.v3-board__head b { white-space: nowrap; }
+.v3-board__lead { font-size: 12px; }
+.v3-roles__lede { max-width: 460px; }
+@media (max-width: 720px) { .v3-boards__row { grid-template-columns: none; grid-auto-columns: 140px; } }
