@@ -1,5 +1,6 @@
 // 索引页的板块：六个领域板块（按人物主领域）+ 几个按走势形态算出来的特色板块。
 // 纯函数，Node 端可测。trend = 生前主线的势（出生 → 各阶段 → 终章）。
+import { searchFigures } from "./search.js";
 
 export const DOMAIN_BOARDS = [
   { id: "政治治理", label: "政治", hint: "帝王、宰辅、改革与治理" },
@@ -50,10 +51,15 @@ export const SORTS = [
   { value: "move", label: "振幅" },
 ];
 
-// 筛选 + 排序。words 已转小写、按空格切开；特色板块默认按它自己的指标排。
-export function filterFigures(figures, { board, words = [], era = "all", sort = "legacy", dynastyOrder = [] }) {
+// 筛选 + 排序。q 是搜索框原文，按 src/v3/search.js 的相关度匹配；特色板块默认按它自己的指标排。
+// 有搜索词且排序还是默认（后世评价 / 板块指标）时按相关度排——搜「变法」先出商鞅、王安石，而不是后世评价高的人；
+// 用户自己点了别的排序（峰值、时代、振幅）就按用户选的排。
+export function filterFigures(figures, { board, q = "", era = "all", sort = "legacy", dynastyOrder = [] }) {
   const b = typeof board === "string" ? boardById[board] : board;
-  const list = figures.filter((f) => inBoard(f, b) && (era === "all" || f.dynasty === era) && words.every((w) => f.searchText.includes(w)));
+  const base = figures.filter((f) => inBoard(f, b) && (era === "all" || f.dynasty === era));
+  const found = searchFigures(base, q);
+  if (found && (sort === "legacy" || sort === "board")) return found.map((r) => r.f);
+  const list = found ? found.map((r) => r.f) : base;
   const key = {
     legacy: (f) => -f.legacy.score,
     peak: (f) => -(f.peak?.score ?? 0),

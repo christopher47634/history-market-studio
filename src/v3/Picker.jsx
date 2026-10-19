@@ -6,6 +6,7 @@ import { figures, dynastyOrder } from "../data.js";
 import { Scroll } from "./bits.jsx";
 import { Avatar, lifeYears as years, useRoles } from "./people.jsx";
 import { eraOf } from "./eras.js";
+import { searchFigures } from "./search.js";
 import { ChevronIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
 export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
@@ -20,10 +21,12 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
   const roles = useRoles({ idle: true });
 
   const list = useMemo(() => {
-    const words = q.trim().toLocaleLowerCase("zh-CN").split(/\s+/).filter(Boolean);
-    const hit = figures.filter((f) => f.id !== exclude && words.every((w) => f.searchText.includes(w)));
+    // 没输入时按朝代、生年排（分组浏览）；输入了就按相关度排（src/v3/search.js），不再分朝代组。
+    const pool = figures.filter((f) => f.id !== exclude);
+    const found = searchFigures(pool, q);
+    if (found) return found.slice(0, 120).map((r) => r.f);
     const order = (d) => dynastyOrder.indexOf(d);
-    return hit.sort((a, b) => order(a.dynasty) - order(b.dynasty) || a.born - b.born).slice(0, 120);
+    return pool.sort((a, b) => order(a.dynasty) - order(b.dynasty) || a.born - b.born);
   }, [q, exclude]);
 
   useEffect(() => {
@@ -91,7 +94,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
           <Scroll className="v3-picker__scroll"><ul className="v3-picker__list" role="listbox" id={`v3-list-${slot}`}>
             {allowEmpty && value && <li><button type="button" className="v3-picker__clear" onClick={() => choose("")}>只看一个人</button></li>}
             {list.map((f, i) => {
-              const head = f.dynasty !== lastDynasty ? (lastDynasty = f.dynasty) : null;
+              const head = !q.trim() && f.dynasty !== lastDynasty ? (lastDynasty = f.dynasty) : null;
               return [
                 head && <li key={`h-${head}`} className="v3-picker__group">{head}</li>,
                 <li key={f.id} role="option" aria-selected={i === active} data-era={eraOf(f)}>

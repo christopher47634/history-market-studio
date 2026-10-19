@@ -305,8 +305,7 @@ export function RolesView({ current, onCompare }) {
   }, []);
 
   const b = boardById[board];
-  const words = q.trim().toLocaleLowerCase("zh-CN").split(/\s+/).filter(Boolean);
-  const list = useMemo(() => filterFigures(figures, { board: b, words, era, sort, dynastyOrder }), [board, q, era, sort]);
+  const list = useMemo(() => filterFigures(figures, { board: b, q, era, sort, dynastyOrder }), [board, q, era, sort]);
   const stats = useMemo(() => Object.fromEntries(BOARDS.map((x) => [x.id, boardStats(figures, x)])), []);
   const eras = useMemo(() => dynastyOrder.filter((d) => figures.some((f) => f.dynasty === d)), []);
   const sorts = b?.metric ? [{ value: "board", label: "板块指标" }, ...SORTS] : SORTS;

@@ -51,8 +51,9 @@ const built = await Promise.all(
   })),
 );
 // 预算：assets 里大部分是每人一个的按需数据分包，外加角色页的简介包（约 330KB，进角色页才加载）。
+// 10-19 加了搜索词表（300 人的别名和代表事件，约 25KB），预算从 3.6MB 调到 3.7MB。
 const total = built.reduce((sum, item) => sum + item.size, 0);
-if (total > 3.6 * 1024 * 1024) fail("生产静态资源总量超过 3.6MB");
+if (total > 3.7 * 1024 * 1024) fail("生产静态资源总量超过 3.7MB");
 // 角色头像在 dist/client/portraits，逐张懒加载，单独算：每张 ≤ 40KB，总量 ≤ 4MB。
 const portraitDir = path.join(root, "dist", "client", "portraits");
 const portraits = await Promise.all((await readdir(portraitDir)).map(async (name) => ({ name, size: (await stat(path.join(portraitDir, name))).size })));

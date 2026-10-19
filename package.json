@@ -27,7 +27,8 @@
     "v2:portraits": "node pipeline/fetch-portraits.mjs && python pipeline/roles.py",
     "v2:fonts": "python pipeline/fonts.py",
     "test:algorithms": "node --test tests/algorithms.test.mjs",
-    "test": "npm run typecheck && npm run test:static && npm run test:sites && npm run test:algorithms",
+    "test:search": "node --test tests/search.test.mjs",
+    "test": "npm run typecheck && npm run test:static && npm run test:sites && npm run test:algorithms && npm run test:search",
     "typecheck": "tsc -p jsconfig.json"
   },
   "dependencies": {

@@ -168,3 +168,7 @@ kbd { font-size: 11.5px; }
   .v3-brand:hover svg :is(path, polyline) { animation: none; }
   .v3-picker__list button.is-active .v3-ava, .v3-cmd__row.is-active .v3-ava, .v3-row:hover .v3-ava { transform: none; }
 }
+
+/* ⌘K 搜索结果：写出「为什么是这个人」（又称「孔明」 / 以「熙宁变法」闻名 / 生平：…），跟在年代后面，用强调色的淡字。 */
+.v3-cmd__why { font-style: normal; margin-left: .6em; padding-left: .6em; border-left: 1px solid color-mix(in srgb, var(--ink) 16%, transparent); color: color-mix(in srgb, var(--accent) 80%, var(--ink-2)); }
+.v3-cmd__text small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

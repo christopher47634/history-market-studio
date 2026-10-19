@@ -8,17 +8,13 @@ import { figures, figureById } from "../data.js";
 import { Avatar, lifeYears, useRoles } from "./people.jsx";
 import { Scroll } from "./bits.jsx";
 import { eraOf } from "./eras.js";
+import { isStrong, searchFigures } from "./search.js";
 import { ChartIcon, CompareIcon, EnterIcon, ICON, LinkIcon, MoonIcon, RolesIcon, SearchIcon, SunIcon } from "./icons.jsx";
 
 const TOP = [...figures].sort((a, b) => b.legacy.score - a.legacy.score).slice(0, 8);
 
-function search(q) {
-  const words = q.trim().toLocaleLowerCase("zh-CN").split(/\s+/).filter(Boolean);
-  if (!words.length) return [];
-  const hit = figures.filter((f) => words.every((w) => f.searchText.includes(w)));
-  const rank = (f) => (f.name === q.trim() ? 0 : f.name.startsWith(words[0]) ? 1 : f.name.includes(words[0]) ? 2 : 3);
-  return hit.sort((a, b) => rank(a) - rank(b) || b.legacy.score - a.legacy.score).slice(0, 40);
-}
+// 按相关度排（src/v3/search.js）：姓名、别名、代表事件命中的在前；只在生平事件或总评里提到的归到「也提到了」。
+const search = (q) => (searchFigures(figures, q) ?? []).slice(0, 40);
 
 export function CommandPalette({ open, onClose, page, current, themeKey, actions }) {
   const roles = useRoles();
@@ -28,14 +24,14 @@ export function CommandPalette({ open, onClose, page, current, themeKey, actions
   const list = useRef(null);
   const anchor = figureById[current.left];
 
-  const people = useMemo(() => (q.trim() ? search(q) : TOP), [q]);
+  const people = useMemo(() => (q.trim() ? search(q) : TOP.map((f) => ({ f, score: 0, why: "" }))), [q]);
   const commands = useMemo(() => (q.trim() ? [] : [
     page === "chart" ? { id: "go-roles", icon: RolesIcon, label: "去「角色」页", hint: "按板块浏览 300 位人物", run: () => actions.page("roles") }
       : { id: "go-chart", icon: ChartIcon, label: "回到「走势」", hint: `主图：${[current.left, current.right].filter(Boolean).map((id) => figureById[id]?.name).join(" 对比 ")}`, run: () => actions.page("chart") },
     { id: "theme", icon: themeKey === "b" ? SunIcon : MoonIcon, label: themeKey === "b" ? "换成朱砂（浅色）" : "换成玉衡（深色）", hint: "两套主题", run: actions.theme },
     { id: "link", icon: LinkIcon, label: "复制当前页面链接", hint: "人物组合、板块和打开的卡片都在链接里", run: actions.share },
   ]), [q, page, themeKey, current.left, current.right]);
-  const rows = [...commands.map((c) => ({ kind: "cmd", ...c })), ...people.map((f) => ({ kind: "fig", id: f.id, f }))];
+  const rows = [...commands.map((c) => ({ kind: "cmd", ...c })), ...people.map((r) => ({ kind: "fig", id: r.f.id, f: r.f, why: r.why, strong: !q.trim() || isStrong(r) }))];
 
   useEffect(() => {
     if (!open) return;
@@ -78,7 +74,7 @@ export function CommandPalette({ open, onClose, page, current, themeKey, actions
         <Scroll className="v3-cmd__scroll">
           <ul className="v3-cmd__list" id="v3-cmd-list" role="listbox" ref={list}>
             {rows.map((row, i) => {
-              const group = row.kind === "cmd" ? "操作" : q.trim() ? `人物 · ${people.length === 40 ? "前 40 个" : `${people.length} 个`}` : "后世评价最高";
+              const group = row.kind === "cmd" ? "操作" : !q.trim() ? "后世评价最高" : row.strong ? "最相关" : "生平里提到";
               const label = group !== head ? (head = group) : null;
               return [
                 label && <li key={`g-${label}`} className="v3-cmd__group" role="presentation">{label}</li>,
@@ -92,7 +88,7 @@ export function CommandPalette({ open, onClose, page, current, themeKey, actions
                   ) : (
                     <>
                       <Avatar f={row.f} role={roles[row.id]} size="sm" />
-                      <span className="v3-cmd__text"><b>{row.f.name}</b><small>{row.f.dynasty} · {lifeYears(row.f)}</small></span>
+                      <span className="v3-cmd__text"><b>{row.f.name}</b><small>{row.f.dynasty} · {lifeYears(row.f)}{row.why && row.why !== "姓名" && <em className="v3-cmd__why">{row.why}</em>}</small></span>
                       <span className="v3-cmd__score" title="后世评价">{row.f.legacy.score}</span>
                       {i === active && (
                         <span className="v3-cmd__acts" onClick={(e) => e.stopPropagation()}>
