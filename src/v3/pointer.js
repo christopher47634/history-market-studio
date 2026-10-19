@@ -7,9 +7,24 @@ export function installPointer() {
   const calm = matchMedia("(prefers-reduced-motion: reduce)");
   document.documentElement.dataset.pointer = "on";
   let hot = null, next = null, box = null, x = 0, y = 0, raf = 0;
-  const invalidate = () => { box = null; };
+  // 磁吸：图标按钮和主按钮被光标轻轻吸过去（最多 3px），离开时缓缓回位（CSS 在 interact.css）。
+  const MAGNET = ".v3-icon-btn, .v3-bar__search, .v3-tray__go, .v3-btn, .v3-full__close, .v3-tile__add, .v3-swap, .v3-cmd__acts button";
+  let mag = null, magNext = null, magBox = null;
+  const invalidate = () => { box = null; magBox = null; };
   const frame = () => {
     raf = 0;
+    if (magNext !== mag) {
+      if (mag) { mag.removeAttribute("data-magnet-on"); mag.style.removeProperty("--mgx"); mag.style.removeProperty("--mgy"); }
+      mag = magNext; magBox = null;
+      if (mag) { mag.setAttribute("data-magnet", ""); mag.setAttribute("data-magnet-on", ""); }
+    }
+    if (mag) {
+      if (!magBox) magBox = mag.getBoundingClientRect();
+      const dx = Math.max(-1, Math.min(1, (x - magBox.left - magBox.width / 2) / (magBox.width / 2)));
+      const dy = Math.max(-1, Math.min(1, (y - magBox.top - magBox.height / 2) / (magBox.height / 2)));
+      mag.style.setProperty("--mgx", `${(dx * 3).toFixed(1)}px`);
+      mag.style.setProperty("--mgy", `${(dy * 2.5).toFixed(1)}px`);
+    }
     if (next !== hot) {
       if (hot) { hot.removeAttribute("data-spot-on"); hot.style.removeProperty("--rx"); hot.style.removeProperty("--ry"); }
       hot = next;
@@ -33,11 +48,13 @@ export function installPointer() {
     if (e.pointerType !== "mouse" || calm.matches) return;
     x = e.clientX; y = e.clientY;
     const card = e.target?.closest?.(".spot") ?? null;
+    const m = e.target?.closest?.(MAGNET) ?? null;
+    magNext = m && !m.disabled ? m : null;
     if (card !== next) box = null;
     next = card;
     if (!raf) raf = requestAnimationFrame(frame);
   }, { passive: true });
   addEventListener("scroll", invalidate, { passive: true, capture: true });
   addEventListener("resize", invalidate);
-  document.documentElement.addEventListener("pointerleave", () => { next = null; if (!raf) raf = requestAnimationFrame(frame); });
+  document.documentElement.addEventListener("pointerleave", () => { next = null; magNext = null; if (!raf) raf = requestAnimationFrame(frame); });
 }

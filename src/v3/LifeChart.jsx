@@ -35,7 +35,7 @@ const median = (a) => { const s = [...a].sort((x, y) => x - y); return s.length 
 // 宽屏顶部留 100px 的保留带：左边开高低收信息栏、右边节点详情栏都停在这里，不压住绘图区（手机上详情栏在图下方）。
 export function layout(width, mode) {
   const narrow = width < 520;
-  const left = narrow ? 32 : 44, right = narrow ? 46 : 72, top = narrow ? 60 : 100, bottom = narrow ? 60 : 64;
+  const left = narrow ? 32 : 44, right = narrow ? 46 : 72, top = narrow ? 60 : 122, bottom = narrow ? 60 : 64;
   const sub = mode === "k" ? (narrow ? 44 : 58) : 0;
   return { left, right, top, bottom, sub, gap: sub ? 10 : 0, mainBottom: bottom + sub + (sub ? 10 : 0) };
 }

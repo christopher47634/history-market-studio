@@ -55,7 +55,7 @@ for (const [hash, theme] of [["b", "jade"], ["c", "cinnabar"]]) {
     assert.ok(at, "扫遍图表都没有吸附到节点");
     assert.ok((await texts(".v3-readout__label")).some((l) => l.startsWith("当时的势")));
     // 详情栏停靠在绘图区上方：不压住目标节点，也不伸进绘图区（详情栏不接收指针，所以按几何判断）。
-    const card = await page.eval(`(()=>{const el=document.querySelector('.v3-hover');const r=el.getBoundingClientRect();const c=document.querySelector('.v3-chart-canvas').getBoundingClientRect();const x=c.left+ +el.dataset.nodeX,y=c.top+ +el.dataset.nodeY;return {bottom:r.bottom,plotTop:c.top+100,covered:x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom}})()`);
+    const card = await page.eval(`(()=>{const el=document.querySelector('.v3-hover');const r=el.getBoundingClientRect();const c=document.querySelector('.v3-chart-canvas').getBoundingClientRect();const x=c.left+ +el.dataset.nodeX,y=c.top+ +el.dataset.nodeY;return {bottom:r.bottom,plotTop:c.top+122,covered:x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom}})()`);
     assert.ok(!card.covered, "详情栏压住了目标节点");
     assert.ok(card.bottom <= card.plotTop + 1, `详情栏伸进了绘图区（底 ${Math.round(card.bottom)}，绘图区顶 ${Math.round(card.plotTop)}）`);
     assert.ok((await text(".v3-legend")).includes("势"), "信息栏没有显示读数");

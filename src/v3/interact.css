@@ -1,0 +1,170 @@
+/* 交互层（10-19，用户：所有按钮、所有可交互的内容统一提升质感，光标交互不能有遮挡）。
+   做法参考 Radix / Linear / Vercel Geist 这类成熟组件库的状态规范：
+   - 四种状态都要有：静止、悬停（底色抬 5% 左右 + 字变亮）、按下（缩 .97 + 底色再深一点）、键盘聚焦（双层环：底色环 + 强调色环，不靠浏览器默认虚线）。
+   - 悬停只在真有鼠标的设备上生效（@media (hover: hover)），触屏点完不会“粘”在悬停态。
+   - 移入快、移出慢：进 .14s，出 .32s，看起来跟手又不闪。
+   - 不回弹，尊重减少动态效果。
+   只放跨组件的统一规则和修补；组件自己的特殊效果仍在 app.css / chrome.css / material.css。 */
+
+:root {
+  --ix-tint: color-mix(in srgb, var(--ink) 6%, transparent);
+  --ix-tint-strong: color-mix(in srgb, var(--ink) 10%, transparent);
+  --ix-ring: 0 0 0 2px var(--bg), 0 0 0 4px color-mix(in srgb, var(--accent) 80%, transparent), 0 0 18px 2px color-mix(in srgb, var(--accent) 35%, transparent);
+  --ix-in: .14s;
+  --ix-out: .32s;
+}
+
+/* ── 光标形状：能点的都是手形，只有输入框是文字光标，禁用的是默认箭头 ── */
+:where(button, [role="button"], [role="option"], [role="tab"], summary, label[for], a[href]):not(:disabled):not([aria-disabled="true"]) { cursor: pointer; }
+:where(button, [role="button"]):disabled, [aria-disabled="true"] { cursor: not-allowed; }
+/* 卡片墙：卡片能拖到对比栏，但主要动作是点开，所以平时是手形，按住拖动时才是抓手。 */
+.v3-tile { cursor: pointer; }
+.v3-tile:active { cursor: grabbing; }
+
+/* ── 键盘聚焦：统一双层环（盖掉原来的 outline），圆角跟着元素自己走 ── */
+:focus-visible { outline: none; box-shadow: var(--ix-ring); transition: box-shadow var(--ix-in) var(--ease-out); }
+:where(input, textarea):focus-visible { box-shadow: none; }
+.v3-seg button:focus-visible, .v3-eras button:focus-visible { box-shadow: var(--ix-ring); }
+.v3-tile__face:focus-visible { box-shadow: var(--ix-ring) !important; }
+
+/* ── 分段控件（走势/角色、全景/章节/细读、折线/K 线、纪年/年龄、排序、卡片/列表、主题）──
+   原来只有选中的那格有底，其余格悬停没有任何反馈。现在悬停的那格字变亮，并浮出一层很淡的底。 */
+.v3-seg button { transition: color var(--ix-out) var(--ease-out), background-color var(--ix-out) var(--ease-out), transform .2s var(--ease-press); }
+@media (hover: hover) {
+  .v3-seg button:not([aria-checked="true"]):hover { color: var(--ink); background-color: var(--ix-tint); transition-duration: var(--ix-in); }
+}
+.v3-seg button:not([aria-checked="true"]):active { background-color: var(--ix-tint-strong); }
+
+/* ── 品牌：悬停时折线标识像行情一样重画一遍 ── */
+.v3-brand svg path, .v3-brand svg polyline { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.v3-brand b { transition: color var(--ix-out) var(--ease-out); }
+@media (hover: hover) {
+  .v3-brand:hover svg :is(path, polyline) { animation: ix-draw .8s var(--ease-out); }
+  .v3-brand:hover b { color: var(--accent); transition-duration: var(--ix-in); }
+}
+.v3-brand:active { transform: scale(.98); }
+@keyframes ix-draw { from { stroke-dashoffset: 1; } }
+
+/* ── 文字按钮 / 次级按钮：统一悬停底色和按下 ── */
+:where(.v3-text-toggle, .v3-share, .v3-icon-btn, .v3-bar__search, .v3-tray__clear, .v3-index__clear, .v3-reader__nav button, .v3-tray__slot button, .v3-row__go, .v3-row__check) {
+  transition: color var(--ix-out) var(--ease-out), background-color var(--ix-out) var(--ease-out), border-color var(--ix-out) var(--ease-out), box-shadow .3s var(--ease-out), transform .2s var(--ease-press);
+}
+@media (hover: hover) {
+  :where(.v3-text-toggle, .v3-icon-btn, .v3-tray__clear, .v3-index__clear):hover { color: var(--ink); background-color: var(--ix-tint); transition-duration: var(--ix-in); }
+}
+:where(.v3-text-toggle, .v3-icon-btn, .v3-bar__search, .v3-tray__clear, .v3-index__clear, .v3-reader__nav button, .v3-tray__slot button, .v3-full__close, .v3-swap, .v3-row__check, .v3-strip button, .v3-cmd__acts button, .v3-picker__btn, .v3-row__main):active:not(:disabled) { transform: scale(.97); transition-duration: .08s; }
+.v3-swap:active:not(:disabled) { transform: rotate(180deg) scale(.92); }
+.v3-full__close:active { transform: rotate(90deg) scale(.92); }
+/* 图标按钮悬停时图标本身轻轻动一下，告诉你“这是能点的” */
+.v3-icon-btn svg, .v3-bar__search svg, .v3-reader__nav button svg { transition: transform .35s var(--ease-out); }
+@media (hover: hover) {
+  .v3-icon-btn:hover svg { transform: scale(1.1); }
+  .v3-bar__search:hover svg { transform: rotate(-8deg) scale(1.08); }
+  .v3-reader__nav button:first-child:hover:not(:disabled) svg { transform: translateX(-3px); }
+  .v3-reader__nav button:last-child:hover:not(:disabled) svg { transform: translateX(3px); }
+}
+
+/* ── 主按钮：悬停抬起 + 光晕加深，按下压回 ── */
+.v3-btn:not(.v3-btn--ghost), .v3-tray__go { transition: transform .25s var(--ease-press), box-shadow .35s var(--ease-out), filter .25s var(--ease-out), opacity .2s; }
+@media (hover: hover) {
+  .v3-btn:not(.v3-btn--ghost):hover:not(:disabled), .v3-tray__go:hover:not(:disabled) { filter: brightness(1.06); box-shadow: 0 1px 0 rgba(247,245,239,.3) inset, 0 12px 28px -10px color-mix(in srgb, var(--accent) 85%, transparent); }
+  .v3-btn--ghost:hover:not(:disabled) { background: color-mix(in srgb, var(--ink) 11%, transparent); border-color: color-mix(in srgb, var(--ink) 24%, transparent); }
+}
+.v3-btn:active:not(:disabled), .v3-tray__go:active:not(:disabled) { transform: scale(.97); filter: brightness(.96); transition-duration: .08s; }
+
+/* ── 列表行（下拉、搜索面板、角色列表）：悬停/当前行的底色从中间铺开，头像微微放大 ── */
+.v3-picker__list button, .v3-cmd__row { transition: background-color .18s var(--ease-out), box-shadow .18s var(--ease-out); }
+.v3-picker__list button .v3-ava, .v3-cmd__row .v3-ava, .v3-row .v3-ava { transition: transform .35s var(--ease-out), box-shadow .35s var(--ease-out); }
+.v3-picker__list button.is-active .v3-ava, .v3-cmd__row.is-active .v3-ava { transform: scale(1.08); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--accent) 55%, transparent); }
+.v3-picker__list button.is-active { background: color-mix(in srgb, var(--accent) 10%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 22%, transparent); }
+.v3-picker__list button:active, .v3-cmd__row:active { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+@media (hover: hover) {
+  .v3-row:hover .v3-ava { transform: scale(1.06); }
+}
+
+/* ── 输入框：聚焦时放大镜图标变强调色，下拉和搜索面板的输入行底边亮起 ── */
+.v3-picker__search, .v3-cmd__search { transition: box-shadow .25s var(--ease-out), color .25s var(--ease-out); }
+.v3-picker__search:focus-within, .v3-cmd__search:focus-within { box-shadow: inset 0 -1.5px 0 color-mix(in srgb, var(--accent) 70%, transparent); }
+:is(.v3-picker__search, .v3-cmd__search, .v3-index__search, .v3-bar__search) svg { transition: stroke .25s var(--ease-out), color .25s var(--ease-out), transform .35s var(--ease-out); }
+:is(.v3-picker__search, .v3-cmd__search, .v3-index__search):focus-within svg { stroke: var(--accent); color: var(--accent); }
+.v3-filterbar:focus-within { box-shadow: var(--lg-shadow), 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent), 0 0 0 5px color-mix(in srgb, var(--accent) 12%, transparent); }
+@media (hover: hover) {
+  .v3-index__search:hover:not(:focus-within) svg { stroke: var(--ink-2); }
+}
+
+/* ── 链接：下划线从左往右长出来 ── */
+:where(.v3-quote a, .v3-full__credit a, .v3-full__intro cite a, .v3-foot a, .v3-reader a) {
+  text-decoration: none; border-bottom: 0 !important;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat, linear-gradient(color-mix(in srgb, currentColor 30%, transparent), color-mix(in srgb, currentColor 30%, transparent)) 0 100% / 100% 1px no-repeat;
+  transition: background-size .35s var(--ease-out), color .2s var(--ease-out);
+}
+@media (hover: hover) {
+  :where(.v3-quote a, .v3-full__credit a, .v3-full__intro cite a, .v3-foot a, .v3-reader a):hover { color: var(--accent); background-size: 100% 1px, 100% 1px; }
+}
+
+/* ── 事件条、板块：按下有压感 ── */
+.v3-strip button { transition: transform .3s var(--ease-out), border-color .25s var(--ease-out), background-color .25s var(--ease-out), box-shadow .3s var(--ease-out); }
+.v3-board:active, .v3-strip button:active { transform: translateY(0) scale(.98) !important; transition-duration: .08s; }
+
+/* ── 磁吸：pointer.js 给 [data-magnet] 写 --mgx / --mgy，图标按钮和主按钮被光标轻轻吸过去（最多 3px） ── */
+[data-magnet] { translate: var(--mgx, 0) var(--mgy, 0); transition: translate .5s var(--ease-out), transform .2s var(--ease-press), color var(--ix-out) var(--ease-out), background-color var(--ix-out) var(--ease-out), box-shadow .35s var(--ease-out), filter .25s var(--ease-out); }
+[data-magnet][data-magnet-on] { transition: translate .12s linear, transform .2s var(--ease-press), color var(--ix-in) var(--ease-out), background-color var(--ix-in) var(--ease-out), box-shadow .35s var(--ease-out), filter .25s var(--ease-out); }
+
+/* ═════════ 修补：遮挡与显示不全 ═════════ */
+
+/* 角色页吸顶筛选条原来贴在导航栏下沿往上 4px，上半截被导航栏压住；现在整条落在导航栏下面。 */
+.v3-filterbar { top: calc(var(--bar-h) + 8px); }
+
+/* 卡片墙：卡片高度原来由背面撑开——背面短的那张（如秦始皇）就矮一截，背面长的会让正面文字被拉散。
+   现在高度只由正面决定（每张都一样），背面铺满正面的大小，简介占剩下的空间，放不下时底部渐隐，不再撑高卡片。 */
+.v3-tile__back { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 9px; }
+.v3-tile__back > * { flex: none; }
+.v3-tile__back > .v3-tile__backbg { position: absolute; }
+.v3-tile__back > .v3-tile__seal { position: absolute; }
+.v3-tile__back .v3-tile__brief { flex: 1 1 auto; min-height: 0; display: block; -webkit-line-clamp: unset; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 22px), transparent); }
+.v3-tile__back .v3-tile__nums > span { padding: 6px 9px; }
+.v3-tile__back .v3-tile__nums b { font-size: 18px; }
+/* 正面头像区稍微加高（4:4.4 → 4:4.9），背面因此能放下五六行简介；背面不再重复正面已有的走势小图。 */
+.v3-tile__media { aspect-ratio: 4 / 4.9; }
+.v3-tile__more { padding-right: 34px; }
+/* 右下角的领域印章不压住「后世评价」那格。 */
+.v3-tile__back .v3-tile__nums { margin-right: 30px; }
+/* 背面头部：年代、年份原来和名字挤在一行被截成「前571…」，现在年代和年份各占一行，写全。 */
+.v3-tile__head { padding-right: 0; align-items: flex-start; }
+.v3-tile__head > span { padding-top: 1px; }
+.v3-tile__head b { padding-right: 34px; }
+.v3-tile__head small { white-space: nowrap; overflow: visible; text-overflow: clip; line-height: 1.35; }
+
+/* 板块的代表人物原来一行放不下被截断，改成最多两行，只在人名之间换行。 */
+.v3-board__lead { white-space: normal; text-wrap: balance; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.45; }
+.v3-board__lead > span { white-space: nowrap; }
+
+/* 走势页详情栏：原来固定 84px 高，简介第二行被切掉一半；现在按内容长高，简介最多两行，绘图区上方的保留带同步加高到 122px（详情栏最高 112px）。 */
+.v3-dock { align-items: center; }
+.v3-dock { max-height: 112px; }
+.v3-dock .v3-eyebrow { line-height: 1.4; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.v3-dock .v3-hover__title { line-height: 1.4; margin: 2px 0 3px; }
+.v3-dock .v3-hover__sum { line-height: 1.55; }
+
+/* 对比栏是浮在底部的，列表和卡片墙的最后一排要能滚到它上面。 */
+.v3-roles__main { padding-bottom: 96px; }
+
+/* 对比栏的空格提示：手机上格子窄，原来「A：拖进来…」被截成「A：拖进」，改用短提示。 */
+.v3-tray__hint--short { display: none; }
+@media (max-width: 720px) {
+  .v3-tray__hint { display: none; }
+  .v3-tray__hint--short { display: inline; }
+  .v3-tray__slot { justify-content: center; padding: 0 10px; }
+  .v3-tray__go { padding: 0 16px; flex: none; }
+}
+
+/* ── 中文小字统一不小于 11.5px（栏目标签、印章、阶段标记等原来是 11px） ── */
+.v3-dock__pin, .v3-tag, .v3-basis b, .v3-row__tag, .v3-picker__group, .v3-cmd__group, .v3-boards__label, .v3-tile__seal, .v3-full__body h3, .v3-hover__score small, .v3-reader__why span, .v3-table th, .v3-rows__head span, .v3-tile__score small, .v3-tile__nums small, .v3-legend small, .v3-readout__label { font-size: 11.5px; }
+kbd { font-size: 11.5px; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-magnet] { translate: none !important; }
+  .v3-brand:hover svg :is(path, polyline) { animation: none; }
+  .v3-picker__list button.is-active .v3-ava, .v3-cmd__row.is-active .v3-ava, .v3-row:hover .v3-ava { transform: none; }
+}

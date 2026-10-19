@@ -228,7 +228,7 @@ function Tile({ f, role, at, i, onOpen, onToggle }) {
             <span className="v3-tile__backbg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : undefined} aria-hidden="true" />
             <span className="v3-tile__head">
               <Avatar f={f} role={role} size="sm" />
-              <span><b>{f.name}</b><small>{f.dynasty} · {years(f)}</small></span>
+              <span><b>{f.name}</b><small>{f.dynasty}</small><small>{years(f)}</small></span>
             </span>
             <span className="v3-tile__seal" aria-hidden="true">{domainLabel[f.domain] ?? f.domain}</span>
             <span className="v3-tile__brief">{brief}</span>
@@ -236,7 +236,6 @@ function Tile({ f, role, at, i, onOpen, onToggle }) {
               <span><small>峰值</small><b>{f.peak?.score ?? "—"}</b></span>
               <span><small>后世评价</small><b className="is-accent">{f.legacy.score}</b></span>
             </span>
-            <span className={flip ? "draw-on" : ""}><Spark f={f} w={150} h={22} /></span>
             <span className="v3-tile__more">完整角色卡<GoIcon {...ICON} size={14} /></span>
           </button>
         </motion.div>
@@ -251,7 +250,7 @@ function BoardCard({ board, active, onPick, stats }) {
     <button type="button" className={`v3-board spot${active ? " is-active" : ""}${board.test ? " is-special" : ""}`} onClick={() => onPick(board.id)} aria-pressed={active} title={board.hint}>
       <span className="v3-board__head"><b>{board.label}</b><em>{stats.count}</em></span>
       <span className="v3-board__avg">均 {stats.avg}</span>
-      <span className="v3-board__lead">{stats.leaders.map((f) => f.name).join(" · ") || "—"}</span>
+      <span className="v3-board__lead">{stats.leaders.length ? stats.leaders.flatMap((f, i, all) => [i ? " " : null, <span key={f.id}>{f.name}{i < all.length - 1 ? " ·" : ""}</span>]) : "—"}</span>
     </button>
   );
 }
@@ -387,7 +386,7 @@ export function RolesView({ current, onCompare }) {
                 draggable onDragStart={(e) => startDrag(e, f.id)} onMouseEnter={() => setFocus(f.id)} onFocus={() => setFocus(f.id)}>
                 <button type="button" className="v3-row__check" onClick={() => (at >= 0 ? remove(f.id) : add(f.id))} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : <PlusIcon {...ICON} size={15} />}</button>
                 <button type="button" className="v3-row__main" onClick={() => setOpen(f.id)} aria-label={`${f.name}：查看完整角色卡`}>
-                  <span className="v3-row__who"><Avatar f={f} role={roles[f.id]} /><span><b>{f.name}</b><small>{f.dynasty} · {years(f)}</small></span></span>
+                  <span className="v3-row__who"><Avatar f={f} role={roles[f.id]} /><span><b>{f.name}</b><small>{f.dynasty}</small><small>{years(f)}</small></span></span>
                   <span className="v3-row__tag">{domainLabel[f.domain] ?? f.domain}</span>
                   <Spark f={f} />
                   <span className="v3-row__peak"><b>{f.peak?.score ?? "—"}</b><small>{f.peak?.title}</small></span>
@@ -421,7 +420,7 @@ export function RolesView({ current, onCompare }) {
               <span key={i} data-era={f ? eraOf(f) : undefined} className={`v3-tray__slot${f ? " is-full" : ""}${over === i ? " is-over" : ""}`} style={{ "--c": `var(--p${i})` }}
                 onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = "copy"; setOver(i); }} onDragLeave={() => setOver(-1)} onDrop={drop(i)}>
                 {f ? <Avatar f={f} role={roles[f.id]} size="xs" /> : <i className="v3-dot" />}
-                {f ? <><b>{f.name}</b><button type="button" onClick={() => remove(f.id)} aria-label={`移出${f.name}`}><CloseIcon {...ICON} size={13} /></button></> : <em>{i ? "B：可不选" : "A：拖进来或点卡片上的 +"}</em>}
+                {f ? <><b>{f.name}</b><button type="button" onClick={() => remove(f.id)} aria-label={`移出${f.name}`}><CloseIcon {...ICON} size={13} /></button></> : <em>{i ? "B" : "A"}<span className="v3-tray__hint">{i ? "：可不选" : "：拖进来或点卡片上的 +"}</span><span className="v3-tray__hint--short">{i ? " 可选" : " 点 +"}</span></em>}
               </span>
             );
           })}
