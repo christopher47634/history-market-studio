@@ -317,8 +317,9 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-spark__line { fill: none; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round; }
 .v3-spark__area { stroke: none; opacity: .14; }
 .v3-spark__tail { fill: none; stroke-width: 1.2; stroke-dasharray: 2 2; }
-.v3-spark.is-up { color: var(--up); }
-.v3-spark.is-down { color: var(--down); }
+.v3-spark .is-up { color: var(--up); }
+.v3-spark .is-down { color: var(--down); }
+.v3-spark .is-flat { color: var(--ink-3); }
 .v3-spark .v3-spark__line, .v3-spark .v3-spark__tail { stroke: currentColor; }
 .v3-spark .v3-spark__area, .v3-spark circle { fill: currentColor; }
 

@@ -19,7 +19,11 @@ const domainLabel = Object.fromEntries(DOMAIN_BOARDS.map((b) => [b.id, b.label])
 const wikiUrl = (r) => `https://zh.wikipedia.org/w/index.php?title=${encodeURIComponent(r.title)}${r.revid ? `&oldid=${r.revid}` : ""}`;
 const DRAG = "text/x-history-figure";
 
-// 迷你走势：生前主线，最后虚线一截接到后世评价。身后涨（后世评价高于去世时）为红，跌为绿。
+// 迷你走势：实线是生前（出生 → 去世），虚线是身后（去世时的势 → 后世评价）。两段各自按评分涨跌上色（10-19 用户定）：
+// - 生前：去世时的势比出生时高为红，低为绿；
+// - 身后：后世评价比去世时的势高为红，低为绿；
+// 相等算平，用中性灰。红涨绿跌是 A 股习惯。
+const dir = (from, to) => (to > from ? "is-up" : to < from ? "is-down" : "is-flat");
 export function Spark({ f, w = 116, h = 30, big = false }) {
   const t = f.trend;
   if (!t?.length || t.length < 2) return <svg className="v3-spark" viewBox={`0 0 ${w} ${h}`} aria-hidden="true" />;
@@ -27,13 +31,18 @@ export function Spark({ f, w = 116, h = 30, big = false }) {
   const X = (i) => (i / (t.length - 1)) * lifeW;
   const Y = (v) => h - 2 - (v / 100) * (h - 4);
   const d = t.map((v, i) => `${i ? "L" : "M"}${X(i).toFixed(1)},${Y(v).toFixed(1)}`).join("");
-  const up = f.legacy.score >= t.slice(-1)[0];
+  const end = t[t.length - 1];
+  const life = dir(t[0], end), after = dir(end, f.legacy.score);
   return (
-    <svg className={`v3-spark${big ? " is-big" : ""} ${up ? "is-up" : "is-down"}`} viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden="true">
-      <path className="v3-spark__area" d={`${d}L${lifeW},${h}L0,${h}Z`} />
-      <path className="v3-spark__line" d={d} pathLength="1" vectorEffect="non-scaling-stroke" />
-      <path className="v3-spark__tail" d={`M${lifeW},${Y(t.slice(-1)[0]).toFixed(1)}L${w - 2},${Y(f.legacy.score).toFixed(1)}`} vectorEffect="non-scaling-stroke" />
-      <circle cx={w - 2} cy={Y(f.legacy.score)} r={big ? 3 : 2} />
+    <svg className={`v3-spark${big ? " is-big" : ""}`} data-life={life.slice(3)} data-after={after.slice(3)} viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" aria-hidden="true">
+      <g className={`v3-spark__life ${life}`}>
+        <path className="v3-spark__area" d={`${d}L${lifeW},${h}L0,${h}Z`} />
+        <path className="v3-spark__line" d={d} pathLength="1" vectorEffect="non-scaling-stroke" />
+      </g>
+      <g className={`v3-spark__after ${after}`}>
+        <path className="v3-spark__tail" d={`M${lifeW},${Y(end).toFixed(1)}L${w - 2},${Y(f.legacy.score).toFixed(1)}`} vectorEffect="non-scaling-stroke" />
+        <circle cx={w - 2} cy={Y(f.legacy.score)} r={big ? 3 : 2} />
+      </g>
     </svg>
   );
 }
@@ -139,7 +148,7 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray, morphed }) {
             <span><small>人生节点</small><b><AnimatedNumber value={f.eventCount} /></b></span>
           </div>
           <div className="draw-on"><Spark f={f} w={260} h={64} big /></div>
-          <p className="v3-full__legend">实线：生前的势 · 虚线：到后世评价</p>
+          <p className="v3-full__legend">实线是生前，虚线是身后（到后世评价）；两段各自涨为红、跌为绿</p>
         </aside>
         <div className="v3-full__body">
           <p className="v3-role__eyebrow">{f.dynasty}<span>·</span>{years(f)}<span>·</span>{domainLabel[f.domain] ?? f.domain}<span>·</span>{f.legacy.tier}</p>
