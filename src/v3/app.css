@@ -52,21 +52,15 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .rise { animation: rise .9s var(--ease) backwards; animation-delay: calc(var(--d, 0) * 90ms); }
 @keyframes rise { from { opacity: 0; transform: translateY(14px); filter: blur(10px); } to { opacity: 1; transform: none; filter: blur(0); } }
 
-/* 顶栏 */
-.v3-top { display: flex; align-items: center; gap: 28px; padding: 4px 2px 18px; }
+/* 品牌（在吸顶导航里，见 chrome.css） */
 .v3-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
 .v3-brand svg { width: 30px; height: 30px; fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .v3-brand svg circle { fill: var(--accent); stroke: none; }
 .v3-brand b { display: block; font: 600 18px/1.1 var(--font-serif); letter-spacing: .08em; }
 .v3-brand small { display: block; font: 500 9.5px/1.4 var(--font-mono); letter-spacing: .22em; color: var(--ink-3); }
-.v3-top__lede { flex: 1; margin: 0; color: var(--ink-2); font-size: 13.5px; }
-.v3-top__lede em { font-style: normal; color: var(--ink); font-family: var(--font-serif); }
 
-.v3-share { border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); border-radius: 99px; padding: 6px 14px; font-size: 12.5px; transition: color .2s, border-color .2s; }
-.v3-share:hover { color: var(--ink); border-color: var(--accent); }
 
 /* 选人 + 读数 */
-.v3-pick { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
 .v3-swap { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); transition: transform .35s var(--ease), color .2s; }
 .v3-swap:hover:not(:disabled) { transform: rotate(180deg); color: var(--ink); }
 .v3-swap:disabled { opacity: .35; cursor: default; }
@@ -96,7 +90,6 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-picker__clear { color: var(--ink-2); }
 .v3-picker__empty { padding: 18px; text-align: center; color: var(--ink-3); }
 
-.v3-readouts { margin-left: auto; display: flex; gap: 28px; }
 .v3-readout { display: grid; grid-template-columns: auto auto; column-gap: 12px; align-items: end; }
 .v3-readout__who { grid-column: 1 / -1; display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--ink-2); }
 .v3-readout__num { position: relative; isolation: isolate; font: 300 42px/1 var(--font-mono); letter-spacing: -0.045em; color: var(--c); font-variant-numeric: tabular-nums; min-width: 2.6ch; text-shadow: 0 0 28px color-mix(in srgb, var(--c) 35%, transparent); }
@@ -166,7 +159,8 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-strip { display: flex; gap: 8px; list-style: none; margin: 0; padding: 4px 4px 6px; overflow-x: auto; scroll-snap-type: x proximity; }
 .v3-strip li { flex: none; scroll-snap-align: center; }
 .v3-strip button { display: grid; grid-template-columns: auto auto; gap: 2px 10px; width: 172px; padding: 9px 12px 9px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface-2); text-align: left; position: relative; overflow: hidden; transition: border-color .2s, background .2s, transform .3s var(--ease); }
-.v3-strip button::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--c); opacity: .7; }
+/* 每张事件卡左上一颗人物色圆点（不用侧边竖条）。 */
+.v3-strip button::before { content: ""; position: absolute; left: 12px; top: 14px; width: 7px; height: 7px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 18%, transparent); }
 .v3-strip button:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--c) 45%, var(--line)); }
 .v3-strip button.is-hover { border-color: color-mix(in srgb, var(--c) 45%, var(--line)); }
 .v3-strip button.is-pinned { background: var(--surface); border-color: var(--c); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 16%, transparent); }
@@ -239,16 +233,10 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 @media (max-width: 1100px) {
   .v3-main { grid-template-columns: 1fr; }
   .v3-reader { position: static; min-height: 0; }
-  .v3-top__lede { display: none; }
 }
 @media (max-width: 720px) {
   .v3-shell { padding: 14px 16px 32px; }
-  .v3-top { justify-content: space-between; gap: 10px; padding-bottom: 12px; flex-wrap: wrap; }
   /* 走势 / 角色切换在手机上单独占一行、铺满，主题切换留在品牌右边。 */
-  .v3-top > .v3-seg[aria-label="页面"] { order: 3; width: 100%; }
-  .v3-top > .v3-seg[aria-label="页面"] button { flex: 1; }
-  .v3-share { display: none; }
-  .v3-pick { gap: 8px; }
   .v3-picker { flex: 1; min-width: 0; }
   .v3-picker__btn { min-width: 0; width: 100%; padding-right: 10px; gap: 8px; }
   .v3-picker__btn svg { display: none; }
@@ -289,7 +277,6 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-board { display: grid; gap: 4px; text-align: left; padding: 11px 13px 10px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); transition: border-color .2s, background .2s, transform .3s var(--ease); position: relative; overflow: hidden; }
 .v3-board:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
 .v3-board.is-active { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--surface)); }
-.v3-board.is-active::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 3px; background: var(--accent); }
 .v3-board.is-special .v3-board__head b::before { content: "\25C6"; font-size: 8px; color: var(--accent); margin-right: 6px; vertical-align: 2px; }
 .v3-board__head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
 .v3-board__head b { font: 600 14.5px/1.2 var(--font-serif); letter-spacing: .04em; }
@@ -309,7 +296,6 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-row:last-of-type { border-bottom: 0; }
 .v3-row:hover { background: color-mix(in srgb, var(--ink) 4%, transparent); }
 .v3-row.is-picked { background: color-mix(in srgb, var(--c) 10%, transparent); }
-.v3-row.is-picked::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 3px; background: var(--c); }
 .v3-row__main { flex: 1; min-width: 0; padding: 9px 0 9px 16px; border: 0; background: transparent; color: var(--ink); text-align: left; }
 .v3-row__check { width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line); font: 600 11px/1 var(--font-mono); color: var(--ink-3); transition: all .2s var(--ease); }
 .v3-row:hover .v3-row__check { border-color: var(--accent); color: var(--accent); }
@@ -439,7 +425,7 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-full__body h2 small { margin-left: 12px; font: 400 15px/1 var(--font-sans); letter-spacing: 0; color: var(--ink-2); }
 .v3-full__body h3 { margin: 6px 0 0; font: 600 13px/1 var(--font-sans); letter-spacing: .1em; color: var(--ink-2); }
 .v3-full__thesis { margin: 0; font: 15px/1.7 var(--font-serif); color: var(--ink); }
-.v3-full__intro { margin: 0; padding: 14px 16px; border-radius: 14px; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--ink) 4%, transparent); }
+.v3-full__intro { margin: 0; padding: 14px 16px; border-radius: 14px; background: color-mix(in srgb, var(--ink) 4%, transparent); }
 .v3-full__intro p { margin: 0; font-size: 13.5px; line-height: 1.8; color: var(--ink-2); }
 .v3-full__intro cite { display: block; margin-top: 8px; font-style: normal; font-size: 11px; color: var(--ink-2); opacity: .85; }
 .v3-full__lifescroll { max-height: 300px; }
@@ -474,9 +460,6 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 }
 /* ───────── 角色页 v2：页头、卡片墙 ───────── */
 .v3-roles__hero { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding: 6px 2px 2px; }
-.v3-roles__kicker { margin: 0 0 6px; font: 500 11px/1 var(--font-mono); letter-spacing: .28em; color: var(--ink-3); }
-.v3-roles__kicker span { margin: 0 8px; opacity: .6; }
-.v3-roles__title h1 { margin: 0; font: 700 64px/.95 var(--font-serif); letter-spacing: .02em; background: linear-gradient(180deg, var(--ink) 30%, color-mix(in srgb, var(--ink) 55%, var(--accent))); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .v3-roles__lede { flex: 1 1 360px; max-width: 520px; margin: 0 0 6px; font-size: 13.5px; line-height: 1.75; color: var(--ink-2); }
 .v3-roles__lede em { font-style: normal; color: var(--ink); font-family: var(--font-serif); font-weight: 600; }
 .v3-index__sorts { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -572,15 +555,12 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-tray__slot.is-full { animation: pop .45s var(--ease-pop); }
 
 /* 顶栏的分段控件和分享按钮也是玻璃（导航层才用玻璃，内容层保持实底）。 */
-.v3-top .v3-seg { background: var(--lg-tint); -webkit-backdrop-filter: blur(9px) saturate(1.6); backdrop-filter: blur(9px) saturate(1.6); border-color: color-mix(in srgb, var(--ink) 10%, transparent); }
 .v3-brand b { font-weight: 700; font-size: 19px; }
 
 @media (max-width: 1100px) {
-  .v3-roles__title h1 { font-size: 52px; }
 }
 @media (max-width: 720px) {
   .v3-roles__hero { gap: 10px; }
-  .v3-roles__title h1 { font-size: 42px; }
   .v3-roles__lede { font-size: 12.5px; }
   .v3-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .v3-tile__name { font-size: 18px; }

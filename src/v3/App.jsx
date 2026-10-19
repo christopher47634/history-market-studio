@@ -7,8 +7,10 @@ import { LifeChart } from "./LifeChart.jsx";
 import { Picker } from "./Picker.jsx";
 import { Reader } from "./Reader.jsx";
 import { RolesView } from "./RolesView.jsx";
+import { CommandPalette } from "./Command.jsx";
 import { AnimatedNumber, Segmented } from "./bits.jsx";
 import { nodeDetail } from "./detail.js";
+import { CheckIcon, ICON, SearchIcon, ShareIcon, SwapIcon } from "./icons.jsx";
 
 const THEMES = { b: "jade", c: "cinnabar" };
 const themeFromHash = () => (location.hash === "#c" ? "c" : "b");
@@ -279,48 +281,103 @@ export function App() {
 
   const inWindow = order.filter((n) => n.x >= view.window[0] - 0.5 && n.x <= view.window[1] + 0.5 && (view.level.key !== "overview" || n.kind !== "sub"));
   const setTheme = (k) => { location.hash = k; };
-  const [shared, setShared] = useState("");
-  const share = async () => {
+  // 提示条：复制链接等操作的结果，玻璃胶囊从底部浮起，2 秒后退场。
+  const [toast, setToast] = useState(null);
+  const say = useCallback((text) => { setToast({ text, n: Date.now() }); }, []);
+  useEffect(() => { if (!toast) return; const t = setTimeout(() => setToast(null), 2000); return () => clearTimeout(t); }, [toast]);
+  const share = async (copyOnly = false) => {
     const url = location.href;
     const title = `历史行情局 · ${figs.map((f) => f.name).join(" 对比 ")}`;
     try {
-      if (navigator.share) { await navigator.share({ title, url }); return; }
+      if (!copyOnly && navigator.share && matchMedia("(pointer: coarse)").matches) { await navigator.share({ title, url }); return; }
       await navigator.clipboard.writeText(url);
-      setShared("链接已复制");
-    } catch { setShared(""); return; }
-    setTimeout(() => setShared(""), 1800);
+      say("链接已复制，发给别人打开就是这张图");
+    } catch { say("没能复制，可以直接复制地址栏"); }
   };
   const swap = () => ids.right && setIds({ left: ids.right, right: ids.left });
 
+  // ⌘K / Ctrl+K 任何页面打开搜索面板；走势页上 / 也可以（角色页的 / 留给页内搜索框）。
+  const [cmd, setCmd] = useState(false);
+  useEffect(() => {
+    const key = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") { e.preventDefault(); setCmd((o) => !o); }
+      else if (e.key === "/" && page === "chart" && !e.target.closest?.("input, textarea")) { e.preventDefault(); setCmd(true); }
+    };
+    addEventListener("keydown", key);
+    return () => removeEventListener("keydown", key);
+  }, [page]);
+  const cmdActions = {
+    chart: (id) => openPage("chart", { left: id, right: "" }),
+    compare: (id) => openPage("chart", { left: ids.left === id ? ids.right || id : ids.left, right: id }),
+    role: (id) => { const url = new URL(location.href); url.searchParams.set("role", id); history.replaceState(history.state, "", url); openPage("roles"); window.dispatchEvent(new CustomEvent("v3:open-role", { detail: id })); },
+    page: (p) => openPage(p),
+    theme: () => setTheme(themeKey === "b" ? "c" : "b"),
+    share: () => share(true),
+  };
+
+  // 页面往下滚以后，顶栏的玻璃显出来、收紧一点（停在顶上时是透明的，不跟内容抢）。
+  useEffect(() => {
+    const on = () => document.documentElement.toggleAttribute("data-scrolled", scrollY > 8);
+    on();
+    addEventListener("scroll", on, { passive: true });
+    return () => removeEventListener("scroll", on);
+  }, []);
+
   if (error) return <main className="v3-shell v3-fail" role="alert"><b>人物数据加载失败</b><small>{String(error.message || error)}，请刷新重试</small></main>;
+  const personOf = (id) => scene?.people.find((p) => p.figure.id === id);
   return (
-    <div className="v3-shell">
-      <header className="v3-top rise" style={{ "--d": 0 }}>
-        <a className="v3-brand" href="./" aria-label="历史行情局">
+    <>
+    <div className="v3-ambient" aria-hidden="true"><i /><i /><i /></div>
+    <header className="v3-bar">
+      <div className="v3-bar__in">
+        <a className="v3-brand" href="./" aria-label="历史行情局 首页">
           <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 23 11 15l5 5 6-9 6 6" /><circle cx="22" cy="11" r="2.2" /></svg>
           <span><b>历史行情局</b><small>HISTORY · MARKET</small></span>
         </a>
-        <p className="v3-top__lede">把一个人的一生画成走势：<em>当时的势</em>随经历起落，<em>后世评价</em>在身后慢慢落定。</p>
-        <Segmented label="页面" value={page} onChange={(v) => openPage(v)} options={[{ value: "chart", label: "走势", hint: "人生走势与对比" }, { value: "roles", label: "角色", hint: "按板块和搜索找人，看角色卡，挑人对比" }]} />
-        {page === "chart" && <button type="button" className="v3-share" onClick={share} aria-live="polite">{shared || "分享这张图"}</button>}
-        <Segmented label="主题" size="sm" value={themeKey} onChange={setTheme} options={[{ value: "b", label: "玉衡" }, { value: "c", label: "朱砂" }]} />
-      </header>
+        <nav className="v3-bar__nav" aria-label="页面">
+          <Segmented label="页面" className="lg" value={page} onChange={(v) => openPage(v)} options={[{ value: "chart", label: "走势", hint: "人生走势与对比" }, { value: "roles", label: "角色", hint: "按板块和搜索找人，看角色卡，挑人对比" }]} />
+        </nav>
+        <div className="v3-bar__tools">
+          <button type="button" className="v3-bar__search lg" onClick={() => setCmd(true)} aria-haspopup="dialog" aria-label="搜索人物（Ctrl+K）">
+            <SearchIcon {...ICON} />
+            <span>搜索人物</span>
+            <kbd>Ctrl K</kbd>
+          </button>
+          <button type="button" className="v3-icon-btn lg" onClick={() => share()} aria-label="复制或分享当前页面链接" title="分享">
+            <ShareIcon {...ICON} />
+          </button>
+          <Segmented label="主题" size="sm" className="lg" value={themeKey} onChange={setTheme} options={[{ value: "b", label: "玉衡", hint: "深色" }, { value: "c", label: "朱砂", hint: "浅色" }]} />
+        </div>
+      </div>
+    </header>
+    <div className="v3-shell">
 
       {page === "roles" ? (
         <RolesView current={ids} onCompare={(left, right) => openPage("chart", { left, right })} />
       ) : (<>
-      <section className="v3-pick rise" style={{ "--d": 1 }} aria-label="选择人物">
-        <Picker slot={0} value={ids.left} exclude={ids.right} onChange={(id) => id && setIds((s) => ({ ...s, left: id }))} />
-        <button type="button" className="v3-swap" onClick={swap} disabled={!ids.right} aria-label="交换两人">⇄</button>
-        <Picker slot={1} value={ids.right} exclude={ids.left} allowEmpty onChange={(id) => setIds((s) => ({ ...s, right: id }))} />
-        <div className="v3-readouts">{scene?.people.map((p) => <Readout key={p.figure.id} person={p} hover={hover} level={view.level} />)}</div>
+      <section className="v3-intro rise" style={{ "--d": 0 }}>
+        <h1>一个人的一生，画成一张走势</h1>
+        <p><em>当时的势</em>随经历起落，<em>后世评价</em>在身后慢慢落定。挑一到两个人，悬停看每个节点，点下去读原文。</p>
+      </section>
+      <section className="v3-tickers rise" style={{ "--d": 1 }} aria-label="选择人物">
+        <div className="v3-ticker lg" style={{ "--c": "var(--p0)" }}>
+          <Picker slot={0} value={ids.left} exclude={ids.right} onChange={(id) => id && setIds((s) => ({ ...s, left: id }))} />
+          {personOf(ids.left) && <Readout person={personOf(ids.left)} hover={hover} level={view.level} />}
+        </div>
+        <button type="button" className="v3-swap lg" onClick={swap} disabled={!ids.right} aria-label="交换两人" title="交换左右">
+          <SwapIcon {...ICON} />
+        </button>
+        <div className={`v3-ticker lg${ids.right ? "" : " is-empty"}`} style={{ "--c": "var(--p1)" }}>
+          <Picker slot={1} value={ids.right} exclude={ids.left} allowEmpty onChange={(id) => setIds((s) => ({ ...s, right: id }))} />
+          {ids.right && personOf(ids.right) && <Readout person={personOf(ids.right)} hover={hover} level={view.level} />}
+        </div>
       </section>
 
       <main className="v3-main">
         <section className="v3-card v3-chart spot rise" style={{ "--d": 2 }} aria-label="人生走势">
           <div className="v3-chart__bar">
             <div className="v3-chart__title">
-              <h1>当时的势 <span>0–100</span></h1>
+              <h2>当时的势 <span>0–100</span></h2>
               <p>{scene ? (scene.axis === "year" ? "纪年对齐" : "按年龄对齐") : ""}<span>·</span>实线是生前，虚线是身后声望，右端落在后世评价</p>
             </div>
             <div className="v3-chart__tools">
@@ -352,8 +409,11 @@ export function App() {
       <footer className="v3-foot">
         <p><b>怎么算的</b>势 = 权位档分 − 危局折损，所有人用同一把尺子；只有毛泽东达到 100，其余人最高 98。后世评价衡量历史分量，不等于褒扬。</p>
         <p><b>依据</b>古代人物引自正史原文（维基文库），近现代人物引自维基百科；每一句都在原文里逐字核对过，找不到原句的节点标为「概括」。</p>
-        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片；少数没有自由版权图片的人物取自百度百科词条配图。每张头像的来源写在完整角色卡上。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
+        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片；少数没有自由版权图片的人物取自百度百科词条配图。每张头像的来源写在完整角色卡上。字体为思源宋体、思源黑体与 Inter（SIL OFL 1.1）。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
       </footer>
     </div>
+    <CommandPalette open={cmd} onClose={() => setCmd(false)} page={page} current={ids} themeKey={themeKey} actions={cmdActions} />
+    {toast && <div className="v3-toast lg" role="status" key={toast.n}><CheckIcon {...ICON} />{toast.text}</div>}
+    </>
   );
 }

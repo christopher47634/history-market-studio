@@ -91,6 +91,22 @@ if (!picker.includes("<Scroll") || !rolesView.includes("<Scroll") || !app.includ
 for (const f of ["src/v3/glowscroll.js", "src/v3/pointer.js"]) if (!existsSync(new URL(f, root))) fail(`缺少 ${f}`);
 if (!read("src/main.jsx").includes("installGlowScroll()")) fail("入口没有启用光束滚动条");
 
+// 10-19 改版：吸顶玻璃导航 + ⌘K 搜索面板 + 液态玻璃折射；图标只用 Lucide，不用字符冒充；不用侧边彩条和渐变字。
+const chrome = read("src/v3/chrome.css");
+if (/#fff\b|#ffffff|#000\b|#000000/i.test(chrome)) fail("chrome.css 不使用纯白或纯黑");
+if (!chrome.includes(".v3-bar") || !chrome.includes("position: sticky") || !chrome.includes(".v3-cmd__panel")) fail("缺少吸顶导航或搜索面板样式");
+for (const f of ["src/v3/Command.jsx", "src/v3/liquid.js", "src/v3/icons.jsx", "src/v3/people.jsx"]) if (!existsSync(new URL(f, root))) fail(`缺少 ${f}`);
+if (!app.includes("<CommandPalette") || !/metaKey \|\| e\.ctrlKey\) && e\.key\.toLowerCase\(\) === "k"/.test(app)) fail("没有挂上 ⌘K 搜索面板");
+if (!read("src/main.jsx").includes("installLiquid()")) fail("入口没有启用液态玻璃");
+if (!read("src/v3/material.css").includes("var(--lg-filter,)")) fail("玻璃的 backdrop-filter 没有接上折射滤镜");
+// 键帽 <kbd>←</kbd> 里的方向键是按键名，不算冒充图标。
+const ui = ["App.jsx", "RolesView.jsx", "Reader.jsx", "Picker.jsx", "Command.jsx"].map((f) => read(`src/v3/${f}`)).join("\n").replace(/<kbd>[^<]*<\/kbd>/g, "");
+const glyph = ui.match(/>[^<>{}\n]*[⇄↗▲▼×→←][^<>{}\n]*</);
+if (glyph) fail(`界面里还有用字符冒充的图标：${glyph[0]}`);
+const allCss = [css, material, chrome, read("src/v3/type.css")].join("\n");
+if (/background-clip:\s*text/.test(allCss)) fail("不用渐变字");
+if (/border-left:\s*[2-9]px/.test(allCss)) fail("不用侧边彩色竖条");
+
 // 自托管字体：页面上出现的每个汉字都要落在某个宋体分片里（数据或界面文字改了要重跑 pipeline/fonts.py）。
 const fontsCss = read("src/v3/fonts.css");
 const covered = new Set();

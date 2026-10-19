@@ -1,12 +1,12 @@
 // 阅读面板：固定下来的那个节点的完整说明——分数怎么来的、发生了什么、原文依据。
 import { AnimatedNumber, BasisBadge } from "./bits.jsx";
 import { nodeDetail } from "./detail.js";
+import { DownIcon, ICON, NextIcon, OutIcon, PrevIcon, UpIcon, ZoomIcon } from "./icons.jsx";
 
 export function Reader({ node, prev, next, onGo, onFocus, figures }) {
   if (!node) {
     return (
       <aside className="v3-reader v3-card spot is-empty" aria-live="polite">
-        <p className="v3-eyebrow">阅读</p>
         <h2>点图上的任意节点</h2>
         <p className="v3-muted">这里会展开那一刻发生了什么、当时的势怎么算出来，以及能逐字核对的原文。</p>
       </aside>
@@ -26,7 +26,7 @@ export function Reader({ node, prev, next, onGo, onFocus, figures }) {
             <strong><AnimatedNumber value={d.score} digits={d.score % 1 ? 1 : 0} /></strong>
           </div>
           {d.kind !== "sub" && d.kind !== "posthumous" && d.delta !== 0 && (
-            <span className={`v3-delta ${d.delta > 0 ? "is-up" : "is-down"}`}>{d.delta > 0 ? "▲" : "▼"} {Math.abs(d.delta)}</span>
+            <span className={`v3-delta ${d.delta > 0 ? "is-up" : "is-down"}`}>{d.delta > 0 ? <UpIcon {...ICON} size={14} /> : <DownIcon {...ICON} size={14} />}{d.delta > 0 ? "+" : "−"}{Math.abs(d.delta)}</span>
           )}
         </div>
 
@@ -48,16 +48,16 @@ export function Reader({ node, prev, next, onGo, onFocus, figures }) {
           {d.quote ? (
             <>
               <blockquote>{d.quote.text}</blockquote>
-              <figcaption>{d.quote.url ? <a href={d.quote.url} target="_blank" rel="noreferrer">{d.quote.source} ↗</a> : d.quote.source}</figcaption>
+              <figcaption>{d.quote.url ? <a href={d.quote.url} target="_blank" rel="noreferrer">{d.quote.source}<OutIcon {...ICON} size={12} /></a> : d.quote.source}</figcaption>
             </>
           ) : <p className="v3-muted">这一节点在来源里找不到能逐字对应的句子，内容是概括，不冒充原文。</p>}
         </figure>
       </div>
 
       <nav className="v3-reader__nav" aria-label="逐个翻看">
-        <button type="button" disabled={!prev} onClick={() => onGo(prev)}><kbd>←</kbd><span>{prev ? prev.event?.title : "已是第一个"}</span></button>
-        <button type="button" className="v3-reader__zoom" onClick={() => onFocus(node)} title="放大到这一刻">细读这一段</button>
-        <button type="button" disabled={!next} onClick={() => onGo(next)}><span>{next ? next.event?.title : "已是最后一个"}</span><kbd>→</kbd></button>
+        <button type="button" disabled={!prev} onClick={() => onGo(prev)} title="上一个节点（←）"><PrevIcon {...ICON} /><span>{prev ? prev.event?.title : "已是第一个"}</span></button>
+        <button type="button" className="v3-reader__zoom" onClick={() => onFocus(node)} title="放大到这一刻（回车）"><ZoomIcon {...ICON} size={14} />细读这一段</button>
+        <button type="button" disabled={!next} onClick={() => onGo(next)} title="下一个节点（→）"><span>{next ? next.event?.title : "已是最后一个"}</span><NextIcon {...ICON} /></button>
       </nav>
     </aside>
   );

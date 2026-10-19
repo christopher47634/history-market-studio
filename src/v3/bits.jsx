@@ -11,7 +11,8 @@ export function Scroll({ as = "div", className = "", children, ...rest }) {
     host.toggleAttribute("data-fade-bottom", viewport.scrollTop < viewport.scrollHeight - viewport.clientHeight - 2);
   };
   return (
-    <OverlayScrollbarsComponent element={as} className={className} data-glow="" options={SCROLL_OPTIONS} events={{ initialized: fade, updated: fade, scroll: fade }} defer {...rest}>
+    // 不用 defer：延迟初始化时库会把已经渲染出来的子节点挪进它的视口，进场动画会被重播一次。
+    <OverlayScrollbarsComponent element={as} className={className} data-glow="" options={SCROLL_OPTIONS} events={{ initialized: fade, updated: fade, scroll: fade }} {...rest}>
       {children}
     </OverlayScrollbarsComponent>
   );
@@ -42,10 +43,10 @@ export function AnimatedNumber({ value, digits = 0 }) {
 }
 
 // 分段选择器：选中块滑动过去。
-export function Segmented({ options, value, onChange, label, size = "md" }) {
+export function Segmented({ options, value, onChange, label, size = "md", className = "" }) {
   const index = Math.max(0, options.findIndex((o) => o.value === value));
   return (
-    <div className={`v3-seg v3-seg--${size}`} role="radiogroup" aria-label={label} style={{ "--n": options.length, "--i": index }}>
+    <div className={`v3-seg v3-seg--${size} ${className}`} role="radiogroup" aria-label={label} style={{ "--n": options.length, "--i": index }}>
       <span className="v3-seg__pill" aria-hidden="true" />
       {options.map((o) => (
         <button key={o.value} type="button" role="radio" aria-checked={o.value === value} title={o.hint} onClick={() => onChange(o.value)}>

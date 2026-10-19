@@ -273,11 +273,61 @@ await check("事件时间条没有横向滚动条：竖向滚轮转成横向滚�
   assert.equal(m.sb, "none");
   assert.equal(m.h, 0, "时间条还占着横向滚动条的高度");
   if (m.max > 20) {
+    await page.eval(`document.querySelector('.v3-strip').scrollIntoView({block:'center'})`);
+    await page.sleep(400);
     const r = await page.eval(`(()=>{const r=document.querySelector('.v3-strip').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);
     await page.send("Input.dispatchMouseEvent", { type: "mouseWheel", x: r.x, y: r.y, deltaX: 0, deltaY: 240 });
     await page.sleep(700);
     assert.ok((await page.eval(`document.querySelector('.v3-strip').scrollLeft`)) > 20, "滚轮没有让时间条横移");
   }
+});
+
+// 改版（10-19）：⌘K 搜索面板、吸顶玻璃导航、液态玻璃折射、提示条。
+const keyK = async (key, modifiers = 0, code = key) => {
+  const vk = key.length === 1 ? key.toUpperCase().charCodeAt(0) : key === "Enter" ? 13 : key === "Escape" ? 27 : 0;
+  await page.send("Input.dispatchKeyEvent", { type: "rawKeyDown", key, code, modifiers, windowsVirtualKeyCode: vk });
+  await page.send("Input.dispatchKeyEvent", { type: "keyUp", key, code, modifiers, windowsVirtualKeyCode: vk });
+};
+await check("⌘K 搜索面板：Ctrl+K 打开，搜「诸葛」回车看他的走势，⇧回车和主图的人对比", async () => {
+  await page.goto(`${base}/?left=maozedong&right=zhouenlai#b`, 3500);
+  await keyK("k", 2, "KeyK");
+  await page.sleep(400);
+  assert.ok(await q(".v3-cmd__panel"), "Ctrl+K 没有打开搜索面板");
+  assert.ok((await texts(".v3-cmd__row")).length >= 5, "空输入时没有给出操作和推荐人物");
+  await page.send("Input.insertText", { text: "诸葛" });
+  await page.sleep(300);
+  assert.ok((await text(".v3-cmd__row.is-active")).includes("诸葛亮"), "第一条不是诸葛亮");
+  await keyK("Enter", 0, "Enter");
+  await page.sleep(2200);
+  assert.ok(!(await q(".v3-cmd__panel")), "回车后面板没有关闭");
+  assert.deepEqual(await texts(".v3-readout__who"), ["诸葛亮"]);
+  await keyK("k", 2, "KeyK");
+  await page.sleep(400);
+  await page.send("Input.insertText", { text: "司马懿" });
+  await page.sleep(300);
+  await keyK("Enter", 8, "Enter");
+  await page.sleep(2200);
+  assert.deepEqual(await texts(".v3-readout__who"), ["诸葛亮", "司马懿"]);
+});
+await check("吸顶导航：停在顶上透明，往下滚后玻璃显出来；控件挂上液态玻璃折射", async () => {
+  assert.ok(!(await page.eval(`document.documentElement.hasAttribute('data-scrolled')`)) || (await page.eval("scrollY")) > 8);
+  await page.eval(`scrollTo(0, 600)`);
+  await page.sleep(500);
+  assert.ok(await page.eval(`document.documentElement.hasAttribute('data-scrolled')`), "滚动后没有标记 data-scrolled");
+  const top = await page.eval(`document.querySelector('.v3-bar').getBoundingClientRect().top`);
+  assert.ok(Math.abs(top) < 1, `导航没有吸顶（top=${top}）`);
+  assert.ok(await page.eval(`document.documentElement.hasAttribute('data-refract')`), "Chromium 上没有开折射");
+  await page.sleep(1800);
+  assert.ok(await page.eval(`[...document.querySelectorAll('.v3-bar .lg')].some(el=>el.style.getPropertyValue('--lg-filter').startsWith('url(#lgf-'))`), "导航上的玻璃控件没有挂上折射滤镜");
+  assert.ok(await page.eval(`!!document.querySelector('svg defs filter[id^=lgf-] feDisplacementMap')`), "没有生成位移贴图滤镜");
+  await page.eval(`scrollTo(0, 0)`);
+});
+await check("分享按钮：给出玻璃提示条，2 秒后自己退场", async () => {
+  await page.eval(`document.querySelector('.v3-bar .v3-icon-btn').click()`);
+  await page.sleep(300);
+  assert.ok((await text(".v3-toast")).length > 4, "点分享后没有提示");
+  await page.sleep(2300);
+  assert.ok(!(await q(".v3-toast")), "提示条没有退场");
 });
 
 await page.setViewport(390, 844, true);

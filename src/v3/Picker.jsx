@@ -1,11 +1,11 @@
-// 人物选择：胶囊按钮 + 搜索弹层（按朝代分组，键盘上下选、回车确认、Esc 关闭）。
+// 人物选择：行情卡左半边的头像按钮 + 搜索弹层（按朝代分组，键盘上下选、回车确认、Esc 关闭）。
 // 弹层通过 portal 挂到 body 顶层、按按钮位置定位，不受任何区块的层叠上下文或 overflow 裁切。
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { figures, dynastyOrder } from "../data.js";
 import { Scroll } from "./bits.jsx";
-
-const years = (f) => `${f.born < 0 ? `前${-f.born}` : f.born}—${f.died < 0 ? `前${-f.died}` : f.died}`;
+import { Avatar, lifeYears as years, useRoles } from "./people.jsx";
+import { ChevronIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
 export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
   const [open, setOpen] = useState(false);
@@ -16,6 +16,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
   const input = useRef(null);
   const [place, setPlace] = useState(null);
   const current = figures.find((f) => f.id === value);
+  const roles = useRoles({ idle: true });
 
   const list = useMemo(() => {
     const words = q.trim().toLocaleLowerCase("zh-CN").split(/\s+/).filter(Boolean);
@@ -56,6 +57,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
 
   const choose = (id) => { onChange(id); setOpen(false); setQ(""); };
   const key = (e) => {
+    if (e.nativeEvent.isComposing || e.keyCode === 229) return; // 输入法选字时的回车不算确认
     if (e.key === "ArrowDown") { e.preventDefault(); setActive((i) => Math.min(list.length - 1, i + 1)); }
     else if (e.key === "ArrowUp") { e.preventDefault(); setActive((i) => Math.max(0, i - 1)); }
     else if (e.key === "Enter" && list[active]) choose(list[active].id);
@@ -65,21 +67,24 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
   let lastDynasty = null;
   return (
     <div className={`v3-picker${open ? " is-open" : ""}`} ref={root} style={{ "--c": `var(--p${slot})` }}>
-      <button type="button" className="v3-picker__btn" aria-haspopup="listbox" aria-expanded={open} onClick={() => setOpen((o) => !o)}>
+      <button type="button" className="v3-picker__btn" aria-haspopup="listbox" aria-expanded={open} onClick={() => setOpen((o) => !o)} title={current ? `换一个人（现在是${current.name}）` : "加一个人，同图对比"}>
         {current ? (
           <>
-            <span className="v3-picker__mark">{current.name[0]}</span>
+            <span className="v3-picker__mark"><Avatar f={current} role={roles[current.id]} size="md" /></span>
             <span className="v3-picker__text"><b>{current.name}</b><small>{current.dynasty} · {years(current)}</small></span>
           </>
         ) : (
-          <span className="v3-picker__text v3-picker__text--empty"><b>加一个人对比</b><small>同时代按纪年对齐</small></span>
+          <>
+            <span className="v3-picker__mark is-empty"><PlusIcon {...ICON} size={18} /></span>
+            <span className="v3-picker__text v3-picker__text--empty"><b>加一个人对比</b><small>同时代按纪年对齐，跨时代按年龄</small></span>
+          </>
         )}
-        <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" /></svg>
+        <ChevronIcon {...ICON} className="v3-picker__chev" />
       </button>
       {open && place && createPortal(
         <div className="v3-picker__pop lg" ref={pop} role="dialog" aria-label="选择人物" style={{ left: place.left, top: place.top, width: place.width, maxHeight: place.maxHeight, "--c": `var(--p${slot})` }}>
           <div className="v3-picker__search">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" /><path d="m10.5 10.5 3 3" /></svg>
+            <SearchIcon {...ICON} />
             <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={key} placeholder="搜人名、朝代或事件，如「长征」" aria-label="搜索人物" role="combobox" aria-expanded="true" aria-controls={`v3-list-${slot}`} />
           </div>
           <Scroll className="v3-picker__scroll"><ul className="v3-picker__list" role="listbox" id={`v3-list-${slot}`}>
@@ -90,7 +95,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
                 head && <li key={`h-${head}`} className="v3-picker__group">{head}</li>,
                 <li key={f.id} role="option" aria-selected={i === active}>
                   <button type="button" data-i={i} className={i === active ? "is-active" : ""} onMouseEnter={() => setActive(i)} onClick={() => choose(f.id)}>
-                    <b>{f.name}</b><span>{years(f)}</span><em>{f.legacy.score}</em>
+                    <Avatar f={f} role={roles[f.id]} size="xs" /><b>{f.name}</b><span>{years(f)}</span><em>{f.legacy.score}</em>
                   </button>
                 </li>,
               ];

@@ -10,21 +10,13 @@ import { figures, figureById, dynastyOrder, loadFigure } from "../data.js";
 import { lifePoints } from "../v2/model.js";
 import { BOARDS, DOMAIN_BOARDS, SPECIAL_BOARDS, SORTS, boardById, boardStats, filterFigures } from "./boards.js";
 import { AnimatedNumber, Scroll, Segmented } from "./bits.jsx";
+import { Avatar, lifeYears as years, useRoles } from "./people.jsx";
+import { ChartIcon, CloseIcon, CompareIcon, GoIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
 const fmtYear = (y) => (y < 0 ? `前${-y}` : `${y}`);
-const years = (f) => `${fmtYear(f.born)}—${fmtYear(f.died)}`;
 const domainLabel = Object.fromEntries(DOMAIN_BOARDS.map((b) => [b.id, b.label]));
 const wikiUrl = (r) => `https://zh.wikipedia.org/w/index.php?title=${encodeURIComponent(r.title)}${r.revid ? `&oldid=${r.revid}` : ""}`;
 const DRAG = "text/x-history-figure";
-
-// 角色数据（维基导语 + 头像）单独成包，进入本页时才加载。
-let rolesPromise = null;
-const loadRoles = () => (rolesPromise ??= import("../v2/roles.generated.js").then((m) => m.default).catch(() => ({})));
-function useRoles() {
-  const [roles, setRoles] = useState(null);
-  useEffect(() => { let alive = true; loadRoles().then((r) => alive && setRoles(r)); return () => { alive = false; }; }, []);
-  return roles ?? {};
-}
 
 // 迷你走势：生前主线，最后虚线一截接到后世评价。身后涨（后世评价高于去世时）为红，跌为绿。
 export function Spark({ f, w = 116, h = 30, big = false }) {
@@ -42,16 +34,6 @@ export function Spark({ f, w = 116, h = 30, big = false }) {
       <path className="v3-spark__tail" d={`M${lifeW},${Y(t.slice(-1)[0]).toFixed(1)}L${w - 2},${Y(f.legacy.score).toFixed(1)}`} vectorEffect="non-scaling-stroke" />
       <circle cx={w - 2} cy={Y(f.legacy.score)} r={big ? 3 : 2} />
     </svg>
-  );
-}
-
-// 头像：有维基头像用头像，没有就用姓氏字章（人物主色）。
-function Avatar({ f, role, size = "sm", vt }) {
-  const style = vt ? { viewTransitionName: vt } : undefined;
-  return role?.img ? (
-    <img className={`v3-ava v3-ava--${size}`} src={role.img.src} alt="" loading="lazy" decoding="async" width={role.img.w} height={role.img.h} draggable="false" style={style} />
-  ) : (
-    <span className={`v3-ava v3-ava--${size} v3-ava--mono`} style={{ "--fc": f.color, ...style }} aria-hidden="true">{f.name[0]}</span>
   );
 }
 
@@ -108,7 +90,7 @@ function BriefCard({ f, role, onOpen, onAdd }) {
       <div className="draw-on"><Spark f={f} w={300} h={56} big /></div>
       <footer className="v3-role__foot">
         <button type="button" className="v3-btn" onClick={() => onOpen(f.id)}>完整角色卡</button>
-        <button type="button" className="v3-btn v3-btn--ghost" onClick={() => onAdd(f.id)}>＋ 加入对比</button>
+        <button type="button" className="v3-btn v3-btn--ghost" onClick={() => onAdd(f.id)}><PlusIcon {...ICON} size={14} />加入对比</button>
       </footer>
       <p className="v3-role__hint">{role?.title ? <>简介摘自维基百科「{role.title}」</> : "一句话行情为本站概括"} · 可拖到下方对比栏</p>
     </article>
@@ -138,7 +120,7 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray, morphed }) {
     <div className={`v3-sheet${morphed ? " is-morph" : ""}`} role="dialog" aria-modal="true" aria-label={`${f.name} 完整角色卡`} onClick={(e) => e.target === e.currentTarget && onClose()}>
       <article className="v3-full v3-glass lg spot">
         <div className="v3-glass__bg" style={role?.img ? { backgroundImage: `url(${role.img.src})` } : { "--fc": f.color }} aria-hidden="true" />
-        <button ref={close} type="button" className="v3-full__close" onClick={onClose} aria-label="关闭">×</button>
+        <button ref={close} type="button" className="v3-full__close" onClick={onClose} aria-label="关闭"><CloseIcon {...ICON} size={18} /></button>
         <Scroll className="v3-full__scroll">
         <div className="v3-full__grid">
         <aside className="v3-full__side">
@@ -180,8 +162,8 @@ function FullCard({ f, role, onClose, onAdd, onSolo, tray, morphed }) {
             ))}
           </ol></Scroll>
           <footer className="v3-full__foot">
-            <button type="button" className="v3-btn" onClick={() => onSolo(f.id)}>看走势 →</button>
-            <button type="button" className="v3-btn v3-btn--ghost" onClick={() => onAdd(f.id)} disabled={slot >= 0}>{slot >= 0 ? `已在对比栏 ${slot ? "B" : "A"}` : "＋ 加入对比"}</button>
+            <button type="button" className="v3-btn" onClick={() => onSolo(f.id)}><ChartIcon {...ICON} size={14} />看走势</button>
+            <button type="button" className="v3-btn v3-btn--ghost" onClick={() => onAdd(f.id)} disabled={slot >= 0}>{slot >= 0 ? `已在对比栏 ${slot ? "B" : "A"}` : <><PlusIcon {...ICON} size={14} />加入对比</>}</button>
           </footer>
         </div>
         </div>
@@ -254,11 +236,11 @@ function Tile({ f, role, at, i, onOpen, onToggle }) {
               <span><small>后世评价</small><b className="is-accent">{f.legacy.score}</b></span>
             </span>
             <span className={flip ? "draw-on" : ""}><Spark f={f} w={150} h={22} /></span>
-            <span className="v3-tile__more">完整角色卡 <i aria-hidden="true">→</i></span>
+            <span className="v3-tile__more">完整角色卡<GoIcon {...ICON} size={14} /></span>
           </button>
         </motion.div>
       </motion.div>
-      <button type="button" className="v3-tile__add" onClick={() => onToggle(f.id)} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : "+"}</button>
+      <button type="button" className="v3-tile__add" onClick={() => onToggle(f.id)} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : <PlusIcon {...ICON} size={15} />}</button>
     </div>
   );
 }
@@ -270,6 +252,17 @@ function BoardCard({ board, active, onPick, stats }) {
       <span className="v3-board__avg">均 {stats.avg}</span>
       <span className="v3-board__lead">{stats.leaders.map((f) => f.name).join(" · ") || "—"}</span>
     </button>
+  );
+}
+
+// 空结果：说明为什么空、下一步能做什么，并给一个一键清空。
+function Empty({ q, onReset }) {
+  return (
+    <div className="v3-empty" role="status">
+      <b>{q.trim() ? `没有和「${q.trim()}」相关的人物` : "这个板块和时代下没有人物"}</b>
+      <p>可以搜字号（如「孔明」）、朝代（如「北宋」）或事件（如「变法」），也可以放宽板块和时代。</p>
+      <button type="button" className="v3-btn v3-btn--ghost" onClick={onReset}>清空筛选</button>
+    </div>
   );
 }
 
@@ -333,26 +326,36 @@ export function RolesView({ current, onCompare }) {
   const openCard = (id) => { setMorphed(canMorph() && !!document.querySelector(`[data-figure="${id}"]`)); morph(id, () => setOpen(id)); };
   const closeCard = () => { const id = open; morph(id, () => setOpen(null)); };
 
+  // ⌘K 面板里点「角色卡」：已经在本页时直接打开那个人。
+  useEffect(() => {
+    const on = (e) => { if (figureById[e.detail]) { setQ(""); setOpen(e.detail); } };
+    addEventListener("v3:open-role", on);
+    return () => removeEventListener("v3:open-role", on);
+  }, []);
+  const trayStep = tray.length === 0 ? 1 : tray.length === 1 ? 2 : 3;
+
   return (
     <section className={`v3-roles is-${layout}`} aria-label="角色">
       <div className="v3-roles__main">
-        <header className="v3-roles__hero rise" style={{ "--d": 1 }}>
-          <div className="v3-roles__title">
-            <p className="v3-roles__kicker">ROLES<span>·</span>{figures.length} 位历史人物</p>
-            <h1>角色</h1>
-          </div>
-          <p className="v3-roles__lede">按<em>领域</em>或<em>一生走势的形态</em>分板块。光标停留看简要角色卡，点开看完整角色卡；拖到下方对比栏，两人同图对比走势。</p>
+        <header className="v3-roles__hero rise" style={{ "--d": 0 }}>
+          <h1>角色</h1>
+          <p className="v3-roles__lede">{figures.length} 位历史人物，按<em>领域</em>或<em>一生走势的形态</em>分板块。光标停在卡片上翻看简介，点开读完整角色卡；挑一两个人放进下方对比栏，就能同图对比走势。</p>
         </header>
-        <div className="v3-index__head rise" style={{ "--d": 2 }}>
-          <label className="v3-index__search lg spot">
-            <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" /><path d="m10.5 10.5 3 3" /></svg>
-            <input ref={search} value={q} onChange={(e) => setQ(e.target.value)} placeholder="搜人名、字号、朝代或事件，如「长征」「变法」" aria-label="搜索人物" />
-            <kbd>/</kbd>
+
+        <div className="v3-filterbar lg rise" style={{ "--d": 1 }}>
+          <label className="v3-index__search">
+            <SearchIcon {...ICON} />
+            <input ref={search} value={q} onChange={(e) => setQ(e.target.value)} placeholder="搜人名、字号、朝代或事件，如「长征」「变法」" aria-label="在角色里搜索" />
+            {q ? <button type="button" className="v3-index__clear" onClick={() => { setQ(""); search.current?.focus(); }} aria-label="清空搜索"><CloseIcon {...ICON} size={14} /></button> : <kbd>/</kbd>}
           </label>
-          <p className="v3-index__count"><b><AnimatedNumber value={list.length} /></b> / {figures.length} 人<span>·</span>{b.hint}</p>
+          <p className="v3-index__count" aria-live="polite"><b><AnimatedNumber value={list.length} /></b> 人<span>·</span>{b.label}</p>
+          <div className="v3-index__sorts">
+            <Segmented label="排序" size="sm" value={sort} onChange={setSort} options={sorts} />
+            <Segmented label="排布" size="sm" value={layout} onChange={setLayout} options={[{ value: "cards", label: "卡片" }, { value: "list", label: "列表" }]} />
+          </div>
         </div>
 
-        <div className="v3-boards rise" style={{ "--d": 3 }} role="group" aria-label="板块">
+        <div className="v3-boards rise" style={{ "--d": 2 }} role="group" aria-label="板块">
           <div className="v3-boards__group">
             <span className="v3-boards__label">领域板块</span>
             <div className="v3-boards__row" data-hscroll="">{[boardById.all, ...DOMAIN_BOARDS].map((x) => <BoardCard key={x.id} board={x} active={board === x.id} onPick={setBoard} stats={stats[x.id]} />)}</div>
@@ -361,15 +364,8 @@ export function RolesView({ current, onCompare }) {
             <span className="v3-boards__label">特色板块 <small>按一生走势的形态归类</small></span>
             <div className="v3-boards__row" data-hscroll="">{SPECIAL_BOARDS.map((x) => <BoardCard key={x.id} board={x} active={board === x.id} onPick={setBoard} stats={stats[x.id]} />)}</div>
           </div>
-        </div>
-
-        <div className="v3-index__tools rise" style={{ "--d": 4 }}>
           <div className="v3-eras" role="radiogroup" aria-label="时代" data-hscroll="">
             {["all", ...eras].map((d) => <button key={d} type="button" role="radio" aria-checked={era === d} className={era === d ? "is-on" : ""} onClick={() => setEra(d)}>{d === "all" ? "全部时代" : d}</button>)}
-          </div>
-          <div className="v3-index__sorts">
-            <Segmented label="排序" size="sm" value={sort} onChange={setSort} options={sorts} />
-            <Segmented label="排布" size="sm" value={layout} onChange={setLayout} options={[{ value: "cards", label: "卡片" }, { value: "list", label: "列表" }]} />
           </div>
         </div>
 
@@ -378,17 +374,17 @@ export function RolesView({ current, onCompare }) {
             {list.map((f, i) => (
               <Tile key={f.id} f={f} role={roles[f.id]} at={tray.indexOf(f.id)} i={i} onOpen={openCard} onToggle={toggle} />
             ))}
-            {!list.length && <p className="v3-rows__empty">这个条件下没有人物，换个板块或关键词试试</p>}
+            {!list.length && <Empty q={q} onReset={() => { setQ(""); setBoard("all"); setEra("all"); }} />}
           </div>
         ) : (
-        <div className="v3-rows rise" style={{ "--d": 5 }} role="list" aria-label="人物列表" onMouseLeave={() => setFocus(null)}>
+        <div className="v3-rows rise" style={{ "--d": 3 }} role="list" aria-label="人物列表" onMouseLeave={() => setFocus(null)}>
           <div className="v3-rows__head" aria-hidden="true"><span>人物</span><span>板块</span><span>一生走势</span><span>峰值</span><span>后世评价</span></div>
           {list.map((f) => {
             const at = tray.indexOf(f.id);
             return (
               <div key={f.id} role="listitem" className={`v3-row${at >= 0 ? " is-picked" : ""}${shown?.id === f.id ? " is-focus" : ""}`} style={at >= 0 ? { "--c": `var(--p${at})` } : undefined}
                 draggable onDragStart={(e) => startDrag(e, f.id)} onMouseEnter={() => setFocus(f.id)} onFocus={() => setFocus(f.id)}>
-                <button type="button" className="v3-row__check" onClick={() => (at >= 0 ? remove(f.id) : add(f.id))} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : "+"}</button>
+                <button type="button" className="v3-row__check" onClick={() => (at >= 0 ? remove(f.id) : add(f.id))} aria-label={`${f.name}：${at >= 0 ? "移出对比" : "加入对比"}`} title={at >= 0 ? "移出对比栏" : "加入对比栏"}>{at >= 0 ? (at ? "B" : "A") : <PlusIcon {...ICON} size={15} />}</button>
                 <button type="button" className="v3-row__main" onClick={() => setOpen(f.id)} aria-label={`${f.name}：查看完整角色卡`}>
                   <span className="v3-row__who"><Avatar f={f} role={roles[f.id]} /><span><b>{f.name}</b><small>{f.dynasty} · {years(f)}</small></span></span>
                   <span className="v3-row__tag">{domainLabel[f.domain] ?? f.domain}</span>
@@ -396,11 +392,11 @@ export function RolesView({ current, onCompare }) {
                   <span className="v3-row__peak"><b>{f.peak?.score ?? "—"}</b><small>{f.peak?.title}</small></span>
                   <span className="v3-row__legacy"><b>{f.legacy.score}</b><small>{f.legacy.tier}</small></span>
                 </button>
-                <button type="button" className="v3-row__go" onClick={() => go([f.id])} aria-label={`单看${f.name}的走势`}><span>看走势 </span>→</button>
+                <button type="button" className="v3-row__go" onClick={() => go([f.id])} aria-label={`单看${f.name}的走势`}><span>看走势</span><GoIcon {...ICON} size={14} /></button>
               </div>
             );
           })}
-          {!list.length && <p className="v3-rows__empty">这个条件下没有人物，换个板块或关键词试试</p>}
+          {!list.length && <Empty q={q} onReset={() => { setQ(""); setBoard("all"); setEra("all"); }} />}
         </div>
         )}
       </div>
@@ -412,6 +408,11 @@ export function RolesView({ current, onCompare }) {
       )}
 
       <div className={`v3-tray lg${tray.length ? " is-on" : ""}${dragging ? " is-dragging" : ""}`} role="region" aria-label="对比栏">
+        <ol className="v3-tray__steps" aria-label="对比的步骤">
+          <li className={trayStep === 1 ? "is-now" : "is-done"}>挑人</li>
+          <li className={trayStep === 3 ? "is-done" : trayStep === 2 ? "is-now" : ""}>再挑一个（可不选）</li>
+          <li className={trayStep > 1 ? "is-now" : ""}>同图对比</li>
+        </ol>
         <div className="v3-tray__slots">
           {[0, 1].map((i) => {
             const f = figureById[tray[i]];
@@ -419,14 +420,15 @@ export function RolesView({ current, onCompare }) {
               <span key={i} className={`v3-tray__slot${f ? " is-full" : ""}${over === i ? " is-over" : ""}`} style={{ "--c": `var(--p${i})` }}
                 onDragOver={(e) => { e.preventDefault(); e.dataTransfer.dropEffect = "copy"; setOver(i); }} onDragLeave={() => setOver(-1)} onDrop={drop(i)}>
                 {f ? <Avatar f={f} role={roles[f.id]} size="xs" /> : <i className="v3-dot" />}
-                {f ? <><b>{f.name}</b><button type="button" onClick={() => remove(f.id)} aria-label={`移出${f.name}`}>×</button></> : <em>{i ? "B：拖到这里（可不选）" : "A：把人拖到这里或点 +"}</em>}
+                {f ? <><b>{f.name}</b><button type="button" onClick={() => remove(f.id)} aria-label={`移出${f.name}`}><CloseIcon {...ICON} size={13} /></button></> : <em>{i ? "B：可不选" : "A：拖进来或点卡片上的 +"}</em>}
               </span>
             );
           })}
         </div>
-        <p className="v3-tray__now">主图现在：{[current.left, current.right].filter(Boolean).map((id) => figureById[id]?.name).join(" 对比 ")}</p>
         {tray.length > 0 && <button type="button" className="v3-tray__clear" onClick={() => setTray([])}>清空</button>}
-        <button type="button" className="v3-tray__go" disabled={!tray.length} onClick={() => go(tray)}>{tray.length === 2 ? "对比走势 →" : "看走势 →"}</button>
+        <button type="button" className="v3-tray__go" disabled={!tray.length} onClick={() => go(tray)} title={tray.length ? "" : `主图现在：${[current.left, current.right].filter(Boolean).map((id) => figureById[id]?.name).join(" 对比 ")}`}>
+          {tray.length === 2 ? <CompareIcon {...ICON} /> : <ChartIcon {...ICON} />}{tray.length === 2 ? "对比走势" : "看走势"}
+        </button>
       </div>
 
       {open && figureById[open] && <FullCard f={figureById[open]} role={roles[open]} tray={tray} morphed={morphed} onClose={closeCard} onAdd={add} onSolo={(id) => go([id])} />}
