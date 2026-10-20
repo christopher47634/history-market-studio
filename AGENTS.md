@@ -140,7 +140,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - 下载中显示微光骨架（.v3-ava--loading / .v3-tile__media.is-loading），只有数据到了而这个人确实没头像才显示字章。
 - 旧页面跨发布（线上首页已换新版本）时自动刷新一次（每会话一次）；偶发网络失败不刷新。验证脚本 node work/roles-fail.mjs <base> <失败次数>。
 - 单张头像（10-20 用户截图老子、孔子裂图）：Avatar 失败后隔 1.5s / 4s 换地址（?r=n）重试，三次都失败才退字章；图片下载完才打 data-ok，之前用 CSS content 换成底色块，任何时候都不露浏览器裂图图标。
-- 离线缓存 public/sw.js（只在线上注册）：/portraits 缓存优先+后台更新、/fonts 与 /assets 缓存优先，忽略重试参数；改规则要把 VERSION 加一。vercel.json 给 /portraits 7 天、/fonts 30 天缓存头。
+- 离线缓存 public/sw.js（只在线上注册）：规则见下一节「健壮性」（10-20 已收紧：只缓存带哈希的文件）。
 - 卡片背面的领域印章改横排小章，数字格恢复全宽，「后世评价」不再折行。
 
 ## 2026-10-20 健壮性（用户：要求完全没有 bug，别再出现头像不见这类问题）
@@ -150,3 +150,12 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - 字体文件名带内容哈希（pipeline/fonts.py、era-fonts.py 的 put()），所以 vercel.json 可以给 /fonts 一年不可变缓存；fonts.py 会同步 index.html 的预加载链接。千万别改回同名文件，否则浏览器缓存里的旧分片配新的 unicode-range 会缺字。
 - 离线缓存 public/sw.js：只缓存文件名带哈希的 /fonts、/assets（缓存优先），头像用条件请求后台更新；改规则把 VERSION 加一。
 - 新增三套测试：npm run test:faults（对每类资源注入网络故障，要先起预览服务）、npm run test:monkey（随机点按/按键/滚动/改窗口，每步查崩溃、报错、横向溢出；参数：步数 种子）、以及原有的 test:app / test:cross。改动加载逻辑后三套都要跑。
+- 随机测试抓到的真崩溃（10-20）：K 线模式下固定在第二个人的事件上，再切成「只看一个人」，详情栏去读已经不在图上的第二个人 → 白屏。修法：App.jsx 的 onChart() 只认属于图上现在这些人的节点，所有用固定节点的地方统一用 pin；scene.js 的 candleOf 也容忍人不存在。用例锁在 tests/e2e-regress.mjs（去掉修复时会失败）。以后随机测试再抓到什么，都照这样加一条回归用例。
+
+## 2026-10-20 动效重做（用户：调研交互动画还能不能优化，按我的想法重来）
+
+- 原则（web.dev / Shopify 的动画性能指引）：只动 transform 和 opacity，不动布局属性，主线程留给交互；全部尊重「减少动态效果」。
+- 卡片墙重排（FLIP，RolesView.jsx 的 useFlip）：搜索让卡片位置变了，留下来的卡片从旧位置滑到新位置（460ms、expo 缓出），只做屏幕上下一屏内的卡；换板块 / 时代 / 排序仍是整块重新进场。
+- 滚动进场（interact.css）：卡片墙往下滚时卡片进入屏幕才升起显现，用 CSS 滚动驱动动画（animation-timeline: view()），跑在合成线程；Firefox / Safari 暂不支持时整段忽略，卡片照常显示。
+- 退场：⌘K 面板（180ms）和选人下拉（160ms）关闭时先播收起再卸载，不再瞬间消失。下拉的位置要等退场播完才清（在 Picker 的 leaving 计时里），否则退场那一帧没有位置可画。
+- 验证：npm run test:motion（重排、退场、滚动进场、减少动态效果时全关）；npm run test:regress（随机测试抓到过的崩溃）。

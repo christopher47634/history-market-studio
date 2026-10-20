@@ -11,6 +11,16 @@ import { ChevronIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
 export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
   const [open, setOpen] = useState(false);
+  // 退场动画：关闭后再留 160ms 播完收起（原来是直接消失）。
+  const [leaving, setLeaving] = useState(false);
+  const wasOpen = useRef(false);
+  useLayoutEffect(() => {
+    if (open) { wasOpen.current = true; setLeaving(false); return; }
+    if (!wasOpen.current) return;
+    setLeaving(true);
+    const t = setTimeout(() => { setLeaving(false); setPlace(null); }, 160); // 退场播完才清掉位置
+    return () => clearTimeout(t);
+  }, [open]);
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const root = useRef(null);
@@ -39,7 +49,6 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
   // 弹层在定位好之后才挂上，所以等它出现再聚焦搜索框。
   const shown = open && !!place;
   useEffect(() => { if (shown) input.current?.focus({ preventScroll: true }); }, [shown]);
-  useEffect(() => { if (!open) setPlace(null); }, [open]);
   // 跟着按钮走：打开时、滚动或改窗口大小时重新定位；窄屏铺满左右留 16px。
   useLayoutEffect(() => {
     if (!open) return;
@@ -85,8 +94,8 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
         )}
         <ChevronIcon {...ICON} className="v3-picker__chev" />
       </button>
-      {open && place && createPortal(
-        <div className="v3-picker__pop lg" ref={pop} role="dialog" aria-label="选择人物" style={{ left: place.left, top: place.top, width: place.width, maxHeight: place.maxHeight, "--c": `var(--p${slot})` }}>
+      {(open || leaving) && place && createPortal(
+        <div className={`v3-picker__pop lg${open ? "" : " is-closing"}`} ref={pop} role="dialog" aria-label="选择人物" style={{ left: place.left, top: place.top, width: place.width, maxHeight: place.maxHeight, "--c": `var(--p${slot})` }}>
           <div className="v3-picker__search">
             <SearchIcon {...ICON} />
             <input ref={input} value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={key} placeholder="搜人名、朝代或事件，如「长征」" aria-label="搜索人物" role="combobox" aria-expanded="true" aria-controls={`v3-list-${slot}`} />

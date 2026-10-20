@@ -29,8 +29,11 @@ function initialIds() {
 // 节点详情：停靠在图表上方的「详情栏」里（宽屏在右上，和左上的开高低收信息栏并排；手机在图表下方），
 // 永远不浮在走势或 K 线上——看盘软件的数据窗口也是这样停靠的。
 // 光标在图上显示光标所在节点（is-live），离开后显示固定的节点，所以这一栏不会忽有忽无、不让图跳动。
+// 节点必须属于图上现在的人：从两人切成一人（或换人）的那一帧，固定的节点还是旧的，要先丢掉，不然会去读不存在的第二个人（10-20 随机测试抓到的崩溃）。
+export const onChart = (scene, n) => (n && scene?.people[n.slot]?.figure.id === n.figure?.id ? n : null);
+
 function Dock({ hover, pinned, scene, level, mode }) {
-  const node = hover?.node ?? pinned;
+  const node = onChart(scene, hover?.node) ?? onChart(scene, pinned);
   if (!node || !scene) return null;
   const d = nodeDetail(node);
   // K 线模式下涨跌按这一根算（开盘是前一个事件），和信息栏一致。
@@ -262,11 +265,13 @@ export function App() {
     setPinned(p.main.reduce((a, b) => (b.score > a.score ? b : a)));
     setHover(null);
   }, [scene]);
+  // 下面所有地方都用 pin：只认属于图上现在这些人的节点（换人那一帧旧节点作废）。
+  const pin = onChart(scene, pinned);
 
   const onHover = useCallback((h) => setHover(h), []);
   const onPin = useCallback((n) => setPinned(n), []);
   const go = useCallback((n) => { if (!n) return; setPinned(n); chart.current?.reveal(n); }, []);
-  const at = pinned ? order.findIndex((n) => n.id === pinned.id) : -1;
+  const at = pin ? order.findIndex((n) => n.id === pin.id) : -1;
   const prev = at > 0 ? order[at - 1] : null;
   const next = at >= 0 && at < order.length - 1 ? order[at + 1] : null;
 
@@ -276,11 +281,11 @@ export function App() {
       if (e.key === "ArrowLeft" && prev) { e.preventDefault(); go(prev); }
       else if (e.key === "ArrowRight" && next) { e.preventDefault(); go(next); }
       else if (e.key === "Escape") chart.current?.zoomToLevel("overview");
-      else if (e.key === "Enter" && pinned) chart.current?.focus(pinned);
+      else if (e.key === "Enter" && pin) chart.current?.focus(pin);
     };
     addEventListener("keydown", key);
     return () => removeEventListener("keydown", key);
-  }, [prev, next, pinned, go]);
+  }, [prev, next, pin, go]);
 
   const inWindow = order.filter((n) => n.x >= view.window[0] - 0.5 && n.x <= view.window[1] + 0.5 && (view.level.key !== "overview" || n.kind !== "sub"));
   const setTheme = (k) => { location.hash = k; };
@@ -390,7 +395,7 @@ export function App() {
               <p>{scene ? (scene.axis === "year" ? "纪年对齐" : "按年龄对齐") : ""}<span>·</span>实线是生前，虚线是身后声望，右端落在后世评价</p>
             </div>
             <div className="v3-chart__tools">
-              <Segmented label="缩放层级" value={view.level.key} onChange={(k) => chart.current?.zoomToLevel(k, pinned)} options={LEVELS.map((l) => ({ value: l.key, label: l.label, hint: l.hint }))} />
+              <Segmented label="缩放层级" value={view.level.key} onChange={(k) => chart.current?.zoomToLevel(k, pin)} options={LEVELS.map((l) => ({ value: l.key, label: l.label, hint: l.hint }))} />
               <Segmented label="图形" size="sm" value={mode} onChange={setMode} options={[{ value: "line", label: "折线" }, { value: "k", label: "K 线" }]} />
               <button type="button" className="v3-text-toggle" aria-pressed={textView} onClick={() => setTextView((v) => !v)}>文字版</button>
               {scene?.people.length > 1 && <Segmented label="横轴" size="sm" value={scene.axis} onChange={setAxis} options={[{ value: "year", label: "纪年" }, { value: "age", label: "年龄" }]} />}
@@ -398,19 +403,19 @@ export function App() {
           </div>
           {scene && <p className="v3-sr" id="v3-chart-summary">{chartSummary(scene)}</p>}
           <div className="v3-chart__stage" ref={chartBox}>
-            {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pinned} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
-            <Legend scene={scene} level={view.level} mode={mode} node={hover?.node ?? pinned} live={!!hover} />
-            <Dock hover={hover} pinned={pinned} scene={scene} level={view.level} mode={mode} />
+            {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pin} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
+            <Legend scene={scene} level={view.level} mode={mode} node={onChart(scene, hover?.node) ?? pin} live={!!onChart(scene, hover?.node)} />
+            <Dock hover={hover} pinned={pin} scene={scene} level={view.level} mode={mode} />
           </div>
           <p className="v3-chart__hint">
             <span><kbd>滚轮</kbd>缩放</span><span><kbd>拖动</kbd>平移</span><span><kbd>悬停</kbd>十字光标</span><span><kbd>点击</kbd>固定节点</span><span><kbd>双击</kbd>细读</span><span><kbd>←</kbd><kbd>→</kbd>逐个翻看</span><span><kbd>Esc</kbd>回全景</span>
             <em>{view.level.label} · {view.level.hint}</em>
           </p>
-          <Strip nodes={inWindow} pinned={pinned} hover={hover} onPick={go} />
-          {textView && scene && <TextTable scene={scene} pinned={pinned} onPick={go} />}
+          <Strip nodes={inWindow} pinned={pin} hover={hover} onPick={go} />
+          {textView && scene && <TextTable scene={scene} pinned={pin} onPick={go} />}
         </section>
         <div className="rise" style={{ "--d": 3 }}>
-          <Reader node={pinned} prev={prev} next={next} onGo={go} onFocus={(n) => chart.current?.focus(n)} />
+          <Reader node={pin} prev={prev} next={next} onGo={go} onFocus={(n) => chart.current?.focus(n)} />
         </div>
       </main>
       </>)}

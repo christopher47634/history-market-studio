@@ -35,7 +35,7 @@ for (let i = 0; i < steps; i++) {
     else if (r < 0.84) { const t = pick(["变法", "李", "东坡", "唐", "wang", "诗", "帝", "孔明", ""]); what = `type ${t}`; if (t) await p.send("Input.insertText", { text: t }); }
     else if (r < 0.88) { const [w, h, m] = pick([[1440, 900, false], [390, 844, true], [820, 1180, false], [1024, 700, false]]); what = `resize ${w}`; await p.setViewport(w, h, m); }
     else if (r < 0.92) { what = "hash"; await p.eval(`location.hash = ${JSON.stringify(pick(["#b", "#c"]))}`); }
-    else if (r < 0.95) { what = "back"; await p.eval(`history.back()`); }
+    else if (r < 0.95) { what = "back"; await p.eval(`history.back()`).catch(() => {}); await p.sleep(600); }
     else { const [x, y] = [100 + rnd() * 1200, 100 + rnd() * 700]; what = "hover"; await p.mouse(x, y); }
   } catch (e) { what += ` (script error: ${String(e.message).slice(0, 80)})`; }
   await p.sleep(rnd() < 0.3 ? 400 : 120);
@@ -47,11 +47,13 @@ for (let i = 0; i < steps; i++) {
   })`).catch(() => ({ crashed: true, blank: true }));
   const errs = p.consoleErrors.length;
   const problems = [];
-  if (state.crashed) problems.push("崩溃/错误页");
-  if (state.blank) problems.push("页面空白");
+  // 「后退」退到了站外（会话开头的空白页）：那是浏览器自己的页，不算网站的问题，拉回来继续。
+  const offsite = state.away || (await p.eval("location.href").catch(() => "")).startsWith("about:");
+  if (!offsite && state.crashed) problems.push("崩溃/错误页");
+  if (!offsite && state.blank) problems.push("页面空白");
   if (state.overflow > 1) problems.push(`横向溢出 ${state.overflow}px`);
   if (errs > lastErr) problems.push("控制台报错：" + p.consoleErrors.slice(lastErr).join(" | ").slice(0, 300));
-  if (state.away) { await p.goto(`${base}/?left=liubang&right=xiangyu#b`, 1500); what += " (离站，已拉回)"; }
+  if (offsite) { await p.goto(`${base}/?left=liubang&right=xiangyu#b`, 1500); what += " (离站，已拉回)"; }
   lastErr = errs;
   log.push(`${i} ${what}`);
   if (problems.length) {

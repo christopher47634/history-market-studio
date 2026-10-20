@@ -29,8 +29,7 @@ await check("个别人物的数据文件前几秒下载失败：自动重试后�
 await check("人物数据一直失败：显示错误页和「重试」，网络恢复后点重试就好", async (p) => {
   await block(p, ["*/assets/*.json*"]);
   await p.goto(`${base}/?left=liubang&right=xiangyu#b`, 9000);
-  assert.ok(await until(p, `document.body.innerText.includes('人物数据没加载下来')`, 40000), `没出现带重试的错误页；页面当时显示：${(await html(p)).slice(0, 80).replace(/
-/g, " | ")}`);
+  assert.ok(await until(p, `document.body.innerText.includes('人物数据没加载下来')`, 40000), `没出现带重试的错误页；页面当时显示：${(await html(p)).slice(0, 80).replace(/\n/g, " | ")}`);
   await p.send("Network.setBlockedURLs", { urls: [] });
   await p.eval(`[...document.querySelectorAll('button')].find(b => b.textContent.trim() === '重试').click()`);
   assert.ok(await until(p, CHART), "点重试后图表没出来");

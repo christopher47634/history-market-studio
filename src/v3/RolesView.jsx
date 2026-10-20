@@ -3,7 +3,7 @@
 // - 单击一行：打开完整角色卡（完整导语、一生节点、出处署名）。
 // - 对比：把行（或角色卡）拖到底部对比栏的 A / B 格，或点「+」填入；再点「对比走势」回主图。
 // - 两种排布：卡片墙（默认，头像为主）和列表（信息密集，便于横向比较），地址里 ?layout=list 记住选择。
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "motion/react";
 import { flushSync } from "react-dom";
 import { figures, figureById, dynastyOrder, loadFigure } from "../data.js";
@@ -45,6 +45,38 @@ export function Spark({ f, w = 116, h = 30, big = false }) {
       </g>
     </svg>
   );
+}
+
+// 卡片墙重排动画（FLIP）：搜索、筛选让卡片位置变了，原来是瞬间跳过去；现在每张还在的卡从旧位置滑到新位置。
+// 做法：每次列表变化前后各量一次位置（用页面坐标，滚动不影响），位置变了的用 Web Animations 只动 transform（不触发布局）。
+// 只给屏幕上下各一屏以内的卡片做，300 张也不会卡；换板块/时代/排序是整块重新进场（grid 的 key 变了），不做重排；开了「减少动态效果」就不做。
+function useFlip(ref, listKey, gridKey) {
+  const prev = useRef({ grid: gridKey, at: new Map() });
+  useLayoutEffect(() => {
+    const root = ref.current;
+    if (!root) return;
+    const now = new Map();
+    for (const el of root.children) {
+      const id = el.dataset.figure;
+      if (!id) continue;
+      const r = el.getBoundingClientRect();
+      now.set(id, { x: r.left + scrollX, y: r.top + scrollY });
+    }
+    const was = prev.current;
+    prev.current = { grid: gridKey, at: now };
+    if (was.grid !== gridKey || !was.at.size || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const lo = scrollY - innerHeight, hi = scrollY + innerHeight * 2;
+    for (const el of root.children) {
+      const id = el.dataset.figure, a = was.at.get(id), b = now.get(id);
+      if (!a || !b) continue;
+      const dx = a.x - b.x, dy = a.y - b.y;
+      if (Math.abs(dx) < 2 && Math.abs(dy) < 2) continue;
+      if (!((b.y > lo && b.y < hi) || (a.y > lo && a.y < hi))) continue;
+      el.getAnimations().forEach((an) => an.id === "flip" && an.cancel());
+      const an = el.animate([{ transform: `translate(${dx}px, ${dy}px)` }, { transform: "translate(0, 0)" }], { duration: 460, easing: "cubic-bezier(0.19, 1, 0.22, 1)" });
+      an.id = "flip";
+    }
+  }, [listKey]);
 }
 
 // 共享元素转场：点开卡片时头像从卡片墙「飞」进完整角色卡，关上时飞回去。
@@ -316,6 +348,8 @@ export function RolesView({ current, onCompare }) {
   const b = boardById[board];
   const list = useMemo(() => filterFigures(figures, { board: b, q, era, sort, dynastyOrder }), [board, q, era, sort]);
   const stats = useMemo(() => Object.fromEntries(BOARDS.map((x) => [x.id, boardStats(figures, x)])), []);
+  const wall = useRef(null);
+  useFlip(wall, list.map((f) => f.id).join("|"), `${board}|${era}|${sort}|${layout}`);
   const eras = useMemo(() => dynastyOrder.filter((d) => figures.some((f) => f.dynasty === d)), []);
   const sorts = b?.metric ? [{ value: "board", label: "板块指标" }, ...SORTS] : SORTS;
   useEffect(() => { setSort(b?.metric ? "board" : "legacy"); }, [board]);
@@ -378,7 +412,7 @@ export function RolesView({ current, onCompare }) {
         </div>
 
         {layout === "cards" ? (
-          <div className="v3-tiles" role="list" aria-label="人物卡片" key={`${board}|${era}|${sort}`}>
+          <div className="v3-tiles" role="list" aria-label="人物卡片" ref={wall} key={`${board}|${era}|${sort}`}>
             {list.map((f, i) => (
               <Tile key={f.id} f={f} role={roles[f.id]} at={tray.indexOf(f.id)} i={i} onOpen={openCard} onToggle={toggle} />
             ))}

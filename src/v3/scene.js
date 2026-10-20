@@ -117,7 +117,8 @@ export function nearest(nodes, px, toPixel, { yWeight = 0.02, prev = null, hold 
 
 // 当前层级下某个节点对应的那根 K 线（没有就返回 null，比如全景里的细节小事）。
 export function candleOf(person, level, node) {
-  return node ? candles(person, level).find((k) => k.node.id === node.id) ?? null : null;
+  // person 可能已不在图上（刚从两人切成一人时，上一帧固定的节点还属于第二个人），此时没有蜡烛可取。
+  return node && person ? candles(person, level).find((k) => k.node.id === node.id) ?? null : null;
 }
 
 // 某人在横坐标 x 处的势（沿图上画出的那条线线性取值）；还没出生返回 null。

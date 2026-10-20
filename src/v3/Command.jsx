@@ -44,7 +44,14 @@ export function CommandPalette({ open, onClose, page, current, themeKey, actions
   useEffect(() => setActive(0), [q]);
   useEffect(() => { list.current?.querySelector(`[data-i="${active}"]`)?.scrollIntoView({ block: "nearest" }); }, [active]);
 
-  if (!open) return null;
+  // 退场动画：关闭后再留 180ms 播完淡出再卸载（原来是直接消失）。
+  const [mounted, setMounted] = useState(open);
+  useEffect(() => {
+    if (open) { setMounted(true); return; }
+    const t = setTimeout(() => setMounted(false), 180);
+    return () => clearTimeout(t);
+  }, [open]);
+  if (!open && !mounted) return null;
   const run = (row, how = "chart") => {
     if (!row) return;
     onClose();
@@ -64,7 +71,7 @@ export function CommandPalette({ open, onClose, page, current, themeKey, actions
 
   let head = null;
   return createPortal(
-    <div className="v3-cmd" role="presentation" onPointerDown={(e) => e.target === e.currentTarget && onClose()}>
+    <div className={`v3-cmd${open ? "" : " is-closing"}`} role="presentation" onPointerDown={(e) => open && e.target === e.currentTarget && onClose()}>
       <div className="v3-cmd__panel lg" role="dialog" aria-modal="true" aria-label="搜索人物">
         <label className="v3-cmd__search">
           <SearchIcon {...ICON} size={18} />

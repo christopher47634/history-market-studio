@@ -183,3 +183,22 @@ kbd { font-size: 11.5px; }
 
 /* 头像在下载完之前（没有 data-ok）用一层底色替换掉图片内容：下载失败也不会露出浏览器的「裂图」图标；重试成功后自动换成真图。 */
 img.v3-ava:not([data-ok]) { content: linear-gradient(color-mix(in srgb, var(--ink) 9%, var(--surface)), color-mix(in srgb, var(--ink) 4%, var(--surface))); }
+
+/* ═════════ 动效（10-20）：只动 transform / opacity，不碰布局属性，主线程留给交互 ═════════ */
+
+/* 退场：⌘K 面板和选人下拉关闭时不再瞬间消失，播 160–180ms 收起再卸载（逻辑在 Command.jsx / Picker.jsx）。 */
+.v3-cmd.is-closing { pointer-events: none; animation: ix-fade-out .18s var(--ease-out) forwards; }
+.v3-cmd.is-closing .v3-cmd__panel { animation: ix-panel-out .18s var(--ease-out) forwards; }
+.v3-picker__pop.is-closing { pointer-events: none; animation: ix-pop-out .16s var(--ease-out) forwards; }
+@keyframes ix-fade-out { to { opacity: 0; } }
+@keyframes ix-panel-out { to { opacity: 0; transform: translateY(-8px) scale(.975); } }
+@keyframes ix-pop-out { to { opacity: 0; transform: translateY(-4px) scale(.97); } }
+
+/* 滚动进场：卡片墙往下滚时，卡片进入屏幕才升起并显现（CSS 滚动驱动动画，跑在合成线程，不占 JS）。
+   不支持的浏览器（目前 Firefox、Safari）整段忽略，卡片照常显示；开了「减少动态效果」也不做。 */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .v3-tile { animation: ix-tile-reveal linear both; animation-timeline: view(); animation-range: entry 0% entry 60%; }
+    @keyframes ix-tile-reveal { from { opacity: 0; translate: 0 28px; scale: .96; } to { opacity: 1; translate: 0 0; scale: 1; } }
+  }
+}
