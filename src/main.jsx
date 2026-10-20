@@ -19,6 +19,11 @@ import { installLiquid } from "./v3/liquid.js";
 // 只有确认是旧页面跨了一次发布（线上首页已换成新版本）才自动刷新一次。
 addEventListener("vite:preloadError", () => reloadIfStale());
 
+// 离线缓存（public/sw.js）：头像、字体、带哈希的分包下载成功一次就留在浏览器里，下次直接用，不再走网络。只在线上版本注册。
+if (import.meta.env.PROD && "serviceWorker" in navigator) {
+  addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+}
+
 installReporter();
 installGlowScroll();
 installPointer();

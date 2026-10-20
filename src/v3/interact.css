@@ -128,8 +128,10 @@
 /* 正面头像区稍微加高（4:4.4 → 4:4.9），背面因此能放下五六行简介；背面不再重复正面已有的走势小图。 */
 .v3-tile__media { aspect-ratio: 4 / 4.9; }
 .v3-tile__more { padding-right: 34px; }
-/* 右下角的领域印章不压住「后世评价」那格。 */
-.v3-tile__back .v3-tile__nums { margin-right: 30px; }
+/* 右下角的领域印章原来是竖排两字（约 40px 高），压到「后世评价」那格；给它让位又把格子挤窄，「后世评价」折成两行（10-20 用户截图）。
+   现在背面的印章改成横排小章，只占「完整角色卡」那一行的右端，两个数字格恢复全宽，标签不折行。 */
+.v3-tile__back .v3-tile__nums small { white-space: nowrap; }
+.v3-tile__back > .v3-tile__seal { writing-mode: horizontal-tb; bottom: 12px; right: 14px; padding: 3px 5px; letter-spacing: .12em; line-height: 1; }
 /* 背面头部：年代、年份原来和名字挤在一行被截成「前571…」，现在年代和年份各占一行，写全。 */
 .v3-tile__head { padding-right: 0; align-items: flex-start; }
 .v3-tile__head > span { padding-top: 1px; }
@@ -178,3 +180,6 @@ kbd { font-size: 11.5px; }
 .v3-tile__media.is-loading > .v3-ava { background: transparent; }
 @keyframes ix-shimmer { from { background-position: 100% 0; } to { background-position: -50% 0; } }
 @media (prefers-reduced-motion: reduce) { .v3-ava--loading, .v3-tile__media.is-loading { animation: none; } }
+
+/* 头像在下载完之前（没有 data-ok）用一层底色替换掉图片内容：下载失败也不会露出浏览器的「裂图」图标；重试成功后自动换成真图。 */
+img.v3-ava:not([data-ok]) { content: linear-gradient(color-mix(in srgb, var(--ink) 9%, var(--surface)), color-mix(in srgb, var(--ink) 4%, var(--surface))); }

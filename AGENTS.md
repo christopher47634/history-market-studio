@@ -139,3 +139,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - 现在：失败不缓存，1s/2s/4s 重试三次，网络恢复或页面回到前台再试。浏览器会缓存失败的 import()，所以数据文件按 ?url 原样发布，重试时在地址后加 ?retry=n 才能真去网络取。
 - 下载中显示微光骨架（.v3-ava--loading / .v3-tile__media.is-loading），只有数据到了而这个人确实没头像才显示字章。
 - 旧页面跨发布（线上首页已换新版本）时自动刷新一次（每会话一次）；偶发网络失败不刷新。验证脚本 node work/roles-fail.mjs <base> <失败次数>。
+- 单张头像（10-20 用户截图老子、孔子裂图）：Avatar 失败后隔 1.5s / 4s 换地址（?r=n）重试，三次都失败才退字章；图片下载完才打 data-ok，之前用 CSS content 换成底色块，任何时候都不露浏览器裂图图标。
+- 离线缓存 public/sw.js（只在线上注册）：/portraits 缓存优先+后台更新、/fonts 与 /assets 缓存优先，忽略重试参数；改规则要把 VERSION 加一。vercel.json 给 /portraits 7 天、/fonts 30 天缓存头。
+- 卡片背面的领域印章改横排小章，数字格恢复全宽，「后世评价」不再折行。
