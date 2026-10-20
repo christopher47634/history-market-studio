@@ -10,7 +10,7 @@ import { figures, figureById, dynastyOrder, loadFigure } from "../data.js";
 import { lifePoints } from "../v2/model.js";
 import { BOARDS, DOMAIN_BOARDS, SPECIAL_BOARDS, SORTS, boardById, boardStats, filterFigures } from "./boards.js";
 import { AnimatedNumber, Scroll, Segmented } from "./bits.jsx";
-import { Avatar, lifeYears as years, useRoles } from "./people.jsx";
+import { Avatar, lifeYears as years, rolesReady, useRoles } from "./people.jsx";
 import { eraOf } from "./eras.js";
 import { ChartIcon, CloseIcon, CompareIcon, GoIcon, ICON, PlusIcon, SearchIcon } from "./icons.jsx";
 
@@ -221,9 +221,9 @@ function Tile({ f, role, at, i, onOpen, onToggle }) {
         transition={{ duration: 0.8, ease: EASE_EXPO, delay: Math.min(i, 24) * 0.028 }}>
         <motion.div className="v3-tile__inner" initial={false} animate={{ rotateY: flip ? 180 : 0 }} transition={reduce ? { duration: 0 } : SPRING_FLIP}>
           <button type="button" className="v3-tile__face v3-tile__front" onClick={open} aria-label={`${f.name}：查看完整角色卡`} tabIndex={flip ? -1 : 0}>
-            <span className={`v3-tile__media${role?.img ? "" : " is-seal"}`}>
+            <span className={`v3-tile__media${role?.img ? "" : rolesReady() ? " is-seal" : " is-loading"}`}>
               <Avatar f={f} role={role} size="tile" />
-              {!role?.img && <i aria-hidden="true">{f.name}</i>}
+              {!role?.img && rolesReady() && <i aria-hidden="true">{f.name}</i>}
             </span>
             <span className="v3-tile__score" title="后世评价"><small>后世</small><b>{f.legacy.score}</b></span>
             <span className="v3-tile__body">

@@ -132,3 +132,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## 2026-10-19 迷你走势配色（用户定）
 
 - 卡片墙、列表、角色卡上的迷你走势分两段各自上色：实线是生前，去世时的势比出生时高为红、低为绿；虚线是身后，后世评价比去世时的势高为红、低为绿；相等为中性灰。红涨绿跌（A 股习惯），只按评分客观比较。逻辑在 RolesView.jsx 的 Spark。
+
+## 2026-10-20 头像 / 简介加载（用户：角色卡和头像不见了）
+
+- 头像和简介在 src/v2/roles.generated.js，按需下载。原来下载失败一次就记成空表、永不重试，整站退成姓氏字章，看起来像头像被删了。图片文件本身一直都在（public/portraits 299 张都在 git 里，来源记录在 data/v2/portraits.json）。
+- 现在：失败不缓存，1s/2s/4s 重试三次，网络恢复或页面回到前台再试。浏览器会缓存失败的 import()，所以数据文件按 ?url 原样发布，重试时在地址后加 ?retry=n 才能真去网络取。
+- 下载中显示微光骨架（.v3-ava--loading / .v3-tile__media.is-loading），只有数据到了而这个人确实没头像才显示字章。
+- 旧页面跨发布（线上首页已换新版本）时自动刷新一次（每会话一次）；偶发网络失败不刷新。验证脚本 node work/roles-fail.mjs <base> <失败次数>。

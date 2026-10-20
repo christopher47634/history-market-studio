@@ -47,6 +47,7 @@ export async function launch({ width = 1440, height = 900, mobile = false, scale
 
   const page = {
     send, consoleErrors, setViewport,
+    on: (fn) => listeners.push(fn),
     async goto(url, settle = 1200) {
       const loaded = new Promise((r) => listeners.push((m) => m.method === "Page.loadEventFired" && r()));
       await send("Page.navigate", { url });
