@@ -34,6 +34,8 @@ export default defineConfig({
     // 显式目标：旧版 iOS Safari 也能解析（esbuild 只转语法、不补方法，方法调用已在源码里改成兼容写法）。
     target: ["es2020", "safari14"],
     chunkSizeWarningLimit: 500,
+    // 每人一个的 JSON 必须是独立文件：小于 4KB 的资源 Vite 默认内联成 data: 地址，而网站的内容安全策略不允许 fetch data:，那几个人会加载失败。
+    assetsInlineLimit: (file) => (file.endsWith(".json") ? false : undefined),
     rollupOptions: {
       output: {
         manualChunks(id) {

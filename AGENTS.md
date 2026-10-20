@@ -142,3 +142,11 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - 单张头像（10-20 用户截图老子、孔子裂图）：Avatar 失败后隔 1.5s / 4s 换地址（?r=n）重试，三次都失败才退字章；图片下载完才打 data-ok，之前用 CSS content 换成底色块，任何时候都不露浏览器裂图图标。
 - 离线缓存 public/sw.js（只在线上注册）：/portraits 缓存优先+后台更新、/fonts 与 /assets 缓存优先，忽略重试参数；改规则要把 VERSION 加一。vercel.json 给 /portraits 7 天、/fonts 30 天缓存头。
 - 卡片背面的领域印章改横排小章，数字格恢复全宽，「后世评价」不再折行。
+
+## 2026-10-20 健壮性（用户：要求完全没有 bug，别再出现头像不见这类问题）
+
+- 一条总规矩：任何按需下载的东西，失败都不能被缓存成「永久失败」，必须自动重试、给出可点的重试、并且不露裂图或空白。已覆盖：头像数据（people.jsx）、单张头像（Avatar）、每人的数据文件（data.client.js 用 fetch 重试 3 次，错误页带「重试」按钮，换人或点重试都会清掉旧错误）、主程序脚本（public/boot-watch.js 在骨架屏上提示并给重新载入）。
+- 每人的 JSON 必须是独立文件：vite.config 把 JSON 排除出内联（assetsInlineLimit），否则小文件变成 data: 地址，被 CSP 的 connect-src 拦住。test:production 会数够 300 个。
+- 字体文件名带内容哈希（pipeline/fonts.py、era-fonts.py 的 put()），所以 vercel.json 可以给 /fonts 一年不可变缓存；fonts.py 会同步 index.html 的预加载链接。千万别改回同名文件，否则浏览器缓存里的旧分片配新的 unicode-range 会缺字。
+- 离线缓存 public/sw.js：只缓存文件名带哈希的 /fonts、/assets（缓存优先），头像用条件请求后台更新；改规则把 VERSION 加一。
+- 新增三套测试：npm run test:faults（对每类资源注入网络故障，要先起预览服务）、npm run test:monkey（随机点按/按键/滚动/改窗口，每步查崩溃、报错、横向溢出；参数：步数 种子）、以及原有的 test:app / test:cross。改动加载逻辑后三套都要跑。

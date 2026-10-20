@@ -6,7 +6,7 @@
 源字体用本机已安装的文件（C:\\Windows\\Fonts），也可以用环境变量 HMS_SERIF / HMS_LATIN 指定。
 用法：python pipeline/fonts.py      （数据或界面文字改了以后重跑；test:ui 会检查有没有字没覆盖到）
 """
-import collections, io, os, pathlib
+import collections, hashlib, io, os, pathlib
 from fontTools.ttLib import TTFont
 from fontTools.varLib import instancer
 from fontTools import subset
@@ -69,13 +69,18 @@ OUT.mkdir(parents=True, exist_ok=True)
 for old in OUT.glob("hms-*.woff2"):
     old.unlink()
 
+def put(base, data):
+    """写文件，文件名带内容哈希（hms-sans-3.ab12cd34.woff2）。内容变了名字就变，浏览器和离线缓存才能放心长期缓存，不会把旧分片配上新的 unicode-range。"""
+    name = f"{base}.{hashlib.sha1(data).hexdigest()[:8]}.woff2"
+    (OUT / name).write_bytes(data)
+    return name
+
 faces = []
 serif = instancer.instantiateVariableFont(TTFont(SERIF), {"wght": (400, 800)})
 for i, chars in enumerate(slices):
     text = "".join(chars) + (ASCII if i == 0 else "")
     data = woff2(serif, text, ["kern", "palt", "vpal", "liga"])
-    name = f"hms-serif-{i}.woff2"
-    (OUT / name).write_bytes(data)
+    name = put(f"hms-serif-{i}", data)
     faces.append((name, "HMS Serif", "400 800", ranges(text), len(data)))
 
 # 界面小字：思源黑体可变字体 Noto Sans SC（OFL），字重轴 400–600。Windows 上中文小字默认落到微软雅黑，10–12px 发虚；
@@ -84,8 +89,7 @@ sans = instancer.instantiateVariableFont(TTFont(SANS), {"wght": (400, 600)})
 for i, chars in enumerate(slices):
     text = "".join(chars)
     data = woff2(sans, text, ["kern", "palt", "vpal"])
-    name = f"hms-sans-{i}.woff2"
-    (OUT / name).write_bytes(data)
+    name = put(f"hms-sans-{i}", data)
     faces.append((name, "HMS Sans", "400 600", ranges(text), len(data)))
 
 latin = TTFont(LATIN)
@@ -96,8 +100,8 @@ if "opsz" in axes:
 latin = instancer.instantiateVariableFont(latin, pin)
 lat_text = ASCII + "".join(chr(c) for c in range(0xA0, 0x100)) + "–—‘’“”…·•→←↑↓↗−×÷±≈≤≥€£¥%‰"
 data = woff2(latin, lat_text, ["kern", "liga", "calt", "tnum", "case", "ss01", "cv11", "zero"])
-(OUT / "hms-latin.woff2").write_bytes(data)
-faces.append(("hms-latin.woff2", "HMS Latin", "300 700", ranges(lat_text), len(data)))
+latin_name = put("hms-latin", data)
+faces.append((latin_name, "HMS Latin", "300 700", ranges(lat_text), len(data)))
 
 css = ["/* 由 pipeline/fonts.py 生成，勿手改。字体：Noto Serif SC、Noto Sans SC、Inter，均为 SIL Open Font License 1.1（见 /fonts/OFL.txt）。 */"]
 for name, family, weight, urange, _ in faces:
@@ -112,3 +116,11 @@ for name, family, weight, urange, _ in faces:
 )
 total = sum(f[4] for f in faces)
 print(f"字体：宋体、黑体各 {len(slices)} 片（{len(ranked)} 字），西文 1 片；共 {total / 1024:.0f} KB，最大一片 {max(f[4] for f in faces) / 1024:.0f} KB")
+
+# 首屏预加载的西文字体文件名带哈希，换了字体要同步 index.html 里的 <link rel="preload">。
+html = ROOT / "index.html"
+txt = html.read_text(encoding="utf-8")
+new = __import__("re").sub(r'href="/fonts/hms-latin[^"]*\.woff2"', f'href="/fonts/{latin_name}"', txt)
+if new != txt:
+    html.write_text(new, encoding="utf-8")
+    print("index.html 的西文字体预加载已更新为", latin_name)

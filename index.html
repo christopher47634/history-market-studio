@@ -11,7 +11,7 @@
     <meta name="application-name" content="历史行情局" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="preload" href="/fonts/hms-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/hms-latin.b7d314ba.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/png" href="/assets/apple-touch-icon.png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta name="description" content="把历史人物的关键节点转换成可缩放、可对比的叙事行情图。" />
@@ -23,6 +23,7 @@
     <title>历史行情局</title>
     <!-- 在首帧之前定好主题，避免先闪一下深色再变浅色。脚本保持单行：CSP 哈希按这一行算，不受换行符影响。 -->
     <script>document.documentElement.dataset.theme = location.hash === "#c" ? "cinnabar" : "jade";</script>
+    <script src="/boot-watch.js" defer></script>
     <style>
       /* 首屏骨架：脚本加载完之前就能看到页面框架（React 挂载后整体替换）。 */
       :root { --sk-bg: #0a0e0d; --sk-card: #111816; --sk-line: #25302c; --sk-ink: #dce5e0; --sk-ink3: #66726c; --sk-accent: #6fd6a8; }

@@ -183,6 +183,7 @@ export function App() {
   const [page, setPage] = useState(viewFromUrl);
   const [loaded, setLoaded] = useState({});
   const [error, setError] = useState(null);
+  const [tries, setTries] = useState(0); // 点「重试」时加一，让加载人物数据的 effect 重跑
   const [axis, setAxis] = useState(null);
   const [mode, setMode] = useState("line");
   const [textView, setTextView] = useState(false);
@@ -231,6 +232,7 @@ export function App() {
   useEffect(() => {
     let alive = true;
     const want = [ids.left, ids.right].filter(Boolean);
+    setError(null); // 换了人或点了重试，上一次的失败不再算数
     Promise.all(want.map((id) => loadFigure(id)))
       .then((list) => alive && setLoaded(Object.fromEntries(list.map((f) => [f.id, f.v2]))))
       .catch((e) => alive && setError(e));
@@ -240,7 +242,7 @@ export function App() {
     history.replaceState(history.state, "", url);
     try { localStorage.setItem(STORE, JSON.stringify(ids)); } catch {}
     return () => { alive = false; };
-  }, [ids.left, ids.right]);
+  }, [ids.left, ids.right, tries]);
 
   const figs = [loaded[ids.left], ids.right ? loaded[ids.right] : null].filter(Boolean);
   const ready = figs.length === (ids.right ? 2 : 1);
@@ -324,7 +326,13 @@ export function App() {
     return () => removeEventListener("scroll", on);
   }, []);
 
-  if (error) return <main className="v3-shell v3-fail" role="alert"><b>人物数据加载失败</b><small>{String(error.message || error)}，请刷新重试</small></main>;
+  if (error) return (
+    <main className="v3-shell v3-fail" role="alert">
+      <b>人物数据没加载下来</b>
+      <small>网络可能抖了一下（已自动重试过几次）：{String(error.message || error)}</small>
+      <button type="button" className="v3-btn" onClick={() => setTries((n) => n + 1)}>重试</button>
+    </main>
+  );
   const personOf = (id) => scene?.people.find((p) => p.figure.id === id);
   return (
     <>

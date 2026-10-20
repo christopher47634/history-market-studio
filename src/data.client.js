@@ -9,16 +9,32 @@ export const dynastyOrder = ["先秦", "秦汉", "三国", "魏晋南北朝", "�
 export const figures = index.map((f) => ({ ...f, events: [], light: true }));
 export const figureById = Object.fromEntries(figures.map((f) => [f.id, f]));
 
-const details = import.meta.glob("../data/v2/client/*.json", { import: "default" });
+// 每人一个小 JSON。10-20：原来用动态 import 加载，失败会被浏览器缓存，一次网络抖动就让整页停在「加载失败」。
+// 现在只把文件地址（带哈希）放进主包，用 fetch 取：失败不会被缓存，按 0.8s / 1.6s / 3.2s 重试三次。
+const detailUrls = import.meta.glob("../data/v2/client/*.json", { query: "?url", import: "default", eager: true });
 const cache = new Map();
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// 取某人的完整数据（旧界面结构 + v2）。同一人只加载一次。
+async function fetchDetail(url) {
+  let last;
+  for (let i = 0; i < 4; i++) {
+    try {
+      const res = await fetch(url, { cache: i ? "reload" : "default" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (e) { last = e; if (i < 3) await wait(800 * 2 ** i); }
+  }
+  throw last;
+}
+
+// 取某人的完整数据（旧界面结构 + v2）。同一人只加载一次，失败不缓存。
 export function loadFigure(id) {
   const light = figureById[id];
   if (!light) return Promise.reject(new Error(`未知人物：${id}`));
   if (!cache.has(id)) {
-    const loader = details[`../data/v2/client/${id}.json`];
-    cache.set(id, loader().then((v2) => toLegacyFigure(v2, light)).catch((err) => { cache.delete(id); throw err; }));
+    const url = detailUrls[`../data/v2/client/${id}.json`];
+    if (!url) return Promise.reject(new Error(`缺少人物数据：${id}`));
+    cache.set(id, fetchDetail(url).then((v2) => toLegacyFigure(v2, light)).catch((err) => { cache.delete(id); throw err; }));
   }
   return cache.get(id);
 }

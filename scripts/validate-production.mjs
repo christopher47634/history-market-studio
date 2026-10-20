@@ -75,6 +75,16 @@ for (const lic of ["LICENSES.md", "OFL.txt", "IPA-LICENSE.md"]) if (!eraFiles.so
 if (eraWoff.length < 6 || eraWoff.some((f) => f.size > 170 * 1024)) fail("朝代字体缺失或有分片超过 170KB");
 if (eraWoff.reduce((s, f) => s + f.size, 0) > 2 * 1024 * 1024) fail("朝代字体总量超过 2MB");
 woff.push(...eraWoff);
+// 字体文件名必须带内容哈希（hms-sans-3.ab12cd34.woff2）：vercel.json 给 /fonts 设了一年的不可变缓存，同名文件换内容会让旧缓存配上新 CSS、缺字。
+for (const f of woff) if (!/\.[0-9a-f]{8}\.woff2$/.test(f.name)) fail(`字体文件名没有内容哈希：${f.name}（先跑 python pipeline/fonts.py / era-fonts.py）`);
+const preload = html.match(/<link rel="preload" href="(\/fonts\/[^"]+)"/)?.[1];
+if (!preload || !woff.some((f) => preload.endsWith(f.name))) fail(`index.html 预加载的字体 ${preload} 在 dist 里不存在`);
+for (const f of ["sw.js", "boot-watch.js"]) await stat(path.join(root, "dist", "client", f)).catch(() => fail(`dist 里缺少 ${f}`));
+const swText = await readFile(path.join(root, "dist", "client", "sw.js"), "utf8");
+if (!/HASHED/.test(swText)) fail("离线缓存没有限制只缓存带哈希的文件");
+// 每人一个的 JSON 必须是独立文件（不能被内联成 data: 地址，CSP 不允许 fetch data:）。
+const jsonAssets = built.filter((a) => a.name.endsWith(".json")).length;
+if (jsonAssets < 300) fail(`每人数据文件只有 ${jsonAssets} 个独立 JSON，应有 300 个（可能被内联了）`);
 for (const item of built) {
   if (
     item.name.endsWith(".js") &&

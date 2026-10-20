@@ -7,7 +7,7 @@
 也可用环境变量 HMS_FONTS_SRC 指定目录。输出：public/fonts/era/*.woff2、src/v3/era-fonts.css。
 用法：python pipeline/era-fonts.py     （数据改了以后重跑；test:ui 会检查人名有没有字没覆盖到）
 """
-import collections, io, json, os, pathlib, re, shutil
+import collections, io, json, os, pathlib, re, shutil, hashlib
 from fontTools.ttLib import TTFont
 from fontTools import subset
 
@@ -73,6 +73,12 @@ OUT.mkdir(parents=True)
 faces = []  # (file, family, weight, unicode-range, bytes)
 slug = lambda fam: fam.replace("HMS ", "").lower()
 
+def put(base, data):
+    """文件名带内容哈希，内容变了名字就变（理由同 pipeline/fonts.py）。"""
+    name = f"{base}.{hashlib.sha1(data).hexdigest()[:8]}.woff2"
+    (OUT / name).write_bytes(data)
+    return name
+
 # 标题字：每款一个文件，只含用它当人名字体的那几组人物的名字。
 for fam, spec in ERAS["faces"].items():
     groups = [g for g, v in ERAS["groups"].items() if v["name"] == fam]
@@ -85,8 +91,7 @@ for fam, spec in ERAS["faces"].items():
         continue
     src = find(spec["srcBold"] if weight >= 500 and spec.get("srcBold") else spec["src"])
     data = woff2(src, chars + "·")
-    name = f"{slug(fam)}-name.woff2"
-    (OUT / name).write_bytes(data)
+    name = put(f"{slug(fam)}-name", data)
     faces.append((name, fam, weight, ranges(chars + "·"), len(data)))
 
 # 正文字：用它当正文字体的那几组人物数据里的全部汉字，按字频分片。
@@ -102,8 +107,7 @@ for fam, spec in ERAS["faces"].items():
     for i, chars in enumerate(slices):
         text = "".join(chars)
         data = woff2(src, text)
-        name = f"{slug(fam)}-{i}.woff2"
-        (OUT / name).write_bytes(data)
+        name = put(f"{slug(fam)}-{i}", data)
         faces.append((name, fam, 400, ranges(text), len(data)))
 
 css = ["/* 由 pipeline/era-fonts.py 生成，勿手改。朝代字体（分组见 eras.json）；许可证与来源见 /fonts/era/LICENSES.md。 */"]
