@@ -173,8 +173,11 @@ await check("朱砂切回玉衡：图表画布换回深色（不残留浅色网�
   assert.ok(lum < 80, `玉衡下缩放条应是深色，实际亮度 ${lum}`);
 });
 // 下拉框必须浮在最上层：弹层中心点最上面的元素要属于弹层本身，不能被图表卡片盖住。
+// 换主题有一段不到一秒的圆形揭开（View Transition），期间整页点不到东西：等它结束再往下测。
+const themeSettled = async () => { for (let i = 0; i < 60 && (await page.eval(`document.documentElement.classList.contains("vt-theme")`)); i++) await page.sleep(50); };
 const popOnTop = () => page.eval(`(()=>{const p=document.querySelector('.v3-picker__pop');if(!p)return 'no-pop';const r=p.getBoundingClientRect();const pts=[[.5,.5],[.5,.85],[.2,.7]].map(([fx,fy])=>document.elementFromPoint(r.left+r.width*fx,r.top+r.height*fy));return pts.every(e=>p.contains(e))?'ok':pts.map(e=>e&&e.className).join('|')})()`);
 await check("人物下拉框浮在图表之上，可以直接点选", async () => {
+  await themeSettled();
   await page.eval(`document.querySelectorAll('.v3-picker__btn')[1].click()`);
   await page.sleep(400);
   assert.equal(await popOnTop(), "ok");

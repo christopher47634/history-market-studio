@@ -131,8 +131,10 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-legend span.is-up, .v3-legend span.is-down { font-weight: 600; }
 .v3-legend small { font: 12px/1 var(--font-sans); color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; }
 .v3-chart__loading { position: absolute; inset: 0; display: grid; place-content: center; gap: 12px; justify-items: center; color: var(--ink-3); font-size: 13px; }
-.v3-chart__loading span { width: 120px; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), transparent); background-size: 200% 100%; animation: sweep 1.2s linear infinite; }
-@keyframes sweep { to { background-position: -200% 0; } }
+/* 和首屏骨架（index.html）同一条线：骨架里在描的线，到这里接着描，图表画好后由真实走势的画线动画接上。 */
+.v3-chart__loading svg { width: min(420px, 60vw); height: 120px; overflow: visible; }
+.v3-chart__loading path { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: .75; filter: drop-shadow(0 0 6px var(--accent)); animation: load-draw 1.6s var(--ease-io) infinite alternate; }
+@keyframes load-draw { to { stroke-dashoffset: 0; } }
 .v3-chart__hint { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: center; margin: 6px 4px 12px; font-size: 12px; color: var(--ink-3); }
 .v3-chart__hint span { display: inline-flex; gap: 5px; align-items: center; }
 .v3-chart__hint em { margin-left: auto; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; color: var(--accent); }
@@ -175,6 +177,9 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
   -webkit-mask-image: radial-gradient(ellipse 72% 78% at 52% 54%, rgba(0,0,0,.98) 34%, rgba(0,0,0,.55) 66%, transparent 100%);
           mask-image: radial-gradient(ellipse 72% 78% at 52% 54%, rgba(0,0,0,.98) 34%, rgba(0,0,0,.55) 66%, transparent 100%); }
 .v3-atlas.is-ready { opacity: 1; }
+/* 舆图第一次出现：淡入的同时从略大一点落定（像镜头对焦），之后就不再动。 */
+.v3-atlas iframe { transform: scale(1.04); transition: transform 1.8s var(--ease-expo); }
+.v3-atlas.is-ready iframe { transform: none; }
 .v3-atlas iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; }
 .v3-atlas::after { content: ""; position: absolute; inset: 0; }
 [data-theme="jade"] .v3-atlas iframe { filter: sepia(.15) saturate(1.25) brightness(.44) contrast(1.22); opacity: .88; }
@@ -182,6 +187,8 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 [data-theme="cinnabar"] .v3-atlas iframe { filter: saturate(.85) contrast(.92) brightness(1.02); opacity: .6; }
 [data-theme="cinnabar"] .v3-atlas::after { background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 70%, transparent) 0%, color-mix(in srgb, var(--surface) 22%, transparent) 34%, color-mix(in srgb, var(--surface) 34%, transparent) 100%); }
 .v3-atlas__stamp { position: absolute; z-index: 1; right: 84px; bottom: 74px; margin: 0; font: 500 11px/1 var(--font-mono); color: var(--ink-3); letter-spacing: .06em; opacity: .9; }
+.v3-atlas__stamp { animation: stamp-in .5s var(--ease-out) both; }
+@keyframes stamp-in { from { opacity: 0; transform: translateY(4px); } }
 .v3-atlas__stamp b { font: 600 14px/1 var(--font-serif); color: var(--ink-2); margin-right: 8px; letter-spacing: .1em; }
 .v3-chart-canvas { z-index: 1; }
 .v3-reader { position: sticky; top: 18px; padding: 22px 22px 16px; display: flex; flex-direction: column; min-height: 420px; }

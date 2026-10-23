@@ -339,6 +339,14 @@ export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pin
     const option = buildOption({ scene, mode, level, window, T, width: c.getWidth(), pinned, first });
     state.current.colW = option.meta.colW;
     delete option.meta;
+    // 换层级时折线的点数变了（全景只连阶段事件，放大后连上每个事件）：ECharts 会按序号把旧点挪到新点，
+    // 中间几帧折线被压扁、冒尖刺。层级一变就直接换数据；视窗和纵轴的平滑过渡由 setWindow 的补间负责。
+    const prevLevel = state.current.drawnLevel;
+    state.current.drawnLevel = level.key;
+    if (!first && prevLevel && prevLevel !== level.key) {
+      option.animationDurationUpdate = 0;
+      option.series.forEach((s) => { s.animationDurationUpdate = 0; });
+    }
     option.dataZoom[0].startValue = option.dataZoom[1].startValue = window[0];
     option.dataZoom[0].endValue = option.dataZoom[1].endValue = window[1];
     c.setOption(option, { replaceMerge: ["series"], lazyUpdate: false });
@@ -447,12 +455,41 @@ export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pin
     };
   }, [ready, scene, mode, theme, onHover, onPin]);
 
+  // 按钮、双击、Esc、方向键换视窗：用 560ms 的补间把视窗从当前位置推到目标（A→B 用 easeInOutQuart），
+  // 纵轴每帧按途中的视窗同步伸缩，像镜头推拉；滚轮和拖动仍然是即时的。减少动效时直接跳。
+  const tween = useRef(0);
+  useEffect(() => () => cancelAnimationFrame(tween.current), []);
   const setWindow = (w) => {
+    const c = chart.current;
+    if (!c) return;
     const [lo, hi] = range();
     const width = Math.min(hi - lo, w[1] - w[0]);
     let a = Math.max(lo, w[0]);
     a = Math.min(a, hi - width);
-    chart.current?.dispatchAction({ type: "dataZoom", startValue: a, endValue: a + width });
+    const to = [a, a + width];
+    const from = state.current.window ?? to;
+    cancelAnimationFrame(tween.current);
+    const calm = matchMedia("(prefers-reduced-motion: reduce)").matches || document.hidden;
+    if (calm || (Math.abs(from[0] - to[0]) < 1e-6 && Math.abs(from[1] - to[1]) < 1e-6)) {
+      c.dispatchAction({ type: "dataZoom", startValue: to[0], endValue: to[1] });
+      return;
+    }
+    const t0 = performance.now(), DUR = 560;
+    const ease = (t) => (t < 0.5 ? 8 * t ** 4 : 1 - (-2 * t + 2) ** 4 / 2);
+    // 宽度按对数插值：从一生拉到十年，每一帧放大的倍数一样，推镜头才匀。
+    const lw0 = Math.log(from[1] - from[0]), lw1 = Math.log(to[1] - to[0]);
+    const c0 = (from[0] + from[1]) / 2, c1 = (to[0] + to[1]) / 2;
+    const step = (now) => {
+      const k = ease(Math.max(0, Math.min(1, (now - t0) / DUR))); // 夹住：rAF 时间戳可能早于 t0
+      const span = Math.exp(lw0 + (lw1 - lw0) * k), mid = c0 + (c1 - c0) * k;
+      const s0 = Math.max(lo, Math.min(mid - span / 2, hi - span));
+      const win = [s0, s0 + span];
+      const [ylo, yhi, ystep] = yRange(scene.people, levelOf(Math.min(win[1], scene.lifeEnd + 2) - win[0]), win);
+      c.setOption({ animationDurationUpdate: 0, yAxis: [{ min: ylo, max: yhi, interval: ystep }] }, { lazyUpdate: false, silent: true });
+      c.dispatchAction({ type: "dataZoom", startValue: win[0], endValue: win[1] });
+      if (k < 1) tween.current = requestAnimationFrame(step);
+    };
+    tween.current = requestAnimationFrame(step);
   };
   const api = {
     // 以固定的节点为中心缩放；没有固定节点就以当前视窗中心为准。

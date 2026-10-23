@@ -124,8 +124,12 @@ function Readout({ person, hover, level }) {
 function Strip({ nodes, pinned, hover, onPick }) {
   const ref = useRef(null);
   useEffect(() => {
-    const el = ref.current?.querySelector(".is-pinned");
-    el?.scrollIntoView({ block: "nearest", inline: "center", behavior: document.hidden ? "auto" : "smooth" });
+    // 只在时间条里横向滚到居中；scrollIntoView 会连带滚动整页，点一下图上的节点页面就往上跳一截。
+    const box = ref.current, el = box?.querySelector(".is-pinned");
+    if (!box || !el) return;
+    const b = box.getBoundingClientRect(), r = el.getBoundingClientRect();
+    const left = box.scrollLeft + (r.left - b.left) - (box.clientWidth - r.width) / 2;
+    box.scrollTo({ left: Math.max(0, left), behavior: document.hidden ? "auto" : "smooth" });
   }, [pinned?.id]);
   return (
     <ol className="v3-strip" ref={ref} aria-label="视窗内的事件" data-hscroll="">
@@ -291,7 +295,27 @@ export function App() {
   }, [prev, next, pin, go]);
 
   const inWindow = order.filter((n) => n.x >= view.window[0] - 0.5 && n.x <= view.window[1] + 0.5 && (view.level.key !== "overview" || n.kind !== "sub"));
-  const setTheme = (k) => { location.hash = k; };
+  // 换主题：从主题开关的位置扩出一个圆，新主题在圆里一次画好（View Transitions），
+  // 不再让几百处颜色同时过渡、中途糊成一片灰。不支持或减少动效时直接换。
+  const setTheme = (k) => {
+    if (k === themeKey) return;
+    const root = document.documentElement;
+    if (!("startViewTransition" in document) || matchMedia("(prefers-reduced-motion: reduce)").matches || document.hidden) { location.hash = k; return; }
+    const r = document.querySelector('.v3-seg[aria-label="主题"]')?.getBoundingClientRect();
+    const x = r ? r.left + r.width / 2 : innerWidth - 60, y = r ? r.top + r.height / 2 : 30;
+    root.style.setProperty("--vt-x", `${x}px`);
+    root.style.setProperty("--vt-y", `${y}px`);
+    root.style.setProperty("--vt-r", `${Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y))}px`);
+    root.classList.add("vt-theme");
+    // 回调里不能等 requestAnimationFrame：过渡在截新画面之前会暂停渲染，那一帧永远不来，过渡就卡到超时。
+    // flushSync 会同步跑完提交和图表的重画（同步更新的 effect 在 flushSync 返回前就执行了），不需要再等。
+    const t = document.startViewTransition(() => {
+      history.replaceState(null, "", `${location.pathname}${location.search}#${k}`);
+      flushSync(() => setThemeKey(k));
+    });
+    t.ready.catch(() => {});
+    t.finished.catch(() => {}).finally(() => root.classList.remove("vt-theme"));
+  };
   // 提示条：复制链接等操作的结果，玻璃胶囊从底部浮起，2 秒后退场。
   const [toast, setToast] = useState(null);
   const say = useCallback((text) => { setToast({ text, n: Date.now() }); }, []);
@@ -407,7 +431,7 @@ export function App() {
           {scene && <p className="v3-sr" id="v3-chart-summary">{chartSummary(scene)}</p>}
           <div className="v3-chart__stage" ref={chartBox}>
             <AtlasBackdrop year={atlasYear(scene, hover?.node ?? pin)} />
-            {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pin} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
+            {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pin} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><svg viewBox="0 0 420 120" aria-hidden="true"><path pathLength="1" d="M2 112 C40 110 62 100 92 92 S140 58 170 64 S214 96 236 80 S280 24 312 30 S370 14 418 10" /></svg>正在排列人生节点</div>}
             <Legend scene={scene} level={view.level} mode={mode} node={onChart(scene, hover?.node) ?? pin} live={!!onChart(scene, hover?.node)} />
             <Dock hover={hover} pinned={pin} scene={scene} level={view.level} mode={mode} />
           </div>

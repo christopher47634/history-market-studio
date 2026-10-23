@@ -28,7 +28,8 @@ export function AnimatedNumber({ value, digits = 0 }) {
     const t0 = performance.now();
     let raf = 0;
     const tick = (t) => {
-      const k = Math.min(1, (t - t0) / 450);
+      // rAF 给的是这一帧开始的时刻，可能比 t0 还早一点：不夹住的话 k 是负数，缓动外推，读数会先反向冲过头（95→103→38）。
+      const k = Math.max(0, Math.min(1, (t - t0) / 450));
       const v = start + (value - start) * (1 - Math.pow(1 - k, 3));
       from.current = v;
       setShown(v);

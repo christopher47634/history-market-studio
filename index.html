@@ -25,27 +25,51 @@
     <script>document.documentElement.dataset.theme = location.hash === "#c" ? "cinnabar" : "jade";</script>
     <script src="/boot-watch.js" defer></script>
     <style>
-      /* 首屏骨架：脚本加载完之前就能看到页面框架（React 挂载后整体替换）。 */
+      /* 首屏骨架：脚本到之前就按真实页面的版式摆好（导航、标题、两格人物、走势卡 + 右栏），React 挂上来时不跳版。
+         走势卡里一条线在反复描出来，正式图表的画线动画接着它。 */
       :root { --sk-bg: #0a0e0d; --sk-card: #111816; --sk-line: #25302c; --sk-ink: #dce5e0; --sk-ink3: #66726c; --sk-accent: #6fd6a8; }
       :root[data-theme="cinnabar"] { --sk-bg: #f4f1ea; --sk-card: #fbfaf6; --sk-line: #e2dcd0; --sk-ink: #25231e; --sk-ink3: #9a9488; --sk-accent: #b8412e; }
       html, body { margin: 0; background: var(--sk-bg); color: var(--sk-ink); font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; }
-      .sk { max-width: 1480px; margin: 0 auto; padding: 22px 28px; box-sizing: border-box; }
+      .sk-bar { max-width: 1480px; margin: 0 auto; padding: 14px 28px; box-sizing: border-box; height: 74px; display: flex; align-items: center; gap: 20px; }
       .sk-brand { display: flex; align-items: center; gap: 10px; font: 600 18px/1.1 "Songti SC", "STSong", serif; letter-spacing: .08em; }
       .sk-brand svg { width: 30px; height: 30px; fill: none; stroke: var(--sk-accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .sk-pills { display: flex; gap: 10px; margin: 22px 0 16px; }
-      .sk-pills i { width: 212px; height: 48px; border-radius: 99px; border: 1px solid var(--sk-line); background: var(--sk-card); }
-      .sk-card { height: min(70vh, 720px); border-radius: 18px; border: 1px solid var(--sk-line); background: var(--sk-card); display: grid; place-content: center; justify-items: center; gap: 12px; color: var(--sk-ink3); font-size: 13px; }
-      .sk-card b { width: 120px; height: 2px; background: linear-gradient(90deg, transparent, var(--sk-accent), transparent); background-size: 200% 100%; animation: sk 1.2s linear infinite; }
-      @keyframes sk { to { background-position: -200% 0; } }
-      @media (max-width: 720px) { .sk { padding: 14px 16px; } .sk-pills i { flex: 1; width: auto; } }
+      .sk-bar i { height: 40px; border-radius: 99px; border: 1px solid var(--sk-line); background: var(--sk-card); }
+      .sk-bar .sk-nav { width: 150px; margin-left: auto; margin-right: auto; }
+      .sk-bar .sk-tools { width: 380px; }
+      .sk-shell { max-width: 1480px; margin: 0 auto; padding: 22px 28px 40px; box-sizing: border-box; }
+      .sk-intro { margin: 6px 2px 18px; font: 700 32px/1.15 "Songti SC", "STSong", serif; letter-spacing: .02em; min-height: 63px; }
+      .sk-tickers { display: grid; grid-template-columns: 1fr 44px 1fr; gap: 12px; margin-bottom: 16px; }
+      .sk-tickers i { height: 82px; border-radius: 22px; border: 1px solid var(--sk-line); background: var(--sk-card); }
+      .sk-tickers i:nth-child(2) { height: 44px; align-self: center; border-radius: 50%; }
+      .sk-main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 18px; align-items: start; }
+      .sk-card { border-radius: 18px; border: 1px solid var(--sk-line); background: var(--sk-card); box-sizing: border-box; }
+      .sk-chart { height: clamp(651px, calc(60vh + 231px), 891px); display: grid; place-content: center; justify-items: center; gap: 14px; color: var(--sk-ink3); font-size: 13px; letter-spacing: .04em; }
+      .sk-side { height: 420px; }
+      .sk-chart svg { width: min(420px, 60vw); height: 120px; overflow: visible; }
+      .sk-chart path { fill: none; stroke: var(--sk-accent); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: .75; filter: drop-shadow(0 0 6px var(--sk-accent)); animation: sk-draw 1.6s cubic-bezier(.76, 0, .24, 1) infinite alternate; }
+      @keyframes sk-draw { to { stroke-dashoffset: 0; } }
+      @media (max-width: 1100px) { .sk-main { grid-template-columns: 1fr; } .sk-side { display: none; } }
+      @media (max-width: 720px) {
+        .sk-bar { height: 114px; padding: 14px 16px 6px; flex-wrap: wrap; align-content: flex-start; } .sk-bar .sk-tools { width: 140px; margin-left: auto; } .sk-bar .sk-nav { order: 3; width: 100%; margin: 0; }
+        .sk-shell { padding: 14px 16px 32px; } .sk-intro { font-size: 24px; min-height: 83px; }
+        .sk-tickers { grid-template-columns: 1fr; } .sk-tickers i { height: 70px; } .sk-tickers i:nth-child(2) { display: none; }
+        .sk-chart { height: calc(62vh + 400px); border-radius: 14px; }
+      }
+      @media (prefers-reduced-motion: reduce) { .sk-chart path { animation: none; stroke-dashoffset: 0; } }
     </style>
   </head>
   <body data-overlayscrollbars-initialize>
     <div id="root">
       <div class="sk" aria-busy="true">
-        <div class="sk-brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 23 11 15l5 5 6-9 6 6" /></svg>历史行情局</div>
-        <div class="sk-pills"><i></i><i></i></div>
-        <div class="sk-card"><b></b>正在排列人生节点</div>
+        <div class="sk-bar"><div class="sk-brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 23 11 15l5 5 6-9 6 6" /></svg>历史行情局</div><i class="sk-nav"></i><i class="sk-tools"></i></div>
+        <div class="sk-shell">
+          <div class="sk-intro">一个人的一生，画成一张走势</div>
+          <div class="sk-tickers"><i></i><i></i><i></i></div>
+          <div class="sk-main">
+            <div class="sk-card sk-chart"><svg viewBox="0 0 420 120" aria-hidden="true"><path pathLength="1" d="M2 112 C40 110 62 100 92 92 S140 58 170 64 S214 96 236 80 S280 24 312 30 S370 14 418 10" /></svg>正在排列人生节点</div>
+            <div class="sk-card sk-side"></div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.jsx"></script>

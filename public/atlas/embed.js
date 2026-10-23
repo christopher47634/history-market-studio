@@ -15,9 +15,34 @@
   let api = null;
   let pending = null;
   let first = true;
+  // 疆域换代时交叉淡化：先把旧的政权和邻国层复制一份叠在上面，新疆域画好后让旧的 650ms 淡出，
+  // 不再一帧硬切。光标连着扫过好几个朝代时，上一份还没淡完就直接撤掉，只留一层在淡。
+  let ghosts = [];
+  const crossfade = () => {
+    ghosts.forEach((g) => g.remove());
+    ghosts = ["grp-neighbors", "grp-polities"].map((id) => document.getElementById(id)).filter(Boolean).map((g) => {
+      const copy = g.cloneNode(true);
+      copy.removeAttribute("id");
+      copy.style.pointerEvents = "none";
+      g.after(copy);
+      return copy;
+    });
+    const mine = ghosts;
+    // 等新疆域落进 DOM（同一朝代换快照要先取快照数据）再开始淡。
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      mine.forEach((g) => {
+        const a = g.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 650, easing: "cubic-bezier(0.165, 0.84, 0.44, 1)", fill: "forwards" });
+        a.onfinish = () => { g.remove(); ghosts = ghosts.filter((x) => x !== g); };
+      });
+    }));
+  };
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const show = (year) => {
     if (!api) { pending = year; return; }
-    if (first) { first = false; api.locate({ year }); api.frame(VIEW); } else api.showYear(year);
+    if (first) { first = false; api.locate({ year }); api.frame(VIEW); return; }
+    const ghostsBefore = !calm && document.getElementById("grp-polities")?.childElementCount;
+    if (ghostsBefore) crossfade();
+    if (!api.showYear(year) && ghostsBefore) { ghosts.forEach((g) => g.remove()); ghosts = []; } // 疆域没变：不用淡
   };
   addEventListener("message", (e) => {
     if (e.source !== parent || !e.data || e.data.type !== "atlas:year") return;

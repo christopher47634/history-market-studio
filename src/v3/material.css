@@ -101,6 +101,11 @@ body { overflow-x: clip; }
 ::view-transition-new(root) { animation: vt-in .62s var(--ease-expo) both; }
 @keyframes vt-out { to { opacity: 0; filter: blur(8px); transform: scale(.992); } }
 @keyframes vt-in { from { opacity: 0; filter: blur(10px); transform: translateY(14px); } }
+/* 换主题：旧画面不动，新主题从主题开关的位置以圆形扩开（--vt-x/y/r 由 setTheme 写入）。切换那一刻关掉所有颜色过渡。 */
+html.vt-theme *, html.vt-theme *::before, html.vt-theme *::after { transition: none !important; }
+html.vt-theme::view-transition-old(root) { animation: none; }
+html.vt-theme::view-transition-new(root) { animation: theme-reveal .66s var(--ease-io) both; }
+@keyframes theme-reveal { from { clip-path: circle(0 at var(--vt-x) var(--vt-y)); } to { clip-path: circle(var(--vt-r) at var(--vt-x) var(--vt-y)); } }
 ::view-transition-group(role-portrait) { animation-duration: .55s; animation-timing-function: var(--ease-expo); }
 ::view-transition-old(role-portrait), ::view-transition-new(role-portrait) { animation-duration: .55s; height: 100%; object-fit: cover; }
 

@@ -47,7 +47,7 @@ export function AtlasBackdrop({ year }) {
     <div className={`v3-atlas${ready ? " is-ready" : ""}`} aria-hidden="true">
       {mounted && <iframe ref={frame} src="/atlas/index.html?embed=1&year=-221" sandbox="allow-scripts" title="江山时序历史地图" loading="lazy" tabIndex={-1} />}
       {ready && target != null && (
-        <p className="v3-atlas__stamp">
+        <p className="v3-atlas__stamp" key={early ? "early" : target}>
           {early ? <>舆图始于前 403 年</> : <>{yearText(target)} 年疆域</>}
         </p>
       )}
