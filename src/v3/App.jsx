@@ -4,7 +4,7 @@ import { flushSync } from "react-dom";
 import { figureById, loadFigure } from "../data.js";
 import { buildScene, readingOrder, LEVELS, candleOf, valueAt } from "./scene.js";
 import { LifeChart } from "./LifeChart.jsx";
-import { Atlas } from "./Atlas.jsx";
+import { AtlasBackdrop } from "./Atlas.jsx";
 import { Picker } from "./Picker.jsx";
 import { Reader } from "./Reader.jsx";
 import { RolesView } from "./RolesView.jsx";
@@ -179,6 +179,8 @@ function chartSummary(scene) {
 }
 
 // 「角色」页的地址是 ?view=roles（早先的 ?view=index 也认）。
+// 背景舆图跟哪一年：光标所在节点 → 固定的节点 → 第一个人的巅峰那年。
+const atlasYear = (scene, node) => node?.year ?? (scene?.people[0] ? scene.people[0].figure.born.year + scene.people[0].figure.peak.age : null);
 const viewFromUrl = () => (["roles", "index"].includes(new URLSearchParams(location.search).get("view")) ? "roles" : "chart");
 
 export function App() {
@@ -404,6 +406,7 @@ export function App() {
           </div>
           {scene && <p className="v3-sr" id="v3-chart-summary">{chartSummary(scene)}</p>}
           <div className="v3-chart__stage" ref={chartBox}>
+            <AtlasBackdrop year={atlasYear(scene, hover?.node ?? pin)} />
             {scene ? <LifeChart ref={chart} scene={scene} mode={mode} theme={themeKey} pinned={pin} onHover={onHover} onPin={onPin} onView={setView} initialWindow={initialWindow} /> : <div className="v3-chart__loading"><span />正在排列人生节点</div>}
             <Legend scene={scene} level={view.level} mode={mode} node={onChart(scene, hover?.node) ?? pin} live={!!onChart(scene, hover?.node)} />
             <Dock hover={hover} pinned={pin} scene={scene} level={view.level} mode={mode} />
@@ -415,8 +418,7 @@ export function App() {
           <Strip nodes={inWindow} pinned={pin} hover={hover} onPick={go} />
           {textView && scene && <TextTable scene={scene} pinned={pin} onPick={go} />}
         </section>
-        <div className="v3-side rise" style={{ "--d": 3 }}>
-          <Atlas year={(hover?.node ?? pin)?.year} person={(hover?.node ?? pin)?.figure?.name} />
+        <div className="rise" style={{ "--d": 3 }}>
           <Reader node={pin} prev={prev} next={next} onGo={go} onFocus={(n) => chart.current?.focus(n)} />
         </div>
       </main>
@@ -425,7 +427,7 @@ export function App() {
       <footer className="v3-foot">
         <p><b>怎么算的</b>势 = 权位档分 − 危局折损，所有人用同一把尺子；只有毛泽东达到 100，其余人最高 98。后世评价衡量历史分量，不等于褒扬。</p>
         <p><b>依据</b>古代人物引自正史原文（维基文库），近现代人物引自维基百科；每一句都在原文里逐字核对过，找不到原句的节点标为「概括」。</p>
-        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片；少数没有自由版权图片的人物取自百度百科词条配图。每张头像的来源写在完整角色卡上。字体为思源宋体、思源黑体与 Inter（SIL OFL 1.1）。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
+        <p className="v3-license">维基百科引句依 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noreferrer">CC BY-SA 4.0</a> 使用，出处链接指向核对时的条目版本（含版本号），作者见各条目的页面历史；维基文库所收古籍为公有领域文本。「角色」页的人物简介摘自维基百科（CC BY-SA 4.0），头像来自 Wikimedia Commons 的公有领域或 CC 许可图片；少数没有自由版权图片的人物取自百度百科词条配图。每张头像的来源写在完整角色卡上。字体为思源宋体、思源黑体与 Inter（SIL OFL 1.1）。走势图背景的历代疆域来自开源项目<a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noreferrer">江山时序</a>（GPL-3.0），疆域轮廓为示意。分数与评语是本站按统一标准作出的解读，不代表任何机构立场。</p>
       </footer>
     </div>
     <CommandPalette open={cmd} onClose={() => setCmd(false)} page={page} current={ids} themeKey={themeKey} actions={cmdActions} />
