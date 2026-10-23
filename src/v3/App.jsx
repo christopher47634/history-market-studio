@@ -4,6 +4,7 @@ import { flushSync } from "react-dom";
 import { figureById, loadFigure } from "../data.js";
 import { buildScene, readingOrder, LEVELS, candleOf, valueAt } from "./scene.js";
 import { LifeChart } from "./LifeChart.jsx";
+import { Atlas } from "./Atlas.jsx";
 import { Picker } from "./Picker.jsx";
 import { Reader } from "./Reader.jsx";
 import { RolesView } from "./RolesView.jsx";
@@ -414,7 +415,8 @@ export function App() {
           <Strip nodes={inWindow} pinned={pin} hover={hover} onPick={go} />
           {textView && scene && <TextTable scene={scene} pinned={pin} onPick={go} />}
         </section>
-        <div className="rise" style={{ "--d": 3 }}>
+        <div className="v3-side rise" style={{ "--d": 3 }}>
+          <Atlas year={(hover?.node ?? pin)?.year} person={(hover?.node ?? pin)?.figure?.name} />
           <Reader node={pin} prev={prev} next={next} onGo={go} onFocus={(n) => chart.current?.focus(n)} />
         </div>
       </main>
