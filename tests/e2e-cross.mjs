@@ -12,7 +12,7 @@ const check = async (name, fn) => {
 
 // 画布上非背景像素的比例：图真的画出来了才会有足够多的线条像素。
 const inkRatio = (page) => page.evaluate(() => {
-  const c = [...document.querySelectorAll(".v3-chart-canvas canvas")][0];
+  const c = document.querySelector(".v3-chart-canvas canvas[data-zr-dom-id=\"zr_0.0\"]");
   const ctx = c.getContext("2d");
   const { data } = ctx.getImageData(0, 0, c.width, c.height);
   let ink = 0;
@@ -75,7 +75,7 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
     await desk.evaluate(() => { location.hash = "b"; });
     await desk.waitForTimeout(900);
     const lum = await desk.evaluate(() => {
-      const c = document.querySelector(".v3-chart-canvas canvas");
+      const c = document.querySelector(".v3-chart-canvas canvas[data-zr-dom-id=\"zr_0.0\"]");
       const k = c.width / c.clientWidth;
       const d = c.getContext("2d").getImageData(Math.round(c.width * 0.5), Math.round(c.height - 25 * k), 1, 1).data;
       return (d[0] + d[1] + d[2]) / 3;

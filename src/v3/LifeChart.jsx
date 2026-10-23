@@ -209,13 +209,14 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
 
   // 「最新价」：每人身后声望线的终点（后世评价）是一颗缓慢呼吸的亮点，像行情图右端跳动的现价。
   series.push({
-    id: "last", type: "effectScatter", z: 6, silent: true, symbolSize: 6,
+    // 涟漪单独放一层画布（zlevel 1）：它每帧都在动，放在主层会让整张图跟着每帧重绘。
+    id: "last", type: "effectScatter", zlevel: 1, z: 6, silent: true, symbolSize: 6,
     data: scene.people.map((p) => ({ value: [p.tail.slice(-1)[0].x, p.figure.legacy.score], itemStyle: { color: T.p[p.slot], shadowColor: alpha(T.p[p.slot], 0.8), shadowBlur: 10 } })),
     rippleEffect: { brushType: "fill", scale: 3.2, period: 4.4, number: 2 },
   });
   const pin = pinned ? [{ value: [pinned.x, pinned.score] }] : [];
   series.push({
-    id: "pin", type: "effectScatter", z: 7, silent: true, data: pin, symbolSize: kMode ? 8 : 11,
+    id: "pin", type: "effectScatter", zlevel: 1, z: 7, silent: true, data: pin, symbolSize: kMode ? 8 : 11,
     rippleEffect: { brushType: "stroke", scale: 2.6, period: 3.2 },
     itemStyle: { color: pinned ? T.p[pinned.slot] : T.accent },
   });
@@ -280,11 +281,13 @@ export function buildOption({ scene, mode, level, window, T, width, pinned, firs
 // 十字光标：直接画在 zrender 上（不走 setOption），跟手、不触发重绘整张图。
 function makeCrosshair(zr) {
   const g = echarts.graphic;
-  const band = new g.Rect({ silent: true, z: 1, invisible: true, shape: { x: 0, y: 0, width: 0, height: 0 } });
-  const v = new g.Line({ silent: true, z: 60, invisible: true, shape: { x1: 0, y1: 0, x2: 0, y2: 0 } });
-  const h = new g.Line({ silent: true, z: 60, invisible: true, shape: { x1: 0, y1: 0, x2: 0, y2: 0 } });
-  const tagX = new g.Text({ silent: true, z: 61, invisible: true });
-  const tagY = new g.Text({ silent: true, z: 61, invisible: true });
+  // 十字光标各自单独一层画布：光标每动一下只重画这几笔，不连带重画整张走势和标签。
+  // 列高亮带在主图层下面（zlevel -1），十字线和刻度标签在最上面（zlevel 2）。
+  const band = new g.Rect({ silent: true, zlevel: -1, z: 1, invisible: true, shape: { x: 0, y: 0, width: 0, height: 0 } });
+  const v = new g.Line({ silent: true, zlevel: 2, z: 60, invisible: true, shape: { x1: 0, y1: 0, x2: 0, y2: 0 } });
+  const h = new g.Line({ silent: true, zlevel: 2, z: 60, invisible: true, shape: { x1: 0, y1: 0, x2: 0, y2: 0 } });
+  const tagX = new g.Text({ silent: true, zlevel: 2, z: 61, invisible: true });
+  const tagY = new g.Text({ silent: true, zlevel: 2, z: 61, invisible: true });
   const all = [band, v, h, tagX, tagY];
   all.forEach((el) => zr.add(el));
   return {

@@ -12,6 +12,9 @@ OverlayScrollbars.plugin(ClickScrollPlugin);
 export const SCROLL_OPTIONS = {
   scrollbars: { theme: "os-theme-glow", autoHide: "scroll", autoHideDelay: 900, autoHideSuspend: true, clickScroll: true },
   overflow: { x: "hidden" },
+  // 光标在走势图上移动时，高光、吸附、悬停卡片会不停改 class / style；这些属性变化不改变内容尺寸，
+  // 不让库每次都重新量一遍布局（真正的尺寸变化由它自带的 ResizeObserver 接住）。
+  update: { ignoreMutation: (m) => m.type === "attributes" },
 };
 
 // 横向滚动区：滚轮转横向、按住拖动、两侧渐隐。

@@ -14,12 +14,12 @@ svg.lucide { flex: none; }
 /* ───────── 环境光：品牌色只用来发光（Raycast 的做法），给玻璃一点能折射的东西 ───────── */
 body::before { display: none; }
 .v3-ambient { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-.v3-ambient i { position: absolute; width: 70vmax; height: 70vmax; border-radius: 50%; opacity: .9; will-change: transform; animation: ambient 44s var(--ease-io) infinite alternate; }
+.v3-ambient i { position: absolute; width: 70vmax; height: 70vmax; border-radius: 50%; opacity: .9; transform: translate3d(3.5vmax, 2.5vmax, 0) scale(1.07); }
+/* 环境光不再漂移：44 秒一个来回几乎看不出来，却让压在上面的每块液态玻璃每帧都要重算折射。 */
 .v3-ambient i:nth-child(1) { left: -26vmax; top: -34vmax; background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 16%, transparent), transparent); }
-.v3-ambient i:nth-child(2) { right: -30vmax; top: 4vh; background: radial-gradient(closest-side, color-mix(in srgb, var(--p0) 11%, transparent), transparent); animation-duration: 56s; animation-delay: -18s; }
-.v3-ambient i:nth-child(3) { left: 18vw; bottom: -46vmax; background: radial-gradient(closest-side, color-mix(in srgb, var(--p1) 10%, transparent), transparent); animation-duration: 62s; animation-delay: -30s; }
+.v3-ambient i:nth-child(2) { right: -30vmax; top: 4vh; background: radial-gradient(closest-side, color-mix(in srgb, var(--p0) 11%, transparent), transparent); }
+.v3-ambient i:nth-child(3) { left: 18vw; bottom: -46vmax; background: radial-gradient(closest-side, color-mix(in srgb, var(--p1) 10%, transparent), transparent); }
 :root[data-theme="cinnabar"] .v3-ambient i { opacity: .75; }
-@keyframes ambient { to { transform: translate3d(7vmax, 5vmax, 0) scale(1.14); } }
 
 /* ───────── 吸顶导航：停在顶上透明，往下滚以后玻璃显出来并收紧 ───────── */
 .v3-bar { position: sticky; top: 0; z-index: 60; transition: background-color .35s var(--ease-out), box-shadow .35s var(--ease-out); }

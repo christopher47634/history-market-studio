@@ -164,7 +164,7 @@ await check("切换主题", async () => {
   assert.equal(await page.eval("document.documentElement.dataset.theme"), "cinnabar");
 });
 // 图表画布用的颜色必须跟着主题走：取缩放条底色的亮度（玉衡深、朱砂浅）。
-const sliderLum = () => page.eval(`(()=>{const c=document.querySelector('.v3-chart-canvas canvas');const k=c.width/c.clientWidth;const d=c.getContext('2d').getImageData(Math.round(c.width*0.5),Math.round(c.height-25*k),1,1).data;return (d[0]+d[1]+d[2])/3})()`);
+const sliderLum = () => page.eval(`(()=>{const c=document.querySelector('.v3-chart-canvas canvas[data-zr-dom-id="zr_0.0"]');const k=c.width/c.clientWidth;const d=c.getContext('2d').getImageData(Math.round(c.width*0.5),Math.round(c.height-25*k),1,1).data;return (d[0]+d[1]+d[2])/3})()`);
 await check("朱砂切回玉衡：图表画布换回深色（不残留浅色网格和缩放条）", async () => {
   assert.ok((await sliderLum()) > 150, `朱砂下缩放条应是浅色，实际亮度 ${await sliderLum()}`);
   await pick("主题", "玉衡");

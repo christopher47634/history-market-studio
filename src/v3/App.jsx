@@ -391,7 +391,7 @@ export function App() {
       </section>
 
       <main className="v3-main">
-        <section className="v3-card v3-chart spot rise" style={{ "--d": 2 }} aria-label="人生走势">
+        <section className="v3-card v3-chart rise" style={{ "--d": 2 }} aria-label="人生走势">
           <div className="v3-chart__bar">
             <div className="v3-chart__title">
               <h2>当时的势 <span>0–100</span></h2>

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "build": "vite build && node scripts/minify-atlas.mjs && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
     "test:data": "node scripts/validate-data.mjs",
     "test:schema": "node scripts/validate-schema.mjs && node --test tests/schema.test.mjs",

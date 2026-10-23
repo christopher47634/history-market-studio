@@ -10247,10 +10247,22 @@
       resolvePlace: (place, year) => app.resolvePlace(place, year),
       inspect: (opts) => app.inspect(opts),
       openPerson: (who, idx = -1) => app.openPersonChronicle(who, idx),
-      // 历史行情局嵌入用（本站唯一改动）：把镜头框到给定的地图坐标范围，按视口比例补齐高度。
-      frame: ({ x, y, w }) => {
-        const h = Math.round(w * app._getViewportAspect());
-        app._animateCameraTo({ x, y: y - (h - w * 0.75) / 2, w, h, zoom: 1000 / w });
+      // 历史行情局嵌入用：只在朝代、疆域快照或水系阶段变了才走完整的 jumpToYear（它会顺带刷新里程碑、时间轴等嵌入时隐藏的部件）。
+      showYear: (year) => {
+        let y = Math.max(app.minYear, Math.min(app.maxYear, Math.round(year)));
+        if (y === 0) y = -1;
+        const idx = app._findDynastyIndex(y);
+        const same = idx === app.dynastyIdx && app._resolveSnapKey(app.dynasties[idx], y) === app.activeSnapKey && app._hydroMask(y) === app.activeHydroMask;
+        if (same) { app.year = y; return false; }
+        app.stopAutoplay();
+        app.jumpToYear(y);
+        return true;
+      },
+      // 历史行情局嵌入用：镜头以 (cx, cy) 为中心、宽 w，高度按画布的真实比例补齐，地图铺满不留边。
+      frame: ({ cx, cy, w }) => {
+        const r = app.svg.getBoundingClientRect();
+        const h = Math.round(w * (r.width > 40 ? r.height / r.width : 0.75));
+        app._animateCameraTo({ x: cx - w / 2, y: cy - h / 2, w, h, zoom: 1000 / w });
       },
     };
   });
