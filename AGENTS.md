@@ -1,5 +1,11 @@
 # Prototype Instructions
 
+## 2026-10-29 用户指定评价标签
+
+- 用户要求将库内中共人物（含曾入党及晚年入党者）的 `legacy.label` 统一设为「非常正面」。这是本站编辑标签；本次不改变事件、引文、评分或评价理由。
+- 已核对范围：陈独秀、邓稼先、邓小平、华罗庚、李大钊、李四光、茅以升、毛泽东、梅兰芳、聂耳、钱三强、钱学森、宋庆龄、冼星海、周恩来、朱德、竺可桢。
+- 源数据 drafts/figures、全量包、客户端索引和详情须保持一致；标签枚举由 `pipeline/rubric.mjs` 统一定义。
+
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
 Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
