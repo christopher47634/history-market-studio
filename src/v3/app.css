@@ -497,6 +497,8 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
 .v3-tile__face { grid-area: 1 / 1; position: relative; display: grid; width: 100%; padding: 0; border: 0; border-radius: inherit; overflow: hidden; text-align: left; color: var(--ink); cursor: inherit; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: box-shadow .45s var(--ease-out); }
 .v3-tile__front { grid-template-rows: auto 1fr; background: var(--surface); box-shadow: 0 0 0 1px color-mix(in srgb, var(--ink) 9%, transparent), 0 18px 40px -26px rgba(0,0,0,.7); }
 .v3-tile__back { transform: rotateY(180deg); align-content: start; gap: 10px; padding: 16px 16px 14px; background: color-mix(in srgb, var(--surface) 82%, transparent); box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent), 0 30px 60px -26px rgba(0,0,0,.8), 0 0 50px -20px color-mix(in srgb, var(--accent) 55%, transparent); isolation: isolate; }
+/* WebKit 可能让不可见的 3D 背面接收触摸；只让当前面接收指针。 */
+.v3-tile:not([data-flipped]) .v3-tile__back, .v3-tile[data-flipped] .v3-tile__front { pointer-events: none; }
 .v3-tile.is-picked .v3-tile__face { box-shadow: 0 0 0 1.5px var(--c), 0 22px 46px -24px color-mix(in srgb, var(--c) 70%, transparent); }
 .v3-tile:hover .v3-tile__front { box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent), 0 26px 50px -24px rgba(0,0,0,.75); }
 

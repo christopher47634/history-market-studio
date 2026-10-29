@@ -135,10 +135,15 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
     await tile.waitFor();
     await tile.evaluate((el) => el.scrollIntoView({ block: "center", behavior: "instant" }));
     await mob.waitForTimeout(1200);
-    await tile.locator(".v3-tile__front").tap();
+    const at = await tile.evaluate((el) => {
+      const r = el.getBoundingClientRect();
+      return { x: r.x + r.width * .5, y: r.y + r.height * .45 };
+    });
+    await mob.touchscreen.tap(at.x, at.y);
     await mob.waitForFunction(() => document.querySelector(".v3-tile")?.hasAttribute("data-flipped"));
     assert.equal(await mob.locator(".v3-full").count(), 0, "第一次点按应先翻面");
-    await tile.locator(".v3-tile__back").tap();
+    await mob.waitForFunction(() => new DOMMatrix(getComputedStyle(document.querySelector(".v3-tile__inner")).transform).m11 < -.95);
+    await mob.touchscreen.tap(at.x, at.y);
     await mob.locator(".v3-full").waitFor();
   });
   await check(`${name}：全程没有脚本报错`, async () => assert.deepEqual(errors, []));
