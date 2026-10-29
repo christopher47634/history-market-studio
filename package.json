@@ -32,7 +32,8 @@
     "v2:fonts": "python pipeline/fonts.py",
     "test:algorithms": "node --test tests/algorithms.test.mjs",
     "test:search": "node --test tests/search.test.mjs",
-    "test": "npm run typecheck && npm run test:static && npm run test:sites && npm run test:algorithms && npm run test:search",
+    "test:storage": "node --test tests/service-worker-storage.test.mjs",
+    "test": "npm run typecheck && npm run test:static && npm run test:sites && npm run test:algorithms && npm run test:search && npm run test:storage",
     "typecheck": "tsc -p jsconfig.json"
   },
   "dependencies": {
