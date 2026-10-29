@@ -4,13 +4,15 @@
 //   /fonts/*、/assets/*  只缓存文件名里带内容哈希的（hms-sans-3.ab12cd34.woff2、index-AbCd1234.js）：内容变了名字就变，缓存优先最安全。
 //                        没有哈希的（许可证文本、固定名字的图标）不碰，永远走网络，免得更新后一直拿到旧的。
 // 改了缓存规则就把 VERSION 加一，旧缓存会在激活时清掉。
-const VERSION = "hms-v2";
+const VERSION = "hms-v3";
 const PORTRAITS = `${VERSION}-portraits`, STATIC = `${VERSION}-static`;
 
 self.addEventListener("install", () => self.skipWaiting());
 self.addEventListener("activate", (e) => {
   e.waitUntil((async () => {
-    for (const key of await caches.keys()) if (!key.startsWith(VERSION)) await caches.delete(key);
+    try {
+      for (const key of await caches.keys()) if (!key.startsWith(VERSION)) await caches.delete(key);
+    } catch {} // 缓存受限时仍激活，页面资源直接走网络。
     await self.clients.claim();
   })());
 });
@@ -30,23 +32,25 @@ const MAX_STATIC = 400; // 每次发布分包名都会变，旧的不再用；�
 const keyOf = (url) => url.origin + url.pathname; // 去掉 ?r= / ?retry= 这类重试参数
 
 async function staleWhileRevalidate(req, url) {
-  const cache = await caches.open(PORTRAITS);
-  const hit = await cache.match(keyOf(url));
+  let cache, hit;
+  try { cache = await caches.open(PORTRAITS); hit = await cache.match(keyOf(url)); } catch {}
   // 后台更新用 no-cache：浏览器自己的 HTTP 缓存可能还在有效期里，不加这个就永远拿不到换掉的头像
-  const fresh = fetch(new Request(req, { cache: hit ? "no-cache" : "default" })).then((res) => { if (res.ok) cache.put(keyOf(url), res.clone()); return res; });
+  const fresh = fetch(new Request(req, { cache: hit ? "no-cache" : "default" })).then((res) => { if (res.ok && cache) cache.put(keyOf(url), res.clone()).catch(() => {}); return res; });
   if (hit) { fresh.catch(() => {}); return hit; }
   return fresh;
 }
 
 async function cacheFirst(req, url) {
-  const cache = await caches.open(STATIC);
-  const hit = await cache.match(keyOf(url));
+  let cache, hit;
+  try { cache = await caches.open(STATIC); hit = await cache.match(keyOf(url)); } catch {}
   if (hit) return hit;
   const res = await fetch(req);
-  if (res.ok) {
-    cache.put(keyOf(url), res.clone());
-    const keys = await cache.keys();
-    for (const k of keys.slice(0, Math.max(0, keys.length - MAX_STATIC))) await cache.delete(k);
+  if (res.ok && cache) {
+    try {
+      await cache.put(keyOf(url), res.clone());
+      const keys = await cache.keys();
+      for (const k of keys.slice(0, Math.max(0, keys.length - MAX_STATIC))) await cache.delete(k);
+    } catch {} // 存储满或隐私限制不能把成功下载的脚本变成加载失败。
   }
   return res;
 }

@@ -310,13 +310,19 @@ function makeCrosshair(zr) {
 // 画布不会因为用到某个网页字体就去下载它：主动按每人卡片上会出现的字请求一次朝代字体，
 // 字到了以后 document.fonts 的 loadingdone 会让图表重画（见下面的 effect）。
 const primed = new Set();
-function primeFonts(scene) {
+function primeFonts(scene, level, window, width) {
   if (!document.fonts?.load) return;
+  const budget = labelBudget(level, width, scene.people.length);
   for (const p of scene.people) {
-    if (primed.has(p.figure.id)) continue;
-    primed.add(p.figure.id);
-    const sample = [...p.nodes, ...p.posthumous].map((n) => `${n.event?.title ?? ""}${n.event?.quote?.t ?? n.event?.quote?.textSimplified ?? ""}`).join("");
-    document.fonts.load(`12px ${eraFonts(p.figure).text}`, sample || p.figure.name).catch(() => {});
+    // 只请求当前标签实际使用的字；缩放和平移后再补充新标签，避免首屏下载整个人生的引文字体。
+    const { labels } = visibleNodes(p, level, window, budget);
+    const sample = labels.map((n) => labelFor(scene, level, n).replace(/\{\w+\|([^}]*)\}/g, "$1")).join("");
+    if (!sample) continue;
+    const font = `12px ${eraFonts(p.figure).text}`;
+    const key = `${font}:${sample}`;
+    if (primed.has(key)) continue;
+    primed.add(key);
+    document.fonts.load(font, sample).catch(() => { primed.delete(key); });
   }
 }
 
@@ -350,7 +356,7 @@ export const LifeChart = forwardRef(function LifeChart({ scene, mode, theme, pin
     option.dataZoom[0].startValue = option.dataZoom[1].startValue = window[0];
     option.dataZoom[0].endValue = option.dataZoom[1].endValue = window[1];
     c.setOption(option, { replaceMerge: ["series"], lazyUpdate: false });
-    primeFonts(scene);
+    primeFonts(scene, level, window, c.getWidth());
     onView?.({ level, window, span: window[1] - window[0] });
     // 缩放、平移后光标没动：按原位置重新吸附，十字光标留在原处（看盘软件的手感）。
     state.current.retrack?.();
