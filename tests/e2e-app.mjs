@@ -9,7 +9,7 @@ const check = async (name, fn) => {
   try { await fn(); results.push(`✓ ${name}`); } catch (err) { results.push(`✗ ${name}：${err.message}`); process.exitCode = 1; }
 };
 
-const page = await launch({ width: 1440, height: 900 });
+let page = await launch({ width: 1440, height: 900 });
 const q = (sel) => page.eval(`!!document.querySelector(${JSON.stringify(sel)})`);
 const text = (sel) => page.eval(`document.querySelector(${JSON.stringify(sel)})?.textContent ?? ""`);
 const texts = (sel) => page.eval(`[...document.querySelectorAll(${JSON.stringify(sel)})].map(e=>e.textContent)`);
@@ -352,7 +352,9 @@ await check("分享按钮：给出玻璃提示条，2 秒后自己退场", async
   assert.ok(!(await q(".v3-toast")), "提示条没有退场");
 });
 
-await page.setViewport(390, 844, true);
+const desktopErrors = [...page.consoleErrors];
+await page.close();
+page = await launch({ width: 390, height: 844, mobile: true });
 await page.goto(`${base}/?left=zhouenlai&right=dengxiaoping#c`, 3500);
 await check("手机宽度：无横向滚动，图表和阅读面板都在", async () => {
   assert.ok(await page.eval("document.documentElement.scrollWidth <= innerWidth + 1"), "页面出现横向滚动");
@@ -372,12 +374,24 @@ await check("手机宽度：角色页和完整角色卡都不超出屏幕", asyn
   const fits = (sel) => page.eval(`(()=>{const r=document.querySelector(${JSON.stringify(sel)}).getBoundingClientRect();return r.left>=-1&&r.right<=innerWidth+1})()`);
   assert.ok(await page.eval("document.documentElement.scrollWidth <= innerWidth + 1"), "角色页出现横向滚动");
   for (const sel of [".v3-index__search", ".v3-tiles", ".v3-tray"]) assert.ok(await fits(sel), `${sel} 超出屏幕`);
-  await page.eval(`document.querySelectorAll('.v3-tile__front')[0].click()`);
-  await page.sleep(1200);
+  assert.ok(await page.eval(`matchMedia('(hover: none)').matches && navigator.maxTouchPoints > 0`), "手机测试没有启用触屏");
+  await page.eval(`document.querySelector('.v3-tile').scrollIntoView({block:'center',behavior:'instant'})`);
+  await page.sleep(300);
+  const at = await tileAt(0);
+  await page.tap(at.x, at.y);
+  for (let i = 0; i < 60; i++) {
+    if (await page.eval(`new DOMMatrix(getComputedStyle(document.querySelector('.v3-tile__inner')).transform).m11 < -.95`)) break;
+    await page.sleep(50);
+  }
+  assert.ok(await page.eval(`document.querySelector('.v3-tile').hasAttribute('data-flipped')`), "第一次点按没有翻面");
+  assert.ok(!(await q('.v3-full')), "第一次点按应先翻面");
+  await page.tap(at.x, at.y);
+  for (let i = 0; i < 100 && !(await q('.v3-full')); i++) await page.sleep(50);
+  assert.ok(await q('.v3-full'), "第二次点按没有打开完整角色卡");
   assert.ok(await fits(".v3-full"), "完整角色卡超出屏幕");
 });
 await check("全程没有控制台错误", async () => {
-  assert.deepEqual(page.consoleErrors, []);
+  assert.deepEqual([...desktopErrors, ...page.consoleErrors], []);
 });
 
 console.log(results.join("\n"));

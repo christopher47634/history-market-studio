@@ -20,6 +20,7 @@
     "test:v2": "node --test tests/pipeline.test.mjs",
     "test:lab": "node tests/e2e-lab.mjs",
     "test:app": "node tests/e2e-app.mjs",
+    "test:input": "node tests/e2e-input.mjs",
     "test:cross": "node tests/e2e-cross.mjs",
     "test:faults": "node tests/e2e-faults.mjs",
     "test:motion": "node tests/e2e-motion.mjs",

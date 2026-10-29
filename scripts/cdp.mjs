@@ -16,7 +16,10 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export async function launch({ width = 1440, height = 900, mobile = false, scale = 1, port = 9300 + Math.floor(Math.random() * 500) } = {}) {
   const profile = mkdtempSync(join(tmpdir(), "hms-cdp-"));
-  const proc = spawn(CHROME, ["--headless=new", `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, "--no-first-run", "--hide-scrollbars", ...(process.env.CI ? ["--no-sandbox"] : []), "about:blank"], { stdio: "ignore" });
+  // 与 Playwright 的 headless Chromium 一致：Linux 无物理鼠标时也要按桌面输入设备测试。
+  // https://github.com/microsoft/playwright/blob/main/packages/playwright-core/src/server/chromium/chromium.ts
+  const pointer = "--blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4";
+  const proc = spawn(CHROME, ["--headless=new", pointer, `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, "--no-first-run", "--hide-scrollbars", ...(process.env.CI ? ["--no-sandbox"] : []), "about:blank"], { stdio: "ignore" });
   let target;
   for (let i = 0; i < 50 && !target; i++) {
     await sleep(200);

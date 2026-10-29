@@ -36,6 +36,7 @@ jobs:
       - run: npm run test:sites
 
       # 真实浏览器：Chrome（CDP）+ Firefox + WebKit（Safari 内核）
+      - run: npm run test:input
       - run: npx playwright install --with-deps firefox webkit
       - name: Start dev server
         run: |

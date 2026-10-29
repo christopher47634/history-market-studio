@@ -247,7 +247,7 @@ function Tile({ f, role, at, i, onOpen, onToggle }) {
     <div role="listitem" data-figure={f.id} data-era={eraOf(f)} data-flipped={flip ? "" : undefined} className={`v3-tile spot${at >= 0 ? " is-picked" : ""}`}
       style={{ "--fc": f.color, ...(at >= 0 ? { "--c": `var(--p${at})` } : {}) }}
       draggable onDragStart={(e) => { leave(); startDrag(e, f.id); }} onMouseEnter={enter} onMouseLeave={leave} onPointerMove={move}
-      onFocus={() => setFlip(true)} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setFlip(false); }}>
+      onFocus={(e) => { if (e.target.matches(":focus-visible")) setFlip(true); }} onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setFlip(false); }}>
       <motion.div className="v3-tile__tilt" style={reduce ? undefined : { rotateX, rotateY, transformPerspective: 900 }}
         initial={reduce ? false : { opacity: 0, y: 22, filter: "blur(8px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.8, ease: EASE_EXPO, delay: Math.min(i, 24) * 0.028 }}>

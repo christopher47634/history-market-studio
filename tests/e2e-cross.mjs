@@ -129,6 +129,18 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
     await mob.waitForTimeout(400);
     assert.equal(await popOnTop(mob), "ok");
   });
+  if (name === "WebKit") await check("WebKit 手机：角色卡第一次点按翻面，第二次打开详情", async () => {
+    await mob.goto(`${base}/?left=zhouenlai&right=&view=roles#b`);
+    const tile = mob.locator(".v3-tile").first();
+    await tile.waitFor();
+    await tile.evaluate((el) => el.scrollIntoView({ block: "center", behavior: "instant" }));
+    await mob.waitForTimeout(1200);
+    await tile.locator(".v3-tile__front").tap();
+    await mob.waitForFunction(() => document.querySelector(".v3-tile")?.hasAttribute("data-flipped"));
+    assert.equal(await mob.locator(".v3-full").count(), 0, "第一次点按应先翻面");
+    await tile.locator(".v3-tile__back").tap();
+    await mob.locator(".v3-full").waitFor();
+  });
   await check(`${name}：全程没有脚本报错`, async () => assert.deepEqual(errors, []));
   await browser.close();
 }
