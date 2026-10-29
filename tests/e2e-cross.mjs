@@ -142,8 +142,19 @@ for (const [name, engine] of [["Firefox", firefox], ["WebKit", webkit]]) {
     await mob.touchscreen.tap(at.x, at.y);
     await mob.waitForFunction(() => document.querySelector(".v3-tile")?.hasAttribute("data-flipped"));
     assert.equal(await mob.locator(".v3-full").count(), 0, "第一次点按应先翻面");
-    await mob.waitForFunction(() => new DOMMatrix(getComputedStyle(document.querySelector(".v3-tile__inner")).transform).m11 < -.95);
-    await mob.touchscreen.tap(at.x, at.y);
+    await mob.waitForFunction(() => {
+      const tile = document.querySelector(".v3-tile");
+      const back = tile.querySelector(".v3-tile__back");
+      const r = back.getBoundingClientRect();
+      return new DOMMatrix(getComputedStyle(tile.querySelector(".v3-tile__inner")).transform).m11 < -.999
+        && back.contains(document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2));
+    });
+    // 字体载入和翻面会改变几何位置；第二次点按必须重新命中当前背面。
+    const backAt = await tile.locator(".v3-tile__back").evaluate((el) => {
+      const r = el.getBoundingClientRect();
+      return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+    });
+    await mob.touchscreen.tap(backAt.x, backAt.y);
     await mob.locator(".v3-full").waitFor();
   });
   await check(`${name}：全程没有脚本报错`, async () => assert.deepEqual(errors, []));
