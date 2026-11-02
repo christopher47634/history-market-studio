@@ -282,14 +282,9 @@
       "delta": 14,
       "rationale": "领袖",
       "summary": "中共一大缺席当选",
-      "evidence": "百科",
-      "quote": {
-        "text": "1921年7月，中共一大在上海召开，陈独秀在广东省教育委员会的工作正在紧要关头",
-        "textSimplified": "1921年7月，中共一大在上海召开，陈独秀在广东省教育委员会的工作正在紧要关头",
-        "source": "维基百科「陈独秀」（2026-09-27 版）",
-        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%99%88%E7%8B%AC%E7%A7%80&oldid=94610687"
-      },
-      "verified": true
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     },
     {
       "year": 1923,
@@ -451,8 +446,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 16,
-    "quotesClaimed": 16,
+    "quotesVerified": 15,
+    "quotesClaimed": 15,
     "author": "claude"
   }
 }

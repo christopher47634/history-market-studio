@@ -466,14 +466,9 @@
       "tierScore": 95,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "南巡",
+      "summary": "视察武昌、深圳、珠海、上海等地并发表重要谈话",
       "rationale": "定调",
-      "quote": {
-        "find": [
-          "邓小平南巡"
-        ],
-        "source": 0
-      }
+      "quote": null
     }
   ],
   "posthumous": [],

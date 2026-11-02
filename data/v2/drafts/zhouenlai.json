@@ -265,19 +265,14 @@
       "year": 1943,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "延安整风受批评",
+      "title": "参加延安整风",
       "tier": "重臣主帅",
       "tierScore": 76,
       "crisis": "受挫",
       "crisisPenalty": 5,
-      "summary": "检讨经验主义",
+      "summary": "在整风中总结经验，作自我批评",
       "rationale": "检讨",
-      "quote": {
-        "find": [
-          "中共中央于所在地延安进行整风运动"
-        ],
-        "source": 0
-      }
+      "quote": null
     },
     {
       "year": 1946,

@@ -634,15 +634,10 @@
       "score": 95,
       "delta": 0,
       "rationale": "定调",
-      "summary": "南巡",
-      "evidence": "百科",
-      "quote": {
-        "text": "1992年初，邓小平南巡，重启中国经济的改革开放，拯救了中国大陆新兴的资本市场。",
-        "textSimplified": "1992年初，邓小平南巡，重启中国经济的改革开放，拯救了中国大陆新兴的资本市场。",
-        "source": "维基百科「邓小平」（2026-09-30 版）",
-        "url": "https://zh.wikipedia.org/w/index.php?title=%E9%82%93%E5%B0%8F%E5%B9%B3&oldid=94675670"
-      },
-      "verified": true
+      "summary": "视察武昌、深圳、珠海、上海等地并发表重要谈话",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     }
   ],
   "finale": {
@@ -694,8 +689,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 17,
-    "quotesClaimed": 17,
+    "quotesVerified": 16,
+    "quotesClaimed": 16,
     "author": "claude"
   }
 }

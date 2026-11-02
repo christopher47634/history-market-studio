@@ -215,12 +215,7 @@
       "crisisPenalty": 0,
       "summary": "中共一大缺席当选",
       "rationale": "领袖",
-      "quote": {
-        "find": [
-          "中共一大在上海召开"
-        ],
-        "source": 0
-      }
+      "quote": null
     },
     {
       "year": 1923,

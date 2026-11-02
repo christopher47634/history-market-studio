@@ -76,12 +76,7 @@
       "crisisPenalty": 0,
       "summary": "二十六岁，人称娃娃博士",
       "rationale": "归国",
-      "quote": {
-        "find": [
-          "在获得博士学位后数天就搭乘威尔逊总统号客轮"
-        ],
-        "source": 0
-      }
+      "quote": null
     },
     {
       "year": 1956,
