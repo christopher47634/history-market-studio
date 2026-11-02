@@ -17,6 +17,10 @@
       "url": "https://zh.wikipedia.org/w/index.php?title=%E8%8C%85%E4%BB%A5%E6%98%87&oldid=94310760",
       "site": "wp",
       "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "《关于建国以来党的若干历史问题的决议》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
     }
   ],
   "events": [
@@ -312,7 +316,7 @@
       "age": 70,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "文革受批斗",
+      "title": "“文化大革命”中受到冲击",
       "tier": "方面名家",
       "tierScore": 60,
       "crisis": "受挫",
@@ -320,10 +324,15 @@
       "score": 50,
       "delta": -26,
       "rationale": "受冲击",
-      "summary": "被扣上「反动学术权威」帽子",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "summary": "被错误地扣上“反动学术权威”的帽子。",
+      "evidence": "原文",
+      "quote": {
+        "text": "绝大多数都没有动摇热爱祖国和拥护党、拥护社会主义的立场",
+        "textSimplified": "绝大多数都没有动摇热爱祖国和拥护党、拥护社会主义的立场",
+        "source": "《关于建国以来党的若干历史问题的决议》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
+      },
+      "verified": true
     },
     {
       "year": 1980,
@@ -416,8 +425,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 9,
-    "quotesClaimed": 9,
+    "quotesVerified": 10,
+    "quotesClaimed": 10,
     "author": "claude"
   }
 }

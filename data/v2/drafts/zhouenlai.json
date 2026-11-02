@@ -402,14 +402,17 @@
       "year": 1966,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "文革中维持局面",
+      "title": "“文化大革命”中顾全大局",
       "tier": "一方之主",
       "tierScore": 88,
       "crisis": "受挫",
       "crisisPenalty": 5,
-      "summary": "保护干部，苦撑国务院",
-      "rationale": "苦撑",
-      "quote": null
+      "summary": "主持国务院工作，尽力减少损失，保护大批党内外干部。",
+      "rationale": "顾全大局",
+      "quote": {
+        "text": "为保护大批的党内外干部，作了坚持不懈的努力，费尽了心血",
+        "source": 1
+      }
     },
     {
       "year": 1971,
@@ -446,12 +449,12 @@
       "year": 1974,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "病重批林批孔",
+      "title": "病中坚持工作",
       "tier": "一方之主",
       "tierScore": 86,
       "crisis": "受挫",
       "crisisPenalty": 15,
-      "summary": "受冲击，住院",
+      "summary": "病情加重住院，仍坚持处理国务大事；“批林批孔”中江青等人将矛头指向他。",
       "rationale": "病",
       "quote": {
         "find": [

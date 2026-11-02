@@ -483,7 +483,7 @@
       "score": 81,
       "delta": 0,
       "rationale": "挨批",
-      "summary": "因批评彭德怀不力被指右倾",
+      "summary": "会议后期受到不应有的批评。",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -493,7 +493,7 @@
       "age": 80,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "文革受冲击",
+      "title": "“文化大革命”中受到冲击",
       "tier": "重臣主帅",
       "tierScore": 82,
       "crisis": "受挫",
@@ -501,7 +501,7 @@
       "score": 72,
       "delta": -16,
       "rationale": "受冲击",
-      "summary": "被称「黑司令」",
+      "summary": "受到林彪、江青集团的诬陷。",
       "evidence": "概括",
       "quote": null,
       "verified": false

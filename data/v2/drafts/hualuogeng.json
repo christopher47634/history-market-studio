@@ -203,14 +203,17 @@
       "year": 1957,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "反右中受批判",
+      "title": "反右派斗争扩大化中受批判",
       "tier": "方面名家",
       "tierScore": 60,
       "crisis": "受挫",
       "crisisPenalty": 5,
-      "summary": "与曾昭抡等被指「反党联盟」",
+      "summary": "与曾昭抡等人受到不应有的批判。",
       "rationale": "挨批",
-      "quote": null
+      "quote": {
+        "text": "但是反右派斗争被严重地扩大化了",
+        "source": 1
+      }
     },
     {
       "year": 1958,
@@ -242,14 +245,17 @@
       "year": 1966,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "文革受冲击",
+      "title": "“文化大革命”中受到冲击",
       "tier": "方面名家",
       "tierScore": 60,
       "crisis": "受挫",
       "crisisPenalty": 10,
-      "summary": "被抄家，手稿散失",
+      "summary": "手稿散失，此后仍坚持到各地推广优选法、统筹法。",
       "rationale": "受冲击",
-      "quote": null
+      "quote": {
+        "text": "绝大多数都没有动摇热爱祖国和拥护党、拥护社会主义的立场",
+        "source": 1
+      }
     },
     {
       "year": 1979,

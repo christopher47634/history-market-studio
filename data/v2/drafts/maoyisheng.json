@@ -232,14 +232,17 @@
       "year": 1966,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "文革受批斗",
+      "title": "“文化大革命”中受到冲击",
       "tier": "方面名家",
       "tierScore": 60,
       "crisis": "受挫",
       "crisisPenalty": 10,
-      "summary": "被扣上「反动学术权威」帽子",
+      "summary": "被错误地扣上“反动学术权威”的帽子。",
       "rationale": "受冲击",
-      "quote": null
+      "quote": {
+        "text": "绝大多数都没有动摇热爱祖国和拥护党、拥护社会主义的立场",
+        "source": 1
+      }
     },
     {
       "year": 1980,

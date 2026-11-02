@@ -69,19 +69,14 @@
       "year": 1960,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "大饥荒中立志育种",
+      "title": "三年困难时期立志育种",
       "tier": "初起",
       "tierScore": 30,
       "crisis": "平稳",
       "crisisPenalty": 0,
       "summary": "发现一株天然杂交稻",
       "rationale": "起念",
-      "quote": {
-        "find": [
-          "他在农校试验田中意外发现一株特殊性状"
-        ],
-        "source": 0
-      }
+      "quote": null
     },
     {
       "year": 1964,

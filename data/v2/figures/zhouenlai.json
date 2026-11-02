@@ -17,6 +17,10 @@
       "url": "https://zh.wikipedia.org/w/index.php?title=%E5%91%A8%E6%81%A9%E6%9D%A5&oldid=94675833",
       "site": "wp",
       "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "《关于建国以来党的若干历史问题的决议》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
     }
   ],
   "events": [
@@ -532,18 +536,23 @@
       "age": 68,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "文革中维持局面",
+      "title": "“文化大革命”中顾全大局",
       "tier": "一方之主",
       "tierScore": 88,
       "crisis": "受挫",
       "crisisPenalty": 5,
       "score": 83,
       "delta": -7,
-      "rationale": "苦撑",
-      "summary": "保护干部，苦撑国务院",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "rationale": "顾全大局",
+      "summary": "主持国务院工作，尽力减少损失，保护大批党内外干部。",
+      "evidence": "原文",
+      "quote": {
+        "text": "为保护大批的党内外干部，作了坚持不懈的努力，费尽了心血",
+        "textSimplified": "为保护大批的党内外干部，作了坚持不懈的努力，费尽了心血",
+        "source": "《关于建国以来党的若干历史问题的决议》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
+      },
+      "verified": true
     },
     {
       "year": 1971,
@@ -591,7 +600,7 @@
       "age": 76,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "病重批林批孔",
+      "title": "病中坚持工作",
       "tier": "一方之主",
       "tierScore": 86,
       "crisis": "受挫",
@@ -599,7 +608,7 @@
       "score": 71,
       "delta": -19,
       "rationale": "病",
-      "summary": "受冲击，住院",
+      "summary": "病情加重住院，仍坚持处理国务大事；“批林批孔”中江青等人将矛头指向他。",
       "evidence": "百科",
       "quote": {
         "text": "1974年5月，癌细胞扩散，6月开始，周恩来被迫住进中国人民解放军第三〇五医院直到病逝",
@@ -660,8 +669,8 @@
   },
   "gaps": [],
   "quality": {
-    "quotesVerified": 18,
-    "quotesClaimed": 18,
+    "quotesVerified": 19,
+    "quotesClaimed": 19,
     "author": "claude"
   }
 }

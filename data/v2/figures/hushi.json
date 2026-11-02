@@ -360,7 +360,7 @@
       "age": 63,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "大陆批判胡适思想",
+      "title": "胡适思想批判运动",
       "tier": "成名",
       "tierScore": 48,
       "crisis": "受挫",
@@ -368,7 +368,7 @@
       "score": 43,
       "delta": 0,
       "rationale": "被批判",
-      "summary": "全国性批判运动",
+      "summary": "国内开展对胡适学术思想的批判。",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -378,7 +378,7 @@
       "age": 67,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "中研院院长",
+      "title": "任台湾地区“中央研究院”院长",
       "tier": "重臣主帅",
       "tierScore": 78,
       "crisis": "平稳",
@@ -386,7 +386,7 @@
       "score": 78,
       "delta": 48,
       "rationale": "学术",
-      "summary": "台北",
+      "summary": "在台北任职。",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -396,7 +396,7 @@
       "age": 69,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "雷震案",
+      "title": "晚年在台北",
       "tier": "方面名家",
       "tierScore": 62,
       "crisis": "受挫",
@@ -404,15 +404,10 @@
       "score": 57,
       "delta": 0,
       "rationale": "无力",
-      "summary": "为雷震求情未果",
-      "evidence": "百科",
-      "quote": {
-        "text": "1960年9月，雷震因“共谍”案被捕，即雷震事件，而此事件一般认为是蒋介石为阻止雷震筹组新党而策划。",
-        "textSimplified": "1960年9月，雷震因“共谍”案被捕，即雷震事件，而此事件一般认为是蒋介石为阻止雷震筹组新党而策划。",
-        "source": "维基百科「胡适」（2026-09-28 版）",
-        "url": "https://zh.wikipedia.org/w/index.php?title=%E8%83%A1%E9%81%A9&oldid=94628340"
-      },
-      "verified": true
+      "summary": "主持学术工作，为友人奔走未果。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
     }
   ],
   "finale": {
@@ -464,8 +459,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 15,
-    "quotesClaimed": 15,
+    "quotesVerified": 14,
+    "quotesClaimed": 14,
     "author": "claude"
   }
 }

@@ -17,6 +17,10 @@
       "url": "https://zh.wikipedia.org/w/index.php?title=%E9%92%B1%E4%BC%9F%E9%95%BF&oldid=94232759",
       "site": "wp",
       "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "《关于建国以来党的若干历史问题的决议》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
     }
   ],
   "events": [
@@ -202,25 +206,30 @@
       "age": 44,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "被划右派",
+      "title": "被错划为右派",
       "tier": "成名",
       "tierScore": 44,
       "crisis": "大败",
       "crisisPenalty": 25,
       "score": 19,
       "delta": -47,
-      "rationale": "困顿",
-      "summary": "撤销清华副校长等职务，教学科研受限",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "rationale": "受挫",
+      "summary": "反右派斗争扩大化中被错划，撤销清华副校长等职务。",
+      "evidence": "原文",
+      "quote": {
+        "text": "把一批知识分子、爱国人士和党内干部错划为“右派分子”",
+        "textSimplified": "把一批知识分子、爱国人士和党内干部错划为“右派分子”",
+        "source": "《关于建国以来党的若干历史问题的决议》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
+      },
+      "verified": true
     },
     {
       "year": 1968,
       "age": 55,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "下放炼钢车间",
+      "title": "在工厂劳动",
       "tier": "成名",
       "tierScore": 40,
       "crisis": "大败",
@@ -228,7 +237,7 @@
       "score": 15,
       "delta": 0,
       "rationale": "劳动",
-      "summary": "北京特种钢厂",
+      "summary": "“文化大革命”中到北京特种钢厂炼钢车间劳动。",
       "evidence": "百科",
       "quote": {
         "text": "1968年至1971年被下放到北京特种钢厂炼钢车间劳动锻炼。",
@@ -266,15 +275,15 @@
       "age": 66,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "右派改正",
+      "title": "错划右派得到改正",
       "tier": "方面名家",
       "tierScore": 60,
       "crisis": "平稳",
       "crisisPenalty": 0,
       "score": 60,
       "delta": 41,
-      "rationale": "平反",
-      "summary": "撤销右派决定",
+      "rationale": "改正",
+      "summary": "中央撤销原错划决定，恢复名誉。",
       "evidence": "百科",
       "quote": {
         "text": "1979年中央撤销把钱伟长划为右派分子的决定。",
@@ -381,7 +390,7 @@
     "score": 76
   },
   "trough": {
-    "title": "被划右派",
+    "title": "被错划为右派",
     "age": 44,
     "score": 19
   },
@@ -403,8 +412,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 8,
-    "quotesClaimed": 8,
+    "quotesVerified": 9,
+    "quotesClaimed": 9,
     "author": "claude"
   }
 }

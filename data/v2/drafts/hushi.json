@@ -275,12 +275,12 @@
       "year": 1954,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "大陆批判胡适思想",
+      "title": "胡适思想批判运动",
       "tier": "成名",
       "tierScore": 48,
       "crisis": "受挫",
       "crisisPenalty": 5,
-      "summary": "全国性批判运动",
+      "summary": "国内开展对胡适学术思想的批判。",
       "rationale": "被批判",
       "quote": null
     },
@@ -288,12 +288,12 @@
       "year": 1958,
       "yearCertainty": "确知",
       "kind": "stage",
-      "title": "中研院院长",
+      "title": "任台湾地区“中央研究院”院长",
       "tier": "重臣主帅",
       "tierScore": 78,
       "crisis": "平稳",
       "crisisPenalty": 0,
-      "summary": "台北",
+      "summary": "在台北任职。",
       "rationale": "学术",
       "quote": null
     },
@@ -301,19 +301,14 @@
       "year": 1960,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "雷震案",
+      "title": "晚年在台北",
       "tier": "方面名家",
       "tierScore": 62,
       "crisis": "受挫",
       "crisisPenalty": 5,
-      "summary": "为雷震求情未果",
+      "summary": "主持学术工作，为友人奔走未果。",
       "rationale": "无力",
-      "quote": {
-        "find": [
-          "雷震因“共谍”案被捕"
-        ],
-        "source": 0
-      }
+      "quote": null
     }
   ],
   "posthumous": [],

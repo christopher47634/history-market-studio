@@ -17,6 +17,10 @@
       "url": "https://zh.wikipedia.org/w/index.php?title=%E9%82%93%E7%A8%BC%E5%85%88&oldid=94476275",
       "site": "wp",
       "license": "CC BY-SA 4.0"
+    },
+    {
+      "label": "《关于建国以来党的若干历史问题的决议》",
+      "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
     }
   ],
   "events": [
@@ -185,24 +189,29 @@
       "delta": 2,
       "rationale": "巅峰",
       "summary": "从原子弹到氢弹两年八个月",
-      "evidence": "概括",
-      "quote": null,
-      "verified": false
+      "evidence": "原文",
+      "quote": {
+        "text": "氢弹试验和人造卫星发射回收的成功",
+        "textSimplified": "氢弹试验和人造卫星发射回收的成功",
+        "source": "《关于建国以来党的若干历史问题的决议》",
+        "url": "https://zh.wikisource.org/wiki/%E5%85%B3%E4%BA%8E%E5%BB%BA%E5%9B%BD%E4%BB%A5%E6%9D%A5%E5%85%9A%E7%9A%84%E8%8B%A5%E5%B9%B2%E5%8E%86%E5%8F%B2%E9%97%AE%E9%A2%98%E7%9A%84%E5%86%B3%E8%AE%AE"
+      },
+      "verified": true
     },
     {
       "year": 1969,
       "age": 45,
       "yearCertainty": "确知",
       "kind": "sub",
-      "title": "文革中受冲击",
+      "title": "坚守核武器研制一线",
       "tier": "重臣主帅",
       "tierScore": 76,
       "crisis": "受挫",
       "crisisPenalty": 5,
       "score": 71,
       "delta": 0,
-      "rationale": "困顿",
-      "summary": "九院武斗，仍坚守基地",
+      "rationale": "工作受干扰",
+      "summary": "“文化大革命”期间九院工作受到干扰，仍坚守基地组织研制。",
       "evidence": "概括",
       "quote": null,
       "verified": false
@@ -374,8 +383,8 @@
     }
   ],
   "quality": {
-    "quotesVerified": 10,
-    "quotesClaimed": 10,
+    "quotesVerified": 11,
+    "quotesClaimed": 11,
     "author": "claude"
   }
 }
