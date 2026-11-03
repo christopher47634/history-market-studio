@@ -88,7 +88,9 @@ function morph(id, update) {
   if (!canMorph() || !tile) { update(); return; }
   const root = document.documentElement;
   root.dataset.vt = "card";
-  tile.style.viewTransitionName = "role-portrait";
+  // 打开方向：旧画面里卡片墙的头像带名字。关闭方向：旧画面里完整卡的头像已经带着这个名字，
+  // 卡片墙这边再起同名会重复，浏览器直接放弃整段转场（控制台报 duplicate view-transition-name）。
+  if (!document.querySelector(".v3-full")) tile.style.viewTransitionName = "role-portrait";
   const t = document.startViewTransition(() => {
     tile.style.viewTransitionName = "";
     flushSync(update);
@@ -321,6 +323,8 @@ export function RolesView({ current, onCompare }) {
   const [layout, setLayout] = useState(params.get("layout") === "list" ? "list" : "cards");
   const [dragging, setDragging] = useState(false);
   const search = useRef(null);
+  // 手机上占位文字太长会被截断，换短的。
+  const narrow = typeof matchMedia !== "undefined" && matchMedia("(max-width: 720px)").matches;
 
   useEffect(() => {
     const url = new URL(location.href);
@@ -381,13 +385,13 @@ export function RolesView({ current, onCompare }) {
       <div className="v3-roles__main">
         <header className="v3-roles__hero rise" style={{ "--d": 0 }}>
           <h1>角色</h1>
-          <p className="v3-roles__lede">{figures.length} 位历史人物，按<em>领域</em>或<em>一生走势的形态</em>分板块。光标停在卡片上翻看简介，点开读完整角色卡；挑一两个人放进下方对比栏，就能同图对比走势。</p>
+          <p className="v3-roles__lede">{figures.length} 位历史人物，按<em>领域</em>或<em>一生走势的形态</em>分板块。<span className="only-mouse">光标停在卡片上翻看简介，点开读完整角色卡；</span><span className="only-touch">轻点卡片翻看简介，再点一下读完整角色卡；</span>挑一两个人放进下方对比栏，就能同图对比走势。</p>
         </header>
 
         <div className="v3-filterbar lg rise" style={{ "--d": 1 }}>
           <label className="v3-index__search">
             <SearchIcon {...ICON} />
-            <input ref={search} value={q} onChange={(e) => setQ(e.target.value)} placeholder="搜人名、字号、朝代或事件，如「长征」「变法」" aria-label="在角色里搜索" />
+            <input ref={search} value={q} onChange={(e) => setQ(e.target.value)} placeholder={narrow ? "搜人名、朝代或事件" : "搜人名、字号、朝代或事件，如「长征」「变法」"} aria-label="在角色里搜索" />
             {q ? <button type="button" className="v3-index__clear" onClick={() => { setQ(""); search.current?.focus(); }} aria-label="清空搜索"><CloseIcon {...ICON} size={14} /></button> : <kbd>/</kbd>}
           </label>
           <p className="v3-index__count" aria-live="polite"><b><AnimatedNumber value={list.length} /></b> 人<span>·</span>{b.label}</p>

@@ -597,6 +597,35 @@ kbd { font: 500 11px/1 var(--font-mono); padding: 3px 5px; border-radius: 5px; b
   .v3-index__sorts .v3-seg--sm button { padding: 4px 9px; }
 }
 
+
+/* —— 触屏（没有悬停的设备）：文案、快捷键提示、卡片上的小按钮 —— */
+.only-touch, .v3-chart__hint .only-touch { display: none; }
+@media (hover: none) {
+  .only-mouse, .v3-chart__hint .only-mouse { display: none; }
+  .only-touch { display: inline; }
+  .v3-chart__hint .only-touch { display: inline-flex !important; }
+  /* 物理键盘快捷键提示在触屏上没有意义。 */
+  .v3-index__search kbd { display: none; }
+  /* 「+ 加入对比」常显（没有悬停就看不到），点按热区放大到 44px，按钮本身大小不变。 */
+  .v3-tile__add { opacity: 1; transform: translateZ(40px); }
+  .v3-tile__add::before { content: ""; position: absolute; inset: -8px; }
+}
+@media (max-width: 720px) {
+  /* 筛选栏在手机上不吸顶：吸顶时它连同排序一共占掉约六分之一屏，再加上底部对比栏，卡片只剩一半高度。
+     顶栏里的搜索按钮（⌘K 面板）始终可用。 */
+  .v3-roles .v3-filterbar { position: relative; top: auto; }
+  /* 卡片墙底部只需给对比栏（约 70px 高）留位；两层各 100px 的内边距叠起来会空出一大块。 */
+  .v3-roles .v3-roles__main { padding-bottom: 0; }
+  /* 走势页人物卡：手机上只写生卒年（朝代在走势图和角色卡里都有），不再截成「近现代 · 1…」，卡片也不变高。 */
+  .v3-picker__dyn { display: none; }
+  /* 完整角色卡（底部抽屉）：头像缩小放左边，峰值 / 后世评价 / 节点数竖排在右边，不再右半边空着。 */
+  .v3-full__side { grid-template-columns: 112px minmax(0, 1fr); column-gap: 18px; align-items: center; }
+  .v3-full__side .v3-ava--xl { width: 112px; grid-column: 1; grid-row: 1; }
+  .v3-full__side .v3-full__stats { grid-column: 2; grid-row: 1; grid-template-columns: 1fr; gap: 10px; }
+  .v3-full__side .v3-full__stats span { grid-template-columns: 64px auto; align-items: baseline; }
+  .v3-full__side > :not(.v3-ava):not(.v3-full__stats) { grid-column: 1 / -1; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .v3-tile { transform: none !important; }

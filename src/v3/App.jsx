@@ -398,7 +398,7 @@ export function App() {
       ) : (<>
       <section className="v3-intro rise" style={{ "--d": 0 }}>
         <h1>一个人的一生，画成一张走势</h1>
-        <p><em>当时的势</em>随经历起落，<em>后世评价</em>在身后慢慢落定。挑一到两个人，悬停看每个节点，点下去读原文。</p>
+        <p><em>当时的势</em>随经历起落，<em>后世评价</em>在身后慢慢落定。挑一到两个人，<span className="only-mouse">悬停看每个节点，点下去读原文。</span><span className="only-touch">点一下节点看当时的事件和原文。</span></p>
       </section>
       <section className="v3-tickers rise" style={{ "--d": 1 }} aria-label="选择人物">
         <div className="v3-ticker lg" data-era={eraOf(ids.left)} style={{ "--c": "var(--p0)" }}>
@@ -436,7 +436,8 @@ export function App() {
             <Dock hover={hover} pinned={pin} scene={scene} level={view.level} mode={mode} />
           </div>
           <p className="v3-chart__hint">
-            <span><kbd>滚轮</kbd>缩放</span><span><kbd>拖动</kbd>平移</span><span><kbd>悬停</kbd>十字光标</span><span><kbd>点击</kbd>固定节点</span><span><kbd>双击</kbd>细读</span><span><kbd>←</kbd><kbd>→</kbd>逐个翻看</span><span><kbd>Esc</kbd>回全景</span>
+            <span className="only-mouse"><kbd>滚轮</kbd>缩放</span><span className="only-mouse"><kbd>拖动</kbd>平移</span><span className="only-mouse"><kbd>悬停</kbd>十字光标</span><span className="only-mouse"><kbd>点击</kbd>固定节点</span><span className="only-mouse"><kbd>双击</kbd>细读</span><span className="only-mouse"><kbd>←</kbd><kbd>→</kbd>逐个翻看</span><span className="only-mouse"><kbd>Esc</kbd>回全景</span>
+            <span className="only-touch"><kbd>双指</kbd>缩放</span><span className="only-touch"><kbd>左右拖</kbd>平移</span><span className="only-touch"><kbd>点</kbd>看节点</span>
             <em>{view.level.label} · {view.level.hint}</em>
           </p>
           <Strip nodes={inWindow} pinned={pin} hover={hover} onPick={go} />
