@@ -1,5 +1,18 @@
 # Prototype Instructions
 
+## 分支约定（2026-11-03 用户确定）
+
+- **原版是主线**：私有仓库 `private`（christopher47634/history-market-studio-original）的 `main`。界面、交互、性能等一切非内容改动先做在这里。
+- **过审版是派生分支**：本地 `rebuild/v2` = 原版 `main` + 若干「content:」提交（只改 data/ 文案和由它生成的文件），推到公开仓库 `origin/rebuild/v2`，Vercel 自动部署；Cloudflare Pages 由 WSL 里的 Hermes 部署（`--branch main` 与 `--branch rebuild-v2`）。
+- 同步方法：原版提交后，在 `rebuild/v2` 上 `git merge main`；生成文件冲突时取任一边，再重跑 `node pipeline/build.mjs`、`python pipeline/fonts.py`（内容不同，首屏字体片不同）后提交。过审分支上不要做非内容改动。
+
+## 首屏性能约定（2026-11-03）
+
+- 首屏默认 毛泽东 × 周恩来。`scripts/first-screen-chars.mjs` 抓首屏实际显示的字 → `pipeline/first-screen.txt`，`pipeline/fonts.py` 把这些字单独做成第 0 片并在 index.html 预加载；改了首屏界面文字或默认人物后要重抓再重跑 fonts.py。
+- `vite.config.mjs` 的 `firstScreenPreload` 在构建时预加载默认两人的数据 JSON 和角色包；改默认人物要同步 `FIRST_SCREEN`。
+- 首屏渲染期间不要同步读布局（offsetWidth / scrollWidth / getComputedStyle）：页面滚动条（glowscroll.js）、横向滚动渐隐、液态玻璃折射（liquid.js）都推迟到 load 之后的空闲时段或交给 ResizeObserver 首次回调。
+- 疆域地图在省流量 / 2G / 3G 时不加载。Cloudflare 的响应头在 `public/_headers`，和 `vercel.json` 保持一致。
+- 测量：4G（9Mbps/150ms）+ CPU 4 倍降速下，首次加载 1.86MB → 0.78MB，走势图出现约 3.1s → 2.4s（中位数）。
 ## 2026-11-02 大陆发布口径（用户要求）
 
 - 文革（1966—1976）相关事件的标题、摘要、理由一律按党史史料口径写，主要依据 1981 年《关于建国以来党的若干历史问题的决议》（各人物的 ws 里追加了这份决议作为原文来源，文本复制自 sources/maozedong/primary-0.txt）；引文尽量用决议原句。**评分、档位、危局一律不动**，改完用前后快照比对数值字段确认。

@@ -24,6 +24,28 @@ const historyApiPlugin = () => ({
   },
 });
 
+// 首屏默认显示 毛泽东 × 周恩来（见 src/v3/App.jsx 的 initialIds）。这两人的数据和角色包原本要等主程序跑完才开始请求，
+// 构建时把它们的带哈希文件名写进 HTML 预加载，和 JS 并行下载，走势图不再干等网络。
+const FIRST_SCREEN = ["maozedong", "zhouenlai"];
+const firstScreenPreload = () => ({
+  name: "first-screen-preload",
+  apply: "build",
+  transformIndexHtml: {
+    order: "post",
+    handler(html, ctx) {
+      const files = Object.keys(ctx.bundle ?? {});
+      const tags = [];
+      for (const id of FIRST_SCREEN) {
+        const file = files.find((f) => new RegExp(`^assets/${id}-[\\w-]+\\.json$`).test(f));
+        if (file) tags.push({ tag: "link", attrs: { rel: "preload", href: `/${file}`, as: "fetch", crossorigin: "" }, injectTo: "head" });
+      }
+      const roles = files.find((f) => /^assets\/roles\.generated-[\w-]+\.js$/.test(f));
+      if (roles) tags.push({ tag: "link", attrs: { rel: "modulepreload", href: `/${roles}`, crossorigin: "" }, injectTo: "head" });
+      return tags;
+    },
+  },
+});
+
 export default defineConfig({
   // 浏览器端用轻量索引 + 按人懒加载的 data.client.js；Node 端脚本和 API 服务仍直接用全量 data.js。
   resolve: {
@@ -62,5 +84,5 @@ export default defineConfig({
       clientFiles: ["./src/main.jsx"],
     },
   },
-  plugins: [historyApiPlugin(), react()],
+  plugins: [historyApiPlugin(), react(), firstScreenPreload()],
 });

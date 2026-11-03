@@ -35,8 +35,28 @@ texts += [p.read_text(encoding="utf-8") for p in (ROOT / "data/v2/client").glob(
 texts.append((ROOT / "index.html").read_text(encoding="utf-8"))
 freq = collections.Counter(c for t in texts for c in t if is_cjk(c))
 ranked = [c for c, _ in freq.most_common()]
-slices = [ranked[i:i + SLICE] for i in range(0, len(ranked), SLICE)]
-slices[0] = sorted(set(slices[0]) | set(PUNCT), key=lambda c: -freq.get(c, 10**9))
+
+# 首屏专用片：打开首页默认显示的字（毛泽东 × 周恩来 对比 + 界面）单独放进第 0 片并预加载，
+# 首屏只下这一片宋体，不再因为人名、事件标题里的生僻字把后面各片全拉下来。
+# 来源：scripts/first-screen-chars.mjs 在真实浏览器里抓的首屏文字（pipeline/first-screen.txt），
+# 再并上默认两人的姓名、主线、事件标题——内容改了即使没重抓，也不会漏字。
+import json as _json
+first = set(PUNCT)
+fs_file = ROOT / "pipeline/first-screen.txt"
+if fs_file.exists():
+    first |= {c for c in fs_file.read_text(encoding="utf-8") if is_cjk(c)}
+for pid in ("maozedong", "zhouenlai"):
+    f = ROOT / f"data/v2/client/{pid}.json"
+    if f.exists():
+        d = _json.loads(f.read_text(encoding="utf-8"))
+        parts = [d.get("name", ""), d.get("thesis", ""), d.get("dynasty", ""), d.get("era", "")]
+        parts += [e.get("title", "") for e in d.get("events", []) + d.get("subEvents", []) + d.get("posthumous", [])]
+        for k in ("peak", "trough", "finale"):
+            if isinstance(d.get(k), dict): parts.append(d[k].get("title", ""))
+        first |= {c for c in "".join(parts) if is_cjk(c)}
+first = sorted(first, key=lambda c: -freq.get(c, 0))
+rest = [c for c in ranked if c not in set(first)]
+slices = [first] + [rest[i:i + SLICE] for i in range(0, len(rest), SLICE)]
 
 def ranges(chars):
     """码位列表 → 紧凑的 unicode-range（连续码位合并）。"""
@@ -121,6 +141,13 @@ print(f"字体：宋体、黑体各 {len(slices)} 片（{len(ranked)} 字），�
 html = ROOT / "index.html"
 txt = html.read_text(encoding="utf-8")
 new = __import__("re").sub(r'href="/fonts/hms-latin[^"]*\.woff2"', f'href="/fonts/{latin_name}"', txt)
+# 首屏宋体片（第 0 片）同样预加载：和 HTML 并行下载，不用等 CSS 解析完、文字排版时才发现要它。
+serif0 = next(f[0] for f in faces if f[0].startswith("hms-serif-0."))
+pre = f'<link rel="preload" href="/fonts/{serif0}" as="font" type="font/woff2" crossorigin />'
+if "/fonts/hms-serif-0" in new:
+    new = __import__("re").sub(r'<link rel="preload" href="/fonts/hms-serif-0[^"]*\.woff2"[^>]*>', pre, new)
+else:
+    new = __import__("re").sub(r'(<link rel="preload" href="/fonts/hms-latin[^>]*>)', lambda m: m.group(1) + "\n    " + pre, new)
 if new != txt:
     html.write_text(new, encoding="utf-8")
     print("index.html 的西文字体预加载已更新为", latin_name)

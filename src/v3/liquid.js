@@ -93,12 +93,14 @@ export function installLiquid() {
   const scan = () => document.querySelectorAll(".lg").forEach((el) => {
     if (tracked.has(el)) return;
     tracked.add(el);
-    if (ro) { ro.observe(el); fit(el); }
+    // 只交给 ResizeObserver：开始观察后它会在正常排版之后回调一次，不在这里同步读尺寸强制排版。
+    if (ro) ro.observe(el);
   });
   const idle = window.requestIdleCallback ?? ((cb) => setTimeout(cb, 600));
   let pending = 0;
   const later = () => { if (!pending) pending = idle(() => { pending = 0; scan(); }, { timeout: 1500 }); };
-  later();
+  // 首次扫描等页面 load 之后再排进空闲时段：首屏渲染、走势图首帧都不和生成折射贴图抢主线程。
+  if (document.readyState === "complete") later(); else addEventListener("load", later, { once: true });
 
   // —— 高光方向 + 悬停 / 按下照亮。玻璃的位置只在滚动、缩放、增删之后重量，不每次指针移动都量。
   let boxes = null;

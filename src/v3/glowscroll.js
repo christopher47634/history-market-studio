@@ -27,8 +27,9 @@ function hscroll(el) {
     el.toggleAttribute("data-fade-right", el.scrollLeft < max - 2);
   };
   el.addEventListener("scroll", fades, { passive: true });
+  // 不在这里立刻量一次：首屏渲染中途读 scrollWidth 会强制整页同步排版。ResizeObserver 开始观察后
+  // 会在下一次正常排版之后自动回调一次，渐隐状态在那时设好。
   new ResizeObserver(fades).observe(el);
-  fades();
   el.addEventListener("wheel", (e) => {
     if (e.ctrlKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
     const max = el.scrollWidth - el.clientWidth;
@@ -73,7 +74,11 @@ function scan(root) {
 export function installGlowScroll() {
   if (typeof document === "undefined" || document.documentElement.dataset.glowScroll) return;
   document.documentElement.dataset.glowScroll = "on";
-  OverlayScrollbars(document.body, { ...SCROLL_OPTIONS, overflow: { x: "hidden", y: "scroll" } });
+  // 页面滚动条等首屏画完、浏览器空闲时再接管：首屏渲染期间 React 不断插入节点、字体陆续到位，
+  // 库每次都要强制量一遍整页布局（4 倍降速的 CPU 上实测占掉约 0.5 秒），推迟后首屏不再被它卡住。
+  const idle = window.requestIdleCallback ?? ((fn) => setTimeout(fn, 300));
+  const start = () => idle(() => OverlayScrollbars(document.body, { ...SCROLL_OPTIONS, overflow: { x: "hidden", y: "scroll" } }), { timeout: 2500 });
+  if (document.readyState === "complete") start(); else addEventListener("load", start, { once: true });
   scan(document.body);
   new MutationObserver((records) => { for (const rec of records) rec.addedNodes.forEach(scan); }).observe(document.body, { childList: true, subtree: true });
 }
