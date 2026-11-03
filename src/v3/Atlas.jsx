@@ -16,6 +16,9 @@ export function AtlasBackdrop({ year }) {
   // 首屏先把走势画出来：浏览器空闲下来再开始下载地图（约 1MB 压缩后），不和人物数据、字体抢带宽。
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
+    // 地图只是底色，整套约 1.5MB（压缩后）。用户开了省流量或网络是 2G/3G 时不下载，走势照常显示。
+    const net = navigator.connection;
+    if (net && (net.saveData || /(^|-)(2g|3g)$/.test(net.effectiveType ?? ""))) return;
     const idle = window.requestIdleCallback ?? ((fn) => setTimeout(fn, 600));
     const cancel = window.cancelIdleCallback ?? clearTimeout;
     const id = idle(() => setMounted(true), { timeout: 2000 });
