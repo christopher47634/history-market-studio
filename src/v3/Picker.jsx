@@ -84,7 +84,7 @@ export function Picker({ value, onChange, slot, allowEmpty = false, exclude }) {
         {current ? (
           <>
             <span className="v3-picker__mark"><Avatar f={current} role={roles[current.id]} size="md" /></span>
-            <span className="v3-picker__text"><b>{current.name}</b><small>{current.dynasty} · {years(current)}</small></span>
+            <span className="v3-picker__text"><b>{current.name}</b><small><span className="v3-picker__dyn">{current.dynasty} · </span>{years(current)}</small></span>
           </>
         ) : (
           <>
