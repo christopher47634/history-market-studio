@@ -1,0 +1,482 @@
+{
+  "id": "hanxin",
+  "name": "韩信",
+  "born": {
+    "year": -231,
+    "certainty": "估计",
+    "note": "史书未载生年，旧说约前231年"
+  },
+  "died": {
+    "year": -196,
+    "certainty": "确知"
+  },
+  "lifeSpan": 35,
+  "thesis": "从淮阴布衣到齐王楚王，横扫魏赵燕齐、灭楚垓下，功高震主，终以谋反嫌疑被诛三族。",
+  "sources": [
+    {
+      "label": "《史记·淮阴侯列传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+    }
+  ],
+  "events": [
+    {
+      "year": -231,
+      "age": 0,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于淮阴",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 10,
+      "delta": 0,
+      "rationale": "平民贫寒，无官无名，处于社会底层。",
+      "summary": "生于淮阴，家贫无行，不能为吏经商，常寄食于人。",
+      "evidence": "原文",
+      "quote": {
+        "text": "淮陰侯韓信者，淮陰人也。始爲布衣時，貧無行，不得推擇爲吏",
+        "textSimplified": "淮阴侯韩信者，淮阴人也。始为布衣时，贫无行，不得推择为吏",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -210,
+      "age": 21,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "胯下之辱",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "score": 4,
+      "delta": -6,
+      "rationale": "受市井少年公开羞辱，忍辱负重以求日后。",
+      "summary": "淮阴屠中少年逼其从胯下爬过，韩信忍辱匍匐，一市皆笑。",
+      "evidence": "原文",
+      "quote": {
+        "text": "信能死，刺我；不能死，出我袴下。",
+        "textSimplified": "信能死，刺我；不能死，出我袴下。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -209,
+      "age": 22,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "从项梁，后属项羽",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 20,
+      "delta": 16,
+      "rationale": "先随项梁，后属项羽为郎中，献策不用。",
+      "summary": "项梁渡淮，韩信杖剑从军；项梁败后属项羽，任郎中，数献策不用。",
+      "evidence": "原文",
+      "quote": {
+        "text": "項梁敗，又屬項羽，羽以爲郎中。數以策干項羽，羽不用。",
+        "textSimplified": "项梁败，又属项羽，羽以为郎中。数以策干项羽，羽不用。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弃楚归汉，坐法当斩",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "score": 2,
+      "delta": -18,
+      "rationale": "犯法临刑，生死一线，靠呼滕公获释。",
+      "summary": "归汉任连敖，坐法当斩，临刑呼滕公，获释并荐为治粟都尉。",
+      "evidence": "原文",
+      "quote": {
+        "text": "坐法當斬，其輩十三人皆已斬，次至信",
+        "textSimplified": "坐法当斩，其辈十三人皆已斩，次至信",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "萧何月下追",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 18,
+      "delta": 0,
+      "rationale": "低级军官不受重用而出走，不是绝境",
+      "summary": "韩信度刘邦不用己，亡走；萧何不及奏报，月下追回，力荐为国士无双。",
+      "evidence": "原文",
+      "quote": {
+        "text": "何聞信亡，不及以聞，自追之。",
+        "textSimplified": "何闻信亡，不及以闻，自追之。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "亡走被追回，得萧何强力举荐。"
+    },
+    {
+      "year": -206,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "登坛拜将",
+      "tier": "重臣主帅",
+      "tierScore": 75,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 75,
+      "delta": 73,
+      "rationale": "被拜为大将，正式掌握汉军指挥权。",
+      "summary": "刘邦斋戒设坛，拜韩信为大将；信献还定三秦、争天下之策。",
+      "evidence": "原文",
+      "quote": {
+        "text": "至拜大將，乃韓信也，一軍皆驚。",
+        "textSimplified": "至拜大将，乃韩信也，一军皆惊。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -206,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "还定三秦",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 5,
+      "rationale": "作为主帅定三秦，打开东进通道。",
+      "summary": "汉军出陈仓，击降章邯等三秦王，关中归汉。",
+      "evidence": "原文",
+      "quote": {
+        "text": "八月，漢王舉兵東出陳倉，定三秦。",
+        "textSimplified": "八月，汉王举兵东出陈仓，定三秦。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -205,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破魏擒豹",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 2,
+      "rationale": "独当一面灭魏，战功与实权上升。",
+      "summary": "以左丞相击魏，声东击西渡夏阳，虏魏王豹，定河东郡。",
+      "evidence": "原文",
+      "quote": {
+        "text": "信遂虜豹，定魏爲河東郡。",
+        "textSimplified": "信遂虏豹，定魏为河东郡。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -204,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "井陉破赵",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 2,
+      "rationale": "背水奇阵以少胜多，军事声望大涨。",
+      "summary": "背水列阵，奇兵拔赵帜，大破赵军，斩陈余、擒赵王歇。",
+      "evidence": "原文",
+      "quote": {
+        "text": "大破虜趙軍，斬成安君泜水上，禽趙王歇。",
+        "textSimplified": "大破虏赵军，斩成安君泜水上，禽赵王歇。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -204,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "刘邦夺军",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "score": 69,
+      "delta": 0,
+      "rationale": "刘邦入壁夺其军，兵权被削但仍为相国。",
+      "summary": "刘邦晨自称汉使，入赵壁夺韩信、张耳军，拜信为相国击齐。",
+      "evidence": "原文",
+      "quote": {
+        "text": "即其臥內上奪其印符",
+        "textSimplified": "即其卧内上夺其印符",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -203,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平齐封王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 4,
+      "rationale": "灭齐破楚主力，受封齐王，功业达峰值。",
+      "summary": "袭齐杀龙且，尽定齐地；自请假王，刘邦封为真齐王。",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃遣張良往立信爲齊王，徵其兵擊楚。",
+        "textSimplified": "乃遣张良往立信为齐王，征其兵击楚。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -203,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "武涉劝反",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "项羽派人劝其三分天下，信拒绝。",
+      "summary": "武涉游说韩信叛汉连楚，韩信以汉王厚遇为由拒绝。",
+      "evidence": "原文",
+      "quote": {
+        "text": "幸爲信謝項王！",
+        "textSimplified": "幸为信谢项王！",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -203,
+      "age": 28,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "蒯通劝三分",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "齐王权势正盛，拒绝自立本身不是危局",
+      "summary": "蒯通以相人之术劝韩信据齐自立，三分天下，韩信犹豫谢绝。",
+      "evidence": "原文",
+      "quote": {
+        "text": "韓信猶豫不忍倍漢",
+        "textSimplified": "韩信犹豫不忍倍汉",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "蒯通劝其自立，韩信犹豫不忍背汉。"
+    },
+    {
+      "year": -202,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "垓下统军",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "统军会师垓下灭楚，功业极盛。",
+      "summary": "率军会垓下，合围破楚，项羽败走乌江自刎。",
+      "evidence": "原文",
+      "quote": {
+        "text": "召齊王信，遂將兵會垓下。",
+        "textSimplified": "召齐王信，遂将兵会垓下。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -202,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "徙为楚王",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 76,
+      "delta": -12,
+      "rationale": "项羽破后，兵权被夺，徙为楚王。",
+      "summary": "刘邦袭夺齐王军，徙韩信为楚王，都下邳。",
+      "evidence": "原文",
+      "quote": {
+        "text": "漢五年正月，徙齊王信爲楚王，都下邳。",
+        "textSimplified": "汉五年正月，徙齐王信为楚王，都下邳。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true
+    },
+    {
+      "year": -201,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "钟离昧自刎",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 61,
+      "delta": 0,
+      "rationale": "楚王见疑于汉，被迫逼死故友",
+      "summary": "刘邦诏捕钟离昧，韩信欲斩昧献首，昧骂信后自刎。",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃罵信曰：『公非長者！』卒自剄。",
+        "textSimplified": "乃骂信曰：『公非长者！』卒自刭。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "欲斩故友自媚，反失自保筹码。"
+    },
+    {
+      "year": -201,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被擒贬淮阴侯",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 33,
+      "delta": -43,
+      "rationale": "被擒降为淮阴侯，软禁长安",
+      "summary": "刘邦伪游云梦，韩信谒陈被缚，赦为淮阴侯，留居长安。",
+      "evidence": "原文",
+      "quote": {
+        "text": "遂械系信。至雒陽，赦信罪，以爲淮陰侯。",
+        "textSimplified": "遂械系信。至雒阳，赦信罪，以为淮阴侯。",
+        "source": "《史记·淮阴侯列传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "由楚王贬为列侯，失国失兵，软禁京师。"
+    }
+  ],
+  "finale": {
+    "year": -196,
+    "age": 35,
+    "title": "斩于长乐宫钟室",
+    "retention": 0.91,
+    "reason": "个人势力被夷三族，但用兵之法与兵书影响后世，军事声望长期延续。",
+    "score": 30,
+    "evidence": "原文",
+    "quote": {
+      "text": "呂后使武士縛信，斬之長樂鐘室。",
+      "textSimplified": "吕后使武士缚信，斩之长乐钟室。",
+      "source": "《史记·淮阴侯列传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7092"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立淮阴侯列传",
+      "score": 85,
+      "rationale": "司马迁专传记其功过，兵仙地位入正史。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 85,
+      "rationale": "兵家代表人物，战术典范影响深远；功高震主被诛，评价褒贬并存。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 85,
+    "label": "争议",
+    "rationale": "兵家代表人物，战术典范影响深远；功高震主被诛，评价褒贬并存。"
+  },
+  "peak": {
+    "title": "平齐封王",
+    "age": 28,
+    "score": 88
+  },
+  "trough": {
+    "title": "弃楚归汉，坐法当斩",
+    "age": 25,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 21,
+      "years": 21
+    }
+  ],
+  "quality": {
+    "quotesVerified": 18,
+    "quotesClaimed": 18,
+    "author": "deepseek-flash"
+  }
+}

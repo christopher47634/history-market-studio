@@ -1,0 +1,94 @@
+{
+  "id": "tangxianzu",
+  "author": "claude",
+  "born": {
+    "year": 1550,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1616,
+    "certainty": "确知"
+  },
+  "thesis": "东方莎士比亚，《牡丹亭》。",
+  "events": [
+    {
+      "year": 1550,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于临川",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "书香",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1577,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拒张居正拉拢落第",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "不附权贵",
+      "rationale": "不第",
+      "quote": null
+    },
+    {
+      "year": 1583,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1591,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上疏贬徐闻",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "论时政",
+      "rationale": "贬",
+      "quote": null
+    },
+    {
+      "year": 1598,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弃官归乡作《牡丹亭》",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "临川四梦",
+      "rationale": "名作",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1616,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "牡丹亭",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "东方莎士比亚"
+  }
+}

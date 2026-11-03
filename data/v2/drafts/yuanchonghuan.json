@@ -1,0 +1,150 @@
+{
+  "id": "yuanchonghuan",
+  "author": "claude",
+  "born": {
+    "year": 1584,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1630,
+    "certainty": "确知"
+  },
+  "thesis": "宁远大捷击败努尔哈赤，被崇祯凌迟。",
+  "events": [
+    {
+      "year": 1584,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于广东东莞",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平民",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1619,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "知县",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1622,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "单骑出关",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兵部职方主事",
+      "rationale": "守辽",
+      "quote": null
+    },
+    {
+      "year": 1626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁远大捷",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "击败努尔哈赤",
+      "rationale": "名震",
+      "quote": {
+        "find": [
+          "寧遠"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1627,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁锦大捷后辞官",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "魏忠贤排挤",
+      "rationale": "去职",
+      "quote": null
+    },
+    {
+      "year": 1628,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督师蓟辽",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "五年复辽",
+      "rationale": "重用",
+      "quote": null
+    },
+    {
+      "year": 1629,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀毛文龙",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "擅杀",
+      "rationale": "争议",
+      "quote": {
+        "find": [
+          "毛文龍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1629,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "己巳之变下狱",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "皇太极绕道入关，被诬下狱",
+      "rationale": "死局",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1781,
+      "title": "乾隆平反",
+      "score": 72,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1630,
+    "title": "凌迟",
+    "retention": 0.8,
+    "reason": "十五年后明亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "悲剧名将"
+  }
+}

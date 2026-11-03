@@ -1,0 +1,185 @@
+{
+  "id": "fanzeng",
+  "author": "claude",
+  "born": {
+    "year": -277,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -204,
+    "certainty": "确知"
+  },
+  "thesis": "七十岁出山为项氏谋主，被陈平反间疑忌，愤而辞归死于途中。",
+  "events": [
+    {
+      "year": -277,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于居鄛",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "居鄛人，素居家好奇计",
+      "rationale": "平民谋士",
+      "quote": {
+        "find": [
+          "居鄛"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "说项梁立楚后",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年七十往说项梁立楚怀王孙心",
+      "rationale": "以奇计入项氏幕",
+      "quote": {
+        "find": [
+          "往说项梁",
+          "素居家"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -207,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为末将救赵",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宋义为上将，项羽次将，范增为末将，北救赵",
+      "rationale": "楚军将领",
+      "quote": {
+        "find": [
+          "末将"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿门举玦",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "数目项王、举所佩玉玦示杀沛公，项王不应",
+      "rationale": "亚父之尊，谋不见用",
+      "quote": {
+        "find": [
+          "玉玦",
+          "亚父"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "撞破玉斗",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "怒而撞破玉斗，叹「竖子不足与谋」",
+      "rationale": "对项羽失望",
+      "quote": {
+        "find": [
+          "竖子不足与谋",
+          "玉斗"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -205,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "号为亚父",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "项王尊为亚父，参与军国大计",
+      "rationale": "楚军谋主",
+      "quote": {
+        "find": [
+          "亚父"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -204,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中反间被疑",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "陈平施反间，项王疑之，稍夺其权",
+      "rationale": "失去信任",
+      "quote": {
+        "find": [
+          "稍夺之权",
+          "疑范增"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -204,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "愤而辞归",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "请骸骨归，未至彭城，疽发背而死",
+      "rationale": "政治生命终结",
+      "quote": {
+        "find": [
+          "疽发背",
+          "骸骨"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》载其事",
+      "score": 58,
+      "rationale": "留下「竖子不足与谋」之叹，成为忠谋不用的典型"
+    }
+  ],
+  "finale": {
+    "year": -204,
+    "title": "疽发背死",
+    "retention": 0.95,
+    "reason": "楚失谋主，一年后项羽败亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 66,
+    "label": "正面",
+    "rationale": "秦末最著名的谋士之一，谋不见用的悲剧形象"
+  }
+}

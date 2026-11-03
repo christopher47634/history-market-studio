@@ -1,0 +1,142 @@
+{
+  "id": "huangdaopo",
+  "name": "黄道婆",
+  "born": {
+    "year": 1245,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1330,
+    "certainty": "确知"
+  },
+  "lifeSpan": 85,
+  "thesis": "童养媳逃至崖州学纺织，归乡改进棉纺织技术。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1245,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于松江乌泥泾",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 8,
+      "delta": 0,
+      "rationale": "贫寒",
+      "summary": "贫苦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1257,
+      "age": 12,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "童养媳逃往崖州",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 3,
+      "delta": -5,
+      "rationale": "逃亡",
+      "summary": "受虐逃走",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1270,
+      "age": 25,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "崖州习黎族棉纺",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 15,
+      "rationale": "寄居他乡学艺",
+      "summary": "在崖州向黎族妇女学习棉纺织技术近三十年",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1295,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "返乡传授纺织术",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 42,
+      "delta": 24,
+      "rationale": "技术革新",
+      "summary": "改进搅车弹弓织机",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1330,
+    "age": 85,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "松江布衣被天下",
+    "score": 39.9,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 80,
+      "rationale": "棉纺织技术革新者",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "棉纺织技术革新者"
+  },
+  "peak": {
+    "title": "返乡传授纺织术",
+    "age": 50,
+    "score": 42
+  },
+  "trough": {
+    "title": "童养媳逃往崖州",
+    "age": 12,
+    "score": 3
+  },
+  "gaps": [
+    {
+      "fromAge": 25,
+      "toAge": 50,
+      "years": 25
+    },
+    {
+      "fromAge": 50,
+      "toAge": 85,
+      "years": 35
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

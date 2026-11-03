@@ -1,0 +1,175 @@
+{
+  "id": "douxian",
+  "author": "claude",
+  "born": {
+    "year": 50,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 92,
+    "certainty": "确知"
+  },
+  "thesis": "外戚权臣，燕然勒石大破北匈奴，终被汉和帝诛除。",
+  "events": [
+    {
+      "year": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于扶风",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "窦融曾孙，父窦勋被诛",
+      "rationale": "外戚之后而家道中落",
+      "quote": {
+        "find": [
+          "窦融"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 77,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "妹立为皇后",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "妹为章帝皇后，拜郎、侍中",
+      "rationale": "外戚得宠",
+      "quote": {
+        "find": [
+          "皇后"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 83,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "夺沁水公主田",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "以贱直夺公主园田，章帝切责之",
+      "rationale": "失宠险境",
+      "quote": {
+        "find": [
+          "沁水公主"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 88,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "和帝即位专权",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "窦太后临朝，以侍中内干机密",
+      "rationale": "外戚掌权",
+      "quote": {
+        "find": [
+          "机密"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 88,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "刺杀都乡侯畅",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "刺杀刘畅事发，被闭宫内，请击匈奴以赎死",
+      "rationale": "戴罪",
+      "quote": {
+        "find": [
+          "赎死",
+          "刘畅"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 89,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "燕然勒石",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大破北单于，登燕然山刻石纪功",
+      "rationale": "武功鼎盛",
+      "quote": {
+        "find": [
+          "燕然"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 91,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜大将军",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "位次太傅下三公上，威权震朝",
+      "rationale": "权倾朝野",
+      "quote": {
+        "find": [
+          "大将军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 92,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "和帝收印绶",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "和帝与宦官郑众谋诛之，收大将军印绶",
+      "rationale": "败亡",
+      "quote": {
+        "find": [
+          "印绶",
+          "郑众"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 92,
+    "title": "被迫自杀",
+    "retention": 0.8,
+    "reason": "宦官干政由此开端",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 56,
+    "label": "负面",
+    "rationale": "燕然勒石的外戚权臣"
+  }
+}

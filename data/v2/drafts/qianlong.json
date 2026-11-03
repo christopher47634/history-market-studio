@@ -1,0 +1,125 @@
+{
+  "id": "qianlong",
+  "author": "claude",
+  "born": {
+    "year": 1711,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1799,
+    "certainty": "确知"
+  },
+  "thesis": "十全老人，在位六十年，盛世与闭关并存。",
+  "events": [
+    {
+      "year": 1711,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为雍正第四子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "皇四子弘历",
+      "rationale": "皇子",
+      "quote": null
+    },
+    {
+      "year": 1733,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封宝亲王",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "亲王",
+      "rationale": "亲王",
+      "quote": null
+    },
+    {
+      "year": 1735,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即位",
+      "rationale": "即位",
+      "quote": null
+    },
+    {
+      "year": 1759,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平定准噶尔回部",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "新疆入版图",
+      "rationale": "拓疆",
+      "quote": null
+    },
+    {
+      "year": 1773,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "修《四库全书》",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文字狱并行",
+      "rationale": "文化",
+      "quote": {
+        "find": [
+          "四庫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1793,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拒马戛尔尼",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "天朝上国",
+      "rationale": "闭关",
+      "quote": null
+    },
+    {
+      "year": 1796,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "禅位太上皇",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "仍训政",
+      "rationale": "训政",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1799,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "盛世转衰",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "争议",
+    "rationale": "十全老人"
+  }
+}

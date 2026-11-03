@@ -1,0 +1,276 @@
+{
+  "id": "dufu",
+  "author": "deepseek-flash",
+  "born": {
+    "year": 712,
+    "certainty": "确知",
+    "note": "生于河南巩县，祖籍襄阳"
+  },
+  "died": {
+    "year": 770,
+    "certainty": "确知"
+  },
+  "thesis": "从困守长安到成都草堂，一生颠沛流离，却在战乱中写下诗史，身后被尊为诗圣。",
+  "events": [
+    {
+      "year": 712,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于巩县",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "出身官宦世家但已中落，本人无官无位。",
+      "summary": "生于河南巩县，祖籍襄阳，祖父杜审言为初唐诗人。",
+      "quote": {
+        "text": "杜甫，字子美，本襄陽人，後徙河南鞏縣。",
+        "source": 0
+      }
+    },
+    {
+      "year": 735,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "洛阳应试不第",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "科举落第，仕途无门，仍为布衣。",
+      "summary": "赴洛阳应进士试，不第，困居长安。",
+      "quote": {
+        "text": "甫天寳初應進士不第。",
+        "source": 0
+      }
+    },
+    {
+      "year": 744,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "与李白同游梁宋",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "文名渐起，与李白齐名，时号李杜。",
+      "summary": "与李白、高适同游梁宋，饮酒赋诗，结下友谊。",
+      "quote": {
+        "text": "少與李白齊名，時號「李杜」。",
+        "source": 1
+      }
+    },
+    {
+      "year": 751,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "献三大礼赋",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "献赋得玄宗赏识，但未获实职。",
+      "summary": "献《三大礼赋》，玄宗奇之，命待制集贤院。",
+      "quote": {
+        "text": "甫奏賦三篇。帝奇之，使待制集賢院",
+        "source": 1
+      }
+    },
+    {
+      "year": 755,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "困守长安，安史乱起",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "客居长安十年，得小官，乱起后流离。",
+      "summary": "困居长安十年，授右卫率府兵曹参军，安史之乱爆发。",
+      "quote": {
+        "text": "舉進士不中第，困長安。",
+        "source": 1
+      }
+    },
+    {
+      "year": 757,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任左拾遗",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "rationale": "投奔肃宗拜左拾遗，短暂进入朝廷，但旋因房琯事被疏远。",
+      "summary": "从凤翔见肃宗，拜右拾遗，后因疏救房琯触怒肃宗。",
+      "quote": {
+        "text": "至德二年，亡走鳳翔上謁，拜右拾遺。",
+        "source": 1
+      }
+    },
+    {
+      "year": 757,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "房琯事牵连",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "上疏救房琯，触怒肃宗，几遭推问。",
+      "summary": "房琯兵败罢相，杜甫上疏营救，肃宗怒，诏三司推问。",
+      "quote": {
+        "text": "甫上疏言：「罪細，不宜免大臣。」帝怒",
+        "source": 1
+      }
+    },
+    {
+      "year": 758,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬华州司功参军",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "rationale": "被贬出朝，从此离开朝廷，政治抱负受挫。",
+      "summary": "因房琯事被贬为华州司功参军，后弃官。",
+      "quote": {
+        "text": "出甫為華州司功叅軍。",
+        "source": 0
+      }
+    },
+    {
+      "year": 759,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弃官客秦州，同谷绝境",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "rationale": "弃官流亡，寓居同谷，负薪采橡栗，儿女饿死，濒临绝境。",
+      "summary": "关辅饥荒，弃官西行，客秦州、同谷，全家饥寒交迫。",
+      "quote": {
+        "text": "時關畿亂離，糓食踊貴，甫寓居成州同谷縣，自負薪採稆，兒女餓殍者數人。",
+        "source": 0
+      }
+    },
+    {
+      "year": 760,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "成都草堂",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "得严武等帮助，在成都筑草堂，生活稍安。",
+      "summary": "于成都浣花溪畔筑茅屋而居，即杜甫草堂。",
+      "quote": {
+        "text": "甫於成都浣花里種竹植樹，結廬枕江",
+        "source": 0
+      }
+    },
+    {
+      "year": 764,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "检校工部员外郎",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "严武表荐为节度参谋、检校工部员外郎，世称杜工部。",
+      "summary": "严武镇成都，表荐杜甫为节度参谋、检校工部员外郎。",
+      "quote": {
+        "text": "奏為節度叅謀檢校尚書工部員外郎",
+        "source": 0
+      }
+    },
+    {
+      "year": 765,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "严武卒，离蜀",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "rationale": "失去依靠，蜀中大乱，被迫携家离开成都。",
+      "summary": "严武病逝，杜甫失去依靠，五月离开成都乘舟南下。",
+      "quote": {
+        "text": "永泰元年夏，武卒，甫無所依。",
+        "source": 0
+      }
+    },
+    {
+      "year": 768,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出三峡漂泊湖南",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "受挫",
+      "crisisPenalty": 7,
+      "rationale": "出三峡，漂泊荆湘，贫病交加，以船为家。",
+      "summary": "携家出三峡，经江陵、公安，暮冬抵岳阳，漂泊湖南。",
+      "quote": {
+        "text": "甫以其家避亂荊、楚，扁舟下峽",
+        "source": 0
+      }
+    },
+    {
+      "year": 770,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "耒阳阻水",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "rationale": "游岳祠遇大水，旬日不得食，濒于饿死。",
+      "summary": "游岳祠，大水遽至，涉旬不得食，县令具舟迎之。",
+      "quote": {
+        "text": "游岳祠，大水遽至，涉旬不得食，縣令具舟迎之，乃得還。",
+        "source": 1
+      }
+    }
+  ],
+  "finale": {
+    "year": 770,
+    "title": "卒于湘江舟中",
+    "retention": 0.96,
+    "reason": "诗歌与精神影响在身后不断增长，终成诗圣。",
+    "quote": {
+      "text": "大醉，一昔卒，年五十九。",
+      "source": 1
+    }
+  },
+  "posthumous": [
+    {
+      "year": 813,
+      "title": "迁葬偃师",
+      "score": 80,
+      "rationale": "孙嗣业自耒阳迁柩归葬偃师首阳山。"
+    },
+    {
+      "year": 820,
+      "title": "元稹推为集大成",
+      "score": 93,
+      "rationale": "元稹论李杜优劣，称诗人以来未有如子美者。"
+    },
+    {
+      "year": 960,
+      "title": "宋人尊为诗圣",
+      "score": 95,
+      "rationale": "宋代确立杜甫诗圣地位，诗史影响千年。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 93,
+    "label": "正面",
+    "rationale": "中国诗歌集大成者，诗圣诗史，影响东亚千年。"
+  }
+}

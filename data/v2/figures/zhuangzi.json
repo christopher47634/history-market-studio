@@ -1,0 +1,174 @@
+{
+  "id": "zhuangzi",
+  "name": "庄子",
+  "born": {
+    "year": -369,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -286,
+    "certainty": "估计"
+  },
+  "lifeSpan": 83,
+  "thesis": "宋国蒙人，漆园吏，辞楚相之聘，著《庄子》逍遥齐物。",
+  "sources": [
+    {
+      "label": "《史记·卷六十三 老子韩非列传 第三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+    }
+  ],
+  "events": [
+    {
+      "year": -369,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于宋蒙",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "蒙人，名周",
+      "evidence": "原文",
+      "quote": {
+        "text": "莊子者，蒙人也，名周。",
+        "textSimplified": "庄子者，蒙人也，名周。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -340,
+      "age": 29,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任漆园吏",
+      "tier": "初起",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 26,
+      "delta": 11,
+      "rationale": "小吏",
+      "summary": "周尝为蒙漆园吏",
+      "evidence": "原文",
+      "quote": {
+        "text": "周嘗為蒙漆園吏，與梁惠王、齊宣王同時。",
+        "textSimplified": "周尝为蒙漆园吏，与梁惠王、齐宣王同时。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -330,
+      "age": 39,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "辞楚相之聘",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 22,
+      "rationale": "名重当世却拒仕",
+      "summary": "楚威王使使厚币迎之许以为相，笑而拒之",
+      "evidence": "原文",
+      "quote": {
+        "text": "楚威王聞莊周賢，使使厚幣迎之，許以為相。",
+        "textSimplified": "楚威王闻庄周贤，使使厚币迎之，许以为相。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -320,
+      "age": 49,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著书十余万言",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 0,
+      "rationale": "著书",
+      "summary": "其著书十余万言，大抵率寓言也",
+      "evidence": "原文",
+      "quote": {
+        "text": "故其著書十餘萬言，大抵率寓言也。",
+        "textSimplified": "故其著书十余万言，大抵率寓言也。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -286,
+    "age": 83,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "道家思想与文学影响深远",
+    "score": 45.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 742,
+      "title": "唐尊为南华真人",
+      "score": 88,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 95,
+      "rationale": "道家代表，中国哲学与文学的高峰",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "道家代表，中国哲学与文学的高峰"
+  },
+  "peak": {
+    "title": "辞楚相之聘",
+    "age": 39,
+    "score": 48
+  },
+  "trough": {
+    "title": "任漆园吏",
+    "age": 29,
+    "score": 26
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    },
+    {
+      "fromAge": 49,
+      "toAge": 83,
+      "years": 34
+    }
+  ],
+  "quality": {
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
+    "author": "claude"
+  }
+}

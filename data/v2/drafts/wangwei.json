@@ -1,0 +1,107 @@
+{
+  "id": "wangwei",
+  "author": "claude",
+  "born": {
+    "year": 699,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 761,
+    "certainty": "确知"
+  },
+  "thesis": "诗佛，诗中有画，安史之乱中被迫受伪职。",
+  "events": [
+    {
+      "year": 699,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于太原祁县",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太原王氏",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 721,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第任太乐丞",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "状元及第",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 721,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "贬济州司仓",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "因伶人舞黄狮子获罪",
+      "rationale": "小贬",
+      "quote": null
+    },
+    {
+      "year": 734,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "张九龄荐为右拾遗",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "复用",
+      "rationale": "近臣",
+      "quote": null
+    },
+    {
+      "year": 756,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陷贼受伪职",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "安史陷长安，被迫受伪职",
+      "rationale": "身败名裂之危",
+      "quote": null
+    },
+    {
+      "year": 758,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赦罪复官",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以凝碧池诗得免，任尚书右丞",
+      "rationale": "复用",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 761,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "诗名千古",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "诗佛"
+  }
+}

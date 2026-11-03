@@ -1,0 +1,274 @@
+{
+  "id": "sunquan",
+  "name": "孙权",
+  "born": {
+    "year": 182,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 252,
+    "certainty": "确知"
+  },
+  "lifeSpan": 70,
+  "thesis": "十八岁接掌江东，赤壁联刘破曹，夺荆州，称帝建吴。",
+  "sources": [
+    {
+      "label": "《三国志·吴书·吴主传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+    }
+  ],
+  "events": [
+    {
+      "year": 182,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于下邳",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "将门之子",
+      "summary": "孙坚次子",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 200,
+      "age": 18,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "继兄统江东",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 71,
+      "delta": 39,
+      "rationale": "少年掌权",
+      "summary": "孙策遇刺，权年十九代领其众",
+      "evidence": "原文",
+      "quote": {
+        "text": "策薨，以事授權，權哭未及息。",
+        "textSimplified": "策薨，以事授权，权哭未及息。",
+        "source": "《三国志·吴书·吴主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+      },
+      "verified": true
+    },
+    {
+      "year": 208,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赤壁破曹",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 15,
+      "rationale": "三分之势由此",
+      "summary": "与刘备合兵，大破曹公于赤壁",
+      "evidence": "原文",
+      "quote": {
+        "text": "瑜、普爲左右督，各領萬人，與備俱進，遇於赤壁，大破曹公軍。",
+        "textSimplified": "瑜、普为左右督，各领万人，与备俱进，遇于赤壁，大破曹公军。",
+        "source": "《三国志·吴书·吴主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+      },
+      "verified": true
+    },
+    {
+      "year": 219,
+      "age": 37,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭取荆州",
+      "tier": "一方之主",
+      "tierScore": 89,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 89,
+      "delta": 3,
+      "rationale": "全据长江",
+      "summary": "吕蒙袭江陵，擒杀关羽",
+      "evidence": "原文",
+      "quote": {
+        "text": "遂置南三郡長吏，關羽盡逐之。",
+        "textSimplified": "遂置南三郡长吏，关羽尽逐之。",
+        "source": "《三国志·吴书·吴主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+      },
+      "verified": true
+    },
+    {
+      "year": 221,
+      "age": 39,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受魏封吴王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 83,
+      "delta": -6,
+      "rationale": "屈身称藩",
+      "summary": "称臣于魏，受封吴王",
+      "evidence": "原文",
+      "quote": {
+        "text": "今封君爲吳王，使使持節太常髙平侯貞，授君璽綬策書、金虎符第一至第五、左竹使符第一至第十",
+        "textSimplified": "今封君为吴王，使使持节太常髙平侯贞，授君玺绶策书、金虎符第一至第五、左竹使符第一至第十",
+        "source": "《三国志·吴书·吴主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+      },
+      "verified": true
+    },
+    {
+      "year": 222,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夷陵破刘备",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 90,
+      "delta": 7,
+      "rationale": "保境",
+      "summary": "陆逊大破刘备于夷陵",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 229,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 2,
+      "rationale": "吴国皇帝",
+      "summary": "即皇帝位于武昌",
+      "evidence": "原文",
+      "quote": {
+        "text": "丙申，南郊即皇帝位。",
+        "textSimplified": "丙申，南郊即皇帝位。",
+        "source": "《三国志·吴书·吴主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+      },
+      "verified": true
+    },
+    {
+      "year": 233,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "辽东受辱",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 85,
+      "delta": 0,
+      "rationale": "被欺",
+      "summary": "遣使封公孙渊，渊斩使降魏",
+      "evidence": "原文",
+      "quote": {
+        "text": "冬十月，魏遼東太守公孫淵遣校尉宿舒、郎中令孫綜稱藩於權，並獻貂馬。",
+        "textSimplified": "冬十月，魏辽东太守公孙渊遣校尉宿舒、郎中令孙综称藩于权，并献貂马。",
+        "source": "《三国志·吴书·吴主传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B747"
+      },
+      "verified": true
+    },
+    {
+      "year": 245,
+      "age": 63,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "二宫之争",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 76,
+      "delta": -16,
+      "rationale": "晚年昏乱",
+      "summary": "太子和与鲁王霸争位，陆逊忧愤而死",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 252,
+    "age": 70,
+    "title": "病卒",
+    "retention": 0.9,
+    "reason": "吴国延续至280年",
+    "score": 68.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1360,
+      "title": "《三国演义》中英主形象",
+      "score": 80,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "三国东吴开国之主",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "三国东吴开国之主"
+  },
+  "peak": {
+    "title": "称帝",
+    "age": 47,
+    "score": 92
+  },
+  "trough": {
+    "title": "继兄统江东",
+    "age": 18,
+    "score": 71
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 18,
+      "years": 18
+    },
+    {
+      "fromAge": 47,
+      "toAge": 63,
+      "years": 16
+    }
+  ],
+  "quality": {
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
+    "author": "claude"
+  }
+}

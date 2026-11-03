@@ -1,0 +1,94 @@
+{
+  "id": "hulagu",
+  "author": "claude",
+  "born": {
+    "year": 1217,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1265,
+    "certainty": "确知"
+  },
+  "thesis": "西征攻陷巴格达，建立伊儿汗国。",
+  "events": [
+    {
+      "year": 1217,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于蒙古",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拖雷之子",
+      "rationale": "宗王",
+      "quote": null
+    },
+    {
+      "year": 1253,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受命西征",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "率军",
+      "rationale": "统帅",
+      "quote": null
+    },
+    {
+      "year": 1258,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻陷巴格达",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "灭阿拔斯王朝",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "艾因贾鲁特之败",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "前锋败于马穆鲁克",
+      "rationale": "挫败",
+      "quote": null
+    },
+    {
+      "year": 1260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "建伊儿汗国",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "立国",
+      "rationale": "一方之主",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1265,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "伊儿汗国",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 68,
+    "label": "争议",
+    "rationale": "伊儿汗国建立者"
+  }
+}

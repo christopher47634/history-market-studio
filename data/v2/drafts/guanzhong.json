@@ -1,0 +1,239 @@
+{
+  "id": "guanzhong",
+  "author": "deepseek-flash",
+  "born": {
+    "year": -725,
+    "certainty": "估计",
+    "note": "《史记》不载生年，旧谱与后世资料作前725年前后，姑存一说"
+  },
+  "died": {
+    "year": -645,
+    "certainty": "估计",
+    "note": "卒于齐桓公四十一年前后"
+  },
+  "thesis": "从囚徒到齐国执政，以四十年经营把偏居海滨的齐国变成春秋首霸，用制度、财利与信义搭起霸政秩序，身死而政存。",
+  "events": [
+    {
+      "year": -725,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于颍上",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "姬姓后裔而家道中落，少时贫困，无名位可言。",
+      "summary": "生于颍上，姬姓管氏，名夷吾，字仲，后以字行，谥敬。",
+      "quote": {
+        "text": "管仲夷吾者，潁上人也。",
+        "source": 0
+      }
+    },
+    {
+      "year": -700,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "贫贱与鲍叔牙游",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "rationale": "贫困经商，三仕见逐、三战三走，长期不得志。",
+      "summary": "与鲍叔牙交游，分财多自与；屡仕屡逐、临战屡退，鲍叔不以为贪怯。",
+      "quote": {
+        "text": "吾始困時，嘗與鮑叔賈，分財利多自與",
+        "source": 0
+      }
+    },
+    {
+      "year": -686,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "傅公子纠",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "为齐国公室公子之傅，已入政治核心圈。",
+      "summary": "齐襄公失政，管仲、召忽奉公子纠奔鲁，鲍叔牙奉小白奔莒。",
+      "quote": {
+        "text": "已而鮑叔事齊公子小白，管仲事公子糾。",
+        "source": 0
+      }
+    },
+    {
+      "year": -685,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "公子纠败，被囚",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "rationale": "主败身囚，生死操于鲁人之手，人生最低点。",
+      "summary": "小白立为齐桓公，公子纠死，管仲被囚，鲍叔牙请鲁以囚归齐。",
+      "quote": {
+        "text": "及小白立為桓公，公子糾死，管仲囚焉。",
+        "source": 0
+      }
+    },
+    {
+      "year": -684,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "释囚拜相",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "由囚徒一跃为齐国执政，然其名分仍为下卿。",
+      "summary": "桓公不记射钩之仇，用鲍叔牙之荐，任管仲为相，委以国政。",
+      "quote": {
+        "text": "鮑叔遂進管仲。",
+        "source": 0
+      }
+    },
+    {
+      "year": -681,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "柯之会守信",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "霸业初起，以信义收诸侯之心，转祸为福。",
+      "summary": "齐桓公与鲁盟于柯，曹沫劫盟求地，管仲劝桓公守约，诸侯由是归齐。",
+      "quote": {
+        "text": "於柯之會，桓公欲背曹沫之約，管仲因而信之，諸侯由是歸齊。",
+        "source": 0
+      }
+    },
+    {
+      "year": -680,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "主持齐国改革",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "内政军令合一，通货积财，齐国富彊。",
+      "summary": "作内政而寄军令，分国为二十一乡，轻税通商、兵器赎罪，齐国大治。",
+      "quote": {
+        "text": "管仲既任政相齊，以區區之齊在海濱，通貨積財，富國彊兵",
+        "source": 0
+      }
+    },
+    {
+      "year": -679,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "九合诸侯，一匡天下",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以尊王攘夷号令诸侯，霸政秩序由是确立。",
+      "summary": "连合诸侯、一匡天下，齐桓公为春秋首霸，皆管仲之谋。",
+      "quote": {
+        "text": "管仲既用，任政於齊，齊桓公以霸，九合諸侯，一匡天下，管仲之謀也。",
+        "source": 0
+      }
+    },
+    {
+      "year": -664,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "北征山戎而令燕修政",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "因祸为福、转败为功的典型外交操作。",
+      "summary": "桓公北征山戎救燕，管仲因而令燕修召公之政，诸侯亲齐。",
+      "quote": {
+        "text": "桓公實北征山戎，而管仲因而令燕修召公之政。",
+        "source": 0
+      }
+    },
+    {
+      "year": -656,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "伐楚责包茅",
+      "tier": "重臣主帅",
+      "tierScore": 83,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "假周室之名责楚，兵不血刃而定召陵之盟。",
+      "summary": "桓公怒少姬而南袭蔡，管仲因势伐楚，责包茅不入贡于周室。",
+      "quote": {
+        "text": "桓公實怒少姬，南襲蔡，管仲因而伐楚，責包茅不入貢於周室。",
+        "source": 0
+      }
+    },
+    {
+      "year": -651,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "葵丘之会",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "霸业制度化高峰，齐国号令诸侯达于顶点。",
+      "summary": "会诸侯于葵丘，周襄王使宰孔赐胙，盟载尊周、无曲防、无遏籴。",
+      "quote": null
+    },
+    {
+      "year": -645,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "病中论相",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "老病在床，仍执相位并主持继任人事决断。",
+      "summary": "桓公问后事，管仲否鲍叔牙、荐隰朋，并戒易牙、竖刁、开方之险。",
+      "quote": null
+    }
+  ],
+  "finale": {
+    "year": -645,
+    "title": "卒于齐",
+    "retention": 0.96,
+    "reason": "齐国遵其政，常彊於诸侯，霸政与尊王攘夷格局延续至桓公之世。",
+    "quote": {
+      "text": "管仲卒，齊國遵其政，常彊於諸侯。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": -500,
+      "title": "孔子许其仁",
+      "score": 92,
+      "rationale": "《论语》称微管仲吾其被发左衽矣，以仁许之，虽亦讥其器小。"
+    },
+    {
+      "year": -91,
+      "title": "《史记》立管晏列传",
+      "score": 94,
+      "rationale": "太史公以管晏并传，确立其贤相典范的历史位置。"
+    },
+    {
+      "year": 1050,
+      "title": "苏洵作《管仲论》",
+      "score": 80,
+      "rationale": "宋人讥其不能荐贤自代，遂成霸业兴亡的千古争点。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 94,
+    "label": "正面",
+    "rationale": "以尊王攘夷定义春秋霸政秩序，其通货积财、寄军令于内政的思路为后世法家与相业所本。"
+  }
+}

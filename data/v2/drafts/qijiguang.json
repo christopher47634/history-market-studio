@@ -1,0 +1,125 @@
+{
+  "id": "qijiguang",
+  "author": "claude",
+  "born": {
+    "year": 1528,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1588,
+    "certainty": "确知"
+  },
+  "thesis": "戚家军平倭，北镇蓟州十六年，晚年罢归贫病而死。",
+  "events": [
+    {
+      "year": 1528,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于山东",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世袭登州卫指挥佥事",
+      "rationale": "将门",
+      "quote": null
+    },
+    {
+      "year": 1544,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭职",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "袭职",
+      "rationale": "军官",
+      "quote": null
+    },
+    {
+      "year": 1559,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "组建戚家军",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "义乌招兵",
+      "rationale": "练兵",
+      "quote": {
+        "find": [
+          "義烏"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1561,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "台州九战九捷",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平浙倭",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 1563,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平福建倭",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兴化",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 1568,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "镇守蓟州",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "修长城",
+      "rationale": "北疆",
+      "quote": null
+    },
+    {
+      "year": 1583,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "张居正死后调广东",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "被弹劾",
+      "rationale": "失势",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1588,
+    "title": "贫病而卒",
+    "retention": 0.85,
+    "reason": "戚家军",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "抗倭名将"
+  }
+}

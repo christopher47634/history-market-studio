@@ -1,0 +1,316 @@
+{
+  "id": "hualuogeng",
+  "author": "claude",
+  "born": {
+    "year": 1910,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1985,
+    "certainty": "确知"
+  },
+  "thesis": "初中学历自学成才，数学家。",
+  "events": [
+    {
+      "year": 1910,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于金坛",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "杂货店",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "江苏金坛"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1925,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "初中毕业辍学",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "上海中华职业学校因贫退学",
+      "rationale": "辍学",
+      "quote": null
+    },
+    {
+      "year": 1926,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "回乡打理杂货铺",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "自学数学",
+      "rationale": "自学",
+      "quote": {
+        "find": [
+          "帮助父亲打理杂货铺"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "患伤寒致残",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "左腿残疾",
+      "rationale": "困顿",
+      "quote": {
+        "find": [
+          "他不幸患上伤寒病"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "论文被熊庆来发现",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《苏家驹之代数的五次方程式解法不能成立之理由》",
+      "rationale": "破格",
+      "quote": {
+        "find": [
+          "华罗庚在《科学》第15卷第2期上发表"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1931,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "进清华当管理员",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "一边工作一边学习",
+      "rationale": "破格",
+      "quote": {
+        "find": [
+          "华罗庚在清华大学一边学习"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1936,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "剑桥访学",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "哈代",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "受到了哈代"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "西南联大教授",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《堆垒素数论》",
+      "rationale": "学术",
+      "quote": {
+        "find": [
+          "任清华大学正教授"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1946,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "普林斯顿、伊利诺伊",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "正教授",
+      "rationale": "国际",
+      "quote": {
+        "find": [
+          "前往普林斯顿高等研究"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1950,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回国",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《致中国全体留美学生的公开信》",
+      "rationale": "归国",
+      "quote": null
+    },
+    {
+      "year": 1952,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中科院数学所所长",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "筹建数学所",
+      "rationale": "领军",
+      "quote": {
+        "find": [
+          "建立中国科学院数"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1957,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "反右派斗争扩大化中受批判",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "与曾昭抡等人受到不应有的批判。",
+      "rationale": "挨批",
+      "quote": {
+        "text": "但是反右派斗争被严重地扩大化了",
+        "source": 1
+      }
+    },
+    {
+      "year": 1958,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中国科技大学副校长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "数学系主任",
+      "rationale": "推广",
+      "quote": null
+    },
+    {
+      "year": 1965,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "推广优选法统筹法",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "足迹遍及二十余省",
+      "rationale": "推广",
+      "quote": null
+    },
+    {
+      "year": 1966,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "“文化大革命”中受到冲击",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "手稿散失，此后仍坚持到各地推广优选法、统筹法。",
+      "rationale": "受冲击",
+      "quote": {
+        "text": "绝大多数都没有动摇热爱祖国和拥护党、拥护社会主义的立场",
+        "source": 1
+      }
+    },
+    {
+      "year": 1979,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "访问欧美",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入党",
+      "rationale": "国际",
+      "quote": {
+        "find": [
+          "1979年加入中国共产党"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1982,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "美国科学院外籍院士",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国际荣誉",
+      "rationale": "荣誉",
+      "quote": {
+        "find": [
+          "被评为美国科学院外籍院士"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1985,
+    "title": "东京讲学中逝世",
+    "retention": 0.95,
+    "reason": "数学",
+    "quote": {
+      "find": [
+        "华罗庚应邀到日本东京大学作学术报告"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "非常正面",
+    "rationale": "数学家"
+  }
+}

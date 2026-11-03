@@ -1,0 +1,181 @@
+{
+  "id": "quyuan",
+  "author": "claude",
+  "born": {
+    "year": -340,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -278,
+    "certainty": "确知"
+  },
+  "thesis": "楚国宗室，任左徒而被谗放逐，作《离骚》，郢都陷落后投汨罗江。",
+  "events": [
+    {
+      "year": -340,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于楚",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楚之同姓",
+      "rationale": "宗室之后",
+      "quote": {
+        "find": [
+          "同姓"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -318,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任左徒",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为楚怀王左徒，入则图议国事，出则接遇宾客",
+      "rationale": "楚国重臣",
+      "quote": {
+        "find": [
+          "左徒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -313,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "遭谗见疏",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "上官大夫谗之，王怒而疏屈平",
+      "rationale": "失去信任",
+      "quote": {
+        "find": [
+          "疏屈平",
+          "上官大夫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -311,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "出使齐国",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "复用于联齐",
+      "rationale": "短暂起用",
+      "quote": {
+        "find": [
+          "使于齐"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -299,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏怀王入秦不听",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "劝怀王勿入秦，王不听，卒客死于秦",
+      "rationale": "忠言不用",
+      "quote": {
+        "find": [
+          "入秦"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -296,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "顷襄王时放逐江南",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "令尹子兰使上官大夫短屈原于顷襄王，王怒而迁之",
+      "rationale": "长期流放",
+      "quote": {
+        "find": [
+          "迁之",
+          "江南"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -278,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "郢都陷落",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "秦将白起拔郢，作《哀郢》",
+      "rationale": "国破",
+      "quote": {
+        "find": [
+          "郢"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -174,
+      "title": "贾谊作《吊屈原赋》",
+      "score": 70,
+      "rationale": ""
+    },
+    {
+      "year": -91,
+      "title": "《史记》立屈原贾生列传",
+      "score": 80,
+      "rationale": ""
+    },
+    {
+      "year": 960,
+      "title": "端午纪念屈原成为习俗",
+      "score": 90,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -278,
+    "title": "怀石投汨罗",
+    "retention": 0.9,
+    "reason": "《离骚》流传千古",
+    "quote": {
+      "find": [
+        "汨罗"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "中国第一位伟大诗人，楚辞之祖"
+  }
+}

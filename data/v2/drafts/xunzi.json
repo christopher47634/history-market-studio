@@ -1,0 +1,145 @@
+{
+  "id": "xunzi",
+  "author": "claude",
+  "born": {
+    "year": -313,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -238,
+    "certainty": "确知"
+  },
+  "thesis": "三为稷下祭酒，主性恶论，门下有韩非、李斯。",
+  "events": [
+    {
+      "year": -313,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于赵",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "赵人",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "荀卿，趙人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -263,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "游学于齐",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年五十始来游学于齐",
+      "rationale": "稷下学者",
+      "quote": {
+        "find": [
+          "游学於齊"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -260,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "三为祭酒",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐襄王时而荀卿最为老师，三为祭酒",
+      "rationale": "学宫领袖",
+      "quote": {
+        "find": [
+          "祭酒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -255,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谗去齐适楚",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "齐人或谗荀卿，乃适楚",
+      "rationale": "被谗离齐",
+      "quote": {
+        "find": [
+          "讒",
+          "適楚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -255,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任兰陵令",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "春申君以为兰陵令",
+      "rationale": "地方长官",
+      "quote": {
+        "find": [
+          "蘭陵令"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -238,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "春申君死而废",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "春申君死而荀卿废，因家兰陵",
+      "rationale": "失官",
+      "quote": {
+        "find": [
+          "春申君死"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立孟子荀卿列传",
+      "score": 75,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -238,
+    "title": "卒于兰陵",
+    "retention": 0.95,
+    "reason": "弟子韩非、李斯影响秦制",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "先秦儒学集大成者之一"
+  }
+}

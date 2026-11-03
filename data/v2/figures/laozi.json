@@ -1,0 +1,214 @@
+{
+  "id": "laozi",
+  "name": "老子",
+  "born": {
+    "year": -571,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -471,
+    "certainty": "估计"
+  },
+  "lifeSpan": 100,
+  "thesis": "周守藏室之史，著《道德经》五千言，道家始祖。",
+  "sources": [
+    {
+      "label": "《史记·卷六十三 老子韩非列传 第三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+    }
+  ],
+  "events": [
+    {
+      "year": -571,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于楚苦县",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 20,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "楚苦县厉乡曲仁里人，姓李氏，名耳",
+      "evidence": "原文",
+      "quote": {
+        "text": "老子者，楚苦縣厲鄉曲仁里人也，姓李氏，名耳，字耼，周守藏室之史也。",
+        "textSimplified": "老子者，楚苦县厉乡曲仁里人也，姓李氏，名耳，字耼，周守藏室之史也。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -540,
+      "age": 31,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任周守藏室之史",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 45,
+      "delta": 25,
+      "rationale": "掌管典籍的史官",
+      "summary": "周守藏室之史也",
+      "evidence": "原文",
+      "quote": {
+        "text": "老子者，楚苦縣厲鄉曲仁里人也，姓李氏，名耳，字耼，周守藏室之史也。",
+        "textSimplified": "老子者，楚苦县厉乡曲仁里人也，姓李氏，名耳，字耼，周守藏室之史也。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -518,
+      "age": 53,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "孔子问礼",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 7,
+      "rationale": "名动当世",
+      "summary": "孔子适周，将问礼于老子",
+      "evidence": "原文",
+      "quote": {
+        "text": "孔子適周，將問禮於老子。",
+        "textSimplified": "孔子适周，将问礼于老子。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -516,
+      "age": 55,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "周室衰去周",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 40,
+      "delta": -12,
+      "rationale": "离开周室",
+      "summary": "居周久之，见周之衰，乃遂去",
+      "evidence": "原文",
+      "quote": {
+        "text": "居周久之，見周之衰，乃遂去。",
+        "textSimplified": "居周久之，见周之衰，乃遂去。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    },
+    {
+      "year": -516,
+      "age": 55,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "函谷著书",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 0,
+      "rationale": "留下五千言",
+      "summary": "至关，关令尹喜强为著书，乃著书上下篇",
+      "evidence": "原文",
+      "quote": {
+        "text": "於是老子乃著書上下篇，言道德之意五千餘言而去，莫知其所終。",
+        "textSimplified": "于是老子乃著书上下篇，言道德之意五千余言而去，莫知其所终。",
+        "source": "《史记·卷六十三 老子韩非列传 第三》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -471,
+    "age": 100,
+    "title": "莫知其所终",
+    "retention": 0.95,
+    "reason": "道家思想流传",
+    "score": 38,
+    "evidence": "原文",
+    "quote": {
+      "text": "於是老子乃著書上下篇，言道德之意五千餘言而去，莫知其所終。",
+      "textSimplified": "于是老子乃著书上下篇，言道德之意五千余言而去，莫知其所终。",
+      "source": "《史记·卷六十三 老子韩非列传 第三》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7063"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": -140,
+      "title": "黄老之学盛行汉初",
+      "score": 80,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 666,
+      "title": "唐尊为太上玄元皇帝",
+      "score": 92,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 98,
+      "rationale": "道家创始人，《道德经》影响东西方思想",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 98,
+    "label": "正面",
+    "rationale": "道家创始人，《道德经》影响东西方思想"
+  },
+  "peak": {
+    "title": "孔子问礼",
+    "age": 53,
+    "score": 52
+  },
+  "trough": {
+    "title": "周室衰去周",
+    "age": 55,
+    "score": 40
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 31,
+      "years": 31
+    },
+    {
+      "fromAge": 31,
+      "toAge": 53,
+      "years": 22
+    },
+    {
+      "fromAge": 55,
+      "toAge": 100,
+      "years": 45
+    }
+  ],
+  "quality": {
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
+    "author": "claude"
+  }
+}

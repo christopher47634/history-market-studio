@@ -1,0 +1,99 @@
+{
+  "id": "libi",
+  "author": "claude",
+  "born": {
+    "year": 722,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 789,
+    "certainty": "确知"
+  },
+  "thesis": "神童，四朝布衣宰相，屡隐屡出。",
+  "events": [
+    {
+      "year": 722,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于京兆",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "神童",
+      "rationale": "少年成名",
+      "quote": null
+    },
+    {
+      "year": 729,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄宗召见",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "七岁能赋",
+      "rationale": "神童",
+      "quote": null
+    },
+    {
+      "year": 756,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "肃宗布衣谋主",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "号为山人，出谋画策",
+      "rationale": "布衣宰相",
+      "quote": null
+    },
+    {
+      "year": 757,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被李辅国排挤隐衡山",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "归隐",
+      "rationale": "隐退",
+      "quote": {
+        "find": [
+          "衡山"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 787,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "德宗时拜相",
+      "rationale": "宰相",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 789,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "屡安社稷",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "四朝布衣宰相"
+  }
+}

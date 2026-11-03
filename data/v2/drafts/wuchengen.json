@@ -1,0 +1,94 @@
+{
+  "id": "wuchengen",
+  "author": "claude",
+  "born": {
+    "year": 1500,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1582,
+    "certainty": "确知"
+  },
+  "thesis": "屡试不第，晚年著《西游记》。",
+  "events": [
+    {
+      "year": 1500,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于淮安",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小商人",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1520,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "屡试不第",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "科场失意",
+      "rationale": "不第",
+      "quote": null
+    },
+    {
+      "year": 1544,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "岁贡生",
+      "tier": "初起",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "贡生",
+      "rationale": "微职",
+      "quote": null
+    },
+    {
+      "year": 1566,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长兴县丞",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小官",
+      "rationale": "小官",
+      "quote": null
+    },
+    {
+      "year": 1570,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《西游记》",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "晚年",
+      "rationale": "名著",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1582,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "西游记",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "《西游记》作者"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "huangchao",
+  "author": "claude",
+  "born": {
+    "year": 835,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 884,
+    "certainty": "确知"
+  },
+  "thesis": "屡试不第的盐商，率起义军攻入长安称帝。",
+  "events": [
+    {
+      "year": 835,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于曹州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世代贩盐",
+      "rationale": "盐商",
+      "quote": null
+    },
+    {
+      "year": 870,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "屡试不第",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "不第后赋菊花诗",
+      "rationale": "失意",
+      "quote": null
+    },
+    {
+      "year": 875,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵响应王仙芝",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "起兵",
+      "rationale": "起义",
+      "quote": {
+        "find": [
+          "王仙芝"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 880,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻入长安称帝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国号大齐",
+      "rationale": "称帝",
+      "quote": {
+        "find": [
+          "大齊"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 883,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "撤出长安",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "李克用等攻破",
+      "rationale": "败退",
+      "quote": null
+    },
+    {
+      "year": 884,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "狼虎谷败亡",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "败死",
+      "rationale": "死",
+      "quote": {
+        "find": [
+          "狼虎谷"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 884,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "唐亡于二十年后",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 68,
+    "label": "争议",
+    "rationale": "唐末农民起义领袖"
+  }
+}

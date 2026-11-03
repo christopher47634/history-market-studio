@@ -1,0 +1,104 @@
+{
+  "id": "huangtingjian",
+  "author": "claude",
+  "born": {
+    "year": 1045,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1105,
+    "certainty": "确知"
+  },
+  "thesis": "江西诗派之祖，苏门四学士，屡遭贬谪。",
+  "events": [
+    {
+      "year": 1045,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洪州分宁",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1067,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1086,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "修《神宗实录》",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秘书省",
+      "rationale": "馆阁",
+      "quote": null
+    },
+    {
+      "year": 1094,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬黔州",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "实录诬罔",
+      "rationale": "远贬",
+      "quote": {
+        "find": [
+          "黔州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1104,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "再贬宜州",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "编管宜州",
+      "rationale": "贬",
+      "quote": {
+        "find": [
+          "宜州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1105,
+    "title": "卒于宜州",
+    "retention": 0.9,
+    "reason": "江西诗派",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "宋四家、江西诗派之祖"
+  }
+}

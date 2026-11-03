@@ -1,0 +1,99 @@
+{
+  "id": "heshen",
+  "author": "claude",
+  "born": {
+    "year": 1750,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1799,
+    "certainty": "确知"
+  },
+  "thesis": "乾隆宠臣，巨贪，嘉庆亲政后被赐死。",
+  "events": [
+    {
+      "year": 1750,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北京",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "家道中落",
+      "rationale": "旗人",
+      "quote": null
+    },
+    {
+      "year": 1772,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三等侍卫",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "侍卫",
+      "rationale": "侍卫",
+      "quote": null
+    },
+    {
+      "year": 1776,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "军机大臣",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宠信",
+      "rationale": "军机",
+      "quote": {
+        "find": [
+          "軍機"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1790,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "首席军机",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "权倾朝野",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1799,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嘉庆亲政赐死",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "二十大罪",
+      "rationale": "死局",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1799,
+    "title": "自缢",
+    "retention": 0.8,
+    "reason": "和珅跌倒嘉庆吃饱",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 58,
+    "label": "负面",
+    "rationale": "巨贪"
+  }
+}

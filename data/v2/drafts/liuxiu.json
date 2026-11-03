@@ -1,0 +1,241 @@
+{
+  "id": "liuxiu",
+  "author": "claude",
+  "born": {
+    "year": -5,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 57,
+    "certainty": "确知"
+  },
+  "thesis": "南阳宗室起兵，昆阳以少胜多，重建汉室，开创东汉。",
+  "events": [
+    {
+      "year": -5,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于济阳",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "长沙定王之后，家道中落，勤于稼穑",
+      "rationale": "没落宗室",
+      "quote": {
+        "find": [
+          "光武",
+          "稼穑"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 14,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长安游学",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "至长安受《尚书》，略通大义",
+      "rationale": "太学生",
+      "quote": {
+        "find": [
+          "尚书"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 22,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南阳起兵",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与兄刘縯起兵舂陵",
+      "rationale": "反莽群雄之一",
+      "quote": {
+        "find": [
+          "舂陵",
+          "起兵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "昆阳大捷",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以数千人破王莽四十余万大军于昆阳",
+      "rationale": "以少胜多",
+      "quote": {
+        "find": [
+          "昆阳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 23,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "兄刘縯被杀",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "更始帝杀刘縯，刘秀驰诣宛谢罪，不敢为兄服丧",
+      "rationale": "随时可能被杀",
+      "quote": {
+        "find": [
+          "馳詣宛謝",
+          "詣宛謝"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 23,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "持节河北",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "以破虏将军行大司马事徇河北",
+      "rationale": "脱离险地",
+      "quote": {
+        "find": [
+          "河北",
+          "大司马"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 24,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "芜蒌亭豆粥",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "王郎悬赏捕之，南驰至饶阳，饥寒交迫",
+      "rationale": "亡命河北",
+      "quote": {
+        "find": [
+          "王郎",
+          "饶阳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即皇帝位于鄗",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "群臣劝进，即皇帝位于鄗南，建元建武",
+      "rationale": "一方之主",
+      "quote": {
+        "find": [
+          "鄗",
+          "即皇帝位"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 36,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平定蜀地统一天下",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "吴汉破成都，公孙述死，天下复归一统",
+      "rationale": "重新统一",
+      "quote": {
+        "find": [
+          "拔成都",
+          "成都"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 39,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "度田事件",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "诏检核垦田户口，豪强反抗，郡守多坐死",
+      "rationale": "豪强阻力",
+      "quote": {
+        "find": [
+          "度田"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 56,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "泰山封禅",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "封泰山，禅梁父",
+      "rationale": "功业自诩",
+      "quote": {
+        "find": [
+          "泰山"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 200,
+      "title": "光武中兴之称",
+      "score": 92,
+      "rationale": "以中兴明主载入史册"
+    }
+  ],
+  "finale": {
+    "year": 57,
+    "title": "崩于南宫",
+    "retention": 0.97,
+    "reason": "东汉延续近二百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "中兴之主，以柔道治天下"
+  }
+}

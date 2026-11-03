@@ -1,0 +1,117 @@
+{
+  "id": "luyou",
+  "author": "claude",
+  "born": {
+    "year": 1125,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1210,
+    "certainty": "确知"
+  },
+  "thesis": "一生力主抗金，存诗九千首，《示儿》绝笔。",
+  "events": [
+    {
+      "year": 1125,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于淮上舟中",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父陆宰",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1154,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "礼部试被秦桧黜",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "名在秦埙前被黜",
+      "rationale": "受挫",
+      "quote": {
+        "find": [
+          "秦檜"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1162,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赐进士出身",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孝宗即位",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1172,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入蜀从军南郑",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "王炎幕府",
+      "rationale": "从军",
+      "quote": {
+        "find": [
+          "南鄭"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "罢归山阴",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "嘲咏风月被劾",
+      "rationale": "罢官",
+      "quote": null
+    },
+    {
+      "year": 1202,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "修国史",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孝宗、光宗实录",
+      "rationale": "修史",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1210,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "王师北定中原日",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "爱国诗人"
+  }
+}

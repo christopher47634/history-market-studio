@@ -1,0 +1,135 @@
+{
+  "id": "anlushan",
+  "author": "claude",
+  "born": {
+    "year": 703,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 757,
+    "certainty": "确知"
+  },
+  "thesis": "胡人节度使，身兼三镇，起兵叛唐，被其子所杀。",
+  "events": [
+    {
+      "year": 703,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于营州",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "胡人，母为巫",
+      "rationale": "边地胡人",
+      "quote": null
+    },
+    {
+      "year": 733,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "偷羊将斩获赦",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "张守珪欲杀之，爱其骁勇释之",
+      "rationale": "险死",
+      "quote": {
+        "find": [
+          "張守珪"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 742,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平卢节度使",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "迁平卢节度使",
+      "rationale": "方镇",
+      "quote": null
+    },
+    {
+      "year": 751,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "身兼三镇",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兼河东节度",
+      "rationale": "权倾北方",
+      "quote": null
+    },
+    {
+      "year": 755,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "范阳起兵",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "起兵叛唐",
+      "rationale": "叛乱",
+      "quote": {
+        "find": [
+          "范陽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 756,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "洛阳称帝",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国号大燕",
+      "rationale": "称帝",
+      "quote": null
+    },
+    {
+      "year": 757,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被子所杀",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "其子安庆绪杀之",
+      "rationale": "死",
+      "quote": {
+        "find": [
+          "安慶緒"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 757,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "安史之乱持续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 68,
+    "label": "负面",
+    "rationale": "盛唐由盛转衰的罪魁"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "note": "朝代字体：人名用该时代风格的标题字，简介 / K 线卡片 / 阅读面板用好读的正文字。pipeline/era-fonts.py 和前端（src/v3/eras.js）都读这份。",
+  "groups": {
+    "gu":   { "label": "先秦·秦汉",       "dynasties": ["先秦", "秦汉"],             "name": "HMS Brush",   "nameWeight": 400, "text": "HMS Kai",   "why": "古拙：毛笔楷书，笔画粗壮" },
+    "wei":  { "label": "三国·魏晋南北朝", "dynasties": ["三国", "魏晋南北朝"],       "name": "HMS Xing",    "nameWeight": 400, "text": "HMS Kai",   "why": "魏晋是行书的黄金时代" },
+    "tang": { "label": "隋唐·五代",       "dynasties": ["隋唐", "五代十国"],         "name": "HMS Kai Medium", "nameWeight": 400, "text": "HMS Kai", "why": "唐楷写经，端正秀丽" },
+    "song": { "label": "宋·辽金西夏·元",  "dynasties": ["宋", "辽金西夏", "元"],     "name": "HMS Xiaowei", "nameWeight": 400, "text": "HMS Ming",  "why": "宋版书的宋体" },
+    "ming": { "label": "明·清",           "dynasties": ["明", "清"],                 "name": "HMS Ming",    "nameWeight": 400, "text": "HMS Ming",  "why": "明清刻本的宋体（明朝体）" },
+    "jin":  { "label": "近现代",          "dynasties": ["近现代"],                   "name": "HMS Serif",   "nameWeight": 700, "text": "HMS Serif", "why": "铅字宋体" }
+  },
+  "faces": {
+    "HMS Brush":   { "src": "MaShanZheng-Regular.ttf",  "license": "OFL-1.1",  "origin": "Ma Shan Zheng（马善政毛笔楷书）https://github.com/googlefonts/mashanzheng" },
+    "HMS Xing":    { "src": "ZhiMangXing-Regular.ttf",  "sizeAdjust": "122%", "license": "OFL-1.1",  "origin": "Zhi Mang Xing（志莽行书）https://github.com/googlefonts/zhimangxing" },
+    "HMS Xiaowei": { "src": "ZCOOLXiaoWei-Regular.ttf", "license": "OFL-1.1",  "origin": "ZCOOL XiaoWei（站酷小薇）https://github.com/googlefonts/zcool-xiaowei" },
+    "HMS Kai Medium": { "src": "LXGWWenKai-Medium.ttf", "sizeAdjust": "103%", "license": "OFL-1.1", "origin": "LXGW WenKai Medium（霞鹜文楷 中粗）https://github.com/lxgw/LxgwWenKai" },
+    "HMS Kai":     { "src": "LXGWWenKai-Regular.ttf", "sizeAdjust": "103%", "license": "OFL-1.1", "origin": "LXGW WenKai（霞鹜文楷）https://github.com/lxgw/LxgwWenKai" },
+    "HMS Ming":    { "src": "LXGWNeoZhiSong.ttf",       "license": "IPA-1.0",  "origin": "LXGW Neo ZhiSong（霞鹜新致宋）https://github.com/lxgw/LxgwNeoZhiSong" }
+  }
+}

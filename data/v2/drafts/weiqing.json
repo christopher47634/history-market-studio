@@ -1,0 +1,166 @@
+{
+  "id": "weiqing",
+  "author": "claude",
+  "born": {
+    "year": -156,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -106,
+    "certainty": "确知"
+  },
+  "thesis": "骑奴出身，七击匈奴收复河套，以大将军为汉军统帅。",
+  "events": [
+    {
+      "year": -156,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于平阳",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平阳侯家奴卫媪之子，少时为人牧羊",
+      "rationale": "奴仆出身",
+      "quote": {
+        "find": [
+          "奴",
+          "牧羊"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -139,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入宫为建章监",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "姊卫子夫得幸，被陈皇后之母囚欲杀之，友人救出",
+      "rationale": "险遭杀身",
+      "quote": {
+        "find": [
+          "建章",
+          "囚青"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -129,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "龙城之捷",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为车骑将军出上谷，至龙城斩首数百，封关内侯",
+      "rationale": "首破匈奴",
+      "quote": {
+        "find": [
+          "龙城"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复河套",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出云中，取河南地，置朔方郡，封长平侯",
+      "rationale": "拓地之功",
+      "quote": {
+        "find": [
+          "长平侯",
+          "河南地"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -124,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜大将军",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "夜袭右贤王，拜大将军，诸将皆属",
+      "rationale": "汉军统帅",
+      "quote": {
+        "find": [
+          "大将军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -119,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "漠北决战",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "漠北之战击单于，至窴颜山赵信城",
+      "rationale": "统帅巅峰",
+      "quote": {
+        "find": [
+          "赵信城",
+          "单于"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -117,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "霍去病后来居上",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "霍去病日贵，卫青故人门下多去事霍去病",
+      "rationale": "恩宠渐移",
+      "quote": {
+        "find": [
+          "日退"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立卫将军骠骑列传",
+      "score": 80,
+      "rationale": "与霍去病并传"
+    }
+  ],
+  "finale": {
+    "year": -106,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "七击匈奴，奠定汉朝北方边疆",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "汉武帝时代最重要的统帅，奴隶出身的大将军"
+  }
+}

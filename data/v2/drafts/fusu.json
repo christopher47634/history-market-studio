@@ -1,0 +1,109 @@
+{
+  "id": "fusu",
+  "author": "claude",
+  "born": {
+    "year": -242,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -210,
+    "certainty": "确知"
+  },
+  "thesis": "秦始皇长子，因谏坑儒被遣监军上郡，沙丘之变中被矫诏赐死。",
+  "events": [
+    {
+      "year": -242,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于咸阳",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "秦始皇长子",
+      "rationale": "皇长子",
+      "quote": {
+        "find": [
+          "长子"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -212,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏坑儒",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "谏诸生皆诵法孔子，始皇怒，使北监蒙恬军",
+      "rationale": "被外放",
+      "quote": {
+        "find": [
+          "上郡",
+          "谏"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -212,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "监军上郡",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与蒙恬共掌北方大军",
+      "rationale": "实为储君",
+      "quote": {
+        "find": [
+          "监蒙恬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -210,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "接矫诏",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "赵高矫诏赐死",
+      "rationale": "被逼自尽",
+      "quote": {
+        "find": [
+          "赐死"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -209,
+      "title": "陈胜诈称扶苏起兵",
+      "score": 55,
+      "rationale": "反秦者借其名号"
+    }
+  ],
+  "finale": {
+    "year": -210,
+    "title": "自杀",
+    "retention": 0.8,
+    "reason": "秦二世而亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 58,
+    "label": "正面",
+    "rationale": "仁厚的悲剧储君"
+  }
+}

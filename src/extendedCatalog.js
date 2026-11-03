@@ -1,4 +1,5 @@
 import { sourceByEra } from "./catalog.js";
+import { hashText } from "./hash.js";
 
 const palette = [
   "#b95d4f",
@@ -30,12 +31,13 @@ const sources = {
   },
 };
 
-const hash = (text) =>
-  [...text].reduce(
-    (sum, char) => ((sum * 33) ^ char.charCodeAt(0)) >>> 0,
-    5381,
-  );
+const hash = hashText;
 
+/** @typedef {import("./types").Milestone} Milestone */
+/** @typedef {import("./types").FigureSpec} FigureSpec */
+/** @typedef {import("./types").Figure} Figure */
+
+/** @returns {Milestone} */
 const milestone = (year, title, score, dimension, summary) => ({
   year,
   title,
@@ -44,6 +46,10 @@ const milestone = (year, title, score, dimension, summary) => ({
   summary,
 });
 
+/**
+ * @param {FigureSpec} spec
+ * @returns {Figure}
+ */
 function figure({
   id,
   name,

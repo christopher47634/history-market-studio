@@ -1,0 +1,91 @@
+{
+  "id": "gaochanggong",
+  "author": "claude",
+  "born": {
+    "year": 541,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 573,
+    "certainty": "确知"
+  },
+  "thesis": "北齐兰陵王，入阵曲，因功高被赐死。",
+  "events": [
+    {
+      "year": 541,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为北齐宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "高澄第四子",
+      "rationale": "宗室",
+      "quote": null
+    },
+    {
+      "year": 564,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "邙山之战",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以五百骑破周军，戴面具，入阵曲",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "入陣曲"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 565,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封兰陵王",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "屡立战功",
+      "rationale": "名将",
+      "quote": {
+        "find": [
+          "蘭陵王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 573,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被后主赐死",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "后主忌之，赐鸩",
+      "rationale": "死",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 573,
+    "title": "饮鸩",
+    "retention": 0.8,
+    "reason": "北齐四年后亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "兰陵王"
+  }
+}

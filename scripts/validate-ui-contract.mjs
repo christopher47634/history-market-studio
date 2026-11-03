@@ -1,59 +1,147 @@
-import { readFileSync, readdirSync } from "node:fs";
+// v3 界面契约：静态检查关键约定 + 用真实数据跑一遍缩放分层的纯函数。
+import { readFileSync } from "node:fs";
+import { figureV2ById } from "../src/v2/all.js";
+import { existsSync } from "node:fs";
+import { buildScene, LEVELS, levelOf, visibleNodes, labelBudget, candles, readingOrder, nearest, yRange, valueAt } from "../src/v3/scene.js";
 
-const root=new URL("..",import.meta.url);
-const read=(path)=>readFileSync(new URL(path,root),"utf8");
-const fail=(message)=>{throw new Error(message)};
+const root = new URL("..", import.meta.url);
+const read = (path) => readFileSync(new URL(path, root), "utf8");
+const fail = (message) => { throw new Error(message); };
 
-const app=read("src/App.jsx");
-const chart=read("src/components/LifeMarketChart.jsx");
-const picker=read("src/components/ComparisonPicker.jsx");
-const catalogSearch=read("src/components/CatalogSearch.jsx");
-const floatingCard=read("src/components/floatingEventCard.js");
-const historicalCitation=read("src/components/HistoricalCitation.jsx");
-const settings=read("src/components/SettingsPanel.jsx");
-const terminal=read("src/versions/BTerminal.jsx");
-const scroll=read("src/versions/CScroll.jsx");
-const styles=read("src/styles.css");
-const polish=read("src/apple-polish.css");
-const trajectoryModel=read("src/trajectoryModel.js");
-const jsxFiles=[...readdirSync(new URL("src/components",root)),...readdirSync(new URL("src/versions",root))]
-  .filter((name)=>name.endsWith(".jsx"));
+const app = read("src/v3/App.jsx");
+const chart = read("src/v3/LifeChart.jsx");
+const reader = read("src/v3/Reader.jsx");
+const bits = read("src/v3/bits.jsx");
+const css = read("src/v3/app.css");
 
-if(!app.includes('useState(viewFromHash)')||!app.includes('"hashchange"'))fail("版本路由没有与浏览器历史同步");
-if(!terminal.includes('useState("line")')||!scroll.includes('useState("line")'))fail("B/C 没有默认使用双线主视图");
-if(!terminal.includes("LifeMarketChart")||!scroll.includes("LifeMarketChart"))fail("B/C 没有共享年龄行情图引擎");
-if((chart.match(/type:\s*"candlestick"/g)||[]).length!==2)fail("主 K 线与同步 K 线必须各自保持一组单人物序列");
-if(!chart.includes('getCandleView(candleFigure'))fail("K 线没有绑定单人物细粒度行情");
-if(!/type:\s*"solid"/.test(chart)||/type:\s*index\s*\?\s*"dashed"/.test(chart)||!/endLabel:\s*\{\s*show:\s*true/.test(chart)||!chart.includes("comparison.maxAge"))fail("双线没有保持高级实线、线尾姓名或年龄轴辨识");
-if(!/useCoarsePointer:\s*true/.test(chart)||!/zr\.on\("mousemove",\s*onMove\)/.test(chart)||!/zr\.on\("click",\s*onClick\)/.test(chart)||!/const radius\s*=\s*forced\s*\?\s*76/.test(chart)||!/symbolSize:[\s\S]{0,80}params\.data\.event\s*\?\s*4\.5\s*:\s*0/.test(chart))fail("精细节点缺少范围吸附、移动端点击或小尺寸视觉规则");
-if(!/symbolSize:[\s\S]{0,80}params\.data\.event\s*\?\s*26\s*:\s*0/.test(chart)||!/itemStyle:\s*\{\s*opacity:\s*0\s*\}/.test(chart))fail("小节点缺少独立的透明点击热区");
-if(!picker.includes('aria-haspopup="dialog"')||!picker.includes('aria-label={`${label}搜索`}'))fail("人物搜索缺少可访问标签");
-if(!picker.includes("historyPeriods")||!picker.includes("figureDomains")||!picker.includes("indexSorts")||!picker.includes('aria-label="人物排序方式"'))fail("对比人物下拉缺少分期、朝代、领域或排序索引");
-if(!catalogSearch.includes("filterFigures")||!catalogSearch.includes("historyPeriods")||!catalogSearch.includes("figureDomains")||!catalogSearch.includes("catalog-index__results"))fail("全局人物搜索没有接入科学分类索引");
-if(!/createPortal\(menu,\s*document\.body\)/.test(picker)||!styles.includes('.person-select__menu--portal')||!/z-index:\s*10000\s*!important/.test(styles))fail("玉衡人物下拉菜单没有进入页面顶层");
-if(!chart.includes("onEventAnchor")||!terminal.includes("onEventAnchor={anchorDetail}")||!scroll.includes("onEventAnchor={anchorDetail}"))fail("外部事件入口没有统一回写走势点锚点");
-if(!chart.includes("life-pointer-probe")||!chart.includes("life-pointer-tether")||!styles.includes("snap-lock-in"))fail("图表缺少接近、吸附与锁定三阶段指向反馈");
-if(!terminal.includes("createPortal(")||!scroll.includes("createPortal(")||!styles.includes("event-float-card--anchor"))fail("事件卡片没有进入顶层或缺少节点连接方向");
-if(!chart.includes("const clientX = bounds.left + match.x")||!chart.includes("const clientY = bounds.top + match.y")||!floatingCard.includes("pointer?.snapX")||!floatingCard.includes('"below"')||!floatingCard.includes('"above"')||!styles.includes("--anchor-gap"))fail("事件卡片没有严格跟踪吸附点或缺少视口避让");
-if(!picker.includes("document.startViewTransition")||!picker.includes('aria-live="polite"')||!picker.includes('role="tooltip"')||!picker.includes('event.key !== "Escape"'))fail("交换控件缺少原子动效、状态播报或键盘提示逻辑");
-if(!/aria-pressed=\{mode\s*===\s*"line"\}/.test(terminal)||!/aria-pressed=\{mode\s*===\s*"line"\}/.test(scroll))fail("图表模式缺少可访问选中状态");
-if(!settings.includes('onView("b")')||!settings.includes('onView("c")')||terminal.includes("onView(")||scroll.includes("onView("))fail("B/C 版本切换没有收进设置二级界面");
-if(!/@media\s*\(max-width:\s*560px\)/.test(styles)||!/:where\(\s*button,\s*a,\s*input\s*\):focus-visible/.test(styles))fail("移动端或键盘焦点样式缺失");
-if(!styles.includes("dark-history-map.webp")||!styles.includes("qin-han-scroll.webp"))fail("两版参考图背景资产没有接入优化后的 WebP");
-if(!/scrollbar-width:\s*none/.test(styles)||!/backdrop-filter:\s*blur\(24px\)/.test(styles))fail("页面滚动条或玻璃拟态弹框规则缺失");
-if(jsxFiles.some((name)=>name==="CursorAura.jsx"))fail("中央光标波纹组件仍然存在");
+// 缩放分层：三层，阈值由大到小，跨度越小细节越多。
+if (LEVELS.map((l) => l.label).join() !== "全景,章节,细读") fail("缩放层级必须是 全景 / 章节 / 细读");
+if (levelOf(80).key !== "overview" || levelOf(20).key !== "chapter" || levelOf(6).key !== "detail") fail("缩放层级阈值不对");
+const scene = buildScene([figureV2ById.zhouenlai]);
+const p = scene.people[0];
+const whole = [scene.lifeStart, scene.endX];
+const counts = LEVELS.map((l) => visibleNodes(p, l, whole, labelBudget(l, 1000, 1)));
+if (counts[0].dots.some((n) => n.kind === "sub")) fail("全景不应画细节小事");
+if (!(counts[0].labels.length <= 6)) fail("全景标签不应超过 6 个");
+if (!(counts[2].dots.length > counts[0].dots.length)) fail("细读应比全景显示更多节点");
+if (candles(p, LEVELS[0]).length >= candles(p, LEVELS[1]).length) fail("K 线在放大后应从阶段级变为事件级");
+const narrow = [1935, 1943];
+if (visibleNodes(p, LEVELS[2], narrow, 20).labels.some((n) => n.x < narrow[0] || n.x > narrow[1])) fail("视窗外的节点不应挂标签");
+if (readingOrder(scene).some((n, i, a) => i && n.x < a[i - 1].x)) fail("阅读顺序没有按时间排");
+if (figureV2ById.zhouenlai.events.length + 1 < 16) fail("近现代人物节点应充足（周恩来至少 16 个）");
 
-if(/displayEvents\.slice\(0,\s*7\)/.test(scroll)||!scroll.includes("displayEvents.map"))fail("C scroll rail must render the full event list");
-if(!scroll.includes("onPreviewLeft")||!scroll.includes("onPreviewRight")||!scroll.includes("railPreviewId"))fail("C scroll rail must preview the hovered A/B figure");
-if(!chart.includes('? snapTarget.label')||!chart.includes(': `已吸附 · ${snapTarget.label}`'))fail("Candlestick snap label must omit the line-mode prefix");
-if(!picker.includes("onMouseMove={() => onPreview?.(value)}")||!picker.includes("onPreviewEnd?.(value)"))fail("A/B rail preview must resist selector boundary races");
-if(!scroll.includes("railFollow")||!scroll.includes('behavior: "smooth"')||!scroll.includes("railEventRefs"))fail("Chart events must center their matching history-rail entry");
-if(!scroll.includes("toggleRail")||!scroll.includes("railHoverGuardRef")||!scroll.includes('aria-expanded={!railCollapsed}'))fail("History rail collapse and reopen controls must remain stable");
-if(!polish.includes('url("/assets/qin-han-scroll.webp")')||!polish.includes(".zhusha-workbench.is-rail-collapsed .zhusha-collapse span"))fail("The scroll view must retain its mountain layer and discoverable reopen handle");
-if(!terminal.includes('<HistoricalCitation event={active} tone="jade" />')||!scroll.includes('<HistoricalCitation event={active} tone="paper" />'))fail("B/C 悬浮卡片没有共享史书原文组件");
-if(!historicalCitation.includes("citation.kind")||!historicalCitation.includes("citation.quote")||!historicalCitation.includes("出处 ·"))fail("史书引文组件缺少原文类型、正文或出处链接");
-if(!polish.includes("--history-body-font")||!polish.includes("--history-kaiti-font")||!polish.includes(".historical-citation blockquote"))fail("两套主题没有建立宋体正文与小号楷体引文层级");
-if(!terminal.includes("历史综合势能对比")||!scroll.includes("历史综合势能（0—100）")||!terminal.includes("active.trajectory.continuity"))fail("两套主题没有说明死亡不归零的历史综合势能口径");
-if(!trajectoryModel.includes("legacy-retention-v1")||!trajectoryModel.includes("minimumRetention: 0.8")||!chart.includes("历史综合势能"))fail("尾端保留模型或图表口径没有统一接入");
+// 图表：标签避让、各层标签内容不同、滚轮缩放、吸附与双击细读。
+if (!/labelLayout:\s*\{\s*hideOverlap:\s*true/.test(chart)) fail("节点标签缺少避让");
+if (!chart.includes('level.key === "overview"') || !chart.includes("{q|「")) fail("各层标签内容没有区分（细读层应带原文）");
+if (!/zoomOnMouseWheel:\s*true/.test(chart) || !chart.includes('filterMode: "none"')) fail("缺少滚轮缩放或会截断线条");
+if (!chart.includes('zr.on("mousemove"') || !chart.includes('zr.on("dblclick"') || !chart.includes("nearest(")) fail("缺少节点吸附、点击固定或双击细读");
+if (!chart.includes("红涨绿跌")) fail("K 线配色约定缺少说明");
 
-console.log("ui contract validation passed: point-anchored cards, scientific figure index, line-first and accessibility rules verified");
+// 看盘交互：十字光标按列吸附（光标高度不影响单人吸附）、带滞回；放大后纵轴自适应；K 线带涨跌副图；拖动不算点击。
+const px = (n) => [n.x * 10, 400 - n.score * 4];
+const far = nearest(p.main, [p.main[5].x * 10 + 1, 0], px);
+if (far !== p.main[5]) fail("十字光标应按列吸附：光标远离圆点也要吸到同一列的节点");
+const mid = (p.main[5].x + p.main[6].x) * 5;
+if (nearest(p.main, [mid + 1, 0], px, { prev: p.main[5] }) !== p.main[5]) fail("吸附缺少滞回，两列之间会来回跳");
+const [lo0, hi0] = yRange(scene.people, LEVELS[0], whole);
+const [lo2, hi2] = yRange(scene.people, LEVELS[2], [p.main[8].x - 4, p.main[8].x + 4]);
+if (lo0 !== 0 || hi0 !== 100 || hi2 - lo2 >= 100 || hi2 - lo2 < 20) fail("全景纵轴应固定 0–100，放大后应自适应且至少跨 20");
+if (valueAt(p, p.main[3].x, LEVELS[0]) !== p.main[3].score || valueAt(p, p.main[0].x - 5, LEVELS[0]) !== null) fail("同期取值应沿图上的线取，出生前为空");
+if (!chart.includes("makeCrosshair") || !chart.includes('id: `vol-${slot}`') || !chart.includes("S.dragging")) fail("缺少十字光标、涨跌副图或拖动与点击的区分");
+if (!app.includes("function Legend") || !app.includes("开<em>")) fail("缺少开高低收信息栏");
+
+// 角色页：六个领域板块 + 特色板块；每个板块都有人；角色卡素材 300 人齐全，头像都有许可证和作者。
+const { BOARDS, filterFigures } = await import("../src/v3/boards.js");
+const { default: index } = await import("../src/v2/index.generated.js");
+const { default: roles } = await import("../src/v2/roles.generated.js");
+for (const b of BOARDS) if (!filterFigures(index, { board: b }).length) fail(`板块「${b.label}」没有人物`);
+if (index.some((f) => !f.trend || f.trend.length < 3)) fail("索引缺少一生走势（trend），角色页画不出迷你走势");
+const missing = index.filter((f) => !roles[f.id]);
+if (missing.length) fail(`角色卡缺少维基简介：${missing.map((f) => f.name).join("、")}`);
+for (const [id, r] of Object.entries(roles)) {
+  if (!r.revid || !r.brief) fail(`角色卡 ${id} 缺少版本号或简介`);
+  if (!JSON.parse(readFileSync(new URL(`../data/v2/client/${id}.json`, import.meta.url), "utf8")).wikiIntro) fail(`${id} 的按需数据包缺少完整维基导语`);
+  if (r.img && (!r.img.license || !r.img.artist || !r.img.page || !existsSync(new URL(`../public/${r.img.src}`, import.meta.url)))) fail(`角色卡 ${id} 的头像缺少许可证、作者、来源页或图片文件`);
+}
+const rolesView = read("src/v3/RolesView.jsx");
+if (!rolesView.includes("onDragStart") || !rolesView.includes("onDrop") || !rolesView.includes("BriefCard") || !rolesView.includes("FullCard")) fail("角色页缺少拖放对比、简要角色卡或完整角色卡");
+
+// 阅读：依据分三类，百科不冒充原文；键盘逐个翻看。
+if (!bits.includes("百科") || !bits.includes("史书原文") || !bits.includes("概括")) fail("依据徽标没有区分原文 / 百科 / 概括");
+if (!reader.includes("不冒充原文")) fail("概括类节点缺少说明");
+if (!app.includes('"ArrowLeft"') || !app.includes('"ArrowRight"') || !app.includes('"Escape"')) fail("缺少键盘翻看或回全景");
+if (!app.includes("当时的势") || !app.includes("后世评价")) fail("读数没有区分当时的势与后世评价");
+
+// 主题与可用性：两套主题都定义全部色值；不用纯黑纯白；有移动端、减少动态效果、键盘焦点。
+for (const theme of ["jade", "cinnabar"]) {
+  const block = css.slice(css.indexOf(`[data-theme="${theme}"]`));
+  for (const token of ["--bg", "--surface", "--ink", "--ink-2", "--ink-3", "--accent", "--p0", "--p1", "--up", "--down"]) if (!block.includes(`${token}:`)) fail(`${theme} 主题缺少 ${token}`);
+}
+if (/#fff\b|#ffffff|#000\b|#000000/i.test(css)) fail("不使用纯白或纯黑");
+if (!css.includes("@media (max-width: 720px)") || !css.includes("prefers-reduced-motion") || !css.includes(":focus-visible")) fail("缺少移动端、减少动态效果或键盘焦点样式");
+if (!bits.includes('role="radiogroup"') || !bits.includes("aria-checked")) fail("分段选择器缺少无障碍语义");
+
+// 材质层：不用纯黑纯白；原生滚动条全部隐藏，竖向滚动由 OverlayScrollbars（发光主题）接管，横向滚动区挂 data-hscroll。
+const material = read("src/v3/material.css");
+if (/#fff\b|#ffffff|#000\b|#000000/i.test(material)) fail("material.css 不使用纯白或纯黑");
+if (!material.includes("scrollbar-width: none") || !material.includes("::-webkit-scrollbar") || !material.includes(".os-theme-glow")) fail("原生滚动条没有全部隐藏，或缺少 OverlayScrollbars 发光主题");
+if (!material.includes("prefers-reduced-motion")) fail("材质层缺少减少动态效果的处理");
+const picker = read("src/v3/Picker.jsx");
+if (!picker.includes("<Scroll") || !rolesView.includes("<Scroll") || !app.includes("data-hscroll") || !bits.includes("OverlayScrollbarsComponent")) fail("滚动区没有用 OverlayScrollbars（<Scroll>），或横向滚动区缺少 data-hscroll");
+for (const f of ["src/v3/glowscroll.js", "src/v3/pointer.js"]) if (!existsSync(new URL(f, root))) fail(`缺少 ${f}`);
+if (!read("src/main.jsx").includes("installGlowScroll()")) fail("入口没有启用光束滚动条");
+
+// 10-19 改版：吸顶玻璃导航 + ⌘K 搜索面板 + 液态玻璃折射；图标只用 Lucide，不用字符冒充；不用侧边彩条和渐变字。
+const chrome = read("src/v3/chrome.css");
+if (/#fff\b|#ffffff|#000\b|#000000/i.test(chrome)) fail("chrome.css 不使用纯白或纯黑");
+if (!chrome.includes(".v3-bar") || !chrome.includes("position: sticky") || !chrome.includes(".v3-cmd__panel")) fail("缺少吸顶导航或搜索面板样式");
+for (const f of ["src/v3/Command.jsx", "src/v3/liquid.js", "src/v3/icons.jsx", "src/v3/people.jsx"]) if (!existsSync(new URL(f, root))) fail(`缺少 ${f}`);
+if (!app.includes("<CommandPalette") || !/metaKey \|\| e\.ctrlKey\) && e\.key\.toLowerCase\(\) === "k"/.test(app)) fail("没有挂上 ⌘K 搜索面板");
+if (!read("src/main.jsx").includes("installLiquid()")) fail("入口没有启用液态玻璃");
+if (!read("src/v3/material.css").includes("var(--lg-filter,)")) fail("玻璃的 backdrop-filter 没有接上折射滤镜");
+// 键帽 <kbd>←</kbd> 里的方向键是按键名，不算冒充图标。
+const ui = ["App.jsx", "RolesView.jsx", "Reader.jsx", "Picker.jsx", "Command.jsx"].map((f) => read(`src/v3/${f}`)).join("\n").replace(/<kbd>[^<]*<\/kbd>/g, "");
+const glyph = ui.match(/>[^<>{}\n]*[⇄↗▲▼×→←][^<>{}\n]*</);
+if (glyph) fail(`界面里还有用字符冒充的图标：${glyph[0]}`);
+const allCss = [css, material, chrome, read("src/v3/type.css")].join("\n");
+if (/background-clip:\s*text/.test(allCss)) fail("不用渐变字");
+if (/border-left:\s*[2-9]px/.test(allCss)) fail("不用侧边彩色竖条");
+
+// 朝代字体：每个朝代都归了组；每个人名里的字都在他那一组人名字体（或正文字体）的分片里。
+const eras = JSON.parse(read("src/v3/eras.json"));
+const eraCss = read("src/v3/era-fonts.css");
+const eraCover = {};
+for (const m of eraCss.matchAll(/font-family: "([^"]+)";[^}]*unicode-range: ([^;]+);/g)) {
+  const set = (eraCover[m[1]] ??= new Set());
+  for (const part of m[2].split(",")) {
+    const [a, b] = part.trim().replace(/^U\+/, "").split("-").map((h) => parseInt(h, 16));
+    for (let cp = a; cp <= (b ?? a); cp++) set.add(cp);
+  }
+}
+const eraGroupOf = Object.fromEntries(Object.entries(eras.groups).flatMap(([g, v]) => v.dynasties.map((d) => [d, g])));
+for (const f of index) {
+  const g = eraGroupOf[f.dynasty];
+  if (!g) fail(`朝代「${f.dynasty}」没有归到任何字体组（src/v3/eras.json）`);
+  const { name, text } = eras.groups[g];
+  if (name === "HMS Serif") continue;
+  const miss = [...f.name].filter((c) => !eraCover[name]?.has(c.codePointAt(0)) && !eraCover[text]?.has(c.codePointAt(0)));
+  if (miss.length) fail(`${f.name} 的「${miss.join("")}」不在 ${name} / ${text} 里，请重跑 python pipeline/era-fonts.py`);
+}
+for (const f of ["public/fonts/era/LICENSES.md", "public/fonts/era/OFL.txt", "public/fonts/era/IPA-LICENSE.md"]) if (!existsSync(new URL(f, root))) fail(`朝代字体缺少许可文件 ${f}`);
+if (!read("src/main.jsx").includes("era-fonts.css")) fail("入口没有引入朝代字体");
+
+// 自托管字体：页面上出现的每个汉字都要落在某个宋体分片里（数据或界面文字改了要重跑 pipeline/fonts.py）。
+const fontsCss = read("src/v3/fonts.css");
+const covered = new Set();
+for (const m of fontsCss.matchAll(/font-family: "HMS Serif";[^}]*unicode-range: ([^;]+);/g)) {
+  for (const part of m[1].split(",")) {
+    const [a, b] = part.trim().replace(/^U\+/, "").split("-").map((h) => parseInt(h, 16));
+    for (let cp = a; cp <= (b ?? a); cp++) covered.add(cp);
+  }
+}
+for (const m of fontsCss.matchAll(/url\("\/fonts\/([^"]+)"\)/g)) if (!existsSync(new URL(`public/fonts/${m[1]}`, root))) fail(`字体文件不存在：${m[1]}`);
+const shown = [...index.map((f) => [f.name, f.dynasty, f.thesis, f.legacy?.label, f.legacy?.tier, f.peak?.title].join("")), ...Object.values(roles).map((r) => r.brief), rolesView, app, read("src/v3/boards.js")].join("");
+const uncovered = [...new Set([...shown].filter((c) => c.codePointAt(0) >= 0x2e80 && !covered.has(c.codePointAt(0))))];
+if (uncovered.length) fail(`有 ${uncovered.length} 个字不在自托管宋体里（${uncovered.slice(0, 20).join("")}），请重跑 python pipeline/fonts.py`);
+
+console.log("ui contract validation passed: three zoom levels, label avoidance, evidence badges, two themes, keyboard and mobile rules, glow scrollbars and font coverage verified");

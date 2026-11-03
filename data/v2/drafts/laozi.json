@@ -1,0 +1,139 @@
+{
+  "id": "laozi",
+  "author": "claude",
+  "born": {
+    "year": -571,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -471,
+    "certainty": "估计"
+  },
+  "thesis": "周守藏室之史，著《道德经》五千言，道家始祖。",
+  "events": [
+    {
+      "year": -571,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于楚苦县",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楚苦县厉乡曲仁里人，姓李氏，名耳",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "苦县"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -540,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任周守藏室之史",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "周守藏室之史也",
+      "rationale": "掌管典籍的史官",
+      "quote": {
+        "find": [
+          "守藏室"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -518,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "孔子问礼",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孔子适周，将问礼于老子",
+      "rationale": "名动当世",
+      "quote": {
+        "find": [
+          "问礼"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -516,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "周室衰去周",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "居周久之，见周之衰，乃遂去",
+      "rationale": "离开周室",
+      "quote": {
+        "find": [
+          "周之衰",
+          "遂去"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -516,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "函谷著书",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "至关，关令尹喜强为著书，乃著书上下篇",
+      "rationale": "留下五千言",
+      "quote": {
+        "find": [
+          "五千余言",
+          "关令尹"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -140,
+      "title": "黄老之学盛行汉初",
+      "score": 80,
+      "rationale": ""
+    },
+    {
+      "year": 666,
+      "title": "唐尊为太上玄元皇帝",
+      "score": 92,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -471,
+    "title": "莫知其所终",
+    "retention": 0.95,
+    "reason": "道家思想流传",
+    "quote": {
+      "find": [
+        "莫知其所终"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 98,
+    "label": "正面",
+    "rationale": "道家创始人，《道德经》影响东西方思想"
+  }
+}

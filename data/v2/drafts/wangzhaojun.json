@@ -1,0 +1,117 @@
+{
+  "id": "wangzhaojun",
+  "author": "claude",
+  "born": {
+    "year": -52,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -19,
+    "certainty": "估计"
+  },
+  "thesis": "汉元帝宫人，自请出塞和亲匈奴，成为汉匈和平的象征。",
+  "events": [
+    {
+      "year": -52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南郡秭归",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南郡秭归人，名嫱",
+      "rationale": "平民女子",
+      "quote": {
+        "find": [
+          "秭归"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -36,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "入宫为待诏",
+      "tier": "布衣",
+      "tierScore": 14,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "选入掖庭，数岁不得见御",
+      "rationale": "宫中失意",
+      "quote": {
+        "find": [
+          "掖庭",
+          "不得见御"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "自请和亲出塞",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "呼韩邪单于来朝，自请行，号宁胡阏氏",
+      "rationale": "身系汉匈和好",
+      "quote": {
+        "find": [
+          "宁胡阏氏",
+          "呼韩邪"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -31,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "依胡俗再嫁",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "呼韩邪死，上书求归，成帝敕令从胡俗，复为后单于阏氏",
+      "rationale": "身不由己",
+      "quote": {
+        "find": [
+          "胡俗",
+          "复株累"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 400,
+      "title": "昭君故事入乐府",
+      "score": 70,
+      "rationale": "《昭君怨》等乐府流传"
+    },
+    {
+      "year": 1300,
+      "title": "《汉宫秋》等戏曲",
+      "score": 80,
+      "rationale": "成为文学戏曲经典题材"
+    }
+  ],
+  "finale": {
+    "year": -19,
+    "title": "卒于匈奴",
+    "retention": 0.95,
+    "reason": "此后汉匈维持数十年和平",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "中国古代四大美女之一，民族和亲的象征"
+  }
+}

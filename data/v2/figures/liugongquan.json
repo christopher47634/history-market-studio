@@ -1,0 +1,142 @@
+{
+  "id": "liugongquan",
+  "name": "柳公权",
+  "born": {
+    "year": 778,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 865,
+    "certainty": "确知"
+  },
+  "lifeSpan": 87,
+  "thesis": "柳体书法，心正则笔正。",
+  "sources": [],
+  "events": [
+    {
+      "year": 778,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于京兆华原",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "官宦",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 808,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 9,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 821,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任右拾遗侍书学士",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 16,
+      "rationale": "侍书",
+      "summary": "心正则笔正",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 850,
+      "age": 72,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任太子少师",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 12,
+      "rationale": "高位",
+      "summary": "官至太子少师",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 865,
+    "age": 87,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "柳体",
+    "score": 58.9,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "颜筋柳骨",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "颜筋柳骨"
+  },
+  "peak": {
+    "title": "任太子少师",
+    "age": 72,
+    "score": 62
+  },
+  "trough": {
+    "title": "进士及第",
+    "age": 30,
+    "score": 34
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 30,
+      "years": 30
+    },
+    {
+      "fromAge": 43,
+      "toAge": 72,
+      "years": 29
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

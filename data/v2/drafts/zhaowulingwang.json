@@ -1,0 +1,129 @@
+{
+  "id": "zhaowulingwang",
+  "author": "claude",
+  "born": {
+    "year": -340,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -295,
+    "certainty": "确知"
+  },
+  "thesis": "胡服骑射，强兵拓地，传位后困死沙丘宫。",
+  "events": [
+    {
+      "year": -340,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为赵国太子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "赵肃侯之子",
+      "rationale": "太子",
+      "quote": null
+    },
+    {
+      "year": -326,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "年少即位，五国来会葬",
+      "rationale": "少主",
+      "quote": null
+    },
+    {
+      "year": -307,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "胡服骑射",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "令国人胡服骑射",
+      "rationale": "强国变革",
+      "quote": {
+        "find": [
+          "胡服"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -299,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "传位称主父",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "传国于子何，自号主父",
+      "rationale": "自为太上",
+      "quote": {
+        "find": [
+          "主父"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -296,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭中山",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "灭中山，拓地北至燕代",
+      "rationale": "国力巅峰",
+      "quote": {
+        "find": [
+          "滅中山",
+          "遷其王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -295,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "沙丘宫变",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "公子章作乱失败，主父被围沙丘宫三月余",
+      "rationale": "困死",
+      "quote": {
+        "find": [
+          "沙丘宮",
+          "主父"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -295,
+    "title": "饿死沙丘宫",
+    "retention": 0.8,
+    "reason": "胡服骑射之制延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "胡服骑射的改革者"
+  }
+}

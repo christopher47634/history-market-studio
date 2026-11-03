@@ -1,0 +1,117 @@
+{
+  "id": "wanyanzongbi",
+  "author": "claude",
+  "born": {
+    "year": 1075,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1148,
+    "certainty": "确知"
+  },
+  "thesis": "金兀术，搜山检海追宋高宗，黄天荡被困，郾城败于岳飞。",
+  "events": [
+    {
+      "year": 1075,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于金朝宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太祖第四子",
+      "rationale": "王子",
+      "quote": null
+    },
+    {
+      "year": 1125,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "攻宋",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "随军南下",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 1129,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "搜山检海",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "追高宗入海",
+      "rationale": "威震",
+      "quote": null
+    },
+    {
+      "year": 1130,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "黄天荡被困",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "韩世忠困之四十八日",
+      "rationale": "险败",
+      "quote": {
+        "find": [
+          "黃天蕩"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1140,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "郾城之败",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "岳飞破之",
+      "rationale": "败",
+      "quote": {
+        "find": [
+          "郾城"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1141,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "绍兴和议",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "迫宋称臣",
+      "rationale": "掌控金政",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1148,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "宋金对峙",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 58,
+    "label": "争议",
+    "rationale": "金兀术"
+  }
+}

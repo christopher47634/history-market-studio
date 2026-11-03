@@ -1,0 +1,81 @@
+{
+  "id": "liuzhiyuan",
+  "author": "claude",
+  "born": {
+    "year": 895,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 948,
+    "certainty": "确知"
+  },
+  "thesis": "后汉高祖，契丹北撤后入汴称帝，即位一年而卒。",
+  "events": [
+    {
+      "year": 895,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于太原",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沙陀人",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 936,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "助石敬瑭起兵",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "心腹",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 941,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "河东节度使",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "镇太原",
+      "rationale": "方镇",
+      "quote": null
+    },
+    {
+      "year": 947,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入汴称帝",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "契丹北撤",
+      "rationale": "后汉开国",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 948,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "后汉仅四年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 50,
+    "label": "争议",
+    "rationale": "后汉开国之主"
+  }
+}

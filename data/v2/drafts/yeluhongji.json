@@ -1,0 +1,94 @@
+{
+  "id": "yeluhongji",
+  "author": "claude",
+  "born": {
+    "year": 1032,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1101,
+    "certainty": "确知"
+  },
+  "thesis": "辽道宗，崇佛，诛杀皇后与太子，辽国由盛转衰。",
+  "events": [
+    {
+      "year": 1032,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于辽宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兴宗长子",
+      "rationale": "太子",
+      "quote": null
+    },
+    {
+      "year": 1055,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即位",
+      "rationale": "辽帝",
+      "quote": null
+    },
+    {
+      "year": 1063,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平重元之乱",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "叔父作乱",
+      "rationale": "平叛",
+      "quote": null
+    },
+    {
+      "year": 1075,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "冤杀萧观音",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "耶律乙辛诬陷",
+      "rationale": "昏乱",
+      "quote": null
+    },
+    {
+      "year": 1077,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀太子",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "冤杀太子",
+      "rationale": "国本动摇",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1101,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "辽国衰落",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 48,
+    "label": "负面",
+    "rationale": "辽国由盛转衰之君"
+  }
+}

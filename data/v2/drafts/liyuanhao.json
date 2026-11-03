@@ -1,0 +1,112 @@
+{
+  "id": "liyuanhao",
+  "author": "claude",
+  "born": {
+    "year": 1003,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1048,
+    "certainty": "确知"
+  },
+  "thesis": "西夏开国皇帝，三败宋军，被太子所杀。",
+  "events": [
+    {
+      "year": 1003,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于灵州",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "李德明之子",
+      "rationale": "贵族",
+      "quote": null
+    },
+    {
+      "year": 1032,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嗣位",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "继位",
+      "rationale": "首领",
+      "quote": null
+    },
+    {
+      "year": 1038,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建夏",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国号大夏",
+      "rationale": "建国",
+      "quote": null
+    },
+    {
+      "year": 1041,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "好水川之战",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大败宋军",
+      "rationale": "胜",
+      "quote": {
+        "find": [
+          "好水川"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1044,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "河曲之战败辽",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "败辽",
+      "rationale": "胜",
+      "quote": null
+    },
+    {
+      "year": 1048,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被太子刺杀",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "宁令哥刺之",
+      "rationale": "死",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1048,
+    "title": "伤重而死",
+    "retention": 0.8,
+    "reason": "西夏延续近二百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 70,
+    "label": "争议",
+    "rationale": "西夏开国皇帝"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "xinqiji",
+  "author": "claude",
+  "born": {
+    "year": 1140,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1207,
+    "certainty": "确知"
+  },
+  "thesis": "二十二岁率五十骑擒叛徒南归，一生志在恢复，词中之龙。",
+  "events": [
+    {
+      "year": 1140,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于济南",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "金占区，祖父辛赞仕金",
+      "rationale": "沦陷区士人",
+      "quote": null
+    },
+    {
+      "year": 1161,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起义抗金",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "聚众二千",
+      "rationale": "起兵",
+      "quote": null
+    },
+    {
+      "year": 1162,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五十骑擒张安国",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "缚叛将南归",
+      "rationale": "成名",
+      "quote": {
+        "find": [
+          "張安國"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1175,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平茶商军",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "江西提点刑狱",
+      "rationale": "地方官",
+      "quote": null
+    },
+    {
+      "year": 1180,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "建飞虎军",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "湖南安抚使",
+      "rationale": "方面",
+      "quote": {
+        "find": [
+          "飛虎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1182,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被劾罢官闲居",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "带湖闲居二十年",
+      "rationale": "投闲",
+      "quote": {
+        "find": [
+          "帶湖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1203,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起知镇江",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "作《永遇乐》",
+      "rationale": "复起",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1207,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "词中之龙",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "豪放派词人"
+  }
+}

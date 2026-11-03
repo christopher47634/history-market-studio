@@ -1,0 +1,208 @@
+{
+  "id": "xiejin",
+  "name": "解缙",
+  "born": {
+    "year": 1369,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1415,
+    "certainty": "确知"
+  },
+  "lifeSpan": 46,
+  "thesis": "神童，主编《永乐大典》，卷入储位之争冻死雪中。",
+  "sources": [
+    {
+      "label": "《明史·卷一百四十七 列传第三十五》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+    }
+  ],
+  "events": [
+    {
+      "year": 1369,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于吉水",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "书香",
+      "evidence": "原文",
+      "quote": {
+        "text": "解縉，字大紳，吉水人。",
+        "textSimplified": "解缙，字大绅，吉水人。",
+        "source": "《明史·卷一百四十七 列传第三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+      },
+      "verified": true
+    },
+    {
+      "year": 1388,
+      "age": 19,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 11,
+      "rationale": "神童",
+      "summary": "十九岁",
+      "evidence": "原文",
+      "quote": {
+        "text": "縉幼穎敏，洪武二十一年舉進士。",
+        "textSimplified": "缙幼颖敏，洪武二十一年举进士。",
+        "source": "《明史·卷一百四十七 列传第三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+      },
+      "verified": true
+    },
+    {
+      "year": 1402,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入值文渊阁",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 85,
+      "delta": 49,
+      "rationale": "首辅",
+      "summary": "首辅",
+      "evidence": "原文",
+      "quote": {
+        "text": "命與黃淮、楊士奇、胡廣、金幼孜、楊榮、胡儼並直文淵閣，預機務。",
+        "textSimplified": "命与黄淮、杨士奇、胡广、金幼孜、杨荣、胡俨并直文渊阁，预机务。",
+        "source": "《明史·卷一百四十七 列传第三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+      },
+      "verified": true
+    },
+    {
+      "year": 1403,
+      "age": 34,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主编《永乐大典》",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 1,
+      "rationale": "巨著",
+      "summary": "总裁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1407,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬广西",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 10,
+      "delta": -76,
+      "rationale": "贬",
+      "summary": "储位之争",
+      "evidence": "原文",
+      "quote": {
+        "text": "明年，縉坐廷試讀卷不公，謫廣西布政司參議。",
+        "textSimplified": "明年，缙坐廷试读卷不公，谪广西布政司参议。",
+        "source": "《明史·卷一百四十七 列传第三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+      },
+      "verified": true
+    },
+    {
+      "year": 1411,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下狱",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "score": 2,
+      "delta": -8,
+      "rationale": "死局",
+      "summary": "诏狱",
+      "evidence": "原文",
+      "quote": {
+        "text": "詞連大理丞湯宗，宗人府經歷高得抃，中允李貫，贊善王汝玉，編修硃紘，檢討蔣驥、潘畿、蕭引高並及至剛",
+        "textSimplified": "词连大理丞汤宗，宗人府经历高得抃，中允李贯，赞善王汝玉，编修朱纮，检讨蒋骥、潘畿、萧引高并及至刚",
+        "source": "《明史·卷一百四十七 列传第三十五》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1415,
+    "age": 46,
+    "title": "被灌醉埋雪中死",
+    "retention": 0.8,
+    "reason": "永乐大典",
+    "score": 1.6,
+    "evidence": "原文",
+    "quote": {
+      "text": "綱遂醉縉酒，埋積雪中，立死。",
+      "textSimplified": "纲遂醉缙酒，埋积雪中，立死。",
+      "source": "《明史·卷一百四十七 列传第三十五》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7147"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 80,
+      "rationale": "《永乐大典》主编",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "《永乐大典》主编"
+  },
+  "peak": {
+    "title": "主编《永乐大典》",
+    "age": 34,
+    "score": 86
+  },
+  "trough": {
+    "title": "下狱",
+    "age": 42,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 19,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 6,
+    "quotesClaimed": 6,
+    "author": "claude"
+  }
+}

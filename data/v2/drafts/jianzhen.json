@@ -1,0 +1,120 @@
+{
+  "id": "jianzhen",
+  "author": "claude",
+  "born": {
+    "year": 688,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 763,
+    "certainty": "确知"
+  },
+  "thesis": "六次东渡、双目失明，在日本传戒律、建唐招提寺。",
+  "events": [
+    {
+      "year": 688,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于扬州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "俗姓淳于",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 702,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出家",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十四岁出家",
+      "rationale": "僧人",
+      "quote": null
+    },
+    {
+      "year": 733,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "扬州大明寺讲律",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "江淮之间独为化主",
+      "rationale": "律宗高僧",
+      "quote": null
+    },
+    {
+      "year": 742,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "应日僧之请东渡",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "日本僧荣睿等请其东渡",
+      "rationale": "发愿",
+      "quote": null
+    },
+    {
+      "year": 748,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第五次东渡失败",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "漂流海南，双目失明",
+      "rationale": "屡败",
+      "quote": null
+    },
+    {
+      "year": 753,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第六次东渡抵日",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抵达日本，天皇迎之",
+      "rationale": "成功",
+      "quote": null
+    },
+    {
+      "year": 759,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "建唐招提寺",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "传律宗",
+      "rationale": "日本律宗之祖",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 763,
+    "title": "圆寂于日本",
+    "retention": 0.97,
+    "reason": "中日文化交流",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "中日交流使者"
+  }
+}

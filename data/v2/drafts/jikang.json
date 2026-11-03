@@ -1,0 +1,115 @@
+{
+  "id": "jikang",
+  "author": "claude",
+  "born": {
+    "year": 224,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 263,
+    "certainty": "确知"
+  },
+  "thesis": "竹林七贤领袖，与司马氏不合，广陵散绝。",
+  "events": [
+    {
+      "year": 224,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于谯国铚县",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "早孤",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 245,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "娶曹魏宗室拜中散大夫",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与魏宗室婚，拜中散大夫",
+      "rationale": "名士",
+      "quote": {
+        "find": [
+          "中散大夫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 250,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "竹林之游",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与阮籍山涛等为竹林之游",
+      "rationale": "名士领袖",
+      "quote": {
+        "find": [
+          "竹林"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 260,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "与山巨源绝交",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "拒绝举荐，作绝交书",
+      "rationale": "与司马氏决裂",
+      "quote": null
+    },
+    {
+      "year": 262,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "吕安案下狱",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "钟会谗之，与吕安同下狱",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "鍾會",
+          "呂安"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 263,
+    "title": "刑于东市，奏广陵散",
+    "retention": 0.85,
+    "reason": "名士风骨",
+    "quote": {
+      "find": [
+        "廣陵散"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "魏晋风度的代表"
+  }
+}

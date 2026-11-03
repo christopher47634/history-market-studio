@@ -1,0 +1,147 @@
+{
+  "id": "mencius",
+  "author": "claude",
+  "born": {
+    "year": -372,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -289,
+    "certainty": "确知"
+  },
+  "thesis": "受业子思门人，游说诸侯行仁政，不为所用，退而著《孟子》。",
+  "events": [
+    {
+      "year": -372,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邹",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "幼年丧父，孟母三迁",
+      "rationale": "家境清寒",
+      "quote": {
+        "find": [
+          "骀人",
+          "邹"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -345,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "受业子思门人",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "受业子思之门人",
+      "rationale": "求学",
+      "quote": {
+        "find": [
+          "子思"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -330,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "游事齐宣王",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "游事齐宣王，宣王不能用",
+      "rationale": "名士游说",
+      "quote": {
+        "find": [
+          "齐宣王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -320,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "见梁惠王",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "适梁，梁惠王不果所言",
+      "rationale": "以仁政说诸侯",
+      "quote": {
+        "find": [
+          "梁惠王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -314,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "齐伐燕谏不听",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "齐伐燕，孟子谏之，不听而去",
+      "rationale": "去齐",
+      "quote": null
+    },
+    {
+      "year": -310,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "退而著书",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "退而与万章之徒序诗书，述仲尼之意，作孟子七篇",
+      "rationale": "著书立说",
+      "quote": {
+        "find": [
+          "万章",
+          "七篇"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1071,
+      "title": "《孟子》升为经",
+      "score": 85,
+      "rationale": ""
+    },
+    {
+      "year": 1330,
+      "title": "追封亚圣公",
+      "score": 95,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -289,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "仁政思想流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "亚圣，儒家仁政与民本思想的代表"
+  }
+}

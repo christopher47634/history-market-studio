@@ -1,0 +1,179 @@
+{
+  "id": "mayuan",
+  "author": "claude",
+  "born": {
+    "year": -14,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 49,
+    "certainty": "确知"
+  },
+  "thesis": "伏波将军，平交趾、击五溪，「马革裹尸」之语出其口。",
+  "events": [
+    {
+      "year": -14,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于扶风",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "其先赵奢为马服君",
+      "rationale": "名将之后",
+      "quote": {
+        "find": [
+          "扶风",
+          "马服"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 10,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督邮纵囚亡命北地",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "为郡督邮，哀而纵囚，亡命北地畜牧",
+      "rationale": "亡命",
+      "quote": {
+        "find": [
+          "北地",
+          "亡命"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "事隗嚣",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "隗嚣甚敬重之，以为绥德将军",
+      "rationale": "割据者幕僚",
+      "quote": {
+        "find": [
+          "隗嚣"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 28,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归光武",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "使洛阳见光武，遂归之",
+      "rationale": "择主而事",
+      "quote": {
+        "find": [
+          "归",
+          "光武"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任陇西太守",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拜陇西太守，击破先零羌",
+      "rationale": "方面之任",
+      "quote": {
+        "find": [
+          "陇西太守"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平交趾封新息侯",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拜伏波将军，平征侧征贰，封新息侯",
+      "rationale": "南疆立功",
+      "quote": {
+        "find": [
+          "伏波将军",
+          "新息侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 48,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "击五溪蛮",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "年六十二请行，军次壶头，暑疫",
+      "rationale": "老将远征",
+      "quote": {
+        "find": [
+          "壶头",
+          "五溪"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 49,
+      "title": "梁松诬陷，追收新息侯印",
+      "score": 35,
+      "rationale": "宾客故人莫敢吊会"
+    },
+    {
+      "year": 60,
+      "title": "明帝图画云台不列",
+      "score": 45,
+      "rationale": "因椒房之嫌不入云台"
+    },
+    {
+      "year": 76,
+      "title": "章帝追谥忠成侯",
+      "score": 68,
+      "rationale": "昭雪"
+    }
+  ],
+  "finale": {
+    "year": 49,
+    "title": "病卒军中",
+    "retention": 0.8,
+    "reason": "死后被梁松诬陷，夺侯印",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "伏波将军，「马革裹尸」「老当益壮」"
+  }
+}

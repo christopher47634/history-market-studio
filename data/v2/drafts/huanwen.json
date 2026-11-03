@@ -1,0 +1,132 @@
+{
+  "id": "huanwen",
+  "author": "claude",
+  "born": {
+    "year": 312,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 373,
+    "certainty": "确知"
+  },
+  "thesis": "三次北伐，废立皇帝，欲篡晋未成而卒。",
+  "events": [
+    {
+      "year": 312,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于谯国龙亢",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父桓彝为宣城内史",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 345,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任荆州刺史",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "都督荆梁等州",
+      "rationale": "方面",
+      "quote": {
+        "find": [
+          "荊州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 347,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭成汉",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平蜀",
+      "rationale": "大功",
+      "quote": {
+        "find": [
+          "李勢"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 354,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "第一次北伐",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "至灞上",
+      "rationale": "北伐",
+      "quote": {
+        "find": [
+          "灞上"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 369,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "枋头大败",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "北伐前燕，大败于枋头",
+      "rationale": "声望受损",
+      "quote": {
+        "find": [
+          "枋頭"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 371,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "废立皇帝",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "废海西公，立简文帝",
+      "rationale": "权倾朝野",
+      "quote": {
+        "find": [
+          "海西公"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 373,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "篡位未成",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "权臣"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "yingbu",
+  "author": "claude",
+  "born": {
+    "year": -240,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -196,
+    "certainty": "确知"
+  },
+  "thesis": "受黥刑的刑徒，成为楚汉名将，封淮南王，终以谋反被诛。",
+  "events": [
+    {
+      "year": -240,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于六县",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少时有客相之，当刑而王",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "六人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -215,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "受黥刑",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "坐法黥，论输骊山",
+      "rationale": "刑徒",
+      "quote": {
+        "find": [
+          "黥",
+          "骊山"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "聚众起兵",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与骊山徒亡之江中为群盗",
+      "rationale": "起兵反秦",
+      "quote": {
+        "find": [
+          "群盗"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封九江王",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "从项羽入关，封九江王",
+      "rationale": "诸侯王",
+      "quote": {
+        "find": [
+          "九江王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -204,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "叛楚归汉",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "随何说之叛楚，被龙且击败，间行归汉",
+      "rationale": "失其国",
+      "quote": {
+        "find": [
+          "随何",
+          "归汉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -203,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封淮南王",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "汉立为淮南王",
+      "rationale": "复为诸侯王",
+      "quote": {
+        "find": [
+          "淮南王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "起兵反汉",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "韩信、彭越死，惧而反，被刘邦亲征击败",
+      "rationale": "败亡",
+      "quote": {
+        "find": [
+          "反"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -196,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "异姓王消亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 55,
+    "label": "争议",
+    "rationale": "楚汉名将，刘邦剪除异姓王的最后对象"
+  }
+}

@@ -69,7 +69,18 @@ const apiMeta = () => ({
 const normalizeText = (value) =>
   String(value || "").normalize("NFKC").trim().toLocaleLowerCase("zh-CN");
 
-const searchableText = (figure) =>
+// 每人的可检索文本只拼一次（数据在进程内不变），避免每次请求为 300 人重新拼接全部事件文本。
+const searchableCache = new WeakMap();
+const MAX_QUERY_LENGTH = 64;
+const searchableText = (figure) => {
+  let text = searchableCache.get(figure);
+  if (text === undefined) {
+    text = buildSearchableText(figure);
+    searchableCache.set(figure, text);
+  }
+  return text;
+};
+const buildSearchableText = (figure) =>
   normalizeText(
     [
       figure.name,
@@ -98,7 +109,7 @@ function getPair(url) {
   return { left, right };
 }
 
-export async function handleHistoryApi(request) {
+async function routeHistoryApi(request) {
   const url = new URL(request.url);
   if (!url.pathname.startsWith("/api/")) return null;
 
@@ -147,7 +158,11 @@ export async function handleHistoryApi(request) {
         400,
       );
     }
-    const query = normalizeText(url.searchParams.get("q"));
+    const rawQuery = url.searchParams.get("q") || "";
+    if (rawQuery.length > MAX_QUERY_LENGTH) {
+      return json({ error: "query_too_long", message: `q 最长 ${MAX_QUERY_LENGTH} 个字符` }, 400);
+    }
+    const query = normalizeText(rawQuery);
     const period = normalizeText(url.searchParams.get("period"));
     const dynasty = normalizeText(url.searchParams.get("dynasty"));
     const domain = normalizeText(url.searchParams.get("domain"));
@@ -194,7 +209,12 @@ export async function handleHistoryApi(request) {
   }
 
   if (url.pathname.startsWith("/api/figures/")) {
-    const id = decodeURIComponent(url.pathname.slice("/api/figures/".length));
+    let id;
+    try {
+      id = decodeURIComponent(url.pathname.slice("/api/figures/".length));
+    } catch {
+      return json({ error: "invalid_path_encoding" }, 400);
+    }
     const figure = figureById[id];
     return figure
       ? json({ meta: apiMeta(), figure })
@@ -237,4 +257,14 @@ export async function handleHistoryApi(request) {
   }
 
   return json({ error: "api_route_not_found" }, 404, { "cache-control": "no-store" });
+}
+
+// 对外入口：任何未预料的异常都返回 JSON 500，不让 worker 直接抛出。
+export async function handleHistoryApi(request) {
+  try {
+    return await routeHistoryApi(request);
+  } catch (error) {
+    console.error("[history-api]", error);
+    return json({ error: "internal_error" }, 500, { "cache-control": "no-store" });
+  }
 }

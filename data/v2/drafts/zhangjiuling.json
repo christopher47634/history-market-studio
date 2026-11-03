@@ -1,0 +1,109 @@
+{
+  "id": "zhangjiuling",
+  "author": "claude",
+  "born": {
+    "year": 678,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 740,
+    "certainty": "确知"
+  },
+  "thesis": "岭南第一宰相，曲江风度，被李林甫排挤罢相。",
+  "events": [
+    {
+      "year": 678,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于韶州曲江",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "岭南寒门",
+      "rationale": "寒门",
+      "quote": null
+    },
+    {
+      "year": 702,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "登进士第",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 733,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中书令",
+      "rationale": "宰相",
+      "quote": {
+        "find": [
+          "中書令"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 736,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "李林甫排挤罢相",
+      "rationale": "失势",
+      "quote": {
+        "find": [
+          "李林甫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 737,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬荆州长史",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "被贬",
+      "rationale": "外放",
+      "quote": {
+        "find": [
+          "荊州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 740,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "玄宗后悔",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "岭南第一相"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "guojia",
+  "author": "claude",
+  "born": {
+    "year": 170,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 207,
+    "certainty": "确知"
+  },
+  "thesis": "曹操首席谋士，算无遗策，北征乌桓途中病逝。",
+  "events": [
+    {
+      "year": 170,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于颍川阳翟",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "颍川阳翟人",
+      "rationale": "寒门",
+      "quote": {
+        "find": [
+          "陽翟"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 191,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "见袁绍去之",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "北见袁绍，谓其不足成大事",
+      "rationale": "择主",
+      "quote": null
+    },
+    {
+      "year": 196,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "荀彧荐于曹操",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "太祖召见论天下事，曰使孤成大业者必此人也",
+      "rationale": "得遇明主",
+      "quote": {
+        "find": [
+          "成大業"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 198,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "劝击吕布",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劝太祖急攻，遂禽布",
+      "rationale": "谋主",
+      "quote": {
+        "find": [
+          "呂布"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "十胜十败论",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "论袁绍十败公十胜",
+      "rationale": "官渡决策",
+      "quote": null
+    },
+    {
+      "year": 207,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "劝征乌桓",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劝太祖北征三郡乌丸",
+      "rationale": "远征",
+      "quote": {
+        "find": [
+          "烏丸"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 208,
+      "title": "赤壁败后曹操叹之",
+      "score": 72,
+      "rationale": "「郭奉孝在，不使孤至此」"
+    }
+  ],
+  "finale": {
+    "year": 207,
+    "title": "病卒于柳城",
+    "retention": 0.9,
+    "reason": "曹操痛哭「哀哉奉孝」",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "鬼才谋士"
+  }
+}

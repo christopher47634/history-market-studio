@@ -1,0 +1,189 @@
+{
+  "id": "yangguang",
+  "author": "claude",
+  "born": {
+    "year": 569,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 618,
+    "certainty": "确知"
+  },
+  "thesis": "夺嫡即位，开运河、征高句丽，三下江都，被弑身死国亡。",
+  "events": [
+    {
+      "year": 569,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为隋文帝次子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "独孤后所生",
+      "rationale": "皇子",
+      "quote": null
+    },
+    {
+      "year": 581,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封晋王",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "封晋王",
+      "rationale": "亲王",
+      "quote": {
+        "find": [
+          "晉王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 589,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统军灭陈",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为行军元帅伐陈",
+      "rationale": "统帅",
+      "quote": {
+        "find": [
+          "元帥"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 600,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "夺嫡立为太子",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "矫饰恭俭，废杨勇立之",
+      "rationale": "储君",
+      "quote": null
+    },
+    {
+      "year": 604,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文帝崩于仁寿宫，即位",
+      "rationale": "天子",
+      "quote": null
+    },
+    {
+      "year": 605,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "开凿大运河",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "发河南诸郡男女百余万开通济渠",
+      "rationale": "工程",
+      "quote": {
+        "find": [
+          "通濟渠"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 612,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "征高句丽惨败",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "三十万五千人，还者二千七百",
+      "rationale": "惨败",
+      "quote": null
+    },
+    {
+      "year": 613,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杨玄感之乱",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "礼部尚书杨玄感反",
+      "rationale": "天下动荡",
+      "quote": {
+        "find": [
+          "楊玄感"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 616,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三下江都",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "天下大乱，南幸江都",
+      "rationale": "困守",
+      "quote": {
+        "find": [
+          "江都"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 618,
+      "title": "唐谥「炀」",
+      "score": 40,
+      "rationale": "以亡国暴君的形象被牢记"
+    },
+    {
+      "year": 1900,
+      "title": "近代重评其运河之功",
+      "score": 40,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 618,
+    "title": "江都宫变被缢杀",
+    "retention": 0.8,
+    "reason": "隋亡",
+    "quote": {
+      "find": [
+        "宇文化及"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 66,
+    "label": "负面",
+    "rationale": "亡国暴君，运河功在千秋"
+  }
+}

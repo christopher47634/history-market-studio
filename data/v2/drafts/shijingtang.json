@@ -1,0 +1,99 @@
+{
+  "id": "shijingtang",
+  "author": "claude",
+  "born": {
+    "year": 892,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 942,
+    "certainty": "确知"
+  },
+  "thesis": "割燕云十六州，认契丹为父，儿皇帝。",
+  "events": [
+    {
+      "year": 892,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于太原",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沙陀人",
+      "rationale": "部落",
+      "quote": null
+    },
+    {
+      "year": 925,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "李嗣源女婿",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "随李嗣源",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 933,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "河东节度使",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "镇太原",
+      "rationale": "方镇",
+      "quote": null
+    },
+    {
+      "year": 936,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "割燕云称儿皇帝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "借契丹兵灭后唐",
+      "rationale": "称帝",
+      "quote": {
+        "find": [
+          "燕雲"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 941,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "安重荣之乱",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "藩镇反叛",
+      "rationale": "忧惧",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 942,
+    "title": "忧死",
+    "retention": 0.9,
+    "reason": "燕云十六州四百年未复",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 48,
+    "label": "负面",
+    "rationale": "儿皇帝"
+  }
+}

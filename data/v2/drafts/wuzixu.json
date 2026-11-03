@@ -1,0 +1,167 @@
+{
+  "id": "wuzixu",
+  "author": "claude",
+  "born": {
+    "year": -559,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -484,
+    "certainty": "确知"
+  },
+  "thesis": "父兄被楚平王所杀，奔吴助阖闾破楚，掘墓鞭尸，终被夫差赐死。",
+  "events": [
+    {
+      "year": -559,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于楚",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父伍奢为楚太子太傅",
+      "rationale": "贵族之后",
+      "quote": {
+        "find": [
+          "伍奢"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -522,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "父兄被杀亡命",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "平王杀其父兄，伍子胥亡命奔吴",
+      "rationale": "家破人亡",
+      "quote": {
+        "find": [
+          "亡",
+          "奔吳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -522,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "昭关一夜白头",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "过昭关，追者在后，乞食于道",
+      "rationale": "九死一生",
+      "quote": {
+        "find": [
+          "乞食"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -515,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "助阖闾夺位",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "进专诸刺王僚，阖闾立，以为行人",
+      "rationale": "吴国重臣",
+      "quote": {
+        "find": [
+          "專諸",
+          "行人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -506,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "破楚入郢",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与孙武伐楚，五战入郢，掘平王墓鞭尸三百",
+      "rationale": "复仇",
+      "quote": {
+        "find": [
+          "鞭",
+          "入郢"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -494,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏夫差勿许越和",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "吴败越，谏勿许越平，不听",
+      "rationale": "与君主分歧",
+      "quote": {
+        "find": [
+          "越",
+          "不聽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -484,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被赐属镂剑",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "太宰嚭谗之，夫差赐剑令自杀",
+      "rationale": "死局",
+      "quote": {
+        "find": [
+          "屬鏤",
+          "自剄"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -473,
+      "title": "吴亡，应验其言",
+      "score": 75,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -484,
+    "title": "自刎",
+    "retention": 0.8,
+    "reason": "九年后吴为越所灭",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "复仇与忠谏的双重象征"
+  }
+}

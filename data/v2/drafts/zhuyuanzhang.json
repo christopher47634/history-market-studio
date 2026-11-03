@@ -1,0 +1,292 @@
+{
+  "id": "zhuyuanzhang",
+  "author": "deepseek-flash",
+  "born": {
+    "year": 1328,
+    "certainty": "估计",
+    "note": "《明史》以至正四年年十七、洪武三十一年年七十一逆推，生于天历元年"
+  },
+  "died": {
+    "year": 1398,
+    "certainty": "确知"
+  },
+  "thesis": "从皇觉寺行童到明朝开国皇帝：先灭陈友谅、后平张士诚，再北伐逐元；称帝后废丞相、兴大狱，把皇权推到极致，也把统治风险集于一身。",
+  "events": [
+    {
+      "year": 1328,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于濠州钟离",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "贫农之家，无任何名分与产业。",
+      "summary": "生于濠州钟离，父朱世珍，母陈氏，兄弟四人中居末。",
+      "quote": {
+        "text": "父世珍，始徙濠州之鍾離。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1344,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "旱蝗大疫，入皇觉寺",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "rationale": "父母兄相继亡故，孤无所依，游食淮西三年。",
+      "summary": "至正四年大饥疫，父母兄长相继去世，贫不能葬，入皇觉寺为僧，旋出游乞食。",
+      "quote": {
+        "text": "至正四年，旱蝗，大饑疫。太祖時年十七，父母兄相繼歿，貧不克葬。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1352,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投郭子兴，入红巾",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "只身投军为亲兵，得信任却尚无独立兵权。",
+      "summary": "闰三月入濠州见郭子兴，被留为亲兵，屡战得胜，娶马氏。",
+      "quote": {
+        "text": "子興奇其狀貌，留為親兵。戰輒勝。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1353,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收兵七百，南略定远",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "脱离濠州内斗，自领七百人南下，初建班底。",
+      "summary": "收里中兵七百，署镇抚；独与徐达、汤和等南略定远，计降民兵三千，收卒二万。",
+      "quote": {
+        "text": "太祖收里中兵得七百人。子興喜，署為鎮撫。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1355,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "总和州兵，渡江取太平",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "郭子兴卒后总其军，渡江得太平路为据点。",
+      "summary": "秘檄总诸将兵，乘水涨渡江拔采石，断舟缆示不返，遂取太平。",
+      "quote": {
+        "text": "渡江幸捷，若舍而歸，江東非吾有也。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1356,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "克集庆，为吴国公",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "据应天府，置江南行中书省自总省事，成一方之主。",
+      "summary": "三月攻集庆，改应天府，秋七月诸将奉为吴国公。",
+      "quote": {
+        "text": "諸將奉太祖為吳國公。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1360,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "龙湾破陈友谅",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "陈友谅十倍舟师顺流东下，约张士诚夹攻，应天大震。",
+      "summary": "令康茂才诈降诱敌，伏兵龙湾乘雨夹击，大破汉军，复太平、下安庆。",
+      "quote": {
+        "text": "須臾，果大雨，士卒競奮，雨止合戰，水陸夾擊，大破之。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1363,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鄱阳湖大捷",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "尽歼陈友谅水军，南方最强对手覆灭，天下大势已定。",
+      "summary": "率二十万救洪都，战于鄱阳湖，以火攻破六十万汉军，友谅中流矢死。",
+      "quote": {
+        "text": "風烈火熾，烟焰漲天，湖水盡赤。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1363,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "座舟胶沙，几为所擒",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "rationale": "座舟搁浅不能退，张定边直犯御舟，命悬一线。",
+      "summary": "康郎山合战，张定边冲犯太祖座舟，舟胶于沙，常遇春射中定边乃得脱。",
+      "quote": {
+        "text": "友諒驍將張定邊直犯太祖舟，舟膠於沙，不得退，危甚。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1367,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平张士诚，北伐中原",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "尽有江南，以二十五万大军北伐，统一之势不可逆。",
+      "summary": "徐达克平江执张士诚，方国珍降；定先山东、次河南、后大都之策。",
+      "quote": {
+        "text": "徐達為征虜大將軍，常遇春為副將軍，帥師二十五萬，由淮入河，北取中原。",
+        "source": 0
+      }
+    },
+    {
+      "year": 1368,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建明",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "即皇帝位，国号明；同年徐达入大都，元朝覆亡。",
+      "summary": "正月祀天地于南郊即帝位，建元洪武；八月徐达入元都，元帝北走。",
+      "quote": {
+        "text": "洪武元年春正月乙亥，祀天地於南郊，即皇帝位。",
+        "source": 1
+      }
+    },
+    {
+      "year": 1372,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "岭北之败",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "rationale": "三路北伐，主力中路军在岭北被扩廓帖木儿击破。",
+      "summary": "徐达出雁门趋和林，五月与元兵战于岭北，败绩，明军损失甚重。",
+      "quote": {
+        "text": "徐達及元兵戰於嶺北，敗績。",
+        "source": 1
+      }
+    },
+    {
+      "year": 1380,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "罢中书省，废丞相",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "借胡惟庸案尽收相权，六部直隶皇帝，皇权空前集中。",
+      "summary": "胡惟庸以谋反伏诛，罢中书省废丞相，改大都督府为五军都督府。",
+      "quote": {
+        "text": "罷中書省，廢丞相等官，更定六部官秩",
+        "source": 1
+      }
+    },
+    {
+      "year": 1392,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "皇太子标薨",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "培养三十年的继承人去世，改立皇太孙，埋下靖难之因。",
+      "summary": "四月皇太子朱标薨，九月立皇孙允炆为皇太孙。",
+      "quote": {
+        "text": "丙子，皇太子標薨。",
+        "source": 2
+      }
+    },
+    {
+      "year": 1393,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "蓝玉案，大狱清洗",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "再兴大狱尽诛功臣，皇权再无制衡，亦自损组织根基。",
+      "summary": "蓝玉以谋反诛，牵连十三侯二伯，颁《逆臣录》布告天下。",
+      "quote": {
+        "text": "己丑，頒逆臣錄於天下。",
+        "source": 2
+      }
+    }
+  ],
+  "finale": {
+    "year": 1398,
+    "title": "崩于西宫",
+    "retention": 0.98,
+    "reason": "废丞相、卫所屯田、大明律与皇明祖训被后继者长期沿用，制度延续近三百年。",
+    "quote": {
+      "text": "閏月癸未，帝疾大漸。乙酉，崩於西宮，年七十有一。",
+      "source": 2
+    }
+  },
+  "posthumous": [
+    {
+      "year": 1403,
+      "title": "永乐元年增谥",
+      "score": 95,
+      "rationale": "成祖以靖难得位，仍需太祖正统背书，增谥以固皇统。"
+    },
+    {
+      "year": 1538,
+      "title": "嘉靖十七年改谥",
+      "score": 94,
+      "rationale": "增「开天行道肇纪立极」十二字，明廷对其开国地位的再确认。"
+    },
+    {
+      "year": 1699,
+      "title": "康熙南巡亲祭孝陵",
+      "score": 90,
+      "rationale": "清帝以祭明孝陵示承正统，敬其治绩，故朝亦加推崇。"
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "布衣开国，重建汉地秩序；废相集权、严刑大狱，奠定明清六百年皇权格局。"
+  }
+}

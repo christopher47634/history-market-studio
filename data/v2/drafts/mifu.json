@@ -1,0 +1,81 @@
+{
+  "id": "mifu",
+  "author": "claude",
+  "born": {
+    "year": 1051,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1107,
+    "certainty": "确知"
+  },
+  "thesis": "米颠，拜石，宋四家之一。",
+  "events": [
+    {
+      "year": 1051,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于太原",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "母为宫人",
+      "rationale": "微贱",
+      "quote": null
+    },
+    {
+      "year": 1070,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "荫补校书郎",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1100,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "书画学博士",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "徽宗召为书画学博士",
+      "rationale": "宫廷",
+      "quote": null
+    },
+    {
+      "year": 1105,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "礼部员外郎",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "米南宫",
+      "rationale": "官",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1107,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "书法",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "宋四家之一"
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "id": "fanzhongyan",
+  "name": "范仲淹",
+  "born": {
+    "year": 989,
+    "certainty": "估计",
+    "note": "原文未载生年，据卒年六十四及年谱推得"
+  },
+  "died": {
+    "year": 1052,
+    "certainty": "确知"
+  },
+  "lifeSpan": 63,
+  "thesis": "从寒门苦学进士到参知政事，主持庆历新政；西北御夏以屯田久守著称，虽屡遭贬黜，士风与义庄影响深远。",
+  "sources": [
+    {
+      "label": "《宋史·范仲淹传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    }
+  ],
+  "events": [
+    {
+      "year": 989,
+      "age": 0,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于苏州吴县",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "官宦之后但二岁丧父、母改嫁，家境贫寒",
+      "summary": "生于苏州吴县，两岁丧父，母改嫁长山朱氏，更名朱说。",
+      "evidence": "原文",
+      "quote": {
+        "text": "其先邠州人也，後徙家江南，遂為蘇州吳縣人。",
+        "textSimplified": "其先邠州人也，后徙家江南，遂为苏州吴县人。",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "父官早逝，幼孤改姓，出身近于寒微。"
+    },
+    {
+      "year": 1011,
+      "age": 22,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "应天府苦学",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 13,
+      "rationale": "未入仕途，苦学成名，士人声誉初起。",
+      "summary": "赴应天府依戚同文求学，昼夜不息，断齑画粥。",
+      "evidence": "原文",
+      "quote": {
+        "text": "晝夜不息，冬月憊甚，以水沃面；食不給，至以糜粥繼之",
+        "textSimplified": "昼夜不息，冬月惫甚，以水沃面；食不给，至以糜粥继之",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1015,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 5,
+      "rationale": "登进士第，入文官体系，获得正式名分。",
+      "summary": "中进士乙科，授广德军司理参军，迎母归养，复姓范。",
+      "evidence": "原文",
+      "quote": {
+        "text": "舉進士第，為廣德軍司理參軍",
+        "textSimplified": "举进士第，为广德军司理参军",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1021,
+      "age": 32,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "监泰州西溪盐税",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 32,
+      "delta": 0,
+      "rationale": "基层盐税官任上倡议海堤，政绩渐显。",
+      "summary": "监泰州西溪盐税，与滕宗谅修通泰楚海堤，民称范公堤。",
+      "evidence": "原文",
+      "quote": {
+        "text": "監泰州西溪鹽稅，遷大理寺丞",
+        "textSimplified": "监泰州西溪盐税，迁大理寺丞",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1029,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谏太后还政被贬",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 32,
+      "delta": 2,
+      "rationale": "秘阁校理任上直谏被外放",
+      "summary": "上疏请章献太后还政，被宰执压下，自请通判河中府。",
+      "evidence": "原文",
+      "quote": {
+        "text": "尋通判河中府，徙陳州。",
+        "textSimplified": "寻通判河中府，徙陈州。",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "以言事忤太后，外放通判，仕途受挫。"
+    },
+    {
+      "year": 1033,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "争废郭后被贬睦州",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 34,
+      "delta": 0,
+      "rationale": "右司谏任上力争被贬睦州",
+      "summary": "率谏官御史力争郭皇后不可废，被出知睦州。",
+      "evidence": "原文",
+      "quote": {
+        "text": "有詔出知睦州",
+        "textSimplified": "有诏出知睦州",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "率谏官争废后，再遭外贬，声名益重。"
+    },
+    {
+      "year": 1036,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "上《百官图》罢知饶州",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 35,
+      "delta": 3,
+      "rationale": "权知开封府后因党争罢黜，为重挫。",
+      "summary": "上《百官图》讥切吕夷简用人，被指朋党，罢知饶州。",
+      "evidence": "原文",
+      "quote": {
+        "text": "由是罷知饒州。",
+        "textSimplified": "由是罢知饶州。",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1038,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "西北御夏",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 37,
+      "rationale": "维持起草：陕西经略安抚副使，主持一方边防",
+      "summary": "元昊反宋，召知永兴军，改陕西都转运使，后知延州。",
+      "evidence": "原文",
+      "quote": {
+        "text": "元昊反，召為天章閣待制、知永興軍，改陝西都轉運使。",
+        "textSimplified": "元昊反，召为天章阁待制、知永兴军，改陕西都转运使。",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "任陕西要职，掌一路军政，成边防主帅。"
+    },
+    {
+      "year": 1040,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "大阅州兵分六将",
+      "tier": "重臣主帅",
+      "tierScore": 75,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 75,
+      "delta": 0,
+      "rationale": "改革边军编制，分六将训练，防御见效。",
+      "summary": "知延州，大阅州兵得万八千人，分六将，更出御贼。",
+      "evidence": "原文",
+      "quote": {
+        "text": "於是大閱州兵，得萬八千人，分為六",
+        "textSimplified": "于是大阅州兵，得万八千人，分为六",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1041,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "好水川败受贬",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 47,
+      "delta": -25,
+      "rationale": "好水川败后因焚书被劾降知耀州",
+      "summary": "任福败于好水川，范仲淹因焚元昊答书被劾，降知耀州。",
+      "evidence": "原文",
+      "quote": {
+        "text": "會任福敗于好水川，元昊答書語不遜",
+        "textSimplified": "会任福败于好水川，元昊答书语不逊",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "宋军好水川大败，本人焚书遭劾，降官知耀州。"
+    },
+    {
+      "year": 1042,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "定川援救",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 31,
+      "rationale": "援救定川后升枢密直学士，恢复重用",
+      "summary": "葛怀敏败于定川，范仲淹率六千兵援邠泾，进枢密直学士。",
+      "evidence": "原文",
+      "quote": {
+        "text": "仲淹率眾六千，由邠、涇援之",
+        "textSimplified": "仲淹率众六千，由邠、泾援之",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "率兵援关中，仁宗称可用，权位上升。"
+    },
+    {
+      "year": 1043,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参知政事与庆历新政",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 84,
+      "delta": 6,
+      "rationale": "官至副相，主持庆历新政，为生前权位峰值。",
+      "summary": "召拜枢密副使，改参知政事，上《答手诏条陈十事》推行新政。",
+      "evidence": "原文",
+      "quote": {
+        "text": "仲淹皇恐，退而上十事",
+        "textSimplified": "仲淹皇恐，退而上十事",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1045,
+      "age": 56,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "新政罢废外放",
+      "tier": "方面名家",
+      "tierScore": 65,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 40,
+      "delta": -44,
+      "rationale": "改革遭反扑被罢黜，退出中枢。",
+      "summary": "庆历新政遭夏竦等反对而废，罢参知政事，出知邠州、邓州。",
+      "evidence": "原文",
+      "quote": {
+        "text": "乃以為資政殿學士、陝西四路宣撫使、知邠州",
+        "textSimplified": "乃以为资政殿学士、陕西四路宣抚使、知邠州",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    },
+    {
+      "year": 1049,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知杭州置义庄",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 22,
+      "rationale": "外放仍推行宗族救济，义庄制度影响深远。",
+      "summary": "知杭州时出资购田设范氏义庄，赡养族人，资助科举。",
+      "evidence": "原文",
+      "quote": {
+        "text": "置義莊里中，以贍族人",
+        "textSimplified": "置义庄里中，以赡族人",
+        "source": "《宋史·范仲淹传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 1052,
+    "age": 63,
+    "title": "卒于徐州",
+    "retention": 0.92,
+    "reason": "庆历新政虽废，但士风、文学、义庄与边防方略延续；谥文正，身后声望日隆。",
+    "score": 57,
+    "evidence": "原文",
+    "quote": {
+      "text": "會病甚，請潁州，未至而卒，年六十四。",
+      "textSimplified": "会病甚，请颍州，未至而卒，年六十四。",
+      "source": "《宋史·范仲淹传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%8B%E5%8F%B2%2F%E5%8D%B7314"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 1052,
+      "title": "谥文正，仁宗书褒贤之碑",
+      "score": 88,
+      "rationale": "获文臣最高谥号，官方确认名节与政声。",
+      "inferred": false,
+      "jumpReason": "去世当年仁宗亲书褒贤之碑、谥文正，时人公认第一流人物"
+    },
+    {
+      "year": 1127,
+      "title": "追封魏国公",
+      "score": 90,
+      "rationale": "靖康间追封，身后地位继续上升。",
+      "inferred": false
+    },
+    {
+      "year": 1200,
+      "title": "朱熹称天下第一流人物",
+      "score": 92,
+      "rationale": "理学传统将其树为士大夫典范。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 90,
+      "rationale": "以先忧后乐定义宋代士大夫精神，庆历新政开变法先声，义庄影响宗族制度。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "以先忧后乐定义宋代士大夫精神，庆历新政开变法先声，义庄影响宗族制度。"
+  },
+  "peak": {
+    "title": "参知政事与庆历新政",
+    "age": 54,
+    "score": 84
+  },
+  "trough": {
+    "title": "应天府苦学",
+    "age": 22,
+    "score": 25
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 22,
+      "years": 22
+    }
+  ],
+  "quality": {
+    "quotesVerified": 15,
+    "quotesClaimed": 15,
+    "author": "deepseek-flash"
+  }
+}

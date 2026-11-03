@@ -1,0 +1,261 @@
+{
+  "id": "yuanchonghuan",
+  "name": "袁崇焕",
+  "born": {
+    "year": 1584,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1630,
+    "certainty": "确知"
+  },
+  "lifeSpan": 46,
+  "thesis": "宁远大捷击败努尔哈赤，被崇祯凌迟。",
+  "sources": [
+    {
+      "label": "《明史·卷二百五十九 列传第一百四十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+    }
+  ],
+  "events": [
+    {
+      "year": 1584,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于广东东莞",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "平民",
+      "evidence": "原文",
+      "quote": {
+        "text": "袁崇煥，字元素，東莞人。",
+        "textSimplified": "袁崇焕，字元素，东莞人。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1619,
+      "age": 35,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 12,
+      "rationale": "入仕",
+      "summary": "知县",
+      "evidence": "原文",
+      "quote": {
+        "text": "萬曆四十七年進士。",
+        "textSimplified": "万历四十七年进士。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1622,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "单骑出关",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 14,
+      "rationale": "守辽",
+      "summary": "兵部职方主事",
+      "evidence": "原文",
+      "quote": {
+        "text": "無何，廣甯師潰，廷議扼山海關，崇煥即單騎出閱關內外。",
+        "textSimplified": "无何，广甯师溃，廷议扼山海关，崇焕即单骑出阅关内外。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1626,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁远大捷",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 80,
+      "delta": 32,
+      "rationale": "名震",
+      "summary": "击败努尔哈赤",
+      "evidence": "原文",
+      "quote": {
+        "text": "大學士孫承宗行邊，崇煥請：「將五千人駐寧遠，以壯十三山勢，別遣驍將救之。",
+        "textSimplified": "大学士孙承宗行边，崇焕请：「将五千人驻宁远，以壮十三山势，别遣骁将救之。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1627,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁锦大捷后辞官",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "score": 35,
+      "delta": -45,
+      "rationale": "去职",
+      "summary": "魏忠贤排挤",
+      "evidence": "原文",
+      "quote": {
+        "text": "七月，遂允其歸，而以王之臣代為督師兼遼東巡撫，駐甯遠。",
+        "textSimplified": "七月，遂允其归，而以王之臣代为督师兼辽东巡抚，驻甯远。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1628,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督师蓟辽",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 51,
+      "rationale": "重用",
+      "summary": "五年复辽",
+      "evidence": "原文",
+      "quote": {
+        "text": "崇禎元年四月，命以兵部尚書兼右副都御史，督師薊遼、兼督登萊、天津軍務，所司敦促上道。",
+        "textSimplified": "崇祯元年四月，命以兵部尚书兼右副都御史，督师蓟辽、兼督登莱、天津军务，所司敦促上道。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1629,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杀毛文龙",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 76,
+      "delta": -10,
+      "rationale": "争议",
+      "summary": "擅杀",
+      "evidence": "原文",
+      "quote": {
+        "text": "崇煥始受事，即欲誅毛文龍。",
+        "textSimplified": "崇焕始受事，即欲诛毛文龙。",
+        "source": "《明史·卷二百五十九 列传第一百四十七》",
+        "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+      },
+      "verified": true
+    },
+    {
+      "year": 1629,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "己巳之变下狱",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "score": 2,
+      "delta": -74,
+      "rationale": "死局",
+      "summary": "皇太极绕道入关，被诬下狱",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1630,
+    "age": 46,
+    "title": "凌迟",
+    "retention": 0.8,
+    "reason": "十五年后明亡",
+    "score": 1.6,
+    "evidence": "原文",
+    "quote": {
+      "text": "三年八月，遂磔崇煥于市，兄弟妻子流三千里，籍其家。",
+      "textSimplified": "三年八月，遂磔崇焕于市，兄弟妻子流三千里，籍其家。",
+      "source": "《明史·卷二百五十九 列传第一百四十七》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E5%8F%B2%2F%E5%8D%B7259"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 1781,
+      "title": "乾隆平反",
+      "score": 72,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 84,
+      "rationale": "悲剧名将",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "悲剧名将"
+  },
+  "peak": {
+    "title": "督师蓟辽",
+    "age": 44,
+    "score": 86
+  },
+  "trough": {
+    "title": "己巳之变下狱",
+    "age": 45,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 35,
+      "years": 35
+    }
+  ],
+  "quality": {
+    "quotesVerified": 8,
+    "quotesClaimed": 8,
+    "author": "claude"
+  }
+}

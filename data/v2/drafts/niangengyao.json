@@ -1,0 +1,107 @@
+{
+  "id": "niangengyao",
+  "author": "claude",
+  "born": {
+    "year": 1679,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1726,
+    "certainty": "确知"
+  },
+  "thesis": "平定青海，雍正宠臣，九十二款大罪赐死。",
+  "events": [
+    {
+      "year": 1679,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北京",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "汉军旗",
+      "rationale": "旗人",
+      "quote": null
+    },
+    {
+      "year": 1700,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翰林",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1718,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "四川总督",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "督抚",
+      "rationale": "方面",
+      "quote": null
+    },
+    {
+      "year": 1724,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "平定青海",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "大将军",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1725,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬杭州将军",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "失宠",
+      "rationale": "贬",
+      "quote": null
+    },
+    {
+      "year": 1726,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "九十二款大罪",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "赐死",
+      "rationale": "死局",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1726,
+    "title": "自裁",
+    "retention": 0.8,
+    "reason": "功高震主",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 56,
+    "label": "负面",
+    "rationale": "功高震主"
+  }
+}

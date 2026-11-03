@@ -1,0 +1,147 @@
+{
+  "id": "licunxu",
+  "author": "claude",
+  "born": {
+    "year": 885,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 926,
+    "certainty": "确知"
+  },
+  "thesis": "李克用之子，三矢复仇灭后梁，建后唐，宠伶人身死兵变。",
+  "events": [
+    {
+      "year": 885,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于晋阳",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "李克用长子",
+      "rationale": "王子",
+      "quote": null
+    },
+    {
+      "year": 908,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嗣晋王",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "克用卒，嗣位，叔父克宁谋乱",
+      "rationale": "继位危局",
+      "quote": null
+    },
+    {
+      "year": 908,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "潞州之战",
+      "tier": "一方之主",
+      "tierScore": 87,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破梁军于夹寨",
+      "rationale": "初战成名",
+      "quote": {
+        "find": [
+          "夾寨"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 913,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭燕擒刘守光",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "三矢之一",
+      "rationale": "复仇",
+      "quote": {
+        "find": [
+          "劉守光"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 923,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭后梁称帝",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即位于魏州，入汴梁灭梁",
+      "rationale": "中原之主",
+      "quote": null
+    },
+    {
+      "year": 925,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宠伶人",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "伶人干政，诛杀功臣郭崇韬",
+      "rationale": "昏乱",
+      "quote": {
+        "find": [
+          "郭崇韜"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 926,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "兴教门之变",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "郭从谦作乱，中流矢死",
+      "rationale": "死",
+      "quote": {
+        "find": [
+          "郭從謙"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1060,
+      "title": "欧阳修《伶官传序》",
+      "score": 40,
+      "rationale": "「忧劳可以兴国，逸豫可以亡身」"
+    }
+  ],
+  "finale": {
+    "year": 926,
+    "title": "身死",
+    "retention": 0.8,
+    "reason": "后唐易主",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 66,
+    "label": "争议",
+    "rationale": "得天下与失天下的双重教训"
+  }
+}

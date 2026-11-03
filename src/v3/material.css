@@ -1,0 +1,126 @@
+/* 材质与动效层：光束滚动条、液态玻璃、指针聚光、按压反馈、页面转场。
+   时长与缓动取自审美手册实测（power3.out 为主、几乎不回弹）和 Claude 设计系统（按压 0.97、浮层轻微超调）。 */
+:root {
+  --ease-out: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-io: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-press: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-pop: cubic-bezier(0.16, 1, 0.3, 1);  /* 原来是带过冲的曲线；获奖站几乎不用回弹，统一成快起长收 */
+  --beam: var(--accent);
+  --lg-tint: color-mix(in srgb, var(--surface) 46%, transparent);
+  --lg-rim: rgba(236, 248, 242, 0.55);
+  --lg-rim-soft: rgba(236, 248, 242, 0.08);
+  --lg-spec: rgba(236, 248, 242, 0.12);
+  --lg-shadow: 0 1px 0 rgba(236, 248, 242, 0.06) inset, 0 24px 60px -26px rgba(0, 0, 0, 0.7), 0 2px 6px -2px rgba(0, 0, 0, 0.3);
+  --lg-glow: rgba(236, 248, 242, 0.22);
+}
+:root[data-theme="cinnabar"] {
+  --lg-tint: color-mix(in srgb, var(--surface) 52%, transparent);
+  --lg-rim: rgba(255, 253, 248, 0.95);
+  --lg-rim-soft: rgba(255, 253, 248, 0.35);
+  --lg-spec: rgba(255, 253, 248, 0.55);
+  --lg-shadow: 0 1px 0 rgba(255, 253, 248, 0.8) inset, 0 22px 50px -26px rgba(80, 56, 28, 0.32), 0 2px 6px -2px rgba(80, 56, 28, 0.12);
+  --lg-glow: rgba(255, 253, 248, 0.85);
+}
+
+/* ───────── 滚动条：OverlayScrollbars 覆盖式滚动条 + 自定义发光主题 os-theme-glow ───────── */
+/* 原生滚动条全部隐藏（横向滚动区也不显示任何滚动条）；竖向滚动由库接管，行为（淡入淡出、悬停加粗、拖动、点轨道）是库自带的。 */
+html, body, * { scrollbar-width: none; }
+*::-webkit-scrollbar { display: none; width: 0; height: 0; }
+html { overflow-x: clip; }
+body { overflow-x: clip; }
+.os-theme-glow {
+  --os-size: 14px; --os-padding-perpendicular: 4px; --os-padding-axis: 6px;
+  --os-track-border-radius: 99px; --os-track-bg: transparent; --os-track-bg-hover: color-mix(in srgb, var(--ink) 6%, transparent); --os-track-bg-active: color-mix(in srgb, var(--ink) 9%, transparent);
+  --os-handle-border-radius: 99px; --os-handle-perpendicular-size: 3px; --os-handle-perpendicular-size-hover: 7px; --os-handle-perpendicular-size-active: 7px; --os-handle-min-size: 40px; --os-handle-interactive-area-offset: 5px;
+  --os-handle-bg: color-mix(in srgb, var(--beam) 85%, transparent); --os-handle-bg-hover: var(--beam); --os-handle-bg-active: color-mix(in srgb, var(--beam) 75%, #f4fbf7);
+}
+/* 发光：手柄本身是亮线，外面两层同色光晕；悬停 / 拖动时光更强。库在显隐时做透明度过渡，这里只把时长调柔。 */
+.os-theme-glow .os-scrollbar-handle { box-shadow: 0 0 6px color-mix(in srgb, var(--beam) 75%, transparent), 0 0 18px color-mix(in srgb, var(--beam) 40%, transparent); background-image: linear-gradient(to bottom, transparent, rgba(244,251,247,.35) 50%, transparent); transition: opacity .15s, background-color .3s, box-shadow .3s; }
+.os-theme-glow .os-scrollbar-track:hover .os-scrollbar-handle, .os-theme-glow .os-scrollbar-handle:active { box-shadow: 0 0 10px color-mix(in srgb, var(--beam) 85%, transparent), 0 0 30px color-mix(in srgb, var(--beam) 55%, transparent); }
+.os-theme-glow.os-scrollbar { transition: opacity .45s var(--ease-out), visibility .45s, top .3s, right .3s, bottom .3s, left .3s; z-index: 1200; }
+:root[data-theme="cinnabar"] .os-theme-glow .os-scrollbar-handle { box-shadow: 0 0 6px color-mix(in srgb, var(--beam) 45%, transparent), 0 0 14px color-mix(in srgb, var(--beam) 22%, transparent); }
+/* 竖向滚动区的边缘渐隐（Claude 的 7 档非线性遮罩，羽化 28px）。 */
+[data-glow] > [data-overlayscrollbars-viewport] { --ft: 0px; --fb: 0px; -webkit-mask-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.05) calc(var(--ft) * .15), rgba(0,0,0,.3) calc(var(--ft) * .45), rgba(0,0,0,.7) calc(var(--ft) * .75), #0b0d0c var(--ft), #0b0d0c calc(100% - var(--fb)), rgba(0,0,0,.7) calc(100% - var(--fb) * .75), rgba(0,0,0,.3) calc(100% - var(--fb) * .45), rgba(0,0,0,.05) calc(100% - var(--fb) * .15), transparent); mask-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.05) calc(var(--ft) * .15), rgba(0,0,0,.3) calc(var(--ft) * .45), rgba(0,0,0,.7) calc(var(--ft) * .75), #0b0d0c var(--ft), #0b0d0c calc(100% - var(--fb)), rgba(0,0,0,.7) calc(100% - var(--fb) * .75), rgba(0,0,0,.3) calc(100% - var(--fb) * .45), rgba(0,0,0,.05) calc(100% - var(--fb) * .15), transparent); }
+[data-glow][data-fade-top] > [data-overlayscrollbars-viewport] { --ft: 28px; }
+[data-glow][data-fade-bottom] > [data-overlayscrollbars-viewport] { --fb: 28px; }
+/* 横向滚动区：没有滚动条，两侧按位置渐隐，鼠标拖动时显示抓手。 */
+[data-hscroll] { --fl: 0px; --fr: 0px; -webkit-mask-image: linear-gradient(to right, transparent, #0b0d0c var(--fl), #0b0d0c calc(100% - var(--fr)), transparent); mask-image: linear-gradient(to right, transparent, #0b0d0c var(--fl), #0b0d0c calc(100% - var(--fr)), transparent); }
+[data-hscroll]:is([data-fade-left], [data-fade-right]) { cursor: grab; }
+[data-hscroll][data-fade-left] { --fl: 40px; }
+[data-hscroll][data-fade-right] { --fr: 56px; }
+[data-hscroll].is-dragging { cursor: grabbing; scroll-snap-type: none !important; scroll-behavior: auto; }
+[data-hscroll].is-dragging * { pointer-events: none; }
+
+/* ───────── 液态玻璃（配合 liquid.js）：清透底 + 少量模糊 + 边缘折射 + 跟光高光 + 按压照亮 ───────── */
+@property --lg-a { syntax: "<angle>"; inherits: false; initial-value: 150deg; }
+:where(.lg) { position: relative; }
+/* 先模糊再折射，折进来的边才清楚；--lg-filter 只在 Chromium 上由 liquid.js 按控件尺寸填入，别处为空。 */
+.lg { isolation: isolate; background: var(--lg-tint); -webkit-backdrop-filter: blur(8px) var(--lg-filter,) saturate(1.7) brightness(1.04); backdrop-filter: blur(8px) var(--lg-filter,) saturate(1.7) brightness(1.04); border: 1px solid transparent; box-shadow: var(--lg-shadow); transition: transform .45s var(--ease-pop), background-color .3s; }
+/* 高光边：朝向光源（--lg-a，光标在哪光就从哪来）最亮，对边有一道较弱的反光。XOR 遮罩只留 1px 环。 */
+.lg::before { content: ""; position: absolute; inset: -1px; z-index: 3; border-radius: inherit; padding: 1px; pointer-events: none;
+  background: linear-gradient(var(--lg-a), var(--lg-rim), var(--lg-rim-soft) 22%, transparent 45%, transparent 60%, var(--lg-rim-soft) 82%, color-mix(in srgb, var(--lg-rim) 60%, transparent));
+  -webkit-mask: linear-gradient(#0b0d0c 0 0) content-box, linear-gradient(#0b0d0c 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#0b0d0c 0 0) content-box exclude, linear-gradient(#0b0d0c 0 0);
+  transition: --lg-a .7s var(--ease-out); }
+/* 照亮：光标所在处一团柔光（在内容之下、底色之上）；按下时整块从按下的点亮起，附近的玻璃也跟着亮一点。 */
+.lg::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .6s var(--ease-out);
+  background: radial-gradient(180px circle at var(--lx, 50%) var(--ly, 0%), var(--lg-spec), transparent 70%); }
+.lg[data-lg-hover]::after { opacity: .9; transition-duration: .25s; }
+.lg[data-lg-near]::after { opacity: .55; transition-duration: .15s; }
+.lg[data-lg-press]::after { opacity: 1; transition-duration: .08s; background: radial-gradient(220px circle at var(--lx, 50%) var(--ly, 50%), var(--lg-glow), transparent 72%); }
+:is(button, a, label).lg[data-lg-press], .v3-seg.lg[data-lg-press] { transform: scale(1.04); transition-duration: .18s; }
+.lg[data-spot-on]::after { opacity: .9; }
+@media (prefers-reduced-transparency: reduce) { .lg { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; background: var(--surface) !important; } }
+@media (prefers-reduced-motion: reduce) { .lg[data-lg-press] { transform: none !important; } }
+
+/* 盖在图表上的浮层：玻璃要厚一点，否则后面的线会和字打架。 */
+.v3-picker__pop.lg { border-color: transparent; background: color-mix(in srgb, var(--surface) 80%, transparent); -webkit-backdrop-filter: blur(22px) saturate(1.6); backdrop-filter: blur(22px) saturate(1.6); }
+.v3-picker__pop.lg .v3-picker__group { background: transparent; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+
+/* 内容卡片的聚光：不是玻璃，只在光标附近亮一团、并点亮一段边框（Magic Card）。 */
+:where(.spot) { position: relative; }
+.v3-card.spot::after, .v3-board.spot::after, .v3-strip button.spot::after { content: ""; position: absolute; inset: -1px; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .45s var(--ease-out);
+  background: radial-gradient(220px circle at var(--sx) var(--sy), color-mix(in srgb, var(--accent) 55%, transparent), transparent 70%);
+  padding: 1px; -webkit-mask: linear-gradient(#0b0d0c 0 0) content-box, linear-gradient(#0b0d0c 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#0b0d0c 0 0) content-box exclude, linear-gradient(#0b0d0c 0 0); }
+.v3-card.spot::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity .6s var(--ease-out); background: radial-gradient(600px circle at var(--sx) var(--sy), color-mix(in srgb, var(--accent) 5%, transparent), transparent 60%); }
+.spot[data-spot-on]::after, .v3-card.spot[data-spot-on]::before { opacity: 1; }
+
+/* ───────── 按压与悬停反馈 ───────── */
+:where(.v3-btn, .v3-tray__go, .v3-share, .v3-swap, .v3-text-toggle, .v3-board, .v3-eras button, .v3-row__go, .v3-row__check, .v3-tile__add, .v3-layout button, .v3-reader__nav button) { transition-property: transform, color, background-color, border-color, box-shadow, opacity; transition-duration: .2s, .2s, .2s, .2s, .3s, .2s; transition-timing-function: var(--ease-press); }
+:where(.v3-btn, .v3-tray__go, .v3-share, .v3-text-toggle, .v3-board, .v3-eras button, .v3-row__go, .v3-tile__add, .v3-layout button):active:not(:disabled) { transform: scale(.97); transition-duration: .08s; }
+.v3-seg button:active { transform: scale(.96); transition: transform .08s var(--ease-press); }
+.v3-seg__pill { transition: transform .5s var(--ease-pop); }
+
+/* 主按钮：实心胶囊 + 一圈强调色光晕，悬停时光沿边走一圈（Border Beam）。 */
+.v3-btn:not(.v3-btn--ghost), .v3-tray__go { position: relative; overflow: hidden; box-shadow: 0 1px 0 rgba(247,245,239,.25) inset, 0 8px 22px -10px color-mix(in srgb, var(--accent) 70%, transparent); }
+.v3-btn:not(.v3-btn--ghost)::after, .v3-tray__go::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: linear-gradient(105deg, transparent 35%, rgba(247,245,239,.38) 50%, transparent 65%); transform: translateX(-120%); }
+.v3-btn:not(.v3-btn--ghost):hover::after, .v3-tray__go:not(:disabled):hover::after { transform: translateX(120%); transition: transform .9s var(--ease-out); }
+
+/* ───────── 页面转场（View Transitions）：旧页模糊淡出，新页上浮清晰 ───────── */
+::view-transition-old(root) { animation: vt-out .32s var(--ease-io) both; }
+::view-transition-new(root) { animation: vt-in .62s var(--ease-expo) both; }
+@keyframes vt-out { to { opacity: 0; filter: blur(8px); transform: scale(.992); } }
+@keyframes vt-in { from { opacity: 0; filter: blur(10px); transform: translateY(14px); } }
+/* 换主题：旧画面不动，新主题从主题开关的位置以圆形扩开（--vt-x/y/r 由 setTheme 写入）。切换那一刻关掉所有颜色过渡。 */
+html.vt-theme *, html.vt-theme *::before, html.vt-theme *::after { transition: none !important; }
+html.vt-theme::view-transition-old(root) { animation: none; }
+html.vt-theme::view-transition-new(root) { animation: theme-reveal .66s var(--ease-io) both; }
+@keyframes theme-reveal { from { clip-path: circle(0 at var(--vt-x) var(--vt-y)); } to { clip-path: circle(var(--vt-r) at var(--vt-x) var(--vt-y)); } }
+::view-transition-group(role-portrait) { animation-duration: .55s; animation-timing-function: var(--ease-expo); }
+::view-transition-old(role-portrait), ::view-transition-new(role-portrait) { animation-duration: .55s; height: 100%; object-fit: cover; }
+
+/* 行情跳动：读数变化时底色闪一下（涨红跌绿），像看盘软件的报价闪烁。 */
+.tick-up { animation: tick-up .9s var(--ease-out); }
+.tick-down { animation: tick-down .9s var(--ease-out); }
+@keyframes tick-up { 0% { background-color: color-mix(in srgb, var(--up) 26%, transparent); } 100% { background-color: transparent; } }
+@keyframes tick-down { 0% { background-color: color-mix(in srgb, var(--down) 26%, transparent); } 100% { background-color: transparent; } }
+
+/* 迷你走势在悬停时从左往右重画一遍，线头带光（「穿越 K 线」剧本卡同款）。 */
+.v3-spark__line { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.draw-on .v3-spark__line, .draw-on.v3-spark .v3-spark__line { animation: spark-draw .9s var(--ease-out) backwards; }
+.draw-on .v3-spark__line { filter: drop-shadow(0 0 4px currentColor); }
+@keyframes spark-draw { from { stroke-dashoffset: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root), ::view-transition-new(root), ::view-transition-group(*) { animation: none !important; }
+}

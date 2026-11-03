@@ -1,0 +1,145 @@
+{
+  "id": "zhaokuangyin",
+  "author": "claude",
+  "born": {
+    "year": 927,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 976,
+    "certainty": "确知"
+  },
+  "thesis": "陈桥兵变黄袍加身，杯酒释兵权，先南后北统一大半中国。",
+  "events": [
+    {
+      "year": 927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洛阳夹马营",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父赵弘殷为禁军军官",
+      "rationale": "军官之子",
+      "quote": {
+        "find": [
+          "夾馬營"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 948,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "投郭威",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "隶郭威帐下",
+      "rationale": "从军",
+      "quote": null
+    },
+    {
+      "year": 954,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "高平之战立功",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "殿前都虞候",
+      "rationale": "禁军将领",
+      "quote": {
+        "find": [
+          "高平"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 959,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "殿前都点检",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "执掌禁军",
+      "rationale": "军权",
+      "quote": {
+        "find": [
+          "都點檢"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 960,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "陈桥兵变",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "黄袍加身，受周禅",
+      "rationale": "开国",
+      "quote": {
+        "find": [
+          "陳橋"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 961,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "杯酒释兵权",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "罢石守信等兵权",
+      "rationale": "巩固皇权",
+      "quote": null
+    },
+    {
+      "year": 975,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭南唐",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "李煜出降",
+      "rationale": "基本统一",
+      "quote": {
+        "find": [
+          "江南"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 976,
+    "title": "崩，烛影斧声",
+    "retention": 0.95,
+    "reason": "宋朝延续三百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "宋朝开国皇帝"
+  }
+}

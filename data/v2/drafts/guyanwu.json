@@ -1,0 +1,81 @@
+{
+  "id": "guyanwu",
+  "author": "claude",
+  "born": {
+    "year": 1613,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1682,
+    "certainty": "确知"
+  },
+  "thesis": "天下兴亡匹夫有责，经世致用。",
+  "events": [
+    {
+      "year": 1613,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于昆山",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "江南望族",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 1645,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抗清失败母绝食",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "嗣母绝食殉国",
+      "rationale": "家国破",
+      "quote": null
+    },
+    {
+      "year": 1657,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北游",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "考察",
+      "rationale": "游学",
+      "quote": null
+    },
+    {
+      "year": 1670,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "著《日知录》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "经世",
+      "rationale": "巨著",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1682,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "清学开山",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "天下兴亡匹夫有责"
+  }
+}

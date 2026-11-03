@@ -1,0 +1,99 @@
+{
+  "id": "luxiufu",
+  "author": "claude",
+  "born": {
+    "year": 1236,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1279,
+    "certainty": "确知"
+  },
+  "thesis": "崖山海战背负幼帝跳海。",
+  "events": [
+    {
+      "year": 1236,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于楚州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1276,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "临安陷奉二王南逃",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "临安陷落",
+      "rationale": "流亡",
+      "quote": null
+    },
+    {
+      "year": 1278,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "左丞相",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "拥立赵昺",
+      "rationale": "流亡朝廷",
+      "quote": null
+    },
+    {
+      "year": 1279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "崖山之战",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "负帝投海",
+      "rationale": "殉国",
+      "quote": {
+        "find": [
+          "厓山"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1279,
+    "title": "殉国",
+    "retention": 0.9,
+    "reason": "南宋亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "崖山殉国的宋臣"
+  }
+}

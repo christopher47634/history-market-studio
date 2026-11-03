@@ -1,0 +1,146 @@
+{
+  "id": "yueyi",
+  "author": "claude",
+  "born": {
+    "year": -332,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -279,
+    "certainty": "确知"
+  },
+  "thesis": "燕昭王黄金台招来的名将，统五国之兵下齐七十余城。",
+  "events": [
+    {
+      "year": -332,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于中山",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "乐羊之后",
+      "rationale": "将门",
+      "quote": {
+        "find": [
+          "樂羊"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -296,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "事赵后入燕",
+      "tier": "成名",
+      "tierScore": 45,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "闻燕昭王招贤，为魏昭王使于燕，委质为臣",
+      "rationale": "入燕",
+      "quote": {
+        "find": [
+          "燕昭王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -284,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "统五国伐齐",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为上将军，并护赵、楚、韩、魏之兵伐齐",
+      "rationale": "统帅联军",
+      "quote": {
+        "find": [
+          "上將軍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -284,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下齐七十余城",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "下齐七十余城，封昌国君",
+      "rationale": "功业巅峰",
+      "quote": {
+        "find": [
+          "七十餘城",
+          "昌國君"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "燕惠王中反间",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "惠王以骑劫代之，乐毅畏诛奔赵",
+      "rationale": "被迫出奔",
+      "quote": {
+        "find": [
+          "騎劫",
+          "畏誅"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -279,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "报燕王书",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "报遗燕惠王书，辞义俱美",
+      "rationale": "千古名篇",
+      "quote": {
+        "find": [
+          "報遺燕惠王書"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 207,
+      "title": "诸葛亮自比乐毅",
+      "score": 82,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -279,
+    "title": "卒于赵",
+    "retention": 0.95,
+    "reason": "诸葛亮自比管乐",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "战国名将，诸葛亮的偶像"
+  }
+}

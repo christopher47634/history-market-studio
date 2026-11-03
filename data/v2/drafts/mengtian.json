@@ -1,0 +1,146 @@
+{
+  "id": "mengtian",
+  "author": "claude",
+  "born": {
+    "year": -259,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -210,
+    "certainty": "确知"
+  },
+  "thesis": "秦朝名将，北击匈奴、修长城，被赵高、胡亥逼杀。",
+  "events": [
+    {
+      "year": -259,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "祖父蒙骜自齐入秦，父蒙武为秦将",
+      "rationale": "将门之后",
+      "quote": {
+        "find": [
+          "蒙骜"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -224,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为秦将攻齐",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以家世得为秦将",
+      "rationale": "将门入仕",
+      "quote": {
+        "find": [
+          "秦将"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜内史",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "攻齐大破之，拜为内史",
+      "rationale": "统一功臣",
+      "quote": {
+        "find": [
+          "内史"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -215,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北击匈奴",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "将三十万众北逐戎狄，收河南",
+      "rationale": "北方统帅",
+      "quote": {
+        "find": [
+          "三十万",
+          "河南"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -212,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "修长城直道",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "筑长城，起临洮至辽东，延袤万余里",
+      "rationale": "工程主持",
+      "quote": {
+        "find": [
+          "长城",
+          "万余里"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -210,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "沙丘之变",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "胡亥即位，囚于阳周",
+      "rationale": "身陷囹圄",
+      "quote": {
+        "find": [
+          "阳周"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立蒙恬列传",
+      "score": 62,
+      "rationale": "司马迁批评其阿意兴功"
+    }
+  ],
+  "finale": {
+    "year": -210,
+    "title": "吞药自杀",
+    "retention": 0.8,
+    "reason": "长城工程延续",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "正面",
+    "rationale": "秦朝北疆名将，长城的象征人物"
+  }
+}

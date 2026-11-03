@@ -1,0 +1,107 @@
+{
+  "id": "xiejin",
+  "author": "claude",
+  "born": {
+    "year": 1369,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1415,
+    "certainty": "确知"
+  },
+  "thesis": "神童，主编《永乐大典》，卷入储位之争冻死雪中。",
+  "events": [
+    {
+      "year": 1369,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于吉水",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "书香",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1388,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十九岁",
+      "rationale": "神童",
+      "quote": null
+    },
+    {
+      "year": 1402,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入值文渊阁",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "首辅",
+      "rationale": "首辅",
+      "quote": null
+    },
+    {
+      "year": 1403,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "主编《永乐大典》",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "总裁",
+      "rationale": "巨著",
+      "quote": null
+    },
+    {
+      "year": 1407,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬广西",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "储位之争",
+      "rationale": "贬",
+      "quote": null
+    },
+    {
+      "year": 1411,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "下狱",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "诏狱",
+      "rationale": "死局",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1415,
+    "title": "被灌醉埋雪中死",
+    "retention": 0.8,
+    "reason": "永乐大典",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "《永乐大典》主编"
+  }
+}

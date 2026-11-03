@@ -1,0 +1,176 @@
+{
+  "id": "kublai",
+  "author": "claude",
+  "born": {
+    "year": 1215,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1294,
+    "certainty": "确知"
+  },
+  "thesis": "拖雷之子，建元朝，灭南宋统一中国，定都大都。",
+  "events": [
+    {
+      "year": 1215,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于蒙古",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拖雷第四子",
+      "rationale": "宗王",
+      "quote": null
+    },
+    {
+      "year": 1251,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "总领漠南汉地",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "蒙哥即位，命其总领漠南汉地军国庶事",
+      "rationale": "方面",
+      "quote": {
+        "find": [
+          "漠南"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1253,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "远征大理",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "灭大理",
+      "rationale": "战功",
+      "quote": {
+        "find": [
+          "大理"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1257,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被蒙哥解除兵权",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "钩考",
+      "rationale": "遭猜忌",
+      "quote": null
+    },
+    {
+      "year": 1260,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "开平即汗位",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与阿里不哥争位",
+      "rationale": "称汗",
+      "quote": {
+        "find": [
+          "開平"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1264,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "击败阿里不哥",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "阿里不哥降",
+      "rationale": "独尊",
+      "quote": {
+        "find": [
+          "阿里不哥"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1271,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "建国号大元",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "取易经大哉乾元",
+      "rationale": "建国",
+      "quote": {
+        "find": [
+          "大元"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1279,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "崖山灭宋统一",
+      "tier": "天下共主",
+      "tierScore": 98,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南宋亡",
+      "rationale": "统一",
+      "quote": null
+    },
+    {
+      "year": 1281,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "征日本失败",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "遇台风全军覆没",
+      "rationale": "挫败",
+      "quote": {
+        "find": [
+          "日本"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1294,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "元朝统治延续至1368",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "元朝建立者，统一中国"
+  }
+}

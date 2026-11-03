@@ -1,0 +1,107 @@
+{
+  "id": "yangsu",
+  "author": "claude",
+  "born": {
+    "year": 544,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 606,
+    "certainty": "确知"
+  },
+  "thesis": "隋朝名将权臣，灭陈平叛，助杨广夺嫡。",
+  "events": [
+    {
+      "year": 544,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于弘农华阴",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "弘农杨氏",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 577,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从周武帝灭齐",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "有功",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 588,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督水军灭陈",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楼船下三峡",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 592,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任尚书右仆射",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与高颎共掌朝政",
+      "rationale": "宰相",
+      "quote": null
+    },
+    {
+      "year": 600,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "助杨广夺嫡",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与杨广谋废太子",
+      "rationale": "权臣",
+      "quote": null
+    },
+    {
+      "year": 605,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被炀帝猜忌",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "炀帝外示殊礼，内情甚薄",
+      "rationale": "见疑",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 606,
+    "title": "病卒",
+    "retention": 0.9,
+    "reason": "其子杨玄感反隋",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 60,
+    "label": "争议",
+    "rationale": "隋朝名将权臣"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "zhangzhongjing",
+  "name": "张仲景",
+  "born": {
+    "year": 150,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 219,
+    "certainty": "估计"
+  },
+  "lifeSpan": 69,
+  "thesis": "东汉名医，著《伤寒杂病论》，被后世尊为医圣。",
+  "sources": [],
+  "events": [
+    {
+      "year": 150,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南阳",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 0,
+      "rationale": "士人家庭",
+      "summary": "南阳涅阳人，少从张伯祖学医",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 170,
+      "age": 20,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从张伯祖学医",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 3,
+      "rationale": "医者起步",
+      "summary": "尽得其传",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 196,
+      "age": 46,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "宗族死于伤寒",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "score": 5,
+      "delta": -20,
+      "rationale": "家族惨痛",
+      "summary": "建安以来宗族二百余口，十年间死者三分之二",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 200,
+      "age": 50,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《伤寒杂病论》",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 43,
+      "rationale": "医学巨著",
+      "summary": "勤求古训，博采众方，著书十六卷",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 219,
+    "age": 69,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "著作经王叔和整理流传",
+    "score": 45.6,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 280,
+      "title": "王叔和整理其书",
+      "score": 65,
+      "rationale": "书得以传世",
+      "inferred": false
+    },
+    {
+      "year": 1065,
+      "title": "宋校正医书局刊行",
+      "score": 82,
+      "rationale": "定为医家经典",
+      "inferred": false
+    },
+    {
+      "year": 1600,
+      "title": "尊为医圣",
+      "score": 92,
+      "rationale": "明清医家尊为医圣",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 93,
+      "rationale": "中医临床医学奠基人，医圣",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 93,
+    "label": "正面",
+    "rationale": "中医临床医学奠基人，医圣"
+  },
+  "peak": {
+    "title": "著《伤寒杂病论》",
+    "age": 50,
+    "score": 48
+  },
+  "trough": {
+    "title": "宗族死于伤寒",
+    "age": 46,
+    "score": 5
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 20,
+      "years": 20
+    },
+    {
+      "fromAge": 20,
+      "toAge": 46,
+      "years": 26
+    },
+    {
+      "fromAge": 50,
+      "toAge": 69,
+      "years": 19
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

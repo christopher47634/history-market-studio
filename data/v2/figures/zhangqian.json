@@ -1,0 +1,284 @@
+{
+  "id": "zhangqian",
+  "name": "张骞",
+  "born": {
+    "year": -164,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -114,
+    "certainty": "确知"
+  },
+  "lifeSpan": 50,
+  "thesis": "两度出使西域，凿空之行打通丝绸之路。",
+  "sources": [
+    {
+      "label": "《汉书·卷六十一 张骞李广利传 第三十一》",
+      "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+    }
+  ],
+  "events": [
+    {
+      "year": -164,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于汉中",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 12,
+      "delta": 0,
+      "rationale": "平民",
+      "summary": "汉中人",
+      "evidence": "原文",
+      "quote": {
+        "text": "張騫，漢中人也，師古曰：「陳壽《益部耆舊傳》云騫漢中成固人也。",
+        "textSimplified": "张骞，汉中人也，师古曰：「陈寿《益部耆旧传》云骞汉中成固人也。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -139,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "应募出使月氏",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 18,
+      "rationale": "郎官出使",
+      "summary": "以郎应募使月氏",
+      "evidence": "原文",
+      "quote": {
+        "text": "時匈奴降者言匈奴破月氏王，師古曰：「月氏，西域胡國也。",
+        "textSimplified": "时匈奴降者言匈奴破月氏王，师古曰：「月氏，西域胡国也。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -139,
+      "age": 25,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被匈奴扣留十年",
+      "tier": "初起",
+      "tierScore": 26,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "score": 2,
+      "delta": -28,
+      "rationale": "身陷敌境",
+      "summary": "经匈奴被扣，留十余岁，娶妻生子",
+      "evidence": "原文",
+      "quote": {
+        "text": "留騫十餘歲，予妻，有子，然騫持漢節不失。",
+        "textSimplified": "留骞十余岁，予妻，有子，然骞持汉节不失。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -128,
+      "age": 36,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "逃至大宛月氏",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 20,
+      "delta": 18,
+      "rationale": "使命未竟",
+      "summary": "亡向月氏，至大宛、康居，终不能得月氏要领",
+      "evidence": "原文",
+      "quote": {
+        "text": "大宛聞漢之饒財，欲通不得，見騫，喜，問欲何之。",
+        "textSimplified": "大宛闻汉之饶财，欲通不得，见骞，喜，问欲何之。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -126,
+      "age": 38,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归汉拜太中大夫",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 30,
+      "rationale": "凿空而归",
+      "summary": "十三年后归汉，仅二人得还，拜太中大夫",
+      "evidence": "原文",
+      "quote": {
+        "text": "拜騫太中大夫，堂邑父爲奉使君。",
+        "textSimplified": "拜骞太中大夫，堂邑父为奉使君。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -123,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从征封博望侯",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 10,
+      "rationale": "封侯",
+      "summary": "从大将军击匈奴，知水草处，封博望侯",
+      "evidence": "原文",
+      "quote": {
+        "text": "騫以校尉從大將軍擊匈奴，知水草處，軍得以不乏，迺封騫爲博望侯。",
+        "textSimplified": "骞以校尉从大将军击匈奴，知水草处，军得以不乏，迺封骞为博望侯。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -121,
+      "age": 43,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "失期当斩",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "score": 5,
+      "delta": 0,
+      "rationale": "削爵为民",
+      "summary": "与李广击匈奴失期，当斩，赎为庶人",
+      "evidence": "原文",
+      "quote": {
+        "text": "匈奴圍李將軍，軍失亡多，而騫後期當斬，贖爲庶人。",
+        "textSimplified": "匈奴围李将军，军失亡多，而骞后期当斩，赎为庶人。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -119,
+      "age": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "再使乌孙",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 62,
+      "delta": 2,
+      "rationale": "再度出使",
+      "summary": "拜中郎将，率三百人出使乌孙，分遣副使至诸国",
+      "evidence": "原文",
+      "quote": {
+        "text": "天子以爲然，拜騫爲中郎將，將三百人，馬各二匹，牛羊以萬數，齎金幣帛直數千鉅萬",
+        "textSimplified": "天子以为然，拜骞为中郎将，将三百人，马各二匹，牛羊以万数，赍金币帛直数千钜万",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    },
+    {
+      "year": -115,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜大行",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 2,
+      "rationale": "九卿之位",
+      "summary": "还，拜为大行，列于九卿",
+      "evidence": "原文",
+      "quote": {
+        "text": "騫還，拜爲大行。",
+        "textSimplified": "骞还，拜为大行。",
+        "source": "《汉书·卷六十一 张骞李广利传 第三十一》",
+        "url": "https://zh.wikisource.org/wiki/%E6%BC%A2%E6%9B%B8%2F%E5%8D%B7061"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -114,
+    "age": 50,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "西域诸国由此通汉",
+    "score": 60.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": -104,
+      "title": "丝绸之路贯通",
+      "score": 85,
+      "rationale": "西北诸国始通于汉",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "丝绸之路的开拓者，「凿空」第一人",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "丝绸之路的开拓者，「凿空」第一人"
+  },
+  "peak": {
+    "title": "拜大行",
+    "age": 49,
+    "score": 64
+  },
+  "trough": {
+    "title": "被匈奴扣留十年",
+    "age": 25,
+    "score": 2
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 25,
+      "years": 25
+    }
+  ],
+  "quality": {
+    "quotesVerified": 9,
+    "quotesClaimed": 9,
+    "author": "claude"
+  }
+}

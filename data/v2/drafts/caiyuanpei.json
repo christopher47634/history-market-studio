@@ -1,0 +1,323 @@
+{
+  "id": "caiyuanpei",
+  "author": "claude",
+  "born": {
+    "year": 1868,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1940,
+    "certainty": "确知"
+  },
+  "thesis": "北大校长，思想自由兼容并包。",
+  "events": [
+    {
+      "year": 1868,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绍兴",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "商人之家",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "出生于浙江绍兴"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1883,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "考取秀才",
+      "tier": "布衣",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十七岁",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "17岁时考取秀才后"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1889,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "乡试中举",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "浙江乡试",
+      "rationale": "功名",
+      "quote": {
+        "find": [
+          "乡试中举"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1892,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士翰林",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "点翰林院庶吉士，后授编修",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "弃官南下办学",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "戊戌后对清廷失望，回绍兴办中西学堂",
+      "rationale": "弃官",
+      "quote": {
+        "find": [
+          "戊戌变法失败后"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1902,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "创中国教育会",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "爱国学社、爱国女学",
+      "rationale": "革命教育",
+      "quote": {
+        "find": [
+          "发起成立中国"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1904,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "光复会会长",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与陶成章等创光复会",
+      "rationale": "革命",
+      "quote": null
+    },
+    {
+      "year": 1907,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "留学德国莱比锡",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四十岁自费留学",
+      "rationale": "留学",
+      "quote": {
+        "find": [
+          "到德国自费留学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "教育总长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南京临时政府首任教育总长",
+      "rationale": "入阁",
+      "quote": {
+        "find": [
+          "孙中山组织南京临时政府"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "辞职再赴欧",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "不满袁世凯，辞职游学",
+      "rationale": "辞职",
+      "quote": null
+    },
+    {
+      "year": 1915,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "组织留法勤工俭学",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与李石曾等在法国",
+      "rationale": "教育",
+      "quote": {
+        "find": [
+          "与李石曾等组织留法勤工俭学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1917,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北京大学校长",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "思想自由，兼容并包",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1919,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五四运动",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为被捕学生奔走，事后辞职出京",
+      "rationale": "护学",
+      "quote": {
+        "find": [
+          "蔡元培为被捕学生奔走"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1923,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "愤而辞职",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "抗议彭允彝干涉司法",
+      "rationale": "辞职",
+      "quote": {
+        "find": [
+          "因为愤慨于当时教育总长彭允彝"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "国民政府大学院院长",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "主持全国教育行政与学术体制建设",
+      "rationale": "要职",
+      "quote": null
+    },
+    {
+      "year": 1928,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中央研究院院长",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "专任十二年",
+      "rationale": "学术首领",
+      "quote": {
+        "find": [
+          "专任中央研究院院长"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1932,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "中国民权保障同盟",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "与宋庆龄、鲁迅营救政治犯",
+      "rationale": "民权",
+      "quote": {
+        "find": [
+          "与宋庆龄、鲁迅和杨杏佛等组织中国民权"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1937,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "避居香港",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "上海沦陷，抱病移居",
+      "rationale": "流寓",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1940,
+    "title": "病逝香港",
+    "retention": 0.95,
+    "reason": "学界泰斗",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "学界泰斗"
+  }
+}

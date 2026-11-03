@@ -1,0 +1,141 @@
+{
+  "id": "dongzhuo",
+  "author": "claude",
+  "born": {
+    "year": 138,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 192,
+    "certainty": "确知"
+  },
+  "thesis": "凉州军阀，入京废立天子，焚烧洛阳，被王允、吕布所杀。",
+  "events": [
+    {
+      "year": 138,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于陇西临洮",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少好侠，尝游羌中",
+      "rationale": "边地豪强",
+      "quote": {
+        "find": [
+          "臨洮"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 168,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "讨羌立功",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以六郡良家子为羽林郎，讨羌有功",
+      "rationale": "边将",
+      "quote": {
+        "find": [
+          "羽林郎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 184,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "讨黄巾失利",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "代卢植讨张角，无功抵罪",
+      "rationale": "受挫",
+      "quote": null
+    },
+    {
+      "year": 189,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入京废立",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "何进召之，入洛废少帝立献帝",
+      "rationale": "操纵朝廷",
+      "quote": {
+        "find": [
+          "廢",
+          "陳留王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迁都长安焚洛阳",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "关东联军起，焚洛阳迁都长安",
+      "rationale": "避敌西迁",
+      "quote": {
+        "find": [
+          "長安",
+          "焚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 192,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被诛",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "王允与吕布谋，刺杀之",
+      "rationale": "死于内变",
+      "quote": {
+        "find": [
+          "呂布"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1360,
+      "title": "《三国演义》头号反派",
+      "score": 60,
+      "rationale": "作为乱世祸首家喻户晓"
+    }
+  ],
+  "finale": {
+    "year": 192,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "天下由此大乱",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 65,
+    "label": "负面",
+    "rationale": "汉末动乱的开端"
+  }
+}

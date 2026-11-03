@@ -1,0 +1,112 @@
+{
+  "id": "yeluchucai",
+  "author": "claude",
+  "born": {
+    "year": 1190,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1244,
+    "certainty": "确知"
+  },
+  "thesis": "辽宗室后裔，辅佐成吉思汗、窝阔台，以儒治国。",
+  "events": [
+    {
+      "year": 1190,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于燕京",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "辽东丹王八世孙",
+      "rationale": "贵族后裔",
+      "quote": null
+    },
+    {
+      "year": 1215,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "金亡降蒙",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "成吉思汗召见",
+      "rationale": "入仕蒙古",
+      "quote": null
+    },
+    {
+      "year": 1219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随成吉思汗西征",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以星象占卜",
+      "rationale": "近臣",
+      "quote": null
+    },
+    {
+      "year": 1231,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中书令",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "窝阔台时为中书令",
+      "rationale": "宰相",
+      "quote": {
+        "find": [
+          "中書令"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1234,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "谏止屠城",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "汴京免屠",
+      "rationale": "救民",
+      "quote": null
+    },
+    {
+      "year": 1241,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "乃马真后排挤",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "失势",
+      "rationale": "失势",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1244,
+    "title": "忧愤而卒",
+    "retention": 0.9,
+    "reason": "以儒治国",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "蒙古帝国名相"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "id": "shenkuo",
+  "name": "沈括",
+  "born": {
+    "year": 1031,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1095,
+    "certainty": "确知"
+  },
+  "lifeSpan": 64,
+  "thesis": "《梦溪笔谈》作者，百科全书式科学家。",
+  "sources": [],
+  "events": [
+    {
+      "year": 1031,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于杭州钱塘",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 28,
+      "delta": 0,
+      "rationale": "士人",
+      "summary": "官宦",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1063,
+      "age": 32,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 36,
+      "delta": 8,
+      "rationale": "入仕",
+      "summary": "入仕",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1072,
+      "age": 41,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "提举司天监",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 52,
+      "delta": 16,
+      "rationale": "天文",
+      "summary": "修浑仪，编奉元历",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1075,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出使辽国",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 54,
+      "delta": 2,
+      "rationale": "外交",
+      "summary": "据理争地界",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1080,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知延州",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 72,
+      "delta": 18,
+      "rationale": "方面",
+      "summary": "抗西夏",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1082,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "永乐城之败",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 10,
+      "delta": -62,
+      "rationale": "获罪",
+      "summary": "贬均州安置",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 1088,
+      "age": 57,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "隐居梦溪著书",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 44,
+      "delta": 34,
+      "rationale": "著述",
+      "summary": "著《梦溪笔谈》",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    }
+  ],
+  "finale": {
+    "year": 1095,
+    "age": 64,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "《梦溪笔谈》传世",
+    "score": 41.8,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 92,
+      "rationale": "中国科学史上的坐标人物",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "中国科学史上的坐标人物"
+  },
+  "peak": {
+    "title": "知延州",
+    "age": 49,
+    "score": 72
+  },
+  "trough": {
+    "title": "永乐城之败",
+    "age": 51,
+    "score": 10
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 32,
+      "years": 32
+    }
+  ],
+  "quality": {
+    "quotesVerified": 0,
+    "quotesClaimed": 0,
+    "author": "claude"
+  }
+}

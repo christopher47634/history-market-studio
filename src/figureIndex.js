@@ -34,6 +34,7 @@ export const indexSorts = [
   { id: "name", label: "姓名排序" },
 ];
 
+/** @type {Array<[string, RegExp]>} */
 const domainRules = [
   ["科技实业", /科学|技术|工程|数学|医学|农学|天文|地理|水利|造纸|纺织|历法|本草|地动仪|航天|核物理|气象|地质/],
   ["文学艺术", /诗|词|文学|小说|书法|绘画|戏曲|艺术|作家|文坛|创作|红楼梦|兰亭/],
@@ -88,6 +89,7 @@ export function getDynastiesForPeriod(periodId, dynastyOrder) {
 }
 
 export function getFigureSearchText(figure) {
+  if (figure.searchText) return `${figure.searchText} ${(figure.thesis ?? "").toLocaleLowerCase("zh-CN")}`;
   return [
     figure.name,
     figure.courtesy,
@@ -108,8 +110,10 @@ export function getFigureSearchText(figure) {
     .toLocaleLowerCase("zh-CN");
 }
 
+// 综合影响：v2 用后世评价；旧数据回退到四项能力均值。
 const influenceScore = (figure) =>
-  Object.values(figure.metrics).reduce((sum, value) => sum + value, 0) / 4;
+  figure.legacy?.score ?? Object.values(figure.metrics).reduce((sum, value) => sum + value, 0) / 4;
+const eventCount = (figure) => figure.eventCount ?? figure.events.length;
 
 export function filterFigures(
   figures,
@@ -138,7 +142,7 @@ export function filterFigures(
   });
   return result.sort((left, right) => {
     if (sort === "events")
-      return right.events.length - left.events.length || left.born - right.born;
+      return eventCount(right) - eventCount(left) || left.born - right.born;
     if (sort === "influence")
       return influenceScore(right) - influenceScore(left) || left.born - right.born;
     if (sort === "name") return left.name.localeCompare(right.name, "zh-CN");
@@ -149,7 +153,7 @@ export function filterFigures(
 export function getIndexStats(figures) {
   return {
     people: figures.length,
-    events: figures.reduce((sum, figure) => sum + figure.events.length, 0),
+    events: figures.reduce((sum, figure) => sum + eventCount(figure), 0),
     dynasties: new Set(figures.map((figure) => figure.dynasty)).size,
     domains: new Set(figures.map((figure) => figure.domain)).size,
   };

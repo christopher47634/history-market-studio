@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-overlayscrollbars-initialize>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#07100e" />
+    <meta name="theme-color" content="#0a0e0d" />
     <meta name="color-scheme" content="dark light" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -11,18 +11,68 @@
     <meta name="application-name" content="历史行情局" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="icon" type="image/png" href="/assets/apple-touch-icon.png" />
+    <link rel="preload" href="/fonts/hms-latin.d1a975fe.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/hms-serif-0.49944e1c.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
     <meta name="description" content="把历史人物的关键节点转换成可缩放、可对比的叙事行情图。" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="zh_CN" />
     <meta property="og:title" content="历史行情局 · 人物人生走势研究" />
     <meta property="og:description" content="比较中国历史人物的人生影响力走势、关键节点与微观蜡烛行情。" />
-    <meta property="og:image" content="/assets/yuheng-terminal-target.webp" />
-    <title>历史行情局 · 玉衡终端 / 朱砂长卷</title>
+    <meta property="og:image" content="https://history-market-studio.vercel.app/assets/yuheng-terminal-target.webp" />
+    <title>历史行情局</title>
+    <!-- 在首帧之前定好主题，避免先闪一下深色再变浅色。脚本保持单行：CSP 哈希按这一行算，不受换行符影响。 -->
+    <script>document.documentElement.dataset.theme = location.hash === "#c" ? "cinnabar" : "jade";</script>
+    <script src="/boot-watch.js" defer></script>
+    <style>
+      /* 首屏骨架：脚本到之前就按真实页面的版式摆好（导航、标题、两格人物、走势卡 + 右栏），React 挂上来时不跳版。
+         走势卡里一条线在反复描出来，正式图表的画线动画接着它。 */
+      :root { --sk-bg: #0a0e0d; --sk-card: #111816; --sk-line: #25302c; --sk-ink: #dce5e0; --sk-ink3: #66726c; --sk-accent: #6fd6a8; }
+      :root[data-theme="cinnabar"] { --sk-bg: #f4f1ea; --sk-card: #fbfaf6; --sk-line: #e2dcd0; --sk-ink: #25231e; --sk-ink3: #9a9488; --sk-accent: #b8412e; }
+      html, body { margin: 0; background: var(--sk-bg); color: var(--sk-ink); font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; }
+      .sk-bar { max-width: 1480px; margin: 0 auto; padding: 14px 28px; box-sizing: border-box; height: 74px; display: flex; align-items: center; gap: 20px; }
+      .sk-brand { display: flex; align-items: center; gap: 10px; font: 600 18px/1.1 "Songti SC", "STSong", serif; letter-spacing: .08em; }
+      .sk-brand svg { width: 30px; height: 30px; fill: none; stroke: var(--sk-accent); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .sk-bar i { height: 40px; border-radius: 99px; border: 1px solid var(--sk-line); background: var(--sk-card); }
+      .sk-bar .sk-nav { width: 150px; margin-left: auto; margin-right: auto; }
+      .sk-bar .sk-tools { width: 380px; }
+      .sk-shell { max-width: 1480px; margin: 0 auto; padding: 22px 28px 40px; box-sizing: border-box; }
+      .sk-intro { margin: 6px 2px 18px; font: 700 32px/1.15 "Songti SC", "STSong", serif; letter-spacing: .02em; min-height: 63px; }
+      .sk-tickers { display: grid; grid-template-columns: 1fr 44px 1fr; gap: 12px; margin-bottom: 16px; }
+      .sk-tickers i { height: 82px; border-radius: 22px; border: 1px solid var(--sk-line); background: var(--sk-card); }
+      .sk-tickers i:nth-child(2) { height: 44px; align-self: center; border-radius: 50%; }
+      .sk-main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 18px; align-items: start; }
+      .sk-card { border-radius: 18px; border: 1px solid var(--sk-line); background: var(--sk-card); box-sizing: border-box; }
+      .sk-chart { height: clamp(651px, calc(60vh + 231px), 891px); display: grid; place-content: center; justify-items: center; gap: 14px; color: var(--sk-ink3); font-size: 13px; letter-spacing: .04em; }
+      .sk-side { height: 420px; }
+      .sk-chart svg { width: min(420px, 60vw); height: 120px; overflow: visible; }
+      .sk-chart path { fill: none; stroke: var(--sk-accent); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: .75; filter: drop-shadow(0 0 6px var(--sk-accent)); animation: sk-draw 1.6s cubic-bezier(.76, 0, .24, 1) infinite alternate; }
+      @keyframes sk-draw { to { stroke-dashoffset: 0; } }
+      @media (max-width: 1100px) { .sk-main { grid-template-columns: 1fr; } .sk-side { display: none; } }
+      @media (max-width: 720px) {
+        .sk-bar { height: 114px; padding: 14px 16px 6px; flex-wrap: wrap; align-content: flex-start; } .sk-bar .sk-tools { width: 140px; margin-left: auto; } .sk-bar .sk-nav { order: 3; width: 100%; margin: 0; }
+        .sk-shell { padding: 14px 16px 32px; } .sk-intro { font-size: 24px; min-height: 83px; }
+        .sk-tickers { grid-template-columns: 1fr; } .sk-tickers i { height: 70px; } .sk-tickers i:nth-child(2) { display: none; }
+        .sk-chart { height: calc(62vh + 400px); border-radius: 14px; }
+      }
+      @media (prefers-reduced-motion: reduce) { .sk-chart path { animation: none; stroke-dashoffset: 0; } }
+    </style>
   </head>
-  <body>
-    <div id="root"></div>
+  <body data-overlayscrollbars-initialize>
+    <div id="root">
+      <div class="sk" aria-busy="true">
+        <div class="sk-bar"><div class="sk-brand"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 23 11 15l5 5 6-9 6 6" /></svg>历史行情局</div><i class="sk-nav"></i><i class="sk-tools"></i></div>
+        <div class="sk-shell">
+          <div class="sk-intro">一个人的一生，画成一张走势</div>
+          <div class="sk-tickers"><i></i><i></i><i></i></div>
+          <div class="sk-main">
+            <div class="sk-card sk-chart"><svg viewBox="0 0 420 120" aria-hidden="true"><path pathLength="1" d="M2 112 C40 110 62 100 92 92 S140 58 170 64 S214 96 236 80 S280 24 312 30 S370 14 418 10" /></svg>正在排列人生节点</div>
+            <div class="sk-card sk-side"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

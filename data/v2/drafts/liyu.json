@@ -1,0 +1,107 @@
+{
+  "id": "liyu",
+  "author": "claude",
+  "born": {
+    "year": 937,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 978,
+    "certainty": "确知"
+  },
+  "thesis": "南唐后主，亡国之君，千古词帝。",
+  "events": [
+    {
+      "year": 937,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为南唐皇子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "中主第六子",
+      "rationale": "皇子",
+      "quote": null
+    },
+    {
+      "year": 961,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "国力弱，奉宋正朔",
+      "rationale": "弱主",
+      "quote": null
+    },
+    {
+      "year": 971,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "去唐号称江南国主",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "贬损仪制",
+      "rationale": "屈辱",
+      "quote": null
+    },
+    {
+      "year": 975,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宋军破金陵",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "summary": "肉袒出降",
+      "rationale": "亡国",
+      "quote": null
+    },
+    {
+      "year": 976,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封违命侯",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "囚居汴京",
+      "rationale": "阶下囚",
+      "quote": null
+    },
+    {
+      "year": 978,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "作《虞美人》",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "太宗赐牵机药",
+      "rationale": "死",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 978,
+    "title": "被毒死",
+    "retention": 0.8,
+    "reason": "词名千古",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "千古词帝"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "banzhao",
+  "author": "claude",
+  "born": {
+    "year": 45,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 117,
+    "certainty": "估计"
+  },
+  "thesis": "续成《汉书》，入宫为后妃师，被称「曹大家」。",
+  "events": [
+    {
+      "year": 45,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于扶风",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "班彪之女，博学高才",
+      "rationale": "史学世家之女",
+      "quote": {
+        "find": [
+          "班彪",
+          "博学"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 59,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "嫁曹世叔",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十四岁嫁曹世叔",
+      "rationale": "嫁入寻常人家",
+      "quote": {
+        "find": [
+          "曹世叔"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 70,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "早寡",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "夫早卒，守节",
+      "rationale": "寡居",
+      "quote": {
+        "find": [
+          "早卒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 92,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "奉诏续《汉书》",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兄固卒，和帝诏昭就东观藏书阁踵而成之",
+      "rationale": "接续国史",
+      "quote": {
+        "find": [
+          "东观",
+          "踵而成之"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 100,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入宫为后妃师",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "数召入宫，令皇后诸贵人师事焉，号曰大家",
+      "rationale": "宫廷之师",
+      "quote": {
+        "find": [
+          "大家",
+          "师事"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 106,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参议朝政",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "邓太后临朝，与闻政事",
+      "rationale": "参预政事",
+      "quote": {
+        "find": [
+          "与闻政事"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 106,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "作《女诫》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "作《女诫》七篇",
+      "rationale": "影响后世两千年",
+      "quote": {
+        "find": [
+          "女诫"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 200,
+      "title": "马融等从其受读《汉书》",
+      "score": 70,
+      "rationale": "通《汉书》者皆出其门"
+    }
+  ],
+  "finale": {
+    "year": 117,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "《汉书》天文志、八表由其完成",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "争议",
+    "rationale": "中国第一位女史学家；《女诫》后来被视为束缚女性"
+  }
+}

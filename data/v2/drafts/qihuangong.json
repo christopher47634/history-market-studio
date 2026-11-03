@@ -1,0 +1,193 @@
+{
+  "id": "qihuangong",
+  "author": "claude",
+  "born": {
+    "year": -716,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -643,
+    "certainty": "确知"
+  },
+  "thesis": "春秋第一位霸主，任管仲为相，九合诸侯一匡天下。",
+  "events": [
+    {
+      "year": -716,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为齐公子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐僖公之子，名小白",
+      "rationale": "公子",
+      "quote": {
+        "find": [
+          "小白"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -686,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出奔莒",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "襄公无道，鲍叔牙奉之奔莒",
+      "rationale": "流亡",
+      "quote": {
+        "find": [
+          "莒",
+          "鮑叔"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -685,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "抢先入齐即位",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "管仲射中带钩，佯死，先入即位",
+      "rationale": "险死还生",
+      "quote": {
+        "find": [
+          "帶鉤"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -685,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任管仲为相",
+      "tier": "一方之主",
+      "tierScore": 87,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "用鲍叔之言，任管仲以政",
+      "rationale": "用人之明",
+      "quote": {
+        "find": [
+          "管仲"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -681,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北杏会盟",
+      "tier": "一方之主",
+      "tierScore": 89,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "会诸侯于北杏，始霸",
+      "rationale": "霸业开端",
+      "quote": null
+    },
+    {
+      "year": -663,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "北伐山戎救燕",
+      "tier": "一方之主",
+      "tierScore": 91,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "伐山戎救燕",
+      "rationale": "尊王攘夷",
+      "quote": {
+        "find": [
+          "山戎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -651,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "葵丘之会",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "会诸侯于葵丘，周天子赐胙",
+      "rationale": "霸主巅峰",
+      "quote": {
+        "find": [
+          "葵丘"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -645,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "管仲死后用竖刁",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "管仲卒，桓公复用易牙、竖刁、开方",
+      "rationale": "用人失据",
+      "quote": {
+        "find": [
+          "豎刀",
+          "易牙"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -643,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五公子争立",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "病中五公子各树党争立，宫中无人",
+      "rationale": "困死宫中",
+      "quote": {
+        "find": [
+          "五公子"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -643,
+    "title": "卒，尸在床六十七日",
+    "retention": 0.8,
+    "reason": "身后齐国霸业中断",
+    "quote": {
+      "find": [
+        "六十七日"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "春秋五霸之首"
+  }
+}

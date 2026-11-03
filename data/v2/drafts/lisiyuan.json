@@ -1,0 +1,107 @@
+{
+  "id": "lisiyuan",
+  "author": "claude",
+  "born": {
+    "year": 867,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 933,
+    "certainty": "确知"
+  },
+  "thesis": "后唐明宗，五代少有的治世。",
+  "events": [
+    {
+      "year": 867,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于应州",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沙陀人",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 890,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "李克用养子",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "骁勇",
+      "rationale": "将领",
+      "quote": null
+    },
+    {
+      "year": 923,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭取汴梁",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "首功",
+      "rationale": "名将",
+      "quote": null
+    },
+    {
+      "year": 926,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "邺都兵变称帝",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兴教门之变后即位",
+      "rationale": "称帝",
+      "quote": null
+    },
+    {
+      "year": 930,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "五代小康",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "年屡丰登",
+      "rationale": "治世",
+      "quote": null
+    },
+    {
+      "year": 933,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "秦王之乱",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "子李从荣作乱",
+      "rationale": "变乱",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 933,
+    "title": "崩",
+    "retention": 0.85,
+    "reason": "后唐衰落",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 62,
+    "label": "正面",
+    "rationale": "五代小康之主"
+  }
+}

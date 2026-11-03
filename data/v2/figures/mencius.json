@@ -1,0 +1,217 @@
+{
+  "id": "mencius",
+  "name": "孟子",
+  "born": {
+    "year": -372,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -289,
+    "certainty": "确知"
+  },
+  "lifeSpan": 83,
+  "thesis": "受业子思门人，游说诸侯行仁政，不为所用，退而著《孟子》。",
+  "sources": [
+    {
+      "label": "《史记·卷七十四 孟子荀卿列传 第十四》",
+      "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7074"
+    }
+  ],
+  "events": [
+    {
+      "year": -372,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于邹",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "家境清寒",
+      "summary": "幼年丧父，孟母三迁",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -345,
+      "age": 27,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "受业子思门人",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 25,
+      "delta": 7,
+      "rationale": "求学",
+      "summary": "受业子思之门人",
+      "evidence": "原文",
+      "quote": {
+        "text": "受業子思之門人。",
+        "textSimplified": "受业子思之门人。",
+        "source": "《史记·卷七十四 孟子荀卿列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7074"
+      },
+      "verified": true
+    },
+    {
+      "year": -330,
+      "age": 42,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "游事齐宣王",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 33,
+      "rationale": "名士游说",
+      "summary": "游事齐宣王，宣王不能用",
+      "evidence": "原文",
+      "quote": {
+        "text": "道既通，游事齊宣王，宣王不能用。",
+        "textSimplified": "道既通，游事齐宣王，宣王不能用。",
+        "source": "《史记·卷七十四 孟子荀卿列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7074"
+      },
+      "verified": true
+    },
+    {
+      "year": -320,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "见梁惠王",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 2,
+      "rationale": "以仁政说诸侯",
+      "summary": "适梁，梁惠王不果所言",
+      "evidence": "原文",
+      "quote": {
+        "text": "適梁，梁惠王不果所言，則見以為迂遠而闊於事情。",
+        "textSimplified": "适梁，梁惠王不果所言，则见以为迂远而阔于事情。",
+        "source": "《史记·卷七十四 孟子荀卿列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7074"
+      },
+      "verified": true
+    },
+    {
+      "year": -314,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "齐伐燕谏不听",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 45,
+      "delta": -15,
+      "rationale": "去齐",
+      "summary": "齐伐燕，孟子谏之，不听而去",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": -310,
+      "age": 62,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "退而著书",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 5,
+      "rationale": "著书立说",
+      "summary": "退而与万章之徒序诗书，述仲尼之意，作孟子七篇",
+      "evidence": "原文",
+      "quote": {
+        "text": "退而與萬章之徒序詩書，述仲尼之意，作孟子七篇。",
+        "textSimplified": "退而与万章之徒序诗书，述仲尼之意，作孟子七篇。",
+        "source": "《史记·卷七十四 孟子荀卿列传 第十四》",
+        "url": "https://zh.wikisource.org/wiki/%E5%8F%B2%E8%A8%98%2F%E5%8D%B7074"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": -289,
+    "age": 83,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "仁政思想流传",
+    "score": 47.5,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 1071,
+      "title": "《孟子》升为经",
+      "score": 85,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 1330,
+      "title": "追封亚圣公",
+      "score": 95,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 95,
+      "rationale": "亚圣，儒家仁政与民本思想的代表",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "亚圣，儒家仁政与民本思想的代表"
+  },
+  "peak": {
+    "title": "见梁惠王",
+    "age": 52,
+    "score": 60
+  },
+  "trough": {
+    "title": "受业子思门人",
+    "age": 27,
+    "score": 25
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 27,
+      "years": 27
+    },
+    {
+      "fromAge": 62,
+      "toAge": 83,
+      "years": 21
+    }
+  ],
+  "quality": {
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
+    "author": "claude"
+  }
+}

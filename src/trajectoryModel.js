@@ -13,7 +13,7 @@ const interruptedPattern =
   /崩解|覆灭|失败|被废|废除|中断|清算|瓦解|失传|倒台|动乱|败亡|骤减|坍塌|失去舞台|遭难/;
 const violentPattern =
   /遇害|被杀|自尽|赐死|身亡|就义|自沉|自刎|处死|凌迟|车裂|兵败|覆灭/;
-const illnessPattern = /病|疾|积劳|老|衰/;
+const illnessPattern = /病|疾|积劳|年老|衰老|老病|衰/;
 
 const domainProfiles = {
   思想学术: {
@@ -259,7 +259,7 @@ export function attachLegacyAwareTerminal(figure) {
         deathTitlePattern.test(event.title) &&
         !genericTerminalPattern.test(event.title),
     )
-    .at(-1);
+    .slice(-1)[0];
   const genericTerminal = events
     .filter(
       (event) =>
@@ -267,7 +267,7 @@ export function attachLegacyAwareTerminal(figure) {
         event.year === figure.died &&
         genericTerminalPattern.test(event.title),
     )
-    .at(-1);
+    .slice(-1)[0];
 
   const lifeEvents = events
     .filter((event) => !event.posthumous)
@@ -275,7 +275,7 @@ export function attachLegacyAwareTerminal(figure) {
   let terminalEvent =
     genericTerminal ||
     explicitDeath ||
-    lifeEvents.findLast(
+    findLastEvent(lifeEvents,
       (event) =>
         Math.abs(event.age - figure.lifeSpan) < 0.05 ||
         (event.year === figure.died && genericTerminalPattern.test(event.title)),
@@ -296,7 +296,7 @@ export function attachLegacyAwareTerminal(figure) {
       delta: 0,
       dimension: "终章",
       summary: "个人生命结束，生前行动转入历史影响阶段。",
-      source: lifeEvents.at(-1)?.source,
+      source: lifeEvents.slice(-1)[0]?.source,
       inferredTerminal: true,
       posthumous: false,
     };
@@ -312,7 +312,7 @@ export function attachLegacyAwareTerminal(figure) {
         event.score > 0,
     )
     .sort((left, right) => left.age - right.age || left.year - right.year);
-  const previous = priorCandidates.at(-1);
+  const previous = priorCandidates.slice(-1)[0];
   const profile = inferContinuity(
     { ...figure, events },
     explicitDeath || terminalEvent,
@@ -395,12 +395,28 @@ export function attachLegacyAwareTerminal(figure) {
   };
 }
 
+// 按 events 数组缓存「生前事件、按年龄排序」的结果，避免 buildMicroCandles 循环里反复复制排序。
+const sortedCache = new WeakMap();
+const sortedLifeEvents = (events) => {
+  let sorted = sortedCache.get(events);
+  if (!sorted) {
+    sorted = events.filter((event) => !event.posthumous).sort((left, right) => left.age - right.age);
+    sortedCache.set(events, sorted);
+  }
+  return sorted;
+};
+
+// findLast 是 ES2023，旧版 Safari 没有；手写等价实现。
+function findLastEvent(list, predicate) {
+  for (let i = list.length - 1; i >= 0; i--) if (predicate(list[i], i, list)) return list[i];
+  return undefined;
+}
+
 export function interpolateTrajectoryScore(events, age) {
-  const sorted = [...events]
-    .filter((event) => !event.posthumous)
-    .sort((left, right) => left.age - right.age);
+  const sorted = sortedLifeEvents(events);
+  if (!sorted.length) return 0;
   if (age <= sorted[0].age) return sorted[0].score;
-  if (age >= sorted.at(-1).age) return sorted.at(-1).score;
+  if (age >= sorted[sorted.length - 1].age) return sorted[sorted.length - 1].score;
 
   const rightIndex = sorted.findIndex((event) => event.age >= age);
   const left = sorted[rightIndex - 1];

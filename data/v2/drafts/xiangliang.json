@@ -1,0 +1,122 @@
+{
+  "id": "xiangliang",
+  "author": "claude",
+  "born": {
+    "year": -262,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -208,
+    "certainty": "确知"
+  },
+  "thesis": "楚将项燕之子，会稽起兵反秦，立楚怀王孙心，定陶战死。",
+  "events": [
+    {
+      "year": -262,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于下相",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楚将项燕之子",
+      "rationale": "楚国贵族",
+      "quote": {
+        "find": [
+          "项燕"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -225,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "杀人避仇吴中",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "杀人，与项羽避仇吴中",
+      "rationale": "避祸他乡",
+      "quote": {
+        "find": [
+          "避仇",
+          "吴中"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "会稽起兵",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "斩会稽守，得精兵八千",
+      "rationale": "江东起事",
+      "quote": {
+        "find": [
+          "八千",
+          "会稽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立楚怀王",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "立楚怀王孙心，自号武信君",
+      "rationale": "反秦盟主",
+      "quote": {
+        "find": [
+          "武信君",
+          "怀王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "定陶战死",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "章邯夜袭定陶，项梁战死",
+      "rationale": "骄兵致败",
+      "quote": {
+        "find": [
+          "定陶"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -208,
+    "title": "战死",
+    "retention": 0.8,
+    "reason": "项羽继承其业",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 58,
+    "label": "正面",
+    "rationale": "项羽的叔父与领路人"
+  }
+}

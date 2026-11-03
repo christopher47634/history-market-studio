@@ -1,0 +1,147 @@
+{
+  "id": "mengchangjun",
+  "author": "claude",
+  "born": {
+    "year": -340,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -279,
+    "certainty": "确知"
+  },
+  "thesis": "齐国宗室，食客三千，鸡鸣狗盗出秦关，任齐相。",
+  "events": [
+    {
+      "year": -340,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐宗室",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "靖郭君田婴之子，五月五日生",
+      "rationale": "宗室",
+      "quote": {
+        "find": [
+          "田嬰",
+          "五月五日"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -310,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "继为薛公",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "代立于薛，招致诸侯宾客，食客数千人",
+      "rationale": "宗室封君",
+      "quote": {
+        "find": [
+          "食客數千"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -299,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入秦被扣",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "秦昭王囚孟尝君，谋欲杀之",
+      "rationale": "身陷秦国",
+      "quote": {
+        "find": [
+          "囚孟嘗君"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -299,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "鸡鸣狗盗出关",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "狗盗入秦宫取狐白裘，鸡鸣者开函谷关",
+      "rationale": "逃出",
+      "quote": {
+        "find": [
+          "雞鳴",
+          "狗盜"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -298,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任齐相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐湣王以为相",
+      "rationale": "齐国宰相",
+      "quote": {
+        "find": [
+          "相齊"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -294,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "田甲之乱罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "湣王疑之，孟尝君出奔",
+      "rationale": "罢相出奔",
+      "quote": null
+    },
+    {
+      "year": -284,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "联五国伐齐",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为魏相，与燕赵共伐破齐",
+      "rationale": "复仇",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -279,
+    "title": "卒于薛",
+    "retention": 0.9,
+    "reason": "诸子争立，薛被灭",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "战国四公子之一"
+  }
+}

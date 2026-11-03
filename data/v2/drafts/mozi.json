@@ -1,0 +1,118 @@
+{
+  "id": "mozi",
+  "author": "claude",
+  "born": {
+    "year": -476,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -390,
+    "certainty": "估计"
+  },
+  "thesis": "宋国大夫，倡兼爱非攻，组织墨家团体，止楚攻宋。",
+  "events": [
+    {
+      "year": -476,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于宋或鲁",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出身手工业者",
+      "rationale": "工匠阶层",
+      "quote": {
+        "find": [
+          "墨翟"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -450,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "创立墨家",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "倡兼爱、非攻、尚贤、节用",
+      "rationale": "学派创始",
+      "quote": null
+    },
+    {
+      "year": -440,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "止楚攻宋",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "行十日十夜至郢，与公输盘九攻九拒，楚罢攻宋",
+      "rationale": "声名大振",
+      "quote": null
+    },
+    {
+      "year": -430,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任宋大夫",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "盖墨翟宋之大夫，善守御，为节用",
+      "rationale": "宋国大夫",
+      "quote": {
+        "find": [
+          "宋之大夫",
+          "守御"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -420,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "门徒遍天下",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "墨家与儒家并称显学",
+      "rationale": "显学",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -233,
+      "title": "韩非称儒墨为显学",
+      "score": 70,
+      "rationale": ""
+    },
+    {
+      "year": 1900,
+      "title": "近代重新发现墨学",
+      "score": 85,
+      "rationale": "科学、逻辑思想被重视"
+    }
+  ],
+  "finale": {
+    "year": -390,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "墨家在秦汉后式微",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "墨家创始人，兼爱非攻"
+  }
+}

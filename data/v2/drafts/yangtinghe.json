@@ -1,0 +1,107 @@
+{
+  "id": "yangtinghe",
+  "author": "claude",
+  "born": {
+    "year": 1459,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1529,
+    "certainty": "确知"
+  },
+  "thesis": "武宗朝首辅，定策迎世宗，大礼议失败罢归。",
+  "events": [
+    {
+      "year": 1459,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于新都",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1478,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十九岁",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1512,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "首辅",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "首辅",
+      "rationale": "首辅",
+      "quote": null
+    },
+    {
+      "year": 1521,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "迎立世宗诛江彬",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "总揽朝政三十七日",
+      "rationale": "巅峰",
+      "quote": null
+    },
+    {
+      "year": 1524,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大礼议罢归",
+      "tier": "方面名家",
+      "tierScore": 55,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "与嘉靖不合",
+      "rationale": "罢",
+      "quote": null
+    },
+    {
+      "year": 1528,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "削籍为民",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "削籍",
+      "rationale": "削籍",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1529,
+    "title": "卒",
+    "retention": 0.9,
+    "reason": "身后恢复官职",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "正面",
+    "rationale": "明中期名相"
+  }
+}

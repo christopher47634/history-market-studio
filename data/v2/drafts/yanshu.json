@@ -1,0 +1,94 @@
+{
+  "id": "yanshu",
+  "author": "claude",
+  "born": {
+    "year": 991,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1055,
+    "certainty": "确知"
+  },
+  "thesis": "神童宰相，门下出范仲淹、欧阳修。",
+  "events": [
+    {
+      "year": 991,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于抚州",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平民",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1005,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "神童赐同进士",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十四岁",
+      "rationale": "神童",
+      "quote": null
+    },
+    {
+      "year": 1030,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知贡举",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "取欧阳修",
+      "rationale": "选才",
+      "quote": null
+    },
+    {
+      "year": 1042,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "同平章事兼枢密使",
+      "rationale": "宰相",
+      "quote": null
+    },
+    {
+      "year": 1044,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "罢相",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "外放",
+      "rationale": "罢",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1055,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "婉约词宗",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "太平宰相"
+  }
+}

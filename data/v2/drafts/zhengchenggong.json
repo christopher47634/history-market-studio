@@ -1,0 +1,112 @@
+{
+  "id": "zhengchenggong",
+  "author": "claude",
+  "born": {
+    "year": 1624,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1662,
+    "certainty": "确知"
+  },
+  "thesis": "收复台湾，抗清复明。",
+  "events": [
+    {
+      "year": 1624,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于日本平户",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "父郑芝龙",
+      "rationale": "海商之子",
+      "quote": null
+    },
+    {
+      "year": 1645,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "隆武帝赐姓朱",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "国姓爷",
+      "rationale": "受宠",
+      "quote": null
+    },
+    {
+      "year": 1646,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "父降清母死",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "焚儒服起兵",
+      "rationale": "家破",
+      "quote": null
+    },
+    {
+      "year": 1650,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "据厦门金门",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抗清基地",
+      "rationale": "一方",
+      "quote": null
+    },
+    {
+      "year": 1659,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南京之败",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "北伐失利",
+      "rationale": "惨败",
+      "quote": null
+    },
+    {
+      "year": 1662,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "收复台湾",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "荷兰人投降",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "臺灣"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1662,
+    "title": "卒于台湾",
+    "retention": 0.9,
+    "reason": "郑氏据台二十年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "民族英雄"
+  }
+}

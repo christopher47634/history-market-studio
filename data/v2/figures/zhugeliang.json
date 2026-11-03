@@ -1,0 +1,500 @@
+{
+  "id": "zhugeliang",
+  "name": "诸葛亮",
+  "born": {
+    "year": 181,
+    "certainty": "估计",
+    "note": "正史未载生年，据卒年五十四推为181年"
+  },
+  "died": {
+    "year": 234,
+    "certainty": "确知"
+  },
+  "lifeSpan": 53,
+  "thesis": "从琅琊士族孤儿到蜀汉丞相，以隆中对与联吴抗曹开创三分，受托孤后总揽国政，六出祁山终病殁五丈原，成为忠臣智者典范。",
+  "sources": [
+    {
+      "label": "《三国志·蜀书·诸葛亮传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+    }
+  ],
+  "events": [
+    {
+      "year": 181,
+      "age": 0,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于琅邪",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 15,
+      "delta": 0,
+      "rationale": "士族之后但早孤，父亲仅为郡丞，无官位可承。",
+      "summary": "生于琅邪阳都，父诸葛珪为太山郡丞，早孤，由叔父诸葛玄照料。",
+      "evidence": "原文",
+      "quote": {
+        "text": "諸葛亮字孔明，琅邪陽都人也。",
+        "textSimplified": "诸葛亮字孔明，琅邪阳都人也。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 197,
+      "age": 16,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "躬耕隆中",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 22,
+      "delta": 7,
+      "rationale": "躬耕陇亩，有卧龙之名而无官位",
+      "summary": "叔父玄卒后，躬耕陇亩，好《梁父吟》，与荆州名士交游。",
+      "evidence": "原文",
+      "quote": {
+        "text": "每自比於管仲、樂毅，時人莫之許也。",
+        "textSimplified": "每自比于管仲、乐毅，时人莫之许也。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "自比管仲乐毅，号为卧龙，却仍布衣躬耕，名望已起。"
+    },
+    {
+      "year": 207,
+      "age": 26,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三顾出山",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 38,
+      "delta": 16,
+      "rationale": "得刘备三顾，入其幕府为股肱，但尚无正式官位。",
+      "summary": "刘备三顾草庐，亮陈据荆益、联孙权之策，遂出山追随。",
+      "evidence": "原文",
+      "quote": {
+        "text": "由是先主遂詣亮，凡三往，乃見。",
+        "textSimplified": "由是先主遂诣亮，凡三往，乃见。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 208,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "联吴抗曹",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "score": 48,
+      "delta": 10,
+      "rationale": "刘备新败长坂，出使东吴",
+      "summary": "刘备败于长坂，亮奉命求救孙权，说动孙权、周瑜合力拒曹。",
+      "evidence": "原文",
+      "quote": {
+        "text": "事急矣，請奉命求救於孫將軍。",
+        "textSimplified": "事急矣，请奉命求救于孙将军。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "出使东吴，以口舌促成孙刘联盟，赤壁破曹，功劳关键。"
+    },
+    {
+      "year": 208,
+      "age": 27,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "刘琦问自安",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 0,
+      "rationale": "刘备幕中谋士",
+      "summary": "刘琦邀亮上楼去梯问计，亮引申生重耳故事劝其外出。",
+      "evidence": "原文",
+      "quote": {
+        "text": "君不見申生在內而危，重耳在外而安乎？",
+        "textSimplified": "君不见申生在内而危，重耳在外而安乎？",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "为刘琦谋外任自安，显其荆州名士网络与政治判断。"
+    },
+    {
+      "year": 211,
+      "age": 30,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "与关羽镇荆州",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 74,
+      "delta": 0,
+      "rationale": "刘备入益州时与关羽共镇荆州，独当一面后方。",
+      "summary": "刘璋迎刘备入蜀击张鲁，亮与关羽留守荆州，后率张飞赵云入蜀。",
+      "evidence": "原文",
+      "quote": {
+        "text": "亮與關羽鎮荊州。",
+        "textSimplified": "亮与关羽镇荆州。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 214,
+      "age": 33,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入蜀治政",
+      "tier": "重臣主帅",
+      "tierScore": 74,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 74,
+      "delta": 26,
+      "rationale": "为军师将军署左将军府事，常镇成都足食足兵，中枢地位确立。",
+      "summary": "与张飞赵云溯江定郡县，围成都；成都平后镇守后方，足食足兵。",
+      "evidence": "原文",
+      "quote": {
+        "text": "成都平，以亮為軍師將軍，署左將軍府事。",
+        "textSimplified": "成都平，以亮为军师将军，署左将军府事。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 221,
+      "age": 40,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任丞相",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 82,
+      "delta": 8,
+      "rationale": "蜀汉开国，策为丞相录尚书事假节，位居群臣之首。",
+      "summary": "群下劝刘备称帝，亮引耿纯故事劝进；刘备即位，策亮为丞相。",
+      "evidence": "原文",
+      "quote": {
+        "text": "先主於是即帝位，策亮為丞相曰",
+        "textSimplified": "先主于是即帝位，策亮为丞相曰",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 223,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "白帝托孤",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 6,
+      "rationale": "维持起草：受托孤、开府治事，是其生前权位顶点（锚点）",
+      "summary": "刘备永安托孤，亮涕泣受命；后主即位，封武乡侯，开府治事。",
+      "evidence": "原文",
+      "quote": {
+        "text": "政事無巨細，咸決於亮。",
+        "textSimplified": "政事无巨细，咸决于亮。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "受遗托孤，开府领益州牧，政事无巨细皆决于亮，实掌蜀汉。"
+    },
+    {
+      "year": 223,
+      "age": 42,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "南中皆叛",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 76,
+      "delta": 0,
+      "rationale": "新丧主，南中叛乱",
+      "summary": "刘备死后南中叛乱，亮以新丧未便用兵，遣使聘吴结和亲。",
+      "evidence": "原文",
+      "quote": {
+        "text": "南中諸郡，并皆叛亂，亮以新遭大喪，故未便加兵",
+        "textSimplified": "南中诸郡，并皆叛乱，亮以新遭大丧，故未便加兵",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "新遭大丧，南中诸郡并叛，亮暂不能加兵，外交结吴。"
+    },
+    {
+      "year": 225,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南征安定",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "亲率大军南征，其秋悉平，后方稳定，军资国用以富。",
+      "summary": "南征雍闿、高定、孟获，七纵七擒，秋平南中，蜀汉国用富饶。",
+      "evidence": "原文",
+      "quote": {
+        "text": "三年春，亮率眾南征",
+        "textSimplified": "三年春，亮率众南征",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 227,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出师北伐",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "北驻汉中，上表出师，以丞相总揽北伐，权位与主动战略到顶。",
+      "summary": "率诸军北驻汉中，临发上《出师表》，以兴复汉室为己任。",
+      "evidence": "原文",
+      "quote": {
+        "text": "五年，率諸軍北駐漢中，臨發，上疏曰",
+        "textSimplified": "五年，率诸军北驻汉中，临发，上疏曰",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 228,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "街亭失守",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 58,
+      "delta": -30,
+      "rationale": "马谡违节度遭街亭之败，三郡得而复失，亮自贬三等。",
+      "summary": "首次北伐，南安天水安定响应，马谡败于张郃，亮拔西县还汉中。",
+      "evidence": "原文",
+      "quote": {
+        "text": "謖違亮節度，舉動失宜，大為張郃所破。",
+        "textSimplified": "谡违亮节度，举动失宜，大为张郃所破。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 228,
+      "age": 47,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "围陈仓粮尽",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 12,
+      "score": 76,
+      "delta": 0,
+      "rationale": "冬出散关围陈仓，粮尽而还，首次北伐余波受挫。",
+      "summary": "冬复出散关，围陈仓，曹真拒守，蜀军粮尽退还。",
+      "evidence": "原文",
+      "quote": {
+        "text": "冬，亮復出散關，圍陳倉，曹真拒之，亮糧盡而還。",
+        "textSimplified": "冬，亮复出散关，围陈仓，曹真拒之，亮粮尽而还。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 229,
+      "age": 48,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "复丞相取二郡",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 0,
+      "rationale": "遣陈式取武都阴平，诏复丞相，北伐信用部分恢复。",
+      "summary": "遣陈式攻武都、阴平，魏将郭淮退，二郡归蜀，诏复亮丞相。",
+      "evidence": "原文",
+      "quote": {
+        "text": "今復君丞相，君其勿辭。",
+        "textSimplified": "今复君丞相，君其勿辞。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    },
+    {
+      "year": 231,
+      "age": 50,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "祁山再进",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 83,
+      "delta": 25,
+      "rationale": "再出祁山有斩获，但粮尽退军",
+      "summary": "以木牛运粮再出祁山，大破魏军，获甲首三千，粮尽退军杀张郃。",
+      "evidence": "原文",
+      "quote": {
+        "text": "大破之，獲甲首三千級，玄鎧五千領，角弩三千一百張",
+        "textSimplified": "大破之，获甲首三千级，玄铠五千领，角弩三千一百张",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "复出祁山，大破司马懿，射杀张郃，虽粮尽退军仍保持压力。"
+    },
+    {
+      "year": 234,
+      "age": 53,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "五丈原病逝",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 88,
+      "delta": 5,
+      "rationale": "悉众出斜谷，据五丈原屯田相持，病逝军中，生前权位未失。",
+      "summary": "出斜谷据武功五丈原，与司马懿相持百余日，八月病卒于军，年五十四。",
+      "evidence": "原文",
+      "quote": {
+        "text": "其年八月，亮疾病，卒于軍，時年五十四。",
+        "textSimplified": "其年八月，亮疾病，卒于军，时年五十四。",
+        "source": "《三国志·蜀书·诸葛亮传》",
+        "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 234,
+    "age": 53,
+    "title": "病逝五丈原",
+    "retention": 0.91,
+    "reason": "蜀汉制度与忠勤政治象征延续，死后三十年仍为梁益追思。",
+    "score": 80.1,
+    "evidence": "原文",
+    "quote": {
+      "text": "其年八月，亮疾病，卒于軍，時年五十四。",
+      "textSimplified": "其年八月，亮疾病，卒于军，时年五十四。",
+      "source": "《三国志·蜀书·诸葛亮传》",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E5%BF%97%2F%E5%8D%B735"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 263,
+      "title": "诏立庙于沔阳",
+      "score": 90,
+      "rationale": "蜀汉朝廷正式立庙，民间私祭转为官方崇祀。",
+      "inferred": false
+    },
+    {
+      "year": 263,
+      "title": "钟会祭庙禁樵采",
+      "score": 88,
+      "rationale": "敌国征蜀将领祭其庙并禁樵采，声望超越阵营。",
+      "inferred": false
+    },
+    {
+      "year": 274,
+      "title": "陈寿上集评管萧",
+      "score": 91,
+      "rationale": "晋朝史臣整理遗集，评其为管萧之亚匹，治国名相地位定。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 91,
+      "rationale": "忠勤治国与北伐象征，塑造后世忠臣智者的政治伦理。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 91,
+    "label": "正面",
+    "rationale": "忠勤治国与北伐象征，塑造后世忠臣智者的政治伦理。"
+  },
+  "peak": {
+    "title": "白帝托孤",
+    "age": 42,
+    "score": 88
+  },
+  "trough": {
+    "title": "躬耕隆中",
+    "age": 16,
+    "score": 22
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 16,
+      "years": 16
+    }
+  ],
+  "quality": {
+    "quotesVerified": 18,
+    "quotesClaimed": 18,
+    "author": "deepseek-flash"
+  }
+}

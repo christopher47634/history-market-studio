@@ -1,0 +1,112 @@
+{
+  "id": "xuguangqi",
+  "author": "claude",
+  "born": {
+    "year": 1562,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1633,
+    "certainty": "确知"
+  },
+  "thesis": "与利玛窦合译《几何原本》，著《农政全书》，官至大学士。",
+  "events": [
+    {
+      "year": 1562,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于上海",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小商人",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1597,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "举人",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "举人",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1604,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翰林",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1607,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "译《几何原本》",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与利玛窦",
+      "rationale": "科学",
+      "quote": {
+        "find": [
+          "幾何"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1629,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督修历法",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "崇祯历书",
+      "rationale": "科学",
+      "quote": null
+    },
+    {
+      "year": 1632,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入阁",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东阁大学士",
+      "rationale": "宰辅",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1633,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "农政全书",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "中西科学交流的先驱"
+  }
+}

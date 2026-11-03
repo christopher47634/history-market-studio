@@ -1,0 +1,198 @@
+{
+  "id": "liyuan",
+  "name": "李渊",
+  "born": {
+    "year": 566,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 635,
+    "certainty": "确知"
+  },
+  "lifeSpan": 69,
+  "thesis": "关陇贵族，晋阳起兵建唐，玄武门之变后退位。",
+  "sources": [
+    {
+      "label": "《旧唐书·本纪第一 高祖》",
+      "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B71"
+    }
+  ],
+  "events": [
+    {
+      "year": 566,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "贵族",
+      "summary": "七岁袭封唐国公",
+      "evidence": "原文",
+      "quote": {
+        "text": "周受禪，追封唐國公，謚曰襄。",
+        "textSimplified": "周受禅，追封唐国公，谥曰襄。",
+        "source": "《旧唐书·本纪第一 高祖》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
+    },
+    {
+      "year": 615,
+      "age": 49,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任太原留守",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 78,
+      "delta": 43,
+      "rationale": "方面大员",
+      "summary": "为太原留守",
+      "evidence": "原文",
+      "quote": {
+        "text": "十三年，為太原留守，郡丞王威、武牙郎將高君雅為副。",
+        "textSimplified": "十三年，为太原留守，郡丞王威、武牙郎将高君雅为副。",
+        "source": "《旧唐书·本纪第一 高祖》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
+    },
+    {
+      "year": 617,
+      "age": 51,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "晋阳起兵",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 86,
+      "delta": 8,
+      "rationale": "起事",
+      "summary": "起兵入关",
+      "evidence": "原文",
+      "quote": {
+        "text": "群賊蜂起，江都阻絕，太宗與晉陽令劉文靜首謀，勸舉義兵。",
+        "textSimplified": "群贼蜂起，江都阻绝，太宗与晋阳令刘文静首谋，劝举义兵。",
+        "source": "《旧唐书·本纪第一 高祖》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
+    },
+    {
+      "year": 618,
+      "age": 52,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建唐",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 6,
+      "rationale": "开国",
+      "summary": "受隋禅，国号唐",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 624,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "基本统一",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 95,
+      "delta": 3,
+      "rationale": "统一",
+      "summary": "群雄渐平",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 626,
+      "age": 60,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄武门之变退位",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "score": 32,
+      "delta": -63,
+      "rationale": "失去权力",
+      "summary": "秦王杀建成元吉，禅位为太上皇",
+      "evidence": "原文",
+      "quote": {
+        "text": "癸亥，率百僚，備法駕，立代王侑為天子，遙尊煬帝為太上皇，大赦，改元為義寧。",
+        "textSimplified": "癸亥，率百僚，备法驾，立代王侑为天子，遥尊炀帝为太上皇，大赦，改元为义宁。",
+        "source": "《旧唐书·本纪第一 高祖》",
+        "url": "https://zh.wikisource.org/wiki/%E8%88%8A%E5%94%90%E6%9B%B8%2F%E5%8D%B71"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 635,
+    "age": 69,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "唐朝延续二百九十年",
+    "score": 30.4,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 82,
+      "rationale": "唐朝开国皇帝",
+      "inferred": true
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "唐朝开国皇帝"
+  },
+  "peak": {
+    "title": "基本统一",
+    "age": 58,
+    "score": 95
+  },
+  "trough": {
+    "title": "玄武门之变退位",
+    "age": 60,
+    "score": 32
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 49,
+      "years": 49
+    }
+  ],
+  "quality": {
+    "quotesVerified": 4,
+    "quotesClaimed": 4,
+    "author": "claude"
+  }
+}

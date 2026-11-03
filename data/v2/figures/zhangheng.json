@@ -1,0 +1,426 @@
+{
+  "id": "zhangheng",
+  "name": "张衡",
+  "born": {
+    "year": 78,
+    "certainty": "确知",
+    "note": "据本传「年六十二，永和四年卒」上推"
+  },
+  "died": {
+    "year": 139,
+    "certainty": "确知"
+  },
+  "lifeSpan": 61,
+  "thesis": "从南阳著姓子弟到执掌太史令十四年，一生仕途不显却在浑天仪、地动仪、辞赋三处留下不朽之作，官位始终配不上其才。",
+  "sources": [
+    {
+      "label": "《后汉书·张衡传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+    }
+  ],
+  "events": [
+    {
+      "year": 78,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南阳西鄂",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 18,
+      "delta": 0,
+      "rationale": "出身地方著姓，祖父曾为蜀郡太守，但本人未有官位名分。",
+      "summary": "生于南阳郡西鄂县，家世为当地著姓，祖父张堪官至蜀郡太守。",
+      "evidence": "原文",
+      "quote": {
+        "text": "張衡字平子，南陽西鄂人也。世為著姓。",
+        "textSimplified": "张衡字平子，南阳西鄂人也。世为着姓。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 92,
+      "age": 14,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "游学三辅入京师",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 30,
+      "delta": 12,
+      "rationale": "少年游学京师太学，通五经贯六艺，已有士林声名而无职位。",
+      "summary": "年少善属文，游学三辅，入京师观太学，通五经六艺，才高而不骄。",
+      "evidence": "原文",
+      "quote": {
+        "text": "衡少善屬文，游於三輔，因入京師，觀太學，遂通五經，貫六蓺。",
+        "textSimplified": "衡少善属文，游于三辅，因入京师，观太学，遂通五经，贯六蓺。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 100,
+      "age": 22,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任南阳郡主簿",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 34,
+      "delta": 4,
+      "rationale": "受郡守辟召为僚属，属地方基层吏职，仍未入朝。",
+      "summary": "受南阳太守鲍德辟召任主簿，掌文书，数年后辞官居家读书。",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 105,
+      "age": 27,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "举孝廉不行",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 42,
+      "delta": 0,
+      "rationale": "少有才名，举孝廉不就",
+      "summary": "永元年间被举孝廉、连辟公府，皆不应召。",
+      "evidence": "原文",
+      "quote": {
+        "text": "永元中，舉孝廉不行，連辟公府不就。",
+        "textSimplified": "永元中，举孝廉不行，连辟公府不就。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "屡获举荐征辟而不就，名望日高而始终不受官。"
+    },
+    {
+      "year": 107,
+      "age": 29,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "《二京赋》成",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 46,
+      "delta": 0,
+      "rationale": "《二京赋》成",
+      "summary": "见天下承平而奢靡逾制，拟班固《两都》作《二京赋》，精思十年乃成。",
+      "evidence": "原文",
+      "quote": {
+        "text": "衡乃擬班固《兩都》，作《二京賦》，因以諷諫。",
+        "textSimplified": "衡乃拟班固《两都》，作《二京赋》，因以讽谏。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "以文章名世，拟班固两都作二京赋讽谏奢侈，为士林所重。"
+    },
+    {
+      "year": 109,
+      "age": 31,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "邓骘累召不应",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 48,
+      "delta": 0,
+      "rationale": "大将军屡召不应",
+      "summary": "大将军邓骘奇其才，屡次征召，张衡皆不应。",
+      "evidence": "原文",
+      "quote": {
+        "text": "大將軍鄧騭奇其才，累召不應。",
+        "textSimplified": "大将军邓骘奇其才，累召不应。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "外戚大将军屡次征召而坚拒不赴，显示其不慕权贵。"
+    },
+    {
+      "year": 111,
+      "age": 33,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "公车特征拜郎中",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 50,
+      "delta": 16,
+      "rationale": "郎中、太史令",
+      "summary": "安帝闻其善术学，公车特征拜郎中，再迁为太史令，进入国家天文机构。",
+      "evidence": "原文",
+      "quote": {
+        "text": "安帝雅聞衡善術學，公車特徵拜郎中，再遷為太史令。",
+        "textSimplified": "安帝雅闻衡善术学，公车特征拜郎中，再迁为太史令。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "由皇帝特召入仕，脱离布衣身份，但郎中是中级闲职。"
+    },
+    {
+      "year": 115,
+      "age": 37,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任太史令作浑天仪",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 58,
+      "delta": 8,
+      "rationale": "掌天文历法为一门之长，但太史令秩卑，非朝廷重臣。",
+      "summary": "研核阴阳，作浑天仪，著《灵宪》《算罔论》，立浑天说之体系。",
+      "evidence": "原文",
+      "quote": {
+        "text": "遂乃研核陰陽，妙盡琁機之正，作渾天儀，著靈憲",
+        "textSimplified": "遂乃研核阴阳，妙尽琁机之正，作浑天仪，着灵宪",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 126,
+      "age": 48,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "复为太史令",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 60,
+      "delta": 2,
+      "rationale": "去职五载而复任，官位久不升迁，然术学之望益重。",
+      "summary": "顺帝初再转，复为太史令；所居之官积年不徙，作《应间》以明志。",
+      "evidence": "原文",
+      "quote": {
+        "text": "順帝初，再轉，復為太史令。衡不慕當世，所居之官，輒積年不徙。",
+        "textSimplified": "顺帝初，再转，复为太史令。衡不慕当世，所居之官，辄积年不徙。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 132,
+      "age": 54,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "造候风地动仪",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 66,
+      "delta": 6,
+      "rationale": "制成前古未有的验震之器，术数造作之名达于当世顶点。",
+      "summary": "阳嘉元年以精铜铸候风地动仪，形似酒尊，八龙衔丸，验陇西地震合契若神。",
+      "evidence": "原文",
+      "quote": {
+        "text": "陽嘉元年，復造候風地動儀。以精銅鑄成，員徑八尺，合蓋隆起，形似酒尊",
+        "textSimplified": "阳嘉元年，复造候风地动仪。以精铜铸成，员径八尺，合盖隆起，形似酒尊",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 133,
+      "age": 55,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "迁侍中",
+      "tier": "方面名家",
+      "tierScore": 68,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "score": 60,
+      "delta": -6,
+      "rationale": "入侍帷幄为近臣，然为宦官所忌，动辄受制。",
+      "summary": "迁侍中，帝引在帷幄讽议左右；宦官惧其毁己，皆共目之，遂共谗之。",
+      "evidence": "原文",
+      "quote": {
+        "text": "後遷侍中，帝引在帷幄，諷議左右。",
+        "textSimplified": "后迁侍中，帝引在帷幄，讽议左右。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 133,
+      "age": 55,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "上疏请禁绝图谶",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "score": 58,
+      "delta": 0,
+      "rationale": "力斥谶纬虚妄并请禁绝，主张与当世风气相违，未被采纳。",
+      "summary": "上疏论图纬虚妄、非圣人之法，请收藏图谶一概禁绝，朝廷不听。",
+      "evidence": "原文",
+      "quote": {
+        "text": "衡以圖緯虛妄，非聖人之法，乃上疏曰",
+        "textSimplified": "衡以图纬虚妄，非圣人之法，乃上疏曰",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    },
+    {
+      "year": 136,
+      "age": 58,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出为河间相",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "score": 59,
+      "delta": -1,
+      "rationale": "出为河间相，二千石，但离开中枢",
+      "summary": "永和初出为河间相，至则整法度、收禽奸党，上下肃然，称为政理。",
+      "evidence": "原文",
+      "quote": {
+        "text": "永和初，出為河閒相。時國王驕奢，不遵典憲",
+        "textSimplified": "永和初，出为河闲相。时国王骄奢，不遵典宪",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true,
+      "adjudicated": true,
+      "draftRationale": "被宦官排挤出朝，由近臣外放为王国之相，实为贬抑。"
+    },
+    {
+      "year": 138,
+      "age": 60,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "征拜尚书",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 64,
+      "delta": 5,
+      "rationale": "还朝任尚书，入中枢机务，然年已老，未及有所设施。",
+      "summary": "视事三年，上书乞骸骨，征拜尚书，重回中央台阁。",
+      "evidence": "原文",
+      "quote": {
+        "text": "視事三年，上書乞骸骨，徵拜尚書。",
+        "textSimplified": "视事三年，上书乞骸骨，征拜尚书。",
+        "source": "《后汉书·张衡传》",
+        "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 139,
+    "age": 61,
+    "title": "卒于尚书任上",
+    "retention": 0.9,
+    "reason": "浑天说与浑象之法、辞赋作品传世并被后世沿用；地动仪工艺与天文著作则多所散失。",
+    "score": 57.6,
+    "evidence": "原文",
+    "quote": {
+      "text": "年六十二，永和四年卒。",
+      "textSimplified": "年六十二，永和四年卒。",
+      "source": "《后汉书·张衡传》",
+      "url": "https://zh.wikisource.org/wiki/%E5%BE%8C%E6%BC%A2%E6%9B%B8%2F%E5%8D%B759"
+    },
+    "verified": true
+  },
+  "posthumous": [
+    {
+      "year": 143,
+      "title": "崔瑗誉为「数术穷天地，制作侔造化」",
+      "score": 65,
+      "rationale": "同代名士定其术造之极，南阳人立庙祀之，身后声望确立。",
+      "inferred": false,
+      "jumpReason": "崔瑗碑文是友人颂辞，不代表社会评价，由 84 下调为 65"
+    },
+    {
+      "year": 1924,
+      "title": "张荫麟称其为「第一位大科学家」",
+      "score": 86,
+      "rationale": "近代学术重估其科学地位，地动仪成为文明象征。",
+      "inferred": false
+    },
+    {
+      "year": 1956,
+      "title": "南阳重修张衡墓园",
+      "score": 84,
+      "rationale": "荒废已久的墓地由国家重建为博物馆，列入重点文保。",
+      "inferred": false
+    },
+    {
+      "year": 1970,
+      "title": "月球环形山以张衡命名",
+      "score": 88,
+      "rationale": "国际天文学界以其名命月面环形山与小行星，声誉越出国界。",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 90,
+      "rationale": "汉赋四大家之一，又立浑天说、造浑象地动仪，是汉代技术与文学双重高峰的代表。",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "汉赋四大家之一，又立浑天说、造浑象地动仪，是汉代技术与文学双重高峰的代表。"
+  },
+  "peak": {
+    "title": "造候风地动仪",
+    "age": 54,
+    "score": 66
+  },
+  "trough": {
+    "title": "游学三辅入京师",
+    "age": 14,
+    "score": 30
+  },
+  "gaps": [],
+  "quality": {
+    "quotesVerified": 14,
+    "quotesClaimed": 14,
+    "author": "deepseek-flash"
+  }
+}

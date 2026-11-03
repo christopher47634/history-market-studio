@@ -1,0 +1,147 @@
+{
+  "id": "sunwu",
+  "author": "claude",
+  "born": {
+    "year": -545,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -470,
+    "certainty": "估计"
+  },
+  "thesis": "齐人，以《孙子兵法》十三篇见吴王阖闾，助吴西破强楚。",
+  "events": [
+    {
+      "year": -545,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于齐",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐国田氏之后",
+      "rationale": "贵族旁支",
+      "quote": {
+        "find": [
+          "齐人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -517,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "避乱奔吴",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "齐国内乱，避居吴国",
+      "rationale": "客居他乡",
+      "quote": {
+        "find": [
+          "吴"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -512,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "以兵法见阖闾",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以十三篇见吴王，勒兵宫中斩吴王宠姬",
+      "rationale": "一试成名",
+      "quote": {
+        "find": [
+          "十三篇",
+          "宠姬"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -512,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜将",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "阖闾知孙子能用兵，卒以为将",
+      "rationale": "吴国统帅之一",
+      "quote": {
+        "find": [
+          "卒以为将"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -506,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "柏举破楚入郢",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "西破强楚入郢，北威齐晋",
+      "rationale": "用兵巅峰",
+      "quote": {
+        "find": [
+          "入郢",
+          "强楚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -496,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "功成隐退",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "此后事迹不见于史",
+      "rationale": "淡出",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -91,
+      "title": "《史记》立孙子吴起列传",
+      "score": 80,
+      "rationale": ""
+    },
+    {
+      "year": 1772,
+      "title": "兵法传入欧洲",
+      "score": 92,
+      "rationale": "法译本出版，影响世界兵学"
+    }
+  ],
+  "finale": {
+    "year": -470,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "兵法传世两千五百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "兵圣，《孙子兵法》作者"
+  }
+}

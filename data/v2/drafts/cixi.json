@@ -1,0 +1,272 @@
+{
+  "id": "cixi",
+  "author": "claude",
+  "born": {
+    "year": 1835,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1908,
+    "certainty": "确知"
+  },
+  "thesis": "垂帘听政四十七年，晚清实际统治者。",
+  "events": [
+    {
+      "year": 1835,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北京",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "叶赫那拉氏",
+      "rationale": "满洲旗人",
+      "quote": null
+    },
+    {
+      "year": 1852,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入宫",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "兰贵人",
+      "rationale": "宫嫔",
+      "quote": null
+    },
+    {
+      "year": 1854,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "晋懿嫔",
+      "tier": "布衣",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "宫嫔",
+      "rationale": "晋位",
+      "quote": {
+        "find": [
+          "时年十九岁的兰"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1856,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生载淳封懿妃",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "皇子生母",
+      "rationale": "妃",
+      "quote": {
+        "find": [
+          "懿嫔生下咸丰帝的第一子"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1860,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "随驾逃往热河",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "英法联军入京",
+      "rationale": "避难",
+      "quote": {
+        "find": [
+          "英法联军在第二次鸦片战"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1861,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辛酉政变垂帘",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "诛肃顺",
+      "rationale": "掌权",
+      "quote": null
+    },
+    {
+      "year": 1873,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "同治亲政，暂撤帘",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "退居幕后",
+      "rationale": "撤帘",
+      "quote": null
+    },
+    {
+      "year": 1875,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "立光绪再垂帘",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "同治崩",
+      "rationale": "独揽",
+      "quote": {
+        "find": [
+          "同治帝病逝"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1881,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "慈安暴崩",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "独掌大权",
+      "rationale": "独断",
+      "quote": null
+    },
+    {
+      "year": 1884,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "甲申易枢",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "罢恭亲王全班军机",
+      "rationale": "独断",
+      "quote": {
+        "find": [
+          "清军在北圻作战不利"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1889,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归政光绪",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "颐和园",
+      "rationale": "训政",
+      "quote": null
+    },
+    {
+      "year": 1894,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "甲午战败",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "六十大寿",
+      "rationale": "战败",
+      "quote": null
+    },
+    {
+      "year": 1898,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "戊戌政变",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "囚光绪",
+      "rationale": "独断",
+      "quote": null
+    },
+    {
+      "year": 1900,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "八国联军西逃",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "西狩",
+      "rationale": "绝境",
+      "quote": {
+        "find": [
+          "八国联军"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1901,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "回銮推行新政",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "辛丑条约后变法",
+      "rationale": "新政",
+      "quote": null
+    },
+    {
+      "year": 1905,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "派五大臣出洋",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "预备立宪",
+      "rationale": "立宪",
+      "quote": {
+        "find": [
+          "派五大臣出洋考察"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1908,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "三年后清亡",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "负面",
+    "rationale": "晚清实际统治者"
+  }
+}

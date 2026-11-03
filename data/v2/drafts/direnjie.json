@@ -1,0 +1,145 @@
+{
+  "id": "direnjie",
+  "author": "claude",
+  "born": {
+    "year": 630,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 700,
+    "certainty": "确知"
+  },
+  "thesis": "断案如神的大理寺丞，两度为相，扶保李唐复辟。",
+  "events": [
+    {
+      "year": 630,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于太原",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "祖父狄孝绪为尚书左丞",
+      "rationale": "官宦",
+      "quote": null
+    },
+    {
+      "year": 656,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "明经及第",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "明经举",
+      "rationale": "入仕",
+      "quote": {
+        "find": [
+          "明經"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 676,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任大理丞",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "一年断滞狱一万七千人",
+      "rationale": "断案如神",
+      "quote": {
+        "find": [
+          "大理丞"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 691,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜相",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "同凤阁鸾台平章事",
+      "rationale": "宰相",
+      "quote": {
+        "find": [
+          "平章事"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 692,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被来俊臣诬陷下狱",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "承反是实，得免死贬彭泽令",
+      "rationale": "死里逃生",
+      "quote": {
+        "find": [
+          "來俊臣"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 697,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "复相",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "复为宰相，荐张柬之等",
+      "rationale": "重相",
+      "quote": null
+    },
+    {
+      "year": 698,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "劝立庐陵王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "劝武后迎还中宗为太子",
+      "rationale": "扶保李唐",
+      "quote": {
+        "find": [
+          "廬陵"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 700,
+    "title": "卒",
+    "retention": 0.97,
+    "reason": "五年后神龙政变恢复李唐",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "名相与神探"
+  }
+}

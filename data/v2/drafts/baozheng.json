@@ -1,0 +1,130 @@
+{
+  "id": "baozheng",
+  "author": "claude",
+  "born": {
+    "year": 999,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1062,
+    "certainty": "确知"
+  },
+  "thesis": "包青天，铁面无私，知开封府。",
+  "events": [
+    {
+      "year": 999,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于庐州合肥",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1027,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "侍亲不仕十年",
+      "rationale": "孝",
+      "quote": null
+    },
+    {
+      "year": 1040,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知端州不持一砚",
+      "tier": "成名",
+      "tierScore": 46,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "不持一砚归",
+      "rationale": "清廉",
+      "quote": {
+        "find": [
+          "端州",
+          "硯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1045,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "使辽",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "出使契丹",
+      "rationale": "外交",
+      "quote": null
+    },
+    {
+      "year": 1056,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知开封府",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "关节不到，有阎罗包老",
+      "rationale": "包青天",
+      "quote": {
+        "find": [
+          "閻羅"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1061,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "枢密副使",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "执政",
+      "rationale": "高位",
+      "quote": {
+        "find": [
+          "樞密副使"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1300,
+      "title": "元杂剧包公戏",
+      "score": 82,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1062,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "包青天形象流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "清官的化身"
+  }
+}

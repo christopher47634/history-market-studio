@@ -1,0 +1,164 @@
+{
+  "id": "taoyuanming",
+  "author": "claude",
+  "born": {
+    "year": 365,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 427,
+    "certainty": "确知"
+  },
+  "thesis": "不为五斗米折腰，辞官归隐田园，开创田园诗。",
+  "events": [
+    {
+      "year": 365,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于浔阳柴桑",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "曾祖陶侃，家道中落",
+      "rationale": "没落士族",
+      "quote": {
+        "find": [
+          "柴桑"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 393,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任江州祭酒",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "起为州祭酒，不堪吏职",
+      "rationale": "小吏",
+      "quote": {
+        "find": [
+          "州祭酒"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 400,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入桓玄幕",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为镇军参军",
+      "rationale": "幕僚",
+      "quote": {
+        "find": [
+          "參軍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 405,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任彭泽令辞官",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "不为五斗米折腰，赋归去来",
+      "rationale": "归隐",
+      "quote": {
+        "find": [
+          "五斗米",
+          "歸去來"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 405,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "躬耕田园",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "躬耕自资，作《归园田居》",
+      "rationale": "隐居",
+      "quote": null
+    },
+    {
+      "year": 418,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "屡拒征召",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "征著作郎不就",
+      "rationale": "不仕",
+      "quote": {
+        "find": [
+          "著作郎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 420,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "晚年贫病",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "summary": "夏日长抱饥，檀道济馈以粱肉麾而去之",
+      "rationale": "贫困",
+      "quote": {
+        "find": [
+          "檀道濟"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 527,
+      "title": "萧统编《陶渊明集》",
+      "score": 65,
+      "rationale": ""
+    },
+    {
+      "year": 1080,
+      "title": "苏轼和陶诗百余首",
+      "score": 90,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 427,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "诗名在唐宋大盛",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "田园诗鼻祖，隐逸诗人之宗"
+  }
+}

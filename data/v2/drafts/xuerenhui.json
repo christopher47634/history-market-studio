@@ -1,0 +1,109 @@
+{
+  "id": "xuerenhui",
+  "author": "claude",
+  "born": {
+    "year": 614,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 683,
+    "certainty": "确知"
+  },
+  "thesis": "白袍小将，三箭定天山，大非川惨败。",
+  "events": [
+    {
+      "year": 614,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绛州龙门",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少贫贱，以田为业",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 645,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "应募征辽东",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "着白衣大呼陷阵",
+      "rationale": "一战成名",
+      "quote": {
+        "find": [
+          "白衣"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 658,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "三箭定天山",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "发三矢杀三人，铁勒下马请降",
+      "rationale": "名将",
+      "quote": {
+        "find": [
+          "天山"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 670,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "大非川惨败",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "大败",
+      "crisisPenalty": 35,
+      "summary": "为吐蕃所败，除名为庶人",
+      "rationale": "惨败",
+      "quote": {
+        "find": [
+          "大非川"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 682,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "复起破突厥",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "突厥闻薛将军，下马列拜",
+      "rationale": "复起",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 683,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "名将形象流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 76,
+    "label": "正面",
+    "rationale": "唐代名将"
+  }
+}

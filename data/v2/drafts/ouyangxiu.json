@@ -1,0 +1,158 @@
+{
+  "id": "ouyangxiu",
+  "author": "claude",
+  "born": {
+    "year": 1007,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1072,
+    "certainty": "确知"
+  },
+  "thesis": "文坛领袖，庆历新政，提携苏轼、曾巩，醉翁。",
+  "events": [
+    {
+      "year": 1007,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于绵州",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四岁丧父，以荻画地学书",
+      "rationale": "孤贫",
+      "quote": {
+        "find": [
+          "畫地"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1030,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "甲科",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1036,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "为范仲淹辩贬夷陵",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "作书责高若讷",
+      "rationale": "被贬",
+      "quote": {
+        "find": [
+          "夷陵"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1043,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参与庆历新政",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "知谏院",
+      "rationale": "改革派",
+      "quote": null
+    },
+    {
+      "year": 1045,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬滁州作醉翁亭记",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "新政失败外放",
+      "rationale": "外放",
+      "quote": {
+        "find": [
+          "滁州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1057,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知贡举取苏轼",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "得苏轼、苏辙、曾巩",
+      "rationale": "文坛领袖",
+      "quote": {
+        "find": [
+          "貢舉"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1061,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参知政事",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "执政",
+      "rationale": "宰执",
+      "quote": {
+        "find": [
+          "參知政事"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1067,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "濮议后外放",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "受诬外放",
+      "rationale": "去位",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1072,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "宋代文风由此确立",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "唐宋八大家，北宋文坛领袖"
+  }
+}

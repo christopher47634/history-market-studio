@@ -1,0 +1,104 @@
+{
+  "id": "zongze",
+  "author": "claude",
+  "born": {
+    "year": 1060,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1128,
+    "certainty": "确知"
+  },
+  "thesis": "东京留守，二十余疏请高宗还都，临终三呼过河。",
+  "events": [
+    {
+      "year": 1060,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于义乌",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平民",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1091,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "入仕",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1126,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "知磁州抗金",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "募义兵",
+      "rationale": "抗金",
+      "quote": null
+    },
+    {
+      "year": 1127,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "东京留守",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "收编义军百万",
+      "rationale": "方面",
+      "quote": {
+        "find": [
+          "留守"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1128,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "请还都不报",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "summary": "二十余疏",
+      "rationale": "不被采纳",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1128,
+    "title": "三呼过河而卒",
+    "retention": 0.9,
+    "reason": "北伐中断",
+    "quote": {
+      "find": [
+        "過河"
+      ],
+      "source": 0
+    }
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "抗金名臣"
+  }
+}

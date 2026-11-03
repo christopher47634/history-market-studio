@@ -1,0 +1,17 @@
+# Cloudflare Pages 的响应头（和 vercel.json 保持一致；改一边记得同步另一边）。
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'sha256-V++obZ3w5ENFJUMivHkvZjDRmTQ24DR/WvO7VdEaoas='; connect-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'self'
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/portraits/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/atlas/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/sw.js
+  Cache-Control: no-cache

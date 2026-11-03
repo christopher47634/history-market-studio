@@ -1,0 +1,115 @@
+{
+  "id": "liuxie",
+  "author": "claude",
+  "born": {
+    "year": 465,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 520,
+    "certainty": "估计"
+  },
+  "thesis": "依沙门僧祐，著《文心雕龙》，晚年出家。",
+  "events": [
+    {
+      "year": 465,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于京口",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "早孤，家贫不婚娶",
+      "rationale": "贫寒",
+      "quote": null
+    },
+    {
+      "year": 485,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "依僧祐",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "依沙门僧祐，居处积十余年",
+      "rationale": "寄居寺庙",
+      "quote": {
+        "find": [
+          "僧祐"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 501,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《文心雕龙》",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "沈约大重之",
+      "rationale": "著作",
+      "quote": {
+        "find": [
+          "文心",
+          "沈約"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 510,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任东宫通事舍人",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "昭明太子爱接之",
+      "rationale": "得遇",
+      "quote": {
+        "find": [
+          "東宮"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 520,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "出家",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "燔发自誓，改名慧地",
+      "rationale": "出家",
+      "quote": {
+        "find": [
+          "慧地"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 520,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "《文心雕龙》成为文论经典",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "中国文学理论的巅峰"
+  }
+}

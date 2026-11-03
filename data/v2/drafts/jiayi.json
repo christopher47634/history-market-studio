@@ -1,0 +1,188 @@
+{
+  "id": "jiayi",
+  "author": "claude",
+  "born": {
+    "year": -200,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -168,
+    "certainty": "确知"
+  },
+  "thesis": "少年才子，二十余岁为博士，屡陈治安之策而被谗贬长沙。",
+  "events": [
+    {
+      "year": -200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于洛阳",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十八岁以能诵诗属书闻于郡中",
+      "rationale": "少有才名",
+      "quote": {
+        "find": [
+          "洛阳",
+          "诵诗"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -178,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召为博士",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文帝召为博士，时年二十余，最为少",
+      "rationale": "少年博士",
+      "quote": {
+        "find": [
+          "博士"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -177,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "超迁太中大夫",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "一岁中超迁至太中大夫，议更正朔",
+      "rationale": "得宠",
+      "quote": {
+        "find": [
+          "太中大夫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -176,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "谗贬长沙",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "绛灌之属尽害之，出为长沙王太傅",
+      "rationale": "被外放",
+      "quote": {
+        "find": [
+          "长沙王太傅",
+          "绛"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -176,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "作《吊屈原赋》",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "渡湘水，为赋以吊屈原",
+      "rationale": "自伤不遇",
+      "quote": {
+        "find": [
+          "屈原"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -173,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "召对宣室",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文帝召见宣室，问鬼神之本",
+      "rationale": "复被召见",
+      "quote": {
+        "find": [
+          "宣室"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -172,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任梁王太傅",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "拜为梁怀王太傅",
+      "rationale": "辅导皇子",
+      "quote": {
+        "find": [
+          "梁怀王"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -169,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "梁王坠马",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "梁王骑坠马死，贾生自伤为傅无状",
+      "rationale": "自责忧郁",
+      "quote": {
+        "find": [
+          "坠马"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": -154,
+      "title": "削藩之策被采纳",
+      "score": 70,
+      "rationale": "七国之乱后，其削藩主张被证实"
+    },
+    {
+      "year": -91,
+      "title": "《史记》与屈原同传",
+      "score": 78,
+      "rationale": "屈贾并称"
+    }
+  ],
+  "finale": {
+    "year": -168,
+    "title": "哭泣岁余而死",
+    "retention": 0.95,
+    "reason": "《治安策》等主张后被采行",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "西汉政论家，《过秦论》作者"
+  }
+}

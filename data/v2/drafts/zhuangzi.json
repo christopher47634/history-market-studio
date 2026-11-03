@@ -1,0 +1,109 @@
+{
+  "id": "zhuangzi",
+  "author": "claude",
+  "born": {
+    "year": -369,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -286,
+    "certainty": "估计"
+  },
+  "thesis": "宋国蒙人，漆园吏，辞楚相之聘，著《庄子》逍遥齐物。",
+  "events": [
+    {
+      "year": -369,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于宋蒙",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "蒙人，名周",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "蒙人"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -340,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任漆园吏",
+      "tier": "初起",
+      "tierScore": 26,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "周尝为蒙漆园吏",
+      "rationale": "小吏",
+      "quote": {
+        "find": [
+          "漆园吏"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -330,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "辞楚相之聘",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "楚威王使使厚币迎之许以为相，笑而拒之",
+      "rationale": "名重当世却拒仕",
+      "quote": {
+        "find": [
+          "楚威王",
+          "千金"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -320,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著书十余万言",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "其著书十余万言，大抵率寓言也",
+      "rationale": "著书",
+      "quote": {
+        "find": [
+          "十余万言"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 742,
+      "title": "唐尊为南华真人",
+      "score": 88,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -286,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "道家思想与文学影响深远",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "文明塑造者",
+    "score": 95,
+    "label": "正面",
+    "rationale": "道家代表，中国哲学与文学的高峰"
+  }
+}

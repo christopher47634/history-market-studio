@@ -1,0 +1,182 @@
+{
+  "id": "simayan",
+  "name": "司马炎",
+  "born": {
+    "year": 236,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 290,
+    "certainty": "确知"
+  },
+  "lifeSpan": 54,
+  "thesis": "受魏禅建晋，灭吴统一，晚年怠政，身后八王之乱。",
+  "sources": [
+    {
+      "label": "《晋书·卷三 帝纪第三》",
+      "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7003"
+    }
+  ],
+  "events": [
+    {
+      "year": 236,
+      "age": 0,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于河内",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 35,
+      "delta": 0,
+      "rationale": "豪门",
+      "summary": "司马昭长子",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 265,
+      "age": 29,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "受魏禅称帝",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 92,
+      "delta": 57,
+      "rationale": "西晋开国",
+      "summary": "受禅即皇帝位，国号晋",
+      "evidence": "原文",
+      "quote": {
+        "text": "炎虔奉皇運，寅畏天威，敬簡元辰，升壇受禪，告類上帝，永答眾望。",
+        "textSimplified": "炎虔奉皇运，寅畏天威，敬简元辰，升坛受禅，告类上帝，永答众望。",
+        "source": "《晋书·卷三 帝纪第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    },
+    {
+      "year": 280,
+      "age": 44,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭吴统一",
+      "tier": "天下共主",
+      "tierScore": 97,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 97,
+      "delta": 5,
+      "rationale": "重归统一",
+      "summary": "王濬楼船下益州，孙皓投降，天下一统",
+      "evidence": "原文",
+      "quote": {
+        "text": "三月，孫皓帥眾趨壽陽，遣大司馬望屯淮北以距之。",
+        "textSimplified": "三月，孙皓帅众趋寿阳，遣大司马望屯淮北以距之。",
+        "source": "《晋书·卷三 帝纪第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    },
+    {
+      "year": 282,
+      "age": 46,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "罢州郡兵",
+      "tier": "天下共主",
+      "tierScore": 96,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "score": 96,
+      "delta": 0,
+      "rationale": "埋下隐患",
+      "summary": "悉去州郡兵，大郡置武吏百人",
+      "evidence": "概括",
+      "quote": null,
+      "verified": false
+    },
+    {
+      "year": 285,
+      "age": 49,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "晚年怠政",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "受挫",
+      "crisisPenalty": 8,
+      "score": 87,
+      "delta": -10,
+      "rationale": "晚节不保",
+      "summary": "耽于游宴，宠后党，委政杨骏",
+      "evidence": "原文",
+      "quote": {
+        "text": "十二月，徵處士安定皇甫謐爲太子中庶子，封后父鎮軍將軍楊駿爲臨晉侯。",
+        "textSimplified": "十二月，征处士安定皇甫谧为太子中庶子，封后父镇军将军杨骏为临晋侯。",
+        "source": "《晋书·卷三 帝纪第三》",
+        "url": "https://zh.wikisource.org/wiki/%E6%99%89%E6%9B%B8%2F%E5%8D%B7003"
+      },
+      "verified": true
+    }
+  ],
+  "finale": {
+    "year": 290,
+    "age": 54,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "身后八王之乱、五胡乱华",
+    "score": 78.3,
+    "evidence": "概括",
+    "quote": null,
+    "verified": false
+  },
+  "posthumous": [
+    {
+      "year": 307,
+      "title": "八王之乱",
+      "score": 55,
+      "rationale": "",
+      "inferred": false
+    },
+    {
+      "year": 2026,
+      "title": "今日评价",
+      "score": 72,
+      "rationale": "结束三国分裂的统一者，亦是西晋速亡的根源",
+      "inferred": false
+    }
+  ],
+  "legacy": {
+    "tier": "重要人物",
+    "score": 72,
+    "label": "争议",
+    "rationale": "结束三国分裂的统一者，亦是西晋速亡的根源"
+  },
+  "peak": {
+    "title": "灭吴统一",
+    "age": 44,
+    "score": 97
+  },
+  "trough": {
+    "title": "晚年怠政",
+    "age": 49,
+    "score": 87
+  },
+  "gaps": [
+    {
+      "fromAge": 0,
+      "toAge": 29,
+      "years": 29
+    }
+  ],
+  "quality": {
+    "quotesVerified": 3,
+    "quotesClaimed": 3,
+    "author": "claude"
+  }
+}

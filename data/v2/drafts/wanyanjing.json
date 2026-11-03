@@ -1,0 +1,81 @@
+{
+  "id": "wanyanjing",
+  "author": "claude",
+  "born": {
+    "year": 1168,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1208,
+    "certainty": "确知"
+  },
+  "thesis": "金章宗，文治鼎盛，蒙古崛起前夜。",
+  "events": [
+    {
+      "year": 1168,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于金宗室",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世宗之孙",
+      "rationale": "宗室",
+      "quote": null
+    },
+    {
+      "year": 1189,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "即位",
+      "rationale": "金帝",
+      "quote": null
+    },
+    {
+      "year": 1195,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "明昌之治",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "文治鼎盛",
+      "rationale": "盛世",
+      "quote": null
+    },
+    {
+      "year": 1206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "泰和南征",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "败宋开禧北伐",
+      "rationale": "胜",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1208,
+    "title": "崩",
+    "retention": 0.9,
+    "reason": "金朝由盛转衰",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "有影响",
+    "score": 52,
+    "label": "正面",
+    "rationale": "金章宗"
+  }
+}

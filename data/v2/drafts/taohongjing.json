@@ -1,0 +1,86 @@
+{
+  "id": "taohongjing",
+  "author": "claude",
+  "born": {
+    "year": 456,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 536,
+    "certainty": "确知"
+  },
+  "thesis": "山中宰相，道教上清派宗师，本草学家。",
+  "events": [
+    {
+      "year": 456,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于丹阳秣陵",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士族",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 475,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任诸王侍读",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "齐高帝时为诸王侍读",
+      "rationale": "侍读",
+      "quote": null
+    },
+    {
+      "year": 492,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "挂冠隐居茅山",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "脱朝服挂神武门，隐茅山",
+      "rationale": "隐居",
+      "quote": null
+    },
+    {
+      "year": 502,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "山中宰相",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "梁武帝每有大事咨询",
+      "rationale": "山中宰相",
+      "quote": {
+        "find": [
+          "山中宰相"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 536,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "《本草经集注》传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "山中宰相"
+  }
+}

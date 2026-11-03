@@ -1,0 +1,81 @@
+{
+  "id": "tangyin",
+  "author": "claude",
+  "born": {
+    "year": 1470,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1524,
+    "certainty": "确知"
+  },
+  "thesis": "江南第一才子，科场舞弊案断送仕途，卖画为生。",
+  "events": [
+    {
+      "year": 1470,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于苏州",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "商人",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 1498,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "解元",
+      "tier": "初起",
+      "tierScore": 38,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南京解元",
+      "rationale": "才名",
+      "quote": null
+    },
+    {
+      "year": 1499,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "科场舞弊案",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "下诏狱，罢为吏",
+      "rationale": "断送仕途",
+      "quote": null
+    },
+    {
+      "year": 1514,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宁王之聘佯狂脱身",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "佯狂",
+      "rationale": "避祸",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1524,
+    "title": "贫病而卒",
+    "retention": 0.9,
+    "reason": "诗画传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "江南第一才子"
+  }
+}

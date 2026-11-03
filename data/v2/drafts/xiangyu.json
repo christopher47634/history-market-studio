@@ -1,0 +1,347 @@
+{
+  "id": "xiangyu",
+  "author": "deepseek-flash",
+  "born": {
+    "year": -232,
+    "certainty": "估计",
+    "note": "据《项羽本纪》初起时年二十四推算，一说前232年"
+  },
+  "died": {
+    "year": -202,
+    "certainty": "确知"
+  },
+  "thesis": "从会稽起兵、巨鹿破秦到分封天下，军事巅峰却因战略与用人失当，在楚汉相争中由盛转衰，终至垓下败亡、乌江自刎。",
+  "events": [
+    {
+      "year": -232,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "生于下相",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "项氏为楚将世家，但秦灭楚后已无实际权位。",
+      "summary": "生于下相，项燕之孙，项梁之侄，少时学书剑不成，改学兵法。",
+      "quote": {
+        "text": "項籍者，下相人也，字羽。初起時，年二十四。",
+        "source": 0
+      }
+    },
+    {
+      "year": -209,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "会稽起兵",
+      "tier": "初起",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "随项梁杀郡守起兵，得精兵八千人，任裨将。",
+      "summary": "陈胜起事后，项梁、项羽杀会稽守殷通，举吴中兵，收下县得八千人。",
+      "quote": {
+        "text": "於是梁為會稽守，籍為裨將，徇下縣。",
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "项梁战死定陶",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "受挫",
+      "crisisPenalty": 15,
+      "rationale": "叔父项梁战死，项羽失去庇护，楚军被怀王收编。",
+      "summary": "章邯大破楚军于定陶，项梁死，项羽、刘邦引兵东归，怀王自将楚军。",
+      "quote": {
+        "text": "大破之定陶，項梁死。",
+        "source": 0
+      }
+    },
+    {
+      "year": -208,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "斩宋义夺军",
+      "tier": "重臣主帅",
+      "tierScore": 70,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "矫诏斩杀上将军宋义，夺取救赵楚军指挥权。",
+      "summary": "宋义停留安阳四十六日不进，项羽晨朝斩其头，诸将共立羽为假上将军。",
+      "quote": {
+        "text": "項羽晨朝上將軍宋義，即其帳中斬宋義頭",
+        "source": 0
+      }
+    },
+    {
+      "year": -207,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "巨鹿破秦",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "破釜沉舟大破秦军主力，成为诸侯上将军。",
+      "summary": "项羽渡河救赵，破釜沉舟，九战九胜，大破秦军，诸侯膝行而前莫敢仰视。",
+      "quote": {
+        "text": "皆沈船，破釜甑，燒廬舍，持三日糧，以示士卒必死，無一還心。",
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "新安坑秦卒",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "秦降卒心不服，项羽夜坑杀二十余万人。",
+      "summary": "章邯降后，诸侯吏卒轻辱秦卒，秦卒有怨言，项羽夜击坑杀二十余万人于新安城南。",
+      "quote": {
+        "text": "於是楚軍夜擊阬秦卒二十餘萬人新安城南。",
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿门宴",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "兵四十万对刘邦十万，占绝对优势，但未消除刘邦。",
+      "summary": "刘邦赴鸿门谢罪，范增令项庄舞剑，项伯翼蔽，樊哙闯帐，刘邦脱身。",
+      "quote": {
+        "text": "項羽兵四十萬，在新豐鴻門，沛公兵十萬，在霸上。",
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "屠咸阳烧宫室",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "入关中后屠城杀子婴，烧秦宫室，失关中民心。",
+      "summary": "项羽引兵西屠咸阳，杀秦降王子婴，烧秦宫室，火三月不灭，收宝货妇女而东。",
+      "quote": {
+        "text": "項羽引兵西屠咸陽，殺秦降王子嬰，燒秦宮室，火三月不滅",
+        "source": 0
+      }
+    },
+    {
+      "year": -206,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "分封天下，自立西楚霸王",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "主宰分封，自立西楚霸王，王九郡，政由羽出。",
+      "summary": "尊怀王为义帝，分封十八诸侯，自立为西楚霸王，都彭城，主宰天下。",
+      "quote": {
+        "text": "項王自立為西楚霸王，王九郡，都彭城。",
+        "source": 0
+      }
+    },
+    {
+      "year": -205,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "彭城大胜",
+      "tier": "一方之主",
+      "tierScore": 93,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "以三万精兵大破刘邦五十六万，战术巅峰。",
+      "summary": "刘邦率五诸侯兵入彭城，项羽率三万精兵回击，大破汉军，睢水为之不流。",
+      "quote": {
+        "text": "項王乃西從蕭，晨擊漢軍而東，至彭城，日中，大破漢軍。",
+        "source": 0
+      }
+    },
+    {
+      "year": -204,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "荥阳相持，范增离去",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "围荥阳却中离间计，范增离去，战略优势无法转化。",
+      "summary": "项羽围荥阳，刘邦用陈平计离间，项羽疑范增，范增愤而离去，疽发背死。",
+      "quote": {
+        "text": "項王乃疑范增與漢有私，稍奪之權。",
+        "source": 0
+      }
+    },
+    {
+      "year": -204,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "破荥阳烹周苛",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "攻破荥阳，烹杀不降的周苛，但未能西进。",
+      "summary": "楚下荥阳，生得周苛，劝降不从，项羽怒而烹周苛。",
+      "quote": {
+        "text": "項王怒，烹周苛，井殺樅公。",
+        "source": 0
+      }
+    },
+    {
+      "year": -203,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "龙且败亡",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "rationale": "韩信破齐，龙且军团覆灭，楚军侧翼与盟友体系崩解。",
+      "summary": "韩信与灌婴大破楚军，杀龙且，楚失齐地，侧翼主力尽失。",
+      "quote": {
+        "text": "淮陰侯與戰，騎將灌嬰擊之，大破楚軍，殺龍且。",
+        "source": 0
+      }
+    },
+    {
+      "year": -203,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "广武伏弩射汉王",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "rationale": "广武对峙，项羽亲自挑战，伏弩射中刘邦。",
+      "summary": "楚汉广武相持，项羽伏弩射中刘邦，刘邦伤走入成皋。",
+      "quote": {
+        "text": "項王伏弩射中漢王。",
+        "source": 0
+      }
+    },
+    {
+      "year": -203,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "鸿沟议和",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "rationale": "表面中分天下，实际兵疲食尽，已失持续战争资源。",
+      "summary": "楚汉约定中分天下，鸿沟以西为汉，以东为楚，项羽释放刘邦父母妻子，引兵东归。",
+      "quote": {
+        "text": "項王乃與漢約，中分天下，割鴻溝以西者為漢，鴻溝而東者為楚。",
+        "source": 0
+      }
+    },
+    {
+      "year": -202,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "垓下被围",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "rationale": "兵少食尽，被汉军及诸侯兵围数重，四面楚歌。",
+      "summary": "项羽军壁垓下，兵少食尽，汉军及诸侯兵围之数重，夜闻四面楚歌，军心崩溃。",
+      "quote": {
+        "text": "項王軍壁垓下，兵少食盡，漢軍及諸侯兵圍之數重。夜聞漢軍四面皆楚歌",
+        "source": 0
+      }
+    },
+    {
+      "year": -202,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "东城快战",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 50,
+      "rationale": "仅二十八骑，仍三胜汉军，展示最后勇武。",
+      "summary": "项羽至东城仅二十八骑，自度不得脱，仍率骑快战，斩将刈旗，三胜汉军。",
+      "quote": {
+        "text": "項王乃復引兵而東，至東城，乃有二十八騎。",
+        "source": 0
+      }
+    },
+    {
+      "year": -202,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "乌江自刎",
+      "tier": "一方之主",
+      "tierScore": 85,
+      "crisis": "绝境",
+      "crisisPenalty": 51,
+      "rationale": "拒绝渡江，身被十余创，自刎而死，西楚覆灭。",
+      "summary": "项羽突围至乌江，亭长劝渡，项羽拒绝，下马步战，身被十余创，自刎而死。",
+      "quote": {
+        "text": "乃自刎而死。",
+        "source": 0
+      }
+    }
+  ],
+  "finale": {
+    "year": -202,
+    "title": "自刎于乌江",
+    "retention": 0.8,
+    "reason": "西楚政权随项羽之死瓦解，但其军事形象与霸王称号在后世文化中延续。",
+    "quote": {
+      "text": "乃自刎而死。",
+      "source": 0
+    }
+  },
+  "posthumous": [
+    {
+      "year": -202,
+      "title": "以鲁公礼葬于谷城",
+      "score": 32,
+      "rationale": "刘邦以鲁公礼葬之、为发哀，但此时他是被平定的敌方霸王。"
+    },
+    {
+      "year": -91,
+      "title": "《史记》列入本纪",
+      "score": 72,
+      "rationale": "司马迁以本纪记之，与帝王同列，悲剧英雄形象由此确立。"
+    },
+    {
+      "year": 1129,
+      "title": "李清照「至今思项羽」",
+      "score": 80,
+      "rationale": "南渡之际以项羽不肯过江反讽时局，气节形象深入人心。"
+    }
+  ],
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "争议",
+    "rationale": "华夏史上最勇猛将领之一，霸王一词专指项羽，但残暴失人心，功业未成。"
+  },
+  "reviewNotes": [
+    {
+      "by": "claude",
+      "at": "2026-09-30",
+      "note": "身后线原稿刚死即给 82（等于今日后世评价），按「身后分数=当时评价」改为 32 → 72 → 80。"
+    }
+  ]
+}

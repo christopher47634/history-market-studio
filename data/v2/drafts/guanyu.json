@@ -1,0 +1,166 @@
+{
+  "id": "guanyu",
+  "author": "claude",
+  "born": {
+    "year": 160,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 220,
+    "certainty": "确知"
+  },
+  "thesis": "亡命奔涿郡，随刘备半生，威震华夏，大意失荆州被擒杀。",
+  "events": [
+    {
+      "year": 160,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于河东解县",
+      "tier": "布衣",
+      "tierScore": 10,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "亡命奔涿郡",
+      "rationale": "亡命之徒",
+      "quote": {
+        "find": [
+          "亡命"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 184,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随刘备起兵",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与张飞为之御侮",
+      "rationale": "追随刘备",
+      "quote": null
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "降曹斩颜良",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "受挫",
+      "crisisPenalty": 10,
+      "summary": "曹操擒羽以归，拜偏将军；刺颜良于万众之中",
+      "rationale": "身陷曹营",
+      "quote": {
+        "find": [
+          "顏良",
+          "偏將軍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "封汉寿亭侯",
+      "tier": "成名",
+      "tierScore": 54,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "封为汉寿亭侯，后奔先主",
+      "rationale": "挂印封金",
+      "quote": {
+        "find": [
+          "漢壽亭侯"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 214,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "督荆州事",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "先主入益州，羽董督荆州事",
+      "rationale": "镇守一方",
+      "quote": {
+        "find": [
+          "董督荊州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "水淹七军",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "于禁七军皆没，威震华夏",
+      "rationale": "威名巅峰",
+      "quote": {
+        "find": [
+          "威震華夏",
+          "于禁"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 219,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "荆州失守",
+      "tier": "重臣主帅",
+      "tierScore": 80,
+      "crisis": "绝境",
+      "crisisPenalty": 55,
+      "summary": "孙权袭江陵，羽走麦城",
+      "rationale": "败亡",
+      "quote": {
+        "find": [
+          "麥城",
+          "江陵"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1102,
+      "title": "宋徽宗封忠惠公",
+      "score": 80,
+      "rationale": ""
+    },
+    {
+      "year": 1614,
+      "title": "明神宗封关圣帝君",
+      "score": 96,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 220,
+    "title": "被斩于临沮",
+    "retention": 0.8,
+    "reason": "身死而忠义之名大盛",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "武圣，忠义的化身"
+  }
+}

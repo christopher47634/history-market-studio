@@ -1,0 +1,167 @@
+{
+  "id": "dongzhongshu",
+  "author": "claude",
+  "born": {
+    "year": -179,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": -104,
+    "certainty": "确知"
+  },
+  "thesis": "治《公羊春秋》，天人三策促成「罢黜百家，独尊儒术」。",
+  "events": [
+    {
+      "year": -179,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于广川",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少治春秋，三年不窥园",
+      "rationale": "儒生",
+      "quote": {
+        "find": [
+          "广川",
+          "春秋"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -157,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "景帝时为博士",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "孝景时为博士，下帷讲诵",
+      "rationale": "儒学博士",
+      "quote": {
+        "find": [
+          "博士",
+          "下帷"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -134,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "对天人三策",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "武帝举贤良文学，对策三篇，请独尊儒术",
+      "rationale": "影响国策",
+      "quote": {
+        "find": [
+          "对策",
+          "推明孔氏"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -134,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任江都相",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "以对策为江都相，事易王",
+      "rationale": "王国之相",
+      "quote": {
+        "find": [
+          "江都相"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -131,
+      "yearCertainty": "估计",
+      "kind": "sub",
+      "title": "言灾异下狱",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "绝境",
+      "crisisPenalty": 40,
+      "summary": "主父偃窃其书奏之，当死，诏赦",
+      "rationale": "险遭死罪",
+      "quote": {
+        "find": [
+          "当死",
+          "主父偃"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -125,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任胶西相",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "公孙弘嫉之，荐为胶西王相",
+      "rationale": "被排挤外任",
+      "quote": {
+        "find": [
+          "胶西"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -121,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "病免家居",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "恐久获罪，病免，朝廷有大议使使就家问之",
+      "rationale": "在野顾问",
+      "quote": {
+        "find": [
+          "家居",
+          "就其家"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 100,
+      "title": "《汉书》立董仲舒传",
+      "score": 85,
+      "rationale": "班固称其为儒者宗"
+    }
+  ],
+  "finale": {
+    "year": -104,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "儒学独尊延续两千年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "争议",
+    "rationale": "儒学独尊的推动者，影响两千年中国思想"
+  }
+}

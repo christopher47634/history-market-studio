@@ -1,0 +1,171 @@
+{
+  "id": "goujian",
+  "author": "claude",
+  "born": {
+    "year": -520,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -465,
+    "certainty": "确知"
+  },
+  "thesis": "越王，兵败入吴为奴，卧薪尝胆二十年，灭吴称霸。",
+  "events": [
+    {
+      "year": -520,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生为越国太子",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "越王允常之子",
+      "rationale": "王子",
+      "quote": {
+        "find": [
+          "允常"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -496,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "即位败吴于檇李",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "允常卒，句践立，败吴于檇李，吴王阖闾伤死",
+      "rationale": "新君立威",
+      "quote": {
+        "find": [
+          "檇李"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -494,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "会稽之败",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "伐吴大败，以余兵五千人保栖于会稽",
+      "rationale": "国将覆灭",
+      "quote": {
+        "find": [
+          "會稽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -492,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入吴为奴",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "与妻入吴为臣妾",
+      "rationale": "国君为奴",
+      "quote": null
+    },
+    {
+      "year": -490,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "归国卧薪尝胆",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "置胆于坐，坐卧即仰胆，饮食亦尝胆",
+      "rationale": "屈辱中图强",
+      "quote": {
+        "find": [
+          "嘗膽",
+          "置膽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -482,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "袭吴",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "乘夫差北上黄池，袭破吴都",
+      "rationale": "反攻",
+      "quote": {
+        "find": [
+          "黃池"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -473,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭吴",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "围吴三年，吴王自杀，灭吴",
+      "rationale": "复仇成功",
+      "quote": {
+        "find": [
+          "吳王自殺",
+          "滅吳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -472,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "徐州会盟称霸",
+      "tier": "一方之主",
+      "tierScore": 94,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北会诸侯于徐州，周元王赐胙，号称霸王",
+      "rationale": "春秋末代霸主",
+      "quote": {
+        "find": [
+          "霸王",
+          "徐州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": -465,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "越国称霸一时",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "卧薪尝胆的代名词"
+  }
+}

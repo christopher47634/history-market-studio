@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowClockwise, WarningCircle } from "@phosphor-icons/react";
+import { report } from "../v3/report.js";
 
 export class AppErrorBoundary extends React.Component {
   state = { error: null };
@@ -10,21 +10,16 @@ export class AppErrorBoundary extends React.Component {
 
   componentDidCatch(error, info) {
     console.error("History Market Studio render failure", error, info);
+    report("render", error, { component: String(info?.componentStack ?? "").split("\n").slice(0, 4).join("\n").slice(0, 400) });
   }
 
   render() {
     if (!this.state.error) return this.props.children;
     return (
-      <main className="app-recovery" role="alert">
-        <section>
-          <WarningCircle weight="duotone" />
-          <small>历史行情局 · 安全恢复</small>
-          <h1>界面刚刚走神了</h1>
-          <p>人物与事件数据仍然安全。重新载入即可回到刚才的研究界面。</p>
-          <button type="button" onClick={() => location.reload()}>
-            <ArrowClockwise />重新载入
-          </button>
-        </section>
+      <main className="v3-shell v3-fail" role="alert">
+        <b>页面出了点问题</b>
+        <small>人物与事件数据不受影响，重新载入即可。问题已自动记录。</small>
+        <button type="button" className="v3-share" onClick={() => location.reload()}>重新载入</button>
       </main>
     );
   }

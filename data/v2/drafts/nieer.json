@@ -1,0 +1,183 @@
+{
+  "id": "nieer",
+  "author": "claude",
+  "born": {
+    "year": 1912,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1935,
+    "certainty": "确知"
+  },
+  "thesis": "《义勇军进行曲》作曲者，二十三岁溺亡。",
+  "events": [
+    {
+      "year": 1912,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于昆明",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "医家，四岁丧父",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "原名聂守信"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1927,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "加入共青团",
+      "tier": "布衣",
+      "tierScore": 14,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "省立师范",
+      "rationale": "少年",
+      "quote": null
+    },
+    {
+      "year": 1930,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "赴上海",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "因参加进步活动被通缉，打工",
+      "rationale": "谋生",
+      "quote": {
+        "find": [
+          "聂耳从云南省立师范学校毕业"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1931,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "入明月歌舞剧社",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "小提琴手",
+      "rationale": "学艺",
+      "quote": {
+        "find": [
+          "考入黎锦晖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1932,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "批评黎锦晖被迫离团",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "赴北平",
+      "rationale": "挫折",
+      "quote": {
+        "find": [
+          "并因批评黎氏被迫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1933,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "加入共产党",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "田汉介绍",
+      "rationale": "作曲",
+      "quote": {
+        "find": [
+          "聂耳由剧作家田汉介绍加入中国共产党"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1934,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "百代唱片音乐部",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "《毕业歌》《卖报歌》",
+      "rationale": "作曲",
+      "quote": {
+        "find": [
+          "聂耳加入百代唱片公司主持音乐部工作"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "作《义勇军进行曲》",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "电影插曲",
+      "rationale": "名作",
+      "quote": null
+    },
+    {
+      "year": 1935,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "避险东渡日本",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "被列入逮捕名单",
+      "rationale": "避险",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1949,
+      "title": "《义勇军进行曲》定为代国歌",
+      "score": 88,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1935,
+    "title": "日本溺亡",
+    "retention": 0.9,
+    "reason": "国歌作曲者",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "非常正面",
+    "rationale": "国歌作曲者"
+  }
+}

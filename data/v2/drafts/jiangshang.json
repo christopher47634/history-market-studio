@@ -1,0 +1,146 @@
+{
+  "id": "jiangshang",
+  "author": "claude",
+  "born": {
+    "year": -1128,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": -1015,
+    "certainty": "确知"
+  },
+  "thesis": "渭水垂钓遇文王，辅武王伐纣，封于齐。",
+  "events": [
+    {
+      "year": -1128,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于东海",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "东海上人，其先封于吕",
+      "rationale": "没落贵族",
+      "quote": {
+        "find": [
+          "東海"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1060,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "穷困垂钓",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "穷困年老，以渔钓奸周西伯",
+      "rationale": "潦倒",
+      "quote": {
+        "find": [
+          "漁釣"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1056,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "遇文王为师",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "西伯猎遇之，立为师",
+      "rationale": "得遇明主",
+      "quote": {
+        "find": [
+          "太公望",
+          "立為師"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1046,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "牧野灭商",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "师尚父谋居多，牧野之战破殷",
+      "rationale": "克商统帅",
+      "quote": {
+        "find": [
+          "牧野",
+          "師尚父"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1045,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封于齐",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "封师尚父于齐营丘",
+      "rationale": "开国诸侯",
+      "quote": {
+        "find": [
+          "營丘"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": -1044,
+      "yearCertainty": "确知",
+      "kind": "sub",
+      "title": "夜衣而行抢营丘",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "莱侯来争营丘",
+      "rationale": "立国之战",
+      "quote": {
+        "find": [
+          "萊侯"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 760,
+      "title": "唐封武成王",
+      "score": 90,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": -1015,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "齐国延续八百年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 90,
+    "label": "正面",
+    "rationale": "兵家鼻祖，姜太公"
+  }
+}

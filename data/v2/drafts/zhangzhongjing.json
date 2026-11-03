@@ -1,0 +1,121 @@
+{
+  "id": "zhangzhongjing",
+  "author": "claude",
+  "born": {
+    "year": 150,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 219,
+    "certainty": "估计"
+  },
+  "thesis": "东汉名医，著《伤寒杂病论》，被后世尊为医圣。",
+  "events": [
+    {
+      "year": 150,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于南阳",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "南阳涅阳人，少从张伯祖学医",
+      "rationale": "士人家庭",
+      "quote": {
+        "find": [
+          "南阳"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 170,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "从张伯祖学医",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "尽得其传",
+      "rationale": "医者起步",
+      "quote": {
+        "find": [
+          "张伯祖"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 196,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "宗族死于伤寒",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "建安以来宗族二百余口，十年间死者三分之二",
+      "rationale": "家族惨痛",
+      "quote": {
+        "find": [
+          "伤寒",
+          "三分"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 200,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《伤寒杂病论》",
+      "tier": "成名",
+      "tierScore": 48,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "勤求古训，博采众方，著书十六卷",
+      "rationale": "医学巨著",
+      "quote": {
+        "find": [
+          "伤寒杂病论"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 280,
+      "title": "王叔和整理其书",
+      "score": 65,
+      "rationale": "书得以传世"
+    },
+    {
+      "year": 1065,
+      "title": "宋校正医书局刊行",
+      "score": 82,
+      "rationale": "定为医家经典"
+    },
+    {
+      "year": 1600,
+      "title": "尊为医圣",
+      "score": 92,
+      "rationale": "明清医家尊为医圣"
+    }
+  ],
+  "finale": {
+    "year": 219,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "著作经王叔和整理流传",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 93,
+    "label": "正面",
+    "rationale": "中医临床医学奠基人，医圣"
+  }
+}

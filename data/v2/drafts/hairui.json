@@ -1,0 +1,138 @@
+{
+  "id": "hairui",
+  "author": "claude",
+  "born": {
+    "year": 1514,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1587,
+    "certainty": "确知"
+  },
+  "thesis": "备棺上疏骂嘉靖，一生清廉，海青天。",
+  "events": [
+    {
+      "year": 1514,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于琼山",
+      "tier": "布衣",
+      "tierScore": 15,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四岁丧父",
+      "rationale": "孤贫",
+      "quote": null
+    },
+    {
+      "year": 1549,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "举人",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "举人",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1558,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "淳安知县",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抑豪强",
+      "rationale": "清官",
+      "quote": {
+        "find": [
+          "淳安"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1566,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "备棺上《治安疏》",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "绝境",
+      "crisisPenalty": 45,
+      "summary": "嘉靖大怒下狱",
+      "rationale": "死局",
+      "quote": null
+    },
+    {
+      "year": 1567,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "释放复官",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "隆庆即位",
+      "rationale": "复用",
+      "quote": null
+    },
+    {
+      "year": 1569,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "应天巡抚",
+      "tier": "方面名家",
+      "tierScore": 66,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "抑徐阶",
+      "rationale": "方面",
+      "quote": null
+    },
+    {
+      "year": 1570,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被劾罢官",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "家居十六年",
+      "rationale": "罢",
+      "quote": null
+    },
+    {
+      "year": 1585,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "南京右都御史",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "复起",
+      "rationale": "复用",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1587,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "海青天",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 86,
+    "label": "正面",
+    "rationale": "清官典范"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "zhangfei",
+  "author": "claude",
+  "born": {
+    "year": 165,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 221,
+    "certainty": "确知"
+  },
+  "thesis": "燕人，与关羽随刘备，长坂断后，为部下所杀。",
+  "events": [
+    {
+      "year": 165,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于涿郡",
+      "tier": "布衣",
+      "tierScore": 12,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "涿郡人",
+      "rationale": "平民",
+      "quote": {
+        "find": [
+          "涿郡"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 184,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "随刘备起兵",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少与关羽俱事先主",
+      "rationale": "起兵",
+      "quote": null
+    },
+    {
+      "year": 208,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "长坂据水断桥",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "将二十骑拒后，据水断桥，曹军无敢近者",
+      "rationale": "名扬",
+      "quote": {
+        "find": [
+          "據水斷橋"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 214,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入蜀义释严颜",
+      "tier": "重臣主帅",
+      "tierScore": 72,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "破巴郡，生获严颜，义释之",
+      "rationale": "独当一面",
+      "quote": {
+        "find": [
+          "嚴顏"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 215,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "宕渠破张郃",
+      "tier": "重臣主帅",
+      "tierScore": 76,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "与张郃战于宕渠，大破之",
+      "rationale": "名将",
+      "quote": {
+        "find": [
+          "張郃"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拜车骑将军",
+      "tier": "重臣主帅",
+      "tierScore": 82,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "先主称帝，拜车骑将军",
+      "rationale": "位列上将",
+      "quote": {
+        "find": [
+          "車騎將軍"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 221,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "被部下所杀",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "帐下将张达、范强杀之",
+      "rationale": "死于非命",
+      "quote": {
+        "find": [
+          "張達"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1360,
+      "title": "《三国演义》猛张飞",
+      "score": 80,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 221,
+    "title": "被杀",
+    "retention": 0.8,
+    "reason": "蜀汉失一上将",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 78,
+    "label": "正面",
+    "rationale": "蜀汉名将"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "jixiaolan",
+  "author": "claude",
+  "born": {
+    "year": 1724,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1805,
+    "certainty": "确知"
+  },
+  "thesis": "总纂《四库全书》。",
+  "events": [
+    {
+      "year": 1724,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于献县",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1754,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 36,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "翰林",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1768,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "发配乌鲁木齐",
+      "tier": "初起",
+      "tierScore": 28,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "泄密",
+      "rationale": "发配",
+      "quote": null
+    },
+    {
+      "year": 1773,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "总纂《四库全书》",
+      "tier": "方面名家",
+      "tierScore": 64,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "四库",
+      "rationale": "巨著",
+      "quote": {
+        "find": [
+          "四庫"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 1799,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "协办大学士",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "高位",
+      "rationale": "高位",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 1805,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "四库全书",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 80,
+    "label": "正面",
+    "rationale": "四库总纂官"
+  }
+}

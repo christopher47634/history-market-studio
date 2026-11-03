@@ -1,0 +1,127 @@
+{
+  "id": "liyuan",
+  "author": "claude",
+  "born": {
+    "year": 566,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 635,
+    "certainty": "确知"
+  },
+  "thesis": "关陇贵族，晋阳起兵建唐，玄武门之变后退位。",
+  "events": [
+    {
+      "year": 566,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "七岁袭封唐国公",
+      "rationale": "贵族",
+      "quote": {
+        "find": [
+          "唐國公"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 615,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任太原留守",
+      "tier": "重臣主帅",
+      "tierScore": 78,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为太原留守",
+      "rationale": "方面大员",
+      "quote": {
+        "find": [
+          "太原留守"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 617,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "晋阳起兵",
+      "tier": "一方之主",
+      "tierScore": 86,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "起兵入关",
+      "rationale": "起事",
+      "quote": {
+        "find": [
+          "晉陽"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 618,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "称帝建唐",
+      "tier": "一方之主",
+      "tierScore": 92,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "受隋禅，国号唐",
+      "rationale": "开国",
+      "quote": null
+    },
+    {
+      "year": 624,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "基本统一",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "群雄渐平",
+      "rationale": "统一",
+      "quote": null
+    },
+    {
+      "year": 626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "玄武门之变退位",
+      "tier": "方面名家",
+      "tierScore": 62,
+      "crisis": "大败",
+      "crisisPenalty": 30,
+      "summary": "秦王杀建成元吉，禅位为太上皇",
+      "rationale": "失去权力",
+      "quote": {
+        "find": [
+          "太上皇"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 635,
+    "title": "崩",
+    "retention": 0.95,
+    "reason": "唐朝延续二百九十年",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 82,
+    "label": "正面",
+    "rationale": "唐朝开国皇帝"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "liuzongyuan",
+  "author": "claude",
+  "born": {
+    "year": 773,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 819,
+    "certainty": "确知"
+  },
+  "thesis": "永贞革新失败被贬永州十年，《永州八记》传世。",
+  "events": [
+    {
+      "year": 773,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于长安",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "河东柳氏",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 793,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "进士及第",
+      "tier": "初起",
+      "tierScore": 34,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "二十一岁中进士",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 805,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "参与永贞革新",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "任礼部员外郎",
+      "rationale": "改革派",
+      "quote": {
+        "find": [
+          "禮部員外郎"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 805,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "贬永州司马",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "革新失败，贬永州",
+      "rationale": "长期贬谪",
+      "quote": {
+        "find": [
+          "永州"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 815,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "改柳州刺史",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "召回又出为柳州刺史",
+      "rationale": "再贬",
+      "quote": {
+        "find": [
+          "柳州"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 819,
+    "title": "卒于柳州",
+    "retention": 0.9,
+    "reason": "古文与山水游记传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 88,
+    "label": "正面",
+    "rationale": "唐宋八大家之一"
+  }
+}

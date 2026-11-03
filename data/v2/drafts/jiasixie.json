@@ -1,0 +1,81 @@
+{
+  "id": "jiasixie",
+  "author": "claude",
+  "born": {
+    "year": 480,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 550,
+    "certainty": "估计"
+  },
+  "thesis": "北魏高阳太守，著《齐民要术》。",
+  "events": [
+    {
+      "year": 480,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于益都",
+      "tier": "布衣",
+      "tierScore": 22,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "平民",
+      "rationale": "平民",
+      "quote": null
+    },
+    {
+      "year": 530,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任高阳太守",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "北魏高阳太守",
+      "rationale": "地方官",
+      "quote": null
+    },
+    {
+      "year": 535,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "游历北方考察农事",
+      "tier": "成名",
+      "tierScore": 42,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "走访山东河北河南各地，询问老农",
+      "rationale": "实地调查",
+      "quote": null
+    },
+    {
+      "year": 540,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《齐民要术》",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "现存最早最完整的农书",
+      "rationale": "农学巨著",
+      "quote": null
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 550,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "农书传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "中国古代农学经典作者"
+  }
+}

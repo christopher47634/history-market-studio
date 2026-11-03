@@ -1,0 +1,112 @@
+{
+  "id": "duoergun",
+  "author": "claude",
+  "born": {
+    "year": 1612,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1650,
+    "certainty": "确知"
+  },
+  "thesis": "摄政王，入关定鼎北京。",
+  "events": [
+    {
+      "year": 1612,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于赫图阿拉",
+      "tier": "布衣",
+      "tierScore": 35,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "努尔哈赤十四子",
+      "rationale": "王子",
+      "quote": null
+    },
+    {
+      "year": 1626,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "母被逼殉葬",
+      "tier": "布衣",
+      "tierScore": 30,
+      "crisis": "大败",
+      "crisisPenalty": 20,
+      "summary": "阿巴亥殉葬",
+      "rationale": "家难",
+      "quote": null
+    },
+    {
+      "year": 1636,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "封睿亲王",
+      "tier": "重臣主帅",
+      "tierScore": 84,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "亲王",
+      "rationale": "亲王",
+      "quote": null
+    },
+    {
+      "year": 1643,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "拥立福临为摄政王",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "摄政",
+      "rationale": "摄政",
+      "quote": null
+    },
+    {
+      "year": 1644,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "入关定鼎北京",
+      "tier": "天下共主",
+      "tierScore": 95,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "山海关",
+      "rationale": "巅峰",
+      "quote": {
+        "find": [
+          "山海關"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1651,
+      "title": "被追夺封号，削爵毁墓",
+      "score": 35,
+      "rationale": ""
+    },
+    {
+      "year": 1778,
+      "title": "乾隆平反复爵",
+      "score": 68,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1650,
+    "title": "猝死",
+    "retention": 0.95,
+    "reason": "身后被削爵",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "重要人物",
+    "score": 74,
+    "label": "争议",
+    "rationale": "入关的实际统帅"
+  }
+}

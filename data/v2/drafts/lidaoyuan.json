@@ -1,0 +1,104 @@
+{
+  "id": "lidaoyuan",
+  "author": "claude",
+  "born": {
+    "year": 466,
+    "certainty": "估计"
+  },
+  "died": {
+    "year": 527,
+    "certainty": "确知"
+  },
+  "thesis": "《水经注》作者，执法严峻，被关右叛军所杀。",
+  "events": [
+    {
+      "year": 466,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于范阳涿县",
+      "tier": "布衣",
+      "tierScore": 28,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "官宦之家",
+      "rationale": "士族",
+      "quote": null
+    },
+    {
+      "year": 490,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "随父游历",
+      "tier": "初起",
+      "tierScore": 30,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少时随父访水道",
+      "rationale": "游历",
+      "quote": null
+    },
+    {
+      "year": 510,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "任东荆州刺史",
+      "tier": "方面名家",
+      "tierScore": 58,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "执法严峻",
+      "rationale": "地方长官",
+      "quote": null
+    },
+    {
+      "year": 520,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "著《水经注》",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "注《水经》四十卷",
+      "rationale": "地理巨著",
+      "quote": {
+        "find": [
+          "水經"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 527,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "出使关右遇害",
+      "tier": "方面名家",
+      "tierScore": 56,
+      "crisis": "绝境",
+      "crisisPenalty": 60,
+      "summary": "萧宝夤叛，遇害于阴盘驿",
+      "rationale": "被杀",
+      "quote": {
+        "find": [
+          "蕭寶夤"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 527,
+    "title": "遇害",
+    "retention": 0.85,
+    "reason": "《水经注》传世",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "中国古代地理学名著作者"
+  }
+}

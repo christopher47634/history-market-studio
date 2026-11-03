@@ -1,0 +1,109 @@
+{
+  "id": "wangmeng",
+  "author": "claude",
+  "born": {
+    "year": 325,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 375,
+    "certainty": "确知"
+  },
+  "thesis": "扪虱谈天下，辅佐苻坚统一北方的名相。",
+  "events": [
+    {
+      "year": 325,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于北海剧县",
+      "tier": "布衣",
+      "tierScore": 8,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "少贫贱，以鬻畚为业",
+      "rationale": "贫寒",
+      "quote": {
+        "find": [
+          "鬻畚"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 354,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "扪虱见桓温",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "被褐诣温，扪虱而谈",
+      "rationale": "名士",
+      "quote": {
+        "find": [
+          "捫蝨"
+        ],
+        "source": 0
+      }
+    },
+    {
+      "year": 357,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "辅苻坚",
+      "tier": "成名",
+      "tierScore": 52,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "苻坚以为中书侍郎",
+      "rationale": "得遇明主",
+      "quote": null
+    },
+    {
+      "year": 370,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "灭前燕",
+      "tier": "一方之主",
+      "tierScore": 88,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "率军灭燕",
+      "rationale": "大功",
+      "quote": null
+    },
+    {
+      "year": 372,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "任丞相",
+      "tier": "一方之主",
+      "tierScore": 90,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "为丞相，总揽朝政",
+      "rationale": "首辅",
+      "quote": {
+        "find": [
+          "丞相"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [],
+  "finale": {
+    "year": 375,
+    "title": "病卒",
+    "retention": 0.95,
+    "reason": "遗言勿伐晋；八年后淝水之败",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "一代名家",
+    "score": 84,
+    "label": "正面",
+    "rationale": "十六国第一名相"
+  }
+}

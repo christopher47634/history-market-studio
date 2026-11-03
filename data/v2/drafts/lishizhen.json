@@ -1,0 +1,119 @@
+{
+  "id": "lishizhen",
+  "author": "claude",
+  "born": {
+    "year": 1518,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1593,
+    "certainty": "确知"
+  },
+  "thesis": "三试不第转而学医，二十七年著《本草纲目》。",
+  "events": [
+    {
+      "year": 1518,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于蕲州",
+      "tier": "布衣",
+      "tierScore": 18,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "世医之家",
+      "rationale": "医户",
+      "quote": null
+    },
+    {
+      "year": 1531,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中秀才",
+      "tier": "布衣",
+      "tierScore": 24,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "十四岁",
+      "rationale": "少年",
+      "quote": null
+    },
+    {
+      "year": 1537,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "三次乡试不第",
+      "tier": "布衣",
+      "tierScore": 20,
+      "crisis": "受挫",
+      "crisisPenalty": 5,
+      "summary": "弃儒学医",
+      "rationale": "转向",
+      "quote": null
+    },
+    {
+      "year": 1551,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "楚王府奉祠正",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "治愈世子",
+      "rationale": "医名",
+      "quote": null
+    },
+    {
+      "year": 1556,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "太医院判",
+      "tier": "成名",
+      "tierScore": 50,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "一年辞归",
+      "rationale": "太医",
+      "quote": null
+    },
+    {
+      "year": 1578,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "《本草纲目》成书",
+      "tier": "方面名家",
+      "tierScore": 60,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "五十二卷",
+      "rationale": "巨著",
+      "quote": {
+        "find": [
+          "本草綱目"
+        ],
+        "source": 0
+      }
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1596,
+      "title": "《本草纲目》金陵刊行",
+      "score": 82,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1593,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "身后刊行",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "药圣"
+  }
+}

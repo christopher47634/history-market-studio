@@ -1,102 +1,35 @@
-import { buildComparison, figures } from "../src/data.js";
-import { terminalTrajectoryRules } from "../src/trajectoryModel.js";
+// v2 轨迹审计：画出来的曲线必须精确落在每个事件的分数上；终章相对最后一个阶段最多回撤 20%，不归零；
+// 身后线终点等于后世评价。对全部 300 人逐一核对。
+import { figures, figureById, buildComparison } from "../src/data.js";
 
 const fail = (message) => {
   throw new Error(message);
 };
 
-const deathTitlePattern =
-  /人生终章|卒|死|崩|薨|逝|殁|遇害|被杀|自尽|赐死|病故|病逝|牺牲|去世|身亡|就义|圆寂|陨落|自沉|自刎|处死|凌迟|车裂/;
-
-const report = [];
-
+const partner = figureById.liubang;
+let checked = 0;
+let minRetention = 1;
 for (const figure of figures) {
-  const lifeEvents = figure.events
-    .filter((event) => !event.posthumous)
-    .sort((left, right) => left.age - right.age || left.year - right.year);
-  const terminalEvents = lifeEvents.filter(
-    (event) => event.trajectory?.terminal,
-  );
-  if (!terminalEvents.length) fail(`${figure.name}: 缺少统一终章模型`);
-  if (!figure.trajectoryModel) fail(`${figure.name}: 缺少人物级轨迹模型元数据`);
-  if (figure.trajectoryModel.deathResetsToZero) {
-    fail(`${figure.name}: 仍把死亡处理为归零`);
-  }
+  const life = figure.events.filter((event) => !event.posthumous);
+  const finale = life.at(-1);
+  const lastStage = life.at(-2);
+  if (finale.kind !== "finale") fail(`${figure.name}: 缺少终章`);
+  if (finale.score <= 0) fail(`${figure.name}: 死亡被处理为归零`);
+  const retention = finale.score / lastStage.score;
+  minRetention = Math.min(minRetention, retention);
+  if (retention < 0.8 - 1e-6) fail(`${figure.name}: 终章回撤 ${(100 - retention * 100).toFixed(1)}%，超过 20%`);
 
-  for (const event of terminalEvents) {
-    const trajectory = event.trajectory;
-    if (event.score <= 0) fail(`${figure.name}/${event.title}: 终章仍为零`);
-    if (trajectory.retention < terminalTrajectoryRules.minimumRetention - 0.001) {
-      fail(
-        `${figure.name}/${event.title}: 保留比例 ${trajectory.retention} 低于80%`,
-      );
-    }
-    if (!trajectory.continuity || !trajectory.basis || !trajectory.reasons?.length) {
-      fail(`${figure.name}/${event.title}: 缺少延续类型或量化依据`);
-    }
-    if (trajectory.ability < 0 || trajectory.ability > 100) {
-      fail(`${figure.name}/${event.title}: 综合能力均值越界`);
-    }
-    if (/归零/.test(event.summary)) {
-      fail(`${figure.name}/${event.title}: 终章叙事仍包含归零语义`);
-    }
+  const other = figure.id === partner.id ? figureById.xiangyu : partner;
+  const comparison = buildComparison(figure, other, "age");
+  const points = comparison.left;
+  for (const event of life) {
+    const point = points.find((p) => p.event?.title === event.title);
+    if (!point) fail(`${figure.name}/${event.title}: 节点没有出现在曲线上`);
+    if (Math.abs(point.value - event.score) > 0.05) fail(`${figure.name}/${event.title}: 曲线取值 ${point.value} ≠ 事件分数 ${event.score}`);
   }
-
-  for (const event of lifeEvents.filter((item) =>
-    deathTitlePattern.test(item.title),
-  )) {
-    if (event.score <= 0) fail(`${figure.name}/${event.title}: 死亡节点仍为零`);
-  }
-
-  const terminal = terminalEvents.at(-1);
-  const comparison = buildComparison(figure, figure).left;
-  const visiblePoints = comparison.filter((point) => point.value !== null);
-  const visibleEnd = visiblePoints.at(-1);
-  const visiblePrior = visiblePoints.at(-2);
-  if (!visibleEnd || visibleEnd.value <= 0) {
-    fail(`${figure.name}: 折线显示端点仍为零或缺失`);
-  }
-  if (Math.abs(visibleEnd.value - terminal.score) > 0.15) {
-    fail(
-      `${figure.name}: 折线端点 ${visibleEnd.value} 没有落在终章量化值 ${terminal.score}`,
-    );
-  }
-  if (
-    visiblePrior &&
-    visibleEnd.value < visiblePrior.value * terminalTrajectoryRules.minimumRetention - 0.05
-  ) {
-    fail(
-      `${figure.name}: 可见终点仅保留上一采样点的 ${(
-        (visibleEnd.value / visiblePrior.value) *
-        100
-      ).toFixed(1)}%`,
-    );
-  }
-
-  report.push({
-    figure: figure.name,
-    domain: figure.domain,
-    terminal: terminal.title,
-    score: terminal.score,
-    retention: terminal.trajectory.retention,
-    continuity: terminal.trajectory.continuity,
-    visibleEnd: +visibleEnd.value.toFixed(1),
-  });
+  const tail = comparison.leftTail.filter((p) => p.value !== null);
+  if (Math.abs(tail.at(-1).value - figure.legacy.score) > 0.05) fail(`${figure.name}: 身后线终点 ${tail.at(-1).value} ≠ 后世评价 ${figure.legacy.score}`);
+  checked++;
 }
 
-const retentions = report.map((item) => item.retention);
-const continuityCounts = Object.fromEntries(
-  [...new Set(report.map((item) => item.continuity))]
-    .sort((left, right) => left.localeCompare(right, "zh-CN"))
-    .map((continuity) => [
-      continuity,
-      report.filter((item) => item.continuity === continuity).length,
-    ]),
-);
-
-console.log(
-  `terminal trajectory audit passed: ${report.length} figures, 0 death resets, minimum retention ${(
-    Math.min(...retentions) * 100
-  ).toFixed(1)}%`,
-);
-console.log(`continuity distribution: ${JSON.stringify(continuityCounts)}`);
+console.log(`trajectory audit passed: ${checked} figures, curve lands on every event, minimum terminal retention ${(minRetention * 100).toFixed(1)}%, posthumous line ends at legacy score`);

@@ -1,0 +1,88 @@
+{
+  "id": "wangfuzhi",
+  "author": "claude",
+  "born": {
+    "year": 1619,
+    "certainty": "确知"
+  },
+  "died": {
+    "year": 1692,
+    "certainty": "确知"
+  },
+  "thesis": "隐居石船山四十年，著述八百万字。",
+  "events": [
+    {
+      "year": 1619,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "生于衡阳",
+      "tier": "布衣",
+      "tierScore": 25,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "士人",
+      "rationale": "士人",
+      "quote": null
+    },
+    {
+      "year": 1642,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "中举",
+      "tier": "初起",
+      "tierScore": 32,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "举人",
+      "rationale": "入仕",
+      "quote": null
+    },
+    {
+      "year": 1648,
+      "yearCertainty": "确知",
+      "kind": "stage",
+      "title": "衡山起兵",
+      "tier": "成名",
+      "tierScore": 40,
+      "crisis": "大败",
+      "crisisPenalty": 25,
+      "summary": "抗清失败",
+      "rationale": "败",
+      "quote": null
+    },
+    {
+      "year": 1660,
+      "yearCertainty": "估计",
+      "kind": "stage",
+      "title": "隐居船山",
+      "tier": "成名",
+      "tierScore": 44,
+      "crisis": "平稳",
+      "crisisPenalty": 0,
+      "summary": "著述",
+      "rationale": "隐",
+      "quote": null
+    }
+  ],
+  "posthumous": [
+    {
+      "year": 1865,
+      "title": "曾国藩刊行《船山遗书》",
+      "score": 86,
+      "rationale": ""
+    }
+  ],
+  "finale": {
+    "year": 1692,
+    "title": "卒",
+    "retention": 0.95,
+    "reason": "著作晚清刊行",
+    "quote": null
+  },
+  "legacy": {
+    "tier": "时代定义者",
+    "score": 92,
+    "label": "正面",
+    "rationale": "明清思想家"
+  }
+}
