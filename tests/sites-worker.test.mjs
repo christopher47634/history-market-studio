@@ -165,6 +165,56 @@ test("supports indexed catalog search, pagination, facets and conditional cachin
   assert.equal(malformedEncoding.status, 400);
 });
 
+test("serves quantitative trajectory rankings and cross-dynasty peer similarity", async () => {
+  const env = {
+    ASSETS: { fetch: async () => new Response("missing", { status: 404 }) },
+  };
+  const rankings = await worker.fetch(
+    new Request("https://example.test/api/rankings?metric=resilience&limit=5"),
+    env,
+  );
+  assert.equal(rankings.status, 200);
+  const rankingsBody = await rankings.json();
+  assert.equal(rankingsBody.metric, "resilience");
+  assert.equal(rankingsBody.items.length, 5);
+  assert.equal(rankingsBody.items[0].rank, 1);
+  assert.ok(rankingsBody.items[0].metricValue >= rankingsBody.items[4].metricValue);
+
+  const badMetric = await worker.fetch(
+    new Request("https://example.test/api/rankings?metric=unknown"),
+    env,
+  );
+  assert.equal(badMetric.status, 400);
+
+  const peers = await worker.fetch(
+    new Request("https://example.test/api/figures/liubang/peers?limit=4&crossDynasty=1"),
+    env,
+  );
+  assert.equal(peers.status, 200);
+  const peersBody = await peers.json();
+  assert.equal(peersBody.target.id, "liubang");
+  assert.equal(peersBody.peers.length, 4);
+  assert.ok(peersBody.peers.every((p) => p.id !== "liubang" && p.dynasty !== peersBody.target.dynasty));
+  assert.ok(peersBody.peers[0].similarity >= peersBody.peers[3].similarity);
+
+  const etag = peers.headers.get("etag");
+  const peersCached = await worker.fetch(
+    new Request("https://example.test/api/figures/liubang/peers?limit=4&crossDynasty=1", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(peersCached.status, 304);
+
+  const missingPeers = await worker.fetch(
+    new Request("https://example.test/api/figures/nonexistent/peers", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(missingPeers.status, 404);
+});
+
 test("does not turn missing API or write requests into the app shell", async () => {
   let calls = 0;
   const missingApi = await worker.fetch(

@@ -6,6 +6,7 @@ import {
   getTurningPoints,
 } from "../data.js";
 import { getCandleView } from "../marketEngine.js";
+import { getPeerFigures, getRankings, RANKING_METRICS } from "./analytics.js";
 
 const VERSION = "2026.08.04";
 const totalEvents = figures.reduce(
@@ -222,6 +223,68 @@ export async function handleHistoryApi(request) {
     return respondCacheable(request, () => ({
       meta: apiMeta(),
       facets: INDEX_FACETS,
+    }));
+  }
+
+  if (url.pathname === "/api/rankings") {
+    const metric = url.searchParams.get("metric") || "peak";
+    const order = url.searchParams.get("order") || "desc";
+    if (!RANKING_METRICS.includes(metric)) {
+      return json(
+        {
+          error: "invalid_metric",
+          message: `metric must be one of: ${RANKING_METRICS.join(", ")}`,
+        },
+        400,
+      );
+    }
+    if (!["asc", "desc"].includes(order)) {
+      return json({ error: "invalid_order", message: "order must be asc or desc" }, 400);
+    }
+    const offset = boundedInteger(url.searchParams.get("offset"), 0, 0, figures.length);
+    const limit = boundedInteger(url.searchParams.get("limit"), 20, 1, figures.length);
+    if (offset === null || limit === null) {
+      return json(
+        {
+          error: "invalid_pagination",
+          message: `offset must be 0—${figures.length}; limit must be 1—${figures.length}`,
+        },
+        400,
+      );
+    }
+    return respondCacheable(request, () => ({
+      meta: apiMeta(),
+      ...getRankings({
+        metric,
+        order,
+        domain: url.searchParams.get("domain") || "",
+        period: url.searchParams.get("period") || "",
+        dynasty: url.searchParams.get("dynasty") || "",
+        offset,
+        limit,
+      }),
+    }));
+  }
+
+  if (url.pathname.startsWith("/api/figures/") && url.pathname.endsWith("/peers")) {
+    const rawId = url.pathname.slice("/api/figures/".length, -"/peers".length);
+    let id;
+    try {
+      id = decodeURIComponent(rawId);
+    } catch {
+      return json({ error: "invalid_figure_id" }, 400);
+    }
+    if (!figureById[id]) {
+      return json({ error: "figure_not_found", id }, 404);
+    }
+    const limit = boundedInteger(url.searchParams.get("limit"), 5, 1, 20);
+    if (limit === null) {
+      return json({ error: "invalid_limit", message: "limit must be 1—20" }, 400);
+    }
+    const crossDynasty = url.searchParams.get("crossDynasty") === "1";
+    return respondCacheable(request, () => ({
+      meta: apiMeta(),
+      ...getPeerFigures(id, { limit, crossDynasty }),
     }));
   }
 
