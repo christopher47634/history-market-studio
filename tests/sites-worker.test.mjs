@@ -115,6 +115,54 @@ test("supports indexed catalog search, pagination, facets and conditional cachin
     env,
   );
   assert.equal(cached.status, 304);
+
+  const multiEtag = await worker.fetch(
+    new Request("https://example.test/api/index", {
+      method: "HEAD",
+      headers: { "if-none-match": `"other-tag", ${etag}` },
+    }),
+    env,
+  );
+  assert.equal(multiEtag.status, 304);
+
+  // Conditional ETag must never mask 404/400 errors
+  const missingWithEtag = await worker.fetch(
+    new Request("https://example.test/api/missing", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(missingWithEtag.status, 404);
+
+  const unknownFigureWithEtag = await worker.fetch(
+    new Request("https://example.test/api/figures/nonexistent", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(unknownFigureWithEtag.status, 404);
+
+  const invalidLimitWithEtag = await worker.fetch(
+    new Request("https://example.test/api/figures?limit=0", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(invalidLimitWithEtag.status, 400);
+
+  const samePairWithEtag = await worker.fetch(
+    new Request("https://example.test/api/compare?left=liubang&right=liubang", {
+      headers: { "if-none-match": etag },
+    }),
+    env,
+  );
+  assert.equal(samePairWithEtag.status, 400);
+
+  const malformedEncoding = await worker.fetch(
+    new Request("https://example.test/api/figures/%E0%A4%A"),
+    env,
+  );
+  assert.equal(malformedEncoding.status, 400);
 });
 
 test("does not turn missing API or write requests into the app shell", async () => {

@@ -15,18 +15,45 @@ const totalEvents = figures.reduce(
 const DATA_LOADED_AT = new Date().toISOString();
 const CATALOG_ETAG = `W/"history-${VERSION}-${figures.length}-${totalEvents}"`;
 
-const headers = {
+const baseHeaders = {
   "content-type": "application/json; charset=utf-8",
-  "cache-control": "public, max-age=60, s-maxage=600, stale-while-revalidate=86400",
   "x-content-type-options": "nosniff",
+};
+
+const headers = {
+  ...baseHeaders,
+  "cache-control": "public, max-age=60, s-maxage=600, stale-while-revalidate=86400",
   etag: CATALOG_ETAG,
 };
 
 const json = (body, status = 200, extraHeaders = {}) =>
   new Response(JSON.stringify(body), {
     status,
-    headers: { ...headers, ...extraHeaders },
+    headers:
+      status >= 400
+        ? { ...baseHeaders, "cache-control": "no-store", ...extraHeaders }
+        : { ...headers, ...extraHeaders },
   });
+
+const stripWeakPrefix = (tag) => tag.replace(/^W\//i, "");
+
+const matchesIfNoneMatch = (headerValue, etag) => {
+  if (!headerValue) return false;
+  const target = stripWeakPrefix(etag);
+  return headerValue
+    .split(",")
+    .map((token) => token.trim())
+    .filter(Boolean)
+    .some((token) => token === "*" || stripWeakPrefix(token) === target);
+};
+
+const respondCacheable = (request, bodyOrFactory, extraHeaders = {}) => {
+  if (matchesIfNoneMatch(request.headers.get("if-none-match"), CATALOG_ETAG)) {
+    return new Response(null, { status: 304, headers: { ...headers, ...extraHeaders } });
+  }
+  const body = typeof bodyOrFactory === "function" ? bodyOrFactory() : bodyOrFactory;
+  return json(body, 200, extraHeaders);
+};
 
 const compactFigure = (figure) => ({
   id: figure.id,
@@ -83,6 +110,31 @@ const searchableText = (figure) =>
     ].join(" "),
   );
 
+const SEARCH_INDEX = figures.map((figure) => ({
+  figure,
+  searchText: searchableText(figure),
+  period: normalizeText(figure.period),
+  dynasty: normalizeText(figure.dynasty),
+  domain: normalizeText(figure.domain),
+}));
+
+const summarizeFacet = (key) =>
+  Object.entries(
+    figures.reduce((counts, figure) => {
+      const value = figure[key] || "未分类";
+      counts[value] = (counts[value] || 0) + 1;
+      return counts;
+    }, {}),
+  )
+    .map(([value, count]) => ({ value, count }))
+    .sort((left, right) => right.count - left.count || left.value.localeCompare(right.value, "zh-CN"));
+
+const INDEX_FACETS = {
+  periods: summarizeFacet("period"),
+  dynasties: summarizeFacet("dynasty"),
+  domains: summarizeFacet("domain"),
+};
+
 const boundedInteger = (value, fallback, min, max) => {
   if (value === null || value === "") return fallback;
   const parsed = Number(value);
@@ -117,14 +169,6 @@ export async function handleHistoryApi(request) {
     return json({ error: "method_not_allowed" }, 405, { allow: "GET, HEAD, OPTIONS" });
   }
 
-  if (
-    request.method === "GET" &&
-    url.pathname !== "/api/health" &&
-    request.headers.get("if-none-match") === CATALOG_ETAG
-  ) {
-    return new Response(null, { status: 304, headers });
-  }
-
   if (url.pathname === "/api/health") {
     return json({ ok: true, meta: apiMeta() }, 200, { "cache-control": "no-store" });
   }
@@ -147,58 +191,52 @@ export async function handleHistoryApi(request) {
         400,
       );
     }
-    const query = normalizeText(url.searchParams.get("q"));
-    const period = normalizeText(url.searchParams.get("period"));
-    const dynasty = normalizeText(url.searchParams.get("dynasty"));
-    const domain = normalizeText(url.searchParams.get("domain"));
-    const filtered = figures.filter(
-      (figure) =>
-        (!query || searchableText(figure).includes(query)) &&
-        (!period || normalizeText(figure.period) === period) &&
-        (!dynasty || normalizeText(figure.dynasty) === dynasty) &&
-        (!domain || normalizeText(figure.domain) === domain),
-    );
-    const page = filtered.slice(offset, offset + limit);
-    return json({
-      meta: apiMeta(),
-      page: {
-        total: filtered.length,
-        returned: page.length,
-        offset,
-        limit,
-        hasMore: offset + page.length < filtered.length,
-      },
-      figures: compact ? page.map(compactFigure) : page,
+    return respondCacheable(request, () => {
+      const query = normalizeText(url.searchParams.get("q"));
+      const period = normalizeText(url.searchParams.get("period"));
+      const dynasty = normalizeText(url.searchParams.get("dynasty"));
+      const domain = normalizeText(url.searchParams.get("domain"));
+      const filtered = SEARCH_INDEX.filter(
+        (entry) =>
+          (!query || entry.searchText.includes(query)) &&
+          (!period || entry.period === period) &&
+          (!dynasty || entry.dynasty === dynasty) &&
+          (!domain || entry.domain === domain),
+      ).map((entry) => entry.figure);
+      const page = filtered.slice(offset, offset + limit);
+      return {
+        meta: apiMeta(),
+        page: {
+          total: filtered.length,
+          returned: page.length,
+          offset,
+          limit,
+          hasMore: offset + page.length < filtered.length,
+        },
+        figures: compact ? page.map(compactFigure) : page,
+      };
     });
   }
 
   if (url.pathname === "/api/index") {
-    const summarize = (key) =>
-      Object.entries(
-        figures.reduce((counts, figure) => {
-          const value = figure[key] || "未分类";
-          counts[value] = (counts[value] || 0) + 1;
-          return counts;
-        }, {}),
-      )
-        .map(([value, count]) => ({ value, count }))
-        .sort((left, right) => right.count - left.count || left.value.localeCompare(right.value, "zh-CN"));
-    return json({
+    return respondCacheable(request, () => ({
       meta: apiMeta(),
-      facets: {
-        periods: summarize("period"),
-        dynasties: summarize("dynasty"),
-        domains: summarize("domain"),
-      },
-    });
+      facets: INDEX_FACETS,
+    }));
   }
 
   if (url.pathname.startsWith("/api/figures/")) {
-    const id = decodeURIComponent(url.pathname.slice("/api/figures/".length));
+    let id;
+    try {
+      id = decodeURIComponent(url.pathname.slice("/api/figures/".length));
+    } catch {
+      return json({ error: "invalid_figure_id" }, 400);
+    }
     const figure = figureById[id];
-    return figure
-      ? json({ meta: apiMeta(), figure })
-      : json({ error: "figure_not_found", id }, 404);
+    if (!figure) {
+      return json({ error: "figure_not_found", id }, 404);
+    }
+    return respondCacheable(request, () => ({ meta: apiMeta(), figure }));
   }
 
   if (url.pathname === "/api/compare") {
@@ -209,31 +247,37 @@ export async function handleHistoryApi(request) {
         400,
       );
     }
-    const comparison = buildComparison(pair.left, pair.right);
-    const response = {
-      meta: apiMeta(),
-      pair: {
-        left: compactFigure(pair.left),
-        right: compactFigure(pair.right),
+    return respondCacheable(
+      request,
+      () => {
+        const comparison = buildComparison(pair.left, pair.right);
+        const response = {
+          meta: apiMeta(),
+          pair: {
+            left: compactFigure(pair.left),
+            right: compactFigure(pair.right),
+          },
+          colors: getPairColors(pair.left, pair.right),
+          comparison,
+          turningPoints: getTurningPoints(comparison, pair.left, pair.right),
+        };
+        if (url.searchParams.get("candles") === "1") {
+          const target = url.searchParams.get("target") === pair.right.id
+            ? pair.right
+            : pair.left;
+          const span = Math.max(
+            7,
+            Math.min(100, Number(url.searchParams.get("span")) || 100),
+          );
+          response.candles = {
+            figure: compactFigure(target),
+            ...getCandleView(target, span),
+          };
+        }
+        return response;
       },
-      colors: getPairColors(pair.left, pair.right),
-      comparison,
-      turningPoints: getTurningPoints(comparison, pair.left, pair.right),
-    };
-    if (url.searchParams.get("candles") === "1") {
-      const target = url.searchParams.get("target") === pair.right.id
-        ? pair.right
-        : pair.left;
-      const span = Math.max(
-        7,
-        Math.min(100, Number(url.searchParams.get("span")) || 100),
-      );
-      response.candles = {
-        figure: compactFigure(target),
-        ...getCandleView(target, span),
-      };
-    }
-    return json(response, 200, { "cache-control": "public, max-age=300, s-maxage=3600" });
+      { "cache-control": "public, max-age=300, s-maxage=3600" },
+    );
   }
 
   return json({ error: "api_route_not_found" }, 404, { "cache-control": "no-store" });
